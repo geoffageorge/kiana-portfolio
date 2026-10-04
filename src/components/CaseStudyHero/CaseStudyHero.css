@@ -1,0 +1,18 @@
+.case-hero { padding-top: 30px; }
+.case-back { display: inline-flex; align-items: center; gap: 12px; color: var(--color-muted); padding-block: 12px; }
+.case-back:hover { color: #080808; }
+.case-hero__heading { display: grid; grid-template-columns: 42% 1fr; gap: 52px; align-items: start; margin: 56px 0 48px; }
+.case-hero__eyebrow { margin: 0 0 22px; color: var(--color-muted); font-size: 11px; }
+.case-hero h1 { margin: 0; font-size: clamp(54px, 6vw, 88px); line-height: 1; font-weight: 650; letter-spacing: -3px; overflow-wrap: anywhere; }
+.case-hero__subtitle { margin: 0 0 20px; font-size: clamp(25px, 2.3vw, 34px); line-height: 1.15; letter-spacing: -.8px; }
+.case-hero__summary { margin: 0; max-width: 580px; font-size: 18px; line-height: 1.6; color: var(--color-muted); }
+.case-hero__facts { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 32px; margin: 0 0 44px; padding-block: 26px; border-block: 1px solid var(--color-rule); }
+.case-hero__facts dt { margin: 0 0 12px; color: var(--color-muted); font-size: 10px; }
+.case-hero__facts dd { margin: 0; font-size: 16px; line-height: 1.5; }
+.case-hero__visual { margin: 0; }
+.case-hero__visual button { display: block; position: relative; width: 100%; padding: 36px; background: #eef4f5; border: 1px solid #e3e9e9; cursor: zoom-in; }
+.case-hero__visual img { display: block; width: 100%; height: auto; max-height: 620px; object-fit: contain; }
+.case-hero__enlarge { position: absolute; right: 14px; bottom: 12px; display: grid; place-items: center; width: 30px; height: 30px; border: 1px solid #d4dddf; background: #fff; color: #315a69; font-size: 20px; }
+.case-hero__visual figcaption { margin-top: 14px; font-size: 13px; line-height: 1.6; color: var(--color-muted); }
+@media (max-width: 1023px) { .case-hero__heading { gap: 32px; } .case-hero__facts { gap: 24px; } .case-hero__eyebrow { max-width: 230px; } }
+@media (max-width: 767px) { .case-hero { padding-top: 28px; } .case-hero__heading { grid-template-columns: 1fr; gap: 28px; margin: 34px 0 32px; } .case-hero h1 { font-size: 64px; letter-spacing: -2px; } .case-hero__subtitle { font-size: 29px; } .case-hero__summary { font-size: 17px; } .case-hero__eyebrow { max-width: none; margin-bottom: 14px; } .case-hero__facts { grid-template-columns: 1fr 1fr; gap: 24px; margin-bottom: 28px; } .case-hero__facts dd { font-size: 14px; } .case-hero__visual button { padding: 12px; } }

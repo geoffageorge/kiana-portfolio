@@ -1,4 +1,4 @@
-import { useCallback, useState } from 'react';
+import { lazy, Suspense, useCallback, useState } from 'react';
 import SiteHeader from './components/SiteHeader/SiteHeader.jsx';
 import HeroSection from './components/HeroSection/HeroSection.jsx';
 import SelectedWork from './components/SelectedWork/SelectedWork.jsx';
@@ -6,25 +6,39 @@ import SiteFooter from './components/SiteFooter/SiteFooter.jsx';
 import Modal from './components/Modal/Modal.jsx';
 import { site } from './data/site.js';
 import { projects } from './data/projects.js';
+import { currentProjectSlug, siteUrl } from './lib/urls.js';
+
+const CaseStudyPage = lazy(() => import('./pages/CaseStudyPage.jsx'));
 
 export default function App() {
   const [dialog, setDialog] = useState(null);
   const closeDialog = useCallback(() => setDialog(null), []);
+  const projectSlug = currentProjectSlug();
 
   return (
     <>
       <a className="skip-link" href="#main">Skip to content</a>
       <SiteHeader
         site={site}
+        homeHref={projectSlug ? siteUrl() : '#top'}
+        workHref={projectSlug ? `${siteUrl()}#work` : '#work'}
         onAbout={() => setDialog({ kind: 'about', title: 'A little about me' })}
         onResume={() => setDialog({ kind: 'resume', title: 'Résumé coming soon' })}
       />
       <main id="main" className="page-container" tabIndex={-1}>
-        <HeroSection site={site} />
-        <SelectedWork projects={projects} onSelect={(project) => setDialog({ kind: 'project', title: `Project ${project.number}`, project })} />
+        {projectSlug ? (
+          <Suspense fallback={<p className="case-loading" role="status">Loading project…</p>}>
+            <CaseStudyPage slug={projectSlug} onOpenImage={(image) => setDialog({ kind: 'image', title: image.alt, image })} />
+          </Suspense>
+        ) : <><HeroSection site={site} /><SelectedWork projects={projects} onSelect={(project) => setDialog({ kind: 'project', title: `Project ${project.number}`, project })} /></>}
       </main>
       <SiteFooter site={site} onLinkedIn={() => setDialog({ kind: 'linkedin', title: 'Let’s connect' })} />
-      <Modal open={Boolean(dialog)} onClose={closeDialog} title={dialog?.title ?? ''}>
+      <Modal open={Boolean(dialog)} onClose={closeDialog} title={dialog?.title ?? ''} className={dialog?.kind === 'image' ? 'portfolio-modal--image' : ''}>
+        {dialog?.kind === 'image' && <div className="modal-copy">
+          <img className="modal-evidence-image" src={dialog.image.src} alt={dialog.image.alt} width={dialog.image.width ?? 1200} height={dialog.image.height ?? 750} />
+          {dialog.image.caption && <p className="modal-image-caption">{dialog.image.caption}</p>}
+          <a className="text-link" href={dialog.image.src} target="_blank" rel="noopener noreferrer">Open full-size image <span aria-hidden="true">↗</span></a>
+        </div>}
         {dialog?.kind === 'about' && (
           <div className="modal-copy">
             <p className="eyebrow">Kiana George / UX design + insights</p>

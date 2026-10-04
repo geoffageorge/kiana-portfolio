@@ -7,7 +7,7 @@ test('portfolio renders four projects with working local artwork', async ({ page
   await page.goto('/');
   await expect(page.getByRole('heading', { level: 1 })).toHaveText('ClarifyingChaos');
   await expect(page.getByRole('heading', { name: 'Select Work' })).toBeVisible();
-  const cards = page.getByRole('button', { name: /^View project/ });
+  const cards = page.getByRole('link', { name: /^View project/ });
   await expect(cards).toHaveCount(4);
   for (const card of await cards.all()) {
     await card.scrollIntoViewIfNeeded();
@@ -18,7 +18,7 @@ test('portfolio renders four projects with working local artwork', async ({ page
   expect(errors).toEqual([]);
 });
 
-test('navigation and project dialogs work and restore keyboard focus', async ({ page }) => {
+test('shared navigation dialogs work and restore keyboard focus', async ({ page }) => {
   await page.goto('/');
   const about = page.getByRole('button', { name: 'About', exact: true });
   await about.click();
@@ -31,11 +31,6 @@ test('navigation and project dialogs work and restore keyboard focus', async ({ 
   await page.getByRole('button', { name: 'Resume', exact: true }).click();
   await expect(dialog.getByRole('heading')).toHaveText('Résumé coming soon');
   await page.getByRole('button', { name: 'Close dialog' }).click();
-  const project = page.getByRole('button', { name: /^View project 01/ });
-  await project.click();
-  await expect(dialog.getByRole('heading')).toHaveText('Project 01');
-  await page.keyboard.press('Escape');
-  await expect(project).toBeFocused();
   await page.getByRole('navigation').getByRole('link', { name: 'Contact', exact: true }).click();
   await expect(page).toHaveURL(/#contact$/);
   await expect(page.getByRole('link', { name: 'kianageo@uw.edu', exact: true })).toHaveAttribute('href', 'mailto:kianageo@uw.edu');

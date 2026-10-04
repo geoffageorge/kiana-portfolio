@@ -1,0 +1,19 @@
+.case-section { min-width: 0; padding-block: 62px 72px; border-bottom: 1px solid var(--color-rule); scroll-margin-top: 32px; }
+.case-section:first-child { padding-top: 0; }
+.case-section__header { margin-bottom: 30px; }
+.case-section__header > .eyebrow { margin: 0 0 16px; color: #516873; font-size: 11px; }
+.case-section h2 { margin: 0 0 22px; max-width: 770px; font-size: clamp(30px, 2.8vw, 42px); line-height: 1.15; font-weight: 550; letter-spacing: -1.2px; }
+.case-section__intro { margin: 0; max-width: 760px; font-size: 20px; line-height: 1.6; letter-spacing: -.25px; }
+.case-section__blocks { display: grid; gap: 30px; }
+.case-block__heading { margin: 0 0 22px; font-size: 24px; line-height: 1.3; letter-spacing: -.5px; font-weight: 500; scroll-margin-top: 32px; }
+.case-block--text > p { margin: 0 0 18px; max-width: 780px; font-size: 18px; line-height: 1.7; color: #3f4d54; }
+.case-block--text > p:last-child { margin-bottom: 0; }
+.case-block--text:has(.case-block__heading):not(:first-child) { margin-top: 20px; }
+.case-list { display: grid; gap: 16px; padding: 0; margin: 0; list-style: none; }
+.case-list[data-columns="2"] { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px 26px; }
+.case-list li { display: flex; align-items: baseline; gap: 12px; font-size: 16px; line-height: 1.65; color: #3f4d54; }
+.case-list li::before { content: '+'; flex: 0 0 10px; font-family: var(--font-mono); color: #315a69; }
+.case-insight { margin: 0; padding: 30px; background: #edf5f2; border-left: 2px solid #6dccc2; }
+.case-insight p { margin: 0; font-size: 24px; line-height: 1.4; letter-spacing: -.5px; }
+.case-insight cite { display: block; margin-top: 16px; font-family: var(--font-mono); font-size: 11px; font-style: normal; }
+@media (max-width: 767px) { .case-section { padding-block: 42px 48px; } .case-section h2 { font-size: 31px; letter-spacing: -.8px; } .case-section__intro { font-size: 18px; } .case-block--text > p { font-size: 16px; } .case-block__heading { font-size: 22px; } .case-list[data-columns="2"] { grid-template-columns: 1fr; } .case-insight { padding: 24px; } .case-insight p { font-size: 21px; } }

@@ -1,0 +1,11 @@
+.case-layout { display: grid; grid-template-columns: 170px minmax(0, 1fr); gap: 72px; margin-top: 96px; }
+.case-content { min-width: 0; }
+.case-end { display: flex; align-items: center; justify-content: space-between; gap: 24px; padding-block: 64px 100px; }
+.case-end p { margin: 0; font-size: 11px; color: var(--color-muted); }
+.case-end a { display: inline-flex; align-items: center; gap: 30px; font-size: 27px; line-height: 1.3; letter-spacing: -.8px; }
+.case-end a:hover { color: var(--color-accent); }
+.case-not-found { min-height: 60vh; padding-block: 100px; }
+.case-not-found h1 { margin: 0 0 32px; font-size: 48px; }
+.case-loading { min-height: 65vh; padding-block: 60px; }
+@media (max-width: 1023px) { .case-layout { grid-template-columns: minmax(0, 1fr); gap: 48px; margin-top: 54px; } }
+@media (max-width: 767px) { .case-layout { gap: 42px; margin-top: 44px; } .case-end { flex-direction: column; align-items: flex-start; gap: 16px; padding-block: 40px 66px; } .case-end a { font-size: 24px; } }

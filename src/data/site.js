@@ -1,4 +1,4 @@
-const asset = (path) => `${import.meta.env.BASE_URL}assets/${path}`;
+import { assetUrl as asset } from '../lib/urls.js';
 
 export const site = {
   name: 'Kiana George',

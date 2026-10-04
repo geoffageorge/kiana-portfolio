@@ -1,0 +1,10 @@
+.case-navigation { position: sticky; top: 32px; align-self: start; }
+.case-navigation > p { margin: 0 0 22px; font-size: 10px; color: var(--color-muted); }
+.case-navigation ol { list-style: none; margin: 0; padding: 0; }
+.case-navigation a { display: flex; align-items: baseline; gap: 12px; padding-block: 10px; font-size: 13px; color: #51616a; transition: color 150ms ease; }
+.case-navigation a span { font-family: var(--font-mono); font-size: 10px; color: #8c9b9d; }
+.case-navigation a:hover, .case-navigation a[aria-current] { color: #080808; }
+.case-navigation a[aria-current] { font-weight: 600; }
+.case-navigation .case-navigation__child { padding-top: 0; padding-left: 28px; font-size: 12px; }
+@media (max-width: 1023px) { .case-navigation { position: static; border-block: 1px solid var(--color-rule); padding-block: 24px; } .case-navigation > p { margin-bottom: 10px; } .case-navigation ol { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 4px 18px; } }
+@media (max-width: 767px) { .case-navigation ol { grid-template-columns: 1fr 1fr; } .case-navigation a { font-size: 12px; } }

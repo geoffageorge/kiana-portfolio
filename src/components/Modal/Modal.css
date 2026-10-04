@@ -9,4 +9,8 @@
 .modal-copy .eyebrow { font-size: 11px; color: var(--color-muted); }
 .modal-copy .text-link { justify-self: start; max-width: 100%; overflow-wrap: anywhere; }
 .modal-project-image { width: 100%; max-height: 340px; aspect-ratio: 1; object-fit: cover; }
+.portfolio-modal--image { width: min(1100px, calc(100% - 40px)); }
+.portfolio-modal--image h2 { font-size: 24px; letter-spacing: -.5px; }
+.modal-evidence-image { display: block; width: 100%; height: auto; max-height: 65dvh; object-fit: contain; background: var(--color-paper); }
+.modal-image-caption { color: var(--color-muted); }
 @media (max-width: 767px) { .portfolio-modal__inner { padding: 52px 24px 30px; } .portfolio-modal h2 { font-size: 29px; } .modal-copy p { font-size: 16px; } }

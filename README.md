@@ -46,7 +46,14 @@ src/
   main.jsx                      React entry point
   data/
     site.js                     Brand, hero, email, résumé, LinkedIn
-    projects.js                 Four replaceable project records
+    projects.js                 Home page cards and case-study links
+    projectRoutes.js            Project slugs and page metadata
+    caseStudies/
+      template.js               Reusable six-section template factory
+      pointly.js                Point.ly content, captions, and image mapping
+      index.js                  Project data registry
+  lib/urls.js                   Links and assets on nested pages
+  pages/CaseStudyPage.jsx        Shared project page composition
   styles/global.css             Design tokens, fonts, shared rules
   components/                   Each folder contains JSX and its CSS
     Logo/                       Small six-color brand mark
@@ -60,11 +67,22 @@ src/
     SelectedWork/               Heading and two-column project grid
     SiteFooter/                 Black footer, brand, and contact links
     Modal/                      Accessible reusable native dialog
+    CaseStudyHero/              Project summary, facts, and hero image
+    CaseStudyNavigation/        Section navigation
+    CaseStudySections/          Six independent section components
+    CaseStudySection/           Consistent section layout and content blocks
+    CaseStudyGallery/           Images, stage labels, and captions
+    CaseStudyCards/             Personas, insights, and comparison cards
 public/assets/
   favicon.svg
   hero/                         Looping GIF and static poster
   projects/                     Four original SVG placeholder images
+  pointly/                      21 original images extracted from the source
+projects/                       Static HTML entries for each project page
+pointly project/                Archived source, extracted study, and assets
 scripts/generate-assets.py       Optional artwork regeneration
+scripts/import-pointly.py        Source archive and image extraction
+scripts/scaffold-project-pages.mjs  Generates page entries before dev/build
 tests/portfolio.spec.js          Browser smoke checks
 specs/                          Original specifications, preserved
 Design Template/                Original design reference, preserved
@@ -76,10 +94,33 @@ Design Template/                Original design reference, preserved
 - Set `resumeUrl` to the final résumé URL, for example `${import.meta.env.BASE_URL}assets/resume.pdf`, and place the PDF in `public/assets/`.
 - Set `linkedInUrl` to the actual LinkedIn profile URL. Until these links are supplied, the controls explain that they are coming soon.
 - Put real project artwork in `public/assets/projects/`, then edit each record in `src/data/projects.js`. Replace its title, image, alt text, category, status, and description.
-- Set a project's `caseStudyUrl` to open an actual case study. Without a URL, its card opens a placeholder preview. The initial project titles and imagery are intentionally placeholders, with no invented project results.
+- Each card has a `slug` and `caseStudyUrl` pointing to its project page. Point.ly contains the imported case study; the other pages use the reusable template with labeled placeholder content.
 - Edit the About text in `src/App.jsx` when final biography copy is ready.
 
 The GIF is generated from original gradient rings and orbit lines based on the reference. It includes a pause control and a static poster for visitors who prefer reduced motion. System sans-serif and monospace fonts approximate the reference without remote font requests. The project grid becomes one column on phones.
+
+## Project pages and reusable template
+
+Open `/projects/pointly/` for the Point.ly case study or `/projects/template/` for the six-section template preview. The remaining home page tiles open their own placeholder project pages. All pages reuse `SiteHeader`, `Navigation`, and `SiteFooter`; Work and the header logo return to the home page. Images can be enlarged in an accessible dialog or opened at full size.
+
+The six required modules are **About**, **Deliverable**, **Completed**, **User Persona**, **Research**, and **Design Evolution**, in that order. Each has its own component in `src/components/CaseStudySections/` and uses the shared section layout. The template supplies placeholder text and imagery for all six. Case studies fill those sections with appropriate evidence rather than forcing an unrelated image into each section.
+
+Point.ly includes the source's interview profiles and quotes, research questions and findings, product strategy, early concepts, usability feedback, visual system, onboarding iterations, hackathon, final screens, outcomes, and reflection. All 21 unique source images are used. Product strategy is a subsection of Research; Outcomes and Reflection are optional sections following the six core modules. No quantified business results were supplied or invented.
+
+To add another case study:
+
+1. Add its `{ slug, title, description }` to `src/data/projectRoutes.js`. Page entries are generated automatically before `npm run dev` and `npm run build`.
+2. Add its home card to `src/data/projects.js`, using `assetUrl()` for imagery and `projectUrl(slug)` for its link.
+3. Start with `createProjectTemplate({ slug, title, number, image, imageAlt })` from `src/data/caseStudies/template.js`, then replace the six sections with the project's content.
+4. Register that data in `src/data/caseStudies/index.js`. The shared page needs no layout changes.
+
+Sections accept `text`, `list`, `cards`, `quote`, and `gallery` blocks. Gallery images have `src`, `alt`, optional `width`/`height`, `caption`, and `stage`. Cards support `title`, `body`, `quote`, and `attribution`. Optional sections use the same renderer and can be added to the `sections` array.
+
+For future projects, useful additions are a project overview (role, team, timeline, scope), product strategy, outcomes with measured results when available, reflection and next steps, and a live prototype link when one is provided. The current Point.ly source does not include a working external prototype URL or quantified impact metrics.
+
+The original shareable file is copied byte-for-byte into `pointly project/index.html`. `pointly project/case-study.html` extracts just the Point.ly case study with local image files. Its manifest records original image positions, alt text, dimensions, and checksums. The images are also copied to `public/assets/pointly/` for the new website; the archived source pages are not part of the production site.
+
+The build includes a real `index.html` under every project path, so direct links and reloads work on static hosts without a special SPA redirect. Relative asset paths and `src/lib/urls.js` support publishing the entire `dist/` folder at the domain root or below a directory.
 
 ## Verification
 
@@ -87,6 +128,13 @@ The GIF is generated from original gradient rings and orbit lines based on the r
 npm test
 ```
 
-Browser checks use locally installed Google Chrome. If Chrome is unavailable, install Playwright Chromium (`npx playwright install chromium`) and remove `channel: 'chrome'` from the Playwright configuration. Tests cover media loading, the four project tiles, navigation and dialogs, keyboard focus, animation controls, reduced motion, and responsive overflow.
+To run the same checks against the built website:
+
+```sh
+npm run build
+PORTFOLIO_TEST_TARGET=production npm test
+```
+
+Browser checks use locally installed Google Chrome. If Chrome is unavailable, install Playwright Chromium (`npx playwright install chromium`) and remove `channel: 'chrome'` from the Playwright configuration. Tests cover media loading, the four project tiles, shared navigation and dialogs, project links and reloads, all imported images, image enlargement, the reusable template, keyboard focus, animation controls, reduced motion, and responsive overflow.
 
 The generated artwork is already included; Python is not needed to run or build the website. To regenerate it, install Pillow and NumPy in a Python environment, then run `python3 scripts/generate-assets.py`.

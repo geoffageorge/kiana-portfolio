@@ -1,0 +1,12 @@
+.case-cards { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
+.case-cards[data-columns="2"] { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.case-card { min-width: 0; padding: 24px; border: 1px solid var(--color-rule); background: var(--color-paper); }
+.case-card--emphasis { border-color: #89b4c0; background: #edf5f2; }
+.case-card .case-card__number { margin: 0 0 24px; font-size: 10px; color: #315a69; }
+.case-card h3 { margin: 0 0 16px; font-size: 20px; font-weight: 500; line-height: 1.25; letter-spacing: -.5px; }
+.case-card > p { margin: 0; font-size: 15px; line-height: 1.65; color: #425058; }
+.case-card blockquote { margin: 24px 0 0; padding-left: 15px; border-left: 2px solid #89b4c0; }
+.case-card blockquote:first-child { margin-top: 0; }
+.case-card blockquote p { margin: 0; font-size: 16px; line-height: 1.55; }
+.case-card cite { display: block; margin-top: 12px; font-family: var(--font-mono); font-size: 10px; line-height: 1.5; color: var(--color-muted); font-style: normal; }
+@media (max-width: 767px) { .case-cards, .case-cards[data-columns="2"] { grid-template-columns: 1fr; } .case-card { padding: 24px; } }

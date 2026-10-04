@@ -1,0 +1,186 @@
+[
+  {
+    "index": 1,
+    "file": "01-point-ly-explore-experience.png",
+    "alt": "Point.ly Explore experience",
+    "width": 485,
+    "height": 320,
+    "sha256": "4c0809c213b9741b413ae3392bd9daaf5a89efbad52842e7b923b768911f629e"
+  },
+  {
+    "index": 2,
+    "file": "02-point-ly-travel-profile-report-with-recommended-transfer-strategy.png",
+    "alt": "Point.ly travel profile report with recommended transfer strategy",
+    "width": 1254,
+    "height": 902,
+    "sha256": "f680348f4253b08715023693df290c88163efefd0960f4fc5e54597f610a6e03"
+  },
+  {
+    "index": 3,
+    "file": "03-early-brainstorming-board-with-initial-product-ideas.png",
+    "alt": "Early brainstorming board with initial product ideas",
+    "width": 1584,
+    "height": 890,
+    "sha256": "44d267c9a4438d377e922d3b519a0f6793196b11ae1273e365f0c8f09400bba3"
+  },
+  {
+    "index": 4,
+    "file": "04-point-ly-chrome-extension-pop-up-and-itinerary-comparison-concept.png",
+    "alt": "Point.ly Chrome extension pop-up and itinerary comparison concept",
+    "width": 1126,
+    "height": 848,
+    "sha256": "1b61a64b5d6cf9c91108ca0662c9464d35d3139786dd5ffc1572751b84689a1d"
+  },
+  {
+    "index": 5,
+    "file": "05-point-ly-early-sitemap.png",
+    "alt": "Point.ly early sitemap",
+    "width": 1840,
+    "height": 866,
+    "sha256": "ed04130bf0aa61ce6ff4b42163699856c315d041f8af0e28c77662c18b78b940"
+  },
+  {
+    "index": 6,
+    "file": "06-hand-drawn-sketch-of-an-interactive-map-concept.png",
+    "alt": "Hand-drawn sketch of an interactive map concept",
+    "width": 390,
+    "height": 680,
+    "sha256": "73f23327e5e1152038980c84ae6945bed642547a04ab7555da480c4cf11d9fb4"
+  },
+  {
+    "index": 7,
+    "file": "07-hand-drawn-sketch-of-a-chat-based-personalized-points-report.png",
+    "alt": "Hand-drawn sketch of a chat-based personalized points report",
+    "width": 580,
+    "height": 660,
+    "sha256": "21cea72cc318b8b7ab7fe6f11fba949c922156d3d24b7187c6ca0f4ec5e27f4f"
+  },
+  {
+    "index": 8,
+    "file": "08-prototyped-chat-based-points-strategy-report.png",
+    "alt": "Prototyped chat-based points strategy report",
+    "width": 1200,
+    "height": 812,
+    "sha256": "f9dc0197cf3268f91fe909d3dcde3c90ab88ef51e9ff4da8b42038c41b370ff3"
+  },
+  {
+    "index": 9,
+    "file": "09-polished-award-travel-map-concept-pointly-ai.png",
+    "alt": "Polished award travel map concept, Pointly.ai",
+    "width": 1308,
+    "height": 1046,
+    "sha256": "1291bdb5aa02726a25d9ebfcaa7c9bf7b36f4b21bcca06ecc67adf97ab2c3964"
+  },
+  {
+    "index": 10,
+    "file": "01-point-ly-explore-experience.png",
+    "alt": "Point.ly final Explore search results screen",
+    "width": 485,
+    "height": 320,
+    "sha256": "4c0809c213b9741b413ae3392bd9daaf5a89efbad52842e7b923b768911f629e"
+  },
+  {
+    "index": 11,
+    "file": "11-point-ly-type-and-color-system-heading-scale-paragraph-styles-navy-and-cream-p.png",
+    "alt": "Point.ly type and color system: heading scale, paragraph styles, navy and cream palette",
+    "width": 1334,
+    "height": 960,
+    "sha256": "0eecf518abdbeb36e0b9a221f013b5e62df176899e4ccd02a5ec7a0b69f00244"
+  },
+  {
+    "index": 12,
+    "file": "12-early-onboarding-exploration-sign-up.png",
+    "alt": "Early onboarding exploration, sign up",
+    "width": 1162,
+    "height": 916,
+    "sha256": "acdb92c1942d3f47c563dc2d616a8cb823227ed192c9fa6860fa3f54fd34dc1c"
+  },
+  {
+    "index": 13,
+    "file": "02-point-ly-travel-profile-report-with-recommended-transfer-strategy.png",
+    "alt": "Early onboarding exploration, profile report",
+    "width": 1254,
+    "height": 902,
+    "sha256": "f680348f4253b08715023693df290c88163efefd0960f4fc5e54597f610a6e03"
+  },
+  {
+    "index": 14,
+    "file": "14-final-onboarding-home-airport.png",
+    "alt": "Final onboarding, home airport",
+    "width": 755,
+    "height": 728,
+    "sha256": "89c77c0a99b5c6caf5b752e010293e0527914203d8419f5b7cdd316c2be27ae6"
+  },
+  {
+    "index": 15,
+    "file": "15-final-onboarding-credit-card-points.png",
+    "alt": "Final onboarding, credit card points",
+    "width": 532,
+    "height": 618,
+    "sha256": "c6332c6bc381a4c05a28bf875ecca634182010b782ece9aa3c054e24ccc7934e"
+  },
+  {
+    "index": 16,
+    "file": "16-final-onboarding-goal-on-point-ly.png",
+    "alt": "Final onboarding, goal on Point.ly",
+    "width": 530,
+    "height": 590,
+    "sha256": "68324b62d8ef6eb86a1f8a568f97724c44dae8c612cb83d50ce814abc4ca6b2f"
+  },
+  {
+    "index": 17,
+    "file": "17-final-onboarding-complete.png",
+    "alt": "Final onboarding, complete",
+    "width": 559,
+    "height": 676,
+    "sha256": "f5cee29a12661a13ab9de4abd12446390038693d7bd66c8fea09ee61f36cf5c1"
+  },
+  {
+    "index": 18,
+    "file": "18-ux-berkeley-team-on-hackathon-day.jpg",
+    "alt": "UX@Berkeley team on hackathon day",
+    "width": 2048,
+    "height": 1536,
+    "sha256": "01e5398467f1f92843e71d873faa3eeee319a3dacf56b3b2695c5146cf08d8a9"
+  },
+  {
+    "index": 19,
+    "file": "19-point-ly-homepage-final-design.png",
+    "alt": "Point.ly homepage final design",
+    "width": 1094,
+    "height": 2048,
+    "sha256": "419a07940d28eb08f5e3c77ded170342c19b563658ee8190cfee86e104087787"
+  },
+  {
+    "index": 20,
+    "file": "20-point-ly-onboarding-welcome-screen.png",
+    "alt": "Point.ly onboarding welcome screen",
+    "width": 1740,
+    "height": 1036,
+    "sha256": "21eeae6f9ee02cf3a0cf61aca02158e876f795e6dadf389ea4ea2eff14117dae"
+  },
+  {
+    "index": 21,
+    "file": "21-point-ly-home-airport-selection-screen.png",
+    "alt": "Point.ly home airport selection screen",
+    "width": 1744,
+    "height": 1128,
+    "sha256": "f79589d7fa41e3e7c6dbe837e3325cdf56ecfa8d9ab51a4aa6ee42aa04ea0629"
+  },
+  {
+    "index": 22,
+    "file": "22-point-ly-rewards-program-selection-screen.png",
+    "alt": "Point.ly rewards program selection screen",
+    "width": 1740,
+    "height": 1140,
+    "sha256": "4f5b9264d42dad585908796bed0b4ac9a7e6a4536967edfc0a988ea58f847499"
+  },
+  {
+    "index": 23,
+    "file": "23-point-ly-explore-results-final-design.png",
+    "alt": "Point.ly Explore results final design",
+    "width": 1750,
+    "height": 1142,
+    "sha256": "592d3000ba9cbefc058015828c5d8efe80e5f86156ad293413c5d74f8d507138"
+  }
+]

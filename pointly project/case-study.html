@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Kiana George — Point.ly</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#fbfbfa; --ink:#12130f; --muted:#666861; --line:#e3e4dd;
+    --accent:#ff5d73; --accent-soft:#ffe3e7;
+    box-sizing:border-box;
+    padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+  }
+  *{box-sizing:inherit;}
+  html,body{margin:0;background:var(--bg);color:var(--ink);font-family:'Helvetica Neue',Arial,sans-serif;}
+  .serif{font-family:'Fraunces',Georgia,'Times New Roman',serif;}
+  .wrap{max-width:1160px;margin:0 auto;padding:0 56px;}
+
+  header{display:flex;align-items:center;justify-content:space-between;padding:28px 56px;font-size:15px;}
+  header .logo{font-weight:700;font-size:20px;}
+  nav{display:flex;gap:36px;}
+  nav a{color:inherit;text-decoration:none;}
+  nav a.active{border-bottom:2px solid var(--accent);padding-bottom:4px;}
+  .connect{display:flex;align-items:center;gap:8px;border:1px solid var(--line);border-radius:999px;padding:8px 18px;font-size:14px;}
+  .dot{width:7px;height:7px;border-radius:50%;background:var(--accent);}
+  .back{display:inline-flex;align-items:center;gap:8px;font-size:13px;color:var(--muted);text-decoration:none;margin:8px 0 28px;}
+
+  .hero{padding-bottom:20px;}
+  .hero h1{font-size:60px;margin:0 0 8px;color:var(--accent);font-weight:600;}
+  .hero .tagline{font-size:20px;color:#3d3e37;margin:0 0 22px;max-width:680px;line-height:1.4;}
+  .hero .intro{font-size:15px;color:var(--muted);max-width:720px;line-height:1.6;margin:0 0 36px;}
+
+  .meta{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:40px;border-top:1px solid var(--line);
+    border-bottom:1px solid var(--line);padding:26px 0;margin-bottom:8px;}
+  .meta .label{font-size:11px;letter-spacing:.04em;text-transform:uppercase;color:var(--muted);margin-bottom:6px;}
+  .meta .value{font-size:14px;line-height:1.45;font-weight:500;}
+
+  section.block{padding:52px 0;border-bottom:1px solid var(--line);}
+  .eyebrow{font-size:12px;letter-spacing:.05em;color:var(--muted);display:flex;align-items:center;gap:8px;margin-bottom:16px;}
+  .eyebrow .rule{width:22px;height:2px;background:var(--accent);}
+  .block h2{font-size:30px;margin:0 0 16px;font-weight:700;max-width:680px;}
+  .block p.lede{font-size:16px;line-height:1.6;color:#3d3e37;max-width:700px;margin:0 0 8px;}
+  ul.plain{margin:16px 0 0;padding-left:20px;max-width:680px;}
+  ul.plain li{font-size:15px;line-height:1.6;color:#3d3e37;margin-bottom:6px;}
+
+  .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:28px;}
+  .cards.two{grid-template-columns:repeat(2,1fr);}
+  .card{background:#fff;border:1px solid var(--line);border-radius:12px;padding:22px 20px;}
+  .card h3{font-size:15px;margin:0 0 8px;}
+  .card p{font-size:14px;color:var(--muted);line-height:1.5;margin:0;}
+
+  .quote-card{background:#fff;border:1px solid var(--line);border-radius:12px;padding:22px 26px;
+    max-width:620px;margin-top:24px;position:relative;}
+  .quote-card .q{font-style:italic;font-size:16px;line-height:1.5;margin:0;}
+  .quote-card:before{content:'';position:absolute;left:-1px;top:18px;bottom:18px;width:3px;background:var(--accent);border-radius:2px;}
+
+  .checklist{columns:2;column-gap:32px;margin-top:24px;max-width:720px;}
+  .checklist div{display:flex;gap:10px;align-items:flex-start;font-size:14px;line-height:1.4;margin-bottom:12px;break-inside:avoid;}
+  .checklist .tick{flex:0 0 auto;width:18px;height:18px;border-radius:50%;background:var(--accent-soft);color:var(--accent);
+    display:flex;align-items:center;justify-content:center;font-size:11px;margin-top:1px;}
+
+  .figure{margin-top:28px;}
+  .figure img{width:100%;display:block;border-radius:12px;border:1px solid var(--line);}
+  .shot-frame{border:1px solid var(--line);border-radius:12px;overflow:hidden;background:#fff;
+    box-shadow:0 8px 20px rgba(20,20,10,0.07);}
+  .shot-bar{height:24px;background:#f4f4f1;border-bottom:1px solid var(--line);
+    display:flex;align-items:center;gap:5px;padding:0 10px;}
+  .shot-bar span{width:6px;height:6px;border-radius:50%;background:#d9dad3;}
+  .shot-frame img{display:block;width:100%;height:auto;border:none;box-sizing:border-box;padding:20px;background:#fff;border-radius:6px;}
+  .progress-row{display:flex;align-items:center;gap:14px;margin:28px 0 4px;}
+  .progress-row .pline{flex:1;height:1px;background:var(--line);}
+  .progress-row .plabel{font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);
+    display:flex;align-items:center;gap:8px;white-space:nowrap;}
+  .stage-tag{display:inline-block;font-size:10px;letter-spacing:.04em;text-transform:uppercase;
+    padding:3px 8px;border-radius:5px;margin-bottom:8px;font-weight:600;}
+  .stage-tag.early{background:#f0ede4;color:#8a7d5a;}
+  .stage-tag.final{background:var(--accent-soft);color:var(--accent);}
+  .evo-arrow{display:flex;align-items:center;justify-content:center;color:var(--muted);font-size:20px;padding:8px 0;}
+
+  .meta-group .label{margin-bottom:10px;}
+  .meta-stack{display:grid;gap:18px;}
+  .meta-list{margin:0;padding-left:16px;}
+  .meta-list li{font-size:14px;line-height:1.5;margin:3px 0;}
+  .hero-visual{margin:34px 0 8px;width:100%;overflow:hidden;background:#f3efe7;}
+  .hero-visual img{display:block;width:100%;height:auto;}
+  .insight-lead{font-weight:700;color:#262720;}
+  @media (max-width:860px){ .evo-arrow{transform:rotate(90deg);} }
+
+  /* ---- Recreated final-product mockups (Point.ly's own brand, not the portfolio's) ---- */
+  .pf{--pf-bg:#fdf6e9;--pf-ink:#16213e;--pf-orange:#dd7a45;--pf-muted:#8c8577;--pf-line:#ece2cf;
+    background:var(--pf-bg);font-family:'Helvetica Neue',Arial,sans-serif;color:var(--pf-ink);}
+  .pf-nav{display:flex;align-items:center;justify-content:space-between;padding:16px 28px;background:#fff;border-bottom:1px solid var(--pf-line);}
+  .pf-logo{font-weight:700;font-size:15px;}
+  .pf-nav nav{display:flex;gap:22px;font-size:12px;color:#444;}
+  .pf-login{background:var(--pf-ink);color:#fff;font-size:11px;padding:6px 16px;border-radius:999px;}
+  .pf-hero{display:flex;align-items:center;justify-content:space-between;padding:36px 28px 20px;gap:20px;}
+  .pf-hero h3{font-size:22px;line-height:1.25;margin:0 0 14px;font-weight:700;max-width:280px;}
+  .pf-hero .pf-orange{color:var(--pf-orange);}
+  .pf-hero button{background:var(--pf-ink);color:#fff;border:none;font-size:11px;padding:8px 16px;border-radius:20px;}
+  .pf-illus{flex:0 0 auto;}
+  .pf-search{margin:0 28px 28px;background:#fff;border:1px solid var(--pf-line);border-radius:10px;padding:12px 16px;}
+  .pf-search .tags{display:flex;gap:8px;margin-bottom:10px;}
+  .pf-search .tags span{font-size:10px;background:var(--pf-bg);border-radius:14px;padding:4px 10px;color:#555;}
+  .pf-search .tags span.on{background:var(--pf-ink);color:#fff;}
+  .pf-fields{display:flex;align-items:center;gap:10px;}
+  .pf-fields .f{flex:1;font-size:10px;color:var(--pf-muted);border-right:1px solid var(--pf-line);padding-right:10px;}
+  .pf-fields .f b{display:block;font-size:11px;color:var(--pf-ink);font-weight:500;}
+  .pf-fields button{background:var(--pf-ink);color:#fff;border:none;font-size:11px;padding:8px 16px;border-radius:6px;white-space:nowrap;}
+  .pf-section{text-align:center;padding:26px 28px;}
+  .pf-section h4{font-size:16px;margin:0 0 4px;}
+  .pf-section p{font-size:11px;color:var(--pf-muted);margin:0 0 20px;}
+  .pf-steps{display:flex;justify-content:center;gap:34px;position:relative;}
+  .pf-steps:before{content:'';position:absolute;top:19px;left:15%;right:15%;height:1px;background:var(--pf-line);z-index:0;border-top:2px dashed var(--pf-line);}
+  .pf-step{position:relative;z-index:1;font-size:10px;max-width:110px;}
+  .pf-step .ic{width:38px;height:38px;border-radius:50%;background:#fff;border:1px solid var(--pf-line);
+    display:flex;align-items:center;justify-content:center;margin:0 auto 8px;font-size:14px;color:var(--pf-orange);box-shadow:0 2px 6px rgba(0,0,0,0.04);}
+  .pf-step b{display:block;font-size:11px;margin-bottom:3px;}
+  .pf-step span{color:var(--pf-muted);}
+  .pf-dest{display:flex;justify-content:center;gap:22px;}
+  .pf-dest div{width:80px;}
+  .pf-dest .ov{width:80px;height:100px;border-radius:50%;border:3px solid #d8d8d8;overflow:hidden;margin-bottom:8px;}
+  .pf-dest b{font-size:11px;display:block;}
+  .pf-dest span{font-size:10px;color:var(--pf-muted);}
+  .pf-foot{padding:24px 28px 30px;font-size:11px;}
+  .pf-foot b{display:block;font-size:13px;margin-bottom:8px;}
+  .pf-foot div span{display:block;color:#555;margin-bottom:3px;}
+
+  .pf-alert{margin:16px 28px 0;background:#eaf7ee;color:#2b6b3f;font-size:11px;padding:10px 14px;border-radius:8px;}
+  .pf-explore-body{display:grid;grid-template-columns:150px 1fr;gap:20px;padding:20px 28px 30px;}
+  .pf-filt div{font-size:10px;font-weight:700;margin:12px 0 6px;}
+  .pf-filt label{display:block;font-size:10px;color:#555;margin-bottom:5px;}
+  .pf-flight{background:#fff;border:1px solid var(--pf-line);border-radius:10px;padding:14px 16px;margin-bottom:14px;
+    display:flex;align-items:center;justify-content:space-between;font-size:11px;}
+  .pf-flight .pts{font-weight:700;font-size:13px;}
+  .pf-book{background:#fff;border:1px solid var(--pf-line);border-radius:8px;padding:10px 14px;margin-bottom:8px;
+    display:flex;align-items:center;justify-content:space-between;font-size:11px;}
+  .pf-book .go{background:var(--pf-orange);color:#fff;font-size:10px;padding:5px 12px;border-radius:5px;}
+  .figrow{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:20px;margin-top:28px;align-items:start;}
+  .cap{font-size:12px;color:var(--muted);margin-top:14px;line-height:1.4;}
+
+  .map-mock{border:1px solid var(--line);border-radius:12px;overflow:hidden;background:#fdf8ec;}
+  .map-mock .mm-top{display:flex;align-items:center;gap:16px;padding:10px 14px;background:#fff;
+    border-bottom:1px solid var(--line);font-size:11px;color:#1a2b4c;}
+  .map-mock .mm-logo{font-weight:700;font-size:13px;}
+  .map-mock .mm-nav{flex:1;color:#5a5f6b;}
+  .map-mock .mm-login{background:#f4d35e;border-radius:999px;padding:3px 10px;font-weight:600;}
+  .map-mock .mm-body{display:grid;grid-template-columns:1fr 1.3fr;}
+  .map-mock .mm-panel{padding:12px;display:flex;flex-direction:column;gap:8px;}
+  .map-mock .mm-input{height:16px;background:#fff;border:1px solid var(--line);border-radius:5px;}
+  .map-mock .mm-result{display:flex;gap:8px;align-items:center;background:#fff;border:1px solid var(--line);
+    border-radius:8px;padding:6px;}
+  .map-mock .mm-thumb{width:28px;height:28px;border-radius:5px;background:#e0a838;flex:0 0 auto;}
+  .map-mock .mm-line{height:6px;background:#dcdfd3;border-radius:3px;margin-bottom:4px;width:70px;}
+  .map-mock .mm-line.short{width:40px;}
+  .map-mock .mm-map{overflow:hidden;}
+  .map-mock .mm-map svg{width:100%;height:100%;display:block;}
+
+  .next{display:flex;align-items:center;justify-content:space-between;padding:56px 0 80px;}
+  .next .label{font-size:12px;color:var(--muted);letter-spacing:.04em;text-transform:uppercase;margin-bottom:8px;}
+  .next a{color:var(--ink);text-decoration:none;font-size:28px;font-weight:700;display:flex;align-items:center;gap:14px;}
+  .next a svg{transition:transform .18s ease;}
+  .next a:hover svg{transform:translateX(6px);}
+
+  @media (max-width:860px){
+    header{padding:22px 24px;} header nav{display:none;}
+    .wrap{padding:0 24px;}
+    .hero h1{font-size:40px;}
+    .meta{grid-template-columns:1fr;}
+    .cards,.cards.two,.figrow{grid-template-columns:1fr;}
+    .checklist{columns:1;}
+  }
+
+/* Exact case-study alignment lock */
+.wrap > section.block { display:block !important; width:100% !important; }
+.wrap > section.block > .cards { display:grid !important; width:100% !important; grid-template-columns:repeat(3,minmax(0,1fr)) !important; gap:20px !important; margin-top:28px !important; }
+.wrap > section.block > .cards.two { grid-template-columns:repeat(2,minmax(0,1fr)) !important; }
+.wrap > section.block > h2, .wrap > section.block > p.lede, .wrap > section.block > .cards, .wrap > section.block > .checklist, .wrap > section.block > .figure { clear:both; }
+@media (max-width:860px){ .wrap > section.block > .cards, .wrap > section.block > .cards.two { grid-template-columns:1fr !important; } }
+
+.final-mockups .final-visual{margin-top:34px;}
+.final-mockups .final-visual img{display:block;width:100%;height:auto;border:0;border-radius:0;box-shadow:none;}
+.final-mockups .final-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;align-items:start;margin-top:34px;}
+.final-mockups .final-grid .final-visual{margin-top:0;}
+.final-mockups .cap{font-size:15px;line-height:1.5;color:var(--muted);margin-top:12px;text-align:left;}
+@media(max-width:860px){.final-mockups .final-grid{grid-template-columns:1fr;gap:30px;}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">KG</div>
+  <nav>
+    <a href="#" class="active">Work</a>
+    <a href="#">About</a>
+    <a href="#">Resume</a>
+    <a href="#">Contact</a>
+  </nav>
+  <div class="connect">Let's connect <span class="dot"></span></div>
+</header>
+
+<div class="wrap">
+  <a class="back" href="#" onclick="parent.showHome(); return false;">← Back to work</a>
+
+  <section class="hero">
+    <h1 class="serif">Point.ly</h1>
+    <p class="tagline">Turning Fragmented Loyalty Points Into Travel Possibilities</p>
+    <p class="intro">Point.ly began as a startup concept independently developed by a United Airlines manager. Over two semesters, our UX@Berkeley team developed the idea into a product concept that helps travelers consolidate rewards across credit cards, airlines, and hotels, compare booking options, and make more informed redemption decisions. I contributed across user research and prototyping while leading the product's visual direction and designing key experiences.</p>
+
+    <div class="hero-visual"><img alt="Point.ly Explore experience" src="assets/01-point-ly-explore-experience.png"></div>
+
+    <div class="meta">
+      <div class="meta-group meta-stack">
+        <div><div class="label">Deliverable</div><div class="value">Working MVP</div></div>
+        <div><div class="label">Team</div><div class="value">UX@Berkeley product team</div></div>
+        <div><div class="label">Timeline</div><div class="value">8 months + one-day AI prototyping hackathon</div></div>
+      </div>
+      <div class="meta-group">
+        <div class="label">My Role</div>
+        <ul class="meta-list"><li>UX Research</li><li>Product Design</li><li>AI Prototyping</li><li>Visual Identity</li><li>Homepage</li><li>Explore Experience</li></ul>
+      </div>
+      <div class="meta-group meta-stack">
+        <div><div class="label">Methods</div><ul class="meta-list"><li>Competitive Analysis</li><li>User Interviews</li><li>Product Strategy</li><li>PRD Development</li><li>Prototyping</li><li>Usability Testing</li></ul></div>
+        <div><div class="label">Research</div><ul class="meta-list"><li>10 user interviews</li><li>Usability testing</li></ul></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="eyebrow"><span class="rule"></span>CHALLENGES</div>
+    <div class="cards">
+      <div class="card"><h3>Rewards were scattered across platforms.</h3><p>Travelers accumulated points across credit cards, airlines, and hotels without a clear view of what they could unlock together.</p></div>
+      <div class="card"><h3>Finding the best redemption required expertise.</h3><p>Comparing cash, points, transfer partners, and booking portals meant navigating different values, rules, and systems.</p></div>
+      <div class="card"><h3>Groups lacked a way to combine their rewards.</h3><p>Friends often had significant rewards collectively, but few tools showed what became possible when their points were considered together.</p></div>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="eyebrow"><span class="rule"></span>RESEARCH</div>
+    <h2>Understanding How Travelers Use Their Points</h2>
+    <p class="lede">We analyzed travel portals, loyalty programs, and rewards tools, then interviewed 10 travelers to understand how they tracked, evaluated, and redeemed points.</p>
+    <p class="lede" style="margin-top:16px;">We explored:</p>
+    <ul class="plain">
+      <li>How users tracked rewards across programs</li>
+      <li>How they determined what their points were worth</li>
+      <li>How they compared points and cash</li>
+      <li>Where transfer decisions became difficult</li>
+      <li>How people approached rewards when traveling together</li>
+      <li>Which decisions required the most points expertise</li>
+    </ul>
+    <div class="quote-card"><p class="q">The research reframed the opportunity. Users did not necessarily need more ways to earn points. They needed help understanding the value already sitting in their wallets.</p></div>
+
+    <h2 style="margin-top:44px;">Who We Talked To</h2>
+    <p class="lede">Across 10 interviews, three traveler profiles emerged, each with a different relationship to their points.</p>
+    <div class="cards">
+      <div class="card">
+        <h3>The Strategic Optimizer</h3>
+        <p>Deeply knowledgeable about redemption values and transfer bonuses, but drowning in fragmented tools and decision fatigue.</p>
+        <p class="q" style="font-style:italic;margin-top:10px;">"It's like a restaurant with a 10-page menu — overwhelming."</p>
+        <p style="font-size:12px;color:var(--muted);margin-top:4px;">— Shazzy, user interview</p>
+      </div>
+      <div class="card">
+        <h3>The Aspirational Hacker</h3>
+        <p>Knows basic point mechanics but lacks the trust or patience to optimize fully — no centralized view of balances or transfer value.</p>
+        <p class="q" style="font-style:italic;margin-top:10px;">"I don't know how to transfer points… I just pick whichever looks cheaper."</p>
+        <p style="font-size:12px;color:var(--muted);margin-top:4px;">— Isa, user interview</p>
+      </div>
+      <div class="card">
+        <h3>The Casual Spender</h3>
+        <p>Uses points occasionally through the bank app, prefers simplicity, and isn't sure if they're getting good value.</p>
+        <p class="q" style="font-style:italic;margin-top:10px;">"I didn't even know you could transfer points — it's not publicized."</p>
+        <p style="font-size:12px;color:var(--muted);margin-top:4px;">— Afsaneh, user interview</p>
+      </div>
+    </div>
+
+    <h2 style="margin-top:44px;">What the Research Revealed</h2>
+    <div class="cards two">
+      <div class="card"><h3>A points balance means little without context.</h3><p><span class="insight-lead">A balance alone did not tell travelers what their points could unlock.</span> Users still had to determine transfer value and compare it with paying cash.</p></div>
+      <div class="card"><h3>Rewards expertise created an uneven playing field.</h3><p><span class="insight-lead">Experienced travelers had an advantage because they understood the system.</span> Less experienced users often had access to the same opportunities without knowing how to identify them.</p></div>
+      <div class="card"><h3>Combined rewards could change what was possible.</h3><p><span class="insight-lead">Pooling the picture changed what felt possible.</span> For people traveling together, evaluating shared resources surfaced options that neither individual balance could unlock alone.</p></div>
+      <div class="card"><h3>"Not enough points" did not have to be a dead end.</h3><p><span class="insight-lead">A points shortfall did not have to end the search.</span> It could become another decision point: find an alternative, transfer rewards, or identify a realistic path to closing the gap.</p></div>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="eyebrow"><span class="rule"></span>STRATEGY</div>
+    <h2>Turning Insights Into Product Strategy</h2>
+    <p class="lede">Our research led to a clear product goal: turn scattered loyalty balances into actionable travel possibilities.</p>
+    <div class="checklist">
+      <div><span class="tick">✓</span>Start with what the traveler actually has. Bring rewards across programs into one view so recommendations reflect users' real resources.</div>
+      <div><span class="tick">✓</span>Make value easier to compare. Show points, cash, and card-portal options together rather than forcing users to calculate the tradeoffs themselves.</div>
+      <div><span class="tick">✓</span>Make points expertise more accessible. Use the product to surface transfer opportunities and redemption guidance that typically require deeper rewards knowledge.</div>
+      <div><span class="tick">✓</span>Design for shared travel. Allow travel partners to understand what becomes possible when their rewards are considered together.</div>
+      <div><span class="tick">✓</span>Turn constraints into next steps. When a preferred option is out of reach, surface nearby alternatives or ways to close the points gap.</div>
+    </div>
+    <div class="shot-frame figure" style="max-width:560px;"><div class="shot-bar"><span></span><span></span><span></span></div>
+      <img src="assets/02-point-ly-travel-profile-report-with-recommended-transfer-strategy.png" alt="Point.ly travel profile report with recommended transfer strategy">
+      <div class="cap">The Travel Profile Report — turning a user's points into a concrete transfer plan.</div>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="eyebrow"><span class="rule"></span>DESIGN EVOLUTION</div>
+    <h2>What We Explored, What We Shipped</h2>
+    <p class="lede">Early brainstorming pulled together every idea on the table — a unified points hub, an AI layer that does the work for you, itinerary comparison, a planning chatbot — before narrowing into a single direction. Turning that into a real product meant testing several ways to deliver on the strategy above, and cutting the ones that didn't hold up:</p>
+    <div class="shot-frame figure"><div class="shot-bar"><span></span><span></span><span></span></div><img src="assets/03-early-brainstorming-board-with-initial-product-ideas.png" alt="Early brainstorming board with initial product ideas"></div>
+    <div class="cap">Early brainstorming — consolidating points, an AI "do it for you" layer, itinerary comparison, and a planning chatbot were all on the table.</div>
+
+    <p class="lede" style="margin-top:32px;font-weight:600;color:var(--ink);">1. A companion Chrome extension → a single web app</p>
+    <div class="figrow">
+      <div>
+        <span class="stage-tag early">Explored</span>
+        <div class="shot-frame figure"><div class="shot-bar"><span></span><span></span><span></span></div><img src="assets/04-point-ly-chrome-extension-pop-up-and-itinerary-comparison-concept.png" alt="Point.ly Chrome extension pop-up and itinerary comparison concept"></div>
+        <div class="cap">An in-browser pop-up surfacing price comparisons and recommended add-ons.</div>
+      </div>
+      <div>
+        <span class="stage-tag early">Explored</span>
+        <div class="shot-frame figure"><div class="shot-bar"><span></span><span></span><span></span></div><img src="assets/05-point-ly-early-sitemap.png" alt="Point.ly early sitemap"></div>
+        <div class="cap">A sitemap that still included the extension as an entry point.</div>
+      </div>
+    </div>
+    <p class="lede" style="font-size:13px;color:var(--muted);margin-top:12px;">Scoped out in favor of one focused web experience, once it was clear the core value (comparing points across programs) didn't need a separate browser layer.</p>
+
+    <p class="lede" style="margin-top:40px;font-weight:600;color:var(--ink);">2. A map-and-chat AI concierge → a guided, step-by-step flow</p>
+    <p class="lede" style="font-size:14px;">Two early sketches — an interactive map for browsing destinations, and a chat-based points report — converged into one richer concept: an AI concierge with an award map, a "Sweet Spots" deals guide, and a booking chat.</p>
+    <div class="figrow">
+      <div>
+        <span class="stage-tag early">Sketch</span>
+        <div class="shot-frame figure"><div class="shot-bar"><span></span><span></span><span></span></div><img src="assets/06-hand-drawn-sketch-of-an-interactive-map-concept.png" alt="Hand-drawn sketch of an interactive map concept"></div>
+        <div class="cap">Map concept, sketched.</div>
+      </div>
+      <div>
+        <span class="stage-tag early">Sketch</span>
+        <div class="shot-frame figure"><div class="shot-bar"><span></span><span></span><span></span></div><img src="assets/07-hand-drawn-sketch-of-a-chat-based-personalized-points-report.png" alt="Hand-drawn sketch of a chat-based personalized points report"></div>
+        <div class="cap">Chat report concept, sketched.</div>
+      </div>
+      <div>
+        <span class="stage-tag early">Prototyped</span>
+        <div class="shot-frame figure"><div class="shot-bar"><span></span><span></span><span></span></div><img src="assets/08-prototyped-chat-based-points-strategy-report.png" alt="Prototyped chat-based points strategy report"></div>
+        <div class="cap">Built into a working chat flow.</div>
+      </div>
+      <div>
+        <span class="stage-tag early">Polished</span>
+        <div class="shot-frame figure"><div class="shot-bar"><span></span><span></span><span></span></div><img src="assets/09-polished-award-travel-map-concept-pointly-ai.png" alt="Polished award travel map concept, Pointly.ai"></div>
+        <div class="cap">Combined into an interactive award map.</div>
+      </div>
+    </div>
+    <p class="lede" style="font-size:14px;margin-top:16px;">Usability testing on this direction surfaced real friction — the map tested unevenly and "Sweet Spots" added confusion rather than clarity:</p>
+    <div class="cards two">
+      <div class="card">
+        <p class="q" style="font-style:italic;">"Confusing because [I've] never used a map feature to book a flight... would prefer manual search."</p>
+        <p style="font-size:12px;color:var(--muted);margin-top:4px;">— Johann, usability test</p>
+      </div>
+      <div class="card">
+        <p class="q" style="font-style:italic;">"Did not like sweet spots, found it confusing" — though the map itself tested well for this participant.</p>
+        <p style="font-size:12px;color:var(--muted);margin-top:4px;">— Gabriela, usability test</p>
+      </div>
+    </div>
+    <div class="figrow" style="margin-top:20px;">
+      <div>
+        <span class="stage-tag final">Shipped</span>
+        <div class="shot-frame figure"><div class="shot-bar"><span></span><span></span><span></span></div><img src="assets/01-point-ly-explore-experience.png" alt="Point.ly final Explore search results screen"></div>
+        <div class="cap">A filtered list, faster to scan and compare points across airlines.</div>
+      </div>
+    </div>
+    <p class="lede" style="font-size:13px;color:var(--muted);margin-top:12px;">We shipped a simpler, guided step-by-step flow instead (see Onboarding below), and kept the conversational format for a lighter-weight AI Concierge feature rather than the core report.</p>
+
+    <p class="lede" style="margin-top:40px;font-weight:600;color:var(--ink);">3. A utility-first pitch → a warmer invitation to travel</p>
+    <div class="cards two">
+      <div class="card">
+        <span class="stage-tag early" style="margin-bottom:10px;">V1</span>
+        <p class="q" style="font-style:italic;font-size:18px;">"Sit back, relax, and let AI do it for you."</p>
+      </div>
+      <div class="card" style="border-color:var(--accent);">
+        <span class="stage-tag final" style="margin-bottom:10px;">V2 — shipped</span>
+        <p class="q" style="font-style:italic;font-size:18px;">"No matter where you want to go, Point.ly gets you there."</p>
+      </div>
+    </div>
+    <p class="lede" style="font-size:13px;color:var(--muted);margin-top:12px;">V2's outcome-first framing — leading with the destination, not the automation — tested better and shipped as the final homepage.</p>
+  </section>
+
+  <section class="block">
+    <div class="eyebrow"><span class="rule"></span>DESIGN &amp; PROTOTYPING</div>
+    <h2>Designing a Cohesive Product</h2>
+    <p class="lede">As part of the prototyping team, I worked across individual experiences and the visual system connecting them.</p>
+    <ul class="plain">
+      <li>I established the product's visual direction. I defined typography, color, illustration, and layout principles that became a shared foundation for the team.</li>
+      <li>I designed key entry and discovery experiences. I owned the Homepage and Explore experience, shaping how users understood Point.ly and discovered travel possibilities.</li>
+      <li>I translated research into prototypes. I helped turn user insights and product requirements into low-fidelity flows that we could evaluate and refine before higher-fidelity execution.</li>
+    </ul>
+    <p class="lede" style="margin-top:16px;">Because multiple designers owned different parts of Point.ly, the shared visual language helped turn individually designed features into a more cohesive product.</p>
+
+    <p class="lede" style="font-size:14px;margin-top:16px;">That direction was informed by research into existing AI travel platforms (Mindtrip, Navan, Layla) and aspirational retail brands, converging on a feel the team summarized as "trustworthy, fun, luxury, minimalistic" — then codified into a type and color system.</p>
+    <div class="shot-frame figure"><div class="shot-bar"><span></span><span></span><span></span></div><img src="assets/11-point-ly-type-and-color-system-heading-scale-paragraph-styles-navy-and-cream-p.png" alt="Point.ly type and color system: heading scale, paragraph styles, navy and cream palette"></div>
+    <div class="cap">The type scale and color system used across the product.</div>
+
+    <p class="lede" style="margin-top:28px;font-weight:600;color:var(--ink);">Onboarding, from first draft to final</p>
+    <div class="figrow">
+      <div>
+        <span class="stage-tag early">First draft</span>
+        <div class="shot-frame figure"><div class="shot-bar"><span></span><span></span><span></span></div><img src="assets/12-early-onboarding-exploration-sign-up.png" alt="Early onboarding exploration, sign up"></div>
+        <div class="cap">Generic sign-up, no product branding yet.</div>
+      </div>
+      <div>
+        <span class="stage-tag early">First draft</span>
+        <div class="shot-frame figure"><div class="shot-bar"><span></span><span></span><span></span></div><img src="assets/02-point-ly-travel-profile-report-with-recommended-transfer-strategy.png" alt="Early onboarding exploration, profile report"></div>
+        <div class="cap">Early "Travel Profile Report" concept, before final visual system.</div>
+      </div>
+    </div>
+
+    <div class="progress-row"><div class="pline"></div><div class="plabel">↓ iterated into ↓</div><div class="pline"></div></div>
+
+    <div class="figrow">
+      <div>
+        <span class="stage-tag final">Final</span>
+        <div class="shot-frame figure"><div class="shot-bar"><span></span><span></span><span></span></div><img src="assets/14-final-onboarding-home-airport.png" alt="Final onboarding, home airport"></div>
+        <div class="cap">On-brand home airport step, matching the shipped nav.</div>
+      </div>
+      <div>
+        <span class="stage-tag final">Final</span>
+        <div class="shot-frame figure"><div class="shot-bar"><span></span><span></span><span></span></div><img src="assets/15-final-onboarding-credit-card-points.png" alt="Final onboarding, credit card points"></div>
+        <div class="cap">Adding credit card points, with more than one card supported.</div>
+      </div>
+      <div>
+        <span class="stage-tag final">Final</span>
+        <div class="shot-frame figure"><div class="shot-bar"><span></span><span></span><span></span></div><img src="assets/16-final-onboarding-goal-on-point-ly.png" alt="Final onboarding, goal on Point.ly"></div>
+        <div class="cap">Asking the user's goal, to tailor later recommendations.</div>
+      </div>
+      <div>
+        <span class="stage-tag final">Final</span>
+        <div class="shot-frame figure"><div class="shot-bar"><span></span><span></span><span></span></div><img src="assets/17-final-onboarding-complete.png" alt="Final onboarding, complete"></div>
+        <div class="cap">"(On)Boarding Complete" — straight into flight search.</div>
+      </div>
+    </div>
+
+    <h2 style="margin-top:44px;">From Research to Working Code</h2>
+    <p class="lede">The project culminated in a one-day AI design hackathon focused on moving from validated research to a functional prototype.</p>
+    <ul class="plain">
+      <li>Research became a PRD before it became code. We translated user needs and product decisions into requirements so AI was building toward a defined product direction rather than generating solutions from scratch.</li>
+      <li>AI accelerated the build and introduced a new iteration loop. Using Cursor and Claude, we prompted, evaluated, adjusted, and regenerated the experience as we moved from the PRD to working code. We also experimented with Gemini to compare approaches.</li>
+      <li>By the end of the day, we had something users could actually interact with. The hackathon compressed the path from research to functional prototype while keeping user needs and design judgment at the center of the process.</li>
+    </ul>
+    <div class="figure">
+      <img src="assets/18-ux-berkeley-team-on-hackathon-day.jpg" alt="UX@Berkeley team on hackathon day">
+      <div class="cap">The UX@Berkeley team on hackathon day.</div>
+    </div>
+  </section>
+
+  <section class="block final-mockups">
+  <div class="eyebrow"><span class="rule"></span>THE FINAL PRODUCT</div>
+  <h2>What shipped</h2>
+  <p class="lede">The final experience brought the core journey together—from onboarding and rewards setup to searching and comparing redemption options.</p>
+  <div class="final-visual final-visual-wide"><img src="assets/19-point-ly-homepage-final-design.png" alt="Point.ly homepage final design"><div class="cap">Homepage — a clear entry point for searching and comparing travel with points.</div></div>
+  <div class="final-grid">
+    <div class="final-visual"><img src="assets/20-point-ly-onboarding-welcome-screen.png" alt="Point.ly onboarding welcome screen"><div class="cap">Onboarding begins by explaining how personalization improves results.</div></div>
+    <div class="final-visual"><img src="assets/21-point-ly-home-airport-selection-screen.png" alt="Point.ly home airport selection screen"><div class="cap">Home airport selection grounds recommendations in the traveler’s actual context.</div></div>
+    <div class="final-visual"><img src="assets/22-point-ly-rewards-program-selection-screen.png" alt="Point.ly rewards program selection screen"><div class="cap">Users add the credit card and airline programs they already have.</div></div>
+  </div>
+  <div class="final-visual final-visual-wide"><img src="assets/23-point-ly-explore-results-final-design.png" alt="Point.ly Explore results final design"><div class="cap">Explore — redemption options are compared in one place, including transfer paths and points required.</div></div>
+</section>
+<section class="block">
+    <div class="eyebrow"><span class="rule"></span>THE OUTCOME</div>
+    <p class="lede">Point.ly became a working MVP demonstrating a more connected approach to points-based travel.</p>
+    <div class="cards two">
+      <div class="card"><h3>One experience connected fragmented rewards.</h3><p>Points, preferences, and booking options came together within a shared planning flow.</p></div>
+      <div class="card"><h3>Complex redemption choices became more actionable.</h3><p>The concept helped users compare ways to book and identify alternatives when their preferred option was out of reach.</p></div>
+      <div class="card"><h3>A shared design language unified the product.</h3><p>The visual direction I established gave multiple designers a common foundation for building the MVP.</p></div>
+      <div class="card"><h3>Research moved beyond screens into working code.</h3><p>Our hackathon translated user insights and a defined PRD into a functional AI-assisted prototype that could be demonstrated and tested.</p></div>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="eyebrow"><span class="rule"></span>MY CONTRIBUTION</div>
+    <p class="lede">I contributed across the research-to-prototype process, with primary ownership of Point.ly's visual direction and key product experiences:</p>
+    <div class="checklist">
+      <div><span class="tick">✓</span>10 user interviews</div>
+      <div><span class="tick">✓</span>Competitive analysis and research synthesis</div>
+      <div><span class="tick">✓</span>Usability testing</div>
+      <div><span class="tick">✓</span>Product and feature ideation</div>
+      <div><span class="tick">✓</span>Low-fidelity prototyping</div>
+      <div><span class="tick">✓</span>Homepage and Explore UX/UI</div>
+      <div><span class="tick">✓</span>Visual identity and creative direction</div>
+      <div><span class="tick">✓</span>Typography, color, illustration, and layout system</div>
+      <div><span class="tick">✓</span>Cross-team design consistency</div>
+      <div><span class="tick">✓</span>PRD-to-prototype workflow</div>
+      <div><span class="tick">✓</span>AI-assisted prototyping with Cursor, Claude, and Gemini</div>
+    </div>
+  </section>
+
+  <section class="block" style="border-bottom:none;">
+    <div class="eyebrow"><span class="rule"></span>WHAT I LEARNED</div>
+    <p class="lede">Interviewing travelers with different habits and levels of points expertise taught me to look for patterns across very different perspectives and translate them into product decisions. The hackathon pushed that process further. I translated our research into a PRD, used AI coding tools to build and iterate on a working experience, and tested its usability with users. The biggest lesson was experiencing the full loop: listen, synthesize, build, test, and iterate.</p>
+  </section>
+
+  <div class="next">
+    <div>
+      <div class="label">Next project</div>
+      <a href="#">Go Tour Global
+        <svg width="22" height="16" viewBox="0 0 18 12" fill="none"><path d="M1 6H17M17 6L12 1M17 6L12 11" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
