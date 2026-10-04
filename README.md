@@ -20,9 +20,35 @@ npm run preview
 
 The production output is in `dist/`. Its relative asset paths support hosting at a domain root or under a subdirectory. Upload the contents of `dist/` to a static host when ready.
 
-## Publish through GitHub and Cloudflare Pages
+## Publish through GitHub and Cloudflare Workers
 
-This follows the workflow documented in `Green_Tea/zen-tea-v2/README.md`: push the source repository to GitHub, then connect it to Cloudflare Pages Git integration. Commit `src/`, `public/` (including all artwork and the GIF), the package files, and configuration. `node_modules/`, `dist/`, and browser test output are excluded by `.gitignore`; Cloudflare installs dependencies and builds the website from source.
+The current Cloudflare deployment uses **Workers Builds**: it runs `npm run build`, followed by `npx wrangler deploy`. The root `wrangler.jsonc` configures an assets-only Worker named `kiana-portfolio` and uploads the built website from `dist/`. No Worker script or Cloudflare Vite plugin is required. The `auto-trailing-slash` HTML setting serves nested project entries such as `/projects/pointly/` directly, including on reload.
+
+In the Cloudflare dashboard, open **Workers & Pages → kiana-portfolio → Settings → Build**, and use these settings:
+
+| Setting | Value |
+| --- | --- |
+| Connected repository | `geoffageorge/kiana-portfolio` |
+| Production branch | `main` |
+| Build command | `npm run build` |
+| Deploy command | `npx wrangler deploy` |
+| Root directory | Repository root (leave blank) |
+| Node version | `22.16.0` (already detected in the build log) |
+
+Commit `wrangler.jsonc` along with the source changes and push to `main` to trigger a new build. Re-running the failed deployment's old commit will not include the new configuration. Keep the Wrangler `name` identical to the Cloudflare Worker name. See Cloudflare's [Workers build configuration](https://developers.cloudflare.com/workers/ci-cd/builds/configuration/) and [static HTML routing](https://developers.cloudflare.com/workers/static-assets/routing/static-site-generation/) documentation.
+
+For a local deployment check that does not publish anything:
+
+```sh
+npm run build
+npx wrangler deploy --dry-run
+```
+
+The October 4, 2026 log shows a successful Vite build, followed by `Error parsing file: /opt/buildhome/repo/vite.config.js` during Wrangler deployment. Without a Wrangler configuration, the deploy tool attempted to inspect the Vite configuration. The explicit assets configuration avoids that detection step and publishes the existing static build.
+
+## Alternative: Cloudflare Pages (the Zen Tea workflow)
+
+This follows the workflow documented in `Green_Tea/zen-tea-v2/README.md`: push the source repository to GitHub, then connect it to Cloudflare Pages Git integration. Commit `src/`, `public/` (including all artwork and the GIF), the package files, and configuration. Keep `node_modules/`, `dist/`, and browser test output out of Git; Cloudflare installs dependencies and builds the website from source. These Pages settings are an alternative to the current Workers deployment.
 
 Create a new repository such as `geoffageorge/kiana-portfolio`. In the [Cloudflare dashboard](https://dash.cloudflare.com/), choose **Workers & Pages → Create application → Pages → Connect to Git**, then select the repository.
 
@@ -33,7 +59,7 @@ Create a new repository such as `geoffageorge/kiana-portfolio`. In the [Cloudfla
 | Build command | `npm run build` |
 | Build output directory | `dist` |
 | Root directory | Leave blank |
-| Node version | `22.16.0`, set by `.node-version` |
+| Node version | `22.16.0`, set with the `NODE_VERSION` build environment variable if needed |
 | Environment variables | None required |
 
 Select **Save and Deploy**. Cloudflare gives the project a `pages.dev` URL and automatically republishes changes pushed to `main`. Refer to the official [Git integration guide](https://developers.cloudflare.com/pages/get-started/git-integration/) and [build environment documentation](https://developers.cloudflare.com/pages/configuration/build-image/) for the current dashboard and version settings.
