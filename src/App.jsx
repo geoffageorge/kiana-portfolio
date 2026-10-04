@@ -47,7 +47,7 @@ export default function App() {
         )}
         {dialog?.kind === 'project' && (
           <div className="modal-copy">
-            <img className="modal-project-image" src={dialog.project.image} alt={dialog.project.imageAlt} width="640" height="640" />
+            <img className="modal-project-image" src={dialog.project.image} alt={dialog.project.imageAlt} style={{ objectPosition: dialog.project.imagePosition ?? 'center' }} width="640" height="640" />
             <p className="eyebrow">{dialog.project.category} / Case study coming soon</p>
             <p>{dialog.project.description}</p>
           </div>

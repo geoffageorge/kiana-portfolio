@@ -4,7 +4,7 @@ export default function ProjectCard({ project, onSelect }) {
   const accessibleLabel = `View project ${project.number}: ${project.title}`;
   const contents = (
     <>
-      <div className="project-card__image-wrap"><img src={project.image} alt={project.imageAlt} width="640" height="640" loading="lazy" decoding="async" /></div>
+      <div className="project-card__image-wrap"><img src={project.image} alt={project.imageAlt} style={{ objectPosition: project.imagePosition ?? 'center' }} width="640" height="640" loading="lazy" decoding="async" /></div>
       <div className="project-card__caption">
         <h3>{project.title}</h3>
         <div className="project-card__details">
