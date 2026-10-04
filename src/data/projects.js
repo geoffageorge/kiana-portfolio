@@ -1,0 +1,48 @@
+// Replace a record's image, title, metadata, and description with real work.
+// Set caseStudyUrl to link directly to a case study instead of the preview dialog.
+export const projects = [
+  {
+    id: 'project-01',
+    title: 'Project title goes here',
+    number: '01',
+    category: 'UX + UI design',
+    status: 'Coming soon',
+    image: `${import.meta.env.BASE_URL}assets/projects/project-01.svg`,
+    imageAlt: 'Placeholder artwork with two mobile interface wireframes on a soft green background',
+    description: 'A space for the first project. The final case study will share the challenge, research, design process, and resulting experience.',
+    caseStudyUrl: null,
+  },
+  {
+    id: 'project-02',
+    title: 'Project title goes here',
+    number: '02',
+    category: 'UX + UI design',
+    status: 'Coming soon',
+    image: `${import.meta.env.BASE_URL}assets/projects/project-02.svg`,
+    imageAlt: 'Placeholder artwork with a desktop interface wireframe on a soft blue background',
+    description: 'A space for the second project. Add a project image and the story behind the experience here.',
+    caseStudyUrl: null,
+  },
+  {
+    id: 'project-03',
+    title: 'Project title goes here',
+    number: '03',
+    category: 'UX + UI design',
+    status: 'Coming soon',
+    image: `${import.meta.env.BASE_URL}assets/projects/project-03.svg`,
+    imageAlt: 'Placeholder artwork with mobile interface wireframes on a pale lavender background',
+    description: 'A space for the third project. Add the research insights, key decisions, and final designs when ready.',
+    caseStudyUrl: null,
+  },
+  {
+    id: 'project-04',
+    title: 'Project title goes here',
+    number: '04',
+    category: 'UX + UI design',
+    status: 'Coming soon',
+    image: `${import.meta.env.BASE_URL}assets/projects/project-04.svg`,
+    imageAlt: 'Placeholder artwork with a desktop interface wireframe on a warm sand background',
+    description: 'A space for the fourth project. Add the project story and outcomes when the case study is available.',
+    caseStudyUrl: null,
+  },
+];

@@ -1,0 +1,4 @@
+.section-heading { margin-bottom: 34px; }
+.section-heading h2 { margin: 0 0 4px; font-size: 36px; font-weight: 600; line-height: 1.2; letter-spacing: -1.1px; }
+.section-heading p { margin: 0; }
+@media (max-width: 767px) { .section-heading { margin-bottom: 24px; } .section-heading h2 { font-size: 30px; } }

@@ -1,0 +1,4 @@
+.site-header { display: flex; align-items: center; justify-content: space-between; gap: 32px; padding-top: 48px; padding-bottom: 36px; }
+.site-header__brand { gap: 24px; }
+@media (max-width: 1100px) { .site-header__brand { gap: 16px; } }
+@media (max-width: 767px) { .site-header { flex-wrap: wrap; gap: 24px; padding-top: 28px; padding-bottom: 0; } .site-header__brand { gap: 16px; } }
