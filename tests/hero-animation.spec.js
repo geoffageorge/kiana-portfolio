@@ -70,7 +70,7 @@ test('page background and sticky header work on home and project pages', async (
     await page.goto(path);
     await expect(page.getByRole('heading', { level: 1 })).toBeVisible();
     await expect(page.locator('body')).toHaveCSS('background-color', 'rgb(251, 250, 247)');
-    await expect(page.locator('.site-header')).toHaveCSS('background-color', 'rgb(251, 250, 247)');
+    await expect(page.locator('.site-header')).toHaveCSS('background-color', 'rgba(0, 0, 0, 0)');
     await page.evaluate(() => window.scrollTo({ top: 1200, behavior: 'instant' }));
     const header = await page.locator('.site-header').boundingBox();
     expect(header.y).toBeCloseTo(0);

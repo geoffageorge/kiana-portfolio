@@ -127,7 +127,7 @@ Design Template/                Original design reference, preserved
 
 The hero renders the native SVG from `Assets/clarifying-chaos-solid-colors.html` in `HeroArtwork.jsx` with scoped animation styles in `HeroArtwork.css`. It preserves the original pink, sage, gray, and yellow rings, five moving labels, 10-second CSS cycle, 25 rotating spirograph ellipses with 12–16-second SVG animation cycles, and the final glowing outline and “Clarity” text. Pause freezes both CSS and SVG clocks; Play resumes them; Replay resets both. Reduced-motion visitors see the static final circle and labels. The SVG scales with the hero and has a transparent background.
 
-All page backgrounds use `--color-page: #fbfaf7` in `src/styles/global.css`. The shared header stays at the top while scrolling. Its measured height offsets anchor links and the desktop case-study sidebar so content stays visible below it. System sans-serif and monospace fonts approximate the reference without remote font requests. The project grid becomes one column on phones.
+All page backgrounds use `--color-page: #fbfaf7` in `src/styles/global.css`. The shared header stays at the top while scrolling, with a translucent frosted-glass layer that blurs content behind the sharp navigation text. The glass fades to transparent along its lower edge so scrolling content passes smoothly behind it. Its measured height offsets anchor links and the desktop case-study sidebar so content stays visible below it. System sans-serif and monospace fonts approximate the reference without remote font requests. The project grid becomes one column on phones.
 
 ## Project pages and reusable template
 
