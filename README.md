@@ -84,10 +84,10 @@ src/
   components/                   Each folder contains JSX and its CSS
     Logo/                       Small six-color brand mark
     BrandName/                  Name and UX design descriptor
-    SiteHeader/                 Logo, name, and navigation composition
+    SiteHeader/                 Sticky logo, name, and navigation bar
     Navigation/                 Work, About, Resume, Contact
     HeroSection/                Clarifying Chaos heading and introduction
-    HeroArtwork/                Animated GIF, process labels, pause control
+    HeroArtwork/                Native SVG animation, Pause and Replay controls
     SectionHeading/             Reusable title and subtitle
     ProjectCard/                Independent project image and caption tile
     SelectedWork/               Heading and two-column project grid
@@ -101,7 +101,7 @@ src/
     CaseStudyCards/             Personas, insights, and comparison cards
 public/assets/
   favicon.svg
-  hero/                         Looping GIF and static poster
+  hero/                         Previous GIF and poster (unused by the hero)
   projects/                     Four original SVG placeholder images
   pointly/                      21 original images extracted from the source
 projects/                       Static HTML entries for each project page
@@ -110,6 +110,8 @@ scripts/generate-assets.py       Optional artwork regeneration
 scripts/import-pointly.py        Source archive and image extraction
 scripts/scaffold-project-pages.mjs  Generates page entries before dev/build
 tests/portfolio.spec.js          Browser smoke checks
+tests/hero-animation.spec.js     Original animation comparison and sticky header checks
+Assets/clarifying-chaos-solid-colors.html  Original animation reference
 specs/                          Original specifications, preserved
 Design Template/                Original design reference, preserved
 ```
@@ -123,7 +125,9 @@ Design Template/                Original design reference, preserved
 - Each card has a `slug` and `caseStudyUrl` pointing to its project page. Point.ly contains the imported case study; the other pages use the reusable template with labeled placeholder content.
 - Edit the About text in `src/App.jsx` when final biography copy is ready.
 
-The GIF is generated from original gradient rings and orbit lines based on the reference. It includes a pause control and a static poster for visitors who prefer reduced motion. System sans-serif and monospace fonts approximate the reference without remote font requests. The project grid becomes one column on phones.
+The hero renders the native SVG from `Assets/clarifying-chaos-solid-colors.html` in `HeroArtwork.jsx` with scoped animation styles in `HeroArtwork.css`. It preserves the original pink, sage, gray, and yellow rings, five moving labels, 10-second CSS cycle, 25 rotating spirograph ellipses with 12–16-second SVG animation cycles, and the final glowing outline and “Clarity” text. Pause freezes both CSS and SVG clocks; Play resumes them; Replay resets both. Reduced-motion visitors see the static final circle and labels. The SVG scales with the hero and has a transparent background.
+
+All page backgrounds use `--color-page: #fbfaf7` in `src/styles/global.css`. The shared header stays at the top while scrolling. Its measured height offsets anchor links and the desktop case-study sidebar so content stays visible below it. System sans-serif and monospace fonts approximate the reference without remote font requests. The project grid becomes one column on phones.
 
 ## Project pages and reusable template
 
@@ -161,6 +165,6 @@ npm run build
 PORTFOLIO_TEST_TARGET=production npm test
 ```
 
-Browser checks use locally installed Google Chrome. If Chrome is unavailable, install Playwright Chromium (`npx playwright install chromium`) and remove `channel: 'chrome'` from the Playwright configuration. Tests cover media loading, the four project tiles, shared navigation and dialogs, project links and reloads, all imported images, image enlargement, the reusable template, keyboard focus, animation controls, reduced motion, and responsive overflow.
+Browser checks use locally installed Google Chrome. If Chrome is unavailable, install Playwright Chromium (`npx playwright install chromium`) and remove `channel: 'chrome'` from the Playwright configuration. Tests cover media loading, the four project tiles, shared navigation and dialogs, project links and reloads, all imported images, image enlargement, the reusable template, keyboard focus, animation controls, reduced motion, and responsive overflow. Animation checks compare rendered transforms, opacity, easing, and spirograph rotation with the supplied HTML at 12 times across the cycle and its repeat. Header checks cover scrolling and anchor visibility on every page.
 
 The generated artwork is already included; Python is not needed to run or build the website. To regenerate it, install Pillow and NumPy in a Python environment, then run `python3 scripts/generate-assets.py`.

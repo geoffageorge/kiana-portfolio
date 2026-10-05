@@ -1,5 +1,3 @@
-import { assetUrl as asset } from '../lib/urls.js';
-
 export const site = {
   name: 'Kiana George',
   descriptor: 'UX Design + Insights',
@@ -9,6 +7,4 @@ export const site = {
   // Set these when the final résumé and LinkedIn profile are available.
   resumeUrl: null,
   linkedInUrl: null,
-  heroAnimation: asset('hero/clarifying-chaos.gif'),
-  heroPoster: asset('hero/clarifying-chaos-poster.png'),
 };
