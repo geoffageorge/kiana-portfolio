@@ -1,11 +1,11 @@
-.hero-artwork { width: 100%; max-width: 660px; margin: 0; }
+.hero-artwork { grid-area: artwork; width: 100%; min-width: 0; max-width: 660px; margin: 0; }
 .hero-artwork__svg { display: block; width: 100%; height: auto; overflow: hidden; }
 .hero-artwork .orbit { transform-origin: 600px 450px; animation: chaos-orbit 10s infinite cubic-bezier(.45, 0, .2, 1); }
 .hero-artwork .ring { transform-box: fill-box; transform-origin: center; animation: chaos-resolve 10s infinite cubic-bezier(.65, 0, .25, 1); }
-.hero-artwork .r1 { --x: -145px; --y: -125px; --a: 0deg; }
-.hero-artwork .r2 { --x: 145px; --y: -125px; --a: 90deg; }
-.hero-artwork .r3 { --x: -145px; --y: 125px; --a: 180deg; }
-.hero-artwork .r4 { --x: 145px; --y: 125px; --a: 270deg; }
+.hero-artwork .r1 { --x: calc(var(--hero-offset-x) * -1); --y: calc(var(--hero-offset-y) * -1); --a: 0deg; }
+.hero-artwork .r2 { --x: var(--hero-offset-x); --y: calc(var(--hero-offset-y) * -1); --a: 90deg; }
+.hero-artwork .r3 { --x: calc(var(--hero-offset-x) * -1); --y: var(--hero-offset-y); --a: 180deg; }
+.hero-artwork .r4 { --x: var(--hero-offset-x); --y: var(--hero-offset-y); --a: 270deg; }
 .hero-artwork .threads, .hero-artwork .data { animation: chaos-fade 10s infinite; }
 .hero-artwork .end { transform-origin: 600px 450px; animation: chaos-finish 10s infinite cubic-bezier(.65, 0, .25, 1); }
 .hero-artwork .labels { font: 13px monospace; fill: #234352; }
@@ -23,11 +23,6 @@
 @keyframes chaos-clarity-reveal { 0%, 73% { opacity: 0; } 80%, 90% { opacity: 1; } 94%, 100% { opacity: 0; } }
 @keyframes chaos-final-glow { 0%, 67% { opacity: 0; transform: scale(1); } 78% { opacity: .65; transform: scale(1.18); } 88% { opacity: .4; transform: scale(1.18); } 94%, 100% { opacity: 0; transform: scale(1.18); } }
 
-.hero-artwork__controls { display: flex; justify-content: center; gap: 6px; padding-top: 12px; }
-.hero-artwork__controls button { padding: 8px 18px; border: 1px solid var(--color-rule); border-radius: 28px; background: transparent; color: var(--color-muted); font-family: var(--font-mono); font-size: 11px; }
-.hero-artwork__controls button:hover { border-color: var(--color-muted); color: #080808; }
-.hero-artwork--paused * { animation-play-state: paused !important; }
 .hero-artwork--reduced .orbit, .hero-artwork--reduced .threads, .hero-artwork--reduced .data { display: none; }
 .hero-artwork--reduced * { animation: none !important; }
 .hero-artwork--reduced .end, .hero-artwork--reduced .clarity { opacity: 1; }
-@media (max-width: 767px) { .hero-artwork { max-width: 560px; margin-inline: auto; } }

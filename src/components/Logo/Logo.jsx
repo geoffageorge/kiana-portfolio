@@ -1,14 +1,8 @@
+import { assetUrl } from '../../lib/urls.js';
 import './Logo.css';
 
 export default function Logo({ className = '' }) {
   return (
-    <svg className={`brand-logo ${className}`} viewBox="0 0 54 36" fill="none" aria-hidden="true" focusable="false">
-      <path d="M0 10A10 10 0 0 1 10 0H17V17H0Z" fill="#89B4C0" />
-      <path d="M18 10A10 10 0 0 1 28 0H35V17H18Z" fill="#ED2383" />
-      <path d="M36 17A9 9 0 0 1 54 17Z" fill="#F8DC20" />
-      <path d="M0 18H17V26A10 10 0 0 1 7 36H0Z" fill="#F9A322" />
-      <path d="M18 18H35V36H28A10 10 0 0 1 18 26Z" fill="#6DCCC2" />
-      <path d="M36 28A10 10 0 0 1 46 18H54V26A10 10 0 0 1 44 36H36Z" fill="#ABE34F" />
-    </svg>
+    <img className={`brand-logo ${className}`} src={assetUrl('brand/ki-logo.jpg')} width="54" height="36" alt="" aria-hidden="true" />
   );
 }

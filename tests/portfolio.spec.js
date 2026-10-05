@@ -38,23 +38,16 @@ test('shared navigation dialogs work and restore keyboard focus', async ({ page 
   await expect(dialog.getByRole('heading')).toHaveText('Let’s connect');
 });
 
-test('animation can be paused and respects reduced motion', async ({ page }) => {
+test('animation loops continuously and respects reduced motion', async ({ page }) => {
   await page.goto('/');
   const animation = page.locator('.hero-artwork__svg');
   await expect(animation).toBeVisible();
   await expect(animation.locator('.ring')).toHaveCount(4);
-  await page.getByRole('button', { name: 'Pause hero animation' }).click();
-  await expect.poll(() => animation.evaluate(svg => svg.animationsPaused() && svg.getAnimations({ subtree: true }).every(item => item.playState === 'paused'))).toBe(true);
-  const pausedTime = await animation.evaluate(svg => svg.getCurrentTime());
+  await expect(page.getByRole('button', { name: /(?:Pause|Play|Replay) hero animation/ })).toHaveCount(0);
+  const startTime = await animation.evaluate(svg => svg.getCurrentTime());
   await page.waitForTimeout(200);
-  expect(await animation.evaluate(svg => svg.getCurrentTime())).toBeCloseTo(pausedTime, 5);
-  await page.getByRole('button', { name: 'Play hero animation', exact: true }).click();
-  await expect.poll(() => animation.evaluate(svg => !svg.animationsPaused() && svg.getAnimations({ subtree: true }).every(item => item.playState === 'running'))).toBe(true);
-  await page.getByRole('button', { name: 'Pause hero animation' }).click();
-  await page.getByRole('button', { name: 'Replay hero animation' }).click();
-  await expect(page.getByRole('button', { name: 'Pause hero animation' })).toHaveAttribute('aria-pressed', 'false');
-  expect(await animation.evaluate(svg => svg.getCurrentTime())).toBeLessThan(1);
-  expect(await animation.evaluate(svg => svg.getAnimations({ subtree: true }).every(item => item.currentTime < 1000 && item.playState === 'running'))).toBe(true);
+  expect(await animation.evaluate(svg => svg.getCurrentTime())).toBeGreaterThan(startTime);
+  expect(await animation.evaluate(svg => !svg.animationsPaused() && svg.getAnimations({ subtree: true }).every(item => item.playState === 'running' && item.effect.getTiming().iterations === Infinity))).toBe(true);
   await page.emulateMedia({ reducedMotion: 'reduce' });
   await expect(animation.locator('.orbit')).not.toBeVisible();
   await expect(animation.locator('.clarity')).toHaveCSS('opacity', '1');

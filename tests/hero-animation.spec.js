@@ -31,9 +31,25 @@ async function sample(svg, seconds) {
 
 test('hero matches the original rings, labels, fades, and spirograph throughout the cycle', async ({ page }) => {
   const source = await readFile(new URL('../Assets/clarifying-chaos-solid-colors.html', import.meta.url), 'utf8');
+  const settings = JSON.parse(await readFile(new URL('../src/data/heroArtwork.json', import.meta.url), 'utf8'));
   const reference = await page.context().newPage();
   try {
     await reference.setContent(source);
+    // Saved movement/framing choices intentionally change the source defaults.
+    // Apply those choices to the reference while preserving its original timing.
+    await reference.locator('svg').evaluate((svg, values) => {
+      const { viewBox, movement } = values;
+      svg.setAttribute('viewBox', `${viewBox.x} ${viewBox.y} ${viewBox.width} ${viewBox.height}`);
+      svg.querySelectorAll('.ring').forEach((ring, index) => {
+        ring.style.setProperty('--x', `${index % 2 ? movement.x : -movement.x}px`);
+        ring.style.setProperty('--y', `${index < 2 ? -movement.y : movement.y}px`);
+      });
+      svg.querySelectorAll('.pill').forEach(label => {
+        for (const name of ['--px', '--py', '--qx', '--qy']) {
+          label.style.setProperty(name, `${parseFloat(label.style.getPropertyValue(name)) * movement.labelSpread / 100}px`);
+        }
+      });
+    }, settings);
     await page.goto('/');
     const original = reference.locator('svg');
     const actual = page.locator('.hero-artwork__svg');
@@ -69,7 +85,7 @@ test('page background and sticky header work on home and project pages', async (
   for (const path of ['/', '/projects/pointly/', '/projects/template/', '/projects/obayashi/', '/projects/project-03/', '/projects/project-04/']) {
     await page.goto(path);
     await expect(page.getByRole('heading', { level: 1 })).toBeVisible();
-    await expect(page.locator('body')).toHaveCSS('background-color', 'rgb(251, 250, 247)');
+    await expect(page.locator('body')).toHaveCSS('background-color', 'rgb(252, 252, 248)');
     await expect(page.locator('.site-header')).toHaveCSS('background-color', 'rgba(0, 0, 0, 0)');
     await page.evaluate(() => window.scrollTo({ top: 1200, behavior: 'instant' }));
     const header = await page.locator('.site-header').boundingBox();

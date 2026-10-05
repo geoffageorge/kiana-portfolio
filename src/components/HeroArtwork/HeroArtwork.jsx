@@ -20,11 +20,10 @@ const data = Array.from({ length: 32 }, (_, index) => {
   return { x: 600 + Math.cos(angle) * radius, y: 450 + Math.sin(angle) * radius, text: index % 3 ? '1' : '0' };
 });
 
-export default function HeroArtwork() {
+export default function HeroArtwork({ settings }) {
   const svgRef = useRef(null);
   const id = useId();
   const gradientId = `${id}-ocean`;
-  const [paused, setPaused] = useState(false);
   const [reduceMotion, setReduceMotion] = useState(() => window.matchMedia('(prefers-reduced-motion: reduce)').matches);
 
   useEffect(() => {
@@ -36,24 +35,16 @@ export default function HeroArtwork() {
 
   useEffect(() => {
     const svg = svgRef.current;
-    if (paused || reduceMotion) svg.pauseAnimations();
+    if (reduceMotion) svg.pauseAnimations();
     else svg.unpauseAnimations();
-  }, [paused, reduceMotion]);
+  }, [reduceMotion]);
 
-  const replay = () => {
-    const svg = svgRef.current;
-    setPaused(false);
-    svg.unpauseAnimations();
-    svg.setCurrentTime(0);
-    svg.getAnimations({ subtree: true }).forEach(animation => {
-      animation.currentTime = 0;
-      animation.play();
-    });
-  };
+  const { viewBox, movement } = settings;
+  const labelScale = movement.labelSpread / 100;
 
   return (
-    <figure className={`hero-artwork${paused ? ' hero-artwork--paused' : ''}${reduceMotion ? ' hero-artwork--reduced' : ''}`}>
-      <svg ref={svgRef} className="hero-artwork__svg" viewBox="0 0 1200 900" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby={`${id}-title ${id}-desc`}>
+    <figure className={`hero-artwork${reduceMotion ? ' hero-artwork--reduced' : ''}`} style={{ maxWidth: `${settings.maxWidth}px`, '--hero-offset-x': `${movement.x}px`, '--hero-offset-y': `${movement.y}px` }}>
+      <svg ref={svgRef} className="hero-artwork__svg" viewBox={`${viewBox.x} ${viewBox.y} ${viewBox.width} ${viewBox.height}`} xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby={`${id}-title ${id}-desc`}>
         <title id={`${id}-title`}>Clarifying the chaos</title>
         <desc id={`${id}-desc`}>Pink, sage, gray and yellow solid rings rotate in two dimensions amid a spirograph and research labels, overlap and resolve into a single circle.</desc>
         <defs>
@@ -82,7 +73,7 @@ export default function HeroArtwork() {
         </foreignObject>
         <g className="labels" textAnchor="middle" style={{ fontSize: '17px' }}>
           {labels.map(label => (
-            <g className="pill" key={label.text} style={{ '--px': `${label.px}px`, '--py': `${label.py}px`, '--qx': `${label.qx}px`, '--qy': `${label.qy}px`, '--stack': `${label.stack}px` }}>
+            <g className="pill" key={label.text} style={{ '--px': `${label.px * labelScale}px`, '--py': `${label.py * labelScale}px`, '--qx': `${label.qx * labelScale}px`, '--qy': `${label.qy * labelScale}px`, '--stack': `${label.stack}px` }}>
               <rect x={label.x} y="745" width={label.width} height="42" rx="21" fill="white" fillOpacity=".95" stroke="#b5c8cb" strokeWidth="1" />
               <text x={label.x + label.width / 2} y="772">{label.text}</text>
             </g>
@@ -90,10 +81,6 @@ export default function HeroArtwork() {
         </g>
         <text className="clarity" x="600" y="450" textAnchor="middle" dominantBaseline="middle">Clarity</text>
       </svg>
-      {!reduceMotion && <div className="hero-artwork__controls">
-        <button type="button" onClick={() => setPaused(value => !value)} aria-label={paused ? 'Play hero animation' : 'Pause hero animation'} aria-pressed={paused}>{paused ? 'Play' : 'Pause'}</button>
-        <button type="button" onClick={replay} aria-label="Replay hero animation">Replay</button>
-      </div>}
     </figure>
   );
 }

@@ -72,6 +72,7 @@ src/
   main.jsx                      React entry point
   data/
     site.js                     Brand, hero, email, résumé, LinkedIn
+    heroArtwork.json            Saved width, viewBox, and movement defaults
     projects.js                 Home page cards and case-study links
     projectRoutes.js            Project slugs and page metadata
     caseStudies/
@@ -82,12 +83,13 @@ src/
   pages/CaseStudyPage.jsx        Shared project page composition
   styles/global.css             Design tokens, fonts, shared rules
   components/                   Each folder contains JSX and its CSS
-    Logo/                       Small six-color brand mark
+    Logo/                       Supplied Ki Logo, at the original displayed size
     BrandName/                  Name and UX design descriptor
     SiteHeader/                 Sticky logo, name, and navigation bar
     Navigation/                 Work, About, Resume, Contact
     HeroSection/                Clarifying Chaos heading and introduction
-    HeroArtwork/                Native SVG animation, Pause and Replay controls
+    HeroArtwork/                Continuous native SVG animation
+    HeroArtworkControls/        Canvas, framing, and movement controls
     SectionHeading/             Reusable title and subtitle
     ProjectCard/                Independent project image and caption tile
     SelectedWork/               Heading and two-column project grid
@@ -101,6 +103,7 @@ src/
     CaseStudyCards/             Personas, insights, and comparison cards
 public/assets/
   favicon.svg
+  brand/                        Original Ki Logo JPG
   hero/                         Previous GIF and poster (unused by the hero)
   projects/                     Four original SVG placeholder images
   pointly/                      21 original images extracted from the source
@@ -109,8 +112,10 @@ pointly project/                Archived source, extracted study, and assets
 scripts/generate-assets.py       Optional artwork regeneration
 scripts/import-pointly.py        Source archive and image extraction
 scripts/scaffold-project-pages.mjs  Generates page entries before dev/build
+scripts/hero-settings-plugin.mjs  Local preview saves for artwork defaults
 tests/portfolio.spec.js          Browser smoke checks
 tests/hero-animation.spec.js     Original animation comparison and sticky header checks
+tests/hero-settings.spec.js      Resize, framing, saving/download, and non-overlap checks
 Assets/clarifying-chaos-solid-colors.html  Original animation reference
 specs/                          Original specifications, preserved
 Design Template/                Original design reference, preserved
@@ -125,9 +130,25 @@ Design Template/                Original design reference, preserved
 - Each card has a `slug` and `caseStudyUrl` pointing to its project page. Point.ly contains the imported case study; the other pages use the reusable template with labeled placeholder content.
 - Edit the About text in `src/App.jsx` when final biography copy is ready.
 
-The hero renders the native SVG from `Assets/clarifying-chaos-solid-colors.html` in `HeroArtwork.jsx` with scoped animation styles in `HeroArtwork.css`. It preserves the original pink, sage, gray, and yellow rings, five moving labels, 10-second CSS cycle, 25 rotating spirograph ellipses with 12–16-second SVG animation cycles, and the final glowing outline and “Clarity” text. Pause freezes both CSS and SVG clocks; Play resumes them; Replay resets both. Reduced-motion visitors see the static final circle and labels. The SVG scales with the hero and has a transparent background.
+The hero renders the native SVG from `Assets/clarifying-chaos-solid-colors.html` in `HeroArtwork.jsx` with scoped animation styles in `HeroArtwork.css`. It preserves the original pink, sage, gray, and yellow rings, five moving labels, 10-second CSS cycle, 25 rotating spirograph ellipses with 12–16-second SVG animation cycles, and the final glowing outline and “Clarity” text. It loops continuously without Pause or Replay buttons. Reduced-motion visitors see the static final circle and labels. The SVG scales with the hero and has a transparent background.
 
-All page backgrounds use `--color-page: #fbfaf7` in `src/styles/global.css`. The shared header stays at the top while scrolling, with a translucent frosted-glass layer that blurs content behind the sharp navigation text. The glass fades to transparent along its lower edge so scrolling content passes smoothly behind it. Its measured height offsets anchor links and the desktop case-study sidebar so content stays visible below it. System sans-serif and monospace fonts approximate the reference without remote font requests. The project grid becomes one column on phones.
+All page backgrounds use `--color-page: #fcfcf8` in `src/styles/global.css`. Each home-page project card has a white background and frame around its image and caption. Header and footer use the original `Assets/Ki Logo.jpg`, copied unchanged to `public/assets/brand/ki-logo.jpg`; it retains the supplied black background. The displayed logo remains 54 × 36 pixels on desktop and 45 × 30 on phones.
+
+The shared header stays at the top while scrolling, with a translucent frosted-glass layer that blurs content behind the sharp navigation text. The glass fades to transparent along its lower edge so scrolling content passes smoothly behind it. Its measured height offsets anchor links and the desktop case-study sidebar so content stays visible below it. System sans-serif and monospace fonts approximate the reference without remote font requests. The project grid becomes one column on phones.
+
+## Hero artwork controls
+
+Open **Adjust hero artwork** below the animation. The controls show both current values and the original starting values:
+
+- Maximum width defaults to 660 pixels, with smaller/larger presets and a numeric field. It is capped by the available column width so it cannot cover the headline or overflow the page.
+- ViewBox defaults to `0 0 1200 900`. Left/top move the framing; width/height change the visible area and canvas proportions. Increasing only height makes the canvas taller. Tight framing can intentionally crop the drawing; SVG overflow is clipped within its canvas.
+- Horizontal/vertical ring offsets default to 145/125 SVG units. Label spread defaults to 100%, scaling the labels’ offsets while keeping their final alignment.
+
+Choose **Apply settings**. When running `npm run dev`, the local Vite server validates and saves these values to `src/data/heroArtwork.json`; reloads and subsequent builds use them. The save endpoint accepts only same-origin requests on the localhost development server and writes only that fixed settings file. Push the changed JSON along with the code to publish the saved defaults.
+
+On the published static website or `npm run preview`, applying settings changes this browser's preview and remembers it across reloads. **Download settings** exports `heroArtwork.json`; replace `src/data/heroArtwork.json` with that file and commit/push it to change the defaults for everyone. A static hosted page cannot write back to the GitHub repository. **Reset to saved** restores the defaults currently in the code. Browser overrides are discarded when the published defaults change.
+
+The controls occupy a separate grid row below the artwork, so opening them does not move the headline downward. The hero reserves space below the navigation on initial load, shrinks the canvas to its available column, and grows vertically to keep the artwork and controls above Select Work. At phone sizes the copy, artwork, and controls stack in that order.
 
 ## Project pages and reusable template
 
