@@ -41,7 +41,7 @@ test('artwork aligns with the desktop brand and stays clear on responsive layout
       expect(bounds.art.top).toBeGreaterThan(bounds.paragraph.bottom);
     } else {
       expect(bounds.art.left).toBeCloseTo(bounds.s + settings.placement.x, 1);
-      expect(bounds.art.top + bounds.art.height / 2).toBeCloseTo(bounds.title.top + bounds.title.height / 2, 1);
+      expect(bounds.title.top + bounds.title.height / 2).toBeCloseTo(bounds.art.top + bounds.art.height / 2 + settings.copyPlacement.y, 1);
       // The requested viewBox extends into the copy column, but its transparent
       // area contains no artwork there. Check the actual visible shapes.
       for (const seconds of [0, 2.5, 5, 7.8, 10.2]) {

@@ -37,7 +37,7 @@ export default function HeroSection({ site }) {
     };
   }, []);
   return (
-    <section ref={sectionRef} className="hero-section" aria-labelledby="hero-title" style={{ '--hero-art-top-gap': `${settings.placement.y}px` }}>
+    <section ref={sectionRef} className="hero-section" aria-labelledby="hero-title" style={{ '--hero-art-top-gap': `${settings.placement.y}px`, '--hero-copy-offset-y': `${settings.copyPlacement.y}px` }}>
       <div className="hero-section__copy">
         <h1 id="hero-title">{site.heroTitle.map((line) => <span className="block" key={line}>{line}</span>)}</h1>
         <p>{site.heroDescription}</p>

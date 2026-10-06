@@ -1,10 +1,13 @@
 import { test, expect } from '@playwright/test';
 test('temporary canvas boundaries and inspector controls are removed, including on old preview URLs', async ({ page }) => {
-  for (const path of ['/', '/?heroDebug=1']) {
+  for (const path of ['/', '/?heroDebug=1', '/?heroAlign=1']) {
     await page.goto(path);
     await expect(page.locator('.hero-artwork__boundary')).toHaveCount(0);
     await expect(page.locator('.hero-debug')).toHaveCount(0);
     await expect(page.getByRole('heading', { name: 'Hero canvas inspector' })).toHaveCount(0);
+    await expect(page.locator('.hero-section__alignment-line,.hero-alignment')).toHaveCount(0);
+    await expect(page.getByRole('heading', { name: 'Align Clarifying Chaos' })).toHaveCount(0);
+    await expect(page.getByRole('button', { name: /Center heading \+ text|Download alignment settings/ })).toHaveCount(0);
     await expect(page.getByRole('button', { name: /Show full animation|Reset to saved values|Download preview settings/ })).toHaveCount(0);
     await expect(page.locator('input[name="placement.x"]')).toHaveCount(0);
   }

@@ -14,5 +14,8 @@
   "placement": {
     "x": 0,
     "y": 20
+  },
+  "copyPlacement": {
+    "y": -26.7
   }
 }
