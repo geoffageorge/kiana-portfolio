@@ -2,7 +2,7 @@ import { useEffect, useId, useRef, useState } from 'react';
 import './HeroArtwork.css';
 
 // Geometry and animation timings come from Assets/clarifying-chaos-solid-colors.html.
-const rings = ['#e8367e', '#afd3b1', '#726d71', '#e5ef18'];
+const rings = ['#9cbabc', '#e5ef18', '#afddb1', '#5fd1d3'];
 const labels = [
   { text: 'INSIGHTS', x: 95, width: 145, px: -50, py: -200, qx: 40, qy: -160, stack: 432.5 },
   { text: 'RESEARCH', x: 246, width: 145, px: 200, py: -350, qx: 150, qy: -300, stack: 281.5 },
@@ -46,10 +46,10 @@ export default function HeroArtwork({ settings }) {
     <figure className={`hero-artwork${reduceMotion ? ' hero-artwork--reduced' : ''}`} style={{ maxWidth: `${settings.maxWidth}px`, '--hero-offset-x': `${movement.x}px`, '--hero-offset-y': `${movement.y}px` }}>
       <svg ref={svgRef} className="hero-artwork__svg" viewBox={`${viewBox.x} ${viewBox.y} ${viewBox.width} ${viewBox.height}`} xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby={`${id}-title ${id}-desc`}>
         <title id={`${id}-title`}>Clarifying the chaos</title>
-        <desc id={`${id}-desc`}>Pink, sage, gray and yellow solid rings rotate in two dimensions amid a spirograph and research labels, overlap and resolve into a single circle.</desc>
+        <desc id={`${id}-desc`}>Blue-gray, yellow, mint and turquoise rings rotate amid a spirograph and research labels, then resolve into a single circle.</desc>
         <defs>
           <linearGradient id={gradientId} x1="0" y1="1" x2="1" y2="0">
-            <stop offset="0" stopColor="#e8367e" /><stop offset=".33" stopColor="#afd3b1" /><stop offset=".66" stopColor="#726d71" /><stop offset="1" stopColor="#e5ef18" />
+            {rings.map((color, index) => <stop key={color} offset={index / 3} stopColor={color} />)}
           </linearGradient>
         </defs>
         <g className="threads" fill="none" strokeWidth="1.1">

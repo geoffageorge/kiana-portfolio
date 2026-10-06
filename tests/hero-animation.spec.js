@@ -41,6 +41,7 @@ test('hero matches the original rings, labels, fades, and spirograph throughout 
       const { viewBox, movement } = values;
       svg.setAttribute('viewBox', `${viewBox.x} ${viewBox.y} ${viewBox.width} ${viewBox.height}`);
       svg.querySelectorAll('.ring').forEach((ring, index) => {
+        ring.setAttribute('stroke', ['#9cbabc', '#e5ef18', '#afddb1', '#5fd1d3'][index]);
         ring.style.setProperty('--x', `${index % 2 ? movement.x : -movement.x}px`);
         ring.style.setProperty('--y', `${index < 2 ? -movement.y : movement.y}px`);
       });
@@ -85,7 +86,7 @@ test('page background and sticky header work on home and project pages', async (
   for (const path of ['/', '/projects/pointly/', '/projects/template/', '/projects/obayashi/', '/projects/project-03/', '/projects/project-04/']) {
     await page.goto(path);
     await expect(page.getByRole('heading', { level: 1 })).toBeVisible();
-    await expect(page.locator('body')).toHaveCSS('background-color', 'rgb(252, 252, 248)');
+    await expect(page.locator('body')).toHaveCSS('background-color', 'rgb(255, 255, 255)');
     await expect(page.locator('.site-header')).toHaveCSS('background-color', 'rgba(0, 0, 0, 0)');
     await page.evaluate(() => window.scrollTo({ top: 1200, behavior: 'instant' }));
     const header = await page.locator('.site-header').boundingBox();

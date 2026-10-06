@@ -89,7 +89,6 @@ src/
     Navigation/                 Work, About, Resume, Contact
     HeroSection/                Clarifying Chaos heading and introduction
     HeroArtwork/                Continuous native SVG animation
-    HeroArtworkControls/        Canvas, framing, and movement controls
     SectionHeading/             Reusable title and subtitle
     ProjectCard/                Independent project image and caption tile
     SelectedWork/               Heading and two-column project grid
@@ -103,7 +102,7 @@ src/
     CaseStudyCards/             Personas, insights, and comparison cards
 public/assets/
   favicon.svg
-  brand/                        Original Ki Logo JPG
+  brand/                        Transparent six-shape Ki Logo PNG
   hero/                         Previous GIF and poster (unused by the hero)
   projects/                     Four original SVG placeholder images
   pointly/                      21 original images extracted from the source
@@ -112,10 +111,9 @@ pointly project/                Archived source, extracted study, and assets
 scripts/generate-assets.py       Optional artwork regeneration
 scripts/import-pointly.py        Source archive and image extraction
 scripts/scaffold-project-pages.mjs  Generates page entries before dev/build
-scripts/hero-settings-plugin.mjs  Local preview saves for artwork defaults
 tests/portfolio.spec.js          Browser smoke checks
 tests/hero-animation.spec.js     Original animation comparison and sticky header checks
-tests/hero-settings.spec.js      Resize, framing, saving/download, and non-overlap checks
+tests/hero-layout.spec.js        Fixed framing, responsive placement, colors, and transparent logo checks
 Assets/clarifying-chaos-solid-colors.html  Original animation reference
 specs/                          Original specifications, preserved
 Design Template/                Original design reference, preserved
@@ -130,25 +128,21 @@ Design Template/                Original design reference, preserved
 - Each card has a `slug` and `caseStudyUrl` pointing to its project page. Point.ly contains the imported case study; the other pages use the reusable template with labeled placeholder content.
 - Edit the About text in `src/App.jsx` when final biography copy is ready.
 
-The hero renders the native SVG from `Assets/clarifying-chaos-solid-colors.html` in `HeroArtwork.jsx` with scoped animation styles in `HeroArtwork.css`. It preserves the original pink, sage, gray, and yellow rings, five moving labels, 10-second CSS cycle, 25 rotating spirograph ellipses with 12–16-second SVG animation cycles, and the final glowing outline and “Clarity” text. It loops continuously without Pause or Replay buttons. Reduced-motion visitors see the static final circle and labels. The SVG scales with the hero and has a transparent background.
+The hero renders the native SVG from `Assets/clarifying-chaos-solid-colors.html` in `HeroArtwork.jsx` with scoped animation styles in `HeroArtwork.css`. It preserves the five moving labels, 10-second CSS cycle, 25 rotating spirograph ellipses with 12–16-second SVG animation cycles, and the final glowing outline and “Clarity” text. The four ring colors are `#9cbabc`, `#e5ef18`, `#afddb1`, and `#5fd1d3`; the spirograph and final outline use the same palette. It starts automatically and loops continuously. Reduced-motion visitors see the static final circle and labels. The SVG has a transparent background.
 
-All page backgrounds use `--color-page: #fcfcf8` in `src/styles/global.css`. Each home-page project card has a white background and frame around its image and caption. Header and footer use the original `Assets/Ki Logo.jpg`, copied unchanged to `public/assets/brand/ki-logo.jpg`; it retains the supplied black background. The displayed logo remains 54 × 36 pixels on desktop and 45 × 30 on phones.
+All page backgrounds use `--color-page: #fff` in `src/styles/global.css`. Each home-page project card has white space around its image and caption. The original thin horizontal and vertical rules delineate the cards, with no gutters between them. The project grid becomes one column on phones.
 
-The shared header stays at the top while scrolling, with a translucent frosted-glass layer that blurs content behind the sharp navigation text. The glass fades to transparent along its lower edge so scrolling content passes smoothly behind it. Its measured height offsets anchor links and the desktop case-study sidebar so content stays visible below it. System sans-serif and monospace fonts approximate the reference without remote font requests. The project grid becomes one column on phones.
+Header and footer use `public/assets/brand/ki-logo.png`, a transparent extraction of the six colored shapes in `Assets/Ki Logo.jpg`. The displayed logo remains 54 × 36 pixels on desktop and 45 × 30 on phones. The replacement was made with the built-in imagegen tool; its exact extraction prompt is recorded in `Assets/ki-logo-transparent-prompt.txt`.
 
-## Hero artwork controls
+The shared header stays at the top while scrolling, with a translucent frosted-glass layer that blurs content behind the sharp navigation text. The glass fades to transparent along its lower edge so scrolling content passes smoothly behind it. Its measured height offsets anchor links and the desktop case-study sidebar so content stays visible below it. System sans-serif and monospace fonts approximate the reference without remote font requests.
 
-Open **Adjust hero artwork** below the animation. The controls show both current values and the original starting values:
+## Hero artwork placement
 
-- Maximum width defaults to 660 pixels, with smaller/larger presets and a numeric field. It is capped by the available column width so it cannot cover the headline or overflow the page.
-- ViewBox defaults to `0 0 1200 900`. Left/top move the framing; width/height change the visible area and canvas proportions. Increasing only height makes the canvas taller. Tight framing can intentionally crop the drawing; SVG overflow is clipped within its canvas.
-- Horizontal/vertical ring offsets default to 145/125 SVG units. Label spread defaults to 100%, scaling the labels’ offsets while keeping their final alignment.
+`src/data/heroArtwork.json` contains the settings copied from `Assets/heroArtwork-1.json`: viewBox `0 0 900 900`, maximum width 960 pixels, zero horizontal/vertical ring offsets, and 80% label spread. All visitors use these fixed settings; the former adjustment controls, browser overrides, and local save endpoint have been removed. Edit the data file to change future published settings.
 
-Choose **Apply settings**. When running `npm run dev`, the local Vite server validates and saves these values to `src/data/heroArtwork.json`; reloads and subsequent builds use them. The save endpoint accepts only same-origin requests on the localhost development server and writes only that fixed settings file. Push the changed JSON along with the code to publish the saved defaults.
+The zero offsets place all four opaque rings at the same center, so they overlap during the opening phase. The chosen 900 × 900 viewBox also crops parts of the drawing and rightmost label during portions of the cycle. These are the saved framing choices, while the original animation timings and indefinite repeat behavior remain intact.
 
-On the published static website or `npm run preview`, applying settings changes this browser's preview and remembers it across reloads. **Download settings** exports `heroArtwork.json`; replace `src/data/heroArtwork.json` with that file and commit/push it to change the defaults for everyone. A static hosted page cannot write back to the GitHub repository. **Reset to saved** restores the defaults currently in the code. Browser overrides are discarded when the published defaults change.
-
-The controls occupy a separate grid row below the artwork, so opening them does not move the headline downward. The hero reserves space below the navigation on initial load, shrinks the canvas to its available column, and grows vertically to keep the artwork and controls above Select Work. At phone sizes the copy, artwork, and controls stack in that order.
+On desktop (1024 pixels and wider), the canvas's left edge aligns with the first S in the header's INSIGHTS. Its top edge sits halfway between the navigation bar's bottom and the Clarifying Chaos heading's top on initial load. Measurements update on resizing without changing when the sticky header is scrolled. The canvas shrinks to the available page width and occupies normal grid space, keeping Select Work below it. On phones and tablets, the heading and artwork stack with a gap to preserve legibility.
 
 ## Project pages and reusable template
 
@@ -186,6 +180,6 @@ npm run build
 PORTFOLIO_TEST_TARGET=production npm test
 ```
 
-Browser checks use locally installed Google Chrome. If Chrome is unavailable, install Playwright Chromium (`npx playwright install chromium`) and remove `channel: 'chrome'` from the Playwright configuration. Tests cover media loading, the four project tiles, shared navigation and dialogs, project links and reloads, all imported images, image enlargement, the reusable template, keyboard focus, animation controls, reduced motion, and responsive overflow. Animation checks compare rendered transforms, opacity, easing, and spirograph rotation with the supplied HTML at 12 times across the cycle and its repeat. Header checks cover scrolling and anchor visibility on every page.
+Browser checks use locally installed Google Chrome. If Chrome is unavailable, install Playwright Chromium (`npx playwright install chromium`) and remove `channel: 'chrome'` from the Playwright configuration. Tests cover media loading, the four project tiles, shared navigation and dialogs, project links and reloads, all imported images, image enlargement, the reusable template, keyboard focus, automatic animation startup and a complete repeat after 10 seconds, reduced motion, fixed artwork settings, transparent logo pixels, and responsive overflow. Animation checks compare rendered transforms, opacity, easing, and spirograph rotation with the supplied HTML at 12 times across the cycle and its repeat. Header checks cover scrolling and anchor visibility on every page.
 
 The generated artwork is already included; Python is not needed to run or build the website. To regenerate it, install Pillow and NumPy in a Python environment, then run `python3 scripts/generate-assets.py`.

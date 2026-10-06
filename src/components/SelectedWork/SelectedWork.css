@@ -1,3 +1,5 @@
 .selected-work { padding-bottom: 120px; }
-.selected-work__grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; }
-@media (max-width: 767px) { .selected-work { padding-bottom: 70px; } .selected-work__grid { grid-template-columns: 1fr; gap: 16px; } }
+.selected-work__grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); background: #fff; }
+.selected-work__grid > :nth-child(odd) { border-right: 1px solid var(--color-rule); }
+.selected-work__grid > :nth-child(n + 3) { border-top: 0; }
+@media (max-width: 767px) { .selected-work { padding-bottom: 70px; } .selected-work__grid { grid-template-columns: 1fr; } .selected-work__grid > :nth-child(odd) { border-right: 0; } .selected-work__grid > :nth-child(n + 2) { border-top: 0; } }

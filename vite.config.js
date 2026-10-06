@@ -3,10 +3,9 @@ import react from '@vitejs/plugin-react';
 import tailwindcss from '@tailwindcss/vite';
 import { resolve } from 'node:path';
 import { projectRoutes } from './src/data/projectRoutes.js';
-import { heroSettingsPlugin } from './scripts/hero-settings-plugin.mjs';
 
 export default defineConfig({
-  plugins: [react(), tailwindcss(), heroSettingsPlugin(import.meta.dirname)],
+  plugins: [react(), tailwindcss()],
   base: './',
   build: {
     rolldownOptions: {

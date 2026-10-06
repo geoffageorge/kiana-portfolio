@@ -48,6 +48,12 @@ test('animation loops continuously and respects reduced motion', async ({ page }
   await page.waitForTimeout(200);
   expect(await animation.evaluate(svg => svg.getCurrentTime())).toBeGreaterThan(startTime);
   expect(await animation.evaluate(svg => !svg.animationsPaused() && svg.getAnimations({ subtree: true }).every(item => item.playState === 'running' && item.effect.getTiming().iterations === Infinity))).toBe(true);
+  // Let the actual page clock cross a complete 10-second cycle, without seeking
+  // or clicking any controls, to verify automatic looping after initial load.
+  await expect.poll(() => animation.evaluate(svg => svg.getAnimations({ subtree: true }).every(item => item.playState === 'running' && item.effect.getComputedTiming().currentIteration >= 1)), { timeout: 15000 }).toBe(true);
+  expect(await animation.evaluate(svg => svg.getCurrentTime())).toBeGreaterThan(10);
+  await page.reload();
+  await expect.poll(() => animation.evaluate(svg => !svg.animationsPaused() && svg.getCurrentTime() > .1 && svg.getAnimations({ subtree: true }).length === 15)).toBe(true);
   await page.emulateMedia({ reducedMotion: 'reduce' });
   await expect(animation.locator('.orbit')).not.toBeVisible();
   await expect(animation.locator('.clarity')).toHaveCSS('opacity', '1');
