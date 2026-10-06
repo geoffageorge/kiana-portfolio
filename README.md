@@ -138,11 +138,11 @@ The shared header stays at the top while scrolling, with a translucent frosted-g
 
 ## Hero artwork placement
 
-`src/data/heroArtwork.json` contains the settings copied from `Assets/heroArtwork-1.json`: viewBox `0 0 900 900`, maximum width 960 pixels, zero horizontal/vertical ring offsets, and 80% label spread. All visitors use these fixed settings; the former adjustment controls, browser overrides, and local save endpoint have been removed. Edit the data file to change future published settings.
+`src/data/heroArtwork.json` and `Assets/heroArtwork-1.json` contain the fixed settings: viewBox `0 0 900 900`, maximum width 960 pixels, horizontal/vertical ring offsets of 200 SVG units each, and 80% label spread. All visitors use these settings; the former adjustment controls, browser overrides, and local save endpoint have been removed. Keep both JSON files synchronized when changing future published settings.
 
-The zero offsets place all four opaque rings at the same center, so they overlap during the opening phase. The chosen 900 × 900 viewBox also crops parts of the drawing and rightmost label during portions of the cycle. These are the saved framing choices, while the original animation timings and indefinite repeat behavior remain intact.
+The 200-unit offsets spread the four rings around the center during the opening phase. The chosen 900 × 900 viewBox crops parts of the drawing and rightmost label during portions of the cycle. The original animation timings and indefinite repeat behavior remain intact.
 
-On desktop (1024 pixels and wider), the canvas's left edge aligns with the first S in the header's INSIGHTS. Its top edge sits halfway between the navigation bar's bottom and the Clarifying Chaos heading's top on initial load. Measurements update on resizing without changing when the sticky header is scrolled. The canvas shrinks to the available page width and occupies normal grid space, keeping Select Work below it. On phones and tablets, the heading and artwork stack with a gap to preserve legibility.
+On desktop (1024 pixels and wider), the canvas's left edge aligns with the first S in the header's INSIGHTS. The center of the two-line Clarifying Chaos heading aligns with the canvas's vertical midpoint, directly to its left. The canvas starts 32 pixels below the navigation bar; the heading adjusts to its center so neither needs to overlap the navigation. Measurements update on resizing without changing when the sticky header is scrolled. The canvas shrinks to the available page width and occupies normal grid space, keeping Select Work below it. On phones and tablets, the heading and artwork stack with a gap to preserve legibility.
 
 ## Project pages and reusable template
 

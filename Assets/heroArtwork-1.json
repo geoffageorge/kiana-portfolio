@@ -6,8 +6,8 @@
     "height": 900
   },
   "movement": {
-    "x": 0,
-    "y": 0,
+    "x": 200,
+    "y": 200,
     "labelSpread": 80
   },
   "maxWidth": 960

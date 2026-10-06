@@ -11,8 +11,7 @@ export default function HeroSection({ site }) {
     const header = document.querySelector('.site-header');
     const descriptor = header.querySelector('.brand-name__descriptor');
     const updatePlacement = () => {
-      // Measure in document coordinates so resizing while scrolled does not
-      // change the original relationship to the sticky navigation.
+      // Relative coordinates keep the alignment stable while scrolling.
       const bounds = section.getBoundingClientRect();
       const title = section.querySelector('h1').getBoundingClientRect();
       const text = [...descriptor.childNodes].find(node => node.nodeType === Node.TEXT_NODE);
@@ -23,13 +22,13 @@ export default function HeroSection({ site }) {
         range.setEnd(text, index + 3);
         section.style.setProperty('--hero-art-left', `${range.getBoundingClientRect().left - bounds.left}px`);
       }
-      const headerBottom = header.offsetHeight;
-      const titleTop = title.top + window.scrollY;
-      section.style.setProperty('--hero-art-top', `${(headerBottom + titleTop) / 2 - (bounds.top + window.scrollY)}px`);
+      const artwork = section.querySelector('.hero-artwork').getBoundingClientRect();
+      section.style.setProperty('--hero-copy-top', `${artwork.top - bounds.top + (artwork.height - title.height) / 2}px`);
     };
     updatePlacement();
     const observer = new ResizeObserver(updatePlacement);
     observer.observe(header);
+    observer.observe(section.querySelector('.hero-artwork'));
     observer.observe(section.querySelector('.hero-section__copy'));
     window.addEventListener('resize', updatePlacement);
     return () => {
