@@ -143,7 +143,7 @@ The shared header stays at the top while scrolling, with a translucent frosted-g
 
 The 200/200-unit offsets spread the four rings around the center during the opening phase. The chosen 1000 × 900 viewBox provides additional room on the right. The original animation timings and indefinite repeat behavior remain intact.
 
-On desktop (1024 pixels and wider), the canvas's left edge starts 80 pixels left of the first S in the header's INSIGHTS. The center of the two-line Clarifying Chaos heading aligns with the canvas's vertical midpoint, directly to its left. `placement.x` defaults to -80 pixels of horizontal shift from the S anchor. `placement.y` defaults to a 20-pixel gap below the navigation bar; the heading adjusts to its center so neither needs to overlap the navigation. Measurements update on resizing without changing when the sticky header is scrolled. The canvas shrinks to the available page width and occupies normal grid space, keeping Select Work below it. On phones and tablets, the heading and artwork stack with a gap to preserve legibility.
+On desktop (1024 pixels and wider), the canvas's left edge aligns with the first S in the header's INSIGHTS. The center of the two-line Clarifying Chaos heading aligns with the canvas's vertical midpoint, directly to its left. `placement.x` defaults to 0 pixels of horizontal shift from the S anchor. `placement.y` defaults to a 20-pixel gap below the navigation bar; the heading adjusts to its center so neither needs to overlap the navigation. Measurements update on resizing without changing when the sticky header is scrolled. The canvas shrinks to the available page width and occupies normal grid space, keeping Select Work below it. On phones and tablets, the heading and artwork stack with a gap to preserve legibility.
 
 ## Hero artwork settings
 
@@ -151,7 +151,7 @@ The temporary canvas border, center lines, and Hero canvas inspector have been r
 
 | Setting in `src/data/heroArtwork.json` | Saved value | Effect |
 | --- | --- | --- |
-| `placement.x` | `-80` px | Shift the canvas from the S anchor; negative moves left, positive moves right. On desktop its width adapts to the remaining page space. |
+| `placement.x` | `0` px | Shift the canvas from the S anchor; negative moves left, positive moves right. On desktop its width adapts to the remaining page space. |
 | `placement.y` | `20` px | Gap below navigation; increasing it moves the canvas and centered heading down. |
 | `maxWidth` | `960` px | Maximum rendered canvas width, capped by the available page width. |
 | `viewBox.x` | `50` SVG units | Internal frame's left coordinate; increasing it shifts the drawing left within the canvas. |
@@ -163,7 +163,7 @@ The temporary canvas border, center lines, and Hero canvas inspector have been r
 
 Desktop position is calculated in `HeroSection.jsx`: left = page-container left + measured S anchor + `placement.x`; top = navigation bottom + `placement.y`. The height is rendered width × viewBox height ÷ viewBox width. The heading follows the canvas's vertical midpoint. Below 1024 pixels, the canvas stacks beneath the text and desktop position offsets are ignored.
 
-The saved viewBox ends at x=1050 (left 50 + width 1000). The original full framing is `0 0 1200 900`. The tests sample ring boundaries including their strokes, labels, and spirograph through the cycle. Changing the frame width preserves the choreography; reducing circle offsets or label spread changes the movement. Shifting `viewBox.x` alone can trade right-side clipping for left-side clipping. With the chosen -80-pixel placement, INSIGHTS still briefly overlaps the heading during the cycle; moving `placement.x` to 0 separates the frame from the text.
+The saved viewBox ends at x=1050 (left 50 + width 1000). The original full framing is `0 0 1200 900`. The tests sample ring boundaries including their strokes, labels, and spirograph through the cycle. Changing the frame width preserves the choreography; reducing circle offsets or label spread changes the movement. Shifting `viewBox.x` alone can trade right-side clipping for left-side clipping. The chosen 0-pixel placement separates the frame from the text so INSIGHTS stays clear of the heading during the cycle.
 
 ## Project pages and reusable template
 

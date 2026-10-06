@@ -49,7 +49,19 @@ test('artwork aligns with the desktop brand and stays clear on responsive layout
           svg.pauseAnimations(); svg.setCurrentTime(time);
           for (const animation of svg.getAnimations({ subtree: true })) { animation.pause(); animation.currentTime = time * 1000; }
           await new Promise(resolve => requestAnimationFrame(resolve));
-          const copy = ['#hero-title', '.hero-section__copy p'].map(selector => document.querySelector(selector).getBoundingClientRect());
+          // Text containers include empty space to the right of shorter lines.
+          // Check the rendered text fragments so that only text collisions fail.
+          const copy = ['#hero-title', '.hero-section__copy p'].flatMap(selector => {
+            const walker = document.createTreeWalker(document.querySelector(selector), NodeFilter.SHOW_TEXT);
+            const boxes = [];
+            while (walker.nextNode()) {
+              if (!walker.currentNode.textContent.trim()) continue;
+              const range = document.createRange();
+              range.selectNodeContents(walker.currentNode);
+              boxes.push(...range.getClientRects());
+            }
+            return boxes;
+          });
           return [...svg.querySelectorAll('.threads ellipse,.ring,.pill,.end,.clarity')].some(node => {
             if (Number(getComputedStyle(node).opacity) < .01 || Number(getComputedStyle(node.parentElement).opacity) < .01) return false;
             const shape = node.getBoundingClientRect();
