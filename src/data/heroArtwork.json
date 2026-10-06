@@ -1,14 +1,18 @@
 {
   "viewBox": {
-    "x": 0,
+    "x": 50,
     "y": 0,
-    "width": 900,
+    "width": 1000,
     "height": 900
   },
   "movement": {
     "x": 200,
     "y": 200,
-    "labelSpread": 80
+    "labelSpread": 60
   },
-  "maxWidth": 960
+  "maxWidth": 960,
+  "placement": {
+    "x": -80,
+    "y": 20
+  }
 }

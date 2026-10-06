@@ -1,4 +1,5 @@
 import { useEffect, useId, useRef, useState } from 'react';
+import { finalOutline } from './finalOutline.js';
 import './HeroArtwork.css';
 
 // Geometry and animation timings come from Assets/clarifying-chaos-solid-colors.html.
@@ -24,6 +25,8 @@ export default function HeroArtwork({ settings }) {
   const svgRef = useRef(null);
   const id = useId();
   const gradientId = `${id}-ocean`;
+  const glowId = `${id}-glow`;
+  const clipId = `${id}-canvas`;
   const [reduceMotion, setReduceMotion] = useState(() => window.matchMedia('(prefers-reduced-motion: reduce)').matches);
 
   useEffect(() => {
@@ -51,7 +54,10 @@ export default function HeroArtwork({ settings }) {
           <linearGradient id={gradientId} x1="0" y1="1" x2="1" y2="0">
             {rings.map((color, index) => <stop key={color} offset={index / 3} stopColor={color} />)}
           </linearGradient>
+          <filter id={glowId} x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="7" /></filter>
+          <clipPath id={clipId} clipPathUnits="userSpaceOnUse"><rect x={viewBox.x} y={viewBox.y} width={viewBox.width} height={viewBox.height} /></clipPath>
         </defs>
+        <g className="hero-artwork__scene" clipPath={`url(#${clipId})`}>
         <g className="threads" fill="none" strokeWidth="1.1">
           {threads.map((thread, index) => (
             <ellipse key={index} cx="600" cy="450" rx={thread.rx} ry={thread.ry} stroke={`url(#${gradientId})`} opacity=".28" transform={`rotate(${thread.angle} 600 450)`}>
@@ -65,12 +71,12 @@ export default function HeroArtwork({ settings }) {
         <g className="orbit" fill="none" strokeWidth="58">
           {rings.map((color, index) => <circle key={color} className={`ring r${index + 1}`} cx="600" cy="450" r="105" stroke={color} />)}
         </g>
-        <foreignObject className="end halo" x="425" y="275" width="350" height="350">
-          <div xmlns="http://www.w3.org/1999/xhtml" className="final-outline glow-outline" />
-        </foreignObject>
-        <foreignObject className="end" x="425" y="275" width="350" height="350">
-          <div xmlns="http://www.w3.org/1999/xhtml" className="final-outline" />
-        </foreignObject>
+        <g className="end halo" fill="none" strokeWidth="10" filter={`url(#${glowId})`}>
+          {finalOutline.map((arc, index) => <path key={index} d={arc.path} stroke={arc.color} />)}
+        </g>
+        <g className="end" fill="none" strokeWidth="3">
+          {finalOutline.map((arc, index) => <path key={index} d={arc.path} stroke={arc.color} />)}
+        </g>
         <g className="labels" textAnchor="middle" style={{ fontSize: '17px' }}>
           {labels.map(label => (
             <g className="pill" key={label.text} style={{ '--px': `${label.px * labelScale}px`, '--py': `${label.py * labelScale}px`, '--qx': `${label.qx * labelScale}px`, '--qy': `${label.qy * labelScale}px`, '--stack': `${label.stack}px` }}>
@@ -80,6 +86,7 @@ export default function HeroArtwork({ settings }) {
           ))}
         </g>
         <text className="clarity" x="600" y="450" textAnchor="middle" dominantBaseline="middle">Clarity</text>
+        </g>
       </svg>
     </figure>
   );

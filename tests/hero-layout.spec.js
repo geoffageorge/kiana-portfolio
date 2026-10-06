@@ -6,18 +6,18 @@ test('saved artwork settings are fixed and old browser overrides are ignored', a
     defaults: JSON.stringify(values), settings: { ...values, viewBox: { x: -600, y: -450, width: 600, height: 1800 } },
   })), settings);
   await page.goto('/');
-  await expect(page.locator('.hero-artwork__svg')).toHaveAttribute('viewBox', '0 0 900 900');
+  await expect(page.locator('.hero-artwork__svg')).toHaveAttribute('viewBox', '50 0 1000 900');
   await expect(page.getByText('Adjust hero artwork')).toHaveCount(0);
   expect(await page.locator('.hero-artwork').evaluate(node => ({
     width: node.style.maxWidth,
     x: node.style.getPropertyValue('--hero-offset-x'),
     y: node.style.getPropertyValue('--hero-offset-y'),
     labelX: node.querySelector('.pill').style.getPropertyValue('--px'),
-  }))).toEqual({ width: '960px', x: '200px', y: '200px', labelX: '-40px' });
+  }))).toEqual({ width: '960px', x: '200px', y: '200px', labelX: '-30px' });
   expect(await page.locator('.ring').evaluateAll(nodes => nodes.map(node => node.getAttribute('stroke'))))
     .toEqual(['#9cbabc', '#e5ef18', '#afddb1', '#5fd1d3']);
   await page.reload();
-  await expect(page.locator('.hero-artwork__svg')).toHaveAttribute('viewBox', '0 0 900 900');
+  await expect(page.locator('.hero-artwork__svg')).toHaveAttribute('viewBox', '50 0 1000 900');
 });
 
 test('artwork aligns with the desktop brand and stays clear on responsive layouts', async ({ page }) => {
@@ -40,7 +40,7 @@ test('artwork aligns with the desktop brand and stays clear on responsive layout
     if (width < 1024) {
       expect(bounds.art.top).toBeGreaterThan(bounds.paragraph.bottom);
     } else {
-      expect(bounds.art.left).toBeCloseTo(bounds.s, 1);
+      expect(bounds.art.left).toBeCloseTo(bounds.s + settings.placement.x, 1);
       expect(bounds.art.top + bounds.art.height / 2).toBeCloseTo(bounds.title.top + bounds.title.height / 2, 1);
       // The requested viewBox extends into the copy column, but its transparent
       // area contains no artwork there. Check the actual visible shapes.

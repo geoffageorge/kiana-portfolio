@@ -1,4 +1,4 @@
-.hero-artwork { width: 100%; min-width: 0; max-width: 960px; margin: 0; }
+.hero-artwork { position: relative; isolation: isolate; contain: paint; overflow: hidden; width: 100%; min-width: 0; max-width: 960px; margin: 0; }
 .hero-artwork__svg { display: block; width: 100%; height: auto; overflow: hidden; }
 .hero-artwork .orbit { transform-origin: 600px 450px; animation: chaos-orbit 10s infinite cubic-bezier(.45, 0, .2, 1); }
 .hero-artwork .ring { transform-box: fill-box; transform-origin: center; animation: chaos-resolve 10s infinite cubic-bezier(.65, 0, .25, 1); }
@@ -10,8 +10,6 @@
 .hero-artwork .end { transform-origin: 600px 450px; animation: chaos-finish 10s infinite cubic-bezier(.65, 0, .25, 1); }
 .hero-artwork .labels { font: 13px monospace; fill: #234352; }
 .hero-artwork .pill { transform-box: fill-box; transform-origin: center; animation: chaos-label-move 10s infinite cubic-bezier(.65, 0, .25, 1); }
-.hero-artwork .final-outline { position: absolute; inset: 35px; border-radius: 50%; background: conic-gradient(from -37deg, #9cbabc 0deg 55deg, #e5ef18 96deg 163deg, #afddb1 205deg 236deg, #5fd1d3 278deg 319deg, #9cbabc 360deg); -webkit-mask: radial-gradient(farthest-side, transparent calc(100% - 4px), #000 calc(100% - 3px)); mask: radial-gradient(farthest-side, transparent calc(100% - 4px), #000 calc(100% - 3px)); }
-.hero-artwork .glow-outline { filter: blur(7px); inset: 31px; -webkit-mask: radial-gradient(farthest-side, transparent calc(100% - 11px), #000 calc(100% - 10px)); mask: radial-gradient(farthest-side, transparent calc(100% - 11px), #000 calc(100% - 10px)); }
 .hero-artwork .clarity { font: 400 24px Arial, sans-serif; letter-spacing: normal; fill: #234352; animation: chaos-clarity-reveal 10s infinite ease-in-out; }
 .hero-artwork .halo { animation: chaos-final-glow 10s infinite ease-in-out; }
 

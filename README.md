@@ -114,6 +114,7 @@ scripts/scaffold-project-pages.mjs  Generates page entries before dev/build
 tests/portfolio.spec.js          Browser smoke checks
 tests/hero-animation.spec.js     Original animation comparison and sticky header checks
 tests/hero-layout.spec.js        Fixed framing, responsive placement, colors, and transparent logo checks
+tests/hero-canvas.spec.js        Canvas containment and removal of temporary inspection UI
 Assets/clarifying-chaos-solid-colors.html  Original animation reference
 specs/                          Original specifications, preserved
 Design Template/                Original design reference, preserved
@@ -128,7 +129,7 @@ Design Template/                Original design reference, preserved
 - Each card has a `slug` and `caseStudyUrl` pointing to its project page. Point.ly contains the imported case study; the other pages use the reusable template with labeled placeholder content.
 - Edit the About text in `src/App.jsx` when final biography copy is ready.
 
-The hero renders the native SVG from `Assets/clarifying-chaos-solid-colors.html` in `HeroArtwork.jsx` with scoped animation styles in `HeroArtwork.css`. It preserves the five moving labels, 10-second CSS cycle, 25 rotating spirograph ellipses with 12–16-second SVG animation cycles, and the final glowing outline and “Clarity” text. The four ring colors are `#9cbabc`, `#e5ef18`, `#afddb1`, and `#5fd1d3`; the spirograph and final outline use the same palette. It starts automatically and loops continuously. Reduced-motion visitors see the static final circle and labels. The SVG has a transparent background.
+The hero renders the native SVG from `Assets/clarifying-chaos-solid-colors.html` in `HeroArtwork.jsx` with scoped animation styles in `HeroArtwork.css`. It preserves the five moving labels, 10-second CSS cycle, 25 rotating spirograph ellipses with 12–16-second SVG animation cycles, and the final glowing outline and “Clarity” text. The four ring colors are `#9cbabc`, `#e5ef18`, `#afddb1`, and `#5fd1d3`; the spirograph and final outline use the same palette. It starts automatically and loops continuously. Reduced-motion visitors see the static final circle and labels. The SVG has a transparent background. Its final glowing circle uses native SVG arcs and a blur filter, replacing absolutely positioned HTML inside `foreignObject` that Safari can render in the wrong location. A scene clipPath, hidden SVG overflow, and a contained figure keep every drawing layer within the hero canvas.
 
 All page backgrounds use `--color-page: #fff` in `src/styles/global.css`. Each home-page project card has white space around its image and caption. The original thin horizontal and vertical rules delineate the cards, with no gutters between them. The project grid becomes one column on phones.
 
@@ -138,11 +139,31 @@ The shared header stays at the top while scrolling, with a translucent frosted-g
 
 ## Hero artwork placement
 
-`src/data/heroArtwork.json` and `Assets/heroArtwork-1.json` contain the fixed settings: viewBox `0 0 900 900`, maximum width 960 pixels, horizontal/vertical ring offsets of 200 SVG units each, and 80% label spread. All visitors use these settings; the former adjustment controls, browser overrides, and local save endpoint have been removed. Keep both JSON files synchronized when changing future published settings.
+`src/data/heroArtwork.json` and `Assets/heroArtwork-1.json` contain the fixed settings: viewBox `50 0 1000 900`, maximum width 960 pixels, horizontal/vertical ring offsets of 200/200 SVG units, and 60% label spread. All visitors use these settings; the former adjustment controls, browser overrides, and local save endpoint have been removed. Keep both JSON files synchronized when changing future published settings.
 
-The 200-unit offsets spread the four rings around the center during the opening phase. The chosen 900 × 900 viewBox crops parts of the drawing and rightmost label during portions of the cycle. The original animation timings and indefinite repeat behavior remain intact.
+The 200/200-unit offsets spread the four rings around the center during the opening phase. The chosen 1000 × 900 viewBox provides additional room on the right. The original animation timings and indefinite repeat behavior remain intact.
 
-On desktop (1024 pixels and wider), the canvas's left edge aligns with the first S in the header's INSIGHTS. The center of the two-line Clarifying Chaos heading aligns with the canvas's vertical midpoint, directly to its left. The canvas starts 32 pixels below the navigation bar; the heading adjusts to its center so neither needs to overlap the navigation. Measurements update on resizing without changing when the sticky header is scrolled. The canvas shrinks to the available page width and occupies normal grid space, keeping Select Work below it. On phones and tablets, the heading and artwork stack with a gap to preserve legibility.
+On desktop (1024 pixels and wider), the canvas's left edge starts 80 pixels left of the first S in the header's INSIGHTS. The center of the two-line Clarifying Chaos heading aligns with the canvas's vertical midpoint, directly to its left. `placement.x` defaults to -80 pixels of horizontal shift from the S anchor. `placement.y` defaults to a 20-pixel gap below the navigation bar; the heading adjusts to its center so neither needs to overlap the navigation. Measurements update on resizing without changing when the sticky header is scrolled. The canvas shrinks to the available page width and occupies normal grid space, keeping Select Work below it. On phones and tablets, the heading and artwork stack with a gap to preserve legibility.
+
+## Hero artwork settings
+
+The temporary canvas border, center lines, and Hero canvas inspector have been removed. Run `npm run dev`, then open **http://127.0.0.1:5173/** to view the saved animation. To adjust its settings in the future, edit both JSON files below and reload the preview.
+
+| Setting in `src/data/heroArtwork.json` | Saved value | Effect |
+| --- | --- | --- |
+| `placement.x` | `-80` px | Shift the canvas from the S anchor; negative moves left, positive moves right. On desktop its width adapts to the remaining page space. |
+| `placement.y` | `20` px | Gap below navigation; increasing it moves the canvas and centered heading down. |
+| `maxWidth` | `960` px | Maximum rendered canvas width, capped by the available page width. |
+| `viewBox.x` | `50` SVG units | Internal frame's left coordinate; increasing it shifts the drawing left within the canvas. |
+| `viewBox.y` | `0` SVG units | Internal frame's top coordinate; increasing it shifts the drawing up within the canvas. |
+| `viewBox.width` | `1000` SVG units | Internal horizontal drawing area; increasing it reveals more and scales the drawing down at the same canvas width. |
+| `viewBox.height` | `900` SVG units | Internal vertical drawing area; increasing it makes the rendered canvas taller at the same width. |
+| `movement.x` / `movement.y` | `200` / `200` SVG units | How far the circles spread horizontally and vertically during the cycle. |
+| `movement.labelSpread` | `60` percent | Scale of the labels' movement offsets. |
+
+Desktop position is calculated in `HeroSection.jsx`: left = page-container left + measured S anchor + `placement.x`; top = navigation bottom + `placement.y`. The height is rendered width × viewBox height ÷ viewBox width. The heading follows the canvas's vertical midpoint. Below 1024 pixels, the canvas stacks beneath the text and desktop position offsets are ignored.
+
+The saved viewBox ends at x=1050 (left 50 + width 1000). The original full framing is `0 0 1200 900`. The tests sample ring boundaries including their strokes, labels, and spirograph through the cycle. Changing the frame width preserves the choreography; reducing circle offsets or label spread changes the movement. Shifting `viewBox.x` alone can trade right-side clipping for left-side clipping. With the chosen -80-pixel placement, INSIGHTS still briefly overlaps the heading during the cycle; moving `placement.x` to 0 separates the frame from the text.
 
 ## Project pages and reusable template
 

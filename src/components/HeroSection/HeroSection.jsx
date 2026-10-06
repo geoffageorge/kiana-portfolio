@@ -20,7 +20,7 @@ export default function HeroSection({ site }) {
         const range = document.createRange();
         range.setStart(text, index + 2); // First S in INSIGHTS.
         range.setEnd(text, index + 3);
-        section.style.setProperty('--hero-art-left', `${range.getBoundingClientRect().left - bounds.left}px`);
+        section.style.setProperty('--hero-art-left', `${range.getBoundingClientRect().left - bounds.left + settings.placement.x}px`);
       }
       const artwork = section.querySelector('.hero-artwork').getBoundingClientRect();
       section.style.setProperty('--hero-copy-top', `${artwork.top - bounds.top + (artwork.height - title.height) / 2}px`);
@@ -37,7 +37,7 @@ export default function HeroSection({ site }) {
     };
   }, []);
   return (
-    <section ref={sectionRef} className="hero-section" aria-labelledby="hero-title">
+    <section ref={sectionRef} className="hero-section" aria-labelledby="hero-title" style={{ '--hero-art-top-gap': `${settings.placement.y}px` }}>
       <div className="hero-section__copy">
         <h1 id="hero-title">{site.heroTitle.map((line) => <span className="block" key={line}>{line}</span>)}</h1>
         <p>{site.heroDescription}</p>
