@@ -91,7 +91,7 @@ export default function PointlyCaseStudyPage({ onOpenImage }) {
 
   return <article className="pointly-case">
     <header className="pointly-intro">
-      <div><p className="pointly-index">01 /</p><h1>Point.ly</h1></div>
+      <div><p className="pointly-index">02 /</p><h1>Point.ly</h1></div>
       <div className="pointly-intro__summary"><p>Turning fragmented loyalty points into new<br className="pointly-desktop-break" /> travel possibilities</p><p className="pointly-intro__team">UX@Berkeley project team</p></div>
     </header>
     <dl className="pointly-facts">

@@ -11,6 +11,7 @@ test('Obayashi opens from its tile, reloads, enlarges exhibits and links to Poin
   await expect(page).toHaveURL(/\/projects\/obayashi\/$/);
   await page.reload();
   await expect(page.getByRole('heading', { level: 1 })).toHaveText('Obayashi');
+  await expect(page.locator('.obayashi-index')).toHaveText('01 /');
   await expect(page.locator('.obayashi-finding')).toHaveCount(5);
   await expect(page.locator('.obayashi-exhibit img')).toHaveCount(6);
   await page.getByRole('navigation', { name: 'Project sections' }).getByRole('link', { name: 'Research', exact: true }).click();
@@ -39,6 +40,35 @@ test('Obayashi opens from its tile, reloads, enlarges exhibits and links to Poin
   await expect(page.locator('.case-section')).toHaveCount(6);
   await expect(page.locator('.case-hero__visual img')).toHaveAttribute('src', '/assets/projects/obayashi-placeholder.png');
   expect(errors).toEqual([]);
+});
+
+test('Obayashi section navigation stays visible beside every desktop section', async ({ page }) => {
+  for (const width of [1024, 1440]) {
+    await page.setViewportSize({ width, height: 1000 });
+    await page.goto('/projects/obayashi/');
+    await page.evaluate(() => document.fonts.ready);
+    const navigation = page.getByRole('navigation', { name: 'Project sections' });
+    for (const selector of ['#research', '.obayashi-finding:nth-child(3)']) {
+      await page.locator(selector).evaluate(element => element.scrollIntoView({ behavior: 'instant', block: 'start' }));
+      const header = await page.locator('.site-header').boundingBox();
+      const sidebar = await navigation.boundingBox();
+      const content = await page.locator('.obayashi-content').boundingBox();
+      expect(sidebar.y).toBeCloseTo(header.height + 24, 1);
+      expect(sidebar.x + sidebar.width).toBeLessThan(content.x);
+      await expect(navigation.getByRole('link')).toHaveText(['The Challenge', 'Research', 'Design', 'Reflection']);
+      await expect(navigation).toBeInViewport();
+    }
+    for (const [id, label] of [['challenge', 'The Challenge'], ['research', 'Research'], ['design', 'Design'], ['reflection', 'Reflection']]) {
+      const link = navigation.getByRole('link', { name: label, exact: true });
+      await link.click();
+      await expect(page).toHaveURL(new RegExp(`#${id}$`));
+      await expect(page.locator(`#${id} > h2, #${id} h2`).first()).toBeInViewport();
+      await expect(link).toHaveAttribute('aria-current', 'location');
+      const sidebar = await navigation.boundingBox();
+      const header = await page.locator('.site-header').boundingBox();
+      expect(sidebar.y).toBeGreaterThanOrEqual(header.height);
+    }
+  }
 });
 
 test('all extracted Obayashi exhibits retain the reference pixels', async ({ page }) => {

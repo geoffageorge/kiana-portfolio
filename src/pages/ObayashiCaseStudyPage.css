@@ -12,19 +12,21 @@
 .obayashi-facts dd span { display: block; }
 .obayashi-summary { max-width: 600px; margin-top: 140px !important; margin-left: -56px !important; }
 .obayashi-method-layout { display: grid; grid-template-columns: 200px minmax(0, 1fr); gap: 44px; width: calc(100% + 56px); margin-top: 128px; margin-left: -56px; }
-.obayashi-methodology { position: sticky; top: calc(var(--site-header-height) + 24px); align-self: start; padding-top: 8px; }
-.obayashi-methodology a { display: block; width: fit-content; margin-bottom: 16px; font-size: 24px; line-height: 28px; }
+.obayashi-content { min-width: 0; }
+.obayashi-methodology { position: sticky; top: calc(var(--site-header-height) + 24px); align-self: start; }
+.obayashi-methodology p { margin-bottom: 30px; color: #747c82; font: 20px/28px var(--case-mono); text-transform: uppercase; }
+.obayashi-methodology a { display: block; width: fit-content; margin-bottom: 12px; font-size: 20px; line-height: 28px; }
 .obayashi-methodology a[aria-current] { font-weight: 700; }
 .obayashi-methodology a:hover { text-decoration: underline; text-underline-offset: 5px; }
 .obayashi-challenge { display: grid; grid-template-columns: 400px minmax(0, 1fr); gap: 44px; scroll-margin-top: calc(var(--site-header-height) + 24px); }
 .obayashi-challenge h3 { font-size: 22px; line-height: 24px; font-weight: 700; }
 .obayashi-challenge > div > div + div { margin-top: 40px; }
-.obayashi-research { width: calc(100% + 148px); margin-top: 160px; margin-left: -74px; padding-top: 96px; border-top: 1px solid #c6c6c6; scroll-margin-top: calc(var(--site-header-height) + 24px); }
-.obayashi-research__overview { display: grid; grid-template-columns: 320px minmax(0, 1fr); gap: 40px; }
+.obayashi-research { margin-top: 160px; padding-top: 96px; border-top: 1px solid #c6c6c6; scroll-margin-top: calc(var(--site-header-height) + 24px); }
+.obayashi-research__overview { display: grid; grid-template-columns: 280px minmax(0, 1fr); gap: 32px; }
 .obayashi-label { font-size: 24px; line-height: 28px; text-transform: uppercase; }
-.obayashi-research__intro h2 { margin-top: 28px; }
-.obayashi-research__intro > p:not(.obayashi-label) { margin-top: 30px; font-size: 24px; line-height: 28px; }
-.obayashi-research__intro ul { padding: 0; margin-top: 26px; list-style: none; font-size: 24px; line-height: 28px; }
+.obayashi-research__intro h2 { margin-top: 28px; font-size: 36px; line-height: 42px; }
+.obayashi-research__intro > p:not(.obayashi-label) { margin-top: 30px; font-size: 20px; line-height: 28px; }
+.obayashi-research__intro ul { padding: 0; margin-top: 26px; list-style: none; font-size: 20px; line-height: 28px; }
 .obayashi-research__intro li + li { margin-top: 14px; }
 .obayashi-research__evidence { min-width: 0; max-width: 980px; }
 .obayashi-exhibit { min-width: 0; }
@@ -41,21 +43,17 @@
 .obayashi-findings ol { padding: 0; list-style: none; }
 .obayashi-finding { display: grid; grid-template-columns: minmax(0, 560fr) minmax(0, 744fr); gap: 44px; align-items: start; padding: 48px 0; }
 .obayashi-finding + .obayashi-finding { border-top: 1px solid #c6c6c6; }
-.obayashi-finding__copy { display: grid; grid-template-columns: 64px minmax(0, 1fr); gap: 28px; }
+.obayashi-finding__copy { display: grid; grid-template-columns: 48px minmax(0, 1fr); gap: 16px; }
 .obayashi-finding__number { padding-top: 8px; font-size: 32px; line-height: 38px; font-weight: 700; }
-.obayashi-finding h3 { font-size: 32px; line-height: 36px; font-weight: 700; }
+.obayashi-finding h3 { font-size: 28px; line-height: 34px; font-weight: 700; }
 .obayashi-finding__copy > div { max-width: 440px; }
 .obayashi-finding__copy p { margin-top: 22px; }
 .obayashi-finding:nth-child(3) { padding-block: 80px; }
 .obayashi-empty-section { margin-top: 96px; padding-top: 32px; border-top: 1px solid #c6c6c6; scroll-margin-top: calc(var(--site-header-height) + 24px); }
 .obayashi-end { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 24px; margin-top: 64px; padding-top: 28px; border-top: 1px solid #c6c6c6; }
 .obayashi-end a { font-size: 16px; text-decoration: underline; text-underline-offset: 5px; }
-@media (min-width: 1440px) {
-  /* The first pair of screenshots starts beside the research heading. */
-  .obayashi-finding:first-child > .obayashi-exhibit { margin-top: -136px; }
-}
 @media (max-width: 1439px) {
-  .obayashi-summary, .obayashi-method-layout, .obayashi-research { width: 100%; margin-left: 0 !important; }
+  .obayashi-summary, .obayashi-method-layout { width: 100%; margin-left: 0 !important; }
   .obayashi-method-layout { grid-template-columns: 160px minmax(0, 1fr); gap: 40px; }
   .obayashi-challenge { grid-template-columns: minmax(0, 1fr); gap: 32px; }
   .obayashi-research__overview { grid-template-columns: 280px minmax(0, 1fr); gap: 32px; }
@@ -67,12 +65,18 @@
   .obayashi-finding__copy { grid-template-columns: 48px minmax(0, 1fr); gap: 16px; }
   .obayashi-finding h3 { font-size: 28px; line-height: 34px; }
 }
+@media (max-width: 1279px) {
+  .obayashi-research__overview { grid-template-columns: minmax(0, 1fr); gap: 32px; }
+  .obayashi-research__intro ul { display: flex; flex-wrap: wrap; gap: 12px 24px; }
+  .obayashi-research__intro li + li { margin: 0; }
+}
 @media (max-width: 1023px) {
   .obayashi-intro__summary { font-size: 24px; line-height: 30px; }
   .obayashi-facts { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 28px 24px; }
   .obayashi-summary { margin-top: 64px !important; }
   .obayashi-method-layout { grid-template-columns: minmax(0, 1fr); gap: 32px; margin-top: 80px; }
   .obayashi-methodology { position: static; display: flex; flex-wrap: wrap; gap: 24px; padding: 0; }
+  .obayashi-methodology p { flex-basis: 100%; margin-bottom: 4px; }
   .obayashi-methodology a { margin: 0; font-size: 20px; line-height: 28px; }
   .obayashi-research { margin-top: 96px; padding-top: 64px; }
   .obayashi-research__overview { grid-template-columns: minmax(0, 1fr); gap: 32px; }
@@ -93,12 +97,13 @@
   .obayashi-summary { margin-top: 48px !important; }
   .obayashi-method-layout { margin-top: 48px; gap: 28px; }
   .obayashi-methodology a { font-size: 16px; line-height: 24px; }
+  .obayashi-methodology p { font-size: 16px; }
   .obayashi-challenge { gap: 24px; }
   .obayashi-challenge h3 { font-size: 21px; line-height: 26px; }
   .obayashi-challenge > div > div + div { margin-top: 28px; }
   .obayashi-research { margin-top: 64px; padding-top: 40px; }
   .obayashi-label { font: 16px/24px var(--case-mono); }
-  .obayashi-research__intro h2 { margin-top: 16px; }
+  .obayashi-research__intro h2 { margin-top: 16px; font-size: 32px; line-height: 38px; }
   .obayashi-research__intro > p:not(.obayashi-label) { margin-top: 24px; font-size: 20px; line-height: 28px; }
   .obayashi-research__intro ul { margin-top: 20px; font-size: 18px; line-height: 24px; }
   .obayashi-quote { display: block; margin-top: 28px !important; padding: 24px; }

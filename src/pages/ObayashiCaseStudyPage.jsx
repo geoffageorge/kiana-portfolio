@@ -72,7 +72,7 @@ export default function ObayashiCaseStudyPage({ onOpenImage }) {
 
   return <article className="obayashi-case">
     <header className="obayashi-intro">
-      <div><p className="obayashi-index">02 /</p><h1>Obayashi</h1></div>
+      <div><p className="obayashi-index">01 /</p><h1>Obayashi</h1></div>
       <p className="obayashi-intro__summary">Aligning Teams, Audiences, and Priorities<br className="obayashi-desktop-break" /> Into a Unified Experience</p>
     </header>
     <dl className="obayashi-facts">
@@ -89,48 +89,50 @@ export default function ObayashiCaseStudyPage({ onOpenImage }) {
 
     <div className="obayashi-method-layout">
       <nav className="obayashi-methodology" aria-label="Project sections">
-        {sections.map(([id, title]) => <a key={id} href={`#${id}`} aria-current={active === id ? 'location' : undefined}>{title}</a>)}
+        <p>Methodology</p>
+        {sections.map(([id, title]) => <a key={id} href={`#${id}`} aria-current={active === id ? 'location' : undefined} onClick={() => setActive(id)}>{title}</a>)}
       </nav>
-      <section id="challenge" className="obayashi-challenge" aria-labelledby="obayashi-challenge-title">
-        <h2 id="obayashi-challenge-title">The Challenge</h2>
-        <div>{challenges.map(([title, text]) => <div key={title}><h3>{title}</h3><p>{text}</p></div>)}</div>
-      </section>
-    </div>
-
-    <section id="research" className="obayashi-research" aria-labelledby="obayashi-research-title">
-      <div className="obayashi-research__overview">
-        <div className="obayashi-research__intro">
-          <p className="obayashi-label">Research</p>
-          <h2 id="obayashi-research-title">17 stakeholder<br /> interviews</h2>
-          <p>Actions and organizational functions</p>
-          <ul>{['Engineering', 'HR', 'Safety', 'Operations', 'IT', 'Executive Leadership'].map(role => <li key={role}>{role}</li>)}</ul>
-        </div>
-        <div className="obayashi-research__evidence">
-          <Exhibit name="stakeholder-interviews" alt="Collage of Obayashi stakeholder interview participants across organizational functions" onOpenImage={onOpenImage} eager />
-          <figure className="obayashi-quote">
-            <span className="obayashi-quote__mark" aria-hidden="true">“</span>
-            <div><blockquote>“The website is often the <strong>first impression</strong> people have of <strong>Obayashi.</strong><br className="obayashi-desktop-break" /> It should reflect the scale of our work and the people behind it.”</blockquote>
-              <figcaption>— Interview participant, Executive Leadership</figcaption></div>
-          </figure>
-        </div>
-      </div>
-      <div className="obayashi-findings">
-        <h2>What the Research<br /> Revealed</h2>
-        <ol>{findings.map(({ title, text, asset, alt, notes }, index) => <li key={asset} className="obayashi-finding">
-          <div className="obayashi-finding__copy">
-            <span className="obayashi-finding__number" aria-hidden="true">{String(index + 1).padStart(2, '0')}</span>
-            <div><h3>{title}</h3><p>{text}</p></div>
+      <div className="obayashi-content">
+        <section id="challenge" className="obayashi-challenge" aria-labelledby="obayashi-challenge-title">
+          <h2 id="obayashi-challenge-title">The Challenge</h2>
+          <div>{challenges.map(([title, text]) => <div key={title}><h3>{title}</h3><p>{text}</p></div>)}</div>
+        </section>
+        <section id="research" className="obayashi-research" aria-labelledby="obayashi-research-title">
+          <div className="obayashi-research__overview">
+            <div className="obayashi-research__intro">
+              <p className="obayashi-label">Research</p>
+              <h2 id="obayashi-research-title">17 stakeholder<br /> interviews</h2>
+              <p>Actions and organizational functions</p>
+              <ul>{['Engineering', 'HR', 'Safety', 'Operations', 'IT', 'Executive Leadership'].map(role => <li key={role}>{role}</li>)}</ul>
+            </div>
+            <div className="obayashi-research__evidence">
+              <Exhibit name="stakeholder-interviews" alt="Collage of Obayashi stakeholder interview participants across organizational functions" onOpenImage={onOpenImage} eager />
+              <figure className="obayashi-quote">
+                <span className="obayashi-quote__mark" aria-hidden="true">“</span>
+                <div><blockquote>“The website is often the <strong>first impression</strong> people have of <strong>Obayashi.</strong><br className="obayashi-desktop-break" /> It should reflect the scale of our work and the people behind it.”</blockquote>
+                  <figcaption>— Interview participant, Executive Leadership</figcaption></div>
+              </figure>
+            </div>
           </div>
-          <Exhibit name={asset} alt={alt} caption={notes} onOpenImage={onOpenImage} />
-        </li>)}</ol>
+          <div className="obayashi-findings">
+            <h2>What the Research<br /> Revealed</h2>
+            <ol>{findings.map(({ title, text, asset, alt, notes }, index) => <li key={asset} className="obayashi-finding">
+              <div className="obayashi-finding__copy">
+                <span className="obayashi-finding__number" aria-hidden="true">{String(index + 1).padStart(2, '0')}</span>
+                <div><h3>{title}</h3><p>{text}</p></div>
+              </div>
+              <Exhibit name={asset} alt={alt} caption={notes} onOpenImage={onOpenImage} />
+            </li>)}</ol>
+          </div>
+        </section>
+        <section id="design" className="obayashi-empty-section" aria-labelledby="obayashi-design-title">
+          <h2 id="obayashi-design-title">Design</h2>
+        </section>
+        <section id="reflection" className="obayashi-empty-section" aria-labelledby="obayashi-reflection-title">
+          <h2 id="obayashi-reflection-title">Reflection</h2>
+        </section>
       </div>
-    </section>
-    <section id="design" className="obayashi-empty-section" aria-labelledby="obayashi-design-title">
-      <h2 id="obayashi-design-title">Design</h2>
-    </section>
-    <section id="reflection" className="obayashi-empty-section" aria-labelledby="obayashi-reflection-title">
-      <h2 id="obayashi-reflection-title">Reflection</h2>
-    </section>
+    </div>
     <div className="obayashi-end">
       <a href={`${siteUrl()}#work`}>Back to selected work <span aria-hidden="true">↗</span></a>
       <a href={projectUrl('pointly')}>Next project: Point.ly <span aria-hidden="true">↗</span></a>

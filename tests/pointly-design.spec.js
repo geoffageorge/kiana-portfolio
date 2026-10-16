@@ -7,6 +7,7 @@ test('Pointly uses the reference artwork without changing its pixels', async ({ 
   const sources = Object.fromEntries(await Promise.all(Object.entries(manifest.assets).filter(([, asset]) => asset.sourceFile).map(async ([name, asset]) => [name, (await readFile(new URL(`../${asset.sourceFile}`, import.meta.url))).toString('base64')])));
   await page.goto('/projects/pointly/');
   await expect(page.locator('.pointly-case')).toBeVisible();
+  await expect(page.locator('.pointly-index')).toHaveText('02 /');
   const differences = await page.evaluate(async ({ reference, sources, assets }) => {
     const original = new Image();
     original.src = `data:image/png;base64,${reference}`;
