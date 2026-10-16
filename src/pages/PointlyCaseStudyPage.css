@@ -138,7 +138,7 @@
 .pointly-insight:nth-child(2) { padding-left: 31px; column-gap: 27px; }
 .pointly-insight:nth-child(3) { position: relative; left: 2px; padding-left: 30px; column-gap: 28px; }
 .pointly-insight:nth-child(4) { padding-left: 33px; column-gap: 25px; }
-.pointly-design { min-height: 3447px; }
+.pointly-design { padding-bottom: 82px; }
 .pointly-low-fi { margin-top: 73.3px; }
 .pointly-low-fi > p { max-width: 884px; }
 .pointly-low-fi__images { display: grid; grid-template-columns: 314fr 556fr; align-items: start; gap: 19px; width: calc(100% - 5px); margin-top: 42px; margin-left: 2px; }
@@ -171,6 +171,12 @@
 .pointly-medium { font-weight: 500; }
 .pointly-brand-traveler { position: absolute; top: 195px; left: 189px; width: 183px; }
 .pointly-mvp { margin-top: 81px; }
+.pointly-mvp-gallery { display: grid; gap: 16px; width: calc(100% + 13px); margin-top: 48px; margin-left: -13px; }
+.pointly-mvp-feature { display: grid; grid-template-columns: minmax(0,574fr) minmax(0,295fr); align-items: center; gap: 38px; }
+.pointly-mvp-feature img { width: auto; max-width: 100%; }
+.pointly-mvp-feature figcaption { max-width: 260px; color: #000; font-family: 'Inter', sans-serif; font-size: 15px; font-weight: 400; line-height: 24px; letter-spacing: 0; }
+.pointly-mvp-feature h4 { max-width: 200px; font: inherit; font-weight: 700; letter-spacing: 0; }
+.pointly-mvp-feature figcaption p { font: inherit; letter-spacing: 0; }
 .pointly-retrospective { min-height: 798px; }
 .pointly-retrospective > h2 { margin-left: 3px; }
 .pointly-reflection { grid-template-columns: 164px minmax(0,492px); width: 100%; min-height: 468px; margin-top: 45.3px; margin-left: 1px; padding-top: 71px; padding-right: 92px; padding-bottom: 59px; }
@@ -238,6 +244,7 @@
   .pointly-visual-system { grid-template-columns: minmax(0,1fr); gap: 40px; width: 100%; margin-left: 0; }
   .pointly-type-specimen { min-height: 346px; }
   .pointly-mvp { margin-top: 64px; }
+  .pointly-design { padding-bottom: 0; }
   .pointly-reflection { min-height: 0; margin-left: 0; padding-block: 40px; }
   .pointly-back { margin-top: 64px; }
 }
@@ -309,6 +316,9 @@
   .pointly-brand-traveler { top: 215px; left: auto; right: -6px; width: 45%; }
   .pointly-type-body > div { font-size: 14px; }
   .pointly-reflection { margin-top: 32px; }
+  .pointly-mvp-gallery { width: 100%; margin-top: 32px; margin-left: 0; gap: 32px; }
+  .pointly-mvp-feature { grid-template-columns: minmax(0,1fr); gap: 16px; }
+  .pointly-mvp-feature figcaption { max-width: none; }
   .pointly-back { margin-top: 48px; margin-bottom: 48px; }
 }
 

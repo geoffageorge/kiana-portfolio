@@ -1,9 +1,16 @@
 import { useEffect, useState } from 'react';
 import manifest from '../../public/assets/pointly-figma/manifest.json';
+import mvpManifest from '../../public/assets/pointly-2/manifest.json';
 import { assetUrl, siteUrl } from '../lib/urls.js';
 import './PointlyCaseStudyPage.css';
 
 const sections = [['interviews', 'Interviews'], ['research', 'Research'], ['design', 'Design'], ['retrospective', 'Retrospective']];
+const imageSets = { 'pointly-figma': manifest, 'pointly-2': mvpManifest };
+const mvpScreens = [
+  { name: 'connected-wallet', title: 'Rewards Dashboard', description: 'View balances across rewards programs in one place.', alt: 'Point.ly connected rewards dashboard with balances across rewards programs' },
+  { name: 'recommended-stays', title: 'Personalized Recommendations', description: 'Explore stays based on available points and preferences.', alt: 'Point.ly personalized hotel recommendations based on points and preferences' },
+  { name: 'stay-details', title: 'Property Detail', description: 'Compare points, cash price, and redemption value before booking.', alt: 'Point.ly property detail comparing points, cash price, and redemption value' },
+];
 const interviewees = [
   ['node-66', 'Isa', 'Tech Worker, 30s', '“The bank portals feel like Expedia from 2010. It’s hard to know if I’m getting a good deal.”'],
   ['node-79', 'Jasmine', 'Professional, 30s', '“It’s hard to understand the real value of a points transfer — will I actually save money?”'],
@@ -31,14 +38,14 @@ const insights = [
   ['node-120', <>Opportunity: Provide ideas to<br />close points gaps fast</>, 'Instead of a flat “not enough points,” provide a list of creative ways to close the gap, such as current promos and affiliated points programs.'],
 ];
 
-function Picture({ name, alt = '', className = '', eager = false }) {
-  const image = manifest.assets[name];
-  return <img className={className} src={assetUrl(`pointly-figma/${image.file}`)} width={image.width} height={image.height} alt={alt} loading={eager ? 'eager' : 'lazy'} decoding="async" data-figma-node={image.figmaNodeId} data-figma-asset={name} />;
+function Picture({ name, alt = '', className = '', eager = false, assetGroup = 'pointly-figma' }) {
+  const image = imageSets[assetGroup].assets[name];
+  return <img className={className} src={assetUrl(`${assetGroup}/${image.file}`)} width={image.width} height={image.height} alt={alt} loading={eager ? 'eager' : 'lazy'} decoding="async" data-figma-node={image.figmaNodeId} data-figma-asset={assetGroup === 'pointly-figma' ? name : undefined} />;
 }
 
-function Exhibit({ name, alt, className = '', onOpenImage, eager = false }) {
-  const image = manifest.assets[name];
-  return <figure className={`pointly-exhibit ${className}`}><button type="button" aria-label={`Enlarge ${alt}`} onClick={() => onOpenImage({ ...image, src: assetUrl(`pointly-figma/${image.file}`), alt })}><Picture name={name} alt={alt} eager={eager} /></button></figure>;
+function Exhibit({ name, alt, className = '', onOpenImage, eager = false, assetGroup = 'pointly-figma', children }) {
+  const image = imageSets[assetGroup].assets[name];
+  return <figure className={`pointly-exhibit ${className}`}><button type="button" aria-label={`Enlarge ${alt}`} onClick={() => onOpenImage({ ...image, src: assetUrl(`${assetGroup}/${image.file}`), alt })}><Picture name={name} alt={alt} eager={eager} assetGroup={assetGroup} /></button>{children && <figcaption>{children}</figcaption>}</figure>;
 }
 
 function Rule({ name }) {
@@ -133,7 +140,13 @@ export default function PointlyCaseStudyPage({ onOpenImage }) {
           <div className="pointly-subsection pointly-low-fi"><h3>Low-Fi: Testing Different Directions</h3><p>Guided by our research, we quickly explored multiple concepts, including a Chrome extension, centralized rewards wallet, AI trip planning, itinerary comparison, and personalized points recommendations.</p><div className="pointly-low-fi__images"><Exhibit name="node-125" alt="Annotated low-fidelity sketches for a centralized rewards wallet" onOpenImage={onOpenImage} /><Exhibit name="node-126" alt="Annotated low-fidelity explorations of trip planning and points recommendations" onOpenImage={onOpenImage} /></div></div>
           <div className="pointly-subsection pointly-mid-fi"><h3>Mid-Fi: Narrowing the Experience</h3><p>We prioritized the concepts that most directly addressed our research findings: consolidating rewards, simplifying comparisons, and making redemption opportunities actionable. Broader ideas that moved beyond these core needs were deprioritized.</p><div className="pointly-mid-fi__images"><Exhibit name="node-160" alt="Mid-fidelity Point.ly dashboard wireframe" onOpenImage={onOpenImage} /><div className="pointly-mid-fi__comparison"><Exhibit name="node-161" alt="Mid-fidelity flight comparison wireframe" onOpenImage={onOpenImage} /><Exhibit name="node-162" alt="Mid-fidelity booking details wireframe" onOpenImage={onOpenImage} /></div></div></div>
           <div className="pointly-subsection pointly-identity"><h3>Establishing an Approachable Visual Identity</h3><p>I developed Point.ly’s visual identity to make the complexity of credit card points feel clear and approachable, balancing a friendly personality with the credibility of a financial tool.</p><VisualIdentity /></div>
-          <div id="mvp-prototype" className="pointly-subsection pointly-mvp"><h3>From Research to MVP Prototype</h3><p>We translated our research into a high-fidelity MVP prototype focused on consolidating rewards, comparing redemption options, and guiding travelers toward booking. The project remained at the prototype stage.</p></div>
+          <div id="mvp-prototype" className="pointly-subsection pointly-mvp">
+            <h3>From Research to MVP Prototype</h3>
+            <p>We translated our research into a high-fidelity MVP prototype focused on consolidating rewards, comparing redemption options, and guiding travelers toward booking. The project remained at the prototype stage.</p>
+            <div className="pointly-mvp-gallery">
+              {mvpScreens.map(({ name, title, description, alt }) => <Exhibit key={name} name={name} alt={alt} assetGroup="pointly-2" className="pointly-mvp-feature" onOpenImage={onOpenImage}><h4>{title}</h4><p>{description}</p></Exhibit>)}
+            </div>
+          </div>
         </section>
         <section id="retrospective" className="pointly-section pointly-retrospective" aria-labelledby="pointly-retrospective-title">
           <Rule name="line-72-183" /><h2 id="pointly-retrospective-title">What I Learned</h2>

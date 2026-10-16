@@ -43,7 +43,6 @@ test('desktop geometry and every image placement match the inspected Figma frame
     ['#pointly-design-title', '163:11'], ['.pointly-low-fi h3', '163:13'],
     ['.pointly-mid-fi h3', '187:3'], ['.pointly-identity h3', '174:3'],
     ['.pointly-visual-system', '314:30'], ['.pointly-mvp h3', '316:42'],
-    ['#pointly-retrospective-title', '314:37'], ['.pointly-reflection', '314:34'],
   ]) {
     const actual = await page.locator(selector).first().boundingBox();
     const expected = geometry[nodeId];
@@ -93,7 +92,7 @@ test('exact local fonts and mixed text styles load without external requests', a
   expect(external).toEqual([]);
 });
 
-test('the rebuilt page reflows without overflow and collapses the desktop blank area', async ({ page }) => {
+test('the rebuilt page reflows without overflow and keeps MVP content in document flow', async ({ page }) => {
   for (const width of [320, 393, 768, 1024, 1280, 1440, 1920]) {
     await page.setViewportSize({ width, height: 1000 });
     await ready(page);
@@ -101,6 +100,15 @@ test('the rebuilt page reflows without overflow and collapses the desktop blank 
     const header = await page.locator('.site-header').boundingBox();
     const title = await page.locator('h1').boundingBox();
     expect(title.y).toBeGreaterThanOrEqual(header.y + header.height);
+    for (const row of await page.locator('.pointly-mvp-feature').all()) {
+      const image = await row.locator('img').boundingBox();
+      const caption = await row.locator('figcaption').boundingBox();
+      if (width < 768) expect(caption.y).toBeGreaterThanOrEqual(image.y + image.height);
+      else {
+        expect(caption.x).toBeGreaterThan(image.x + image.width);
+        expect(Math.abs(caption.y + caption.height / 2 - image.y - image.height / 2)).toBeLessThan(1);
+      }
+    }
     if (width >= 768 && width <= 1100) {
       for (const card of await page.locator('.pointly-interview-card').all()) {
         const quote = await card.locator('blockquote').boundingBox();
@@ -114,4 +122,44 @@ test('the rebuilt page reflows without overflow and collapses the desktop blank 
       expect(reflection.y - introduction.y - introduction.height).toBeCloseTo(80, 0);
     }
   }
+});
+
+test('MVP includes the three unchanged source images, exact template captions, and mixed Inter 15/24 styles', async ({ page }) => {
+  await ready(page);
+  const screens = [
+    ['02-connected-wallet 1.png', 'connected-wallet.png', 'Rewards Dashboard', 'View balances across rewards programs in one place.'],
+    ['06-recommended-stays 1.png', 'recommended-stays.png', 'Personalized Recommendations', 'Explore stays based on available points and preferences.'],
+    ['07-stay-details 1.png', 'stay-details.png', 'Property Detail', 'Compare points, cash price, and redemption value before booking.'],
+  ];
+  const gallery = page.locator('.pointly-mvp-gallery');
+  await expect(gallery.locator('figure')).toHaveCount(3);
+  await expect(gallery.locator('h4')).toHaveText(screens.map(screen => screen[2]));
+  await expect(gallery.locator('figcaption p')).toHaveText(screens.map(screen => screen[3]));
+  for (const [index, [sourceName, publicName]] of screens.entries()) {
+    const source = await readFile(new URL(`../Assets/pointly_2/${sourceName}`, import.meta.url));
+    const publicImage = await readFile(new URL(`../public/assets/pointly-2/${publicName}`, import.meta.url));
+    expect(publicImage.equals(source), `${publicName} preserves the supplied PNG`).toBe(true);
+    const row = gallery.locator('figure').nth(index);
+    await expect(row.locator('img')).toHaveAttribute('src', new RegExp(`/pointly-2/${publicName.replace('.', '\\.')}$`));
+    for (const caption of [row.locator('h4'), row.locator('figcaption p')]) {
+      await expect(caption).toHaveCSS('font-family', 'Inter, sans-serif');
+      await expect(caption).toHaveCSS('font-size', '15px');
+      await expect(caption).toHaveCSS('line-height', '24px');
+      // Chromium can serialize zero letter spacing as "normal".
+      await expect(caption).toHaveCSS('letter-spacing', /^(normal|0px)$/);
+    }
+    await expect(row.locator('h4')).toHaveCSS('font-weight', '700');
+    await expect(row.locator('figcaption p')).toHaveCSS('font-weight', '400');
+  }
+  const galleryBounds = await gallery.boundingBox();
+  const retrospective = await page.locator('#retrospective').boundingBox();
+  const expectedGap = (await page.viewportSize()).width < 1024 ? 80 : 82;
+  expect(retrospective.y - galleryBounds.y - galleryBounds.height).toBeCloseTo(expectedGap, 0);
+  const imageButton = gallery.locator('button').last();
+  await imageButton.click();
+  const dialog = page.getByRole('dialog');
+  await expect(dialog).toBeVisible();
+  await expect(dialog.locator('.modal-evidence-image')).toHaveAttribute('src', /\/pointly-2\/stay-details\.png$/);
+  await page.keyboard.press('Escape');
+  await expect(imageButton).toBeFocused();
 });
