@@ -65,7 +65,7 @@ test('desktop layout, typography and color match measured reference landmarks', 
   expect(await page.evaluate(() => document.fonts.check('750 44px "Pointly Inter"'))).toBe(true);
   const navigation = page.getByRole('navigation', { name: 'Project sections' });
   await expect(navigation.getByRole('link')).toHaveText(['Interviews', 'Research', 'Design', 'Retrospective']);
-  await expect(page.getByRole('navigation', { name: 'Main navigation' }).getByRole('link', { name: 'Work', exact: true })).toHaveCount(0);
+  await expect(page.getByRole('navigation', { name: 'Main navigation' }).getByRole('link', { name: 'Work', exact: true })).toHaveAttribute('href', '/#work');
   const retrospective = await page.locator('#retrospective').boundingBox();
   const gallery = await page.locator('.pointly-mvp-gallery').boundingBox();
   expect(retrospective.y - gallery.y - gallery.height).toBeCloseTo(96, 1);

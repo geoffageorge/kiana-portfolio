@@ -1,0 +1,72 @@
+{
+  "source": "Assets/obayashi/Obayashi.png",
+  "sourceSha256": "3bdf85661b87ed497d5c7e73d2c565d25ce31d7698fe79a4656469a94baf51a2",
+  "assets": {
+    "stakeholder-interviews": {
+      "file": "stakeholder-interviews.webp",
+      "width": 970,
+      "height": 482,
+      "sourceRect": [
+        407,
+        2285,
+        1377,
+        2767
+      ]
+    },
+    "audience-priorities": {
+      "file": "audience-priorities.webp",
+      "width": 755,
+      "height": 415,
+      "sourceRect": [
+        650,
+        3120,
+        1405,
+        3535
+      ]
+    },
+    "portfolio-evidence": {
+      "file": "portfolio-evidence.webp",
+      "width": 788,
+      "height": 435,
+      "sourceRect": [
+        650,
+        3610,
+        1438,
+        4045
+      ]
+    },
+    "credibility-signals": {
+      "file": "credibility-signals.webp",
+      "width": 705,
+      "height": 290,
+      "sourceRect": [
+        700,
+        4185,
+        1405,
+        4475
+      ]
+    },
+    "employer-experience": {
+      "file": "employer-experience.webp",
+      "width": 695,
+      "height": 395,
+      "sourceRect": [
+        670,
+        4580,
+        1365,
+        4975
+      ]
+    },
+    "content-hierarchy": {
+      "file": "content-hierarchy.webp",
+      "width": 750,
+      "height": 280,
+      "sourceRect": [
+        625,
+        5125,
+        1375,
+        5405
+      ]
+    }
+  }
+}

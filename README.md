@@ -82,7 +82,10 @@ src/
   lib/urls.js                   Links and assets on nested pages
   pages/CaseStudyPage.jsx        Shared project page composition
   pages/PointlyCaseStudyPage.jsx Point.ly layout matching the pointly_2 design
+  pages/ObayashiCaseStudyPage.jsx Obayashi layout and research from Obayashi.png
+  data/caseStudies/obayashi_old.js Preserved original Obayashi placeholder
   styles/global.css             Design tokens, fonts, shared rules
+  styles/case-study-theme.css    Local fonts shared by case studies and header
   components/                   Each folder contains JSX and its CSS
     Logo/                       Supplied Ki Logo, at the original displayed size
     BrandName/                  Name and UX design descriptor
@@ -108,6 +111,7 @@ public/assets/
   projects/                     Four original SVG placeholder images
   pointly/                      21 original images extracted from the source
   pointly-2/                    23 lossless reference crops and 3 MVP screenshots
+  obayashi/                     6 lossless research exhibits and crop manifest
   fonts/                        Locally hosted Inter, Roboto, Roboto Mono and OFL licenses
 projects/                       Static HTML entries for each project page
 pointly project/                Archived source, extracted study, and assets
@@ -131,7 +135,7 @@ Design Template/                Original design reference, preserved
 - Set `resumeUrl` to the final résumé URL, for example `${import.meta.env.BASE_URL}assets/resume.pdf`, and place the PDF in `public/assets/`.
 - Set `linkedInUrl` to the actual LinkedIn profile URL. Until these links are supplied, the controls explain that they are coming soon.
 - Put real project artwork in `public/assets/projects/`, then edit each record in `src/data/projects.js`. Replace its title, image, alt text, category, status, and description.
-- Each card has a `slug` and `caseStudyUrl` pointing to its project page. Point.ly contains the imported case study; the other pages use the reusable template with labeled placeholder content.
+- Each card has a `slug` and `caseStudyUrl` pointing to its project page. Obayashi and Point.ly have dedicated case studies; the archived and reserved pages use the reusable template with labeled placeholder content.
 - Only Obayashi and Point.ly appear on the home page. Project 03 and Project 04 remain defined with `showOnHome: false` in `src/data/projects.js`; their project pages and assets are retained. To add the next project, update Project 03's card details and case-study content, then set `showOnHome: true` to display its tile again.
 - Edit the About text in `src/App.jsx` when final biography copy is ready.
 
@@ -178,7 +182,7 @@ The temporary text-alignment line and controls have been removed after saving th
 
 ## Project pages and reusable template
 
-Open `/projects/pointly/` for the redesigned Point.ly case study or `/projects/template/` for the six-section template preview. The home page shows Obayashi and Point.ly; reserved Project 03 and Project 04 tiles are hidden until their content is ready. All pages reuse `SiteHeader`, `Navigation`, and `SiteFooter`; the header logo returns home. Point.ly uses the reference's About / Resume / Contact header and provides a Back to selected work link below the study. Other pages retain the Work navigation link. Exhibit images can be enlarged in an accessible dialog or opened at full size.
+Open `/projects/obayashi/` and `/projects/pointly/` for the current case studies, `/projects/obayashi_old/` for the original Obayashi placeholder, or `/projects/template/` for the six-section template preview. The home page shows Obayashi and Point.ly; reserved Project 03 and Project 04 tiles are hidden until their content is ready. Every page uses the same sticky glass header with Work / About / Resume / Contact, the same header typography and spacing, and the shared footer. Work returns to the home page's selected projects; the brand returns home. Exhibit images can be enlarged in an accessible dialog or opened at full size.
 
 The reusable template's six modules are **About**, **Deliverable**, **Completed**, **User Persona**, **Research**, and **Design Evolution**, in that order. Each has its own component in `src/components/CaseStudySections/` and uses the shared section layout. The template supplies placeholder text and imagery for all six. Point.ly now has its own layout in `PointlyCaseStudyPage.jsx` so the supplied redesign does not change other project templates.
 
@@ -187,6 +191,10 @@ Point.ly follows `Assets/pointly_2/Pointly Case Study 2.png`: an overview and si
 The reference is a flattened PNG without editable font metadata. Browser-rendered font samples were compared against it: locally hosted Inter is the closest heading match, Roboto is used for body copy, and Roboto Mono for labels and navigation. Fonts come from the official [Google Fonts repository](https://github.com/google/fonts); their OFL licenses are included under `public/assets/fonts/`. Colors are sampled from the reference: blue `#88cffd`, lime `#e7ef52`, card gray `#f7f7f7`, and white page background. The desktop content is 1200 pixels wide at a 1440-pixel viewport. Native content reflows on small screens.
 
 “From Research to MVP Prototype” uses the supplied `02-connected-wallet 1.png`, `06-recommended-stays 1.png`, and `07-stay-details 1.png` files in `Assets/pointly_2/`, copied unchanged into the public assets by the import script. They appear in that order as Rewards Dashboard, Personalized Recommendations, and Property Detail. Each full, uncropped image has the supplied heading and description to its right on desktop and below it on phones. The section shares the surrounding white background and body typography, with a 96-pixel gap before “What I Learned.” Images can be enlarged using the shared dialog. The original shared footer remains below the case study.
+
+Obayashi follows `Assets/obayashi/Obayashi.png`: overview, six-column facts, challenge, stakeholder interviews and five numbered research findings. Its photographs and annotated screenshots are extracted without changing their pixels into `public/assets/obayashi/`; the manifest records crop rectangles and the reference SHA-256. Regenerate with `python3 scripts/import-obayashi-design.py` (Pillow required). The green quote uses sampled `#e3f2e7`; the embedded pink annotations retain `#ffc9c9`. Native text shares Point.ly's local Inter / Roboto / Roboto Mono fonts and white background. Desktop overview alignment follows the PNG; its wider research layout reflows into one column on smaller screens.
+
+The supplied Obayashi export has a truncated introductory sentence and no content below “Four principles guided the redesign”; the remainder is an empty artboard. The website ends the introduction at the last complete fact, includes Design and Reflection as title-only sections with navigation links, and removes the excess blank space before research and after the supplied content. No design principles, final outcomes, or reflection claims have been invented. Add content beneath those headings in `ObayashiCaseStudyPage.jsx` when it is available. The earlier placeholder is preserved independently in `src/data/caseStudies/obayashi_old.js` and built at `/projects/obayashi_old/`. Obayashi's home tile opens Obayashi; the Point.ly tile opens Point.ly; the Obayashi footer also links to Point.ly as the next project.
 
 To add another case study:
 
@@ -201,7 +209,7 @@ For future projects, useful additions are a project overview (role, team, timeli
 
 The original shareable file is copied byte-for-byte into `pointly project/index.html`. `pointly project/case-study.html` extracts the earlier Point.ly case study with local image files. Its manifest records original image positions, alt text, dimensions, and checksums. Those earlier images remain archived in `public/assets/pointly/` and the earlier content in `src/data/caseStudies/pointly.js`; the active Point.ly route uses the new design. The archived source HTML pages are not part of the production site.
 
-The build includes a real `index.html` under every project path, so direct links and reloads work on static hosts without a special SPA redirect. Relative asset paths and `src/lib/urls.js` support publishing the entire `dist/` folder at the domain root or below a directory.
+The build includes a real `index.html` under every project path, so direct links and reloads work on static hosts without a special SPA redirect. Relative asset paths and `src/lib/urls.js` support publishing the entire `dist/` folder at the domain root or below a directory. `useInitialHashNavigation.js` scrolls incoming fragment links after React, lazy content and fonts are ready, so Work returns directly to `/#work` from project pages and shared section links open at the correct heading.
 
 ## Verification
 
@@ -216,6 +224,6 @@ npm run build
 PORTFOLIO_TEST_TARGET=production npm test
 ```
 
-Browser checks use locally installed Google Chrome. If Chrome is unavailable, install Playwright Chromium (`npx playwright install chromium`) and remove `channel: 'chrome'` from the Playwright configuration. Tests cover media loading, the four project tiles, shared navigation and dialogs, project links and reloads, all imported images, image enlargement, the reusable template, keyboard focus, automatic animation startup and a complete repeat after 10 seconds, reduced motion, fixed artwork settings, transparent logo pixels, and responsive overflow. Animation checks compare rendered transforms, opacity, easing, and spirograph rotation with the supplied HTML at 12 times across the cycle and its repeat. Header checks cover scrolling and anchor visibility on every page.
+Browser checks use locally installed Google Chrome. If Chrome is unavailable, install Playwright Chromium (`npx playwright install chromium`) and remove `channel: 'chrome'` from the Playwright configuration. Tests cover media loading, the two visible project tiles, shared navigation and dialogs, project links and reloads, all imported images, image enlargement, the archived Obayashi page, the reusable template, keyboard focus, automatic animation startup and a complete repeat after 10 seconds, reduced motion, fixed artwork settings, transparent logo pixels, and responsive overflow. Obayashi and Point.ly artwork is compared pixel by pixel to the supplied PNGs. Animation checks compare rendered transforms, opacity, easing, and spirograph rotation with the supplied HTML at 12 times across the cycle and its repeat. Header checks cover scrolling, consistent menu options and Work links on every page.
 
 The generated artwork is already included; Python is not needed to run or build the website. To regenerate it, install Pillow and NumPy in a Python environment, then run `python3 scripts/generate-assets.py`.

@@ -1,10 +1,3 @@
-@font-face { font-family: 'Pointly Roboto'; src: url('/assets/fonts/roboto-latin-variable.ttf') format('truetype'); font-style: normal; font-weight: 100 900; font-display: swap; }
-@font-face { font-family: 'Pointly Inter'; src: url('/assets/fonts/inter-latin-variable.ttf') format('truetype'); font-style: normal; font-weight: 100 900; font-display: swap; }
-@font-face { font-family: 'Pointly Roboto Mono'; src: url('/assets/fonts/robotomono-latin-variable.ttf') format('truetype'); font-style: normal; font-weight: 100 700; font-display: swap; }
-.page-container--pointly, .site-header--pointly .page-container { width: min(1200px, calc(100% - 80px)); }
-.site-header--pointly .brand-name, .site-header--pointly .site-nav { font-family: 'Pointly Roboto Mono', monospace; }
-.site-header--pointly .site-header__brand { gap: 28px; }
-.site-header--pointly .brand-name { font-size: 15px; }
 .pointly-case { --pointly-blue: #88cffd; --pointly-lime: #e7ef52; --pointly-gray: #f7f7f7; --pointly-mono: 'Pointly Roboto Mono', monospace; padding-top: 10px; padding-bottom: 488px; color: #000; font-family: 'Pointly Roboto', Arial, sans-serif; font-size: 18px; line-height: 22px; }
 .pointly-case h1, .pointly-case h2, .pointly-case h3, .pointly-case h4 { font-family: 'Pointly Inter', Arial, sans-serif; font-optical-sizing: auto; }
 .pointly-case h1, .pointly-case h2, .pointly-case h3, .pointly-case h4, .pointly-case p, .pointly-case figure, .pointly-case blockquote, .pointly-case ul, .pointly-case ol { margin: 0; }
@@ -125,9 +118,6 @@
   .pointly-retrospective { margin-top: 96px; }
 }
 @media (max-width: 767px) {
-  .page-container--pointly, .site-header--pointly .page-container { width: calc(100% - 40px); }
-  .site-header--pointly .site-header__brand { gap: 16px; }
-  .site-header--pointly .brand-name { font-size: 11px; }
   .pointly-case { padding-top: 24px; padding-bottom: 64px; }
   .pointly-case h2 { font-size: 32px; line-height: 38px; }
   .pointly-case h3 { font-size: 25px; line-height: 31px; }

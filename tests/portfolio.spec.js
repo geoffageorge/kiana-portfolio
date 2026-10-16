@@ -10,7 +10,7 @@ test('portfolio renders only the two current projects with working artwork and p
   const cards = page.getByRole('link', { name: /^View project/ });
   await expect(cards).toHaveCount(2);
   await expect(page.locator('.project-card h3')).toHaveText(['Obayashi North America', 'Point.ly']);
-  for (const [index, slug, title] of [[0, 'obayashi', 'Obayashi North America'], [1, 'pointly', 'Point.ly']]) {
+  for (const [index, slug, title] of [[0, 'obayashi', 'Obayashi'], [1, 'pointly', 'Point.ly']]) {
     const card = cards.nth(index);
     await card.scrollIntoViewIfNeeded();
     await expect(card.locator('img')).toHaveJSProperty('complete', true);

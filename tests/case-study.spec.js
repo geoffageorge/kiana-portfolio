@@ -67,7 +67,7 @@ test('section links and image enlargement work with keyboard focus', async ({ pa
 });
 
 test('template and upcoming projects share all six required sections', async ({ page }) => {
-  for (const [slug, title] of [['template', 'Project title'], ['obayashi', 'Obayashi North America'], ['project-03', 'Project 03'], ['project-04', 'Project 04']]) {
+  for (const [slug, title] of [['template', 'Project title'], ['obayashi_old', 'Obayashi North America'], ['project-03', 'Project 03'], ['project-04', 'Project 04']]) {
     await page.goto(`/projects/${slug}/`);
     await expect(page.getByRole('heading', { level: 1 })).toHaveText(title);
     await expect(page.locator('.case-section')).toHaveCount(6);

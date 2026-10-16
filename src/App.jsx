@@ -7,16 +7,20 @@ import Modal from './components/Modal/Modal.jsx';
 import { site } from './data/site.js';
 import { projects } from './data/projects.js';
 import { currentProjectSlug, siteUrl } from './lib/urls.js';
+import { useInitialHashNavigation } from './lib/useInitialHashNavigation.js';
 
 const CaseStudyPage = lazy(() => import('./pages/CaseStudyPage.jsx'));
 const PointlyCaseStudyPage = lazy(() => import('./pages/PointlyCaseStudyPage.jsx'));
+const ObayashiCaseStudyPage = lazy(() => import('./pages/ObayashiCaseStudyPage.jsx'));
 
 export default function App() {
+  useInitialHashNavigation();
   const [dialog, setDialog] = useState(null);
   const closeDialog = useCallback(() => setDialog(null), []);
   const projectSlug = currentProjectSlug();
   const isPointly = projectSlug === 'pointly';
-  const ProjectPage = isPointly ? PointlyCaseStudyPage : CaseStudyPage;
+  const isObayashi = projectSlug === 'obayashi';
+  const ProjectPage = isPointly ? PointlyCaseStudyPage : isObayashi ? ObayashiCaseStudyPage : CaseStudyPage;
 
   return (
     <>
@@ -27,10 +31,8 @@ export default function App() {
         workHref={projectSlug ? `${siteUrl()}#work` : '#work'}
         onAbout={() => setDialog({ kind: 'about', title: 'A little about me' })}
         onResume={() => setDialog({ kind: 'resume', title: 'Résumé coming soon' })}
-        variant={isPointly ? 'pointly' : undefined}
-        showWork={!isPointly}
       />
-      <main id="main" className={`page-container${isPointly ? ' page-container--pointly' : ''}`} tabIndex={-1}>
+      <main id="main" className={`page-container${isPointly || isObayashi ? ' page-container--case-study' : ''}`} tabIndex={-1}>
         {projectSlug ? (
           <Suspense fallback={<p className="case-loading" role="status">Loading project…</p>}>
             <ProjectPage slug={projectSlug} onOpenImage={(image) => setDialog({ kind: 'image', title: image.alt, image })} />

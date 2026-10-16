@@ -1,0 +1,7 @@
+/* Both case studies and the shared header use the same local font files. */
+@font-face { font-family: 'Pointly Roboto'; src: url('/assets/fonts/roboto-latin-variable.ttf') format('truetype'); font-style: normal; font-weight: 100 900; font-display: swap; }
+@font-face { font-family: 'Pointly Inter'; src: url('/assets/fonts/inter-latin-variable.ttf') format('truetype'); font-style: normal; font-weight: 100 900; font-display: swap; }
+@font-face { font-family: 'Pointly Roboto Mono'; src: url('/assets/fonts/robotomono-latin-variable.ttf') format('truetype'); font-style: normal; font-weight: 100 700; font-display: swap; }
+:root { --case-body: 'Pointly Roboto', Arial, sans-serif; --case-heading: 'Pointly Inter', Arial, sans-serif; --case-mono: 'Pointly Roboto Mono', monospace; }
+.page-container--case-study { width: min(1200px, calc(100% - 80px)); }
+@media (max-width: 767px) { .page-container--case-study { width: calc(100% - 40px); } }

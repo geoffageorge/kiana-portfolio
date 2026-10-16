@@ -7,7 +7,7 @@ const root = fileURLToPath(new URL('../', import.meta.url));
 const escapeHtml = (value) => value.replace(/[&<>"']/g, character => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[character]);
 
 for (const project of projectRoutes) {
-  if (!/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(project.slug)) throw new Error(`Invalid project slug: ${project.slug}`);
+  if (!/^[a-z0-9]+(?:[-_][a-z0-9]+)*$/.test(project.slug)) throw new Error(`Invalid project slug: ${project.slug}`);
   const folder = resolve(root, 'projects', project.slug);
   const destination = resolve(folder, 'index.html');
   const html = `<!doctype html>

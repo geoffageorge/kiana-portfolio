@@ -83,7 +83,7 @@ test('hero matches the original rings, labels, fades, and spirograph throughout 
 });
 
 test('page background and sticky header work on home and project pages', async ({ page }) => {
-  for (const path of ['/', '/projects/pointly/', '/projects/template/', '/projects/obayashi/', '/projects/project-03/', '/projects/project-04/']) {
+  for (const path of ['/', '/projects/pointly/', '/projects/template/', '/projects/obayashi/', '/projects/obayashi_old/', '/projects/project-03/', '/projects/project-04/']) {
     await page.goto(path);
     await expect(page.getByRole('heading', { level: 1 })).toBeVisible();
     await expect(page.locator('body')).toHaveCSS('background-color', 'rgb(255, 255, 255)');
@@ -100,7 +100,7 @@ test('page background and sticky header work on home and project pages', async (
     } else {
       await page.getByRole('navigation', { name: 'Project sections' }).getByRole('link', { name: /Research/ }).click();
       await expect.poll(() => page.locator('#research').evaluate(node => node.getBoundingClientRect().top >= document.querySelector('.site-header').getBoundingClientRect().bottom)).toBe(true);
-      if (page.viewportSize().width >= 1024) {
+      if (page.viewportSize().width >= 1024 && await page.locator('.case-navigation').count()) {
         const navigation = await page.locator('.case-navigation').boundingBox();
         expect(navigation.y).toBeGreaterThan(header.height);
       }

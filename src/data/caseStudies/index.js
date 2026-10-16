@@ -1,6 +1,7 @@
 import { projects } from '../projects.js';
 import { pointly } from './pointly.js';
 import { createProjectTemplate } from './template.js';
+import { obayashiOld } from './obayashi_old.js';
 
 export const caseStudies = Object.fromEntries(projects.map(project => [
   project.slug,
@@ -14,3 +15,4 @@ export const caseStudies = Object.fromEntries(projects.map(project => [
 ]));
 
 caseStudies.template = createProjectTemplate({ isTemplate: true });
+caseStudies.obayashi_old = obayashiOld;
