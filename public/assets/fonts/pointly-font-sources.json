@@ -1,0 +1,26 @@
+{
+  "fira-mono-regular.ttf": {
+    "source": "https://github.com/google/fonts/blob/main/ofl/firamono/FiraMono-Regular.ttf",
+    "sha256": "2e00b0cf3106a3d792f35711b7722740b76c02ee7300ea8c60f940584b7a8ac9"
+  },
+  "fira-mono-medium.ttf": {
+    "source": "https://github.com/google/fonts/blob/main/ofl/firamono/FiraMono-Medium.ttf",
+    "sha256": "a5bc1a2db2f65946049de615ecc08603d788eb0c02b520f4ed95f05a5cc58532"
+  },
+  "instrument-sans-variable.ttf": {
+    "source": "https://github.com/google/fonts/blob/main/ofl/instrumentsans/InstrumentSans[wdth,wght].ttf",
+    "sha256": "b24f1812584816958afcf22e22d08e44318c5e51651e25d2438efdde389b33b1"
+  },
+  "poppins-medium.ttf": {
+    "source": "https://github.com/google/fonts/blob/main/ofl/poppins/Poppins-Medium.ttf",
+    "sha256": "90373e7d838d32468438fc3e152dca0bdb12edcab99ea639f158790b1ba1fd05"
+  },
+  "poppins-bold.ttf": {
+    "source": "https://github.com/google/fonts/blob/main/ofl/poppins/Poppins-Bold.ttf",
+    "sha256": "983676516167748b74de6f4771fb384c664fd913acb8b471122ecacf5da5ea6c"
+  },
+  "inter-italic-variable.ttf": {
+    "source": "https://github.com/google/fonts/blob/main/ofl/inter/Inter-Italic[opsz,wght].ttf",
+    "sha256": "acd98e64795781b2058f07b18475e0ecee2a0fe2b42a49e2f9e37d0d6bf66ce6"
+  }
+}

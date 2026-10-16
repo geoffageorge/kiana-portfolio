@@ -29,13 +29,12 @@ test('direct Pointly links and reloads load every new reference image', async ({
   await page.reload();
   await expect(page.getByRole('heading', { level: 1 })).toHaveText('Point.ly');
   await expect(page.locator('.pointly-section')).toHaveCount(4);
-  const manifest = JSON.parse(await readFile(new URL('../public/assets/pointly-2/manifest.json', import.meta.url), 'utf8'));
+  const manifest = JSON.parse(await readFile(new URL('../public/assets/pointly-figma/manifest.json', import.meta.url), 'utf8'));
   const expected = Object.values(manifest.assets).map(image => image.file).sort();
-  await expect(page.locator('.pointly-mvp-gallery img')).toHaveCount(3);
-  const actual = await page.locator('main img').evaluateAll(images => [...new Set(images.map(image => image.src.split('/').at(-1)))].sort());
+  const actual = await page.locator('img[src*="/pointly-figma/"]').evaluateAll(images => [...new Set(images.map(image => image.src.split('/').at(-1)))].sort());
   expect(actual).toEqual(expected);
   for (const image of Object.values(manifest.assets)) {
-    const response = await request.get(`/assets/pointly-2/${image.file}`);
+    const response = await request.get(`/assets/pointly-figma/${image.file}`);
     expect(response.ok(), image.file).toBe(true);
     expect(response.headers()['content-type']).toMatch(/^image\//);
   }
@@ -53,15 +52,15 @@ test('section links and image enlargement work with keyboard focus', async ({ pa
   const dialog = page.getByRole('dialog');
   await expect(dialog).toBeVisible();
   await expect(dialog.getByRole('heading')).toHaveText('Point.ly homepage final design and destination discovery');
-  await expect(dialog.getByRole('link', { name: 'Open full-size image' })).toHaveAttribute('href', /hero-showcase\.webp$/);
+  await expect(dialog.getByRole('link', { name: 'Open full-size image' })).toHaveAttribute('href', /frame-3-2-1-186\.png$/);
   await page.keyboard.press('Escape');
   await expect(dialog).not.toBeVisible();
   await expect(image).toBeFocused();
-  const mvpImage = page.getByRole('button', { name: 'Enlarge Point.ly property detail comparing points, cash price, and redemption value', exact: true });
+  const mvpImage = page.getByRole('button', { name: 'Enlarge Mid-fidelity booking details wireframe', exact: true });
   await mvpImage.click();
   await expect(dialog).toBeVisible();
-  await expect(dialog.getByRole('heading')).toHaveText('Point.ly property detail comparing points, cash price, and redemption value');
-  await expect(dialog.getByRole('link', { name: 'Open full-size image' })).toHaveAttribute('href', /stay-details\.png$/);
+  await expect(dialog.getByRole('heading')).toHaveText('Mid-fidelity booking details wireframe');
+  await expect(dialog.getByRole('link', { name: 'Open full-size image' })).toHaveAttribute('href', /node-162\.png$/);
   await page.keyboard.press('Escape');
   await expect(mvpImage).toBeFocused();
 });

@@ -17,3 +17,21 @@
 .site-header__brand { gap: 28px; }
 @media (max-width: 1100px) { .site-header__brand { gap: 16px; } }
 @media (max-width: 767px) { .site-header .page-container { width: calc(100% - 40px); } .site-header .brand-name { font-size: 11px; } .site-header__inner { flex-wrap: wrap; gap: 24px; padding-top: 28px; padding-bottom: 16px; } .site-header__brand { gap: 16px; } }
+
+.site-header--pointly .site-header__inner { height: 126px; padding: 59px 15px 29px 2px; }
+.site-header--pointly .site-header__brand { gap: 23px; }
+.pointly-mark { display: block; position: relative; width: 57px; height: 38px; flex: 0 0 auto; }
+.pointly-mark img { display: block; position: absolute; max-width: none; }
+.site-header--pointly .brand-name, .site-header--pointly .site-nav { font: 400 15px/18px 'Fira Mono', monospace; transform: translateY(4px); }
+.site-header--pointly .brand-name { gap: 18px; }
+.site-header--pointly .site-nav { gap: 46px; }
+.site-header--pointly .site-nav > a, .site-header--pointly .site-nav > button { padding-block: 0; }
+.site-header--pointly .site-nav > :last-child { margin-left: 1px; }
+@media (max-width: 1100px) { .site-header--pointly .brand-name, .site-header--pointly .site-nav { font-size: 12px; } .site-header--pointly .site-nav { gap: 26px; } }
+@media (max-width: 767px) {
+  .site-header--pointly .site-header__inner { height: auto; padding: 24px 0 16px; gap: 16px; }
+  .site-header--pointly .site-header__brand { gap: 16px; }
+  .site-header--pointly .brand-name { gap: 0; font-size: 11px; line-height: 18px; transform: none; }
+  .site-header--pointly .site-nav { gap: 20px; width: 100%; transform: none; }
+  .site-header--pointly .site-nav > a, .site-header--pointly .site-nav > button { padding-block: 12px; }
+}

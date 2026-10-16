@@ -81,7 +81,7 @@ src/
       index.js                  Project data registry
   lib/urls.js                   Links and assets on nested pages
   pages/CaseStudyPage.jsx        Shared project page composition
-  pages/PointlyCaseStudyPage.jsx Point.ly layout matching the pointly_2 design
+  pages/PointlyCaseStudyPage.jsx Point.ly layout matching Figma frame 90:18
   pages/ObayashiCaseStudyPage.jsx Obayashi layout and research from Obayashi.png
   data/caseStudies/obayashi_old.js Preserved original Obayashi placeholder
   styles/global.css             Design tokens, fonts, shared rules
@@ -110,14 +110,16 @@ public/assets/
   hero/                         Previous GIF and poster (unused by the hero)
   projects/                     Four original SVG placeholder images
   pointly/                      21 original images extracted from the source
-  pointly-2/                    23 lossless reference crops and 3 MVP screenshots
+  pointly-2/                    Preserved assets from the previous Point.ly page
+  pointly-figma/                50 unchanged layer exports and their provenance manifest
   obayashi/                     6 lossless research exhibits and crop manifest
-  fonts/                        Locally hosted Inter, Roboto, Roboto Mono and OFL licenses
+  fonts/                        Local case-study fonts and their OFL licenses
 projects/                       Static HTML entries for each project page
 pointly project/                Archived source, extracted study, and assets
 scripts/generate-assets.py       Optional artwork regeneration
 scripts/import-pointly.py        Source archive and image extraction
 scripts/import-pointly-design.py  Extracts artwork from the pointly_2 Figma PNG
+scripts/import-pointly-figma.py   Copies the layer exports without changing image bytes
 scripts/scaffold-project-pages.mjs  Generates page entries before dev/build
 tests/portfolio.spec.js          Browser smoke checks
 tests/hero-animation.spec.js     Original animation comparison and sticky header checks
@@ -182,15 +184,15 @@ The temporary text-alignment line and controls have been removed after saving th
 
 ## Project pages and reusable template
 
-Open `/projects/obayashi/` and `/projects/pointly/` for the current case studies, `/projects/obayashi_old/` for the original Obayashi placeholder, or `/projects/template/` for the six-section template preview. The home page shows Obayashi and Point.ly; reserved Project 03 and Project 04 tiles are hidden until their content is ready. Every page uses the same sticky glass header with Work / About / Resume / Contact, the same header typography and spacing, and the shared footer. Work returns to the home page's selected projects; the brand returns home. Exhibit images can be enlarged in an accessible dialog or opened at full size.
+Open `/projects/obayashi/` and `/projects/pointly/` for the current case studies, `/projects/obayashi_old/` for the original Obayashi placeholder, or `/projects/template/` for the six-section template preview. The home page shows Obayashi and Point.ly; reserved Project 03 and Project 04 tiles are hidden until their content is ready. Pages retain the sticky glass header and shared footer. Point.ly uses its Figma-specific logo, spacing, Fira Mono, and About / Resume / Contact navigation; other pages keep Work / About / Resume / Contact. The brand returns home, and each project includes a return-to-work link. Exhibit images can be enlarged in an accessible dialog or opened at full size.
 
 The reusable template's six modules are **About**, **Deliverable**, **Completed**, **User Persona**, **Research**, and **Design Evolution**, in that order. Each has its own component in `src/components/CaseStudySections/` and uses the shared section layout. The template supplies placeholder text and imagery for all six. Point.ly now has its own layout in `PointlyCaseStudyPage.jsx` so the supplied redesign does not change other project templates.
 
-Point.ly follows `Assets/pointly_2/Pointly Case Study 2.png`: an overview and six-column fact row, two blue product showcases, challenge and circular goals, then Interviews, Research, Design, and Retrospective. Text is semantic HTML; screenshots, illustrations, logos, sketches and the visual-system exhibit are extracted losslessly from the supplied image. `public/assets/pointly-2/manifest.json` records each extraction rectangle and the original file's SHA-256. Regenerate these assets with `python3 scripts/import-pointly-design.py` (Pillow required).
+Point.ly follows the directly inspected Figma frame `90:18` in `wZSRbIZZXfUlrq902OXE2W`, using the layer images in `Assets/figma files/figma-export`. Its desktop reference is 1440 × 10457, with 1200-pixel content and 120-pixel outer margins. `Assets/figma files/pointly-frame-90-18.json` preserves the inspected geometry, font properties, and image-source metadata. The exporter omitted positioning and collapsed mixed text styles, so the React page restores the layout with CSS grid and normal document flow; overlapping art uses local positioning. All 50 PNG/SVG assets are copied byte-for-byte into `public/assets/pointly-figma/`. Its manifest records source paths, hashes, dimensions, and Figma layer IDs. Regenerate it with `python3 scripts/import-pointly-figma.py`.
 
-The reference is a flattened PNG without editable font metadata. Browser-rendered font samples were compared against it: locally hosted Inter is the closest heading match, Roboto is used for body copy, and Roboto Mono for labels and navigation. Fonts come from the official [Google Fonts repository](https://github.com/google/fonts); their OFL licenses are included under `public/assets/fonts/`. Colors are sampled from the reference: blue `#88cffd`, lime `#e7ef52`, card gray `#f7f7f7`, and white page background. The desktop content is 1200 pixels wide at a 1440-pixel viewport. Native content reflows on small screens.
+Point.ly uses the inspected Inter body/headings, Fira Mono labels/navigation, Instrument Sans palette labels, and Poppins type samples. Normal, medium, bold, and italic text ranges are separate HTML elements. The last specimen is labeled “Inter Bold Italic” but uses normal bold in the Figma layer; the implementation preserves that supplied style. Fonts are hosted locally from the official [Google Fonts repository](https://github.com/google/fonts), with their OFL licenses under `public/assets/fonts/`. The page makes no external font requests. Exact colors include blue `#88cffd`, lime `#e7ef52`, and card gray `#f7f7f7`. The Point.ly header uses its six exported SVG logo pieces and Fira Mono; other pages retain their existing header variant.
 
-“From Research to MVP Prototype” uses the supplied `02-connected-wallet 1.png`, `06-recommended-stays 1.png`, and `07-stay-details 1.png` files in `Assets/pointly_2/`, copied unchanged into the public assets by the import script. They appear in that order as Rewards Dashboard, Personalized Recommendations, and Property Detail. Each full, uncropped image has the supplied heading and description to its right on desktop and below it on phones. The section shares the surrounding white background and body typography, with a 96-pixel gap before “What I Learned.” Images can be enlarged using the shared dialog. The original shared footer remains below the case study.
+“From Research to MVP Prototype” retains the supplied introduction and the reference's empty desktop area before “What I Learned”; extra screens from the previous page are no longer inserted into that space. Below 1024 pixels the empty area collapses and the content reflows. Research cards, the four insight panels, and live palette/type samples also reflow on phones. Product screenshots and research exhibits open in the existing accessible image dialog. The shared contact footer and return-to-work link remain available. The previous Point.ly assets are preserved.
 
 Obayashi follows `Assets/obayashi/Obayashi.png`: overview, six-column facts, challenge, stakeholder interviews and five numbered research findings. Its photographs and annotated screenshots are extracted without changing their pixels into `public/assets/obayashi/`; the manifest records crop rectangles and the reference SHA-256. Regenerate with `python3 scripts/import-obayashi-design.py` (Pillow required). The green quote uses sampled `#e3f2e7`; the embedded pink annotations retain `#ffc9c9`. Native text shares Point.ly's local Inter / Roboto / Roboto Mono fonts and white background. Obayashi is labeled `01 /` and Point.ly `02 /`, matching the home tiles. The Obayashi Methodology sidebar stays 24 pixels below the shared header throughout Challenge, Research, Design and Reflection, with the content in its own column to avoid overlap. On phones and tablets below 1024 pixels, the section links wrap above the content like Point.ly's navigation.
 

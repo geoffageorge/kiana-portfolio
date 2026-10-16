@@ -128,10 +128,18 @@ test('Obayashi typography, source colors and responsive layout match the portfol
   await expect(page.locator('.obayashi-facts dt').first()).toHaveCSS('font-family', '"Pointly Roboto Mono", monospace');
 });
 
-test('Work, About, Resume and Contact remain consistent on every page', async ({ page }) => {
+test('shared navigation is preserved and Pointly uses its Figma header variant', async ({ page }) => {
   for (const path of ['/', ...projectRoutes.map(project => `/projects/${project.slug}/`)]) {
     await page.goto(path);
     const navigation = page.getByRole('navigation', { name: 'Main navigation' });
+    if (path === '/projects/pointly/') {
+      await expect(page.getByRole('heading', { level: 1 })).toHaveText('Point.ly');
+      await expect(navigation.locator(':scope > a, :scope > button')).toHaveText(['About', 'Resume', 'Contact']);
+      await expect(navigation).toHaveCSS('font-family', '"Fira Mono", monospace');
+      await page.getByRole('link', { name: 'Back to selected work' }).click();
+      await expect(page).toHaveURL(/\/#work$/);
+      continue;
+    }
     await expect(navigation.locator(':scope > a, :scope > button')).toHaveText(['Work', 'About', 'Resume', 'Contact']);
     await expect(navigation).toHaveCSS('font-family', '"Pointly Roboto Mono", monospace');
     await expect(navigation.getByRole('link', { name: 'Work', exact: true })).toHaveAttribute('href', path === '/' ? '#work' : '/#work');

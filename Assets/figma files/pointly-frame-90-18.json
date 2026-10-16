@@ -1,0 +1,1273 @@
+{
+  "fileKey": "wZSRbIZZXfUlrq902OXE2W",
+  "nodeId": "90:18",
+  "inspectedAt": "2026-10-16",
+  "frame": {
+    "id": "90:18",
+    "name": "Pointly Case Study 2",
+    "width": 1440,
+    "height": 10457,
+    "children": 136
+  },
+  "typography": [
+    {
+      "font": {
+        "family": "Inter",
+        "style": "Bold",
+        "variationSettings": {
+          "wght": 700,
+          "slnt": 0
+        }
+      },
+      "size": 38,
+      "weight": 700,
+      "lineHeight": {
+        "unit": "PERCENT",
+        "value": 104.99999523162842
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "colors": [
+        "#000000"
+      ],
+      "example": "The  \nChallenge",
+      "id": "90:20"
+    },
+    {
+      "font": {
+        "family": "Inter",
+        "style": "Bold",
+        "variationSettings": {
+          "wght": 700,
+          "slnt": 0
+        }
+      },
+      "size": 38,
+      "weight": 700,
+      "lineHeight": {
+        "unit": "PERCENT",
+        "value": 114.99999761581421
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "colors": [
+        "#000000"
+      ],
+      "example": "Different travelers.  A shared need for clari",
+      "id": "136:44"
+    },
+    {
+      "font": {
+        "family": "Inter",
+        "style": "Bold",
+        "variationSettings": {
+          "wght": 700,
+          "slnt": 0
+        }
+      },
+      "size": 22,
+      "weight": 700,
+      "lineHeight": {
+        "unit": "PERCENT",
+        "value": 114.99999761581421
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "colors": [
+        "#000000"
+      ],
+      "example": "Three personas emerged",
+      "id": "138:96"
+    },
+    {
+      "font": {
+        "family": "Inter",
+        "style": "Bold",
+        "variationSettings": {
+          "wght": 700,
+          "slnt": 0
+        }
+      },
+      "size": 80,
+      "weight": 700,
+      "lineHeight": {
+        "unit": "PERCENT",
+        "value": 104.99999523162842
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": -2
+      },
+      "colors": [
+        "#000000"
+      ],
+      "example": "Point.ly",
+      "id": "123:3"
+    },
+    {
+      "font": {
+        "family": "Inter",
+        "style": "Bold",
+        "variationSettings": {
+          "wght": 700,
+          "slnt": 0
+        }
+      },
+      "size": 16,
+      "weight": 700,
+      "lineHeight": {
+        "unit": "PIXELS",
+        "value": 26
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "colors": [
+        "#000000"
+      ],
+      "example": "Scattered rewards",
+      "id": "90:26"
+    },
+    {
+      "font": {
+        "family": "Inter",
+        "style": "Bold",
+        "variationSettings": {
+          "wght": 700,
+          "slnt": 0
+        }
+      },
+      "size": 22,
+      "weight": 700,
+      "lineHeight": {
+        "unit": "PIXELS",
+        "value": 26
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "colors": [
+        "#000000"
+      ],
+      "example": " ",
+      "id": "90:26"
+    },
+    {
+      "font": {
+        "family": "Inter",
+        "style": "Regular",
+        "variationSettings": {
+          "wght": 400,
+          "slnt": 0
+        }
+      },
+      "size": 16,
+      "weight": 400,
+      "lineHeight": {
+        "unit": "PIXELS",
+        "value": 26
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "colors": [
+        "#000000"
+      ],
+      "example": "Travelers accumulate points across credit car",
+      "id": "90:26"
+    },
+    {
+      "font": {
+        "family": "Inter",
+        "style": "Regular",
+        "variationSettings": {
+          "wght": 400,
+          "slnt": 0
+        }
+      },
+      "size": 26,
+      "weight": 400,
+      "lineHeight": {
+        "unit": "PIXELS",
+        "value": 32
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "colors": [
+        "#000000"
+      ],
+      "example": "Turning fragmented loyalty points into new tr",
+      "id": "123:5"
+    },
+    {
+      "font": {
+        "family": "Inter",
+        "style": "Regular",
+        "variationSettings": {
+          "wght": 400,
+          "slnt": 0
+        }
+      },
+      "size": 15,
+      "weight": 400,
+      "lineHeight": {
+        "unit": "PIXELS",
+        "value": 22
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "colors": [
+        "#000000"
+      ],
+      "example": "UX@Berkeley project team ",
+      "id": "123:8"
+    },
+    {
+      "font": {
+        "family": "Inter",
+        "style": "Bold",
+        "variationSettings": {
+          "wght": 700,
+          "slnt": 0
+        }
+      },
+      "size": 16,
+      "weight": 700,
+      "lineHeight": {
+        "unit": "PIXELS",
+        "value": 28
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "colors": [
+        "#000000"
+      ],
+      "example": "Interviews",
+      "id": "136:36"
+    },
+    {
+      "font": {
+        "family": "Inter",
+        "style": "Bold",
+        "variationSettings": {
+          "wght": 700,
+          "slnt": 0
+        }
+      },
+      "size": 24,
+      "weight": 700,
+      "lineHeight": {
+        "unit": "PERCENT",
+        "value": 114.99999761581421
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "colors": [
+        "#000000"
+      ],
+      "example": "Insight",
+      "id": "138:95"
+    },
+    {
+      "font": {
+        "family": "Inter",
+        "style": "Regular",
+        "variationSettings": {
+          "wght": 400,
+          "slnt": 0
+        }
+      },
+      "size": 16,
+      "weight": 400,
+      "lineHeight": {
+        "unit": "PIXELS",
+        "value": 28
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "colors": [
+        "#000000"
+      ],
+      "example": "Research",
+      "id": "136:89"
+    },
+    {
+      "font": {
+        "family": "Fira Mono",
+        "style": "Regular"
+      },
+      "size": 20,
+      "weight": 400,
+      "lineHeight": {
+        "unit": "PERCENT",
+        "value": 120.00000476837158
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "colors": [
+        "#60676c"
+      ],
+      "example": "01 /",
+      "id": "123:6"
+    },
+    {
+      "font": {
+        "family": "Fira Mono",
+        "style": "Medium"
+      },
+      "size": 11,
+      "weight": 500,
+      "lineHeight": {
+        "unit": "PERCENT",
+        "value": 120.00000476837158
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "colors": [
+        "#60676c"
+      ],
+      "example": "DELIVERABLE",
+      "id": "94:6"
+    },
+    {
+      "font": {
+        "family": "Fira Mono",
+        "style": "Medium"
+      },
+      "size": 18,
+      "weight": 500,
+      "lineHeight": {
+        "unit": "PERCENT",
+        "value": 120.00000476837158
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "colors": [
+        "#60676c"
+      ],
+      "example": "SIMPLIFY",
+      "id": "128:24"
+    },
+    {
+      "font": {
+        "family": "Fira Mono",
+        "style": "Medium"
+      },
+      "size": 18,
+      "weight": 500,
+      "lineHeight": {
+        "unit": "PERCENT",
+        "value": 120.00000476837158
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "colors": [
+        "#40b3fc"
+      ],
+      "example": "SIMPLIFY",
+      "id": "128:26"
+    },
+    {
+      "font": {
+        "family": "Inter",
+        "style": "Regular",
+        "variationSettings": {
+          "wght": 400,
+          "slnt": 0
+        }
+      },
+      "size": 16,
+      "weight": 400,
+      "lineHeight": {
+        "unit": "PIXELS",
+        "value": 24
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "colors": [
+        "#000000"
+      ],
+      "example": "“The bank portals feel like Expedia from 2010",
+      "id": "136:61"
+    },
+    {
+      "font": {
+        "family": "Inter",
+        "style": "Bold",
+        "variationSettings": {
+          "wght": 700,
+          "slnt": 0
+        }
+      },
+      "size": 18,
+      "weight": 700,
+      "lineHeight": {
+        "unit": "PIXELS",
+        "value": 22
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "colors": [
+        "#000000"
+      ],
+      "example": "Isa ",
+      "id": "136:60"
+    },
+    {
+      "font": {
+        "family": "Inter",
+        "style": "Regular",
+        "variationSettings": {
+          "wght": 400,
+          "slnt": 0
+        }
+      },
+      "size": 22,
+      "weight": 400,
+      "lineHeight": {
+        "unit": "PIXELS",
+        "value": 36
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "colors": [
+        "#000000"
+      ],
+      "example": "“I want a single view of all my points so I d",
+      "id": "136:73"
+    },
+    {
+      "font": {
+        "family": "Inter",
+        "style": "Regular",
+        "variationSettings": {
+          "wght": 400,
+          "slnt": 0
+        }
+      },
+      "size": 16,
+      "weight": 400,
+      "lineHeight": {
+        "unit": "PIXELS",
+        "value": 22
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "colors": [
+        "#000000"
+      ],
+      "example": "We analyzed existing rewards platforms to und",
+      "id": "143:74"
+    },
+    {
+      "font": {
+        "family": "Inter",
+        "style": "Regular",
+        "variationSettings": {
+          "wght": 400,
+          "slnt": 0
+        }
+      },
+      "size": 15,
+      "weight": 400,
+      "lineHeight": {
+        "unit": "PERCENT",
+        "value": 120.00000476837158
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "colors": [
+        "#000000"
+      ],
+      "example": "Broad multi-program search for quickly findin",
+      "id": "145:102"
+    },
+    {
+      "font": {
+        "family": "Instrument Sans",
+        "style": "Regular",
+        "variationSettings": {
+          "wght": 400,
+          "wdth": 100
+        }
+      },
+      "size": 15,
+      "weight": 400,
+      "lineHeight": {
+        "unit": "PERCENT",
+        "value": 120.00000476837158
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "colors": [
+        "#000000"
+      ],
+      "example": "Educational content, points valuations, and c",
+      "id": "145:110"
+    },
+    {
+      "font": {
+        "family": "Inter",
+        "style": "Bold",
+        "variationSettings": {
+          "wght": 700,
+          "slnt": 0
+        }
+      },
+      "size": 16,
+      "weight": 700,
+      "lineHeight": {
+        "unit": "PIXELS",
+        "value": 24
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "colors": [
+        "#000000"
+      ],
+      "example": "Insight: Expertise created  an uneven playing",
+      "id": "348:5"
+    },
+    {
+      "font": {
+        "family": "Instrument Sans",
+        "style": "Regular",
+        "variationSettings": {
+          "wght": 400,
+          "wdth": 100
+        }
+      },
+      "size": 16,
+      "weight": 400,
+      "lineHeight": {
+        "unit": "PERCENT",
+        "value": 120.00000476837158
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "colors": [
+        "#000000"
+      ],
+      "example": "Hotel-for-points booking (legacy brand; now p",
+      "id": "145:158"
+    },
+    {
+      "font": {
+        "family": "Fira Mono",
+        "style": "Medium"
+      },
+      "size": 12,
+      "weight": 500,
+      "lineHeight": {
+        "unit": "PERCENT",
+        "value": 120.00000476837158
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "colors": [
+        "#000000"
+      ],
+      "example": "HEADS",
+      "id": "174:7"
+    },
+    {
+      "font": {
+        "family": "Fira Mono",
+        "style": "Medium"
+      },
+      "size": 14,
+      "weight": 500,
+      "lineHeight": {
+        "unit": "PERCENT",
+        "value": 120.00000476837158
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "colors": [
+        "#000000"
+      ],
+      "example": "FCFCF8",
+      "id": "28:16"
+    },
+    {
+      "font": {
+        "family": "Fira Mono",
+        "style": "Medium"
+      },
+      "size": 14,
+      "weight": 500,
+      "lineHeight": {
+        "unit": "PERCENT",
+        "value": 120.00000476837158
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "colors": [
+        "#ffffff"
+      ],
+      "example": "DE8E5C",
+      "id": "28:63"
+    },
+    {
+      "font": {
+        "family": "Instrument Sans",
+        "style": "SemiBold",
+        "variationSettings": {
+          "wght": 600,
+          "wdth": 100
+        }
+      },
+      "size": 16,
+      "weight": 600,
+      "lineHeight": {
+        "unit": "PERCENT",
+        "value": 104.99999523162842
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "colors": [
+        "#000000"
+      ],
+      "example": "Primary palette",
+      "id": "28:71"
+    },
+    {
+      "font": {
+        "family": "Poppins",
+        "style": "Bold"
+      },
+      "size": 16,
+      "weight": 700,
+      "lineHeight": {
+        "unit": "PIXELS",
+        "value": 24
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "colors": [
+        "#000000"
+      ],
+      "example": "Poppins Bold",
+      "id": "32:3"
+    },
+    {
+      "font": {
+        "family": "Poppins",
+        "style": "Medium"
+      },
+      "size": 16,
+      "weight": 500,
+      "lineHeight": {
+        "unit": "PIXELS",
+        "value": 24
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "colors": [
+        "#000000"
+      ],
+      "example": "Poppins Medium",
+      "id": "174:29"
+    },
+    {
+      "font": {
+        "family": "Inter",
+        "style": "Italic",
+        "variationSettings": {
+          "wght": 400,
+          "slnt": -10
+        }
+      },
+      "size": 16,
+      "weight": 400,
+      "lineHeight": {
+        "unit": "PIXELS",
+        "value": 24
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "colors": [
+        "#000000"
+      ],
+      "example": "Inter Regular Italic\n",
+      "id": "174:5"
+    },
+    {
+      "font": {
+        "family": "Inter",
+        "style": "Medium",
+        "variationSettings": {
+          "wght": 500,
+          "slnt": 0
+        }
+      },
+      "size": 16,
+      "weight": 500,
+      "lineHeight": {
+        "unit": "PIXELS",
+        "value": 24
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "colors": [
+        "#000000"
+      ],
+      "example": "Inter Medium\n",
+      "id": "174:5"
+    },
+    {
+      "font": {
+        "family": "Inter",
+        "style": "Medium Italic",
+        "variationSettings": {
+          "wght": 500,
+          "slnt": -10
+        }
+      },
+      "size": 16,
+      "weight": 500,
+      "lineHeight": {
+        "unit": "PIXELS",
+        "value": 24
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "colors": [
+        "#000000"
+      ],
+      "example": "Inter Medium Italic\n",
+      "id": "174:5"
+    },
+    {
+      "font": {
+        "family": "Fira Mono",
+        "style": "Regular"
+      },
+      "size": 15,
+      "weight": 400,
+      "lineHeight": {
+        "unit": "PERCENT",
+        "value": 120.00000476837158
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "colors": [
+        "#000000"
+      ],
+      "example": "KIANA GEORGE  / UX DESIGN + INSIGHTS ",
+      "id": "187:15"
+    }
+  ],
+  "colors": [
+    "#ffffff",
+    "#000000",
+    "#e7ef52",
+    "#60676c",
+    "#40b3fc",
+    "#f7f7f7",
+    "#fcfcf8",
+    "#de8e5c",
+    "#23395a",
+    "#4e76b6",
+    "#d9564d",
+    "#dee5e9",
+    "#88cffd",
+    "#d9d9d9",
+    "#90b3bf",
+    "#ec297b",
+    "#92d3c8",
+    "#ade055",
+    "#f6921e",
+    "#f4cf14"
+  ],
+  "imageLayers": [
+    {
+      "id": "136:57",
+      "name": "Thoughtful interview with laptop-1 1",
+      "hash": "4c94e22e5ed2ba19ab233a42af7712192f8505ee",
+      "mode": "CROP",
+      "w": 284,
+      "h": 190
+    },
+    {
+      "id": "136:52",
+      "name": "Concerned man holding phone with account tiles-4 1",
+      "hash": "e598f7bf7a6554ee8d3870c1e2592b6e286703e1",
+      "mode": "CROP",
+      "w": 614,
+      "h": 409
+    },
+    {
+      "id": "136:53",
+      "name": "Jasmine’s thoughtful balance-7 1",
+      "hash": "96b107cfcd0e79dc74ecc40861eb37bedd0d982d",
+      "mode": "FILL",
+      "w": 262,
+      "h": 175
+    },
+    {
+      "id": "143:10",
+      "name": "Professional checking a group chat 1",
+      "hash": "727fb8b6221ba58c30ee36b1dfa668e7f0168553",
+      "mode": "FILL",
+      "w": 227,
+      "h": 200
+    },
+    {
+      "id": "143:11",
+      "name": "Aspiring expert with blue neckline-2 1",
+      "hash": "53468fb30da4a2b027e98b9249eeef00be5bb443",
+      "mode": "FILL",
+      "w": 80,
+      "h": 80
+    },
+    {
+      "id": "143:12",
+      "name": "Casual Redeemer Portrait, Isolated-3 1",
+      "hash": "1b8fb7541fb2b2924b2cb6388bcf4ca19cc35288",
+      "mode": "FILL",
+      "w": 81,
+      "h": 80
+    },
+    {
+      "id": "143:13",
+      "name": "Strategic Optimizer Portrait 1",
+      "hash": "2453024a2ad9b5ba0adcfdc2f4d781ce71f1a173",
+      "mode": "FILL",
+      "w": 91,
+      "h": 91
+    },
+    {
+      "id": "145:113",
+      "name": "Minimalist point.me Wordmark Logo 2",
+      "hash": "27b14be0771d3156265243ac15e2d9bc5f592f55",
+      "mode": "CROP",
+      "w": 104,
+      "h": 35
+    },
+    {
+      "id": "145:114",
+      "name": "pointsyeah 2",
+      "hash": "1dad5099bb3bbfa5f09468f5fbef239b7fc8e375",
+      "mode": "FILL",
+      "w": 105,
+      "h": 26
+    },
+    {
+      "id": "145:115",
+      "name": "seats-aero 2",
+      "hash": "205175c70c95697a6178b1ad0e8fd9e4ec1091a9",
+      "mode": "FILL",
+      "w": 106,
+      "h": 21
+    },
+    {
+      "id": "145:116",
+      "name": "roame 2",
+      "hash": "e837463d2a15ecb61afdd357232f13edaabcfb48",
+      "mode": "FILL",
+      "w": 104,
+      "h": 17
+    },
+    {
+      "id": "145:117",
+      "name": "AwardWallet Logo on White 2",
+      "hash": "b97cb4b4e642914460ca61235f96836016a98d23",
+      "mode": "FILL",
+      "w": 125,
+      "h": 62
+    },
+    {
+      "id": "145:120",
+      "name": "maxmypoint 2",
+      "hash": "a5fe058434b4b86ecc7b9bbf67d809ef1f724bed",
+      "mode": "FILL",
+      "w": 103,
+      "h": 33
+    },
+    {
+      "id": "145:121",
+      "name": "awardtool 2",
+      "hash": "78dc62b21b74ed7112cf8df963f4e2fff13f3b69",
+      "mode": "FILL",
+      "w": 103,
+      "h": 24
+    },
+    {
+      "id": "145:123",
+      "name": "The Points Guy Logo 2",
+      "hash": "6cc393cf2b9e6784c943fd1f87b840d0e8b25e4e",
+      "mode": "FILL",
+      "w": 145,
+      "h": 48
+    },
+    {
+      "id": "145:145",
+      "name": "Four-point sparkle on white disc-2 1",
+      "hash": "088378d9c947dfe17f2459b70222a20a79a833dc",
+      "mode": "FILL",
+      "w": 59,
+      "h": 59
+    },
+    {
+      "id": "348:17",
+      "name": "Four-point sparkle on white disc-2 3",
+      "hash": "088378d9c947dfe17f2459b70222a20a79a833dc",
+      "mode": "FILL",
+      "w": 59,
+      "h": 59
+    },
+    {
+      "id": "145:151",
+      "name": "Screenshot 2026-09-16 at 1.04.52 PM 2",
+      "hash": "972c1ab2cf832d9bc1c7f62516c080aa0420f763",
+      "mode": "FILL",
+      "w": 896,
+      "h": 380
+    },
+    {
+      "id": "145:154",
+      "name": "Screenshot 2026-09-25 at 9.24.44 AM 2",
+      "hash": "ff79c3e4a9962a4f97f29be6066a10bf547ac19a",
+      "mode": "CROP",
+      "w": 314,
+      "h": 389
+    },
+    {
+      "id": "145:155",
+      "name": "Screenshot 2026-09-25 at 9.23.39 AM 2",
+      "hash": "d6e845a4fb6cc67fdcdd12c4b79acdb15e82471b",
+      "mode": "FILL",
+      "w": 556,
+      "h": 388
+    },
+    {
+      "id": "145:147",
+      "name": "Minimal monoline lightbulb insight icon-1 2",
+      "hash": "1e6b19ec629dae747eacc884eb1af784e136ddbc",
+      "mode": "FILL",
+      "w": 59,
+      "h": 59
+    },
+    {
+      "id": "348:9",
+      "name": "Minimal monoline lightbulb insight icon-1 3",
+      "hash": "1e6b19ec629dae747eacc884eb1af784e136ddbc",
+      "mode": "FILL",
+      "w": 59,
+      "h": 59
+    },
+    {
+      "id": "174:24",
+      "name": "Traveler walking beside a globe 1",
+      "hash": "bd73b762b372b374d3c48ed04728cb78fb6c5f62",
+      "mode": "FILL",
+      "w": 183,
+      "h": 151
+    },
+    {
+      "id": "175:5",
+      "name": "Frame 3 2",
+      "hash": "83f399e8aa2275111c642692766eec9296ca4e3f",
+      "mode": "FILL",
+      "w": 455,
+      "h": 744
+    },
+    {
+      "id": "185:4",
+      "name": "Screenshot 2026-09-16 at 1.08.22 PM 1",
+      "hash": "c591cac4e68e8da494022e35ef5da4fc36518659",
+      "mode": "FILL",
+      "w": 473,
+      "h": 350
+    },
+    {
+      "id": "185:5",
+      "name": "Screenshot 2026-09-16 at 1.08.40 PM 1",
+      "hash": "052a7fb7e0b8436856e50a345961e3b96b78c155",
+      "mode": "FILL",
+      "w": 340,
+      "h": 248
+    },
+    {
+      "id": "185:6",
+      "name": "Screenshot 2026-09-16 at 1.08.30 PM 1",
+      "hash": "84943653c2b17caf819290be1f394fc84f191470",
+      "mode": "FILL",
+      "w": 260,
+      "h": 188
+    },
+    {
+      "id": "307:12",
+      "name": "04-points-options 1",
+      "hash": "cf4ed8b5351a2bef9912f53553c9a4c486dcb958",
+      "mode": "FILL",
+      "w": 342,
+      "h": 237
+    },
+    {
+      "id": "308:17",
+      "name": "05-featured-stay 2",
+      "hash": "e2afc1955a9e294418dd7b5dd7e1f219fdb5f1d8",
+      "mode": "FILL",
+      "w": 340,
+      "h": 236
+    },
+    {
+      "id": "308:20",
+      "name": "08-pro-tips 2",
+      "hash": "33a8ab88873b599527c65221c38a0156c87c4ed0",
+      "mode": "FILL",
+      "w": 342,
+      "h": 237
+    },
+    {
+      "id": "320:52",
+      "name": "Frame 3 (2) 1",
+      "hash": "3abd11ccbdd626a2438cee9201ab1ec7f13629cb",
+      "mode": "FILL",
+      "w": 695,
+      "h": 1136
+    }
+  ],
+  "images": [
+    {
+      "hash": "4c94e22e5ed2ba19ab233a42af7712192f8505ee",
+      "available": true,
+      "width": 1536,
+      "height": 1024
+    },
+    {
+      "hash": "e598f7bf7a6554ee8d3870c1e2592b6e286703e1",
+      "available": true,
+      "width": 1536,
+      "height": 1024
+    },
+    {
+      "hash": "96b107cfcd0e79dc74ecc40861eb37bedd0d982d",
+      "available": true,
+      "width": 1536,
+      "height": 1024
+    },
+    {
+      "hash": "727fb8b6221ba58c30ee36b1dfa668e7f0168553",
+      "available": true,
+      "width": 1337,
+      "height": 1176
+    },
+    {
+      "hash": "53468fb30da4a2b027e98b9249eeef00be5bb443",
+      "available": true,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "hash": "1b8fb7541fb2b2924b2cb6388bcf4ca19cc35288",
+      "available": true,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "hash": "2453024a2ad9b5ba0adcfdc2f4d781ce71f1a173",
+      "available": true,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "hash": "27b14be0771d3156265243ac15e2d9bc5f592f55",
+      "available": true,
+      "width": 2158,
+      "height": 729
+    },
+    {
+      "hash": "1dad5099bb3bbfa5f09468f5fbef239b7fc8e375",
+      "available": true,
+      "width": 413,
+      "height": 101
+    },
+    {
+      "hash": "205175c70c95697a6178b1ad0e8fd9e4ec1091a9",
+      "available": true,
+      "width": 462,
+      "height": 91
+    },
+    {
+      "hash": "e837463d2a15ecb61afdd357232f13edaabcfb48",
+      "available": true,
+      "width": 372,
+      "height": 60
+    },
+    {
+      "hash": "b97cb4b4e642914460ca61235f96836016a98d23",
+      "available": true,
+      "width": 1774,
+      "height": 887
+    },
+    {
+      "hash": "a5fe058434b4b86ecc7b9bbf67d809ef1f724bed",
+      "available": true,
+      "width": 407,
+      "height": 130
+    },
+    {
+      "hash": "78dc62b21b74ed7112cf8df963f4e2fff13f3b69",
+      "available": true,
+      "width": 387,
+      "height": 90
+    },
+    {
+      "hash": "6cc393cf2b9e6784c943fd1f87b840d0e8b25e4e",
+      "available": true,
+      "width": 2172,
+      "height": 724
+    },
+    {
+      "hash": "088378d9c947dfe17f2459b70222a20a79a833dc",
+      "available": true,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "hash": "972c1ab2cf832d9bc1c7f62516c080aa0420f763",
+      "available": true,
+      "width": 2108,
+      "height": 894
+    },
+    {
+      "hash": "ff79c3e4a9962a4f97f29be6066a10bf547ac19a",
+      "available": true,
+      "width": 734,
+      "height": 918
+    },
+    {
+      "hash": "d6e845a4fb6cc67fdcdd12c4b79acdb15e82471b",
+      "available": true,
+      "width": 1392,
+      "height": 972
+    },
+    {
+      "hash": "1e6b19ec629dae747eacc884eb1af784e136ddbc",
+      "available": true,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "hash": "bd73b762b372b374d3c48ed04728cb78fb6c5f62",
+      "available": true,
+      "width": 1382,
+      "height": 1138
+    },
+    {
+      "hash": "83f399e8aa2275111c642692766eec9296ca4e3f",
+      "available": true,
+      "width": 1437,
+      "height": 2349
+    },
+    {
+      "hash": "c591cac4e68e8da494022e35ef5da4fc36518659",
+      "available": true,
+      "width": 1322,
+      "height": 980
+    },
+    {
+      "hash": "052a7fb7e0b8436856e50a345961e3b96b78c155",
+      "available": true,
+      "width": 1294,
+      "height": 944
+    },
+    {
+      "hash": "84943653c2b17caf819290be1f394fc84f191470",
+      "available": true,
+      "width": 1288,
+      "height": 930
+    },
+    {
+      "hash": "cf4ed8b5351a2bef9912f53553c9a4c486dcb958",
+      "available": true,
+      "width": 1505,
+      "height": 1045
+    },
+    {
+      "hash": "e2afc1955a9e294418dd7b5dd7e1f219fdb5f1d8",
+      "available": true,
+      "width": 1505,
+      "height": 1045
+    },
+    {
+      "hash": "33a8ab88873b599527c65221c38a0156c87c4ed0",
+      "available": true,
+      "width": 1505,
+      "height": 1045
+    },
+    {
+      "hash": "3abd11ccbdd626a2438cee9201ab1ec7f13629cb",
+      "available": true,
+      "width": 1437,
+      "height": 2349
+    }
+  ],
+  "metadata": "Currently selected nodes:\n- 90:18: Pointly Case Study 2\n\n\n<frame id=\"90:18\" name=\"Pointly Case Study 2\" x=\"3044\" y=\"-13771\" width=\"1440\" height=\"10457\">\n  <text id=\"90:20\" name=\"The Challenge\" x=\"120\" y=\"1737\" width=\"472\" height=\"76\" />\n  <text id=\"128:18\" name=\"Goals\" x=\"120\" y=\"2256\" width=\"472\" height=\"76\" />\n  <text id=\"136:44\" name=\"Different travelers.  A shared need for clarity\" x=\"428\" y=\"2528\" width=\"845\" height=\"88\" />\n  <text id=\"143:17\" name=\"Research Revealed Insights\" x=\"426\" y=\"4211\" width=\"845\" height=\"44\" />\n  <text id=\"163:11\" name=\"Designing the User Experience\" x=\"428\" y=\"6242\" width=\"845\" height=\"44\" />\n  <text id=\"138:96\" name=\"Three personas emerged\" x=\"426\" y=\"3815\" width=\"845\" height=\"105\" />\n  <text id=\"145:125\" name=\"Exploring the Solution Space\" x=\"426\" y=\"4325\" width=\"845\" height=\"25\" />\n  <text id=\"163:10\" name=\"Opportunity Maps\" x=\"426\" y=\"4959\" width=\"845\" height=\"25\" />\n  <text id=\"145:134\" name=\"Key Insights and Opportunities\" x=\"426\" y=\"5506\" width=\"845\" height=\"35\" />\n  <text id=\"163:13\" name=\"Low-Fi: Testing Different Directions\" x=\"426\" y=\"6359\" width=\"845\" height=\"25\" />\n  <text id=\"187:3\" name=\"Mid-Fi: Narrowing the Experience\" x=\"426\" y=\"6958\" width=\"845\" height=\"25\" />\n  <text id=\"174:3\" name=\"Establishing an Approachable Visual Identity\" x=\"426\" y=\"7551\" width=\"845\" height=\"25\" />\n  <text id=\"316:42\" name=\"From Research to MVP Prototype\" x=\"426\" y=\"8188\" width=\"845\" height=\"25\" />\n  <text id=\"123:3\" name=\"Point.ly\" x=\"120\" y=\"184\" width=\"472\" height=\"76\" />\n  <text id=\"90:26\" name=\"Scattered rewards Travelers accumulate points across credit cards, airlines, and hotels without a clear view of what they can unlock together.\" x=\"736\" y=\"1835\" width=\"584\" height=\"81\" />\n  <text id=\"143:7\" name=\"The Strategic Optimizer Knows the system and works to maximize value.\" x=\"426\" y=\"3958\" width=\"250\" height=\"78\" />\n  <text id=\"143:8\" name=\"The Aspirational Expert Understands the basics and wants value, but needs guidance.\" x=\"735\" y=\"3958\" width=\"243\" height=\"104\" />\n  <text id=\"143:9\" name=\"The Casual Redeemer Uses points sporadically and prioritizes ease.\" x=\"1038\" y=\"3958\" width=\"255\" height=\"78\" />\n  <text id=\"123:17\" name=\"Point.ly began as a startup concept from a United Airlines manager who wanted to give travelers one view of their rewards. Travelers face three problems:\" x=\"734\" y=\"1737\" width=\"586\" height=\"78\" />\n  <text id=\"137:3\" name=\"I interviewed 10 travelers to understand how they managed rewards, evaluated redemption value, and navigated decisions around transfers and group travel.\" x=\"428\" y=\"2636\" width=\"865\" height=\"57\" />\n  <text id=\"123:5\" name=\"Turning fragmented loyalty points into new travel possibilities \" x=\"734\" y=\"203\" width=\"547\" height=\"89\" />\n  <text id=\"123:8\" name=\"UX@Berkeley project team\" x=\"734\" y=\"292\" width=\"490\" height=\"22\" />\n  <text id=\"90:27\" name=\"Finding the best redemption requires expertise Comparing cash, points, transfer partners, and booking portals means navigating different values, rules, and systems.\" x=\"736\" y=\"1936\" width=\"584\" height=\"81\" />\n  <text id=\"90:28\" name=\"Groups can’t pool rewards Friends may have significant rewards collectively, but few tools show what becomes possible when their points are considered together.\" x=\"736\" y=\"2037\" width=\"584\" height=\"81\" />\n  <text id=\"136:36\" name=\"Interviews\" x=\"120\" y=\"2537\" width=\"136\" height=\"28\" />\n  <rounded-rectangle id=\"138:92\" name=\"Conclusion Rectangle\" x=\"426\" y=\"3604\" width=\"894\" height=\"142\" />\n  <text id=\"138:95\" name=\"Insight\" x=\"499\" y=\"3649\" width=\"845\" height=\"105\" />\n  <text id=\"136:89\" name=\"Research\" x=\"120\" y=\"2570\" width=\"136\" height=\"28\" />\n  <text id=\"136:90\" name=\"Design\" x=\"120\" y=\"2603\" width=\"136\" height=\"28\" />\n  <text id=\"136:91\" name=\"Retrospective\" x=\"120\" y=\"2636\" width=\"136\" height=\"28\" />\n  <text id=\"123:6\" name=\"01 /\" x=\"126\" y=\"150\" width=\"48\" height=\"24\" />\n  <text id=\"136:45\" name=\"METHODOLOGY\" x=\"120\" y=\"2468\" width=\"132\" height=\"24\" />\n  <frame id=\"123:12\" name=\"Group 70\" x=\"120\" y=\"375\" width=\"170\" height=\"52\">\n    <text id=\"94:13\" name=\"Working MVP\" x=\"120\" y=\"405\" width=\"170\" height=\"22\" />\n    <text id=\"94:6\" name=\"DELIVERABLE\" x=\"120\" y=\"375\" width=\"73\" height=\"13\" />\n  </frame>\n  <frame id=\"123:11\" name=\"Group 69\" x=\"380\" y=\"375\" width=\"172\" height=\"74\">\n    <text id=\"123:9\" name=\"8 months + one day hackathon\" x=\"382\" y=\"405\" width=\"170\" height=\"44\" />\n    <text id=\"123:10\" name=\"TIMELINE\" x=\"380\" y=\"375\" width=\"66\" height=\"13\" />\n  </frame>\n  <frame id=\"123:14\" name=\"Group 72\" x=\"902\" y=\"375\" width=\"170\" height=\"162\">\n    <text id=\"94:14\" name=\"10 User Interviews Competitive Analysis Product Strategy PRD Development Prototyping Usability Testing\" x=\"902\" y=\"405\" width=\"170\" height=\"132\" />\n    <text id=\"94:10\" name=\"METHODS\" x=\"902\" y=\"375\" width=\"47\" height=\"13\" />\n  </frame>\n  <frame id=\"123:13\" name=\"Group 71\" x=\"1141\" y=\"375\" width=\"81\" height=\"118\">\n    <text id=\"94:16\" name=\"Figma Cursor Claude Gemini\" x=\"1141\" y=\"405\" width=\"81\" height=\"88\" />\n    <text id=\"94:11\" name=\"TOOLS\" x=\"1141\" y=\"375\" width=\"33\" height=\"13\" />\n  </frame>\n  <frame id=\"123:16\" name=\"Group 74\" x=\"642\" y=\"375\" width=\"170\" height=\"140\">\n    <text id=\"94:15\" name=\"UX research Prototyping Visual Identity  \" x=\"642\" y=\"405\" width=\"170\" height=\"110\" />\n    <text id=\"94:12\" name=\"MY CONTRIBUTION\" x=\"642\" y=\"375\" width=\"99\" height=\"13\" />\n  </frame>\n  <line id=\"143:16\" name=\"Line 69\" x=\"428\" y=\"2484\" width=\"892\" height=\"0.00007798112346790731\" />\n  <line id=\"143:18\" name=\"Line 70\" x=\"428\" y=\"4181\" width=\"892\" height=\"0.00007798112346790731\" />\n  <line id=\"163:12\" name=\"Line 71\" x=\"428\" y=\"6212\" width=\"892\" height=\"0.00007798112346790731\" />\n  <ellipse id=\"128:19\" name=\"Ellipse 12\" x=\"436\" y=\"2192\" width=\"195\" height=\"195\" />\n  <ellipse id=\"128:20\" name=\"Ellipse 13\" x=\"735\" y=\"2192\" width=\"195\" height=\"195\" />\n  <ellipse id=\"128:21\" name=\"Ellipse 14\" x=\"1047\" y=\"2192\" width=\"195\" height=\"195\" />\n  <text id=\"128:23\" name=\"One view of all rewards\" x=\"448\" y=\"2285\" width=\"170\" height=\"44\" />\n  <text id=\"130:28\" name=\"Easy booking comparisons\" x=\"748\" y=\"2285\" width=\"170\" height=\"44\" />\n  <text id=\"130:30\" name=\"Certainty of best value\" x=\"1060\" y=\"2294\" width=\"170\" height=\"44\" />\n  <text id=\"128:24\" name=\"SIMPLIFY\" x=\"489\" y=\"2250\" width=\"87\" height=\"22\" />\n  <text id=\"128:26\" name=\"SIMPLIFY\" x=\"489\" y=\"2250\" width=\"87\" height=\"22\" />\n  <text id=\"130:29\" name=\"CLARIFY\" x=\"795\" y=\"2250\" width=\"76\" height=\"22\" />\n  <text id=\"130:31\" name=\"BUILD CONFIDENCE\" x=\"1091\" y=\"2229\" width=\"108\" height=\"44\" />\n  <line id=\"130:33\" name=\"Line 65\" x=\"649\" y=\"2294\" width=\"63\" height=\"0\" />\n  <line id=\"130:34\" name=\"Line 66\" x=\"957\" y=\"2294\" width=\"63\" height=\"0\" />\n  <rounded-rectangle id=\"136:46\" name=\"Isa Rectangle 94\" x=\"428\" y=\"2732\" width=\"280\" height=\"403\" />\n  <rounded-rectangle id=\"136:77\" name=\"Isa Rectangle 99\" x=\"1040\" y=\"2732\" width=\"280\" height=\"403\" />\n  <rounded-rectangle id=\"136:57\" name=\"Thoughtful interview with laptop-1 1\" x=\"426\" y=\"2879\" width=\"284\" height=\"190\" />\n  <text id=\"136:61\" name=\"“The bank portals feel like Expedia from 2010. It’s hard to know if I’m getting a good deal.”\" x=\"465\" y=\"2775\" width=\"207\" height=\"96\" />\n  <text id=\"136:81\" name=\"“I want to plan trips with friends, but it’s so hard to coordinate and share options together.”\" x=\"1072\" y=\"2775\" width=\"215\" height=\"189\" />\n  <text id=\"136:60\" name=\"Isa  Tech Worker, 30s \" x=\"483\" y=\"3058\" width=\"170\" height=\"66\" />\n  <text id=\"136:84\" name=\"Afsaneh Professional 50s \" x=\"1095\" y=\"3058\" width=\"170\" height=\"68\" />\n  <rounded-rectangle id=\"136:70\" name=\"Daniel Rectangle 97\" x=\"422\" y=\"3168\" width=\"898\" height=\"403\" />\n  <text id=\"136:73\" name=\"“I want a single view of all my points so I don’t have to log into multiple accounts.”\" x=\"897\" y=\"3307\" width=\"368\" height=\"251\" />\n  <text id=\"136:71\" name=\"Daniel Student, 20s \" x=\"539\" y=\"3489\" width=\"170\" height=\"66\" />\n  <rounded-rectangle id=\"136:52\" name=\"Concerned man holding phone with account tiles-4 1\" x=\"322\" y=\"3135\" width=\"614\" height=\"409\" />\n  <rounded-rectangle id=\"136:75\" name=\"Isa Rectangle 97\" x=\"732\" y=\"2732\" width=\"280\" height=\"403\" />\n  <text id=\"136:82\" name=\"Jasmine, 30s \" x=\"793\" y=\"3058\" width=\"170\" height=\"66\" />\n  <text id=\"136:79\" name=\"“It’s hard to understand the real value of a points transfer — will I actually save money?”\" x=\"775\" y=\"2775\" width=\"207\" height=\"96\" />\n  <text id=\"138:94\" name=\"Users did not necessarily need more ways to earn points. They needed help understanding the value already sitting in their wallets.\" x=\"735\" y=\"3649\" width=\"535\" height=\"140\" />\n  <rounded-rectangle id=\"136:53\" name=\"Jasmine’s thoughtful balance-7 1\" x=\"736\" y=\"2883\" width=\"262\" height=\"175\" />\n  <rounded-rectangle id=\"143:10\" name=\"Professional checking a group chat 1\" x=\"1066\" y=\"2852\" width=\"227\" height=\"200\" />\n  <rounded-rectangle id=\"143:11\" name=\"Aspiring expert with blue neckline-2 1\" x=\"729\" y=\"3872\" width=\"80\" height=\"80\" />\n  <rounded-rectangle id=\"143:12\" name=\"Casual Redeemer Portrait, Isolated-3 1\" x=\"1030\" y=\"3872\" width=\"81\" height=\"80\" />\n  <rounded-rectangle id=\"143:13\" name=\"Strategic Optimizer Portrait 1\" x=\"413\" y=\"3867\" width=\"91\" height=\"91\" />\n  <frame id=\"145:126\" name=\"Frame 243\" x=\"514\" y=\"4840\" width=\"68\" height=\"40\">\n    <rounded-rectangle id=\"145:113\" name=\"Minimalist point.me Wordmark Logo 2\" x=\"0\" y=\"0\" width=\"104\" height=\"35\" />\n  </frame>\n  <rounded-rectangle id=\"145:114\" name=\"pointsyeah 2\" x=\"514\" y=\"4543\" width=\"105\" height=\"26\" />\n  <rounded-rectangle id=\"145:115\" name=\"seats-aero 2\" x=\"512\" y=\"4430\" width=\"106\" height=\"21\" />\n  <rounded-rectangle id=\"145:116\" name=\"roame 2\" x=\"512\" y=\"4493\" width=\"104\" height=\"17\" />\n  <rounded-rectangle id=\"145:117\" name=\"AwardWallet Logo on White 2\" x=\"506\" y=\"4708\" width=\"125\" height=\"62\" />\n  <rounded-rectangle id=\"145:120\" name=\"maxmypoint 2\" x=\"515\" y=\"4658\" width=\"103\" height=\"33\" />\n  <rounded-rectangle id=\"145:121\" name=\"awardtool 2\" x=\"514\" y=\"4611\" width=\"103\" height=\"24\" />\n  <rounded-rectangle id=\"145:123\" name=\"The Points Guy Logo 2\" x=\"497\" y=\"4772\" width=\"145\" height=\"48\" />\n  <text id=\"143:74\" name=\"We analyzed existing rewards platforms to understand competitors’ unique differentiating features\" x=\"427\" y=\"4362\" width=\"822\" height=\"22\" />\n  <text id=\"163:9\" name=\"We mapped each competitors’ features and user flows to identify strengths, friction points, and opportunities\" x=\"427\" y=\"4996\" width=\"893\" height=\"22\" />\n  <text id=\"163:14\" name=\"Guided by our research, we quickly explored multiple concepts, including a Chrome extension, centralized rewards wallet, AI trip planning, itinerary comparison, and personalized points recommendations.\" x=\"427\" y=\"6396\" width=\"884\" height=\"52\" />\n  <text id=\"187:4\" name=\"We prioritized the concepts that most directly addressed our research findings: consolidating rewards, simplifying comparisons, and making redemption opportunities actionable. Broader ideas that moved beyond these core needs were deprioritized.\" x=\"427\" y=\"6995\" width=\"856\" height=\"78\" />\n  <text id=\"314:31\" name=\"I developed Point.ly’s visual identity to make the complexity of credit card points feel clear and approachable, balancing a friendly personality with the credibility of a financial tool.\" x=\"427\" y=\"7588\" width=\"856\" height=\"52\" />\n  <text id=\"316:43\" name=\"We translated our research into a high-fidelity MVP prototype focused on consolidating rewards, comparing redemption options, and guiding travelers toward booking. The project remained at the prototype stage.\" x=\"427\" y=\"8225\" width=\"856\" height=\"52\" />\n  <text id=\"145:135\" name=\"Text\" x=\"427\" y=\"5559\" width=\"822\" height=\"26\" />\n  <text id=\"145:102\" name=\"Broad multi-program search for quickly finding award availability.\" x=\"676\" y=\"4493\" width=\"555\" height=\"18\" />\n  <text id=\"145:103\" name=\"Flight and hotel award search with strong free tools.\" x=\"676\" y=\"4553\" width=\"555\" height=\"18\" />\n  <text id=\"145:104\" name=\"Guided award search with step-by-step booking support.\" x=\"676\" y=\"4434\" width=\"649\" height=\"18\" />\n  <text id=\"145:106\" name=\"Hotel-focused award availability and redemption alerts.\" x=\"676\" y=\"4670\" width=\"458\" height=\"18\" />\n  <text id=\"145:107\" name=\"Centralized tracking for points balances and expirations.\" x=\"676\" y=\"4729\" width=\"452\" height=\"18\" />\n  <text id=\"145:109\" name=\"Flexible award search with filters and trend data.\" x=\"676\" y=\"4611\" width=\"402\" height=\"18\" />\n  <text id=\"145:110\" name=\"Educational content, points valuations, and credit-card guidance.\" x=\"676\" y=\"4788\" width=\"474\" height=\"18\" />\n  <text id=\"145:129\" name=\"Powerful, fast award search designed for experienced users.\" x=\"676\" y=\"4847\" width=\"474\" height=\"18\" />\n  <rounded-rectangle id=\"348:3\" name=\"Points Box\" x=\"883\" y=\"5552\" width=\"439\" height=\"249\" />\n  <rounded-rectangle id=\"348:10\" name=\"Points Box\" x=\"883\" y=\"5818\" width=\"439\" height=\"249\" />\n  <rounded-rectangle id=\"348:14\" name=\"Points Box\" x=\"428\" y=\"5818\" width=\"439\" height=\"249\" />\n  <rounded-rectangle id=\"348:6\" name=\"Points Box\" x=\"426\" y=\"5552\" width=\"439\" height=\"249\" />\n  <text id=\"145:138\" name=\"Savvy travelers knew the transfer partners and redemption tricks. Everyone else had the same options but no easy way to find them. \" x=\"1000\" y=\"5646\" width=\"296\" height=\"91\" />\n  <text id=\"348:11\" name=\"Instead of a flat “not enough points,” provide a list of creative ways to close the gap, such as current promos and affiliated points programs. \" x=\"1000\" y=\"5911\" width=\"269\" height=\"91\" />\n  <text id=\"348:15\" name=\"For people planning together, looking at combined resources rather than individual balances could open travel options\" x=\"545\" y=\"5911\" width=\"269\" height=\"91\" />\n  <text id=\"348:7\" name=\"Knowing you have 80,000 points is meaningless unless you know what they can buy and whether transferring is worth it. \" x=\"543\" y=\"5651\" width=\"281\" height=\"91\" />\n  <text id=\"348:5\" name=\"Insight: Expertise created  an uneven playing field\" x=\"1000\" y=\"5588\" width=\"296\" height=\"48\" />\n  <text id=\"348:12\" name=\"Opportunity: Provide ideas to  close points gaps fast\" x=\"1000\" y=\"5853\" width=\"296\" height=\"48\" />\n  <text id=\"348:16\" name=\"Opportunity: Suggest ways to pool rewards for group travel\" x=\"545\" y=\"5853\" width=\"296\" height=\"48\" />\n  <text id=\"348:8\" name=\"Insight: Points mean nothing  without context\" x=\"543\" y=\"5588\" width=\"296\" height=\"48\" />\n  <rounded-rectangle id=\"145:145\" name=\"Four-point sparkle on white disc-2 1\" x=\"916\" y=\"5844\" width=\"59\" height=\"59\" />\n  <rounded-rectangle id=\"348:17\" name=\"Four-point sparkle on white disc-2 3\" x=\"458\" y=\"5844\" width=\"59\" height=\"59\" />\n  <text id=\"145:158\" name=\"Hotel-for-points booking (legacy brand; now part of Rocketmiles).\" x=\"485\" y=\"5316\" width=\"258\" height=\"38\" />\n  <text id=\"145:159\" name=\"Hotel-for-points booking (legacy brand; now part of Rocketmiles).\" x=\"485\" y=\"5316\" width=\"258\" height=\"38\" />\n  <rounded-rectangle id=\"145:151\" name=\"Screenshot 2026-09-16 at 1.04.52 PM 2\" x=\"426\" y=\"5055\" width=\"896\" height=\"380\" />\n  <rounded-rectangle id=\"145:154\" name=\"Screenshot 2026-09-25 at 9.24.44 AM 2\" x=\"428\" y=\"6490\" width=\"314\" height=\"389\" />\n  <rounded-rectangle id=\"145:155\" name=\"Screenshot 2026-09-25 at 9.23.39 AM 2\" x=\"761\" y=\"6490\" width=\"556\" height=\"388\" />\n  <rounded-rectangle id=\"145:147\" name=\"Minimal monoline lightbulb insight icon-1 2\" x=\"914\" y=\"5582\" width=\"59\" height=\"59\" />\n  <rounded-rectangle id=\"348:9\" name=\"Minimal monoline lightbulb insight icon-1 3\" x=\"458\" y=\"5582\" width=\"59\" height=\"59\" />\n  <frame id=\"314:30\" name=\"Group 80\" x=\"422\" y=\"7685\" width=\"898\" height=\"422\">\n    <rounded-rectangle id=\"174:23\" name=\"Daniel Rectangle 98\" x=\"422\" y=\"7685\" width=\"898\" height=\"422\" />\n    <text id=\"174:7\" name=\"HEADS\" x=\"912\" y=\"7781\" width=\"36\" height=\"14\" />\n    <text id=\"174:28\" name=\"BUTTONS\" x=\"1091\" y=\"7781\" width=\"51\" height=\"14\" />\n    <text id=\"174:10\" name=\"BODY\" x=\"912\" y=\"7859\" width=\"29\" height=\"14\" />\n    <rounded-rectangle id=\"28:53\" name=\"Rectangle 2\" x=\"471\" y=\"7771\" width=\"120\" height=\"120\" />\n    <rounded-rectangle id=\"28:58\" name=\"Rectangle 6\" x=\"602\" y=\"7771\" width=\"120\" height=\"120\" />\n    <rounded-rectangle id=\"28:59\" name=\"Rectangle 7\" x=\"733\" y=\"7771\" width=\"120\" height=\"120\" />\n    <text id=\"28:16\" name=\"FCFCF8\" x=\"484\" y=\"7788\" width=\"79\" height=\"14\" />\n    <text id=\"28:63\" name=\"DE8E5C\" x=\"617\" y=\"7789\" width=\"72\" height=\"14\" />\n    <text id=\"28:64\" name=\"23395A\" x=\"751\" y=\"7789\" width=\"70\" height=\"14\" />\n    <vector id=\"28:54\" name=\"Rectangle 3\" x=\"669\" y=\"7959\" width=\"87\" height=\"88\" />\n    <vector id=\"28:55\" name=\"Rectangle 4\" x=\"572\" y=\"7959\" width=\"88\" height=\"88\" />\n    <vector id=\"28:56\" name=\"Rectangle 5\" x=\"471\" y=\"7959\" width=\"92\" height=\"88\" />\n    <vector id=\"135:6\" name=\"Rectangle 19\" x=\"765\" y=\"7959\" width=\"88\" height=\"88\" />\n    <text id=\"28:65\" name=\"BECDD6\" x=\"484\" y=\"7975\" width=\"57\" height=\"14\" />\n    <text id=\"28:66\" name=\"D9564D\" x=\"587\" y=\"7975\" width=\"55\" height=\"14\" />\n    <text id=\"28:67\" name=\"4E76B6\" x=\"682\" y=\"7976\" width=\"60\" height=\"13\" />\n    <text id=\"174:4\" name=\"40B3FC\" x=\"778\" y=\"7976\" width=\"64\" height=\"13\" />\n    <text id=\"28:71\" name=\"Primary palette\" x=\"471\" y=\"7726\" width=\"139\" height=\"35\" />\n    <text id=\"32:6\" name=\"Typography\" x=\"911\" y=\"7726\" width=\"139\" height=\"35\" />\n    <text id=\"28:72\" name=\"Secondary Palette\" x=\"471\" y=\"7914\" width=\"191\" height=\"35\" />\n    <text id=\"32:3\" name=\"Poppins Bold\" x=\"911\" y=\"7805\" width=\"107\" height=\"24\" />\n    <text id=\"174:29\" name=\"Poppins Medium\" x=\"1090\" y=\"7804\" width=\"135\" height=\"24\" />\n    <text id=\"174:5\" name=\"Inter Regular Inter Regular Italic Inter Medium Inter Medium Italic Inter Bold Inter Bold Italic\" x=\"911\" y=\"7882\" width=\"142\" height=\"144\" />\n    <rounded-rectangle id=\"174:24\" name=\"Traveler walking beside a globe 1\" x=\"1100\" y=\"7921\" width=\"183\" height=\"151\" />\n  </frame>\n  <rounded-rectangle id=\"175:3\" name=\"Rectangle 94\" x=\"120\" y=\"667\" width=\"1200\" height=\"572\" />\n  <rounded-rectangle id=\"274:4\" name=\"Rectangle 95\" x=\"120\" y=\"588\" width=\"1200\" height=\"655\" />\n  <frame id=\"175:13\" name=\"Mask group\" x=\"785\" y=\"667\" width=\"488\" height=\"497\">\n    <rounded-rectangle id=\"175:12\" name=\"Rectangle 96\" x=\"785\" y=\"667\" width=\"488\" height=\"497\" />\n    <rounded-rectangle id=\"175:5\" name=\"Frame 3 2\" x=\"800\" y=\"373\" width=\"455\" height=\"744\" />\n  </frame>\n  <rounded-rectangle id=\"185:4\" name=\"Screenshot 2026-09-16 at 1.08.22 PM 1\" x=\"422\" y=\"7111\" width=\"473\" height=\"350\" />\n  <rounded-rectangle id=\"185:5\" name=\"Screenshot 2026-09-16 at 1.08.40 PM 1\" x=\"916\" y=\"7111\" width=\"340\" height=\"248\" />\n  <rounded-rectangle id=\"185:6\" name=\"Screenshot 2026-09-16 at 1.08.30 PM 1\" x=\"1041\" y=\"7286\" width=\"260\" height=\"188\" />\n  <frame id=\"187:8\" name=\"Logo 2\" x=\"122\" y=\"59\" width=\"57\" height=\"38\" />\n  <text id=\"187:15\" name=\"KIANA GEORGE / UX DESIGN + INSIGHTS\" x=\"202\" y=\"73\" width=\"324\" height=\"18\" />\n  <text id=\"187:16\" name=\"ABOUT\" x=\"1050\" y=\"73\" width=\"45\" height=\"18\" />\n  <text id=\"187:17\" name=\"RESUME\" x=\"1141\" y=\"73\" width=\"54\" height=\"18\" />\n  <text id=\"187:18\" name=\"CONTACT\" x=\"1242\" y=\"73\" width=\"63\" height=\"18\" />\n  <frame id=\"320:57\" name=\"Group 82\" x=\"120\" y=\"1297\" width=\"1200\" height=\"366\">\n    <rounded-rectangle id=\"320:51\" name=\"Rectangle 96\" x=\"120\" y=\"1297\" width=\"1200\" height=\"366\" />\n    <frame id=\"320:56\" name=\"Group 81\" x=\"190\" y=\"1362\" width=\"1061\" height=\"237\">\n      <rounded-rectangle id=\"307:12\" name=\"04-points-options 1\" x=\"548\" y=\"1362\" width=\"342\" height=\"237\" />\n      <rounded-rectangle id=\"308:17\" name=\"05-featured-stay 2\" x=\"190\" y=\"1363\" width=\"340\" height=\"236\" />\n      <rounded-rectangle id=\"308:20\" name=\"08-pro-tips 2\" x=\"909\" y=\"1362\" width=\"342\" height=\"237\" />\n    </frame>\n  </frame>\n  <text id=\"314:37\" name=\"What I Learned\" x=\"429\" y=\"9689\" width=\"845\" height=\"44\" />\n  <rounded-rectangle id=\"314:34\" name=\"Conclusion Rectangle\" x=\"427\" y=\"9778\" width=\"894\" height=\"468\" />\n  <text id=\"314:35\" name=\"Reflection\" x=\"500\" y=\"9849\" width=\"845\" height=\"105\" />\n  <line id=\"314:38\" name=\"Line 72\" x=\"427\" y=\"9659\" width=\"892\" height=\"0.00007798112346790731\" />\n  <text id=\"314:36\" name=\"Interviewing travelers with different habits and levels of points experience taught me that people can approach the same problem differently but still need similar things from a product.  At the hackathon, I turned our findings into a PRD, used AI coding tools to build a working prototype, and tested it with users. This helped me connect what I heard in interviews to specific choices about how the product should work.  The biggest lesson came from working through the full process: listening to a full spectrum of user experiences, making sense of what I heard, building, testing, and improving the design based on feedback.\" x=\"736\" y=\"9849\" width=\"492\" height=\"301\" />\n  <rounded-rectangle id=\"320:53\" name=\"Rectangle 114\" x=\"145\" y=\"712\" width=\"772\" height=\"531\" />\n  <rounded-rectangle id=\"320:52\" name=\"Frame 3 (2) 1\" x=\"170\" y=\"751\" width=\"695\" height=\"1136\" />\n</frame>\nIMPORTANT: After you call this tool, you MUST call get_design_context if trying to implement the design, since this tool only returns metadata. If you do not call get_design_context, the agent will not be able to implement the design."
+}
