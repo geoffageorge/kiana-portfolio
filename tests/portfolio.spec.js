@@ -1,6 +1,6 @@
 import { test, expect } from '@playwright/test';
 
-test('portfolio renders four projects with working local artwork', async ({ page }) => {
+test('portfolio renders only the two current projects with working artwork and page links', async ({ page }) => {
   const errors = [];
   page.on('pageerror', (error) => errors.push(error.message));
   page.on('response', (response) => { if (response.status() >= 400) errors.push(`${response.status()} ${response.url()}`); });
@@ -8,11 +8,17 @@ test('portfolio renders four projects with working local artwork', async ({ page
   await expect(page.getByRole('heading', { level: 1 })).toHaveText('ClarifyingChaos');
   await expect(page.getByRole('heading', { name: 'Select Work' })).toBeVisible();
   const cards = page.getByRole('link', { name: /^View project/ });
-  await expect(cards).toHaveCount(4);
-  for (const card of await cards.all()) {
+  await expect(cards).toHaveCount(2);
+  await expect(page.locator('.project-card h3')).toHaveText(['Obayashi North America', 'Point.ly']);
+  for (const [index, slug, title] of [[0, 'obayashi', 'Obayashi North America'], [1, 'pointly', 'Point.ly']]) {
+    const card = cards.nth(index);
     await card.scrollIntoViewIfNeeded();
     await expect(card.locator('img')).toHaveJSProperty('complete', true);
     expect(await card.locator('img').evaluate((image) => image.naturalWidth)).toBeGreaterThan(0);
+    await expect(card).toHaveAttribute('href', `/projects/${slug}/`);
+    await card.click();
+    await expect(page.getByRole('heading', { level: 1 })).toHaveText(title);
+    await page.goto('/');
   }
   expect(await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth)).toBe(true);
   expect(errors).toEqual([]);

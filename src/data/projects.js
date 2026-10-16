@@ -1,6 +1,7 @@
 import { assetUrl, projectUrl } from '../lib/urls.js';
 
-// Each card links to a project page rendered by the shared case-study template.
+// Each card links to its project page. Set showOnHome to false to reserve a
+// future tile; change it to true when the project is ready for the home page.
 export const projects = [
   {
     id: 'project-01',
@@ -29,6 +30,7 @@ export const projects = [
   },
   {
     id: 'project-03',
+    showOnHome: false,
     slug: 'project-03',
     title: 'Project title goes here',
     number: '03',
@@ -41,6 +43,7 @@ export const projects = [
   },
   {
     id: 'project-04',
+    showOnHome: false,
     slug: 'project-04',
     title: 'Project title goes here',
     number: '04',

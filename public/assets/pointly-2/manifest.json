@@ -1,0 +1,280 @@
+{
+  "source": "Assets/pointly_2/Pointly Case Study 2.png",
+  "sourceSha256": "004c24eb2723577496ab2ac5cacbea023beed0d53ade7caf34dde025dff0d4a5",
+  "assets": {
+    "hero-showcase": {
+      "file": "hero-showcase.webp",
+      "width": 1200,
+      "height": 655,
+      "sourceRect": [
+        120,
+        558,
+        1320,
+        1213
+      ]
+    },
+    "rewards-flow": {
+      "file": "rewards-flow.webp",
+      "width": 1200,
+      "height": 366,
+      "sourceRect": [
+        120,
+        1267,
+        1320,
+        1633
+      ]
+    },
+    "isa": {
+      "file": "isa.webp",
+      "width": 188,
+      "height": 145,
+      "sourceRect": [
+        476,
+        2890,
+        664,
+        3035
+      ]
+    },
+    "jasmine": {
+      "file": "jasmine.webp",
+      "width": 175,
+      "height": 145,
+      "sourceRect": [
+        780,
+        2890,
+        955,
+        3035
+      ]
+    },
+    "afsaneh": {
+      "file": "afsaneh.webp",
+      "width": 195,
+      "height": 145,
+      "sourceRect": [
+        1080,
+        2890,
+        1275,
+        3035
+      ]
+    },
+    "daniel": {
+      "file": "daniel.webp",
+      "width": 357,
+      "height": 250,
+      "sourceRect": [
+        480,
+        3205,
+        837,
+        3455
+      ]
+    },
+    "strategic-optimizer": {
+      "file": "strategic-optimizer.webp",
+      "width": 63,
+      "height": 67,
+      "sourceRect": [
+        426,
+        3918,
+        489,
+        3985
+      ]
+    },
+    "aspirational-expert": {
+      "file": "aspirational-expert.webp",
+      "width": 63,
+      "height": 67,
+      "sourceRect": [
+        739,
+        3918,
+        802,
+        3985
+      ]
+    },
+    "casual-redeemer": {
+      "file": "casual-redeemer.webp",
+      "width": 63,
+      "height": 67,
+      "sourceRect": [
+        1040,
+        3918,
+        1103,
+        3985
+      ]
+    },
+    "seats-aero": {
+      "file": "seats-aero.webp",
+      "width": 114,
+      "height": 39,
+      "sourceRect": [
+        511,
+        4424,
+        625,
+        4463
+      ]
+    },
+    "roame": {
+      "file": "roame.webp",
+      "width": 114,
+      "height": 39,
+      "sourceRect": [
+        511,
+        4484,
+        625,
+        4523
+      ]
+    },
+    "pointsyeah": {
+      "file": "pointsyeah.webp",
+      "width": 114,
+      "height": 39,
+      "sourceRect": [
+        511,
+        4544,
+        625,
+        4583
+      ]
+    },
+    "awardtool": {
+      "file": "awardtool.webp",
+      "width": 114,
+      "height": 39,
+      "sourceRect": [
+        511,
+        4604,
+        625,
+        4643
+      ]
+    },
+    "maxmypoint": {
+      "file": "maxmypoint.webp",
+      "width": 114,
+      "height": 49,
+      "sourceRect": [
+        511,
+        4654,
+        625,
+        4703
+      ]
+    },
+    "awardwallet": {
+      "file": "awardwallet.webp",
+      "width": 114,
+      "height": 39,
+      "sourceRect": [
+        511,
+        4724,
+        625,
+        4763
+      ]
+    },
+    "the-points-guy": {
+      "file": "the-points-guy.webp",
+      "width": 117,
+      "height": 49,
+      "sourceRect": [
+        511,
+        4774,
+        628,
+        4823
+      ]
+    },
+    "point-me": {
+      "file": "point-me.webp",
+      "width": 114,
+      "height": 39,
+      "sourceRect": [
+        511,
+        4844,
+        625,
+        4883
+      ]
+    },
+    "opportunity-map": {
+      "file": "opportunity-map.webp",
+      "width": 894,
+      "height": 381,
+      "sourceRect": [
+        426,
+        5037,
+        1320,
+        5418
+      ]
+    },
+    "low-fi-wallet": {
+      "file": "low-fi-wallet.webp",
+      "width": 314,
+      "height": 389,
+      "sourceRect": [
+        428,
+        6478,
+        742,
+        6867
+      ]
+    },
+    "low-fi-exploration": {
+      "file": "low-fi-exploration.webp",
+      "width": 556,
+      "height": 389,
+      "sourceRect": [
+        761,
+        6478,
+        1317,
+        6867
+      ]
+    },
+    "mid-fi-dashboard": {
+      "file": "mid-fi-dashboard.webp",
+      "width": 473,
+      "height": 353,
+      "sourceRect": [
+        422,
+        7100,
+        895,
+        7453
+      ]
+    },
+    "mid-fi-comparison": {
+      "file": "mid-fi-comparison.webp",
+      "width": 403,
+      "height": 365,
+      "sourceRect": [
+        917,
+        7100,
+        1320,
+        7465
+      ]
+    },
+    "visual-system": {
+      "file": "visual-system.webp",
+      "width": 898,
+      "height": 435,
+      "sourceRect": [
+        422,
+        7667,
+        1320,
+        8102
+      ]
+    },
+    "connected-wallet": {
+      "file": "connected-wallet.png",
+      "width": 574,
+      "height": 401,
+      "sourceFile": "Assets/pointly_2/02-connected-wallet 1.png",
+      "sourceSha256": "fef63434b6523213ceef5547eb2e38fc7a417cb429bb772f0b1749b94e5ec9fe"
+    },
+    "recommended-stays": {
+      "file": "recommended-stays.png",
+      "width": 573,
+      "height": 409,
+      "sourceFile": "Assets/pointly_2/06-recommended-stays 1.png",
+      "sourceSha256": "5d842fff7c3e51f2270b2de9a6bf4a53101f54dc19b6c3c17d351f2bcfbe9c5b"
+    },
+    "stay-details": {
+      "file": "stay-details.png",
+      "width": 573,
+      "height": 410,
+      "sourceFile": "Assets/pointly_2/07-stay-details 1.png",
+      "sourceSha256": "6de69388dce92cab9b1b7e2d645fdaaaaf20b961bbb16e7cc73edf69a3e80660"
+    }
+  }
+}

@@ -81,6 +81,7 @@ src/
       index.js                  Project data registry
   lib/urls.js                   Links and assets on nested pages
   pages/CaseStudyPage.jsx        Shared project page composition
+  pages/PointlyCaseStudyPage.jsx Point.ly layout matching the pointly_2 design
   styles/global.css             Design tokens, fonts, shared rules
   components/                   Each folder contains JSX and its CSS
     Logo/                       Supplied Ki Logo, at the original displayed size
@@ -106,15 +107,19 @@ public/assets/
   hero/                         Previous GIF and poster (unused by the hero)
   projects/                     Four original SVG placeholder images
   pointly/                      21 original images extracted from the source
+  pointly-2/                    23 lossless reference crops and 3 MVP screenshots
+  fonts/                        Locally hosted Inter, Roboto, Roboto Mono and OFL licenses
 projects/                       Static HTML entries for each project page
 pointly project/                Archived source, extracted study, and assets
 scripts/generate-assets.py       Optional artwork regeneration
 scripts/import-pointly.py        Source archive and image extraction
+scripts/import-pointly-design.py  Extracts artwork from the pointly_2 Figma PNG
 scripts/scaffold-project-pages.mjs  Generates page entries before dev/build
 tests/portfolio.spec.js          Browser smoke checks
 tests/hero-animation.spec.js     Original animation comparison and sticky header checks
 tests/hero-layout.spec.js        Fixed framing, responsive placement, colors, and transparent logo checks
 tests/hero-canvas.spec.js        Canvas containment and removal of temporary inspection UI
+tests/pointly-design.spec.js     Source-pixel, typography, color, geometry, and responsive checks
 Assets/clarifying-chaos-solid-colors.html  Original animation reference
 specs/                          Original specifications, preserved
 Design Template/                Original design reference, preserved
@@ -127,6 +132,7 @@ Design Template/                Original design reference, preserved
 - Set `linkedInUrl` to the actual LinkedIn profile URL. Until these links are supplied, the controls explain that they are coming soon.
 - Put real project artwork in `public/assets/projects/`, then edit each record in `src/data/projects.js`. Replace its title, image, alt text, category, status, and description.
 - Each card has a `slug` and `caseStudyUrl` pointing to its project page. Point.ly contains the imported case study; the other pages use the reusable template with labeled placeholder content.
+- Only Obayashi and Point.ly appear on the home page. Project 03 and Project 04 remain defined with `showOnHome: false` in `src/data/projects.js`; their project pages and assets are retained. To add the next project, update Project 03's card details and case-study content, then set `showOnHome: true` to display its tile again.
 - Edit the About text in `src/App.jsx` when final biography copy is ready.
 
 The hero renders the native SVG from `Assets/clarifying-chaos-solid-colors.html` in `HeroArtwork.jsx` with scoped animation styles in `HeroArtwork.css`. It preserves the five moving labels, 10-second CSS cycle, 25 rotating spirograph ellipses with 12–16-second SVG animation cycles, and the final glowing outline and “Clarity” text. The four ring colors are `#9cbabc`, `#e5ef18`, `#afddb1`, and `#5fd1d3`; the spirograph and final outline use the same palette. It starts automatically and loops continuously. Reduced-motion visitors see the static final circle and labels. The SVG has a transparent background. Its final glowing circle uses native SVG arcs and a blur filter, replacing absolutely positioned HTML inside `foreignObject` that Safari can render in the wrong location. A scene clipPath, hidden SVG overflow, and a contained figure keep every drawing layer within the hero canvas.
@@ -172,16 +178,20 @@ The temporary text-alignment line and controls have been removed after saving th
 
 ## Project pages and reusable template
 
-Open `/projects/pointly/` for the Point.ly case study or `/projects/template/` for the six-section template preview. The remaining home page tiles open their own placeholder project pages. All pages reuse `SiteHeader`, `Navigation`, and `SiteFooter`; Work and the header logo return to the home page. Images can be enlarged in an accessible dialog or opened at full size.
+Open `/projects/pointly/` for the redesigned Point.ly case study or `/projects/template/` for the six-section template preview. The home page shows Obayashi and Point.ly; reserved Project 03 and Project 04 tiles are hidden until their content is ready. All pages reuse `SiteHeader`, `Navigation`, and `SiteFooter`; the header logo returns home. Point.ly uses the reference's About / Resume / Contact header and provides a Back to selected work link below the study. Other pages retain the Work navigation link. Exhibit images can be enlarged in an accessible dialog or opened at full size.
 
-The six required modules are **About**, **Deliverable**, **Completed**, **User Persona**, **Research**, and **Design Evolution**, in that order. Each has its own component in `src/components/CaseStudySections/` and uses the shared section layout. The template supplies placeholder text and imagery for all six. Case studies fill those sections with appropriate evidence rather than forcing an unrelated image into each section.
+The reusable template's six modules are **About**, **Deliverable**, **Completed**, **User Persona**, **Research**, and **Design Evolution**, in that order. Each has its own component in `src/components/CaseStudySections/` and uses the shared section layout. The template supplies placeholder text and imagery for all six. Point.ly now has its own layout in `PointlyCaseStudyPage.jsx` so the supplied redesign does not change other project templates.
 
-Point.ly includes the source's interview profiles and quotes, research questions and findings, product strategy, early concepts, usability feedback, visual system, onboarding iterations, hackathon, final screens, outcomes, and reflection. All 21 unique source images are used. Product strategy is a subsection of Research; Outcomes and Reflection are optional sections following the six core modules. No quantified business results were supplied or invented.
+Point.ly follows `Assets/pointly_2/Pointly Case Study 2.png`: an overview and six-column fact row, two blue product showcases, challenge and circular goals, then Interviews, Research, Design, and Retrospective. Text is semantic HTML; screenshots, illustrations, logos, sketches and the visual-system exhibit are extracted losslessly from the supplied image. `public/assets/pointly-2/manifest.json` records each extraction rectangle and the original file's SHA-256. Regenerate these assets with `python3 scripts/import-pointly-design.py` (Pillow required).
+
+The reference is a flattened PNG without editable font metadata. Browser-rendered font samples were compared against it: locally hosted Inter is the closest heading match, Roboto is used for body copy, and Roboto Mono for labels and navigation. Fonts come from the official [Google Fonts repository](https://github.com/google/fonts); their OFL licenses are included under `public/assets/fonts/`. Colors are sampled from the reference: blue `#88cffd`, lime `#e7ef52`, card gray `#f7f7f7`, and white page background. The desktop content is 1200 pixels wide at a 1440-pixel viewport. Native content reflows on small screens.
+
+“From Research to MVP Prototype” uses the supplied `02-connected-wallet 1.png`, `06-recommended-stays 1.png`, and `07-stay-details 1.png` files in `Assets/pointly_2/`, copied unchanged into the public assets by the import script. They appear in that order as Rewards Dashboard, Personalized Recommendations, and Property Detail. Each full, uncropped image has the supplied heading and description to its right on desktop and below it on phones. The section shares the surrounding white background and body typography, with a 96-pixel gap before “What I Learned.” Images can be enlarged using the shared dialog. The original shared footer remains below the case study.
 
 To add another case study:
 
 1. Add its `{ slug, title, description }` to `src/data/projectRoutes.js`. Page entries are generated automatically before `npm run dev` and `npm run build`.
-2. Add its home card to `src/data/projects.js`, using `assetUrl()` for imagery and `projectUrl(slug)` for its link.
+2. Update the reserved Project 03 card in `src/data/projects.js` and set `showOnHome: true`, or add a new card using `assetUrl()` for imagery and `projectUrl(slug)` for its link. Do the same for Project 04 when needed.
 3. Start with `createProjectTemplate({ slug, title, number, image, imageAlt })` from `src/data/caseStudies/template.js`, then replace the six sections with the project's content.
 4. Register that data in `src/data/caseStudies/index.js`. The shared page needs no layout changes.
 
@@ -189,7 +199,7 @@ Sections accept `text`, `list`, `cards`, `quote`, and `gallery` blocks. Gallery 
 
 For future projects, useful additions are a project overview (role, team, timeline, scope), product strategy, outcomes with measured results when available, reflection and next steps, and a live prototype link when one is provided. The current Point.ly source does not include a working external prototype URL or quantified impact metrics.
 
-The original shareable file is copied byte-for-byte into `pointly project/index.html`. `pointly project/case-study.html` extracts just the Point.ly case study with local image files. Its manifest records original image positions, alt text, dimensions, and checksums. The images are also copied to `public/assets/pointly/` for the new website; the archived source pages are not part of the production site.
+The original shareable file is copied byte-for-byte into `pointly project/index.html`. `pointly project/case-study.html` extracts the earlier Point.ly case study with local image files. Its manifest records original image positions, alt text, dimensions, and checksums. Those earlier images remain archived in `public/assets/pointly/` and the earlier content in `src/data/caseStudies/pointly.js`; the active Point.ly route uses the new design. The archived source HTML pages are not part of the production site.
 
 The build includes a real `index.html` under every project path, so direct links and reloads work on static hosts without a special SPA redirect. Relative asset paths and `src/lib/urls.js` support publishing the entire `dist/` folder at the domain root or below a directory.
 
