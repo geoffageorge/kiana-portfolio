@@ -1,0 +1,794 @@
+{
+  "sourceFrame": {
+    "fileKey": "wZSRbIZZXfUlrq902OXE2W",
+    "nodeId": "90:18",
+    "inspectedAt": "2026-10-19",
+    "width": 1440,
+    "height": 10571
+  },
+  "assets": {
+    "connected-wallet": {
+      "file": "connected-wallet.png",
+      "width": 1505,
+      "height": 1045,
+      "figmaNodeId": "413:18",
+      "sha256": "39f30dae7ee6ffa34f171c7518228e6f0b26953dbc180bd67616383da6616c82",
+      "figmaImageHash": "a9c7bda168c3e8673b073b2f30b812ae08d42d7c"
+    },
+    "recommended-stays": {
+      "file": "recommended-stays.png",
+      "width": 1487,
+      "height": 1058,
+      "figmaNodeId": "413:17",
+      "sha256": "557b1b87b8df1ef19c7e273ca11894d67fed8e02e23a7c079790fad2162e9d81",
+      "figmaImageHash": "32b60f6c97a327525e4475ab6f093ad1a83f6184"
+    },
+    "stay-details": {
+      "file": "stay-details.png",
+      "width": 1487,
+      "height": 1058,
+      "figmaNodeId": "413:16",
+      "sha256": "bf68a8c6e37a910bc03e7a7c9cfeb3cf9b807af24eff6affed2c74b19bd45942",
+      "figmaImageHash": "8bf8b4113b4c8720869b3203c62be1233bf938c9"
+    },
+    "line-61": {
+      "file": "line-61.svg",
+      "width": 1200,
+      "height": 0.250105,
+      "figmaNodeId": "101:3",
+      "sha256": "0ccb2b4f71501993f3cbd9c69416ecf7a269677705f9280fd01806e78f3adc92"
+    }
+  },
+  "reusedAssets": {
+    "line-69-49": {
+      "figmaNodeId": "143:16",
+      "slot": {
+        "x": 428.0,
+        "y": 2561.0,
+        "width": 892.0,
+        "height": 7.798112346790731e-05
+      },
+      "renderedBounds": {
+        "x": 428.0,
+        "y": 2561.0,
+        "width": 892.0,
+        "height": 1.0
+      }
+    },
+    "line-70-50": {
+      "figmaNodeId": "143:18",
+      "slot": {
+        "x": 428.0,
+        "y": 4230.0,
+        "width": 892.0,
+        "height": 7.798112346790731e-05
+      },
+      "renderedBounds": {
+        "x": 428.0,
+        "y": 4230.0,
+        "width": 892.0,
+        "height": 1.0
+      }
+    },
+    "line-71-51": {
+      "figmaNodeId": "163:12",
+      "slot": {
+        "x": 428.0,
+        "y": 6199.0,
+        "width": 892.0,
+        "height": 7.798112346790731e-05
+      },
+      "renderedBounds": {
+        "x": 428.0,
+        "y": 6199.0,
+        "width": 892.0,
+        "height": 1.0
+      }
+    },
+    "ellipse-12-52": {
+      "figmaNodeId": "128:19",
+      "slot": {
+        "x": 436.0,
+        "y": 2244.0,
+        "width": 195.0,
+        "height": 195.0
+      },
+      "renderedBounds": {
+        "x": 436.0,
+        "y": 2244.0,
+        "width": 195.0,
+        "height": 195.0
+      }
+    },
+    "ellipse-13-53": {
+      "figmaNodeId": "128:20",
+      "slot": {
+        "x": 735.0,
+        "y": 2244.0,
+        "width": 195.0,
+        "height": 195.0
+      },
+      "renderedBounds": {
+        "x": 735.0,
+        "y": 2244.0,
+        "width": 195.0,
+        "height": 195.0
+      }
+    },
+    "ellipse-14-54": {
+      "figmaNodeId": "128:21",
+      "slot": {
+        "x": 1047.0,
+        "y": 2244.0,
+        "width": 195.0,
+        "height": 195.0
+      },
+      "renderedBounds": {
+        "x": 1047.0,
+        "y": 2244.0,
+        "width": 195.0,
+        "height": 195.0
+      }
+    },
+    "line-65-62": {
+      "figmaNodeId": "130:33",
+      "slot": {
+        "x": 649.0,
+        "y": 2346.0,
+        "width": 63.0,
+        "height": 0.0
+      },
+      "renderedBounds": {
+        "x": 649.0,
+        "y": 2346.0,
+        "width": 63.0,
+        "height": 1.0
+      }
+    },
+    "line-66-63": {
+      "figmaNodeId": "130:34",
+      "slot": {
+        "x": 957.0,
+        "y": 2346.0,
+        "width": 63.0,
+        "height": 0.0
+      },
+      "renderedBounds": {
+        "x": 957.0,
+        "y": 2346.0,
+        "width": 63.0,
+        "height": 1.0
+      }
+    },
+    "node-66": {
+      "figmaNodeId": "136:57",
+      "slot": {
+        "x": 426.0,
+        "y": 2956.0,
+        "width": 284.0,
+        "height": 190.0
+      },
+      "renderedBounds": {
+        "x": 426.0,
+        "y": 2956.0,
+        "width": 284,
+        "height": 190
+      }
+    },
+    "node-74": {
+      "figmaNodeId": "136:52",
+      "slot": {
+        "x": 322.0,
+        "y": 3212.0,
+        "width": 614.0,
+        "height": 409.0
+      },
+      "renderedBounds": {
+        "x": 322.0,
+        "y": 3212.0,
+        "width": 614,
+        "height": 409
+      }
+    },
+    "node-79": {
+      "figmaNodeId": "136:53",
+      "slot": {
+        "x": 736.0,
+        "y": 2960.0,
+        "width": 262.0,
+        "height": 175.0
+      },
+      "renderedBounds": {
+        "x": 736.0,
+        "y": 2960.0,
+        "width": 262,
+        "height": 175
+      }
+    },
+    "node-80": {
+      "figmaNodeId": "143:10",
+      "slot": {
+        "x": 1066.0,
+        "y": 2929.0,
+        "width": 227.0,
+        "height": 200.0
+      },
+      "renderedBounds": {
+        "x": 1066.0,
+        "y": 2929.0,
+        "width": 227,
+        "height": 200
+      }
+    },
+    "node-81": {
+      "figmaNodeId": "143:11",
+      "slot": {
+        "x": 729.0,
+        "y": 3949.0,
+        "width": 80.0,
+        "height": 80.0
+      },
+      "renderedBounds": {
+        "x": 729.0,
+        "y": 3949.0,
+        "width": 80,
+        "height": 80
+      }
+    },
+    "node-82": {
+      "figmaNodeId": "143:12",
+      "slot": {
+        "x": 1030.0,
+        "y": 3949.0,
+        "width": 81.0,
+        "height": 80.0
+      },
+      "renderedBounds": {
+        "x": 1030.0,
+        "y": 3949.0,
+        "width": 81,
+        "height": 80
+      }
+    },
+    "node-83": {
+      "figmaNodeId": "143:13",
+      "slot": {
+        "x": 413.0,
+        "y": 3944.0,
+        "width": 91.0,
+        "height": 91.0
+      },
+      "renderedBounds": {
+        "x": 413.0,
+        "y": 3944.0,
+        "width": 91,
+        "height": 91
+      }
+    },
+    "node-85": {
+      "figmaNodeId": "145:113",
+      "slot": {
+        "x": 514,
+        "y": 4889,
+        "width": 104.0,
+        "height": 35.0
+      },
+      "renderedBounds": {
+        "x": 514,
+        "y": 4889,
+        "width": 104,
+        "height": 35
+      }
+    },
+    "pointsyeah-2-86": {
+      "figmaNodeId": "145:114",
+      "slot": {
+        "x": 514.0,
+        "y": 4592.0,
+        "width": 105.0,
+        "height": 26.0
+      },
+      "renderedBounds": {
+        "x": 514.0,
+        "y": 4592.0,
+        "width": 105,
+        "height": 26
+      }
+    },
+    "seats-aero-2-87": {
+      "figmaNodeId": "145:115",
+      "slot": {
+        "x": 512.0,
+        "y": 4479.0,
+        "width": 106.0,
+        "height": 21.0
+      },
+      "renderedBounds": {
+        "x": 512.0,
+        "y": 4479.0,
+        "width": 106,
+        "height": 21
+      }
+    },
+    "roame-2-88": {
+      "figmaNodeId": "145:116",
+      "slot": {
+        "x": 512.0,
+        "y": 4542.0,
+        "width": 104.0,
+        "height": 17.0
+      },
+      "renderedBounds": {
+        "x": 512.0,
+        "y": 4542.0,
+        "width": 104,
+        "height": 17
+      }
+    },
+    "node-89": {
+      "figmaNodeId": "145:117",
+      "slot": {
+        "x": 506.0,
+        "y": 4757.0,
+        "width": 125.0,
+        "height": 62.0
+      },
+      "renderedBounds": {
+        "x": 506.0,
+        "y": 4757.0,
+        "width": 125,
+        "height": 62
+      }
+    },
+    "maxmypoint-2-90": {
+      "figmaNodeId": "145:120",
+      "slot": {
+        "x": 515.0,
+        "y": 4707.0,
+        "width": 103.0,
+        "height": 33.0
+      },
+      "renderedBounds": {
+        "x": 515.0,
+        "y": 4707.0,
+        "width": 103,
+        "height": 33
+      }
+    },
+    "awardtool-2-91": {
+      "figmaNodeId": "145:121",
+      "slot": {
+        "x": 514.0,
+        "y": 4660.0,
+        "width": 103.0,
+        "height": 24.0
+      },
+      "renderedBounds": {
+        "x": 514.0,
+        "y": 4660.0,
+        "width": 103,
+        "height": 24
+      }
+    },
+    "node-92": {
+      "figmaNodeId": "145:123",
+      "slot": {
+        "x": 497.0,
+        "y": 4821.0,
+        "width": 145.0,
+        "height": 48.0
+      },
+      "renderedBounds": {
+        "x": 497.0,
+        "y": 4821.0,
+        "width": 145,
+        "height": 48
+      }
+    },
+    "node-120": {
+      "figmaNodeId": "145:145",
+      "slot": {
+        "x": 916.0,
+        "y": 5877.0,
+        "width": 59.0,
+        "height": 59.0
+      },
+      "renderedBounds": {
+        "x": 916.0,
+        "y": 5877.0,
+        "width": 59,
+        "height": 59
+      }
+    },
+    "node-121": {
+      "figmaNodeId": "348:17",
+      "slot": {
+        "x": 458.0,
+        "y": 5877.0,
+        "width": 59.0,
+        "height": 59.0
+      },
+      "renderedBounds": {
+        "x": 458.0,
+        "y": 5877.0,
+        "width": 59,
+        "height": 59
+      }
+    },
+    "node-124": {
+      "figmaNodeId": "145:151",
+      "slot": {
+        "x": 426.0,
+        "y": 5096.0,
+        "width": 896.0,
+        "height": 380.0
+      },
+      "renderedBounds": {
+        "x": 426.0,
+        "y": 5096.0,
+        "width": 896,
+        "height": 380
+      }
+    },
+    "node-125": {
+      "figmaNodeId": "145:154",
+      "slot": {
+        "x": 428.0,
+        "y": 6477.0,
+        "width": 314.0,
+        "height": 389.0
+      },
+      "renderedBounds": {
+        "x": 428.0,
+        "y": 6477.0,
+        "width": 314,
+        "height": 389
+      }
+    },
+    "node-126": {
+      "figmaNodeId": "145:155",
+      "slot": {
+        "x": 761.0,
+        "y": 6477.0,
+        "width": 556.0,
+        "height": 388.0
+      },
+      "renderedBounds": {
+        "x": 761.0,
+        "y": 6477.0,
+        "width": 556,
+        "height": 388
+      }
+    },
+    "node-127": {
+      "figmaNodeId": "145:147",
+      "slot": {
+        "x": 914.0,
+        "y": 5615.0,
+        "width": 59.0,
+        "height": 59.0
+      },
+      "renderedBounds": {
+        "x": 914.0,
+        "y": 5615.0,
+        "width": 59,
+        "height": 59
+      }
+    },
+    "node-128": {
+      "figmaNodeId": "348:9",
+      "slot": {
+        "x": 458.0,
+        "y": 5615.0,
+        "width": 59.0,
+        "height": 59.0
+      },
+      "renderedBounds": {
+        "x": 458.0,
+        "y": 5615.0,
+        "width": 59,
+        "height": 59
+      }
+    },
+    "rectangle-3-140": {
+      "figmaNodeId": "413:33",
+      "slot": {
+        "x": 669.0,
+        "y": 7946.0,
+        "width": 87.0,
+        "height": 88.0
+      },
+      "renderedBounds": {
+        "x": 669.0,
+        "y": 7946.0,
+        "width": 87.0,
+        "height": 88.0
+      }
+    },
+    "rectangle-4-141": {
+      "figmaNodeId": "413:34",
+      "slot": {
+        "x": 572.0,
+        "y": 7946.0,
+        "width": 88.0,
+        "height": 88.0
+      },
+      "renderedBounds": {
+        "x": 572.0,
+        "y": 7946.0,
+        "width": 88.0,
+        "height": 88.0
+      }
+    },
+    "rectangle-5-142": {
+      "figmaNodeId": "413:35",
+      "slot": {
+        "x": 471.0,
+        "y": 7946.0,
+        "width": 92.0,
+        "height": 88.0
+      },
+      "renderedBounds": {
+        "x": 471.0,
+        "y": 7946.0,
+        "width": 92.0,
+        "height": 88.0
+      }
+    },
+    "rectangle-19-143": {
+      "figmaNodeId": "413:36",
+      "slot": {
+        "x": 765.0,
+        "y": 7946.0,
+        "width": 88.0,
+        "height": 88.0
+      },
+      "renderedBounds": {
+        "x": 765.0,
+        "y": 7946.0,
+        "width": 88.0,
+        "height": 88.0
+      }
+    },
+    "node-154": {
+      "figmaNodeId": "413:47",
+      "slot": {
+        "x": 1100.0,
+        "y": 7908.0,
+        "width": 183.0,
+        "height": 151.0
+      },
+      "renderedBounds": {
+        "x": 1100.0,
+        "y": 7908.0,
+        "width": 183,
+        "height": 151
+      }
+    },
+    "frame-3-2-159": {
+      "figmaNodeId": "175:5",
+      "slot": {
+        "x": 800.0,
+        "y": 400.0,
+        "width": 455.0,
+        "height": 744.0
+      },
+      "renderedBounds": {
+        "x": 796,
+        "y": 694,
+        "width": 471,
+        "height": 462
+      }
+    },
+    "node-160": {
+      "figmaNodeId": "413:48",
+      "slot": {
+        "x": 422.0,
+        "y": 7098.0,
+        "width": 473.0,
+        "height": 350.0
+      },
+      "renderedBounds": {
+        "x": 422.0,
+        "y": 7098.0,
+        "width": 473,
+        "height": 350
+      }
+    },
+    "node-161": {
+      "figmaNodeId": "413:49",
+      "slot": {
+        "x": 916.0,
+        "y": 7098.0,
+        "width": 340.0,
+        "height": 248.0
+      },
+      "renderedBounds": {
+        "x": 916.0,
+        "y": 7098.0,
+        "width": 340,
+        "height": 248
+      }
+    },
+    "node-162": {
+      "figmaNodeId": "413:50",
+      "slot": {
+        "x": 1041.0,
+        "y": 7273.0,
+        "width": 260.0,
+        "height": 188.0
+      },
+      "renderedBounds": {
+        "x": 1041.0,
+        "y": 7273.0,
+        "width": 260,
+        "height": 188
+      }
+    },
+    "vector-164": {
+      "figmaNodeId": "187:8",
+      "slot": {
+        "x": 122.0,
+        "y": 59.0,
+        "width": 57.0,
+        "height": 38.0
+      },
+      "renderedBounds": {
+        "x": 122.0,
+        "y": 59.0,
+        "width": 17.0,
+        "height": 17.0
+      }
+    },
+    "vector-165": {
+      "figmaNodeId": "187:8",
+      "slot": {
+        "x": 122.0,
+        "y": 59.0,
+        "width": 57.0,
+        "height": 38.0
+      },
+      "renderedBounds": {
+        "x": 122.0,
+        "y": 59.0,
+        "width": 17.0,
+        "height": 17.0
+      }
+    },
+    "vector-166": {
+      "figmaNodeId": "187:8",
+      "slot": {
+        "x": 122.0,
+        "y": 59.0,
+        "width": 57.0,
+        "height": 38.0
+      },
+      "renderedBounds": {
+        "x": 122.0,
+        "y": 59.0,
+        "width": 17.0,
+        "height": 17.0
+      }
+    },
+    "vector-167": {
+      "figmaNodeId": "187:8",
+      "slot": {
+        "x": 122.0,
+        "y": 59.0,
+        "width": 57.0,
+        "height": 38.0
+      },
+      "renderedBounds": {
+        "x": 122.0,
+        "y": 59.0,
+        "width": 17.0,
+        "height": 17.0
+      }
+    },
+    "vector-168": {
+      "figmaNodeId": "187:8",
+      "slot": {
+        "x": 122.0,
+        "y": 59.0,
+        "width": 57.0,
+        "height": 38.0
+      },
+      "renderedBounds": {
+        "x": 122.0,
+        "y": 59.0,
+        "width": 17.0,
+        "height": 17.0
+      }
+    },
+    "vector-169": {
+      "figmaNodeId": "187:8",
+      "slot": {
+        "x": 122.0,
+        "y": 59.0,
+        "width": 57.0,
+        "height": 38.0
+      },
+      "renderedBounds": {
+        "x": 122.0,
+        "y": 59.0,
+        "width": 18.0,
+        "height": 9.0
+      }
+    },
+    "04-points-options-1-177": {
+      "figmaNodeId": "307:12",
+      "slot": {
+        "x": 548.0,
+        "y": 1389.0,
+        "width": 342.0,
+        "height": 237.0
+      },
+      "renderedBounds": {
+        "x": 548.0,
+        "y": 1389.0,
+        "width": 350,
+        "height": 245
+      }
+    },
+    "05-featured-stay-2-178": {
+      "figmaNodeId": "308:17",
+      "slot": {
+        "x": 190.0,
+        "y": 1390.0,
+        "width": 340.0,
+        "height": 236.0
+      },
+      "renderedBounds": {
+        "x": 190.0,
+        "y": 1390.0,
+        "width": 348,
+        "height": 244
+      }
+    },
+    "08-pro-tips-2-179": {
+      "figmaNodeId": "308:20",
+      "slot": {
+        "x": 909.0,
+        "y": 1389.0,
+        "width": 342.0,
+        "height": 237.0
+      },
+      "renderedBounds": {
+        "x": 909.0,
+        "y": 1389.0,
+        "width": 350,
+        "height": 245
+      }
+    },
+    "line-72-183": {
+      "figmaNodeId": "413:11",
+      "slot": {
+        "x": 426.0,
+        "y": 9646.0,
+        "width": 892.0,
+        "height": 7.798112346790731e-05
+      },
+      "renderedBounds": {
+        "x": 426.0,
+        "y": 9646.0,
+        "width": 892.0,
+        "height": 1.0
+      }
+    },
+    "frame-3-2-1-186": {
+      "figmaNodeId": "320:52",
+      "slot": {
+        "x": 170.0,
+        "y": 778.0,
+        "width": 695.0,
+        "height": 1136.0
+      },
+      "renderedBounds": {
+        "x": 170.0,
+        "y": 778.0,
+        "width": 703,
+        "height": 492
+      }
+    }
+  }
+}

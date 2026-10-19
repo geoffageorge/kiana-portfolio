@@ -1,11 +1,11 @@
 import { useEffect, useState } from 'react';
 import manifest from '../../public/assets/pointly-figma/manifest.json';
-import mvpManifest from '../../public/assets/pointly-2/manifest.json';
+import mvpManifest from '../../public/assets/pointly-figma-update/manifest.json';
 import { assetUrl, siteUrl } from '../lib/urls.js';
 import './PointlyCaseStudyPage.css';
 
 const sections = [['interviews', 'Interviews'], ['research', 'Research'], ['design', 'Design'], ['retrospective', 'Retrospective']];
-const imageSets = { 'pointly-figma': manifest, 'pointly-2': mvpManifest };
+const imageSets = { 'pointly-figma': manifest, 'pointly-figma-update': mvpManifest };
 const mvpScreens = [
   { name: 'connected-wallet', title: 'Rewards Dashboard', description: 'View balances across rewards programs in one place.', alt: 'Point.ly connected rewards dashboard with balances across rewards programs' },
   { name: 'recommended-stays', title: 'Personalized Recommendations', description: 'Explore stays based on available points and preferences.', alt: 'Point.ly personalized hotel recommendations based on points and preferences' },
@@ -40,7 +40,8 @@ const insights = [
 
 function Picture({ name, alt = '', className = '', eager = false, assetGroup = 'pointly-figma' }) {
   const image = imageSets[assetGroup].assets[name];
-  return <img className={className} src={assetUrl(`${assetGroup}/${image.file}`)} width={image.width} height={image.height} alt={alt} loading={eager ? 'eager' : 'lazy'} decoding="async" data-figma-node={image.figmaNodeId} data-figma-asset={assetGroup === 'pointly-figma' ? name : undefined} />;
+  const nodeId = assetGroup === 'pointly-figma' ? mvpManifest.reusedAssets[name]?.figmaNodeId ?? image.figmaNodeId : image.figmaNodeId;
+  return <img className={className} src={assetUrl(`${assetGroup}/${image.file}`)} width={image.width} height={image.height} alt={alt} loading={eager ? 'eager' : 'lazy'} decoding="async" data-figma-node={nodeId} data-figma-asset={assetGroup === 'pointly-figma' ? name : undefined} />;
 }
 
 function Exhibit({ name, alt, className = '', onOpenImage, eager = false, assetGroup = 'pointly-figma', children }) {
@@ -48,12 +49,12 @@ function Exhibit({ name, alt, className = '', onOpenImage, eager = false, assetG
   return <figure className={`pointly-exhibit ${className}`}><button type="button" aria-label={`Enlarge ${alt}`} onClick={() => onOpenImage({ ...image, src: assetUrl(`${assetGroup}/${image.file}`), alt })}><Picture name={name} alt={alt} eager={eager} assetGroup={assetGroup} /></button>{children && <figcaption>{children}</figcaption>}</figure>;
 }
 
-function Rule({ name }) {
-  return <div className="pointly-rule" aria-hidden="true"><Picture name={name} /></div>;
+function Rule({ name, assetGroup = 'pointly-figma' }) {
+  return <div className="pointly-rule" aria-hidden="true"><Picture name={name} assetGroup={assetGroup} /></div>;
 }
 
 function VisualIdentity() {
-  return <div className="pointly-visual-system" aria-label="Point.ly color palette and typography" data-figma-node="314:30">
+  return <div className="pointly-visual-system" aria-label="Point.ly color palette and typography" data-figma-node="413:23">
     <div className="pointly-palettes">
       <h4>Primary palette</h4>
       <div className="pointly-primary-palette">{['FCFCF8', 'DE8E5C', '23395A'].map(color => <div key={color} style={{ backgroundColor: `#${color}` }}><span>{color}</span></div>)}</div>
@@ -86,17 +87,20 @@ export default function PointlyCaseStudyPage({ onOpenImage }) {
       <div><p className="pointly-index">01 /</p><h1 data-figma-node="123:3">Point.ly</h1></div>
       <div className="pointly-intro__summary"><p data-figma-node="123:5">Turning fragmented loyalty points into new travel possibilities</p><p className="pointly-intro__team">UX@Berkeley project team</p></div>
     </header>
-    <dl className="pointly-facts">{[
+    <div className="pointly-project-details" data-figma-node="413:53">
+      <Rule name="line-61" assetGroup="pointly-figma-update" />
+      <dl className="pointly-facts">{[
       ['Deliverable', ['Working MVP']], ['Timeline', ['8 months +', 'one day hackathon']],
       ['My contribution', ['UX research', 'Prototyping', 'Visual Identity']],
       ['Methods', ['10 User Interviews', 'Competitive Analysis', 'Product Strategy', 'PRD Development', 'Prototyping', 'Usability Testing']],
       ['Tools', ['Figma', 'Cursor', 'Claude', 'Gemini']],
-    ].map(([label, lines]) => <div key={label}><dt>{label}</dt><dd>{lines.map(line => <span key={line}>{line}</span>)}</dd></div>)}</dl>
+      ].map(([label, lines]) => <div key={label}><dt>{label}</dt><dd>{lines.map(line => <span key={line}>{line}</span>)}</dd></div>)}</dl>
+    </div>
     <div className="pointly-showcase" aria-label="Point.ly homepage design" data-figma-node="274:4">
       <Exhibit name="frame-3-2-159" alt="Point.ly homepage destinations and three steps from points to takeoff" className="pointly-showcase__destinations" onOpenImage={onOpenImage} eager />
       <Exhibit name="frame-3-2-1-186" alt="Point.ly homepage final design and destination discovery" className="pointly-showcase__home" onOpenImage={onOpenImage} eager />
     </div>
-    <div className="pointly-rewards-flow" aria-label="Point.ly personalized travel recommendations" data-figma-node="320:57">
+    <div className="pointly-rewards-flow" aria-label="Point.ly personalized travel recommendations" data-figma-node="320:51">
       <Exhibit name="05-featured-stay-2-178" alt="Point.ly featured stay recommendation" className="pointly-flow__stay" onOpenImage={onOpenImage} eager />
       <Exhibit name="04-points-options-1-177" alt="Point.ly points and transfer options" className="pointly-flow__options" onOpenImage={onOpenImage} eager />
       <Exhibit name="08-pro-tips-2-179" alt="Point.ly tips for getting more from travel rewards" className="pointly-flow__tips" onOpenImage={onOpenImage} eager />
@@ -139,18 +143,18 @@ export default function PointlyCaseStudyPage({ onOpenImage }) {
           <Rule name="line-71-51" /><h2 id="pointly-design-title">Designing the User Experience</h2>
           <div className="pointly-subsection pointly-low-fi"><h3>Low-Fi: Testing Different Directions</h3><p>Guided by our research, we quickly explored multiple concepts, including a Chrome extension, centralized rewards wallet, AI trip planning, itinerary comparison, and personalized points recommendations.</p><div className="pointly-low-fi__images"><Exhibit name="node-125" alt="Annotated low-fidelity sketches for a centralized rewards wallet" onOpenImage={onOpenImage} /><Exhibit name="node-126" alt="Annotated low-fidelity explorations of trip planning and points recommendations" onOpenImage={onOpenImage} /></div></div>
           <div className="pointly-subsection pointly-mid-fi"><h3>Mid-Fi: Narrowing the Experience</h3><p>We prioritized the concepts that most directly addressed our research findings: consolidating rewards, simplifying comparisons, and making redemption opportunities actionable. Broader ideas that moved beyond these core needs were deprioritized.</p><div className="pointly-mid-fi__images"><Exhibit name="node-160" alt="Mid-fidelity Point.ly dashboard wireframe" onOpenImage={onOpenImage} /><div className="pointly-mid-fi__comparison"><Exhibit name="node-161" alt="Mid-fidelity flight comparison wireframe" onOpenImage={onOpenImage} /><Exhibit name="node-162" alt="Mid-fidelity booking details wireframe" onOpenImage={onOpenImage} /></div></div></div>
-          <div className="pointly-subsection pointly-identity"><h3>Establishing an Approachable Visual Identity</h3><p>I developed Point.ly’s visual identity to make the complexity of credit card points feel clear and approachable, balancing a friendly personality with the credibility of a financial tool.</p><VisualIdentity /></div>
+          <div className="pointly-subsection pointly-identity"><h3>Defining the Product’s Visual Language</h3><p>I developed Point.ly’s visual identity and core interface—including color, typography, illustration, and layout—to make credit card points feel clear and approachable, balancing warmth with financial credibility.</p><VisualIdentity /></div>
           <div id="mvp-prototype" className="pointly-subsection pointly-mvp">
             <h3>From Research to MVP Prototype</h3>
-            <p>We translated our research into a high-fidelity MVP prototype focused on consolidating rewards, comparing redemption options, and guiding travelers toward booking. The project remained at the prototype stage.</p>
+            <p>We designed the experience to help travelers decide how to use their points. Our high-fidelity MVP prototype brought rewards balances, personalized stays, and points-versus-cash comparisons together to support more informed booking decisions. The project remained at the prototype stage.</p>
             <div className="pointly-mvp-gallery">
-              {mvpScreens.map(({ name, title, description, alt }) => <Exhibit key={name} name={name} alt={alt} assetGroup="pointly-2" className="pointly-mvp-feature" onOpenImage={onOpenImage}><h4>{title}</h4><p>{description}</p></Exhibit>)}
+              {mvpScreens.map(({ name, title, description, alt }) => <Exhibit key={name} name={name} alt={alt} assetGroup="pointly-figma-update" className="pointly-mvp-feature" onOpenImage={onOpenImage}><h4>{title}</h4><p>{description}</p></Exhibit>)}
             </div>
           </div>
         </section>
         <section id="retrospective" className="pointly-section pointly-retrospective" aria-labelledby="pointly-retrospective-title">
           <Rule name="line-72-183" /><h2 id="pointly-retrospective-title">What I Learned</h2>
-          <aside className="pointly-feature-callout pointly-reflection" data-figma-node="314:34"><h3>Reflection</h3><div><p>Interviewing travelers with different habits and levels of points experience taught me that people can approach the same problem differently but still need similar things from a product.</p><p>At the hackathon, I turned our findings into a PRD, used AI coding tools to build a working prototype, and tested it with users. This helped me connect what I heard in interviews to specific choices about how the product should work.</p><p>The biggest lesson came from working through the full process: listening to a full spectrum of user experiences, making sense of what I heard, building, testing, and improving the design based on feedback.</p></div></aside>
+          <aside className="pointly-feature-callout pointly-reflection" data-figma-node="413:9"><h3>Reflection</h3><div><p><strong>Different experiences can reveal shared needs.</strong> Interviewing travelers with varying levels of points experience taught me to look beyond individual preferences and use common patterns to guide product priorities.</p><p><strong>AI helped me build faster, but I still had to decide what was worth building.</strong> At the hackathon, I turned our interview findings into a PRD and used AI coding tools to build a working prototype. Testing it with users helped me see where those decisions worked and where they needed refinement.</p><p><strong>The process reinforced two lessons:</strong> making information available is only useful if people can easily understand and act on it, and an established visual palette helps multiple designers create one cohesive experience.</p></div></aside>
         </section>
       </div>
     </div>
