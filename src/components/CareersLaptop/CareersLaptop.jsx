@@ -2,12 +2,11 @@ import { useEffect, useRef, useState } from 'react';
 import { assetUrl } from '../../lib/urls.js';
 
 // Unchanged Figma PNGs; the display occupies (180,37,1604,1039) in the 1964×1196 laptop.
-export default function CareersLaptop({ assets, caption, onOpenImage }) {
+export default function CareersLaptop({ assets, caption }) {
   const figureRef = useRef(null);
   const viewportRef = useRef(null);
   const pageRef = useRef(null);
   const [visible, setVisible] = useState(false);
-  const [paused, setPaused] = useState(false);
   const [reduced, setReduced] = useState(false);
   const [tabVisible, setTabVisible] = useState(!document.hidden);
   const [ready, setReady] = useState(false);
@@ -47,14 +46,10 @@ export default function CareersLaptop({ assets, caption, onOpenImage }) {
       <div className="obayashi-laptop__screen" aria-hidden="true">
         <div className="obayashi-laptop__toolbar"><span className="obayashi-laptop__dots"><i /><i /><i /></span><span className="obayashi-laptop__address">obayashi.com / careers</span></div>
         <div ref={viewportRef} className="obayashi-laptop__viewport">
-          <img ref={pageRef} className="obayashi-laptop__webpage" src={source('careers')} width={careers.width} height={careers.height} alt="" loading="lazy" decoding="async" style={{ animationPlayState: visible && tabVisible && ready && !paused && !reduced ? 'running' : 'paused' }} data-figma-node="466:30" data-figma-asset="careers" />
+          <img ref={pageRef} className="obayashi-laptop__webpage" src={source('careers')} width={careers.width} height={careers.height} alt="" loading="lazy" decoding="async" style={{ animationPlayState: visible && tabVisible && ready && !reduced ? 'running' : 'paused' }} data-figma-node="466:30" data-figma-asset="careers" />
         </div>
       </div>
     </div>
     <figcaption data-figma-node="478:34">{caption}</figcaption>
-    <div className="obayashi-laptop-controls">
-      {!reduced && <button type="button" aria-pressed={paused} aria-label={`${paused ? 'Play' : 'Pause'} Careers page animation`} onClick={() => setPaused(value => !value)}>{paused ? 'Play animation' : 'Pause animation'}</button>}
-      <button type="button" onClick={() => onOpenImage({ ...careers, src: source('careers'), alt: 'Complete redesigned Obayashi Careers page', caption })}>View full Careers page <span aria-hidden="true">↗</span></button>
-    </div>
   </figure>;
 }

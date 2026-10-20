@@ -4,7 +4,7 @@ import { createHash } from 'node:crypto';
 import { projectRoutes } from '../src/data/projectRoutes.js';
 
 const manifest = JSON.parse(await readFile(new URL('../public/assets/obayashi-figma/manifest.json', import.meta.url), 'utf8'));
-const snapshot = JSON.parse(await readFile(new URL('../Assets/figma files/obayashi-inspection-2026-10-19/inspection.json', import.meta.url), 'utf8'));
+const snapshot = JSON.parse(await readFile(new URL('../Assets/figma files/obayashi-update-2026-10-19/inspection.json', import.meta.url), 'utf8'));
 const geometry = Object.fromEntries(snapshot.nodes.map(n => [n.id, { x: n.absoluteBoundingBox.x - 4880, y: n.absoluteBoundingBox.y + 16214, width: n.width, height: n.height }]));
 const labels = ['Competitive Analysis', 'Web Audit', 'Priorities', 'Brand Narrative', 'Site Design', 'Retrospective'];
 
@@ -31,6 +31,15 @@ test('home tile opens the complete Figma case study, with working reloads and im
   await expect(page.locator('.obayashi-facts')).toContainText('10 months');
   await expect(page.locator('.obayashi-principles h3')).toHaveText(['Clarify', 'Humanize', 'Prioritize', 'Simplify']);
   await expect(page.locator('.obayashi-audit-row')).toHaveCount(4);
+  await expect(page.locator('#obayashi-design-title')).toHaveText('Designing to Showcase Projects, People, and Expertise');
+  await expect(page.locator('.obayashi-audit-row').first()).toContainText('Stakeholders identified North American projects as a content priority');
+  await expect(page.locator('.obayashi-outcomes li')).toHaveText([
+    'Created a cohesive North American identity within the global brand',
+    'Organized navigation around prospective clients and job candidates',
+    'Brought North American projects into the site with richer project details',
+    'Translated departmental priorities into a shared content hierarchy',
+  ]);
+  await expect(page.locator('.obayashi-outcomes p')).toHaveText('The redesign was presented to leadership and handed off for implementation. Its impact on usability and engagement has not yet been measured.');
   await expect(page.locator('.obayashi-methodology > p')).toHaveCount(1);
   await expect(page.locator('.obayashi-final-designs figcaption').last()).toContainText('relevant North American projects.');
   const image = page.getByRole('button', { name: 'Enlarge Obayashi website strategy mind map', exact: true });
@@ -41,9 +50,7 @@ test('home tile opens the complete Figma case study, with working reloads and im
   await expect(dialog.locator('.modal-image-caption')).toContainText('navigation, visual design, and measurement');
   await page.keyboard.press('Escape');
   await expect(image).toBeFocused();
-  await page.getByRole('button', { name: 'View full Careers page' }).click();
-  await expect(dialog.locator('img')).toHaveAttribute('src', /careers\.png$/);
-  await page.keyboard.press('Escape');
+  await expect(page.getByRole('button', { name: /Careers page animation|View full Careers page/ })).toHaveCount(0);
   await page.getByRole('link', { name: 'Next project: Point.ly' }).click();
   await expect(page.getByRole('heading', { level: 1 })).toHaveText('Point.ly');
   await page.goto('/projects/obayashi_old/');
@@ -52,11 +59,11 @@ test('home tile opens the complete Figma case study, with working reloads and im
   expect(errors).toEqual([]);
 });
 
-test('all 40 original Figma assets keep their bytes and are used in their intended image or mask slots', async ({ page, request }) => {
+test('all 41 Figma assets keep their source bytes and are used in their intended image or mask slots', async ({ page, request }) => {
   const external = [];
   page.on('request', request => { if (!request.url().startsWith(test.info().project.use.baseURL)) external.push(request.url()); });
   await ready(page);
-  expect(Object.keys(manifest.assets)).toHaveLength(40);
+  expect(Object.keys(manifest.assets)).toHaveLength(41);
   for (const asset of Object.values(manifest.assets)) {
     const source = await readFile(new URL(`../${asset.source}`, import.meta.url));
     const local = await readFile(new URL(`../public/assets/obayashi-figma/${asset.file}`, import.meta.url));
@@ -73,6 +80,29 @@ test('all 40 original Figma assets keep their bytes and are used in their intend
   await expect(page.locator('.obayashi-index')).toHaveCSS('font-family', '"Obayashi Fira Mono", monospace');
   await expect(page.locator('.obayashi-quote')).toHaveCSS('background-color', 'rgb(231, 239, 82)');
   expect(external).toEqual([]);
+});
+
+test('all seven section dividers use the updated half-pixel Figma strokes and correct widths', async ({ page, request }) => {
+  await ready(page);
+  await expect(page.locator('.obayashi-rule')).toHaveCount(7);
+  for (const label of await page.locator('.obayashi-facts dt').all()) await expect(label).toHaveCSS('font-size', '12px');
+  for (const node of snapshot.nodes.filter(n => n.type === 'LINE')) {
+    const rule = page.locator(`.obayashi-rule[data-figma-node="${node.id}"]`);
+    const image = rule.locator('img');
+    await expect(image).toBeAttached();
+    const box = await rule.boundingBox();
+    const stroke = await image.boundingBox();
+    expect(stroke.width).toBeCloseTo(box.width, 1);
+    expect(stroke.height).toBeGreaterThan(0.45);
+    expect(stroke.height).toBeLessThan(0.6);
+    expect(box.x).toBeGreaterThanOrEqual(0);
+    expect(box.x + box.width).toBeLessThanOrEqual(page.viewportSize().width);
+    const svg = await (await request.get(await image.getAttribute('src'))).text();
+    expect(svg).toContain('stroke-width="0.5"');
+    if (test.info().project.name === 'desktop') {
+      for (const key of ['x', 'y', 'width']) expect(Math.abs(box[key] - geometry[node.id][key]), `${node.name} ${node.id} ${key}`).toBeLessThan(1);
+    }
+  }
 });
 
 test('desktop image geometry matches the inspected frame, including every crop and repeated Markets image', async ({ page }) => {
@@ -101,6 +131,10 @@ test('desktop image geometry matches the inspected frame, including every crop a
   }
   const laptop = await page.locator('.obayashi-laptop').boundingBox();
   for (const key of ['x','y','width','height']) expect(Math.abs(laptop[key] - geometry['466:28'][key]), `laptop ${key}`).toBeLessThan(1);
+  for (const nodeId of ['420:344','420:345','420:346','420:347','420:392','499:11','499:13','499:15','474:23','474:28','474:27','478:23']) {
+    const actual = await page.locator(`[data-figma-node="${nodeId}"]`).boundingBox();
+    for (const key of ['x','y','width','height']) expect(Math.abs(actual[key] - geometry[nodeId][key]), `${nodeId} ${key}`).toBeLessThan(1.1);
+  }
 });
 
 test('section anchors survive reload and desktop navigation stays below the glass header', async ({ page }) => {
@@ -126,13 +160,14 @@ test('section anchors survive reload and desktop navigation stays below the glas
   await expect(page.getByRole('heading', { name: 'What I Learned', exact: true })).toBeInViewport();
 });
 
-test('Careers autoplays, scrolls upward inside the screen, repeats, pauses, and respects reduced motion', async ({ page }) => {
+test('Careers autoplays without controls, loops inside the screen, pauses off-screen, and respects reduced motion', async ({ page }) => {
   await ready(page);
   const image = page.locator('.obayashi-laptop__webpage');
   await expect(image).toHaveCSS('animation-play-state', 'paused');
   await page.locator('.obayashi-careers').scrollIntoViewIfNeeded();
   await expect(image).toHaveCSS('animation-play-state', 'running');
   await expect.poll(() => image.evaluate(n => n.getAnimations()[0]?.currentTime ?? 0)).toBeGreaterThan(100);
+  await expect(page.locator('.obayashi-careers button')).toHaveCount(0);
   const screen = await page.locator('.obayashi-laptop__screen').boundingBox();
   const hardware = await page.locator('.obayashi-laptop__hardware').boundingBox();
   expect(screen.x).toBeGreaterThan(hardware.x);
@@ -159,12 +194,10 @@ test('Careers autoplays, scrolls upward inside the screen, repeats, pauses, and 
   expect(samples.positions[2]).toBeCloseTo(-samples.travel, 1);
   expect(samples.positions[3]).toBeCloseTo(0);
   expect(samples.positions[4]).toBeCloseTo(samples.positions[1], 1);
-  await page.getByRole('button', { name: 'Pause Careers page animation', exact: true }).click();
-  await expect(image).toHaveCSS('animation-play-state', 'paused');
-  await page.getByRole('button', { name: 'Play Careers page animation', exact: true }).click();
-  await expect(image).toHaveCSS('animation-play-state', 'running');
   await page.evaluate(() => window.scrollTo({ top: 0, behavior: 'instant' }));
   await expect(image).toHaveCSS('animation-play-state', 'paused');
+  await page.locator('.obayashi-careers').scrollIntoViewIfNeeded();
+  await expect(image).toHaveCSS('animation-play-state', 'running');
   await page.emulateMedia({ reducedMotion: 'reduce' });
   await page.locator('.obayashi-careers').scrollIntoViewIfNeeded();
   await expect(image).toHaveCSS('animation-name', 'none');
@@ -183,11 +216,9 @@ test('page and laptop reflow from narrow phones through wide desktop without ove
     expect(title.y).toBeGreaterThanOrEqual(header.height);
     const laptop = await page.locator('.obayashi-laptop').boundingBox();
     const caption = await page.locator('.obayashi-careers > figcaption').boundingBox();
-    const controls = await page.locator('.obayashi-laptop-controls').boundingBox();
     const gallery = await page.locator('.obayashi-final-designs').boundingBox();
     expect(caption.y).toBeGreaterThanOrEqual(laptop.y + laptop.height);
-    expect(controls.y).toBeGreaterThanOrEqual(caption.y + caption.height);
-    expect(gallery.y).toBeGreaterThanOrEqual(controls.y + controls.height);
+    expect(gallery.y).toBeGreaterThanOrEqual(caption.y + caption.height);
     if (width < 1024) {
       expect(await page.locator('.obayashi-methodology').evaluate(n => getComputedStyle(n).position)).toBe('static');
     }

@@ -7,7 +7,8 @@ import struct
 import xml.etree.ElementTree as ET
 
 ROOT = Path(__file__).resolve().parents[1]
-SOURCE = ROOT / 'Assets/figma files/obayashi-inspection-2026-10-19'
+BASELINE = ROOT / 'Assets/figma files/obayashi-inspection-2026-10-19'
+SOURCE = ROOT / 'Assets/figma files/obayashi-update-2026-10-19'
 OUTPUT = ROOT / 'public/assets/obayashi-figma'
 NAMES = [
     'competitive-analysis-1', 'competitive-analysis-2', 'storyboard', 'interviews',
@@ -21,7 +22,7 @@ NAMES = [
 ]
 # Image layer, mask layer, exported mask, optional second mask.
 CROPS = {
-    'competitive-analysis-1': ('351:55', '420:330', 'competitive-mask', None),
+    'competitive-analysis-1': ('351:55', '499:9', 'competitive-outer-mask', ('420:330', 'competitive-mask')),
     'storyboard': ('351:72', '429:85', 'storyboard-mask', None),
     'interviews': ('223:410', '424:44', 'interviews-mask', ('424:20', 'interviews-inner-mask')),
     'family': ('351:73', '429:59', 'brand-mask', None),
@@ -41,8 +42,9 @@ def main():
     inspection = json.loads((SOURCE / 'inspection.json').read_text())
     nodes = {n['id']: n for n in inspection['nodes']}
     reference = nodes['420:76']
-    originals = json.loads((SOURCE / 'asset-manifest.json').read_text())['assets']
-    related = {a['name']: a for a in json.loads((SOURCE / 'related-assets.json').read_text())['assets']}
+    originals = json.loads((BASELINE / 'asset-manifest.json').read_text())['assets']
+    related = {a['name']: a for a in json.loads((BASELINE / 'related-assets.json').read_text())['assets']}
+    updates = {a['name']: a for a in json.loads((SOURCE / 'asset-manifest.json').read_text())['assets']}
     OUTPUT.mkdir(parents=True, exist_ok=True)
     assets = {}
 
@@ -67,11 +69,18 @@ def main():
             if paint:
                 assets[name]['imagePaint'] = paint
 
+    if len(NAMES) != len(originals):
+        raise ValueError('The baseline asset list and named slots must match.')
     for name, asset in zip(NAMES, originals):
-        copy(name, SOURCE / 'assets' / asset['filename'], asset.get('nodeIds', []))
+        revision = updates.get(name)
+        copy(name, (SOURCE if revision else BASELINE) / 'assets' / (revision or asset)['filename'],
+             (revision or asset).get('nodeIds', []))
     for name, source_name in [('careers', 'careers'), ('logo', 'header'), ('x-circle', 'x-circle-svg')]:
-        a = related[source_name]
-        copy(name, SOURCE / 'assets' / a['filename'], [a['nodeId']])
+        a = updates.get(name) or related[source_name]
+        copy(name, (SOURCE if name in updates else BASELINE) / 'assets' / a['filename'],
+             a.get('nodeIds', [a.get('nodeId')]))
+    outer = updates['competitive-outer-mask']
+    copy('competitive-outer-mask', SOURCE / 'assets' / outer['filename'], outer['nodeIds'])
 
     def relative(layer_id, origin_id):
         n, origin = nodes[layer_id], nodes[origin_id]
@@ -90,10 +99,16 @@ def main():
     texts = {n['id']: n for n in inspection['textData']['texts']}
     # Approved editorial correction; the source's forced line split is inside this word.
     texts['478:32']['text'] = texts['478:32']['text'].replace('r\u2028elevant', 'relevant')
+    line_ids = ['420:269', '420:305', '420:335', '429:74', '424:16', '429:96', '478:25']
     manifest = {'sourceFrame': {'fileKey': inspection['fileKey'], 'nodeId': '420:76',
-                                'width': 1440, 'height': 12278},
+                                'width': 1440, 'height': 12278,
+                                'inspection': str((SOURCE / 'inspection.json').relative_to(ROOT))},
                 'assets': assets, 'crops': crops, 'texts': texts,
                 'slots': {node_id: relative(node_id, '420:76') for node_id in nodes},
+                'dividers': {node_id: {'asset': 'details-divider' if index == 0 else 'section-divider',
+                                       'name': nodes[node_id]['name'], 'strokeWeight': nodes[node_id]['strokeWeight'],
+                                       'offset': 0 if index == 0 else relative(node_id, '420:76')['x'] - 426}
+                             for index, node_id in enumerate(line_ids)},
                 'textStyles': inspection['textData']['styles'],
                 'approvedChanges': ['Project number 01', 'One Methodology label',
                                     'Correct relevant wrapping', 'Careers 1 scrolls inside original laptop screen']}

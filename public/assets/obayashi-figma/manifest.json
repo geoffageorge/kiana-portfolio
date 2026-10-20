@@ -3,7 +3,8 @@
     "fileKey": "wZSRbIZZXfUlrq902OXE2W",
     "nodeId": "420:76",
     "width": 1440,
-    "height": 12278
+    "height": 12278,
+    "inspection": "Assets/figma files/obayashi-update-2026-10-19/inspection.json"
   },
   "assets": {
     "competitive-analysis-1": {
@@ -16,10 +17,10 @@
       "source": "Assets/figma files/obayashi-inspection-2026-10-19/assets/asset-01.png",
       "sha256": "8b8befdaf9be18c61c85248ea37d2440031b30bc98675a19c43984ab93da54c8",
       "slot": {
-        "x": 424.015625,
-        "y": 2603.0390625,
-        "width": 421.4352111816406,
-        "height": 318.7325134277344
+        "x": 417.7958984375,
+        "y": 2596.0361328125,
+        "width": 459.17657470703125,
+        "height": 347.2763977050781
       },
       "imagePaint": {
         "type": "IMAGE",
@@ -157,10 +158,10 @@
       "source": "Assets/figma files/obayashi-inspection-2026-10-19/assets/asset-04.png",
       "sha256": "fd5d45cee788db59282010e026e24076d6cf688320fe582fcf067718af26d0b7",
       "slot": {
-        "x": 406.9736328125,
-        "y": 6360.9580078125,
-        "width": 908.1865844726562,
-        "height": 454.0932922363281
+        "x": 409.56494140625,
+        "y": 6359.552734375,
+        "width": 913.806884765625,
+        "height": 456.9034423828125
       },
       "imagePaint": {
         "type": "IMAGE",
@@ -625,9 +626,9 @@
       "source": "Assets/figma files/obayashi-inspection-2026-10-19/assets/asset-14.png",
       "sha256": "8ca3aa5aca7432585c9e09b732f4409f3618efa55238960cd3c6b11cb695a8d6",
       "slot": {
-        "x": 336,
+        "x": 324,
         "y": 546,
-        "width": 259,
+        "width": 263,
         "height": 779
       },
       "imagePaint": {
@@ -635,9 +636,8 @@
         "visible": true,
         "opacity": 1,
         "blendMode": "NORMAL",
-        "scaleMode": "FILL",
+        "scaleMode": "CROP",
         "scalingFactor": 0.5,
-        "rotation": 0,
         "filters": {
           "exposure": 0,
           "contrast": 0,
@@ -651,12 +651,12 @@
           [
             1,
             0,
-            0
+            -3.620474586796263e-09
           ],
           [
             0,
-            1,
-            0
+            0.9840302467346191,
+            0.00028712290804833174
           ]
         ],
         "imageHash": "2bec203fdabd2cdb3974bc0c0cafe0ef9549602e"
@@ -1136,26 +1136,55 @@
     "details-divider": {
       "file": "details-divider.svg",
       "width": 1200.0,
-      "height": 0.250105,
-      "figmaNodeIds": [],
-      "source": "Assets/figma files/obayashi-inspection-2026-10-19/assets/asset-25.svg",
-      "sha256": "0ccb2b4f71501993f3cbd9c69416ecf7a269677705f9280fd01806e78f3adc92"
+      "height": 0.500105,
+      "figmaNodeIds": [
+        "420:269"
+      ],
+      "source": "Assets/figma files/obayashi-update-2026-10-19/assets/details-divider.svg",
+      "sha256": "f89ec03d95ec0647d260761572a9e83d1f62c3a1aa1441488d8ca344749a3889",
+      "slot": {
+        "x": 120,
+        "y": 347,
+        "width": 1200,
+        "height": 0
+      }
     },
     "section-divider": {
       "file": "section-divider.svg",
       "width": 892.0,
-      "height": 0.25,
-      "figmaNodeIds": [],
-      "source": "Assets/figma files/obayashi-inspection-2026-10-19/assets/asset-26.svg",
-      "sha256": "3ac7af4cc63b5032313329395336e398ad38108971a13c7296a5ae9e9441dcd7"
+      "height": 0.500078,
+      "figmaNodeIds": [
+        "478:25",
+        "429:96",
+        "424:16",
+        "429:74",
+        "420:335",
+        "420:305"
+      ],
+      "source": "Assets/figma files/obayashi-update-2026-10-19/assets/section-divider.svg",
+      "sha256": "f513bc1891d7373662dd4c4c2d6506ba43b803bf85930bcbf86316a66be07451",
+      "slot": {
+        "x": 423,
+        "y": 11443,
+        "width": 892,
+        "height": 0
+      }
     },
     "competitive-mask": {
       "file": "competitive-mask.svg",
-      "width": 415.763,
-      "height": 312.566,
-      "figmaNodeIds": [],
-      "source": "Assets/figma files/obayashi-inspection-2026-10-19/assets/asset-27.svg",
-      "sha256": "cba7fa6d597cabbab66e17f0c6a7fd339b7dfe0fe1f8a3006bac6ff520219919"
+      "width": 443.897,
+      "height": 347.539,
+      "figmaNodeIds": [
+        "420:330"
+      ],
+      "source": "Assets/figma files/obayashi-update-2026-10-19/assets/competitive-mask.svg",
+      "sha256": "5d675357bc2919bbd028f1b200fa3fc36ac17e9b72d079e1d9bbf8f1252e4664",
+      "slot": {
+        "x": 424.5263671875,
+        "y": 2597.9931640625,
+        "width": 443.89703369140625,
+        "height": 347.5386657714844
+      }
     },
     "storyboard-mask": {
       "file": "storyboard-mask.svg",
@@ -1167,19 +1196,35 @@
     },
     "interviews-mask": {
       "file": "interviews-mask.svg",
-      "width": 886.0,
+      "width": 897.0,
       "height": 440.48,
-      "figmaNodeIds": [],
-      "source": "Assets/figma files/obayashi-inspection-2026-10-19/assets/asset-29.svg",
-      "sha256": "2544ca5ae59f8461e9a941734e5a805db31da4ae9fc46fd48d7520d05c1b7049"
+      "figmaNodeIds": [
+        "424:44"
+      ],
+      "source": "Assets/figma files/obayashi-update-2026-10-19/assets/interviews-mask.svg",
+      "sha256": "0a398effee1da8754181863fcd15867c8de12f2c2c6cb3c8c7644fe375cae6ba",
+      "slot": {
+        "x": 426,
+        "y": 6372,
+        "width": 897,
+        "height": 440.4801025390625
+      }
     },
     "interviews-inner-mask": {
       "file": "interviews-inner-mask.svg",
-      "width": 898.096,
+      "width": 909.246,
       "height": 446.021,
-      "figmaNodeIds": [],
-      "source": "Assets/figma files/obayashi-inspection-2026-10-19/assets/asset-30.svg",
-      "sha256": "8f902cf55dc6b573d637a20cfa4a8721b79d1bf68961f3bd0fc38551b92e6f98"
+      "figmaNodeIds": [
+        "424:20"
+      ],
+      "source": "Assets/figma files/obayashi-update-2026-10-19/assets/interviews-inner-mask.svg",
+      "sha256": "3abe64facffda6c77f2e97a45b15e6c4fa80c1885510d812272c1da5517a54f4",
+      "slot": {
+        "x": 429.0615234375,
+        "y": 6368.9765625,
+        "width": 909.2457275390625,
+        "height": 446.0205078125
+      }
     },
     "brand-mask": {
       "file": "brand-mask.svg",
@@ -1259,32 +1304,58 @@
     },
     "x-circle": {
       "file": "x-circle.svg",
-      "width": 36.8333,
-      "height": 36.8333,
+      "width": 35.0,
+      "height": 35.0,
       "figmaNodeIds": [
-        "420:382"
+        "420:392",
+        "499:11",
+        "499:13",
+        "499:15"
       ],
-      "source": "Assets/figma files/obayashi-inspection-2026-10-19/assets/x-circle.svg",
-      "sha256": "e6327c3ee28ec0d6f2aa51507f3f9234c70896056cb36a88fa13e9bd5f0f8965",
+      "source": "Assets/figma files/obayashi-update-2026-10-19/assets/x-circle.svg",
+      "sha256": "22ce494a702850304628b3f9107ac7698c534296aebc9b265699bac58da630be",
       "slot": {
-        "x": 431,
-        "y": 3959,
-        "width": 40,
-        "height": 40
+        "x": 426,
+        "y": 3278,
+        "width": 35,
+        "height": 35
+      }
+    },
+    "competitive-outer-mask": {
+      "file": "competitive-outer-mask.svg",
+      "width": 426.0,
+      "height": 318.0,
+      "figmaNodeIds": [
+        "499:9"
+      ],
+      "source": "Assets/figma files/obayashi-update-2026-10-19/assets/competitive-outer-mask.svg",
+      "sha256": "7e6b3d7961aa1ba88afce8e592cd073996740c232a12e081cfc71aa7929cfb6d",
+      "slot": {
+        "x": 432,
+        "y": 2608,
+        "width": 426,
+        "height": 318
       }
     }
   },
   "crops": {
     "competitive-analysis-1": {
-      "nodeId": "420:330",
-      "width": 415.7626953125,
-      "height": 312.56622314453125,
-      "mask": "competitive-mask",
+      "nodeId": "499:9",
+      "width": 426,
+      "height": 318,
+      "mask": "competitive-outer-mask",
       "image": {
-        "x": -1.984375,
-        "y": -4.9609375,
-        "width": 421.4352111816406,
-        "height": 318.7325134277344
+        "x": -6.73046875,
+        "y": -1.95703125,
+        "width": 459.17657470703125,
+        "height": 347.2763977050781
+      },
+      "inner": {
+        "x": -7.4736328125,
+        "y": -10.0068359375,
+        "width": 443.89703369140625,
+        "height": 347.5386657714844,
+        "mask": "competitive-mask"
       }
     },
     "storyboard": {
@@ -1301,19 +1372,19 @@
     },
     "interviews": {
       "nodeId": "424:44",
-      "width": 886,
+      "width": 897,
       "height": 440.4801025390625,
       "mask": "interviews-mask",
       "image": {
-        "x": -22.05029296875,
-        "y": -8.0185546875,
-        "width": 908.1865844726562,
-        "height": 454.0932922363281
+        "x": -19.49658203125,
+        "y": -9.423828125,
+        "width": 913.806884765625,
+        "height": 456.9034423828125
       },
       "inner": {
-        "x": 3.02392578125,
+        "x": 3.0615234375,
         "y": -3.0234375,
-        "width": 898.0955810546875,
+        "width": 909.2457275390625,
         "height": 446.0205078125,
         "mask": "interviews-inner-mask"
       }
@@ -1442,7 +1513,7 @@
   "texts": {
     "420:191": {
       "id": "420:191",
-      "parent": "420:76",
+      "parent": "498:22",
       "text": "Competitive Analysis",
       "x": 120,
       "y": 2382,
@@ -1461,7 +1532,7 @@
     },
     "420:192": {
       "id": "420:192",
-      "parent": "420:76",
+      "parent": "498:22",
       "text": "Web Audit",
       "x": 120,
       "y": 2415,
@@ -1480,7 +1551,7 @@
     },
     "420:193": {
       "id": "420:193",
-      "parent": "420:76",
+      "parent": "498:22",
       "text": "Priorities",
       "x": 120,
       "y": 2448,
@@ -1499,7 +1570,7 @@
     },
     "420:194": {
       "id": "420:194",
-      "parent": "420:76",
+      "parent": "498:22",
       "text": "Brand Narrative",
       "x": 120,
       "y": 2481,
@@ -1518,7 +1589,7 @@
     },
     "479:69": {
       "id": "479:69",
-      "parent": "420:76",
+      "parent": "498:22",
       "text": "Site Design",
       "x": 120,
       "y": 2514,
@@ -1537,7 +1608,7 @@
     },
     "479:70": {
       "id": "479:70",
-      "parent": "420:76",
+      "parent": "498:22",
       "text": "Retrospective",
       "x": 120,
       "y": 2547,
@@ -1556,7 +1627,7 @@
     },
     "420:195": {
       "id": "420:195",
-      "parent": "420:76",
+      "parent": "498:22",
       "text": "METHODOLOGY",
       "x": 120,
       "y": 2322,
@@ -1611,234 +1682,6 @@
         ]
       ]
     },
-    "420:214": {
-      "id": "420:214",
-      "parent": "420:76",
-      "text": "The  \nChallenge",
-      "x": 120,
-      "y": 1444,
-      "w": 472,
-      "h": 76,
-      "align": "LEFT",
-      "resize": "NONE",
-      "paragraphSpacing": 0,
-      "segments": [
-        [
-          0,
-          15,
-          3
-        ]
-      ]
-    },
-    "444:15": {
-      "id": "444:15",
-      "parent": "420:76",
-      "text": "Guiding\u2028Principles",
-      "x": 120,
-      "y": 2012,
-      "w": 472,
-      "h": 76,
-      "align": "LEFT",
-      "resize": "NONE",
-      "paragraphSpacing": 0,
-      "segments": [
-        [
-          0,
-          18,
-          3
-        ]
-      ]
-    },
-    "420:255": {
-      "id": "420:255",
-      "parent": "420:254",
-      "text": "36-page website redesign and internal \nhandoff",
-      "x": 120,
-      "y": 406,
-      "w": 170,
-      "h": 66,
-      "align": "LEFT",
-      "resize": "HEIGHT",
-      "paragraphSpacing": 0,
-      "segments": [
-        [
-          0,
-          46,
-          4
-        ]
-      ]
-    },
-    "420:256": {
-      "id": "420:256",
-      "parent": "420:254",
-      "text": "DELIVERABLE",
-      "x": 120,
-      "y": 376,
-      "w": 73,
-      "h": 13,
-      "align": "LEFT",
-      "resize": "WIDTH_AND_HEIGHT",
-      "paragraphSpacing": 0,
-      "segments": [
-        [
-          0,
-          11,
-          5
-        ]
-      ]
-    },
-    "420:258": {
-      "id": "420:258",
-      "parent": "420:257",
-      "text": "10 months",
-      "x": 372,
-      "y": 406,
-      "w": 170,
-      "h": 22,
-      "align": "LEFT",
-      "resize": "HEIGHT",
-      "paragraphSpacing": 0,
-      "segments": [
-        [
-          0,
-          9,
-          4
-        ]
-      ]
-    },
-    "420:259": {
-      "id": "420:259",
-      "parent": "420:257",
-      "text": "TIMELINE",
-      "x": 370,
-      "y": 376,
-      "w": 66,
-      "h": 13,
-      "align": "LEFT",
-      "resize": "HEIGHT",
-      "paragraphSpacing": 0,
-      "segments": [
-        [
-          0,
-          8,
-          5
-        ]
-      ]
-    },
-    "420:261": {
-      "id": "420:261",
-      "parent": "420:260",
-      "text": "17 Stakeholder Interviews\u2028Competitive Analysis \nContent Audit\nInformation Architecture \u2028",
-      "x": 872,
-      "y": 406,
-      "w": 190,
-      "h": 110,
-      "align": "LEFT",
-      "resize": "HEIGHT",
-      "paragraphSpacing": 0,
-      "segments": [
-        [
-          0,
-          88,
-          4
-        ]
-      ]
-    },
-    "420:262": {
-      "id": "420:262",
-      "parent": "420:260",
-      "text": "METHODS",
-      "x": 872,
-      "y": 376,
-      "w": 47,
-      "h": 13,
-      "align": "LEFT",
-      "resize": "WIDTH_AND_HEIGHT",
-      "paragraphSpacing": 0,
-      "segments": [
-        [
-          0,
-          7,
-          5
-        ]
-      ]
-    },
-    "420:264": {
-      "id": "420:264",
-      "parent": "420:263",
-      "text": "Figma\u2028Wix\u2028Claude\u2028Mobirise",
-      "x": 1142,
-      "y": 406,
-      "w": 81,
-      "h": 88,
-      "align": "LEFT",
-      "resize": "HEIGHT",
-      "paragraphSpacing": 0,
-      "segments": [
-        [
-          0,
-          25,
-          4
-        ]
-      ]
-    },
-    "420:265": {
-      "id": "420:265",
-      "parent": "420:263",
-      "text": "TOOLS",
-      "x": 1142,
-      "y": 376,
-      "w": 33,
-      "h": 13,
-      "align": "LEFT",
-      "resize": "WIDTH_AND_HEIGHT",
-      "paragraphSpacing": 0,
-      "segments": [
-        [
-          0,
-          5,
-          5
-        ]
-      ]
-    },
-    "420:267": {
-      "id": "420:267",
-      "parent": "420:266",
-      "text": "UX research\u2028Visual Identity\u2028Website Design\u2028\u2028",
-      "x": 622,
-      "y": 406,
-      "w": 170,
-      "h": 110,
-      "align": "LEFT",
-      "resize": "HEIGHT",
-      "paragraphSpacing": 0,
-      "segments": [
-        [
-          0,
-          44,
-          4
-        ]
-      ]
-    },
-    "420:268": {
-      "id": "420:268",
-      "parent": "420:266",
-      "text": "MY CONTRIBUTION",
-      "x": 622,
-      "y": 376,
-      "w": 99,
-      "h": 13,
-      "align": "LEFT",
-      "resize": "WIDTH_AND_HEIGHT",
-      "paragraphSpacing": 0,
-      "segments": [
-        [
-          0,
-          15,
-          5
-        ]
-      ]
-    },
     "420:272": {
       "id": "420:272",
       "parent": "420:270",
@@ -1854,7 +1697,7 @@
         [
           0,
           67,
-          6
+          3
         ]
       ]
     },
@@ -1873,14 +1716,14 @@
         [
           0,
           8,
-          7
+          4
         ]
       ]
     },
     "420:274": {
       "id": "420:274",
       "parent": "420:270",
-      "text": "02 /",
+      "text": "01 /",
       "x": 126,
       "y": 151,
       "w": 44,
@@ -1892,148 +1735,96 @@
         [
           0,
           4,
-          8
+          5
         ]
       ]
     },
-    "223:240": {
-      "id": "223:240",
-      "parent": "420:76",
-      "text": "Key audiences lacked clear pathways to the information they needed.\u2028The site contained valuable content, but the information architecture did not prioritize prospective clients and potential new employees",
-      "x": 747,
-      "y": 1464,
-      "w": 564,
-      "h": 78,
-      "align": "LEFT",
-      "resize": "HEIGHT",
-      "paragraphSpacing": 0,
-      "segments": [
-        [
-          0,
-          68,
-          9
-        ],
-        [
-          68,
-          204,
-          10
-        ]
-      ]
-    },
-    "223:247": {
-      "id": "223:247",
-      "parent": "420:76",
-      "text": "The North American site felt disconnected from a strong global brand.\u2028The NA site had developed its own look and feel rather than leveraging Obayashi\u2019s established global identity, making the relationship unclear.",
-      "x": 747,
-      "y": 1564,
-      "w": 564,
-      "h": 78,
-      "align": "LEFT",
-      "resize": "HEIGHT",
-      "paragraphSpacing": 0,
-      "segments": [
-        [
-          0,
-          70,
-          9
-        ],
-        [
-          70,
-          213,
-          10
-        ]
-      ]
-    },
-    "223:248": {
-      "id": "223:248",
-      "parent": "420:76",
-      "text": "Internal priorities had not been translated into a clear external hierarchy\u2028HR, Engineering, Safety, Operations, and leadership each had different priorities for the site. The challenge was determining which messages mattered most to the business and its audiences.",
-      "x": 747,
-      "y": 1664,
-      "w": 564,
-      "h": 104,
-      "align": "LEFT",
-      "resize": "HEIGHT",
-      "paragraphSpacing": 0,
-      "segments": [
-        [
-          0,
-          76,
-          9
-        ],
-        [
-          76,
-          265,
-          10
-        ]
-      ]
-    },
-    "223:408": {
-      "id": "223:408",
-      "parent": "420:76",
-      "text": "The digital experience did not reflect the sophistication of the work\u2028Obayashi delivers large-scale projects requiring precision, coordination, and technical expertise. A fragmented digital experience risked communicating the opposite. \n\n",
-      "x": 747,
-      "y": 1790,
-      "w": 564,
-      "h": 157,
-      "align": "LEFT",
-      "resize": "HEIGHT",
-      "paragraphSpacing": 0,
-      "segments": [
-        [
-          0,
-          70,
-          9
-        ],
-        [
-          70,
-          238,
-          10
-        ]
-      ]
-    },
-    "223:244": {
-      "id": "223:244",
-      "parent": "420:76",
-      "text": "Obayashi North America had a website, but it lacked a clear digital story. ",
-      "x": 747,
-      "y": 1420,
-      "w": 566,
-      "h": 22,
-      "align": "LEFT",
-      "resize": "HEIGHT",
-      "paragraphSpacing": 0,
-      "segments": [
-        [
-          0,
-          75,
-          11
-        ]
-      ]
-    },
-    "420:306": {
-      "id": "420:306",
-      "parent": "420:76",
-      "text": "Benchmarking the \u2028Competitive Landscape",
-      "x": 436,
-      "y": 2374,
+    "478:22": {
+      "id": "478:22",
+      "parent": "478:21",
+      "text": "What I Learned",
+      "x": 425,
+      "y": 11478,
       "w": 845,
-      "h": 88,
+      "h": 44,
       "align": "LEFT",
       "resize": "HEIGHT",
       "paragraphSpacing": 0,
       "segments": [
         [
           0,
-          39,
-          3
+          14,
+          6
+        ]
+      ]
+    },
+    "478:24": {
+      "id": "478:24",
+      "parent": "478:21",
+      "text": "Reflection",
+      "x": 496,
+      "y": 11621,
+      "w": 845,
+      "h": 105,
+      "align": "LEFT",
+      "resize": "NONE",
+      "paragraphSpacing": 0,
+      "segments": [
+        [
+          0,
+          10,
+          7
+        ]
+      ]
+    },
+    "478:26": {
+      "id": "478:26",
+      "parent": "478:21",
+      "text": "Information architecture creates organizational clarity. Organizing the site meant clarifying how teams, services, and projects fit into one North American identity.\u2028\nBusiness goals need to guide content priorities. Balancing departmental requests taught me to prioritize paths for prospective clients and job candidates to support business growth and recruitment, while keeping essential content like safety accessible.\u2028\nSmall structural decisions can have big impact. Removing redirects to the Tokyo site reduced navigation friction and clarified Obayashi\u2019s North American presence.",
+      "x": 732,
+      "y": 11621,
+      "w": 492,
+      "h": 397,
+      "align": "LEFT",
+      "resize": "NONE",
+      "paragraphSpacing": 0,
+      "segments": [
+        [
+          0,
+          57,
+          8
+        ],
+        [
+          57,
+          167,
+          9
+        ],
+        [
+          167,
+          216,
+          8
+        ],
+        [
+          216,
+          420,
+          9
+        ],
+        [
+          420,
+          470,
+          8
+        ],
+        [
+          470,
+          584,
+          9
         ]
       ]
     },
     "429:97": {
       "id": "429:97",
-      "parent": "420:76",
-      "text": "Designing Around Projects, \u2028People, and Expertise",
+      "parent": "498:17",
+      "text": "Designing to Showcase Projects, \u2028People, and Expertise",
       "x": 436,
       "y": 8144,
       "w": 845,
@@ -2044,33 +1835,14 @@
       "segments": [
         [
           0,
-          49,
-          12
-        ]
-      ]
-    },
-    "351:62": {
-      "id": "351:62",
-      "parent": "420:76",
-      "text": "I compared Obayashi\u2019s website with competitors to assess how they presented their capabilities, projects, culture, and brand. This revealed opportunities to improve navigation, visual storytelling, project content, and audience pathways, establishing a benchmark for the redesign.",
-      "x": 439,
-      "y": 2482,
-      "w": 876,
-      "h": 78,
-      "align": "LEFT",
-      "resize": "HEIGHT",
-      "paragraphSpacing": 0,
-      "segments": [
-        [
-          0,
-          280,
+          54,
           10
         ]
       ]
     },
     "429:98": {
       "id": "429:98",
-      "parent": "420:76",
+      "parent": "498:17",
       "text": "I translated the research findings into a clearer site structure, making projects easier to discover and giving their scale, technical complexity, and impact more visibility. Early sketches informed reusable page layouts and a consistent visual system that strengthened Obayashi\u2019s North American identity across the site.",
       "x": 439,
       "y": 8252,
@@ -2083,13 +1855,170 @@
         [
           0,
           321,
-          10
+          9
+        ]
+      ]
+    },
+    "474:12": {
+      "id": "474:12",
+      "parent": "498:17",
+      "text": " ",
+      "x": 433,
+      "y": 8678,
+      "w": 414,
+      "h": 30,
+      "align": "LEFT",
+      "resize": "HEIGHT",
+      "paragraphSpacing": 0,
+      "segments": [
+        [
+          0,
+          1,
+          11
+        ]
+      ]
+    },
+    "474:27": {
+      "id": "474:27",
+      "parent": "498:17",
+      "text": "Created a cohesive North American identity within the global brand\nOrganized navigation around prospective clients and job candidates\nBrought North American projects into the site with richer project details\nTranslated departmental priorities into a shared content hierarchy\u2028\nThe redesign was presented to leadership and handed off for implementation. Its impact on usability and engagement has not yet been measured.",
+      "x": 426,
+      "y": 11002,
+      "w": 400,
+      "h": 338,
+      "align": "LEFT",
+      "resize": "HEIGHT",
+      "paragraphSpacing": 0,
+      "segments": [
+        [
+          0,
+          276,
+          12
+        ],
+        [
+          276,
+          417,
+          9
+        ]
+      ]
+    },
+    "474:28": {
+      "id": "474:28",
+      "parent": "498:17",
+      "text": "Design Outcomes",
+      "x": 426,
+      "y": 10962,
+      "w": 336.6789245605469,
+      "h": 25,
+      "align": "LEFT",
+      "resize": "HEIGHT",
+      "paragraphSpacing": 0,
+      "segments": [
+        [
+          0,
+          15,
+          13
+        ]
+      ]
+    },
+    "478:30": {
+      "id": "478:30",
+      "parent": "498:17",
+      "text": "Project pages that expose scope, partners, \u2028technical challenges, and impact.",
+      "x": 430,
+      "y": 10820,
+      "w": 316,
+      "h": 44,
+      "align": "LEFT",
+      "resize": "WIDTH_AND_HEIGHT",
+      "paragraphSpacing": 0,
+      "segments": [
+        [
+          0,
+          77,
+          14
+        ]
+      ]
+    },
+    "478:33": {
+      "id": "478:33",
+      "parent": "498:17",
+      "text": "Technology page makes Obayashi\u2019s expertise \u2028easier to explore,",
+      "x": 430,
+      "y": 9965,
+      "w": 334,
+      "h": 44,
+      "align": "LEFT",
+      "resize": "WIDTH_AND_HEIGHT",
+      "paragraphSpacing": 0,
+      "segments": [
+        [
+          0,
+          62,
+          14
+        ]
+      ]
+    },
+    "478:34": {
+      "id": "478:34",
+      "parent": "498:17",
+      "text": "The Careers page brings the employee experience to life through photos, interviews, \u2028testimonials, and a \u201cWhy Obayashi\u201d section.",
+      "x": 402,
+      "y": 9220,
+      "w": 926,
+      "h": 44,
+      "align": "CENTER",
+      "resize": "HEIGHT",
+      "paragraphSpacing": 0,
+      "segments": [
+        [
+          0,
+          128,
+          14
+        ]
+      ]
+    },
+    "478:31": {
+      "id": "478:31",
+      "parent": "498:17",
+      "text": "Rail & Transit page highlights key projects \u2028within the sector.",
+      "x": 891,
+      "y": 10245,
+      "w": 306,
+      "h": 44,
+      "align": "LEFT",
+      "resize": "WIDTH_AND_HEIGHT",
+      "paragraphSpacing": 0,
+      "segments": [
+        [
+          0,
+          63,
+          14
+        ]
+      ]
+    },
+    "478:32": {
+      "id": "478:32",
+      "parent": "498:17",
+      "text": "Market pages that connect capabilities to relevant North American projects.",
+      "x": 898,
+      "y": 11169.384765625,
+      "w": 311,
+      "h": 44,
+      "align": "LEFT",
+      "resize": "WIDTH_AND_HEIGHT",
+      "paragraphSpacing": 0,
+      "segments": [
+        [
+          0,
+          76,
+          14
         ]
       ]
     },
     "351:80": {
       "id": "351:80",
-      "parent": "420:76",
+      "parent": "498:13",
       "text": "I interviewed 17 internal stakeholders across Engineering, HR, Executive Leadership, Safety, Operations, and IT to understand what each department needed the website to communicate. These interviews captured internal priorities and perceptions of audience needs.",
       "x": 426,
       "y": 6054,
@@ -2102,18 +2031,18 @@
         [
           0,
           39,
-          9
+          8
         ],
         [
           39,
           262,
-          10
+          9
         ]
       ]
     },
     "474:35": {
       "id": "474:35",
-      "parent": "420:76",
+      "parent": "498:13",
       "text": "Different priorities pointed to two central needs: demonstrating Obayashi\u2019s capabilities to prospective clients and helping candidates understand the employee experience. I organized technical expertise around markets and relevant North American projects, while giving culture, benefits, and career growth a dedicated recruiting pathway.",
       "x": 426,
       "y": 6152,
@@ -2126,18 +2055,18 @@
         [
           0,
           50,
-          9
+          8
         ],
         [
           50,
           337,
-          10
+          9
         ]
       ]
     },
     "474:36": {
       "id": "474:36",
-      "parent": "420:76",
+      "parent": "498:13",
       "text": "Across departments, recurring themes of trust, collaboration, mentorship, growth, and community also emerged. These themes informed the brand story and employee storytelling, connecting the company\u2019s capabilities with the people behind its work.",
       "x": 426,
       "y": 6250,
@@ -2150,21 +2079,21 @@
         [
           0,
           110,
-          9
+          8
         ],
         [
           110,
           245,
-          10
+          9
         ]
       ]
     },
     "424:30": {
       "id": "424:30",
-      "parent": "420:76",
+      "parent": "498:13",
       "text": "I created a storyboard that brought recurring themes to life through employee perspectives, project footage, company culture, and community involvement.",
       "x": 429,
-      "y": 7153,
+      "y": 7166,
       "w": 894,
       "h": 52,
       "align": "LEFT",
@@ -2174,13 +2103,13 @@
         [
           0,
           152,
-          10
+          9
         ]
       ]
     },
     "424:17": {
       "id": "424:17",
-      "parent": "420:76",
+      "parent": "498:13",
       "text": "The People Shaping the Brand",
       "x": 426,
       "y": 5975,
@@ -2193,16 +2122,16 @@
         [
           0,
           28,
-          13
+          6
         ]
       ]
     },
     "424:31": {
       "id": "424:31",
-      "parent": "420:76",
+      "parent": "498:13",
       "text": "From Themes to Storyboard",
       "x": 429,
-      "y": 7113,
+      "y": 7126,
       "w": 871,
       "h": 30,
       "align": "LEFT",
@@ -2212,7 +2141,7 @@
         [
           0,
           25,
-          14
+          15
         ]
       ]
     },
@@ -2220,7 +2149,7 @@
       "id": "424:25",
       "parent": "424:29",
       "text": "\u201cThe website is often the first impression people have of Obayashi. It should reflect the scale of our work and the people behind it.\u201d",
-      "x": 572.32177734375,
+      "x": 572.3219451904297,
       "y": 6892,
       "w": 694.724853515625,
       "h": 140,
@@ -2231,17 +2160,17 @@
         [
           0,
           22,
-          15
+          16
         ],
         [
           22,
           50,
-          16
+          17
         ],
         [
           50,
           134,
-          15
+          16
         ]
       ]
     },
@@ -2249,7 +2178,7 @@
       "id": "424:28",
       "parent": "424:29",
       "text": "\u2014 Obayashi Executive",
-      "x": 572.32177734375,
+      "x": 572.3219451904297,
       "y": 6960,
       "w": 184.2147674560547,
       "h": 27,
@@ -2260,7 +2189,7 @@
         [
           0,
           20,
-          17
+          18
         ]
       ]
     },
@@ -2268,7 +2197,7 @@
       "id": "424:26",
       "parent": "424:29",
       "text": "\u201c",
-      "x": 473.35546875,
+      "x": 473.3554916381836,
       "y": 6920,
       "w": 81.328857421875,
       "h": 140,
@@ -2279,94 +2208,13 @@
         [
           0,
           1,
-          18
-        ]
-      ]
-    },
-    "429:75": {
-      "id": "429:75",
-      "parent": "420:76",
-      "text": "Clarifying North American Site Priorities",
-      "x": 428,
-      "y": 4777,
-      "w": 845,
-      "h": 44,
-      "align": "LEFT",
-      "resize": "HEIGHT",
-      "paragraphSpacing": 0,
-      "segments": [
-        [
-          0,
-          41,
-          13
-        ]
-      ]
-    },
-    "422:15": {
-      "id": "422:15",
-      "parent": "420:76",
-      "text": "I mapped the findings into priorities for content, navigation, visual design, and measurement to guide the \u2028website strategy and redesign.",
-      "x": 427,
-      "y": 4841,
-      "w": 876,
-      "h": 52,
-      "align": "LEFT",
-      "resize": "HEIGHT",
-      "paragraphSpacing": 0,
-      "segments": [
-        [
-          0,
-          138,
-          10
-        ]
-      ]
-    },
-    "424:15": {
-      "id": "424:15",
-      "parent": "429:76",
-      "text": "MIND MAP",
-      "x": 461.10888671875,
-      "y": 4966.5986328125,
-      "w": 197.8114471435547,
-      "h": 22.5484561920166,
-      "align": "LEFT",
-      "resize": "NONE",
-      "paragraphSpacing": 0,
-      "segments": [
-        [
-          0,
-          8,
           19
-        ]
-      ]
-    },
-    "424:14": {
-      "id": "424:14",
-      "parent": "429:76",
-      "text": "Obayashi\nSite Plan",
-      "x": 768.587890625,
-      "y": 5167.484375,
-      "w": 197.8114471435547,
-      "h": 49.19662857055664,
-      "align": "CENTER",
-      "resize": "NONE",
-      "paragraphSpacing": 0,
-      "segments": [
-        [
-          0,
-          9,
-          20
-        ],
-        [
-          9,
-          18,
-          4
         ]
       ]
     },
     "429:79": {
       "id": "429:79",
-      "parent": "420:76",
+      "parent": "498:13",
       "text": "\u201cObayashi is...\u201d",
       "x": 1038,
       "y": 7778,
@@ -2379,13 +2227,13 @@
         [
           0,
           16,
-          14
+          15
         ]
       ]
     },
     "429:80": {
       "id": "429:80",
-      "parent": "420:76",
+      "parent": "498:13",
       "text": "The themes became a visual language. I selected key themes to bring to life through authentic moments across the organization.",
       "x": 1038,
       "y": 7818,
@@ -2398,7 +2246,183 @@
         [
           0,
           126,
-          10
+          9
+        ]
+      ]
+    },
+    "429:75": {
+      "id": "429:75",
+      "parent": "498:12",
+      "text": "Clarifying North American Site Priorities",
+      "x": 428,
+      "y": 4777,
+      "w": 845,
+      "h": 44,
+      "align": "LEFT",
+      "resize": "HEIGHT",
+      "paragraphSpacing": 0,
+      "segments": [
+        [
+          0,
+          41,
+          6
+        ]
+      ]
+    },
+    "422:15": {
+      "id": "422:15",
+      "parent": "498:12",
+      "text": "I mapped the findings into priorities for content, navigation, visual design, and measurement to guide the \u2028website strategy and redesign.",
+      "x": 427,
+      "y": 4841,
+      "w": 876,
+      "h": 52,
+      "align": "LEFT",
+      "resize": "HEIGHT",
+      "paragraphSpacing": 0,
+      "segments": [
+        [
+          0,
+          138,
+          9
+        ]
+      ]
+    },
+    "424:15": {
+      "id": "424:15",
+      "parent": "429:76",
+      "text": "MIND MAP",
+      "x": 461.10892486572266,
+      "y": 4966.598522186279,
+      "w": 197.8114471435547,
+      "h": 22.5484561920166,
+      "align": "LEFT",
+      "resize": "NONE",
+      "paragraphSpacing": 0,
+      "segments": [
+        [
+          0,
+          8,
+          20
+        ]
+      ]
+    },
+    "424:14": {
+      "id": "424:14",
+      "parent": "429:76",
+      "text": "Obayashi\nSite Plan",
+      "x": 768.5877990722656,
+      "y": 5167.484771728516,
+      "w": 197.8114471435547,
+      "h": 49.19662857055664,
+      "align": "CENTER",
+      "resize": "NONE",
+      "paragraphSpacing": 0,
+      "segments": [
+        [
+          0,
+          9,
+          21
+        ],
+        [
+          9,
+          18,
+          22
+        ]
+      ]
+    },
+    "474:21": {
+      "id": "474:21",
+      "parent": "498:12",
+      "text": " ",
+      "x": 436,
+      "y": 5550,
+      "w": 414,
+      "h": 30,
+      "align": "LEFT",
+      "resize": "HEIGHT",
+      "paragraphSpacing": 0,
+      "segments": [
+        [
+          0,
+          1,
+          11
+        ]
+      ]
+    },
+    "474:22": {
+      "id": "474:22",
+      "parent": "498:12",
+      "text": "Re-center navigation around North American work\nCreate clear explanations of global structure\nRebuild case studies to reflect real project depth\nIntroduce employee storytelling for recruiting\nReduce external redirects to maintain continuity",
+      "x": 721,
+      "y": 5727,
+      "w": 543,
+      "h": 130,
+      "align": "LEFT",
+      "resize": "HEIGHT",
+      "paragraphSpacing": 0,
+      "segments": [
+        [
+          0,
+          240,
+          12
+        ]
+      ]
+    },
+    "474:24": {
+      "id": "474:24",
+      "parent": "498:12",
+      "text": "Key Decision",
+      "x": 493,
+      "y": 5552,
+      "w": 150,
+      "h": 25,
+      "align": "LEFT",
+      "resize": "HEIGHT",
+      "paragraphSpacing": 0,
+      "segments": [
+        [
+          0,
+          12,
+          13
+        ]
+      ]
+    },
+    "474:25": {
+      "id": "474:25",
+      "parent": "498:12",
+      "text": "Design Strategy",
+      "x": 493,
+      "y": 5727,
+      "w": 242,
+      "h": 25,
+      "align": "LEFT",
+      "resize": "HEIGHT",
+      "paragraphSpacing": 0,
+      "segments": [
+        [
+          0,
+          15,
+          13
+        ]
+      ]
+    },
+    "474:26": {
+      "id": "474:26",
+      "parent": "498:12",
+      "text": "Establish a self-contained North American site, eliminating redirects to the Tokyo site that disrupted user journeys, blurred regional identity, and made the North American site feel secondary.",
+      "x": 729,
+      "y": 5552,
+      "w": 535,
+      "h": 140,
+      "align": "LEFT",
+      "resize": "NONE",
+      "paragraphSpacing": 0,
+      "segments": [
+        [
+          0,
+          193,
+          23
         ]
       ]
     },
@@ -2417,7 +2441,7 @@
         [
           0,
           40,
-          3
+          24
         ]
       ]
     },
@@ -2436,16 +2460,16 @@
         [
           0,
           188,
-          10
+          9
         ]
       ]
     },
     "266:15": {
       "id": "266:15",
-      "parent": "437:104",
+      "parent": "499:18",
       "text": "Limited pathways for client inquiries",
-      "x": 431,
-      "y": 4011,
+      "x": 426,
+      "y": 4034,
       "w": 407,
       "h": 30,
       "align": "LEFT",
@@ -2455,16 +2479,16 @@
         [
           0,
           37,
-          21
+          11
         ]
       ]
     },
     "266:17": {
       "id": "266:17",
-      "parent": "437:104",
+      "parent": "499:18",
       "text": "Prospective clients were key to new business, but the site relied on a basic contact page, with no inquiry forms or contextual contact links.",
-      "x": 431,
-      "y": 4051,
+      "x": 426,
+      "y": 4074,
       "w": 432,
       "h": 78,
       "align": "LEFT",
@@ -2474,7 +2498,7 @@
         [
           0,
           141,
-          10
+          9
         ]
       ]
     },
@@ -2482,8 +2506,8 @@
       "id": "420:390",
       "parent": "420:418",
       "text": "North American projects were difficult to find",
-      "x": 433,
-      "y": 3270,
+      "x": 426.0000000000009,
+      "y": 3324,
       "w": 438.3656005859375,
       "h": 30,
       "align": "LEFT",
@@ -2493,35 +2517,35 @@
         [
           0,
           46,
-          21
+          11
         ]
       ]
     },
     "420:394": {
       "id": "420:394",
       "parent": "420:418",
-      "text": "Projects were the content users most wanted to see, yet the Work page redirected them to a visually inconsistent global site where North American projects were buried.",
-      "x": 433,
-      "y": 3310,
-      "w": 448,
-      "h": 78,
+      "text": "Stakeholders identified North American projects as a content priority, yet the Work page redirected visitors to a visually inconsistent global site where those projects were buried.",
+      "x": 426,
+      "y": 3364,
+      "w": 438,
+      "h": 104,
       "align": "LEFT",
       "resize": "HEIGHT",
       "paragraphSpacing": 0,
       "segments": [
         [
           0,
-          167,
-          10
+          181,
+          9
         ]
       ]
     },
     "420:395": {
       "id": "420:395",
-      "parent": "437:105",
+      "parent": "499:17",
       "text": "Limited project detail weakened credibility",
-      "x": 437,
-      "y": 3623,
+      "x": 426,
+      "y": 3687,
       "w": 413,
       "h": 30,
       "align": "LEFT",
@@ -2531,16 +2555,16 @@
         [
           0,
           43,
-          21
+          11
         ]
       ]
     },
     "420:396": {
       "id": "420:396",
-      "parent": "437:105",
+      "parent": "499:17",
       "text": "Sparse project descriptions made it difficult for prospective clients to assess each project\u2019s scale, key partners, technical complexity, and impact.",
-      "x": 437,
-      "y": 3663,
+      "x": 426,
+      "y": 3727,
       "w": 434,
       "h": 78,
       "align": "LEFT",
@@ -2550,16 +2574,16 @@
         [
           0,
           149,
-          10
+          9
         ]
       ]
     },
     "420:408": {
       "id": "420:408",
-      "parent": "437:103",
+      "parent": "499:19",
       "text": "The employee experience was invisible",
-      "x": 433,
-      "y": 4351,
+      "x": 426,
+      "y": 4380,
       "w": 414,
       "h": 30,
       "align": "LEFT",
@@ -2569,16 +2593,16 @@
         [
           0,
           37,
-          21
+          11
         ]
       ]
     },
     "420:409": {
       "id": "420:409",
-      "parent": "437:103",
+      "parent": "499:19",
       "text": "Sparse content on culture, benefits, and career growth made it difficult for candidates to picture what working at Obayashi would be like.",
-      "x": 433,
-      "y": 4391,
+      "x": 426,
+      "y": 4420,
       "w": 417,
       "h": 78,
       "align": "LEFT",
@@ -2588,73 +2612,73 @@
         [
           0,
           138,
-          10
+          9
         ]
       ]
     },
-    "474:12": {
-      "id": "474:12",
+    "420:306": {
+      "id": "420:306",
       "parent": "420:76",
-      "text": " ",
-      "x": 433,
-      "y": 8678,
-      "w": 414,
-      "h": 30,
-      "align": "LEFT",
-      "resize": "HEIGHT",
-      "paragraphSpacing": 0,
-      "segments": [
-        [
-          0,
-          1,
-          21
-        ]
-      ]
-    },
-    "474:21": {
-      "id": "474:21",
-      "parent": "420:76",
-      "text": " ",
+      "text": "Benchmarking the \u2028Competitive Landscape",
       "x": 436,
-      "y": 5550,
-      "w": 414,
-      "h": 30,
+      "y": 2374,
+      "w": 845,
+      "h": 88,
       "align": "LEFT",
       "resize": "HEIGHT",
       "paragraphSpacing": 0,
       "segments": [
         [
           0,
-          1,
-          21
+          39,
+          24
         ]
       ]
     },
-    "474:22": {
-      "id": "474:22",
+    "351:62": {
+      "id": "351:62",
       "parent": "420:76",
-      "text": "Re-center navigation around North American work\nCreate clear explanations of global structure\nRebuild case studies to reflect real project depth\nIntroduce employee storytelling for recruiting\nReduce external redirects to maintain continuity",
-      "x": 721,
-      "y": 5727,
-      "w": 543,
-      "h": 130,
+      "text": "I compared Obayashi\u2019s website with competitors to assess how they presented their capabilities, projects, culture, and brand. This revealed opportunities to improve navigation, visual storytelling, project content, and audience pathways, establishing a benchmark for the redesign.",
+      "x": 439,
+      "y": 2482,
+      "w": 876,
+      "h": 78,
       "align": "LEFT",
       "resize": "HEIGHT",
       "paragraphSpacing": 0,
       "segments": [
         [
           0,
-          240,
-          22
+          280,
+          9
+        ]
+      ]
+    },
+    "444:15": {
+      "id": "444:15",
+      "parent": "498:9",
+      "text": "Guiding\u2028Principles",
+      "x": 120,
+      "y": 1996,
+      "w": 472,
+      "h": 76,
+      "align": "LEFT",
+      "resize": "NONE",
+      "paragraphSpacing": 0,
+      "segments": [
+        [
+          0,
+          18,
+          24
         ]
       ]
     },
     "420:349": {
       "id": "420:349",
-      "parent": "420:76",
+      "parent": "498:9",
       "text": "Humanize",
-      "x": 690,
-      "y": 2033,
+      "x": 685,
+      "y": 2019,
       "w": 144,
       "h": 24,
       "align": "LEFT",
@@ -2664,16 +2688,16 @@
         [
           0,
           8,
-          23
+          25
         ]
       ]
     },
     "420:350": {
       "id": "420:350",
-      "parent": "420:76",
+      "parent": "498:9",
       "text": "Prioritize",
-      "x": 929,
-      "y": 2033,
+      "x": 915,
+      "y": 2019,
       "w": 138,
       "h": 24,
       "align": "LEFT",
@@ -2683,16 +2707,16 @@
         [
           0,
           10,
-          23
+          25
         ]
       ]
     },
     "420:351": {
       "id": "420:351",
-      "parent": "420:76",
+      "parent": "498:9",
       "text": "Simplify",
-      "x": 1160,
-      "y": 2033,
+      "x": 1147,
+      "y": 2019,
       "w": 123,
       "h": 24,
       "align": "LEFT",
@@ -2702,16 +2726,16 @@
         [
           0,
           8,
-          23
+          25
         ]
       ]
     },
     "420:358": {
       "id": "420:358",
-      "parent": "420:76",
+      "parent": "498:9",
       "text": "Define North America\u2019s role within the global brand.\n",
-      "x": 446,
-      "y": 2074,
+      "x": 453,
+      "y": 2060,
       "w": 132,
       "h": 110,
       "align": "LEFT",
@@ -2721,16 +2745,16 @@
         [
           0,
           53,
-          24
+          26
         ]
       ]
     },
     "420:359": {
       "id": "420:359",
-      "parent": "420:76",
+      "parent": "498:9",
       "text": "Bring employees, culture, and community into the story.",
-      "x": 690,
-      "y": 2074,
+      "x": 685,
+      "y": 2060,
       "w": 147,
       "h": 88,
       "align": "LEFT",
@@ -2740,16 +2764,16 @@
         [
           0,
           55,
-          24
+          26
         ]
       ]
     },
     "420:360": {
       "id": "420:360",
-      "parent": "420:76",
+      "parent": "498:9",
       "text": "Center the needs of prospective clients and candidates.",
-      "x": 929,
-      "y": 2074,
+      "x": 915,
+      "y": 2060,
       "w": 138,
       "h": 88,
       "align": "LEFT",
@@ -2759,16 +2783,16 @@
         [
           0,
           55,
-          24
+          26
         ]
       ]
     },
     "420:361": {
       "id": "420:361",
-      "parent": "420:76",
+      "parent": "498:9",
       "text": "Make projects and capabilities easier to find.",
-      "x": 1160,
-      "y": 2074,
+      "x": 1147,
+      "y": 2058,
       "w": 144,
       "h": 66,
       "align": "LEFT",
@@ -2778,16 +2802,16 @@
         [
           0,
           46,
-          24
+          26
         ]
       ]
     },
     "420:348": {
       "id": "420:348",
-      "parent": "420:76",
+      "parent": "498:9",
       "text": "Clarify",
-      "x": 446,
-      "y": 2033,
+      "x": 453,
+      "y": 2019,
       "w": 97,
       "h": 24,
       "align": "LEFT",
@@ -2797,283 +2821,330 @@
         [
           0,
           7,
-          23
-        ]
-      ]
-    },
-    "474:24": {
-      "id": "474:24",
-      "parent": "420:76",
-      "text": "Key Decision",
-      "x": 493,
-      "y": 5552,
-      "w": 150,
-      "h": 25,
-      "align": "LEFT",
-      "resize": "HEIGHT",
-      "paragraphSpacing": 0,
-      "segments": [
-        [
-          0,
-          12,
           25
         ]
       ]
     },
-    "474:27": {
-      "id": "474:27",
-      "parent": "474:33",
-      "text": "Established a clear North American identity\nMade projects discoverable and credible\nImproved navigation across multiple audiences\nStrengthened alignment between internal teams and external messaging\n\u2028The redesign was presented to leadership and is currently in final implementation.\n",
-      "x": 426,
-      "y": 10979,
-      "w": 408,
-      "h": 234,
+    "420:214": {
+      "id": "420:214",
+      "parent": "498:19",
+      "text": "The  \nChallenge",
+      "x": 120,
+      "y": 1420,
+      "w": 472,
+      "h": 76,
       "align": "LEFT",
-      "resize": "HEIGHT",
-      "paragraphSpacing": 0,
-      "segments": [
-        [
-          0,
-          199,
-          22
-        ],
-        [
-          199,
-          283,
-          10
-        ]
-      ]
-    },
-    "474:28": {
-      "id": "474:28",
-      "parent": "474:33",
-      "text": "Design Outcomes",
-      "x": 426,
-      "y": 10939,
-      "w": 331,
-      "h": 25,
-      "align": "LEFT",
-      "resize": "HEIGHT",
+      "resize": "NONE",
       "paragraphSpacing": 0,
       "segments": [
         [
           0,
           15,
-          25
+          24
         ]
       ]
     },
-    "474:25": {
-      "id": "474:25",
-      "parent": "420:76",
-      "text": "Design Strategy",
-      "x": 493,
-      "y": 5727,
-      "w": 242,
-      "h": 25,
+    "223:240": {
+      "id": "223:240",
+      "parent": "498:19",
+      "text": "Key audiences lacked clear pathways to the information they needed.\u2028The site contained valuable content, but the information architecture did not prioritize prospective clients and potential new employees",
+      "x": 747,
+      "y": 1464,
+      "w": 564,
+      "h": 78,
       "align": "LEFT",
       "resize": "HEIGHT",
       "paragraphSpacing": 0,
       "segments": [
         [
           0,
-          15,
-          25
-        ]
-      ]
-    },
-    "474:26": {
-      "id": "474:26",
-      "parent": "420:76",
-      "text": "Establish a self-contained North American site, eliminating redirects to the Tokyo site that disrupted user journeys, blurred regional identity, and made the North American site feel secondary.",
-      "x": 729,
-      "y": 5552,
-      "w": 535,
-      "h": 140,
-      "align": "LEFT",
-      "resize": "NONE",
-      "paragraphSpacing": 0,
-      "segments": [
+          68,
+          8
+        ],
         [
-          0,
-          193,
-          26
+          68,
+          204,
+          9
         ]
       ]
     },
-    "478:22": {
-      "id": "478:22",
-      "parent": "478:21",
-      "text": "What I Learned",
-      "x": 425,
-      "y": 11378,
-      "w": 845,
-      "h": 44,
+    "223:247": {
+      "id": "223:247",
+      "parent": "498:19",
+      "text": "The North American site felt disconnected from a strong global brand.\u2028The NA site had developed its own look and feel rather than leveraging Obayashi\u2019s established global identity, making the relationship unclear.",
+      "x": 747,
+      "y": 1564,
+      "w": 564,
+      "h": 78,
       "align": "LEFT",
       "resize": "HEIGHT",
       "paragraphSpacing": 0,
       "segments": [
         [
           0,
-          14,
-          13
-        ]
-      ]
-    },
-    "478:24": {
-      "id": "478:24",
-      "parent": "478:21",
-      "text": "Reflection",
-      "x": 496,
-      "y": 11521,
-      "w": 845,
-      "h": 105,
-      "align": "LEFT",
-      "resize": "NONE",
-      "paragraphSpacing": 0,
-      "segments": [
+          70,
+          8
+        ],
         [
-          0,
-          10,
-          27
-        ]
-      ]
-    },
-    "478:26": {
-      "id": "478:26",
-      "parent": "478:21",
-      "text": "Information architecture creates organizational clarity. Organizing the site meant clarifying how teams, services, and projects fit into one North American identity.\u2028\nBusiness goals need to guide content priorities. Balancing departmental requests taught me to prioritize paths for prospective clients and job candidates to support business growth and recruitment, while keeping essential content like safety accessible.\u2028\nSmall structural decisions can have big impact. Removing redirects to the Tokyo site reduced navigation friction and clarified Obayashi\u2019s North American presence.",
-      "x": 732,
-      "y": 11521,
-      "w": 492,
-      "h": 397,
-      "align": "LEFT",
-      "resize": "NONE",
-      "paragraphSpacing": 0,
-      "segments": [
-        [
-          0,
-          57,
+          70,
+          213,
           9
-        ],
-        [
-          57,
-          167,
-          10
-        ],
-        [
-          167,
-          216,
-          9
-        ],
-        [
-          216,
-          420,
-          10
-        ],
-        [
-          420,
-          470,
-          9
-        ],
-        [
-          470,
-          584,
-          10
         ]
       ]
     },
-    "478:30": {
-      "id": "478:30",
-      "parent": "420:76",
-      "text": "Project pages that expose scope, partners, \u2028technical challenges, and impact.",
-      "x": 430,
-      "y": 10820,
-      "w": 316,
-      "h": 44,
+    "223:248": {
+      "id": "223:248",
+      "parent": "498:19",
+      "text": "Internal priorities had not been translated into a clear external hierarchy\u2028HR, Engineering, Safety, Operations, and leadership each had different priorities for the site. The challenge was determining which messages mattered most to the business and its audiences.",
+      "x": 747,
+      "y": 1664,
+      "w": 564,
+      "h": 104,
       "align": "LEFT",
-      "resize": "WIDTH_AND_HEIGHT",
-      "paragraphSpacing": 0,
-      "segments": [
-        [
-          0,
-          77,
-          28
-        ]
-      ]
-    },
-    "478:33": {
-      "id": "478:33",
-      "parent": "420:76",
-      "text": "Technology page makes Obayashi\u2019s expertise \u2028easier to explore,",
-      "x": 430,
-      "y": 9965,
-      "w": 334,
-      "h": 44,
-      "align": "LEFT",
-      "resize": "WIDTH_AND_HEIGHT",
-      "paragraphSpacing": 0,
-      "segments": [
-        [
-          0,
-          62,
-          28
-        ]
-      ]
-    },
-    "478:34": {
-      "id": "478:34",
-      "parent": "420:76",
-      "text": "The Careers page brings the employee experience to life through photos, interviews, \u2028testimonials, and a \u201cWhy Obayashi\u201d section.",
-      "x": 402,
-      "y": 9221,
-      "w": 926,
-      "h": 44,
-      "align": "CENTER",
       "resize": "HEIGHT",
-      "paragraphSpacing": 0,
-      "segments": [
-        [
-          0,
-          128,
-          28
-        ]
-      ]
-    },
-    "478:31": {
-      "id": "478:31",
-      "parent": "420:76",
-      "text": "Rail & Transit page highlights key projects \u2028within the sector.",
-      "x": 891,
-      "y": 10245,
-      "w": 306,
-      "h": 44,
-      "align": "LEFT",
-      "resize": "WIDTH_AND_HEIGHT",
-      "paragraphSpacing": 0,
-      "segments": [
-        [
-          0,
-          63,
-          28
-        ]
-      ]
-    },
-    "478:32": {
-      "id": "478:32",
-      "parent": "420:76",
-      "text": "Market pages that connect capabilities to relevant North American projects.",
-      "x": 898,
-      "y": 11169.384765625,
-      "w": 311,
-      "h": 44,
-      "align": "LEFT",
-      "resize": "WIDTH_AND_HEIGHT",
       "paragraphSpacing": 0,
       "segments": [
         [
           0,
           76,
+          8
+        ],
+        [
+          76,
+          265,
+          9
+        ]
+      ]
+    },
+    "223:408": {
+      "id": "223:408",
+      "parent": "498:19",
+      "text": "The digital experience did not reflect the sophistication of the work\u2028Obayashi delivers large-scale projects requiring precision, coordination, and technical expertise. A fragmented digital experience risked communicating the opposite. \n\n",
+      "x": 747,
+      "y": 1790,
+      "w": 564,
+      "h": 157,
+      "align": "LEFT",
+      "resize": "HEIGHT",
+      "paragraphSpacing": 0,
+      "segments": [
+        [
+          0,
+          70,
+          8
+        ],
+        [
+          70,
+          238,
+          9
+        ]
+      ]
+    },
+    "223:244": {
+      "id": "223:244",
+      "parent": "498:19",
+      "text": "Obayashi North America had a website, but it lacked a clear digital story. ",
+      "x": 747,
+      "y": 1420,
+      "w": 566,
+      "h": 22,
+      "align": "LEFT",
+      "resize": "HEIGHT",
+      "paragraphSpacing": 0,
+      "segments": [
+        [
+          0,
+          75,
+          27
+        ]
+      ]
+    },
+    "420:255": {
+      "id": "420:255",
+      "parent": "420:254",
+      "text": "36-page website redesign and internal \nhandoff",
+      "x": 120,
+      "y": 406,
+      "w": 170,
+      "h": 66,
+      "align": "LEFT",
+      "resize": "HEIGHT",
+      "paragraphSpacing": 0,
+      "segments": [
+        [
+          0,
+          46,
+          22
+        ]
+      ]
+    },
+    "420:256": {
+      "id": "420:256",
+      "parent": "420:254",
+      "text": "DELIVERABLE",
+      "x": 120,
+      "y": 375,
+      "w": 80,
+      "h": 14,
+      "align": "LEFT",
+      "resize": "WIDTH_AND_HEIGHT",
+      "paragraphSpacing": 0,
+      "segments": [
+        [
+          0,
+          11,
+          28
+        ]
+      ]
+    },
+    "420:258": {
+      "id": "420:258",
+      "parent": "420:257",
+      "text": "10 months",
+      "x": 372,
+      "y": 406,
+      "w": 170,
+      "h": 22,
+      "align": "LEFT",
+      "resize": "HEIGHT",
+      "paragraphSpacing": 0,
+      "segments": [
+        [
+          0,
+          9,
+          22
+        ]
+      ]
+    },
+    "420:259": {
+      "id": "420:259",
+      "parent": "420:257",
+      "text": "TIMELINE",
+      "x": 370,
+      "y": 375,
+      "w": 66,
+      "h": 14,
+      "align": "LEFT",
+      "resize": "HEIGHT",
+      "paragraphSpacing": 0,
+      "segments": [
+        [
+          0,
+          8,
+          28
+        ]
+      ]
+    },
+    "420:261": {
+      "id": "420:261",
+      "parent": "420:260",
+      "text": "17 Stakeholder Interviews\u2028Competitive Analysis \nContent Audit\nInformation Architecture \u2028",
+      "x": 872,
+      "y": 406,
+      "w": 190,
+      "h": 110,
+      "align": "LEFT",
+      "resize": "HEIGHT",
+      "paragraphSpacing": 0,
+      "segments": [
+        [
+          0,
+          88,
+          22
+        ]
+      ]
+    },
+    "420:262": {
+      "id": "420:262",
+      "parent": "420:260",
+      "text": "METHODS",
+      "x": 872,
+      "y": 375,
+      "w": 51,
+      "h": 14,
+      "align": "LEFT",
+      "resize": "WIDTH_AND_HEIGHT",
+      "paragraphSpacing": 0,
+      "segments": [
+        [
+          0,
+          7,
+          28
+        ]
+      ]
+    },
+    "420:264": {
+      "id": "420:264",
+      "parent": "420:263",
+      "text": "Figma\u2028Wix\u2028Claude\u2028Mobirise",
+      "x": 1142,
+      "y": 406,
+      "w": 81,
+      "h": 88,
+      "align": "LEFT",
+      "resize": "HEIGHT",
+      "paragraphSpacing": 0,
+      "segments": [
+        [
+          0,
+          25,
+          22
+        ]
+      ]
+    },
+    "420:265": {
+      "id": "420:265",
+      "parent": "420:263",
+      "text": "TOOLS",
+      "x": 1142,
+      "y": 375,
+      "w": 36,
+      "h": 14,
+      "align": "LEFT",
+      "resize": "WIDTH_AND_HEIGHT",
+      "paragraphSpacing": 0,
+      "segments": [
+        [
+          0,
+          5,
+          28
+        ]
+      ]
+    },
+    "420:267": {
+      "id": "420:267",
+      "parent": "420:266",
+      "text": "UX research\u2028Visual Identity\u2028Website Design\u2028\u2028",
+      "x": 622,
+      "y": 406,
+      "w": 170,
+      "h": 110,
+      "align": "LEFT",
+      "resize": "HEIGHT",
+      "paragraphSpacing": 0,
+      "segments": [
+        [
+          0,
+          44,
+          22
+        ]
+      ]
+    },
+    "420:268": {
+      "id": "420:268",
+      "parent": "420:266",
+      "text": "MY CONTRIBUTION",
+      "x": 622,
+      "y": 375,
+      "w": 108,
+      "h": 14,
+      "align": "LEFT",
+      "resize": "WIDTH_AND_HEIGHT",
+      "paragraphSpacing": 0,
+      "segments": [
+        [
+          0,
+          15,
           28
         ]
       ]
@@ -3085,6 +3156,12 @@
       "y": 0,
       "width": 1440,
       "height": 12278
+    },
+    "498:22": {
+      "x": 120,
+      "y": 2322,
+      "width": 197,
+      "height": 253
     },
     "420:191": {
       "x": 120,
@@ -3146,132 +3223,6 @@
       "width": 132,
       "height": 24
     },
-    "420:214": {
-      "x": 120,
-      "y": 1444,
-      "width": 472,
-      "height": 76
-    },
-    "444:15": {
-      "x": 120,
-      "y": 2012,
-      "width": 472,
-      "height": 76
-    },
-    "420:240": {
-      "x": 120,
-      "y": 547,
-      "width": 1200,
-      "height": 778
-    },
-    "420:247": {
-      "x": 120,
-      "y": 547,
-      "width": 1200,
-      "height": 778
-    },
-    "420:253": {
-      "x": 120,
-      "y": 347,
-      "width": 1200,
-      "height": 169
-    },
-    "420:254": {
-      "x": 120,
-      "y": 376,
-      "width": 170,
-      "height": 96
-    },
-    "420:255": {
-      "x": 120,
-      "y": 406,
-      "width": 170,
-      "height": 66
-    },
-    "420:256": {
-      "x": 120,
-      "y": 376,
-      "width": 73,
-      "height": 13
-    },
-    "420:257": {
-      "x": 370,
-      "y": 376,
-      "width": 172,
-      "height": 52
-    },
-    "420:258": {
-      "x": 372,
-      "y": 406,
-      "width": 170,
-      "height": 22
-    },
-    "420:259": {
-      "x": 370,
-      "y": 376,
-      "width": 66,
-      "height": 13
-    },
-    "420:260": {
-      "x": 872,
-      "y": 376,
-      "width": 190,
-      "height": 140
-    },
-    "420:261": {
-      "x": 872,
-      "y": 406,
-      "width": 190,
-      "height": 110
-    },
-    "420:262": {
-      "x": 872,
-      "y": 376,
-      "width": 47,
-      "height": 13
-    },
-    "420:263": {
-      "x": 1142,
-      "y": 376,
-      "width": 81,
-      "height": 118
-    },
-    "420:264": {
-      "x": 1142,
-      "y": 406,
-      "width": 81,
-      "height": 88
-    },
-    "420:265": {
-      "x": 1142,
-      "y": 376,
-      "width": 33,
-      "height": 13
-    },
-    "420:266": {
-      "x": 622,
-      "y": 376,
-      "width": 170,
-      "height": 140
-    },
-    "420:267": {
-      "x": 622,
-      "y": 406,
-      "width": 170,
-      "height": 110
-    },
-    "420:268": {
-      "x": 622,
-      "y": 376,
-      "width": 99,
-      "height": 13
-    },
-    "420:269": {
-      "x": 120,
-      "y": 347,
-      "width": 1200,
-      "height": 0
-    },
     "420:270": {
       "x": 120,
       "y": 151,
@@ -3296,53 +3247,59 @@
       "width": 44,
       "height": 22
     },
-    "223:240": {
-      "x": 747,
-      "y": 1464,
-      "width": 564,
-      "height": 78
+    "478:21": {
+      "x": 423,
+      "y": 11443,
+      "width": 918,
+      "height": 614
     },
-    "223:247": {
-      "x": 747,
-      "y": 1564,
-      "width": 564,
-      "height": 78
+    "478:22": {
+      "x": 425,
+      "y": 11478,
+      "width": 845,
+      "height": 44
     },
-    "223:248": {
-      "x": 747,
-      "y": 1664,
-      "width": 564,
-      "height": 104
+    "478:23": {
+      "x": 423,
+      "y": 11549,
+      "width": 894,
+      "height": 508
     },
-    "223:408": {
-      "x": 747,
-      "y": 1790,
-      "width": 564,
-      "height": 157
+    "478:24": {
+      "x": 496,
+      "y": 11621,
+      "width": 845,
+      "height": 105
     },
-    "223:244": {
-      "x": 747,
-      "y": 1420,
-      "width": 566,
-      "height": 22
-    },
-    "420:305": {
-      "x": 436,
-      "y": 2330,
+    "478:25": {
+      "x": 423,
+      "y": 11443,
       "width": 892,
       "height": 0
+    },
+    "478:26": {
+      "x": 732,
+      "y": 11621,
+      "width": 492,
+      "height": 397
+    },
+    "498:21": {
+      "x": 402,
+      "y": 8101,
+      "width": 926,
+      "height": 3239
     },
     "429:96": {
       "x": 436,
-      "y": 8100,
+      "y": 8101,
       "width": 892,
       "height": 0
     },
-    "420:306": {
-      "x": 436,
-      "y": 2374,
-      "width": 845,
-      "height": 88
+    "498:17": {
+      "x": 402,
+      "y": 8144,
+      "width": 926,
+      "height": 3196
     },
     "429:97": {
       "x": 436,
@@ -3350,47 +3307,125 @@
       "width": 845,
       "height": 88
     },
-    "351:62": {
-      "x": 439,
-      "y": 2482,
-      "width": 876,
-      "height": 78
-    },
     "429:98": {
       "x": 439,
       "y": 8252,
       "width": 876,
       "height": 78
     },
-    "420:334": {
+    "474:12": {
+      "x": 433,
+      "y": 8678,
+      "width": 414,
+      "height": 30
+    },
+    "426:13": {
+      "x": 912,
+      "y": 8362,
+      "width": 94,
+      "height": 281
+    },
+    "466:28": {
+      "x": 467,
+      "y": 8708,
+      "width": 805,
+      "height": 490
+    },
+    "351:99": {
+      "x": 891,
+      "y": 9327,
+      "width": 429,
+      "height": 900
+    },
+    "351:95": {
       "x": 426,
-      "y": 2608,
-      "width": 415.7626953125,
-      "height": 312.56622314453125
+      "y": 10053,
+      "width": 415,
+      "height": 749
     },
-    "420:333": {
+    "351:101": {
       "x": 426,
-      "y": 2608,
-      "width": 415.7626953125,
-      "height": 312.56622314453125
+      "y": 9326,
+      "width": 415,
+      "height": 621
     },
-    "420:330": {
+    "474:10": {
       "x": 426,
-      "y": 2608,
-      "width": 415.7626953125,
-      "height": 312.56622314453125
+      "y": 8362,
+      "width": 421,
+      "height": 203
     },
-    "351:55": {
-      "x": 424.015625,
-      "y": 2603.0390625,
-      "width": 421.4352111816406,
-      "height": 318.7325134277344
+    "428:24": {
+      "x": 1019,
+      "y": 8386,
+      "width": 85,
+      "height": 120
     },
-    "351:57": {
-      "x": 877,
-      "y": 2608,
-      "width": 436,
-      "height": 318
+    "427:17": {
+      "x": 1117,
+      "y": 8386,
+      "width": 79.00057220458984,
+      "height": 155
+    },
+    "427:21": {
+      "x": 1211,
+      "y": 8386,
+      "width": 75,
+      "height": 132
+    },
+    "474:27": {
+      "x": 426,
+      "y": 11002,
+      "width": 400,
+      "height": 338
+    },
+    "474:28": {
+      "x": 426,
+      "y": 10962,
+      "width": 336.6789245605469,
+      "height": 25
+    },
+    "474:32": {
+      "x": 891,
+      "y": 10320,
+      "width": 429,
+      "height": 831
+    },
+    "478:30": {
+      "x": 430,
+      "y": 10820,
+      "width": 316,
+      "height": 44
+    },
+    "478:33": {
+      "x": 430,
+      "y": 9965,
+      "width": 334,
+      "height": 44
+    },
+    "478:34": {
+      "x": 402,
+      "y": 9220,
+      "width": 926,
+      "height": 44
+    },
+    "478:31": {
+      "x": 891,
+      "y": 10245,
+      "width": 306,
+      "height": 44
+    },
+    "478:32": {
+      "x": 898,
+      "y": 11169.384765625,
+      "width": 311,
+      "height": 44
+    },
+    "498:13": {
+      "x": 426,
+      "y": 5931,
+      "width": 947.1722412109375,
+      "height": 2072.068359375
     },
     "429:86": {
       "x": 426,
@@ -3430,7 +3465,7 @@
     },
     "424:30": {
       "x": 429,
-      "y": 7153,
+      "y": 7166,
       "width": 894,
       "height": 52
     },
@@ -3448,39 +3483,39 @@
     },
     "424:31": {
       "x": 429,
-      "y": 7113,
+      "y": 7126,
       "width": 871,
       "height": 30
     },
     "424:45": {
       "x": 426,
       "y": 6372,
-      "width": 886,
+      "width": 897,
       "height": 440.4801025390625
     },
     "424:44": {
       "x": 426,
       "y": 6372,
-      "width": 886,
+      "width": 897,
       "height": 440.4801025390625
     },
     "424:21": {
-      "x": 429.02392578125,
+      "x": 429.0615234375,
       "y": 6368.9765625,
-      "width": 898.0955810546875,
+      "width": 909.2457275390625,
       "height": 446.0205078125
     },
     "424:20": {
-      "x": 429.02392578125,
+      "x": 429.0615234375,
       "y": 6368.9765625,
-      "width": 898.0955810546875,
+      "width": 909.2457275390625,
       "height": 446.0205078125
     },
     "223:410": {
-      "x": 406.9736328125,
-      "y": 6360.9580078125,
-      "width": 908.1865844726562,
-      "height": 454.0932922363281
+      "x": 409.56494140625,
+      "y": 6359.552734375,
+      "width": 913.806884765625,
+      "height": 456.9034423828125
     },
     "424:29": {
       "x": 426,
@@ -3602,6 +3637,24 @@
       "width": 279.49755859375,
       "height": 176.14846801757812
     },
+    "429:79": {
+      "x": 1038,
+      "y": 7778,
+      "width": 335.1722717285156,
+      "height": 30
+    },
+    "429:80": {
+      "x": 1038,
+      "y": 7818,
+      "width": 280,
+      "height": 104
+    },
+    "498:12": {
+      "x": 426,
+      "y": 4734,
+      "width": 896,
+      "height": 1123
+    },
     "429:74": {
       "x": 430,
       "y": 4734,
@@ -3656,17 +3709,41 @@
       "width": 197.8114471435547,
       "height": 49.19662857055664
     },
-    "429:79": {
-      "x": 1038,
-      "y": 7778,
-      "width": 335.1722717285156,
+    "474:21": {
+      "x": 436,
+      "y": 5550,
+      "width": 414,
       "height": 30
     },
-    "429:80": {
-      "x": 1038,
-      "y": 7818,
-      "width": 280,
-      "height": 104
+    "474:22": {
+      "x": 721,
+      "y": 5727,
+      "width": 543,
+      "height": 130
+    },
+    "474:23": {
+      "x": 428,
+      "y": 5507,
+      "width": 892,
+      "height": 168
+    },
+    "474:24": {
+      "x": 493,
+      "y": 5552,
+      "width": 150,
+      "height": 25
+    },
+    "474:25": {
+      "x": 493,
+      "y": 5727,
+      "width": 242,
+      "height": 25
+    },
+    "474:26": {
+      "x": 729,
+      "y": 5552,
+      "width": 535,
+      "height": 140
     },
     "420:335": {
       "x": 431,
@@ -3686,149 +3763,125 @@
       "width": 876,
       "height": 52
     },
-    "437:104": {
-      "x": 431,
-      "y": 3959,
+    "499:18": {
+      "x": 426,
+      "y": 4034,
       "width": 432,
-      "height": 170
+      "height": 118
     },
     "266:15": {
-      "x": 431,
-      "y": 4011,
+      "x": 426,
+      "y": 4034,
       "width": 407,
       "height": 30
     },
     "266:17": {
-      "x": 431,
-      "y": 4051,
+      "x": 426,
+      "y": 4074,
       "width": 432,
       "height": 78
     },
-    "420:382": {
-      "x": 431,
-      "y": 3959,
-      "width": 40,
-      "height": 40
-    },
-    "I420:382;7758:12613": {
-      "x": 434.33349609375,
-      "y": 3962.3330078125,
-      "width": 33.33333206176758,
-      "height": 33.33333206176758
-    },
-    "437:106": {
-      "x": 433,
-      "y": 3218,
-      "width": 448,
-      "height": 170
-    },
     "420:418": {
-      "x": 433,
-      "y": 3270,
-      "width": 448,
-      "height": 118
+      "x": 426,
+      "y": 3324,
+      "width": 438.3656005859375,
+      "height": 144
     },
     "420:390": {
-      "x": 433,
-      "y": 3270,
+      "x": 426,
+      "y": 3324,
       "width": 438.3656005859375,
       "height": 30
     },
     "420:394": {
-      "x": 433,
-      "y": 3310,
-      "width": 448,
-      "height": 78
+      "x": 426,
+      "y": 3364,
+      "width": 438,
+      "height": 104
     },
     "420:392": {
-      "x": 433,
-      "y": 3218,
-      "width": 40,
-      "height": 40
+      "x": 426,
+      "y": 3278,
+      "width": 35,
+      "height": 35
     },
     "I420:392;7758:12613": {
-      "x": 436.33349609375,
-      "y": 3221.3330078125,
-      "width": 33.33333206176758,
-      "height": 33.33333206176758
+      "x": 428.91650390625,
+      "y": 3280.9169921875,
+      "width": 29.16666603088379,
+      "height": 29.16666603088379
     },
-    "437:105": {
-      "x": 437,
-      "y": 3571,
+    "499:11": {
+      "x": 426,
+      "y": 3641,
+      "width": 35,
+      "height": 35
+    },
+    "I499:11;7758:12613": {
+      "x": 428.91650390625,
+      "y": 3643.9169921875,
+      "width": 29.16666603088379,
+      "height": 29.16666603088379
+    },
+    "499:13": {
+      "x": 426,
+      "y": 3988,
+      "width": 35,
+      "height": 35
+    },
+    "I499:13;7758:12613": {
+      "x": 428.91650390625,
+      "y": 3990.9169921875,
+      "width": 29.16666603088379,
+      "height": 29.16666603088379
+    },
+    "499:15": {
+      "x": 426,
+      "y": 4334,
+      "width": 35,
+      "height": 35
+    },
+    "I499:15;7758:12613": {
+      "x": 428.91650390625,
+      "y": 4336.9169921875,
+      "width": 29.16666603088379,
+      "height": 29.16666603088379
+    },
+    "499:17": {
+      "x": 426,
+      "y": 3687,
       "width": 434,
-      "height": 170
+      "height": 118
     },
     "420:395": {
-      "x": 437,
-      "y": 3623,
+      "x": 426,
+      "y": 3687,
       "width": 413,
       "height": 30
     },
     "420:396": {
-      "x": 437,
-      "y": 3663,
+      "x": 426,
+      "y": 3727,
       "width": 434,
       "height": 78
     },
-    "420:397": {
-      "x": 437,
-      "y": 3571,
-      "width": 40,
-      "height": 40
-    },
-    "I420:397;7758:12613": {
-      "x": 440.33349609375,
-      "y": 3574.3330078125,
-      "width": 33.33333206176758,
-      "height": 33.33333206176758
-    },
-    "437:103": {
-      "x": 433,
-      "y": 4299,
+    "499:19": {
+      "x": 426,
+      "y": 4380,
       "width": 417,
-      "height": 170
+      "height": 118
     },
     "420:408": {
-      "x": 433,
-      "y": 4351,
+      "x": 426,
+      "y": 4380,
       "width": 414,
       "height": 30
     },
     "420:409": {
-      "x": 433,
-      "y": 4391,
+      "x": 426,
+      "y": 4420,
       "width": 417,
       "height": 78
-    },
-    "420:410": {
-      "x": 433,
-      "y": 4299,
-      "width": 42.30366516113281,
-      "height": 40
-    },
-    "I420:410;7758:12613": {
-      "x": 436.525390625,
-      "y": 4302.3330078125,
-      "width": 35.2530517578125,
-      "height": 33.33333206176758
-    },
-    "474:12": {
-      "x": 433,
-      "y": 8678,
-      "width": 414,
-      "height": 30
-    },
-    "474:21": {
-      "x": 436,
-      "y": 5550,
-      "width": 414,
-      "height": 30
-    },
-    "474:22": {
-      "x": 721,
-      "y": 5727,
-      "width": 543,
-      "height": 130
     },
     "429:55": {
       "x": 965.7333984375,
@@ -3902,10 +3955,220 @@
       "width": 361.1512756347656,
       "height": 333.667724609375
     },
-    "443:107": {
-      "x": 336,
+    "420:305": {
+      "x": 436,
+      "y": 2330,
+      "width": 892,
+      "height": 0
+    },
+    "420:306": {
+      "x": 436,
+      "y": 2374,
+      "width": 845,
+      "height": 88
+    },
+    "351:62": {
+      "x": 439,
+      "y": 2482,
+      "width": 876,
+      "height": 78
+    },
+    "499:10": {
+      "x": 432,
+      "y": 2608,
+      "width": 426,
+      "height": 318
+    },
+    "499:9": {
+      "x": 432,
+      "y": 2608,
+      "width": 426,
+      "height": 318
+    },
+    "420:334": {
+      "x": 424.5263671875,
+      "y": 2597.9931640625,
+      "width": 443.89703369140625,
+      "height": 347.5386657714844
+    },
+    "420:333": {
+      "x": 424.5263671875,
+      "y": 2597.9931640625,
+      "width": 443.89703369140625,
+      "height": 347.5386657714844
+    },
+    "420:330": {
+      "x": 424.5263671875,
+      "y": 2597.9931640625,
+      "width": 443.89703369140625,
+      "height": 347.5386657714844
+    },
+    "351:55": {
+      "x": 417.7958984375,
+      "y": 2596.0361328125,
+      "width": 459.17657470703125,
+      "height": 347.2763977050781
+    },
+    "351:57": {
+      "x": 877,
+      "y": 2608,
+      "width": 436,
+      "height": 318
+    },
+    "498:9": {
+      "x": 120,
+      "y": 1991,
+      "width": 1198,
+      "height": 200
+    },
+    "444:15": {
+      "x": 120,
+      "y": 1996,
+      "width": 472,
+      "height": 76
+    },
+    "420:344": {
+      "x": 426,
+      "y": 1991,
+      "width": 202,
+      "height": 200
+    },
+    "420:345": {
+      "x": 656,
+      "y": 1991,
+      "width": 202,
+      "height": 200
+    },
+    "420:346": {
+      "x": 886,
+      "y": 1991,
+      "width": 202,
+      "height": 200
+    },
+    "420:347": {
+      "x": 1116,
+      "y": 1991,
+      "width": 202,
+      "height": 200
+    },
+    "420:349": {
+      "x": 685,
+      "y": 2019,
+      "width": 144,
+      "height": 24
+    },
+    "420:350": {
+      "x": 915,
+      "y": 2019,
+      "width": 138,
+      "height": 24
+    },
+    "420:351": {
+      "x": 1147,
+      "y": 2019,
+      "width": 123,
+      "height": 24
+    },
+    "420:358": {
+      "x": 453,
+      "y": 2060,
+      "width": 132,
+      "height": 110
+    },
+    "420:359": {
+      "x": 685,
+      "y": 2060,
+      "width": 147,
+      "height": 88
+    },
+    "420:360": {
+      "x": 915,
+      "y": 2060,
+      "width": 138,
+      "height": 88
+    },
+    "420:361": {
+      "x": 1147,
+      "y": 2058,
+      "width": 144,
+      "height": 66
+    },
+    "420:348": {
+      "x": 453,
+      "y": 2019,
+      "width": 97,
+      "height": 24
+    },
+    "498:19": {
+      "x": 120,
+      "y": 1387,
+      "width": 1193,
+      "height": 560
+    },
+    "420:214": {
+      "x": 120,
+      "y": 1420,
+      "width": 472,
+      "height": 76
+    },
+    "498:18": {
+      "x": 837,
+      "y": 1387,
+      "width": 100,
+      "height": 100
+    },
+    "223:240": {
+      "x": 747,
+      "y": 1464,
+      "width": 564,
+      "height": 78
+    },
+    "223:247": {
+      "x": 747,
+      "y": 1564,
+      "width": 564,
+      "height": 78
+    },
+    "223:248": {
+      "x": 747,
+      "y": 1664,
+      "width": 564,
+      "height": 104
+    },
+    "223:408": {
+      "x": 747,
+      "y": 1790,
+      "width": 564,
+      "height": 157
+    },
+    "223:244": {
+      "x": 747,
+      "y": 1420,
+      "width": 566,
+      "height": 22
+    },
+    "498:20": {
+      "x": 120,
       "y": 546,
-      "width": 259,
+      "width": 1200,
+      "height": 779
+    },
+    "420:240": {
+      "x": 120,
+      "y": 547,
+      "width": 1200,
+      "height": 778
+    },
+    "420:247": {
+      "x": 120,
+      "y": 547,
+      "width": 1200,
+      "height": 778
+    },
+    "443:107": {
+      "x": 324,
+      "y": 546,
+      "width": 263,
       "height": 779
     },
     "444:14": {
@@ -3926,245 +4189,151 @@
       "width": 467,
       "height": 906
     },
-    "420:344": {
-      "x": 426,
-      "y": 2007,
-      "width": 186,
-      "height": 184
+    "420:253": {
+      "x": 120,
+      "y": 347,
+      "width": 1200,
+      "height": 169
     },
-    "420:345": {
-      "x": 664,
-      "y": 2007,
-      "width": 186,
-      "height": 184
+    "420:254": {
+      "x": 120,
+      "y": 375,
+      "width": 170,
+      "height": 97
     },
-    "420:346": {
-      "x": 902,
-      "y": 2007,
-      "width": 186,
-      "height": 184
-    },
-    "420:347": {
-      "x": 1134,
-      "y": 2007,
-      "width": 186,
-      "height": 184
-    },
-    "420:349": {
-      "x": 690,
-      "y": 2033,
-      "width": 144,
-      "height": 24
-    },
-    "420:350": {
-      "x": 929,
-      "y": 2033,
-      "width": 138,
-      "height": 24
-    },
-    "420:351": {
-      "x": 1160,
-      "y": 2033,
-      "width": 123,
-      "height": 24
-    },
-    "420:358": {
-      "x": 446,
-      "y": 2074,
-      "width": 132,
-      "height": 110
-    },
-    "420:359": {
-      "x": 690,
-      "y": 2074,
-      "width": 147,
-      "height": 88
-    },
-    "420:360": {
-      "x": 929,
-      "y": 2074,
-      "width": 138,
-      "height": 88
-    },
-    "420:361": {
-      "x": 1160,
-      "y": 2074,
-      "width": 144,
+    "420:255": {
+      "x": 120,
+      "y": 406,
+      "width": 170,
       "height": 66
     },
-    "420:348": {
-      "x": 446,
-      "y": 2033,
-      "width": 97,
-      "height": 24
+    "420:256": {
+      "x": 120,
+      "y": 375,
+      "width": 80,
+      "height": 14
     },
-    "426:13": {
-      "x": 912,
-      "y": 8362,
-      "width": 94,
-      "height": 281
+    "420:257": {
+      "x": 370,
+      "y": 375,
+      "width": 172,
+      "height": 53
     },
-    "466:28": {
-      "x": 467,
-      "y": 8708,
-      "width": 805,
-      "height": 490
+    "420:258": {
+      "x": 372,
+      "y": 406,
+      "width": 170,
+      "height": 22
     },
-    "351:99": {
-      "x": 891,
-      "y": 9327,
-      "width": 429,
-      "height": 900
+    "420:259": {
+      "x": 370,
+      "y": 375,
+      "width": 66,
+      "height": 14
     },
-    "351:95": {
-      "x": 426,
-      "y": 10053,
-      "width": 415,
-      "height": 749
+    "420:260": {
+      "x": 872,
+      "y": 375,
+      "width": 190,
+      "height": 141
     },
-    "351:101": {
-      "x": 426,
-      "y": 9326,
-      "width": 415,
-      "height": 621
+    "420:261": {
+      "x": 872,
+      "y": 406,
+      "width": 190,
+      "height": 110
     },
-    "474:10": {
-      "x": 426,
-      "y": 8362,
-      "width": 421,
-      "height": 203
+    "420:262": {
+      "x": 872,
+      "y": 375,
+      "width": 51,
+      "height": 14
     },
-    "428:24": {
-      "x": 1019,
-      "y": 8386,
-      "width": 85,
-      "height": 120
+    "420:263": {
+      "x": 1142,
+      "y": 375,
+      "width": 81,
+      "height": 119
     },
-    "427:17": {
-      "x": 1117,
-      "y": 8386,
-      "width": 79.00057220458984,
-      "height": 155
+    "420:264": {
+      "x": 1142,
+      "y": 406,
+      "width": 81,
+      "height": 88
     },
-    "427:21": {
-      "x": 1211,
-      "y": 8386,
-      "width": 75,
-      "height": 132
+    "420:265": {
+      "x": 1142,
+      "y": 375,
+      "width": 36,
+      "height": 14
     },
-    "474:23": {
-      "x": 428,
-      "y": 5507,
-      "width": 886,
-      "height": 168
+    "420:266": {
+      "x": 622,
+      "y": 375,
+      "width": 170,
+      "height": 141
     },
-    "474:24": {
-      "x": 493,
-      "y": 5552,
-      "width": 150,
-      "height": 25
+    "420:267": {
+      "x": 622,
+      "y": 406,
+      "width": 170,
+      "height": 110
     },
-    "474:33": {
-      "x": 426,
-      "y": 10939,
-      "width": 408,
-      "height": 274
+    "420:268": {
+      "x": 622,
+      "y": 375,
+      "width": 108,
+      "height": 14
     },
-    "474:27": {
-      "x": 426,
-      "y": 10979,
-      "width": 408,
-      "height": 234
+    "420:269": {
+      "x": 120,
+      "y": 347,
+      "width": 1200,
+      "height": 0
+    }
+  },
+  "dividers": {
+    "420:269": {
+      "asset": "details-divider",
+      "name": "Line 61",
+      "strokeWeight": 0.5,
+      "offset": 0
     },
-    "474:28": {
-      "x": 426,
-      "y": 10939,
-      "width": 331,
-      "height": 25
+    "420:305": {
+      "asset": "section-divider",
+      "name": "Line 69",
+      "strokeWeight": 0.5,
+      "offset": 10
     },
-    "474:25": {
-      "x": 493,
-      "y": 5727,
-      "width": 242,
-      "height": 25
+    "420:335": {
+      "asset": "section-divider",
+      "name": "Line 82",
+      "strokeWeight": 0.5,
+      "offset": 5
     },
-    "474:26": {
-      "x": 729,
-      "y": 5552,
-      "width": 535,
-      "height": 140
+    "429:74": {
+      "asset": "section-divider",
+      "name": "Line 84",
+      "strokeWeight": 0.5,
+      "offset": 4
     },
-    "474:32": {
-      "x": 891,
-      "y": 10320,
-      "width": 429,
-      "height": 831
+    "424:16": {
+      "asset": "section-divider",
+      "name": "Line 83",
+      "strokeWeight": 0.5,
+      "offset": 0
     },
-    "478:21": {
-      "x": 423,
-      "y": 11343,
-      "width": 918,
-      "height": 614
-    },
-    "478:22": {
-      "x": 425,
-      "y": 11378,
-      "width": 845,
-      "height": 44
-    },
-    "478:23": {
-      "x": 423,
-      "y": 11449,
-      "width": 894,
-      "height": 508
-    },
-    "478:24": {
-      "x": 496,
-      "y": 11521,
-      "width": 845,
-      "height": 105
+    "429:96": {
+      "asset": "section-divider",
+      "name": "Line 83",
+      "strokeWeight": 0.5,
+      "offset": 10
     },
     "478:25": {
-      "x": 423,
-      "y": 11343,
-      "width": 892,
-      "height": 0
-    },
-    "478:26": {
-      "x": 732,
-      "y": 11521,
-      "width": 492,
-      "height": 397
-    },
-    "478:30": {
-      "x": 430,
-      "y": 10820,
-      "width": 316,
-      "height": 44
-    },
-    "478:33": {
-      "x": 430,
-      "y": 9965,
-      "width": 334,
-      "height": 44
-    },
-    "478:34": {
-      "x": 402,
-      "y": 9221,
-      "width": 926,
-      "height": 44
-    },
-    "478:31": {
-      "x": 891,
-      "y": 10245,
-      "width": 306,
-      "height": 44
-    },
-    "478:32": {
-      "x": 898,
-      "y": 11169.384765625,
-      "width": 311,
-      "height": 44
+      "asset": "section-divider",
+      "name": "Line 72",
+      "strokeWeight": 0.5,
+      "offset": -3
     }
   },
   "textStyles": [
@@ -4253,119 +4422,6 @@
       },
       "size": 20,
       "weight": 400,
-      "line": {
-        "unit": "PERCENT",
-        "value": 120.00000476837158
-      },
-      "spacing": {
-        "unit": "PERCENT",
-        "value": 0
-      },
-      "fills": [
-        {
-          "type": "SOLID",
-          "visible": true,
-          "opacity": 1,
-          "blendMode": "NORMAL",
-          "color": {
-            "r": 0.3770894706249237,
-            "g": 0.4019920825958252,
-            "b": 0.4241277575492859
-          },
-          "boundVariables": {}
-        }
-      ],
-      "decoration": "NONE",
-      "link": null,
-      "list": {
-        "type": "NONE"
-      }
-    },
-    {
-      "font": {
-        "family": "Inter",
-        "style": "Bold",
-        "variationSettings": {
-          "wght": 700,
-          "slnt": 0
-        }
-      },
-      "size": 38,
-      "weight": 700,
-      "line": {
-        "unit": "PIXELS",
-        "value": 44
-      },
-      "spacing": {
-        "unit": "PERCENT",
-        "value": 0
-      },
-      "fills": [
-        {
-          "type": "SOLID",
-          "visible": true,
-          "opacity": 1,
-          "blendMode": "NORMAL",
-          "color": {
-            "r": 0,
-            "g": 0,
-            "b": 0
-          },
-          "boundVariables": {}
-        }
-      ],
-      "decoration": "NONE",
-      "link": null,
-      "list": {
-        "type": "NONE"
-      }
-    },
-    {
-      "font": {
-        "family": "Inter",
-        "style": "Regular",
-        "variationSettings": {
-          "wght": 400,
-          "slnt": 0
-        }
-      },
-      "size": 15,
-      "weight": 400,
-      "line": {
-        "unit": "PIXELS",
-        "value": 22
-      },
-      "spacing": {
-        "unit": "PERCENT",
-        "value": 0
-      },
-      "fills": [
-        {
-          "type": "SOLID",
-          "visible": true,
-          "opacity": 1,
-          "blendMode": "NORMAL",
-          "color": {
-            "r": 0,
-            "g": 0,
-            "b": 0
-          },
-          "boundVariables": {}
-        }
-      ],
-      "decoration": "NONE",
-      "link": null,
-      "list": {
-        "type": "NONE"
-      }
-    },
-    {
-      "font": {
-        "family": "Fira Mono",
-        "style": "Medium"
-      },
-      "size": 11,
-      "weight": 500,
       "line": {
         "unit": "PERCENT",
         "value": 120.00000476837158
@@ -4516,6 +4572,84 @@
           "slnt": 0
         }
       },
+      "size": 38,
+      "weight": 700,
+      "line": {
+        "unit": "PERCENT",
+        "value": 114.99999761581421
+      },
+      "spacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0,
+            "g": 0,
+            "b": 0
+          },
+          "boundVariables": {}
+        }
+      ],
+      "decoration": "NONE",
+      "link": null,
+      "list": {
+        "type": "NONE"
+      }
+    },
+    {
+      "font": {
+        "family": "Inter",
+        "style": "Bold",
+        "variationSettings": {
+          "wght": 700,
+          "slnt": 0
+        }
+      },
+      "size": 24,
+      "weight": 700,
+      "line": {
+        "unit": "PERCENT",
+        "value": 114.99999761581421
+      },
+      "spacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0,
+            "g": 0,
+            "b": 0
+          },
+          "boundVariables": {}
+        }
+      ],
+      "decoration": "NONE",
+      "link": null,
+      "list": {
+        "type": "NONE"
+      }
+    },
+    {
+      "font": {
+        "family": "Inter",
+        "style": "Bold",
+        "variationSettings": {
+          "wght": 700,
+          "slnt": 0
+        }
+      },
       "size": 16,
       "weight": 700,
       "line": {
@@ -4560,45 +4694,6 @@
       "line": {
         "unit": "PIXELS",
         "value": 26
-      },
-      "spacing": {
-        "unit": "PERCENT",
-        "value": 0
-      },
-      "fills": [
-        {
-          "type": "SOLID",
-          "visible": true,
-          "opacity": 1,
-          "blendMode": "NORMAL",
-          "color": {
-            "r": 0,
-            "g": 0,
-            "b": 0
-          },
-          "boundVariables": {}
-        }
-      ],
-      "decoration": "NONE",
-      "link": null,
-      "list": {
-        "type": "NONE"
-      }
-    },
-    {
-      "font": {
-        "family": "Inter",
-        "style": "Regular",
-        "variationSettings": {
-          "wght": 400,
-          "slnt": 0
-        }
-      },
-      "size": 16,
-      "weight": 400,
-      "line": {
-        "unit": "PIXELS",
-        "value": 22
       },
       "spacing": {
         "unit": "PERCENT",
@@ -4672,11 +4767,128 @@
           "slnt": 0
         }
       },
-      "size": 38,
+      "size": 18,
+      "weight": 700,
+      "line": {
+        "unit": "PIXELS",
+        "value": 30
+      },
+      "spacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0,
+            "g": 0,
+            "b": 0
+          },
+          "boundVariables": {}
+        }
+      ],
+      "decoration": "NONE",
+      "link": null,
+      "list": {
+        "type": "NONE"
+      }
+    },
+    {
+      "font": {
+        "family": "Inter",
+        "style": "Regular",
+        "variationSettings": {
+          "wght": 400,
+          "slnt": 0
+        }
+      },
+      "size": 16,
+      "weight": 400,
+      "line": {
+        "unit": "PIXELS",
+        "value": 26
+      },
+      "spacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0,
+            "g": 0,
+            "b": 0
+          },
+          "boundVariables": {}
+        }
+      ],
+      "decoration": "NONE",
+      "link": null,
+      "list": {
+        "type": "UNORDERED"
+      }
+    },
+    {
+      "font": {
+        "family": "Inter",
+        "style": "Bold",
+        "variationSettings": {
+          "wght": 700,
+          "slnt": 0
+        }
+      },
+      "size": 22,
       "weight": 700,
       "line": {
         "unit": "PERCENT",
         "value": 114.99999761581421
+      },
+      "spacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0,
+            "g": 0,
+            "b": 0
+          },
+          "boundVariables": {}
+        }
+      ],
+      "decoration": "NONE",
+      "link": null,
+      "list": {
+        "type": "NONE"
+      }
+    },
+    {
+      "font": {
+        "family": "Inter",
+        "style": "Semi Bold",
+        "variationSettings": {
+          "wght": 600,
+          "slnt": 0
+        }
+      },
+      "size": 15,
+      "weight": 600,
+      "line": {
+        "unit": "PIXELS",
+        "value": 22
       },
       "spacing": {
         "unit": "PERCENT",
@@ -4974,17 +5186,17 @@
     {
       "font": {
         "family": "Inter",
-        "style": "Bold",
+        "style": "Regular",
         "variationSettings": {
-          "wght": 700,
+          "wght": 400,
           "slnt": 0
         }
       },
-      "size": 18,
-      "weight": 700,
+      "size": 15,
+      "weight": 400,
       "line": {
         "unit": "PIXELS",
-        "value": 30
+        "value": 22
       },
       "spacing": {
         "unit": "PERCENT",
@@ -5023,7 +5235,7 @@
       "weight": 400,
       "line": {
         "unit": "PIXELS",
-        "value": 26
+        "value": 24
       },
       "spacing": {
         "unit": "PERCENT",
@@ -5046,7 +5258,46 @@
       "decoration": "NONE",
       "link": null,
       "list": {
-        "type": "UNORDERED"
+        "type": "NONE"
+      }
+    },
+    {
+      "font": {
+        "family": "Inter",
+        "style": "Bold",
+        "variationSettings": {
+          "wght": 700,
+          "slnt": 0
+        }
+      },
+      "size": 38,
+      "weight": 700,
+      "line": {
+        "unit": "PIXELS",
+        "value": 44
+      },
+      "spacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0,
+            "g": 0,
+            "b": 0
+          },
+          "boundVariables": {}
+        }
+      ],
+      "decoration": "NONE",
+      "link": null,
+      "list": {
+        "type": "NONE"
       }
     },
     {
@@ -5130,45 +5381,6 @@
     {
       "font": {
         "family": "Inter",
-        "style": "Bold",
-        "variationSettings": {
-          "wght": 700,
-          "slnt": 0
-        }
-      },
-      "size": 22,
-      "weight": 700,
-      "line": {
-        "unit": "PERCENT",
-        "value": 114.99999761581421
-      },
-      "spacing": {
-        "unit": "PERCENT",
-        "value": 0
-      },
-      "fills": [
-        {
-          "type": "SOLID",
-          "visible": true,
-          "opacity": 1,
-          "blendMode": "NORMAL",
-          "color": {
-            "r": 0,
-            "g": 0,
-            "b": 0
-          },
-          "boundVariables": {}
-        }
-      ],
-      "decoration": "NONE",
-      "link": null,
-      "list": {
-        "type": "NONE"
-      }
-    },
-    {
-      "font": {
-        "family": "Inter",
         "style": "Regular",
         "variationSettings": {
           "wght": 400,
@@ -5177,84 +5389,6 @@
       },
       "size": 16,
       "weight": 400,
-      "line": {
-        "unit": "PIXELS",
-        "value": 24
-      },
-      "spacing": {
-        "unit": "PERCENT",
-        "value": 0
-      },
-      "fills": [
-        {
-          "type": "SOLID",
-          "visible": true,
-          "opacity": 1,
-          "blendMode": "NORMAL",
-          "color": {
-            "r": 0,
-            "g": 0,
-            "b": 0
-          },
-          "boundVariables": {}
-        }
-      ],
-      "decoration": "NONE",
-      "link": null,
-      "list": {
-        "type": "NONE"
-      }
-    },
-    {
-      "font": {
-        "family": "Inter",
-        "style": "Bold",
-        "variationSettings": {
-          "wght": 700,
-          "slnt": 0
-        }
-      },
-      "size": 24,
-      "weight": 700,
-      "line": {
-        "unit": "PERCENT",
-        "value": 114.99999761581421
-      },
-      "spacing": {
-        "unit": "PERCENT",
-        "value": 0
-      },
-      "fills": [
-        {
-          "type": "SOLID",
-          "visible": true,
-          "opacity": 1,
-          "blendMode": "NORMAL",
-          "color": {
-            "r": 0,
-            "g": 0,
-            "b": 0
-          },
-          "boundVariables": {}
-        }
-      ],
-      "decoration": "NONE",
-      "link": null,
-      "list": {
-        "type": "NONE"
-      }
-    },
-    {
-      "font": {
-        "family": "Inter",
-        "style": "Semi Bold",
-        "variationSettings": {
-          "wght": 600,
-          "slnt": 0
-        }
-      },
-      "size": 15,
-      "weight": 600,
       "line": {
         "unit": "PIXELS",
         "value": 22
@@ -5273,6 +5407,41 @@
             "r": 0,
             "g": 0,
             "b": 0
+          },
+          "boundVariables": {}
+        }
+      ],
+      "decoration": "NONE",
+      "link": null,
+      "list": {
+        "type": "NONE"
+      }
+    },
+    {
+      "font": {
+        "family": "Fira Mono",
+        "style": "Medium"
+      },
+      "size": 12,
+      "weight": 500,
+      "line": {
+        "unit": "PERCENT",
+        "value": 120.00000476837158
+      },
+      "spacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0.3770894706249237,
+            "g": 0.4019920825958252,
+            "b": 0.4241277575492859
           },
           "boundVariables": {}
         }

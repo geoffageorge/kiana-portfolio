@@ -17,16 +17,16 @@
 .obayashi-intro h1 { margin-top: 11px; font-size: 80px; line-height: 84px; letter-spacing: -1.6px; }
 .obayashi-intro__summary { max-width: 547px; margin-left: 0 !important; padding-top: 52px; font-size: 26px; line-height: 34px; }
 .obayashi-project-details { margin-top: 76px; }
-.obayashi-rule { height: 1px; overflow: hidden; }
-.obayashi-rule img { max-width: none; }
-.obayashi-facts { display: grid; grid-template-columns: 250fr 252fr 250fr 270fr 178fr; min-height: 140px; margin-top: 28px !important; }
-.obayashi-facts dt { margin-bottom: 16.8px; color: #60676c; font: 500 11px/13.2px var(--obayashi-mono); text-transform: uppercase; }
+.obayashi-rule { width: min(var(--rule-width), 100%); height: 1px; margin-left: var(--rule-offset); }
+.obayashi-rule img { position: relative; top: -.5px; width: 100%; height: .5px; max-width: none; }
+.obayashi-facts { display: grid; grid-template-columns: 250fr 252fr 250fr 270fr 178fr; min-height: 141px; margin-top: 27px !important; }
+.obayashi-facts dt { margin-bottom: 16.6px; color: #60676c; font: 500 12px/14.4px var(--obayashi-mono); text-transform: uppercase; }
 .obayashi-facts dd { max-width: 170px; font-size: 15px; line-height: 22px; }
 .obayashi-facts > div:nth-child(2) dd { margin-left: 2px; }
 .obayashi-facts > div:nth-child(4) dd { max-width: 190px; }
 .obayashi-showcase { position: relative; aspect-ratio: 1200 / 779; overflow: hidden; margin-top: 30px; border-radius: 16px; background: #3a4855; }
 .obayashi-showcase .obayashi-exhibit { position: absolute; }
-.obayashi-showcase__home { left: 18%; top: 0; width: 21.5833333%; }
+.obayashi-showcase__home { left: 17%; top: 0; width: 21.9166667%; }
 .obayashi-showcase__markets { left: 47.6666667%; top: 8.0872914%; width: 40.9166667%; }
 .obayashi-exhibit { min-width: 0; }
 .obayashi-exhibit button { display: block; width: 100%; padding: 0; border: 0; background: transparent; text-align: left; cursor: zoom-in; }
@@ -37,15 +37,15 @@
 .obayashi-image-layer > img { width: 100%; height: 100%; max-width: none; object-fit: cover; }
 .obayashi-exhibit figcaption { margin-top: 18px; font-size: 15px; line-height: 22px; font-weight: 600; }
 .obayashi-challenge { display: grid; grid-template-columns: 600fr 573fr; gap: 27px; min-height: 527px; margin-top: 95px; }
-.obayashi-challenge > h2 { padding-top: 24px; }
+.obayashi-challenge > h2 { padding-top: 0; }
 .obayashi-challenge__copy { max-width: 566px; }
 .obayashi-challenge__copy > p { line-height: 22px; }
 .obayashi-challenge__copy > div { margin-top: 22px; }
 .obayashi-challenge h3 { font-size: 16px; line-height: 26px; }
-.obayashi-principles { display: grid; grid-template-columns: 280px minmax(0,894px); gap: 26px; margin-top: 60px; }
+.obayashi-principles { display: grid; grid-template-columns: 280px minmax(0,894px); gap: 26px; margin-top: 44px; }
 .obayashi-principles > h2 { padding-top: 5px; }
-.obayashi-principles > div { display: grid; grid-template-columns: repeat(4,minmax(0,186px)); justify-content: space-between; gap: 24px; }
-.obayashi-principles > div > div { min-height: 184px; padding: 26px 20px 12px; border-radius: 12px; background: var(--obayashi-green); color: white; }
+.obayashi-principles > div { display: grid; grid-template-columns: repeat(4,minmax(0,202px)); justify-content: space-between; gap: 28px; }
+.obayashi-principles > div > div { min-height: 200px; padding: 28px 27px 12px; border-radius: 12px; background: var(--obayashi-green); color: white; }
 .obayashi-principles h3 { color: white; font-size: 21px; line-height: 24px; }
 .obayashi-principles p { margin-top: 17px; font-size: 15px; line-height: 22px; }
 .obayashi-method-layout { display: grid; grid-template-columns: 280px minmax(0,894px); gap: 26px; margin-top: 131px; }
@@ -60,38 +60,37 @@
 .obayashi-section-intro { margin-top: 20px !important; max-width: 876px; }
 .obayashi-competitive > :is(h2,.obayashi-section-intro) { margin-left: 10px; }
 .obayashi-competitive > .obayashi-section-intro { margin-left: 13px; }
-.obayashi-competitive__matrices { display: grid; grid-template-columns: minmax(0,415.763px) minmax(0,436px); justify-content: space-between; gap: 30px; margin-top: 48px; margin-right: 7px; }
-.obayashi-competitive__matrices .obayashi-exhibit:first-child { filter: drop-shadow(4px 4px 4px rgb(0 0 0 / 10%)); }
+.obayashi-competitive__matrices { display: grid; grid-template-columns: minmax(0,426px) minmax(0,436px); justify-content: space-between; gap: 25px; margin-top: 48px; margin-right: 7px; }
+.obayashi-competitive__matrices .obayashi-exhibit:first-child { transform: translateX(6px); filter: drop-shadow(4px 4px 4px rgb(0 0 0 / 10%)); }
 .obayashi-web-audit { margin-top: 82px; }
-.obayashi-web-audit > :is(h2,.obayashi-section-intro,.obayashi-rule), .obayashi-audit-list { margin-left: 5px; }
-.obayashi-audit-list { padding: 0; margin-left: 5px !important; margin-top: 50px !important; list-style: none; }
-.obayashi-audit-row { display: grid; grid-template-columns: minmax(0,448px) minmax(0,347px); gap: 86.733px; }
-.obayashi-audit-row:nth-child(1) { min-height: 353px; }
-.obayashi-audit-row:nth-child(2) { min-height: 388px; }
-.obayashi-audit-row:nth-child(3) { min-height: 340px; }
-.obayashi-audit-row:nth-child(4) { min-height: 304px; }
+.obayashi-web-audit > :is(h2,.obayashi-section-intro) { margin-left: 5px; }
+.obayashi-audit-list { padding: 0; margin-top: 110px !important; list-style: none; }
+.obayashi-audit-row { display: grid; grid-template-columns: minmax(0,448px) minmax(0,347px); gap: 91.733px; }
+.obayashi-audit-row:nth-child(1) { min-height: 363px; }
+.obayashi-audit-row:nth-child(2) { min-height: 347px; }
+.obayashi-audit-row:nth-child(3) { min-height: 346px; }
+.obayashi-audit-row:nth-child(4) { min-height: 269px; }
 .obayashi-audit-row > .obayashi-exhibit { align-self: start; filter: drop-shadow(4px 4px 4px rgb(0 0 0 / 12%)); }
-.obayashi-audit-row:nth-child(1) > .obayashi-exhibit { width: 344.814px; margin-top: 37px; }
-.obayashi-audit-row:nth-child(2) > .obayashi-exhibit { width: 347.328px; margin-top: -12.772px; }
-.obayashi-audit-row:nth-child(3) > .obayashi-exhibit { width: 345.206px; margin-top: -4.843px; }
-.obayashi-audit-row:nth-child(4) > .obayashi-exhibit { width: 346.546px; margin-top: -29.485px; }
-.obayashi-audit-icon { display: block; width: 40px; height: 40px; transform-origin: left center; }
+.obayashi-audit-row:nth-child(1) > .obayashi-exhibit { width: 344.814px; margin-top: -23px; }
+.obayashi-audit-row:nth-child(2) > .obayashi-exhibit { width: 347.328px; margin-top: -82.772px; }
+.obayashi-audit-row:nth-child(3) > .obayashi-exhibit { width: 345.206px; margin-top: -33.843px; }
+.obayashi-audit-row:nth-child(4) > .obayashi-exhibit { width: 346.546px; margin-top: -64.485px; }
+.obayashi-audit-icon { display: block; width: 35px; height: 35px; }
 .obayashi-audit-icon img { max-width: none; }
-.obayashi-audit-row h3 { margin-top: 12px; font-size: 18px; line-height: 30px; }
+.obayashi-audit-row h3 { margin-top: 11px; font-size: 18px; line-height: 30px; }
 .obayashi-audit-row p { margin-top: 10px; }
 .obayashi-audit-row:nth-child(2) > div { max-width: 434px; }
 .obayashi-audit-row:nth-child(3) > div { max-width: 432px; }
 .obayashi-audit-row:nth-child(4) > div { max-width: 417px; }
-.obayashi-priorities { margin-top: 130px; }
-.obayashi-priorities > h2 { margin-left: 2px; }
+.obayashi-priorities { margin-top: 131px; }
+.obayashi-priorities > h2 { margin-top: 42px; margin-left: 2px; }
 .obayashi-priorities > .obayashi-section-intro { margin-left: 1px; }
-.obayashi-priorities > .obayashi-rule { margin-left: 4px; }
 .obayashi-mind-map { position: relative; margin-top: 61px; filter: drop-shadow(4px 4px 4px rgb(0 0 0 / 10%)); }
 .obayashi-mind-map figcaption { position: absolute; width: 1px; height: 1px; padding: 0; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
 .obayashi-mind-map__label { position: absolute; top: 2.56%; left: 3.93%; font-size: 12px; line-height: 22px; font-weight: 600; pointer-events: none; }
 .obayashi-mind-map__center { position: absolute; top: 43.39%; left: 38.32%; width: 22.13%; text-align: center; font-size: 15px; line-height: 22px; pointer-events: none; }
 .obayashi-mind-map__center strong { font-size: 24px; }
-.obayashi-decision { display: grid; grid-template-columns: 164px minmax(0,535px); gap: 72px; min-height: 168px; margin: 61px 8px 0 2px; padding: 45px 50px 27px 65px; border-radius: 12px; background: var(--obayashi-lime); box-shadow: 2px 2px 4px rgb(0 0 0 / 10%); }
+.obayashi-decision { display: grid; grid-template-columns: 164px minmax(0,535px); gap: 72px; width: min(892px,100%); min-height: 168px; margin: 61px 0 0 2px; padding: 45px 50px 27px 65px; border-radius: 12px; background: var(--obayashi-lime); box-shadow: 2px 2px 4px rgb(0 0 0 / 10%); }
 .obayashi-decision h3, .obayashi-strategy h3, .obayashi-outcomes h3 { font-size: 22px; line-height: 25px; }
 .obayashi-decision p { line-height: 24px; }
 .obayashi-strategy { display: grid; grid-template-columns: 164px minmax(0,543px); gap: 64px; margin-top: 52px; padding-left: 67px; }
@@ -100,21 +99,21 @@
 .obayashi-brand { margin-top: 74px; }
 .obayashi-brand__intro { margin-top: 35px; }
 .obayashi-brand__intro p + p { margin-top: 20px; }
-.obayashi-brand > .obayashi-exhibit { width: calc(100% - 8px); margin-top: 44px; }
+.obayashi-brand > .obayashi-exhibit { width: calc(100% + 3px); margin-top: 44px; }
 .obayashi-quote { position: relative; min-height: 185px; margin-top: 34.52px !important; padding: 45px 51px 28px 146.322px; border-radius: 12px; background: var(--obayashi-lime); box-shadow: 2px 2px 4px rgb(0 0 0 / 10%); }
 .obayashi-quote blockquote { font-size: 18px; line-height: 28px; }
 .obayashi-quote figcaption { margin-top: 12px; font-size: 15px; line-height: 28px; font-weight: 600; }
 .obayashi-quote__mark { position: absolute; left: 47.355px; top: 73px; color: white; font: 700 128px/28px Arial, sans-serif; }
-.obayashi-storyboard { margin-top: 81px; }
+.obayashi-storyboard { margin-top: 94px; }
 .obayashi-storyboard > p { margin-top: 10px; }
-.obayashi-storyboard > .obayashi-exhibit { margin-top: 49px; }
+.obayashi-storyboard > .obayashi-exhibit { margin-top: 36px; }
 .obayashi-brand-moments { display: grid; grid-template-columns: minmax(0,582px) minmax(0,280px); gap: 30px; margin-top: 49px; }
 .obayashi-brand-moments > div:first-child { display: grid; grid-template-columns: repeat(2,minmax(0,278.74px)); column-gap: 24.52px; row-gap: 21.937px; }
 .obayashi-brand-moments > div:last-child { padding-top: 104px; }
 .obayashi-brand-moments h3 { white-space: normal; }
 .obayashi-brand-moments p { margin-top: 10px; }
-.obayashi-design { margin-top: 97px; }
-.obayashi-design > h2 { font-size: 36px; margin-left: 10px; }
+.obayashi-design { margin-top: 98px; }
+.obayashi-design > h2 { font-size: 36px; margin-top: 42px; margin-left: 10px; }
 .obayashi-design > .obayashi-section-intro { margin-left: 13px; }
 .obayashi-design-process { display: grid; grid-template-columns: minmax(0,421px) minmax(0,374px); gap: 65px; margin-top: 32px; }
 .obayashi-wireframes { display: grid; grid-template-columns: 94fr 85fr 79fr 75fr; gap: 13px; align-items: start; }
@@ -138,35 +137,33 @@
   97% { transform: translateY(0); opacity: 0; }
   100% { transform: translateY(0); opacity: 1; }
 }
-.obayashi-careers > figcaption { width: calc(100% + 32px); margin-top: 23px; margin-left: -24px; text-align: center; font-size: 15px; line-height: 22px; font-weight: 600; }
-.obayashi-laptop-controls { display: flex; justify-content: center; flex-wrap: wrap; gap: 8px 24px; margin-top: 12px; min-height: 28px; }
-.obayashi-laptop-controls button { padding: 2px 0; border: 0; border-bottom: 1px solid #b8bec3; background: transparent; color: #47555e; font: 400 12px/22px var(--obayashi-mono); }
-.obayashi-laptop-controls button:hover { color: #000; border-color: #000; }
-.obayashi-final-designs { display: grid; grid-template-columns: minmax(0,415px) minmax(0,429px); gap: 50px; margin-top: 21px; }
+.obayashi-careers > figcaption { width: calc(100% + 32px); margin-top: 22px; margin-left: -24px; text-align: center; font-size: 15px; line-height: 22px; font-weight: 600; }
+.obayashi-final-designs { display: grid; grid-template-columns: minmax(0,415px) minmax(0,429px); gap: 50px; margin-top: 62px; }
 .obayashi-final-designs .obayashi-exhibit button { filter: drop-shadow(4px 4px 4px rgb(0 0 0 / 15%)); }
 .obayashi-final-designs figcaption { max-width: 334px; }
 .obayashi-final-designs > div:first-child > .obayashi-exhibit + .obayashi-exhibit { margin-top: 44px; }
 .obayashi-final-designs > div:last-child { padding-top: 1px; }
 .obayashi-final-designs > div:last-child > .obayashi-exhibit + .obayashi-exhibit { margin-top: 31px; }
 .obayashi-final-designs [data-figma-node="478:32"] { max-width: 340px; white-space: normal; }
-.obayashi-outcomes { margin-top: 75px; max-width: 408px; }
+.obayashi-outcomes { margin-top: 98px; max-width: 400px; }
+.obayashi-outcomes h3 { max-width: 336.679px; }
 .obayashi-outcomes ul { margin-top: 15px; padding-left: 24px; list-style: disc; }
-.obayashi-outcomes > p { margin-top: 26px; }
-.obayashi-retrospective { margin-top: 130px; }
+.obayashi-outcomes p { margin-top: 52px; }
+.obayashi-retrospective { margin-top: 103px; }
 .obayashi-retrospective > h2 { margin-top: 34px; }
-.obayashi-reflection { display: grid; grid-template-columns: 164px minmax(0,492px); gap: 72px; min-height: 508px; margin-top: 27px; margin-left: -3px; padding: 72px 90px 39px 73px; border-radius: 12px; background: var(--obayashi-lime); box-shadow: 2px 2px 4px rgb(0 0 0 / 10%); }
+.obayashi-reflection { display: grid; grid-template-columns: 164px minmax(0,492px); gap: 72px; width: min(894px,100%); min-height: 508px; margin-top: 27px; margin-left: -3px; padding: 72px 90px 39px 73px; border-radius: 12px; background: var(--obayashi-lime); box-shadow: 2px 2px 4px rgb(0 0 0 / 10%); }
 .obayashi-reflection h3 { font-size: 24px; line-height: 28px; }
 .obayashi-end { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 24px; margin-top: 120px; padding-top: 28px; border-top: 1px solid #c6c6c6; font-size: 16px; }
 .obayashi-end a { text-decoration: underline; text-underline-offset: 5px; }
 @media (min-width: 1280px) {
-  .obayashi-principles > div { grid-template-columns: repeat(4,186px); gap: 52px; justify-content: start; }
-  .obayashi-principles > div > div:nth-child(2) { padding-left: 26px; padding-right: 13px; }
-  .obayashi-principles > div > div:nth-child(3) { padding-left: 27px; padding-right: 21px; }
-  .obayashi-principles > div > div:nth-child(4) { padding-left: 26px; padding-right: 16px; transform: translateX(-6px); }
+  .obayashi-principles > div { grid-template-columns: repeat(4,202px); gap: 28px; justify-content: start; }
+  .obayashi-principles > div > div:nth-child(2) { padding-left: 29px; padding-right: 26px; }
+  .obayashi-principles > div > div:nth-child(3) { padding-left: 29px; padding-right: 35px; }
+  .obayashi-principles > div > div:nth-child(4) { padding-left: 31px; padding-right: 27px; }
+  .obayashi-principles > div > div:nth-child(4) p { margin-top: 15px; }
   .obayashi-principles > div > div:first-child p { max-width: 132px; }
-  .obayashi-audit-row:nth-child(1) > div { margin-left: 2px; width: 448px; }
-  .obayashi-audit-row:nth-child(2) > div { margin-left: 6px; }
-  .obayashi-audit-row:nth-child(4) > div { margin-left: 2px; }
+  .obayashi-audit-row:nth-child(1) > div { max-width: 438.366px; }
+  .obayashi-audit-row:nth-child(1) p { max-width: 438px; }
   .obayashi-audit-row:nth-child(2) > .obayashi-exhibit { margin-left: .085px; }
   .obayashi-audit-row:nth-child(4) > .obayashi-exhibit { margin-left: -1.733px; }
   .obayashi-brand-moments > div:first-child { position: relative; left: 1px; grid-template-rows: repeat(2,153.565px); }
@@ -239,6 +236,7 @@
   .obayashi-methodology > p { font-size: 16px; line-height: 22px; }
   .obayashi-section > h2 { margin-top: 32px; }
   .obayashi-section > :is(h2,.obayashi-section-intro,.obayashi-rule) { margin-left: 0; }
+  .obayashi-competitive__matrices .obayashi-exhibit:first-child { transform: none; }
   .obayashi-section-intro { margin-top: 20px !important; }
   .obayashi-competitive__matrices { grid-template-columns: 1fr; gap: 24px; margin-top: 32px; }
   .obayashi-web-audit { margin-top: 56px; }
@@ -273,8 +271,6 @@
   .obayashi-careers > figcaption { width: auto; margin: 20px 0 0; text-align: left; }
   .obayashi-laptop__dots { gap: 2px; }
   .obayashi-laptop__dots i { width: 3px; height: 3px; }
-  .obayashi-laptop-controls { justify-content: flex-start; gap: 8px 16px; }
-  .obayashi-laptop-controls button { font-size: 11px; }
   .obayashi-final-designs { grid-template-columns: 1fr; gap: 40px; margin-top: 40px; }
   .obayashi-final-designs > div:last-child { padding: 0; }
   .obayashi-final-designs > div > .obayashi-exhibit + .obayashi-exhibit { margin-top: 40px !important; }

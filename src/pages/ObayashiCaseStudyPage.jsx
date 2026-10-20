@@ -8,9 +8,9 @@ const sections = [['competitive-analysis', 'Competitive Analysis'], ['web-audit'
 const src = name => assetUrl(`obayashi-figma/${manifest.assets[name].file}`);
 const text = id => manifest.texts[id].text.trim().replace(/\u2028/g, '\n');
 
-function Copy({ id, as: Tag = 'p', className = '' }) {
+function Copy({ id, as: Tag = 'p', className = '', htmlId }) {
   const node = manifest.texts[id];
-  return <Tag className={className} data-figma-node={id}>{node.segments.map(([start, end, style], index) => {
+  return <Tag id={htmlId} className={className} data-figma-node={id}>{node.segments.map(([start, end, style], index) => {
     let value = node.text.slice(start, end).replace(/\u2028/g, '\n');
     if (index === node.segments.length - 1) value = value.trimEnd();
     return manifest.textStyles[style].weight >= 700
@@ -18,9 +18,12 @@ function Copy({ id, as: Tag = 'p', className = '' }) {
   })}</Tag>;
 }
 
-function Rule({ details = false }) {
-  const name = details ? 'details-divider' : 'section-divider';
-  return <div className="obayashi-rule" aria-hidden="true"><img src={src(name)} alt="" /></div>;
+function Rule({ id }) {
+  const divider = manifest.dividers[id];
+  const asset = manifest.assets[divider.asset];
+  return <div className="obayashi-rule" data-figma-node={id} aria-hidden="true" style={{ '--rule-width': `${manifest.slots[id].width}px`, '--rule-offset': `${divider.offset}px` }}>
+    <img src={src(divider.asset)} width={asset.width} height={asset.height} alt="" />
+  </div>;
 }
 
 function layerStyle(rect, width, height) {
@@ -52,13 +55,14 @@ function Exhibit({ name, alt, cropName = name, slotId, className = '', onOpenIma
 
 const audit = [
   ['420:390', '420:394', 'existing-projects', 'Existing Obayashi global project listing', '420:392'],
-  ['420:395', '420:396', 'existing-project-detail', 'Existing Obayashi project detail with limited supporting information', '420:397'],
-  ['266:15', '266:17', 'existing-contact', 'Existing Obayashi contact page without an inquiry form', '420:382'],
-  ['420:408', '420:409', 'existing-careers', 'Existing Obayashi careers page', '420:410'],
+  ['420:395', '420:396', 'existing-project-detail', 'Existing Obayashi project detail with limited supporting information', '499:11'],
+  ['266:15', '266:17', 'existing-contact', 'Existing Obayashi contact page without an inquiry form', '499:13'],
+  ['420:408', '420:409', 'existing-careers', 'Existing Obayashi careers page', '499:15'],
 ];
 
 export default function ObayashiCaseStudyPage({ onOpenImage }) {
   const [active, setActive] = useState(sections[0][0]);
+  const outcomes = text('474:27').split(/\n+/).filter(line => line.trim());
   useEffect(() => {
     document.title = 'Obayashi / Kiana George';
     let frame;
@@ -82,17 +86,17 @@ export default function ObayashiCaseStudyPage({ onOpenImage }) {
       <Copy id="420:272" className="obayashi-intro__summary" />
     </header>
     <div className="obayashi-project-details" data-figma-node="420:253">
-      <Rule details />
+      <Rule id="420:269" />
       <dl className="obayashi-facts">{[
-        ['Deliverable', '420:255'], ['Timeline', '420:258'], ['My contribution', '420:267'], ['Methods', '420:261'], ['Tools', '420:264'],
-      ].map(([label, id]) => <div key={id}><dt>{label}</dt><Copy as="dd" id={id} /></div>)}</dl>
+        ['420:256', '420:255'], ['420:259', '420:258'], ['420:268', '420:267'], ['420:262', '420:261'], ['420:265', '420:264'],
+      ].map(([label, id]) => <div key={id}><Copy as="dt" id={label} /><Copy as="dd" id={id} /></div>)}</dl>
     </div>
     <div className="obayashi-showcase" aria-label="Obayashi Home and Our Markets designs" data-figma-node="420:240">
       <Exhibit name="home" alt="Redesigned Obayashi North America homepage" className="obayashi-showcase__home" onOpenImage={onOpenImage} eager />
       <Exhibit name="markets" cropName="hero-markets" alt="Redesigned Obayashi Our Markets page" className="obayashi-showcase__markets" onOpenImage={onOpenImage} eager />
     </div>
     <section className="obayashi-challenge" aria-labelledby="obayashi-challenge-title">
-      <h2 id="obayashi-challenge-title">The <br />Challenge</h2>
+      <h2 id="obayashi-challenge-title" data-figma-node="420:214">The <br />Challenge</h2>
       <div className="obayashi-challenge__copy">
         <Copy id="223:244" />
         {['223:240', '223:247', '223:248', '223:408'].map(id => {
@@ -103,7 +107,7 @@ export default function ObayashiCaseStudyPage({ onOpenImage }) {
     </section>
     <section className="obayashi-principles" aria-labelledby="obayashi-principles-title">
       <h2 id="obayashi-principles-title">Guiding <br />Principles</h2>
-      <div>{[['420:348', '420:358'], ['420:349', '420:359'], ['420:350', '420:360'], ['420:351', '420:361']].map(([title, body]) => <div key={title}><Copy id={title} as="h3" /><Copy id={body} /></div>)}</div>
+      <div>{[['420:344', '420:348', '420:358'], ['420:345', '420:349', '420:359'], ['420:346', '420:350', '420:360'], ['420:347', '420:351', '420:361']].map(([card, title, body]) => <div key={title} data-figma-node={card}><Copy id={title} as="h3" /><Copy id={body} /></div>)}</div>
     </section>
 
     <div className="obayashi-method-layout">
@@ -113,7 +117,7 @@ export default function ObayashiCaseStudyPage({ onOpenImage }) {
       </nav>
       <div className="obayashi-content">
         <section id="competitive-analysis" className="obayashi-section obayashi-competitive" aria-labelledby="obayashi-competitive-title">
-          <Rule /><h2 id="obayashi-competitive-title" data-figma-node="420:306">Benchmarking the<br />Competitive Landscape</h2>
+          <Rule id="420:305" /><h2 id="obayashi-competitive-title" data-figma-node="420:306">Benchmarking the<br />Competitive Landscape</h2>
           <Copy id="351:62" className="obayashi-section-intro" />
           <div className="obayashi-competitive__matrices">
             <Exhibit name="competitive-analysis-1" alt="Obayashi competitive analysis matrix covering project content and audience pathways" onOpenImage={onOpenImage} />
@@ -121,15 +125,15 @@ export default function ObayashiCaseStudyPage({ onOpenImage }) {
           </div>
         </section>
         <section id="web-audit" className="obayashi-section obayashi-web-audit" aria-labelledby="obayashi-audit-title">
-          <Rule /><h2 id="obayashi-audit-title" data-figma-node="420:336">Where the Existing Experience Fell Short</h2>
+          <Rule id="420:335" /><h2 id="obayashi-audit-title" data-figma-node="420:336">Where the Existing Experience Fell Short</h2>
           <Copy id="420:337" className="obayashi-section-intro" />
-          <ol className="obayashi-audit-list">{audit.map(([title, body, name, alt, icon], index) => <li key={name} className="obayashi-audit-row">
-            <div><span className="obayashi-audit-icon" style={index === 3 ? { transform: 'scaleX(1.0575916)' } : undefined} aria-hidden="true"><img src={src('x-circle')} width="40" height="40" alt="" data-figma-node={icon} /></span><Copy id={title} as="h3" /><Copy id={body} /></div>
+          <ol className="obayashi-audit-list">{audit.map(([title, body, name, alt, icon]) => <li key={name} className="obayashi-audit-row">
+            <div><span className="obayashi-audit-icon" aria-hidden="true"><img src={src('x-circle')} width="35" height="35" alt="" data-figma-node={icon} /></span><Copy id={title} as="h3" /><Copy id={body} /></div>
             <Exhibit name={name} alt={alt} onOpenImage={onOpenImage} />
           </li>)}</ol>
         </section>
         <section id="priorities" className="obayashi-section obayashi-priorities" aria-labelledby="obayashi-priorities-title">
-          <Rule /><h2 id="obayashi-priorities-title" data-figma-node="429:75">Clarifying North American Site Priorities</h2>
+          <Rule id="429:74" /><h2 id="obayashi-priorities-title" data-figma-node="429:75">Clarifying North American Site Priorities</h2>
           <Copy id="422:15" className="obayashi-section-intro" />
           <div className="obayashi-mind-map">
             <Exhibit name="mind-map" alt="Obayashi website strategy mind map" caption="Priorities for content, navigation, visual design, and measurement." onOpenImage={onOpenImage} />
@@ -139,7 +143,7 @@ export default function ObayashiCaseStudyPage({ onOpenImage }) {
           <div className="obayashi-strategy"><Copy id="474:25" as="h3" /><ul data-figma-node="474:22">{text('474:22').split('\n').map(line => <li key={line}>{line}</li>)}</ul></div>
         </section>
         <section id="brand-narrative" className="obayashi-section obayashi-brand" aria-labelledby="obayashi-brand-title">
-          <Rule /><h2 id="obayashi-brand-title" data-figma-node="424:17">The People Shaping the Brand</h2>
+          <Rule id="424:16" /><h2 id="obayashi-brand-title" data-figma-node="424:17">The People Shaping the Brand</h2>
           <div className="obayashi-brand__intro">{['351:80', '474:35', '474:36'].map(id => <Copy key={id} id={id} />)}</div>
           <Exhibit name="interviews" alt="Montage of Obayashi stakeholder interview participants" onOpenImage={onOpenImage} />
           <figure className="obayashi-quote" data-figma-node="424:23"><span className="obayashi-quote__mark" aria-hidden="true">“</span><div><Copy id="424:25" as="blockquote" /><Copy id="424:28" as="figcaption" /></div></figure>
@@ -147,17 +151,17 @@ export default function ObayashiCaseStudyPage({ onOpenImage }) {
           <div className="obayashi-brand-moments"><div>{[['family', 'Family'], ['trust', 'Built on Trust'], ['mentorship', 'Mentorship'], ['growth', 'Growth']].map(([name, label]) => <Exhibit key={name} name={name} alt={`Obayashi is ${label}: brand-story film still`} onOpenImage={onOpenImage} />)}</div><div><Copy id="429:79" as="h3" /><Copy id="429:80" /></div></div>
         </section>
         <section id="site-design" className="obayashi-section obayashi-design" aria-labelledby="obayashi-design-title">
-          <Rule /><h2 id="obayashi-design-title" data-figma-node="429:97">Designing Around Projects,<br />People, and Expertise</h2>
+          <Rule id="429:96" /><Copy id="429:97" as="h2" htmlId="obayashi-design-title" />
           <Copy id="429:98" className="obayashi-section-intro" />
           <div className="obayashi-design-process"><Exhibit name="sketches" alt="Hand-drawn sketches for Obayashi Home, Who We Are, Leadership, Markets and Technology pages" onOpenImage={onOpenImage} /><div className="obayashi-wireframes">{[['home-wireframe', 'Home'], ['technology-wireframe', 'Technology'], ['markets-wireframe', 'Our Markets'], ['rail-wireframe', 'Rail & Transit']].map(([name, label]) => <Exhibit key={name} name={name} alt={`Obayashi ${label} wireframe`} onOpenImage={onOpenImage} />)}</div></div>
-          <CareersLaptop assets={manifest.assets} caption={text('478:34')} onOpenImage={onOpenImage} />
+          <CareersLaptop assets={manifest.assets} caption={text('478:34')} />
           <div className="obayashi-final-designs">
-            <div><Exhibit name="technology" alt="Redesigned Obayashi Technology page" captionId="478:33" onOpenImage={onOpenImage} /><Exhibit name="golden-gate" alt="Redesigned Golden Gate Bridge seismic retrofit project page" captionId="478:30" onOpenImage={onOpenImage} /><div className="obayashi-outcomes"><Copy id="474:28" as="h3" /><ul>{text('474:27').split('\n').slice(0, 4).map(line => <li key={line}>{line}</li>)}</ul><p>The redesign was presented to leadership and is currently in final implementation.</p></div></div>
+            <div><Exhibit name="technology" alt="Redesigned Obayashi Technology page" captionId="478:33" onOpenImage={onOpenImage} /><Exhibit name="golden-gate" alt="Redesigned Golden Gate Bridge seismic retrofit project page" captionId="478:30" onOpenImage={onOpenImage} /><div className="obayashi-outcomes"><Copy id="474:28" as="h3" /><div data-figma-node="474:27"><ul>{outcomes.slice(0, 4).map(line => <li key={line}>{line}</li>)}</ul><p>{outcomes.slice(4).join(' ')}</p></div></div></div>
             <div><Exhibit name="rail" alt="Redesigned Obayashi Rail and Transit page" captionId="478:31" onOpenImage={onOpenImage} /><Exhibit name="markets" slotId="474:32" alt="Redesigned Obayashi Our Markets page" captionId="478:32" onOpenImage={onOpenImage} /></div>
           </div>
         </section>
         <section id="retrospective" className="obayashi-section obayashi-retrospective" aria-labelledby="obayashi-retrospective-title">
-          <Rule /><h2 id="obayashi-retrospective-title" data-figma-node="478:22">What I Learned</h2>
+          <Rule id="478:25" /><h2 id="obayashi-retrospective-title" data-figma-node="478:22">What I Learned</h2>
           <div className="obayashi-reflection" data-figma-node="478:23"><Copy id="478:24" as="h3" /><Copy id="478:26" className="obayashi-reflection__copy" /></div>
         </section>
       </div>

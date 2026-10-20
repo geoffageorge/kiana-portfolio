@@ -1,0 +1,91 @@
+{
+  "fileKey": "wZSRbIZZXfUlrq902OXE2W",
+  "nodeId": "420:76",
+  "assets": [
+    {
+      "name": "details-divider",
+      "filename": "details-divider.svg",
+      "nodeIds": [
+        "420:269"
+      ],
+      "bytes": 280,
+      "sha256": "f89ec03d95ec0647d260761572a9e83d1f62c3a1aa1441488d8ca344749a3889",
+      "width": 1200.0,
+      "height": 0.500105
+    },
+    {
+      "name": "section-divider",
+      "filename": "section-divider.svg",
+      "nodeIds": [
+        "478:25",
+        "429:96",
+        "424:16",
+        "429:74",
+        "420:335",
+        "420:305"
+      ],
+      "bytes": 277,
+      "sha256": "f513bc1891d7373662dd4c4c2d6506ba43b803bf85930bcbf86316a66be07451",
+      "width": 892.0,
+      "height": 0.500078
+    },
+    {
+      "name": "competitive-outer-mask",
+      "filename": "competitive-outer-mask.svg",
+      "nodeIds": [
+        "499:9"
+      ],
+      "bytes": 244,
+      "sha256": "7e6b3d7961aa1ba88afce8e592cd073996740c232a12e081cfc71aa7929cfb6d",
+      "width": 426.0,
+      "height": 318.0
+    },
+    {
+      "name": "competitive-mask",
+      "filename": "competitive-mask.svg",
+      "nodeIds": [
+        "420:330"
+      ],
+      "bytes": 268,
+      "sha256": "5d675357bc2919bbd028f1b200fa3fc36ac17e9b72d079e1d9bbf8f1252e4664",
+      "width": 443.897,
+      "height": 347.539
+    },
+    {
+      "name": "interviews-mask",
+      "filename": "interviews-mask.svg",
+      "nodeIds": [
+        "424:44"
+      ],
+      "bytes": 261,
+      "sha256": "0a398effee1da8754181863fcd15867c8de12f2c2c6cb3c8c7644fe375cae6ba",
+      "width": 897.0,
+      "height": 440.48
+    },
+    {
+      "name": "interviews-inner-mask",
+      "filename": "interviews-inner-mask.svg",
+      "nodeIds": [
+        "424:20"
+      ],
+      "bytes": 268,
+      "sha256": "3abe64facffda6c77f2e97a45b15e6c4fa80c1885510d812272c1da5517a54f4",
+      "width": 909.246,
+      "height": 446.021
+    },
+    {
+      "name": "x-circle",
+      "filename": "x-circle.svg",
+      "nodeIds": [
+        "420:392",
+        "499:11",
+        "499:13",
+        "499:15"
+      ],
+      "bytes": 467,
+      "sha256": "22ce494a702850304628b3f9107ac7698c534296aebc9b265699bac58da630be",
+      "width": 35.0,
+      "height": 35.0
+    }
+  ]
+}
