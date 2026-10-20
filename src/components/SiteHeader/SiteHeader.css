@@ -27,6 +27,21 @@
 .site-header--pointly .site-nav { gap: 46px; }
 .site-header--pointly .site-nav > a, .site-header--pointly .site-nav > button { padding-block: 0; }
 .site-header--pointly .site-nav > :last-child { margin-left: 1px; }
+.site-header--obayashi .site-header__inner { height: 126px; padding: 59px 9px 29px 8px; }
+.site-header--obayashi .site-header__brand { gap: 23px; }
+.obayashi-mark { display: block; flex: 0 0 auto; max-width: none; }
+.site-header--obayashi .brand-name, .site-header--obayashi .site-nav { font: 400 15px/18px 'Obayashi Fira Mono', monospace; transform: translateY(4px); }
+.site-header--obayashi .brand-name { gap: 18px; }
+.site-header--obayashi .site-nav { gap: 46px; }
+.site-header--obayashi .site-nav > a, .site-header--obayashi .site-nav > button { padding-block: 0; }
+@media (max-width: 1100px) { .site-header--obayashi .brand-name, .site-header--obayashi .site-nav { font-size: 12px; } .site-header--obayashi .site-nav { gap: 26px; } }
+@media (max-width: 767px) {
+  .site-header--obayashi .site-header__inner { height: auto; padding: 24px 0 16px; gap: 16px; }
+  .site-header--obayashi .site-header__brand { gap: 16px; }
+  .site-header--obayashi .brand-name { gap: 0; font-size: 11px; line-height: 18px; transform: none; }
+  .site-header--obayashi .site-nav { gap: 20px; width: 100%; transform: none; }
+  .site-header--obayashi .site-nav > a, .site-header--obayashi .site-nav > button { padding-block: 12px; }
+}
 @media (max-width: 1100px) { .site-header--pointly .brand-name, .site-header--pointly .site-nav { font-size: 12px; } .site-header--pointly .site-nav { gap: 26px; } }
 @media (max-width: 767px) {
   .site-header--pointly .site-header__inner { height: auto; padding: 24px 0 16px; gap: 16px; }

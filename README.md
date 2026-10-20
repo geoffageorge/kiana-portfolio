@@ -82,7 +82,7 @@ src/
   lib/urls.js                   Links and assets on nested pages
   pages/CaseStudyPage.jsx        Shared project page composition
   pages/PointlyCaseStudyPage.jsx Point.ly layout matching Figma frame 90:18
-  pages/ObayashiCaseStudyPage.jsx Obayashi layout and research from Obayashi.png
+  pages/ObayashiCaseStudyPage.jsx Complete Obayashi case study from Figma frame 420:76
   data/caseStudies/obayashi_old.js Preserved original Obayashi placeholder
   styles/global.css             Design tokens, fonts, shared rules
   styles/case-study-theme.css    Local fonts shared by case studies and header
@@ -112,7 +112,8 @@ public/assets/
   pointly/                      21 original images extracted from the source
   pointly-2/                    Original MVP screenshots and preserved earlier assets
   pointly-figma/                50 unchanged layer exports and their provenance manifest
-  obayashi/                     6 lossless research exhibits and crop manifest
+  obayashi/                     Archived PNG-based research exhibits
+  obayashi-figma/                40 unchanged Figma exports, crop/text/layer manifest
   fonts/                        Local case-study fonts and their OFL licenses
 projects/                       Static HTML entries for each project page
 pointly project/                Archived source, extracted study, and assets
@@ -184,7 +185,7 @@ The temporary text-alignment line and controls have been removed after saving th
 
 ## Project pages and reusable template
 
-Open `/projects/obayashi/` and `/projects/pointly/` for the current case studies, `/projects/obayashi_old/` for the original Obayashi placeholder, or `/projects/template/` for the six-section template preview. The home page shows Obayashi and Point.ly; reserved Project 03 and Project 04 tiles are hidden until their content is ready. Pages retain the sticky glass header and shared footer. Point.ly uses its Figma-specific logo, spacing, Fira Mono, and About / Resume / Contact navigation; other pages keep Work / About / Resume / Contact. The brand returns home, and each project includes a return-to-work link. Exhibit images can be enlarged in an accessible dialog or opened at full size.
+Open `/projects/obayashi/` and `/projects/pointly/` for the current case studies, `/projects/obayashi_old/` for the original Obayashi placeholder, or `/projects/template/` for the six-section template preview. The home page shows Obayashi and Point.ly; reserved Project 03 and Project 04 tiles are hidden until their content is ready. Pages retain the sticky glass header and shared footer. Both Figma case studies use their inspected logos, spacing, Fira Mono, and About / Resume / Contact navigation; other pages keep Work / About / Resume / Contact. The brand returns home, and each project includes a return-to-work link. Exhibit images can be enlarged in an accessible dialog or opened at full size.
 
 The reusable template's six modules are **About**, **Deliverable**, **Completed**, **User Persona**, **Research**, and **Design Evolution**, in that order. Each has its own component in `src/components/CaseStudySections/` and uses the shared section layout. The template supplies placeholder text and imagery for all six. Point.ly now has its own layout in `PointlyCaseStudyPage.jsx` so the supplied redesign does not change other project templates.
 
@@ -194,9 +195,29 @@ Point.ly uses the inspected Inter body/headings, Fira Mono labels/navigation, In
 
 “From Research to MVP Prototype” retains all three screens and captions originally supplied in `Assets/pointly_2/MVP Section.png`. The October revision uses the unmodified high-resolution Figma originals in `public/assets/pointly-figma-update/`: `connected-wallet.png`, `recommended-stays.png`, and `stay-details.png`. That folder also contains the Figma project-details divider. Its manifest records source hashes and dimensions; the earlier template copies remain archived in `public/assets/pointly-2/`. The three rows are Rewards Dashboard, Personalized Recommendations, and Property Detail, with the exact descriptions to the right on desktop and below the images on phones. Captions use local Inter at 15 px with 24 px line height and 0 letter spacing, with bold labels and regular body text. The revision updates section spacing, heading sizes, the visual-identity and MVP introductions, and the three Reflection paragraphs with bold lead-ins. The gallery occupies normal document flow, followed by “What I Learned.” Product screenshots and research exhibits open in the existing accessible image dialog. The shared contact footer and return-to-work link remain available.
 
-Obayashi follows `Assets/obayashi/Obayashi.png`: overview, six-column facts, challenge, stakeholder interviews and five numbered research findings. Its photographs and annotated screenshots are extracted without changing their pixels into `public/assets/obayashi/`; the manifest records crop rectangles and the reference SHA-256. Regenerate with `python3 scripts/import-obayashi-design.py` (Pillow required). The green quote uses sampled `#e3f2e7`; the embedded pink annotations retain `#ffc9c9`. Native text shares Point.ly's local Inter / Roboto / Roboto Mono fonts and white background. Obayashi is labeled `01 /` and Point.ly `02 /`, matching the home tiles. The Obayashi Methodology sidebar stays 24 pixels below the shared header throughout Challenge, Research, Design and Reflection, with the content in its own column to avoid overlap. On phones and tablets below 1024 pixels, the section links wrap above the content like Point.ly's navigation.
+Obayashi follows the directly inspected October 19, 2026 Figma frame `420:76` in `wZSRbIZZXfUlrq902OXE2W`. The reference is 1440 × 12278 with 1200-pixel content, 120-pixel side margins, a 12-column grid and 24-pixel gutters. It includes five project-detail columns, Home/Markets hero screens, the challenge, four green guiding principles, competitive benchmarking, four website-audit findings, priorities and strategy, stakeholder research, a quote, storyboard and brand imagery, sketches and wireframes, final designs, outcomes and reflection. `Assets/figma files/obayashi-inspection-2026-10-19/` retains the exact text, styles, geometry, image fills, constraints, masks, effects, exports and source assets. The 40 original PNG/SVG files are copied unchanged into `public/assets/obayashi-figma/`; the manifest records their SHA-256 values, original layer IDs and crop geometry. Regenerate using `python3 scripts/import-obayashi-figma.py` (Python standard library only). The older PNG-based assets remain archived.
 
-The supplied Obayashi export has a truncated introductory sentence and no content below “Four principles guided the redesign”; the remainder is an empty artboard. The website ends the introduction at the last complete fact, includes Design and Reflection as title-only sections with navigation links, and removes the excess blank space before research and after the supplied content. No design principles, final outcomes, or reflection claims have been invented. Add content beneath those headings in `ObayashiCaseStudyPage.jsx` when it is available. The earlier placeholder is preserved independently in `src/data/caseStudies/obayashi_old.js` and built at `/projects/obayashi_old/`. Obayashi's home tile opens Obayashi; the Point.ly tile opens Point.ly; the Obayashi footer also links to Point.ly as the next project.
+The approved editorial changes keep Obayashi numbered `01 /` to match its home tile, render one Methodology label, and repair the forced break inside “relevant.” Body/headings use local Inter; labels/navigation use local Fira Mono. Exact colors include slate `#3a4855`, green `#0ba147`, lime `#e7ef52`, and label gray `#60676c`. The six section links stay 24 pixels beneath the glass header on desktop and wrap above the content below 1024 pixels. The actual Figma timeline is 10 months. Outcomes and reflection come from the live frame; no new results or metrics were invented. The original placeholder remains at `/projects/obayashi_old/`. Obayashi's home tile opens `/projects/obayashi/`, and its footer links to Point.ly and back to selected work.
+
+`src/components/CareersLaptop/CareersLaptop.jsx` preserves the original laptop PNG and places the unmodified `Careers 1` export inside the screen. The source display rectangle is `(180, 37, 1604, 1039)` within the 1964 × 1196 image. A clipped browser surface preserves the original bezel, camera notch and base. The page scrolls upward over a 48-second cycle, holds at the top and bottom, then fades briefly to reset. ResizeObserver calculates travel from the full page height and visible screen height, so the final footer appears without empty space. It starts automatically when visible, pauses off-screen or in a hidden tab, offers Pause/Play and full-page enlargement, and displays a static preview for reduced-motion visitors. The Careers caption and the laptop's original desktop placement are retained.
+
+### Deploy this Obayashi update through GitHub
+
+The source changes are already in this checkout. From the repository root, build and verify them, then stage only the Obayashi implementation and its shared-header integration:
+
+```sh
+cd "/Users/geoffgeorge/Developer/Kiana Portfolio"
+npm run build
+PORTFOLIO_TEST_TARGET=production npx playwright test --workers=2
+git add -- README.md src/App.jsx src/pages/ObayashiCaseStudyPage.jsx src/pages/ObayashiCaseStudyPage.css src/components/CareersLaptop src/components/SiteHeader/SiteHeader.jsx src/components/SiteHeader/SiteHeader.css scripts/import-obayashi-figma.py public/assets/obayashi-figma tests/obayashi-design.spec.js tests/hero-animation.spec.js tests/hero-layout.spec.js "Assets/figma files/obayashi-inspection-2026-10-19"
+git diff --cached --stat
+git commit -m "Rebuild Obayashi case study from Figma with scrolling Careers laptop"
+git push origin main
+```
+
+The selected files leave unrelated local edits unstaged. The inspection folder's `.gitignore` excludes temporary Figma download links, review screenshots and unused nearby drafts. Keep `dist/` and `node_modules/` ignored; Cloudflare builds from the committed source.
+
+The remote is `https://github.com/geoffageorge/kiana-portfolio.git`. For the existing Workers Builds setup, confirm **Workers & Pages → kiana-portfolio → Settings → Build** uses repository `geoffageorge/kiana-portfolio`, production branch `main`, build command `npm run build`, deploy command `npx wrangler deploy`, and the repository root. The existing `wrangler.jsonc` uploads `dist/` and serves trailing-slash project URLs. A successful push to the connected production branch triggers a deployment. Check that build's status, then open the home tile and reload `/projects/obayashi/` on your live domain. These are the existing repository settings; the live Cloudflare connection is not changed by the local update. See the official [Cloudflare build configuration](https://developers.cloudflare.com/workers/ci-cd/builds/configuration/) and [GitHub push instructions](https://docs.github.com/en/get-started/using-git/pushing-commits-to-a-remote-repository).
 
 To add another case study:
 
@@ -226,6 +247,6 @@ npm run build
 PORTFOLIO_TEST_TARGET=production npm test
 ```
 
-Browser checks use locally installed Google Chrome. If Chrome is unavailable, install Playwright Chromium (`npx playwright install chromium`) and remove `channel: 'chrome'` from the Playwright configuration. Tests cover media loading, the two visible project tiles, shared navigation and dialogs, project links and reloads, all imported images, image enlargement, the archived Obayashi page, the reusable template, keyboard focus, automatic animation startup and a complete repeat after 10 seconds, reduced motion, fixed artwork settings, transparent logo pixels, and responsive overflow. Obayashi and Point.ly artwork is compared pixel by pixel to the supplied PNGs. Animation checks compare rendered transforms, opacity, easing, and spirograph rotation with the supplied HTML at 12 times across the cycle and its repeat. Header checks cover scrolling, consistent menu options and Work links on every page.
+Browser checks use locally installed Google Chrome. If Chrome is unavailable, install Playwright Chromium (`npx playwright install chromium`) and remove `channel: 'chrome'` from the Playwright configuration. Tests cover media loading, the two visible project tiles, shared navigation and dialogs, project links and reloads, imported asset hashes and usage, image enlargement, the archived Obayashi page, the reusable template, keyboard focus, animation startup and looping, reduced motion, fixed hero artwork settings, transparent logo pixels, and responsive overflow. Obayashi's desktop raster placements are checked against the independently inspected Figma geometry. Its laptop checks cover screen containment, upward scroll, the loop boundary, Pause/Play, off-screen pausing, and reduced motion. Existing hero checks compare rendered motion with the original animation; shared-header checks cover all project routes.
 
 The generated artwork is already included; Python is not needed to run or build the website. To regenerate it, install Pillow and NumPy in a Python environment, then run `python3 scripts/generate-assets.py`.

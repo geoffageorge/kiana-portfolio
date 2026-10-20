@@ -26,7 +26,7 @@ export default function App() {
     <>
       <a className="skip-link" href="#main">Skip to content</a>
       <SiteHeader
-        variant={isPointly ? 'pointly' : 'default'}
+        variant={isPointly ? 'pointly' : isObayashi ? 'obayashi' : 'default'}
         site={site}
         homeHref={projectSlug ? siteUrl() : '#top'}
         workHref={projectSlug ? `${siteUrl()}#work` : '#work'}

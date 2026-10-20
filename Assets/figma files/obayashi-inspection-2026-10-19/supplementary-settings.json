@@ -1,0 +1,349 @@
+{
+  "settings": {
+    "assets": [
+      {
+        "id": "479:57",
+        "name": "Logo + Navigation",
+        "width": 1183,
+        "height": 38,
+        "x": 5008,
+        "y": -16155,
+        "children": [
+          {
+            "id": "479:58",
+            "name": "Logo 2",
+            "type": "FRAME",
+            "x": 5008,
+            "y": -16155,
+            "width": 57,
+            "height": 38
+          },
+          {
+            "id": "479:65",
+            "name": "KIANA GEORGE / UX DESIGN + INSIGHTS",
+            "type": "TEXT",
+            "x": 5088,
+            "y": -16141,
+            "width": 324,
+            "height": 18,
+            "characters": "KIANA GEORGE  / UX DESIGN + INSIGHTS ",
+            "font": {
+              "family": "Fira Mono",
+              "style": "Regular"
+            },
+            "fontSize": 15,
+            "lineHeight": {
+              "unit": "PERCENT",
+              "value": 120.00000476837158
+            }
+          },
+          {
+            "id": "479:66",
+            "name": "ABOUT",
+            "type": "TEXT",
+            "x": 5936,
+            "y": -16141,
+            "width": 45,
+            "height": 18,
+            "characters": "ABOUT",
+            "font": {
+              "family": "Fira Mono",
+              "style": "Regular"
+            },
+            "fontSize": 15,
+            "lineHeight": {
+              "unit": "PERCENT",
+              "value": 120.00000476837158
+            }
+          },
+          {
+            "id": "479:67",
+            "name": "RESUME",
+            "type": "TEXT",
+            "x": 6027,
+            "y": -16141,
+            "width": 54,
+            "height": 18,
+            "characters": "RESUME",
+            "font": {
+              "family": "Fira Mono",
+              "style": "Regular"
+            },
+            "fontSize": 15,
+            "lineHeight": {
+              "unit": "PERCENT",
+              "value": 120.00000476837158
+            }
+          },
+          {
+            "id": "479:68",
+            "name": "CONTACT",
+            "type": "TEXT",
+            "x": 6128,
+            "y": -16141,
+            "width": 63,
+            "height": 18,
+            "characters": "CONTACT",
+            "font": {
+              "family": "Fira Mono",
+              "style": "Regular"
+            },
+            "fontSize": 15,
+            "lineHeight": {
+              "unit": "PERCENT",
+              "value": 120.00000476837158
+            }
+          }
+        ]
+      },
+      {
+        "id": "466:30",
+        "name": "Careers 1",
+        "width": 651,
+        "height": 2918,
+        "x": 6349,
+        "y": -7872,
+        "fills": [
+          {
+            "type": "IMAGE",
+            "visible": true,
+            "opacity": 1,
+            "blendMode": "NORMAL",
+            "scaleMode": "FILL",
+            "scalingFactor": 0.5,
+            "rotation": 0,
+            "filters": {
+              "exposure": 0,
+              "contrast": 0,
+              "saturation": 0,
+              "temperature": 0,
+              "tint": 0,
+              "highlights": 0,
+              "shadows": 0
+            },
+            "imageTransform": [
+              [
+                1,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0
+              ]
+            ],
+            "imageHash": "41da6b9effa42d4413af171704d520e435315b86"
+          }
+        ],
+        "sourceSize": {
+          "width": 914,
+          "height": 4096
+        }
+      },
+      {
+        "id": "427:19",
+        "name": "Our Markets Wireframe Mockup 1",
+        "width": 1889,
+        "height": 2833,
+        "x": 11793,
+        "y": -7952,
+        "fills": [
+          {
+            "type": "IMAGE",
+            "visible": true,
+            "opacity": 1,
+            "blendMode": "NORMAL",
+            "scaleMode": "FILL",
+            "scalingFactor": 0.5,
+            "rotation": 0,
+            "filters": {
+              "exposure": 0,
+              "contrast": 0,
+              "saturation": 0,
+              "temperature": 0,
+              "tint": 0,
+              "highlights": 0,
+              "shadows": 0
+            },
+            "imageTransform": [
+              [
+                1,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0
+              ]
+            ],
+            "imageHash": "0a62946588bea54061a3ec13b7b34c885081c42e"
+          }
+        ],
+        "sourceSize": {
+          "width": 1024,
+          "height": 1536
+        }
+      },
+      {
+        "id": "427:22",
+        "name": "Hand-Drawn Rail & Transit Website Wireframe 1",
+        "width": 1231,
+        "height": 2128,
+        "x": 16954,
+        "y": -6821,
+        "fills": [
+          {
+            "type": "IMAGE",
+            "visible": true,
+            "opacity": 1,
+            "blendMode": "NORMAL",
+            "scaleMode": "FILL",
+            "scalingFactor": 0.5,
+            "rotation": 0,
+            "filters": {
+              "exposure": 0,
+              "contrast": 0,
+              "saturation": 0,
+              "temperature": 0,
+              "tint": 0,
+              "highlights": 0,
+              "shadows": 0
+            },
+            "imageTransform": [
+              [
+                1,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0
+              ]
+            ],
+            "imageHash": "847b08b5a5161fbb4796baf00be6aa82a33b9571"
+          }
+        ],
+        "sourceSize": {
+          "width": 954,
+          "height": 1649
+        }
+      },
+      {
+        "id": "427:23",
+        "name": "Obayashi Urban Development Webpage Mockup 1",
+        "width": 1405,
+        "height": 2231,
+        "x": 18751,
+        "y": -9463,
+        "fills": [
+          {
+            "type": "IMAGE",
+            "visible": true,
+            "opacity": 1,
+            "blendMode": "NORMAL",
+            "scaleMode": "FILL",
+            "scalingFactor": 0.5,
+            "rotation": 0,
+            "filters": {
+              "exposure": 0,
+              "contrast": 0,
+              "saturation": 0,
+              "temperature": 0,
+              "tint": 0,
+              "highlights": 0,
+              "shadows": 0
+            },
+            "imageTransform": [
+              [
+                1,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0
+              ]
+            ],
+            "imageHash": "94a8df584fe3a46bb13e1f1fb835dbe72347a7f2"
+          }
+        ],
+        "sourceSize": {
+          "width": 995,
+          "height": 1580
+        }
+      }
+    ],
+    "missingFonts": [
+      {
+        "id": "424:26",
+        "text": "“"
+      }
+    ],
+    "components": [
+      {
+        "id": "420:382",
+        "name": "X circle",
+        "main": {
+          "id": "420:380",
+          "name": "X circle",
+          "key": "17b98dced063ce2a4df2229c3a2c48fdf2353284",
+          "remote": true
+        },
+        "properties": {}
+      },
+      {
+        "id": "420:392",
+        "name": "X circle",
+        "main": {
+          "id": "420:380",
+          "name": "X circle",
+          "key": "17b98dced063ce2a4df2229c3a2c48fdf2353284",
+          "remote": true
+        },
+        "properties": {}
+      },
+      {
+        "id": "420:397",
+        "name": "X circle",
+        "main": {
+          "id": "420:380",
+          "name": "X circle",
+          "key": "17b98dced063ce2a4df2229c3a2c48fdf2353284",
+          "remote": true
+        },
+        "properties": {}
+      },
+      {
+        "id": "420:410",
+        "name": "X circle",
+        "main": {
+          "id": "420:380",
+          "name": "X circle",
+          "key": "17b98dced063ce2a4df2229c3a2c48fdf2353284",
+          "remote": true
+        },
+        "properties": {}
+      }
+    ]
+  },
+  "motion": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"nodes\":[]}"
+      }
+    ]
+  },
+  "variables": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"var(--sds-color-border-danger-tertiary)\":\"#ec221f\",\"White\":\"#FFFFFF\"}"
+      }
+    ]
+  }
+}

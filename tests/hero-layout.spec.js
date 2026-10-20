@@ -85,7 +85,16 @@ test('white pages, dividing rules, and transparent logos appear throughout the s
     await page.goto(path);
     await expect(page.locator('body')).toHaveCSS('background-color', 'rgb(255, 255, 255)');
     const logos = page.locator('.brand-logo');
-    await expect(logos).toHaveCount(2);
+    const figmaCaseStudy = ['/projects/pointly/', '/projects/obayashi/'].includes(path);
+    await expect(logos).toHaveCount(figmaCaseStudy ? 1 : 2);
+    if (path === '/projects/pointly/') {
+      await expect(page.locator('.pointly-mark img')).toHaveCount(6);
+    } else if (path === '/projects/obayashi/') {
+      await expect(page.locator('.obayashi-mark')).toHaveAttribute('src', '/assets/obayashi-figma/logo.svg');
+      const mark = await page.locator('.obayashi-mark').boundingBox();
+      expect(mark.width).toBe(57);
+      expect(mark.height).toBe(38);
+    }
     for (const logo of await logos.all()) {
       await expect(logo).toHaveAttribute('src', '/assets/brand/ki-logo.png');
       await logo.evaluate(image => image.decode());

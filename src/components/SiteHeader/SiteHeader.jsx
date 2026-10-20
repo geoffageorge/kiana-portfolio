@@ -3,6 +3,7 @@ import Logo from '../Logo/Logo.jsx';
 import PointlyMark from '../Logo/PointlyMark.jsx';
 import BrandName from '../BrandName/BrandName.jsx';
 import Navigation from '../Navigation/Navigation.jsx';
+import { assetUrl } from '../../lib/urls.js';
 import './SiteHeader.css';
 
 export default function SiteHeader({ site, onAbout, onResume, homeHref = '#top', workHref = '#work', variant = 'default' }) {
@@ -22,13 +23,13 @@ export default function SiteHeader({ site, onAbout, onResume, homeHref = '#top',
   return (
     <>
       <div id="top" aria-hidden="true" />
-      <header ref={headerRef} className={`site-header${variant === 'pointly' ? ' site-header--pointly' : ''}`}>
+      <header ref={headerRef} className={`site-header${variant !== 'default' ? ` site-header--${variant}` : ''}`}>
         <div className="site-header__inner page-container">
           <a className="site-header__brand flex items-center" href={homeHref} aria-label={`${site.name} home`}>
-            {variant === 'pointly' ? <PointlyMark /> : <Logo />}
+            {variant === 'obayashi' ? <img className="obayashi-mark" src={assetUrl('obayashi-figma/logo.svg')} width="57" height="38" alt="" aria-hidden="true" data-figma-node="479:58" /> : variant === 'pointly' ? <PointlyMark /> : <Logo />}
             <BrandName name={site.name} descriptor={site.descriptor} />
           </a>
-          <Navigation resumeUrl={site.resumeUrl} onAbout={onAbout} onResume={onResume} workHref={workHref} showWork={variant !== 'pointly'} />
+          <Navigation resumeUrl={site.resumeUrl} onAbout={onAbout} onResume={onResume} workHref={workHref} showWork={variant === 'default'} />
         </div>
       </header>
     </>

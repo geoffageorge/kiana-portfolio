@@ -1,0 +1,68 @@
+{
+  "assets": [
+    {
+      "name": "header",
+      "nodeId": "479:57",
+      "filename": "header.svg",
+      "variable": "imgLogo2",
+      "bytes": 1341,
+      "sha256": "d111d3fd7ded1acf98662413a18d042c5adf7c293d124bc9acad6df45b7269e2"
+    },
+    {
+      "name": "careers",
+      "nodeId": "466:30",
+      "filename": "careers.png",
+      "variable": "imgCareers1",
+      "bytes": 2521658,
+      "sha256": "a1a638d4734e2f1faf677c2448a9fe5825ea26f6478b1e2792772b43c6d3d5ad",
+      "width": 914,
+      "height": 4096
+    },
+    {
+      "name": "markets-wireframe",
+      "nodeId": "427:19",
+      "filename": "markets-wireframe.png",
+      "variable": "imgOurMarketsWireframeMockup1",
+      "bytes": 1343472,
+      "sha256": "cd5272b54e0fa0b6537f98a5e9053d9496c9c75e6b133a1d60b296523194a541",
+      "width": 1024,
+      "height": 1536
+    },
+    {
+      "name": "rail-wireframe",
+      "nodeId": "427:22",
+      "filename": "rail-wireframe.png",
+      "variable": "imgHandDrawnRailTransitWebsiteWireframe1",
+      "bytes": 1948061,
+      "sha256": "123551b5639ea52d94bee284f47e7b11b8891a80dd4774ffe77181fa723d0b5e",
+      "width": 954,
+      "height": 1649
+    },
+    {
+      "name": "urban-mockup",
+      "nodeId": "427:23",
+      "filename": "urban-mockup.png",
+      "variable": "imgObayashiUrbanDevelopmentWebpageMockup1",
+      "bytes": 1391669,
+      "sha256": "256411003c0e86f867040f6db4709311246d6045ac6eb53238e516305eacadf4",
+      "width": 995,
+      "height": 1580
+    },
+    {
+      "name": "x-circle",
+      "nodeId": "420:382",
+      "filename": "x-circle.png",
+      "bytes": 1203,
+      "sha256": "bf43a00dd9a79185cfbd3371d33715429d13c2bb008023cd3eb346f2faa39384",
+      "width": 40,
+      "height": 40
+    },
+    {
+      "name": "x-circle-svg",
+      "nodeId": "420:382",
+      "filename": "x-circle.svg",
+      "bytes": 554,
+      "sha256": "e6327c3ee28ec0d6f2aa51507f3f9234c70896056cb36a88fa13e9bd5f0f8965"
+    }
+  ]
+}

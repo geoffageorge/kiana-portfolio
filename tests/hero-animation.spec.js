@@ -98,8 +98,9 @@ test('page background and sticky header work on home and project pages', async (
       await page.getByRole('link', { name: 'Kiana George home', exact: true }).click();
       await expect.poll(() => page.evaluate(() => window.scrollY)).toBeLessThan(1);
     } else {
-      await page.getByRole('navigation', { name: 'Project sections' }).getByRole('link', { name: /Research/ }).click();
-      await expect.poll(() => page.locator('#research').evaluate(node => node.getBoundingClientRect().top >= document.querySelector('.site-header').getBoundingClientRect().bottom)).toBe(true);
+      const obayashi = path === '/projects/obayashi/';
+      await page.getByRole('navigation', { name: 'Project sections' }).getByRole('link', { name: obayashi ? 'Web Audit' : /Research/ }).click();
+      await expect.poll(() => page.locator(obayashi ? '#web-audit' : '#research').evaluate(node => node.getBoundingClientRect().top >= document.querySelector('.site-header').getBoundingClientRect().bottom)).toBe(true);
       if (page.viewportSize().width >= 1024 && await page.locator('.case-navigation').count()) {
         const navigation = await page.locator('.case-navigation').boundingBox();
         expect(navigation.y).toBeGreaterThan(header.height);

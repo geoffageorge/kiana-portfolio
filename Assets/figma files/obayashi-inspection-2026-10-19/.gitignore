@@ -1,0 +1,8 @@
+# Keep local inspection renders and temporary download URLs out of source control.
+reference*.png
+*-contact-sheet.jpg
+figma-design-context.txt
+assets/markets-wireframe.png
+assets/rail-wireframe.png
+assets/urban-mockup.png
+assets/x-circle.png

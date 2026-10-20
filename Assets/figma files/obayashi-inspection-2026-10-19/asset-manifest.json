@@ -1,0 +1,438 @@
+{
+  "fileKey": "wZSRbIZZXfUlrq902OXE2W",
+  "nodeId": "420:76",
+  "assets": [
+    {
+      "variable": "imgScreenshot20261015At80523Pm2",
+      "filename": "asset-01.png",
+      "bytes": 329771,
+      "sha256": "8b8befdaf9be18c61c85248ea37d2440031b30bc98675a19c43984ab93da54c8",
+      "width": 1190,
+      "height": 900,
+      "nodeIds": [
+        "351:55"
+      ],
+      "description": "Competitive analysis matrix 1"
+    },
+    {
+      "variable": "imgScreenshot20261015At80513Pm1",
+      "filename": "asset-02.png",
+      "bytes": 292067,
+      "sha256": "8aebfaca48b957a60b857246c1d8ccdb5120bf3c6f15040a742c4d8d224110bd",
+      "width": 1144,
+      "height": 834,
+      "nodeIds": [
+        "351:57"
+      ],
+      "description": "Competitive analysis matrix 2"
+    },
+    {
+      "variable": "imgStoryboardWhiteboardInDarkGreenPastelGreenBeigeSimpleAndMinimalStyle2",
+      "filename": "asset-03.png",
+      "bytes": 1071876,
+      "sha256": "cc97981cb54e942f1d290dd5456d0c3842c9d9e714e628d0810544bb76738dff",
+      "width": 1920,
+      "height": 1080,
+      "nodeIds": [
+        "351:72"
+      ],
+      "description": "Brand storyboard"
+    },
+    {
+      "variable": "imgDiverseTeamInterviewMontage3",
+      "filename": "asset-04.png",
+      "bytes": 2034109,
+      "sha256": "fd5d45cee788db59282010e026e24076d6cf688320fe582fcf067718af26d0b7",
+      "width": 1774,
+      "height": 887,
+      "nodeIds": [
+        "223:410"
+      ],
+      "description": "Stakeholder interview montage"
+    },
+    {
+      "variable": "imgScreenshot20260916At100243Am2",
+      "filename": "asset-05.png",
+      "bytes": 3255629,
+      "sha256": "c9ae7ccc5551cbe0f6912745a9d2fb8f354433f5510c58cb84e13a96161a54d9",
+      "width": 2014,
+      "height": 1126,
+      "nodeIds": [
+        "351:73"
+      ],
+      "description": "Obayashi is Family"
+    },
+    {
+      "variable": "imgScreenshot20260916At100729Am1",
+      "filename": "asset-06.png",
+      "bytes": 1107763,
+      "sha256": "c8183214c4459717e36e5ccd8a23f71a352b4fd62af16e3a4948e54dbf812c61",
+      "width": 1254,
+      "height": 702,
+      "nodeIds": [
+        "351:79"
+      ],
+      "description": "Obayashi is Built on Trust"
+    },
+    {
+      "variable": "imgScreenshot20260916At100427Am1",
+      "filename": "asset-07.png",
+      "bytes": 1007712,
+      "sha256": "4c79ac8f71b885a0bfdf4618631ca0ba3a4033b8cb93a406b49117c03af4b130",
+      "width": 1252,
+      "height": 732,
+      "nodeIds": [
+        "351:76"
+      ],
+      "description": "Obayashi is Mentorship"
+    },
+    {
+      "variable": "imgScreenshot20260916At100637Am1",
+      "filename": "asset-08.png",
+      "bytes": 1193900,
+      "sha256": "c90dd6bf0f305423856bd9d052b24e6cd4730567d48cc7033f8e71c2fb05df94",
+      "width": 1276,
+      "height": 710,
+      "nodeIds": [
+        "351:78"
+      ],
+      "description": "Obayashi is Growth"
+    },
+    {
+      "variable": "imgWebsitePlan2",
+      "filename": "asset-09.png",
+      "bytes": 1630341,
+      "sha256": "c1a76e57a901e424cd0aabcc2534a7c19146f95a4425abce467ee31df838551b",
+      "width": 2936,
+      "height": 1654,
+      "nodeIds": [
+        "424:13"
+      ],
+      "description": "Website strategy mind map"
+    },
+    {
+      "variable": "imgScreenshot20261014At40133Pm2",
+      "filename": "asset-10.png",
+      "bytes": 161944,
+      "sha256": "f665256e900c1e671212d6b6181db93fb7b96d121860f3fa4b0c96b58dbd2bfe",
+      "width": 1682,
+      "height": 1484,
+      "nodeIds": [
+        "266:47"
+      ],
+      "description": "Existing contact page"
+    },
+    {
+      "variable": "imgScreenshot20261014At40829Pm2",
+      "filename": "asset-11.png",
+      "bytes": 2231584,
+      "sha256": "d78856df3164bf465fccc7ebbf6b8b93a9ee0d3ac013373effdb4f0eab9b78eb",
+      "width": 1790,
+      "height": 1374,
+      "nodeIds": [
+        "266:52"
+      ],
+      "description": "Existing project listing"
+    },
+    {
+      "variable": "imgObayashi2",
+      "filename": "asset-12.png",
+      "bytes": 961506,
+      "sha256": "3a3027add55bbbb0882f26839e57e688b845e96a9ba71574146f9f6c2535f9cc",
+      "width": 1152,
+      "height": 1296,
+      "nodeIds": [
+        "420:400"
+      ],
+      "description": "Existing project detail"
+    },
+    {
+      "variable": "imgScreenshot20261014At40058Pm2",
+      "filename": "asset-13.png",
+      "bytes": 951270,
+      "sha256": "05b4919659aef467b630a8cdba11ab455b020d12c6bd46f2af808bcaabed4492",
+      "width": 1682,
+      "height": 1554,
+      "nodeIds": [
+        "266:46"
+      ],
+      "description": "Existing careers page"
+    },
+    {
+      "variable": "imgHomeCopy2",
+      "filename": "asset-14.png",
+      "bytes": 1496173,
+      "sha256": "8ca3aa5aca7432585c9e09b732f4409f3618efa55238960cd3c6b11cb695a8d6",
+      "width": 1164,
+      "height": 3503,
+      "nodeIds": [
+        "443:107"
+      ],
+      "description": "Redesigned Home"
+    },
+    {
+      "variable": "imgOurMarketsCopy2",
+      "filename": "asset-15.png",
+      "bytes": 1624727,
+      "sha256": "4b943b5160cb3fb423199cfc569266f3e4f37390d23dd768456885707c3051cc",
+      "width": 1368,
+      "height": 2652,
+      "nodeIds": [
+        "351:98",
+        "474:32"
+      ],
+      "description": "Redesigned Our Markets, reused in hero and final designs"
+    },
+    {
+      "variable": "imgGrayscaleCorporateWebsiteWireframe1",
+      "filename": "asset-16.png",
+      "bytes": 1273558,
+      "sha256": "beb709f4915cb74495670a7f972b932415c55d547c4733a013b89449c654a099",
+      "width": 725,
+      "height": 2167,
+      "nodeIds": [
+        "426:13"
+      ],
+      "description": "Corporate home wireframe"
+    },
+    {
+      "variable": "imgAppleIntelligenceBqi8Tl754CfmLarge2X1",
+      "filename": "asset-17.png",
+      "bytes": 237302,
+      "sha256": "60f18061e69b03e492e7178c55f54e6d64533199b8bd10e3f70005283161ccf9",
+      "width": 1964,
+      "height": 1196,
+      "nodeIds": [
+        "466:28"
+      ],
+      "description": "Apple Mail laptop image beneath Careers caption"
+    },
+    {
+      "variable": "imgRailCopy1",
+      "filename": "asset-18.png",
+      "bytes": 1355149,
+      "sha256": "669c4cc569e39e7fc5d04f7c14fa20f96f3e512279a712a44b30fca336e190f5",
+      "width": 1368,
+      "height": 2873,
+      "nodeIds": [
+        "351:99"
+      ],
+      "description": "Redesigned Rail and Transit"
+    },
+    {
+      "variable": "imgGoldenGateSeismic1",
+      "filename": "asset-19.png",
+      "bytes": 906107,
+      "sha256": "782d55ea513177cf0b79bbb95bb7272db080e1b292506383cf7833fe4c14249d",
+      "width": 1368,
+      "height": 2469,
+      "nodeIds": [
+        "351:95"
+      ],
+      "description": "Golden Gate Bridge seismic retrofit case study"
+    },
+    {
+      "variable": "imgTechnologyCopy1",
+      "filename": "asset-20.png",
+      "bytes": 1146757,
+      "sha256": "b8366983cdb12b5f394d3e4d7b5bcc6cd1f6e665e1670ca0b44024028a2abc5d",
+      "width": 1368,
+      "height": 2049,
+      "nodeIds": [
+        "351:101"
+      ],
+      "description": "Redesigned Technology"
+    },
+    {
+      "variable": "img0Dd9Dccd134A4E0CA22B8Aca3E490A651",
+      "filename": "asset-21.png",
+      "bytes": 1442264,
+      "sha256": "a7a440e7a43e4308bbc6f99c7f3401965983e457faedf363881b497e44398eb6",
+      "width": 1804,
+      "height": 872,
+      "nodeIds": [
+        "474:10"
+      ],
+      "description": "Hand-drawn page sketches"
+    },
+    {
+      "variable": "imgGrayscaleTechnologyWebpageWireframe1",
+      "filename": "asset-22.png",
+      "bytes": 1248308,
+      "sha256": "042cb3607a820423007893278eb9961dfd7f88178edad5ab42f25eecde7f431c",
+      "width": 1056,
+      "height": 1490,
+      "nodeIds": [
+        "428:24"
+      ],
+      "description": "Technology wireframe"
+    },
+    {
+      "variable": "imgObayashiOurMarketsWebsiteWireframe1",
+      "filename": "asset-23.png",
+      "bytes": 1303000,
+      "sha256": "aa099de01f66774735f1bea3c34ae4b0b769861eb06453acb2bc20bd204cdb02",
+      "width": 895,
+      "height": 1756,
+      "nodeIds": [
+        "427:17"
+      ],
+      "description": "Our Markets wireframe"
+    },
+    {
+      "variable": "imgRailTransitWebsiteWireframe11",
+      "filename": "asset-24.png",
+      "bytes": 1316645,
+      "sha256": "538557f355d7b5dfa06e646baee54dee318212f13016159ac77d38106a76e592",
+      "width": 945,
+      "height": 1664,
+      "nodeIds": [
+        "427:21"
+      ],
+      "description": "Rail and Transit wireframe"
+    },
+    {
+      "variable": "imgLine61",
+      "filename": "asset-25.svg",
+      "bytes": 282,
+      "sha256": "0ccb2b4f71501993f3cbd9c69416ecf7a269677705f9280fd01806e78f3adc92",
+      "svgRoot": {
+        "width": "1200",
+        "height": "0.250105",
+        "viewBox": "0 0 1200 0.250105"
+      }
+    },
+    {
+      "variable": "imgLine69",
+      "filename": "asset-26.svg",
+      "bytes": 252,
+      "sha256": "3ac7af4cc63b5032313329395336e398ad38108971a13c7296a5ae9e9441dcd7",
+      "svgRoot": {
+        "width": "892",
+        "height": "0.25",
+        "viewBox": "0 0 892 0.25"
+      }
+    },
+    {
+      "variable": "imgScreenshot20261015At80523Pm1",
+      "filename": "asset-27.svg",
+      "bytes": 268,
+      "sha256": "cba7fa6d597cabbab66e17f0c6a7fd339b7dfe0fe1f8a3006bac6ff520219919",
+      "svgRoot": {
+        "width": "415.763",
+        "height": "312.566",
+        "viewBox": "0 0 415.763 312.566"
+      }
+    },
+    {
+      "variable": "imgStoryboardWhiteboardInDarkGreenPastelGreenBeigeSimpleAndMinimalStyle1",
+      "filename": "asset-28.svg",
+      "bytes": 252,
+      "sha256": "f8c69cf08425ab29d17c5c7d190239231f6cb285c728ab03deb9801c743e6d53",
+      "svgRoot": {
+        "width": "894",
+        "height": "371",
+        "viewBox": "0 0 894 371"
+      }
+    },
+    {
+      "variable": "imgDiverseTeamInterviewMontage1",
+      "filename": "asset-29.svg",
+      "bytes": 261,
+      "sha256": "2544ca5ae59f8461e9a941734e5a805db31da4ae9fc46fd48d7520d05c1b7049",
+      "svgRoot": {
+        "width": "886",
+        "height": "440.48",
+        "viewBox": "0 0 886 440.48"
+      }
+    },
+    {
+      "variable": "imgDiverseTeamInterviewMontage2",
+      "filename": "asset-30.svg",
+      "bytes": 268,
+      "sha256": "8f902cf55dc6b573d637a20cfa4a8721b79d1bf68961f3bd0fc38551b92e6f98",
+      "svgRoot": {
+        "width": "898.096",
+        "height": "446.021",
+        "viewBox": "0 0 898.096 446.021"
+      }
+    },
+    {
+      "variable": "imgScreenshot20260916At100243Am1",
+      "filename": "asset-31.svg",
+      "bytes": 273,
+      "sha256": "811a600c3105803eef7b8d9fa3e8ed3ce43f546e9afeea6356fa5a8d5c3092b5",
+      "svgRoot": {
+        "width": "278.74",
+        "height": "153.565",
+        "viewBox": "0 0 278.74 153.565"
+      }
+    },
+    {
+      "variable": "imgWebsitePlan1",
+      "filename": "asset-32.svg",
+      "bytes": 252,
+      "sha256": "53571fe672d2c2f19193bec3342d389eb3de56aca7f02b08805ee355f15605ed",
+      "svgRoot": {
+        "width": "894",
+        "height": "492",
+        "viewBox": "0 0 894 492"
+      }
+    },
+    {
+      "variable": "imgScreenshot20261014At40133Pm1",
+      "filename": "asset-33.svg",
+      "bytes": 276,
+      "sha256": "63f1a56b588b404284f2ec261026dec21551fabb10382938ee659996d097c47a",
+      "svgRoot": {
+        "width": "345.206",
+        "height": "277.891",
+        "viewBox": "0 0 345.206 277.891"
+      }
+    },
+    {
+      "variable": "imgScreenshot20261014At40829Pm1",
+      "filename": "asset-34.svg",
+      "bytes": 407,
+      "sha256": "e48c402c8d3e976f262127ee38a54db013342c796d01fc6fec52862d84974d1f",
+      "svgRoot": {
+        "width": "344.814",
+        "height": "265.69",
+        "viewBox": "0 0 344.814 265.69"
+      }
+    },
+    {
+      "variable": "imgObayashi1",
+      "filename": "asset-35.svg",
+      "bytes": 276,
+      "sha256": "c10b46ad2ed25c71555d3c156a6fb094f82cc4ba7ed3cd666dce02b85bc94af1",
+      "svgRoot": {
+        "width": "347.328",
+        "height": "359.073",
+        "viewBox": "0 0 347.328 359.073"
+      }
+    },
+    {
+      "variable": "imgScreenshot20261014At40058Pm1",
+      "filename": "asset-36.svg",
+      "bytes": 276,
+      "sha256": "662cac5bd8346b8beabf69d739e61a4081cc3340fb168236525d6eecb90da422",
+      "svgRoot": {
+        "width": "346.546",
+        "height": "333.486",
+        "viewBox": "0 0 346.546 333.486"
+      }
+    },
+    {
+      "variable": "imgOurMarketsCopy1",
+      "filename": "asset-37.svg",
+      "bytes": 244,
+      "sha256": "9ba26552345841598a90b40f19e9b8a5d32b3d7a5965e699125b51a60040a19a",
+      "svgRoot": {
+        "width": "491",
+        "height": "716",
+        "viewBox": "0 0 491 716"
+      }
+    }
+  ]
+}
