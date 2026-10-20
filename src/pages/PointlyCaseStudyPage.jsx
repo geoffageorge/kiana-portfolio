@@ -86,7 +86,7 @@ export default function PointlyCaseStudyPage({ onOpenImage }) {
 
   return <article className="pointly-case" data-figma-node="90:18">
     <header className="pointly-intro">
-      <div><p className="pointly-index">01 /</p><h1 data-figma-node="123:3">Point.ly</h1></div>
+      <div><p className="pointly-index">02 /</p><h1 data-figma-node="123:3">Point.ly</h1></div>
       <div className="pointly-intro__summary"><p data-figma-node="123:5">Turning fragmented loyalty points into new travel possibilities</p><p className="pointly-intro__team">UX@Berkeley project team</p></div>
     </header>
     <div className="pointly-project-details" data-figma-node="413:53">
