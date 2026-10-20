@@ -1,0 +1,2041 @@
+{
+  "id": "28:2",
+  "name": "Case Studies",
+  "type": "FRAME",
+  "visible": true,
+  "opacity": 1,
+  "x": 415,
+  "y": -12201,
+  "width": 1440,
+  "height": 1826,
+  "rotation": 0,
+  "absoluteBoundingBox": {
+    "x": 415,
+    "y": -12201,
+    "width": 1440,
+    "height": 1826
+  },
+  "fills": [
+    {
+      "type": "SOLID",
+      "visible": true,
+      "opacity": 1,
+      "blendMode": "NORMAL",
+      "color": {
+        "r": 1,
+        "g": 1,
+        "b": 1
+      },
+      "boundVariables": {}
+    }
+  ],
+  "strokes": [],
+  "strokeWeight": 1,
+  "strokeAlign": "INSIDE",
+  "effects": [],
+  "cornerRadius": 0,
+  "isMask": false,
+  "maskType": "ALPHA",
+  "clipsContent": true,
+  "layoutMode": "NONE",
+  "itemSpacing": 0,
+  "paddingTop": 0,
+  "paddingRight": 0,
+  "paddingBottom": 0,
+  "paddingLeft": 0,
+  "layoutSizingHorizontal": "FIXED",
+  "layoutSizingVertical": "FIXED",
+  "constraints": {
+    "horizontal": "MIN",
+    "vertical": "MIN"
+  },
+  "exportSettings": [
+    {
+      "format": "PNG",
+      "suffix": "",
+      "contentsOnly": true,
+      "colorProfile": "DOCUMENT",
+      "constraint": {
+        "type": "SCALE",
+        "value": 1
+      }
+    }
+  ],
+  "boundVariables": {},
+  "reactions": [],
+  "children": [
+    {
+      "id": "499:26",
+      "name": "Mask group",
+      "type": "GROUP",
+      "visible": true,
+      "opacity": 1,
+      "x": 130,
+      "y": 881,
+      "width": 577,
+      "height": 577,
+      "rotation": 0,
+      "absoluteBoundingBox": {
+        "x": 545,
+        "y": -11320,
+        "width": 577,
+        "height": 577
+      },
+      "effects": [],
+      "isMask": false,
+      "maskType": "ALPHA",
+      "layoutSizingHorizontal": "FIXED",
+      "layoutSizingVertical": "FIXED",
+      "exportSettings": [],
+      "boundVariables": {},
+      "reactions": [],
+      "children": [
+        {
+          "id": "499:23",
+          "name": "Rectangle 140",
+          "type": "RECTANGLE",
+          "visible": true,
+          "opacity": 1,
+          "x": 130,
+          "y": 881,
+          "width": 577,
+          "height": 577,
+          "rotation": 0,
+          "absoluteBoundingBox": {
+            "x": 545,
+            "y": -11320,
+            "width": 577,
+            "height": 577
+          },
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0.8509804010391235,
+                "g": 0.8509804010391235,
+                "b": 0.8509804010391235
+              },
+              "boundVariables": {}
+            }
+          ],
+          "strokes": [],
+          "strokeWeight": 1,
+          "strokeAlign": "INSIDE",
+          "effects": [],
+          "cornerRadius": 16,
+          "isMask": true,
+          "maskType": "ALPHA",
+          "layoutSizingHorizontal": "FIXED",
+          "layoutSizingVertical": "FIXED",
+          "constraints": {
+            "horizontal": "MIN",
+            "vertical": "MIN"
+          },
+          "exportSettings": [],
+          "boundVariables": {},
+          "reactions": []
+        }
+      ]
+    },
+    {
+      "id": "499:35",
+      "name": "Mask group",
+      "type": "GROUP",
+      "visible": true,
+      "opacity": 1,
+      "x": 129,
+      "y": 881,
+      "width": 577,
+      "height": 577,
+      "rotation": 0,
+      "absoluteBoundingBox": {
+        "x": 544,
+        "y": -11320,
+        "width": 577,
+        "height": 577
+      },
+      "effects": [],
+      "isMask": false,
+      "maskType": "ALPHA",
+      "layoutSizingHorizontal": "FIXED",
+      "layoutSizingVertical": "FIXED",
+      "exportSettings": [],
+      "boundVariables": {},
+      "reactions": [],
+      "children": [
+        {
+          "id": "499:33",
+          "name": "Rectangle 144",
+          "type": "RECTANGLE",
+          "visible": true,
+          "opacity": 1,
+          "x": 129,
+          "y": 881,
+          "width": 577,
+          "height": 577,
+          "rotation": 0,
+          "absoluteBoundingBox": {
+            "x": 544,
+            "y": -11320,
+            "width": 577,
+            "height": 577
+          },
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0.8509804010391235,
+                "g": 0.8509804010391235,
+                "b": 0.8509804010391235
+              },
+              "boundVariables": {}
+            }
+          ],
+          "strokes": [],
+          "strokeWeight": 1,
+          "strokeAlign": "INSIDE",
+          "effects": [],
+          "cornerRadius": 16,
+          "isMask": true,
+          "maskType": "ALPHA",
+          "layoutSizingHorizontal": "FIXED",
+          "layoutSizingVertical": "FIXED",
+          "constraints": {
+            "horizontal": "MIN",
+            "vertical": "MIN"
+          },
+          "exportSettings": [],
+          "boundVariables": {},
+          "reactions": []
+        },
+        {
+          "id": "499:22",
+          "name": "img_slide_6 1",
+          "type": "RECTANGLE",
+          "visible": true,
+          "opacity": 1,
+          "x": 1275,
+          "y": 841,
+          "width": 1363,
+          "height": 744,
+          "rotation": -180,
+          "absoluteBoundingBox": {
+            "x": 327,
+            "y": -11360,
+            "width": 1363,
+            "height": 744
+          },
+          "fills": [
+            {
+              "type": "IMAGE",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "scaleMode": "CROP",
+              "scalingFactor": 0.5,
+              "filters": {
+                "exposure": 0,
+                "contrast": 0,
+                "saturation": 0,
+                "temperature": 0,
+                "tint": 0,
+                "highlights": 0,
+                "shadows": 0
+              },
+              "imageTransform": [
+                [
+                  1,
+                  0,
+                  0.10867610573768616
+                ],
+                [
+                  0,
+                  0.9998589158058167,
+                  -0.04566068574786186
+                ]
+              ],
+              "imageHash": "4b54b22cd82abb2443c1d81739006f792498edf9"
+            }
+          ],
+          "strokes": [],
+          "strokeWeight": 1,
+          "strokeAlign": "INSIDE",
+          "effects": [],
+          "cornerRadius": 0,
+          "isMask": false,
+          "maskType": "ALPHA",
+          "layoutSizingHorizontal": "FIXED",
+          "layoutSizingVertical": "FIXED",
+          "constraints": {
+            "horizontal": "MIN",
+            "vertical": "MIN"
+          },
+          "exportSettings": [],
+          "boundVariables": {},
+          "reactions": []
+        }
+      ]
+    },
+    {
+      "id": "28:4",
+      "name": "Select Work",
+      "type": "TEXT",
+      "visible": true,
+      "opacity": 1,
+      "x": 129,
+      "y": 752,
+      "width": 472,
+      "height": 40,
+      "rotation": 0,
+      "absoluteBoundingBox": {
+        "x": 544,
+        "y": -11449,
+        "width": 472,
+        "height": 40
+      },
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0,
+            "g": 0,
+            "b": 0
+          },
+          "boundVariables": {}
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1,
+      "strokeAlign": "OUTSIDE",
+      "effects": [],
+      "isMask": false,
+      "maskType": "ALPHA",
+      "layoutSizingHorizontal": "FIXED",
+      "layoutSizingVertical": "FIXED",
+      "constraints": {
+        "horizontal": "MIN",
+        "vertical": "MIN"
+      },
+      "exportSettings": [],
+      "boundVariables": {},
+      "reactions": [],
+      "characters": "Select Work",
+      "fontName": {
+        "family": "Helvetica Neue",
+        "style": "Bold"
+      },
+      "fontSize": 38,
+      "fontWeight": 700,
+      "lineHeight": {
+        "unit": "PERCENT",
+        "value": 104.99999523162842
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "paragraphSpacing": 0,
+      "textAutoResize": "HEIGHT",
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "CENTER",
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE",
+      "hasMissingFont": true,
+      "hyperlink": null
+    },
+    {
+      "id": "28:15",
+      "name": "CASE STUDIES",
+      "type": "TEXT",
+      "visible": true,
+      "opacity": 1,
+      "x": 130,
+      "y": 800,
+      "width": 130,
+      "height": 22,
+      "rotation": 0,
+      "absoluteBoundingBox": {
+        "x": 545,
+        "y": -11401,
+        "width": 130,
+        "height": 22
+      },
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0,
+            "g": 0,
+            "b": 0
+          },
+          "boundVariables": {}
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1,
+      "strokeAlign": "OUTSIDE",
+      "effects": [],
+      "isMask": false,
+      "maskType": "ALPHA",
+      "layoutSizingHorizontal": "FIXED",
+      "layoutSizingVertical": "FIXED",
+      "constraints": {
+        "horizontal": "MIN",
+        "vertical": "MIN"
+      },
+      "exportSettings": [],
+      "boundVariables": {},
+      "reactions": [],
+      "characters": "CASE STUDIES",
+      "fontName": {
+        "family": "Fira Mono",
+        "style": "Regular"
+      },
+      "fontSize": 18,
+      "fontWeight": 400,
+      "lineHeight": {
+        "unit": "PERCENT",
+        "value": 120.00000476837158
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "paragraphSpacing": 0,
+      "textAutoResize": "WIDTH_AND_HEIGHT",
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "CENTER",
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE",
+      "hasMissingFont": false,
+      "hyperlink": null
+    },
+    {
+      "id": "28:17",
+      "name": "Select Work",
+      "type": "TEXT",
+      "visible": true,
+      "opacity": 1,
+      "x": 129,
+      "y": 1643,
+      "width": 472,
+      "height": 73,
+      "rotation": 0,
+      "absoluteBoundingBox": {
+        "x": 544,
+        "y": -10558,
+        "width": 472,
+        "height": 73
+      },
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1
+          },
+          "boundVariables": {}
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1,
+      "strokeAlign": "OUTSIDE",
+      "effects": [],
+      "isMask": false,
+      "maskType": "ALPHA",
+      "layoutSizingHorizontal": "FIXED",
+      "layoutSizingVertical": "FIXED",
+      "constraints": {
+        "horizontal": "MIN",
+        "vertical": "MIN"
+      },
+      "exportSettings": [],
+      "boundVariables": {},
+      "reactions": [],
+      "characters": "Select Work",
+      "fontName": {
+        "family": "Instrument Sans",
+        "style": "SemiBold",
+        "variationSettings": {
+          "wght": 600,
+          "wdth": 100
+        }
+      },
+      "fontSize": 36,
+      "fontWeight": 600,
+      "lineHeight": {
+        "unit": "PERCENT",
+        "value": 104.99999523162842
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "paragraphSpacing": 0,
+      "textAutoResize": "NONE",
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "CENTER",
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE",
+      "hasMissingFont": false,
+      "hyperlink": null
+    },
+    {
+      "id": "28:26",
+      "name": "CASE STUDIES",
+      "type": "TEXT",
+      "visible": true,
+      "opacity": 1,
+      "x": 130,
+      "y": 1703,
+      "width": 101,
+      "height": 17,
+      "rotation": 0,
+      "absoluteBoundingBox": {
+        "x": 545,
+        "y": -10498,
+        "width": 101,
+        "height": 17
+      },
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1
+          },
+          "boundVariables": {}
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1,
+      "strokeAlign": "OUTSIDE",
+      "effects": [],
+      "isMask": false,
+      "maskType": "ALPHA",
+      "layoutSizingHorizontal": "FIXED",
+      "layoutSizingVertical": "FIXED",
+      "constraints": {
+        "horizontal": "MIN",
+        "vertical": "MIN"
+      },
+      "exportSettings": [],
+      "boundVariables": {},
+      "reactions": [],
+      "characters": "CASE STUDIES",
+      "fontName": {
+        "family": "Fira Mono",
+        "style": "Regular"
+      },
+      "fontSize": 14,
+      "fontWeight": 400,
+      "lineHeight": {
+        "unit": "PERCENT",
+        "value": 120.00000476837158
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "paragraphSpacing": 0,
+      "textAutoResize": "WIDTH_AND_HEIGHT",
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "CENTER",
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE",
+      "hasMissingFont": false,
+      "hyperlink": null
+    },
+    {
+      "id": "28:28",
+      "name": "Rectangle 1",
+      "type": "RECTANGLE",
+      "visible": true,
+      "opacity": 1,
+      "x": 0,
+      "y": 1592,
+      "width": 1440,
+      "height": 234,
+      "rotation": 0,
+      "absoluteBoundingBox": {
+        "x": 415,
+        "y": -10609,
+        "width": 1440,
+        "height": 234
+      },
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0.9685174822807312,
+            "g": 0.9685174822807312,
+            "b": 0.9685174822807312
+          },
+          "boundVariables": {}
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1,
+      "strokeAlign": "INSIDE",
+      "effects": [],
+      "cornerRadius": 0,
+      "isMask": false,
+      "maskType": "ALPHA",
+      "layoutSizingHorizontal": "FIXED",
+      "layoutSizingVertical": "FIXED",
+      "constraints": {
+        "horizontal": "MIN",
+        "vertical": "MIN"
+      },
+      "exportSettings": [],
+      "boundVariables": {},
+      "reactions": []
+    },
+    {
+      "id": "28:29",
+      "name": "LINKEDIN",
+      "type": "TEXT",
+      "visible": true,
+      "opacity": 1,
+      "x": 1199,
+      "y": 1663,
+      "width": 72,
+      "height": 18,
+      "rotation": 0,
+      "absoluteBoundingBox": {
+        "x": 1614,
+        "y": -10538,
+        "width": 72,
+        "height": 18
+      },
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0,
+            "g": 0,
+            "b": 0
+          },
+          "boundVariables": {}
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1,
+      "strokeAlign": "OUTSIDE",
+      "effects": [],
+      "isMask": false,
+      "maskType": "ALPHA",
+      "layoutSizingHorizontal": "FIXED",
+      "layoutSizingVertical": "FIXED",
+      "constraints": {
+        "horizontal": "MIN",
+        "vertical": "MIN"
+      },
+      "exportSettings": [],
+      "boundVariables": {},
+      "reactions": [],
+      "characters": "LINKEDIN ",
+      "fontName": {
+        "family": "Fira Mono",
+        "style": "Regular"
+      },
+      "fontSize": 15,
+      "fontWeight": 400,
+      "lineHeight": {
+        "unit": "PERCENT",
+        "value": 120.00000476837158
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "paragraphSpacing": 0,
+      "textAutoResize": "WIDTH_AND_HEIGHT",
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "CENTER",
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE",
+      "hasMissingFont": false,
+      "hyperlink": null
+    },
+    {
+      "id": "28:30",
+      "name": "KIANAGEO@UW.EDU",
+      "type": "TEXT",
+      "visible": true,
+      "opacity": 1,
+      "x": 1136,
+      "y": 1692,
+      "width": 135,
+      "height": 18,
+      "rotation": 0,
+      "absoluteBoundingBox": {
+        "x": 1551,
+        "y": -10509,
+        "width": 135,
+        "height": 18
+      },
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0,
+            "g": 0,
+            "b": 0
+          },
+          "boundVariables": {}
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1,
+      "strokeAlign": "OUTSIDE",
+      "effects": [],
+      "isMask": false,
+      "maskType": "ALPHA",
+      "layoutSizingHorizontal": "FIXED",
+      "layoutSizingVertical": "FIXED",
+      "constraints": {
+        "horizontal": "MIN",
+        "vertical": "MIN"
+      },
+      "exportSettings": [],
+      "boundVariables": {},
+      "reactions": [],
+      "characters": "KIANAGEO@UW.EDU",
+      "fontName": {
+        "family": "Fira Mono",
+        "style": "Regular"
+      },
+      "fontSize": 15,
+      "fontWeight": 400,
+      "lineHeight": {
+        "unit": "PERCENT",
+        "value": 120.00000476837158
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "paragraphSpacing": 0,
+      "textAutoResize": "WIDTH_AND_HEIGHT",
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "CENTER",
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE",
+      "hasMissingFont": false,
+      "hyperlink": null
+    },
+    {
+      "id": "28:31",
+      "name": "Logo 2",
+      "type": "FRAME",
+      "visible": true,
+      "opacity": 1,
+      "x": 130,
+      "y": 1653,
+      "width": 57,
+      "height": 38,
+      "rotation": 0,
+      "absoluteBoundingBox": {
+        "x": 545,
+        "y": -10548,
+        "width": 57,
+        "height": 38
+      },
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": false,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1
+          },
+          "boundVariables": {}
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1,
+      "strokeAlign": "INSIDE",
+      "effects": [],
+      "cornerRadius": 0,
+      "isMask": false,
+      "maskType": "ALPHA",
+      "clipsContent": true,
+      "layoutMode": "NONE",
+      "itemSpacing": 0,
+      "paddingTop": 0,
+      "paddingRight": 0,
+      "paddingBottom": 0,
+      "paddingLeft": 0,
+      "layoutSizingHorizontal": "FIXED",
+      "layoutSizingVertical": "FIXED",
+      "constraints": {
+        "horizontal": "MIN",
+        "vertical": "MIN"
+      },
+      "exportSettings": [],
+      "boundVariables": {},
+      "reactions": [],
+      "children": [
+        {
+          "id": "28:32",
+          "name": "Vector",
+          "type": "VECTOR",
+          "visible": true,
+          "opacity": 1,
+          "x": 3.1371514797210693,
+          "y": 1.6601427793502808,
+          "width": 16.4162540435791,
+          "height": 16.41814613342285,
+          "rotation": 0,
+          "absoluteBoundingBox": {
+            "x": 548.1371459960938,
+            "y": -10546.33984375,
+            "width": 16.4162540435791,
+            "height": 16.41814613342285
+          },
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0.5647059082984924,
+                "g": 0.7019608020782471,
+                "b": 0.7490196228027344
+              },
+              "boundVariables": {}
+            }
+          ],
+          "strokes": [],
+          "strokeWeight": 1,
+          "strokeAlign": "INSIDE",
+          "effects": [],
+          "cornerRadius": 0,
+          "isMask": false,
+          "maskType": "ALPHA",
+          "layoutSizingHorizontal": "FIXED",
+          "layoutSizingVertical": "FIXED",
+          "constraints": {
+            "horizontal": "SCALE",
+            "vertical": "SCALE"
+          },
+          "exportSettings": [],
+          "boundVariables": {},
+          "reactions": []
+        },
+        {
+          "id": "28:33",
+          "name": "Vector",
+          "type": "VECTOR",
+          "visible": true,
+          "opacity": 1,
+          "x": 20.958616256713867,
+          "y": 1.6601427793502808,
+          "width": 16.418912887573242,
+          "height": 16.41814613342285,
+          "rotation": 0,
+          "absoluteBoundingBox": {
+            "x": 565.9586181640625,
+            "y": -10546.33984375,
+            "width": 16.418912887573242,
+            "height": 16.41814613342285
+          },
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0.9254902005195618,
+                "g": 0.16078431904315948,
+                "b": 0.48235294222831726
+              },
+              "boundVariables": {}
+            }
+          ],
+          "strokes": [],
+          "strokeWeight": 1,
+          "strokeAlign": "INSIDE",
+          "effects": [],
+          "cornerRadius": 0,
+          "isMask": false,
+          "maskType": "ALPHA",
+          "layoutSizingHorizontal": "FIXED",
+          "layoutSizingVertical": "FIXED",
+          "constraints": {
+            "horizontal": "SCALE",
+            "vertical": "SCALE"
+          },
+          "exportSettings": [],
+          "boundVariables": {},
+          "reactions": []
+        },
+        {
+          "id": "28:34",
+          "name": "Vector",
+          "type": "VECTOR",
+          "visible": true,
+          "opacity": 1,
+          "x": 37.377525329589844,
+          "y": 35.78470993041992,
+          "width": 16.418912887573242,
+          "height": 16.41814613342285,
+          "rotation": 180,
+          "absoluteBoundingBox": {
+            "x": 565.958589553833,
+            "y": -10528.632989883423,
+            "width": 16.418912887573242,
+            "height": 16.41814613342285
+          },
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0.572549045085907,
+                "g": 0.8274509906768799,
+                "b": 0.7843137383460999
+              },
+              "boundVariables": {}
+            }
+          ],
+          "strokes": [],
+          "strokeWeight": 1,
+          "strokeAlign": "INSIDE",
+          "effects": [],
+          "cornerRadius": 0,
+          "isMask": false,
+          "maskType": "ALPHA",
+          "layoutSizingHorizontal": "FIXED",
+          "layoutSizingVertical": "FIXED",
+          "constraints": {
+            "horizontal": "SCALE",
+            "vertical": "SCALE"
+          },
+          "exportSettings": [],
+          "boundVariables": {},
+          "reactions": []
+        },
+        {
+          "id": "28:35",
+          "name": "Vector",
+          "type": "VECTOR",
+          "visible": true,
+          "opacity": 1,
+          "x": 38.5861701965332,
+          "y": 19.36921501159668,
+          "width": 16.418914794921875,
+          "height": 16.41814613342285,
+          "rotation": 0,
+          "absoluteBoundingBox": {
+            "x": 583.586181640625,
+            "y": -10528.630859375,
+            "width": 16.418914794921875,
+            "height": 16.41814613342285
+          },
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0.6784313917160034,
+                "g": 0.8784313797950745,
+                "b": 0.3333333432674408
+              },
+              "boundVariables": {}
+            }
+          ],
+          "strokes": [],
+          "strokeWeight": 1,
+          "strokeAlign": "INSIDE",
+          "effects": [],
+          "cornerRadius": 0,
+          "isMask": false,
+          "maskType": "ALPHA",
+          "layoutSizingHorizontal": "FIXED",
+          "layoutSizingVertical": "FIXED",
+          "constraints": {
+            "horizontal": "SCALE",
+            "vertical": "SCALE"
+          },
+          "exportSettings": [],
+          "boundVariables": {},
+          "reactions": []
+        },
+        {
+          "id": "28:36",
+          "name": "Vector",
+          "type": "VECTOR",
+          "visible": true,
+          "opacity": 1,
+          "x": 19.55340576171875,
+          "y": 35.78470993041992,
+          "width": 16.4162540435791,
+          "height": 16.41814613342285,
+          "rotation": 180,
+          "absoluteBoundingBox": {
+            "x": 548.1371517181396,
+            "y": -10528.632989883423,
+            "width": 16.4162540435791,
+            "height": 16.41814613342285
+          },
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0.9647058844566345,
+                "g": 0.572549045085907,
+                "b": 0.11764705926179886
+              },
+              "boundVariables": {}
+            }
+          ],
+          "strokes": [],
+          "strokeWeight": 1,
+          "strokeAlign": "INSIDE",
+          "effects": [],
+          "cornerRadius": 0,
+          "isMask": false,
+          "maskType": "ALPHA",
+          "layoutSizingHorizontal": "FIXED",
+          "layoutSizingVertical": "FIXED",
+          "constraints": {
+            "horizontal": "SCALE",
+            "vertical": "SCALE"
+          },
+          "exportSettings": [],
+          "boundVariables": {},
+          "reactions": []
+        },
+        {
+          "id": "28:37",
+          "name": "Vector",
+          "type": "VECTOR",
+          "visible": true,
+          "opacity": 1,
+          "x": 37.47846984863281,
+          "y": 9.161332130432129,
+          "width": 17.521299362182617,
+          "height": 8.916956901550293,
+          "rotation": 0,
+          "absoluteBoundingBox": {
+            "x": 582.4784545898438,
+            "y": -10538.8388671875,
+            "width": 17.521299362182617,
+            "height": 8.916956901550293
+          },
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0.95686274766922,
+                "g": 0.8117647171020508,
+                "b": 0.0784313753247261
+              },
+              "boundVariables": {}
+            }
+          ],
+          "strokes": [],
+          "strokeWeight": 1,
+          "strokeAlign": "INSIDE",
+          "effects": [],
+          "cornerRadius": 0,
+          "isMask": false,
+          "maskType": "ALPHA",
+          "layoutSizingHorizontal": "FIXED",
+          "layoutSizingVertical": "FIXED",
+          "constraints": {
+            "horizontal": "SCALE",
+            "vertical": "SCALE"
+          },
+          "exportSettings": [],
+          "boundVariables": {},
+          "reactions": []
+        }
+      ]
+    },
+    {
+      "id": "28:38",
+      "name": "KIANA GEORGE / UX DESIGN + INSIGHTS",
+      "type": "TEXT",
+      "visible": true,
+      "opacity": 1,
+      "x": 210,
+      "y": 1667,
+      "width": 324,
+      "height": 18,
+      "rotation": 0,
+      "absoluteBoundingBox": {
+        "x": 625,
+        "y": -10534,
+        "width": 324,
+        "height": 18
+      },
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0,
+            "g": 0,
+            "b": 0
+          },
+          "boundVariables": {}
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1,
+      "strokeAlign": "OUTSIDE",
+      "effects": [],
+      "isMask": false,
+      "maskType": "ALPHA",
+      "layoutSizingHorizontal": "FIXED",
+      "layoutSizingVertical": "FIXED",
+      "constraints": {
+        "horizontal": "MIN",
+        "vertical": "MIN"
+      },
+      "exportSettings": [],
+      "boundVariables": {},
+      "reactions": [],
+      "characters": "KIANA GEORGE  / UX DESIGN + INSIGHTS ",
+      "fontName": {
+        "family": "Fira Mono",
+        "style": "Regular"
+      },
+      "fontSize": 15,
+      "fontWeight": 400,
+      "lineHeight": {
+        "unit": "PERCENT",
+        "value": 120.00000476837158
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "paragraphSpacing": 0,
+      "textAutoResize": "WIDTH_AND_HEIGHT",
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "CENTER",
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE",
+      "hasMissingFont": false,
+      "hyperlink": null
+    },
+    {
+      "id": "499:21",
+      "name": "Line 69",
+      "type": "LINE",
+      "visible": true,
+      "opacity": 1,
+      "x": 133,
+      "y": 854,
+      "width": 1177,
+      "height": 0,
+      "rotation": -5.008956538086317e-06,
+      "absoluteBoundingBox": {
+        "x": 548,
+        "y": -11347,
+        "width": 1177,
+        "height": 0.00010289661622664426
+      },
+      "fills": [],
+      "strokes": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0,
+            "g": 0,
+            "b": 0
+          },
+          "boundVariables": {}
+        }
+      ],
+      "strokeWeight": 0.5,
+      "strokeAlign": "CENTER",
+      "effects": [],
+      "isMask": false,
+      "maskType": "ALPHA",
+      "layoutSizingHorizontal": "FIXED",
+      "layoutSizingVertical": "FIXED",
+      "constraints": {
+        "horizontal": "MIN",
+        "vertical": "MIN"
+      },
+      "exportSettings": [
+        {
+          "format": "PNG",
+          "suffix": "",
+          "contentsOnly": true,
+          "colorProfile": "DOCUMENT",
+          "constraint": {
+            "type": "SCALE",
+            "value": 1
+          }
+        }
+      ],
+      "boundVariables": {},
+      "reactions": []
+    },
+    {
+      "id": "499:24",
+      "name": "Rectangle 141",
+      "type": "RECTANGLE",
+      "visible": true,
+      "opacity": 1,
+      "x": 733,
+      "y": 881,
+      "width": 577,
+      "height": 577,
+      "rotation": 0,
+      "absoluteBoundingBox": {
+        "x": 1148,
+        "y": -11320,
+        "width": 577,
+        "height": 577
+      },
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0.5333333611488342,
+            "g": 0.8117647171020508,
+            "b": 0.9921568632125854
+          },
+          "boundVariables": {}
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1,
+      "strokeAlign": "INSIDE",
+      "effects": [],
+      "cornerRadius": 16,
+      "isMask": false,
+      "maskType": "ALPHA",
+      "layoutSizingHorizontal": "FIXED",
+      "layoutSizingVertical": "FIXED",
+      "constraints": {
+        "horizontal": "MIN",
+        "vertical": "MIN"
+      },
+      "exportSettings": [],
+      "boundVariables": {},
+      "reactions": []
+    },
+    {
+      "id": "123:3",
+      "name": "Point.ly Title",
+      "type": "TEXT",
+      "visible": true,
+      "opacity": 1,
+      "x": 182,
+      "y": 977,
+      "width": 472,
+      "height": 76,
+      "rotation": 0,
+      "absoluteBoundingBox": {
+        "x": 597,
+        "y": -11224,
+        "width": 472,
+        "height": 76
+      },
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1
+          },
+          "boundVariables": {}
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1,
+      "strokeAlign": "OUTSIDE",
+      "effects": [],
+      "isMask": false,
+      "maskType": "ALPHA",
+      "layoutSizingHorizontal": "FIXED",
+      "layoutSizingVertical": "FIXED",
+      "constraints": {
+        "horizontal": "MIN",
+        "vertical": "MIN"
+      },
+      "exportSettings": [],
+      "boundVariables": {},
+      "reactions": [],
+      "characters": "Obayashi",
+      "fontName": {
+        "family": "Inter",
+        "style": "Bold",
+        "variationSettings": {
+          "wght": 700,
+          "slnt": 0
+        }
+      },
+      "fontSize": 50,
+      "fontWeight": 700,
+      "lineHeight": {
+        "unit": "PERCENT",
+        "value": 104.99999523162842
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": -2
+      },
+      "paragraphSpacing": 0,
+      "textAutoResize": "NONE",
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "TOP",
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE",
+      "hasMissingFont": false,
+      "hyperlink": null
+    },
+    {
+      "id": "123:6",
+      "name": "01 /",
+      "type": "TEXT",
+      "visible": true,
+      "opacity": 1,
+      "x": 188,
+      "y": 944,
+      "width": 44,
+      "height": 22,
+      "rotation": 0,
+      "absoluteBoundingBox": {
+        "x": 603,
+        "y": -11257,
+        "width": 44,
+        "height": 22
+      },
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1
+          },
+          "boundVariables": {}
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1,
+      "strokeAlign": "OUTSIDE",
+      "effects": [],
+      "isMask": false,
+      "maskType": "ALPHA",
+      "layoutSizingHorizontal": "FIXED",
+      "layoutSizingVertical": "FIXED",
+      "constraints": {
+        "horizontal": "MIN",
+        "vertical": "MIN"
+      },
+      "exportSettings": [],
+      "boundVariables": {},
+      "reactions": [],
+      "characters": "01 /",
+      "fontName": {
+        "family": "Fira Mono",
+        "style": "Regular"
+      },
+      "fontSize": 18,
+      "fontWeight": 400,
+      "lineHeight": {
+        "unit": "PERCENT",
+        "value": 120.00000476837158
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "paragraphSpacing": 0,
+      "textAutoResize": "WIDTH_AND_HEIGHT",
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "CENTER",
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE",
+      "hasMissingFont": false,
+      "hyperlink": null
+    },
+    {
+      "id": "499:37",
+      "name": "NORTH AMERICAN  WEBSITE",
+      "type": "TEXT",
+      "visible": true,
+      "opacity": 1,
+      "x": 188,
+      "y": 1061,
+      "width": 162,
+      "height": 50,
+      "rotation": 0,
+      "absoluteBoundingBox": {
+        "x": 603,
+        "y": -11140,
+        "width": 162,
+        "height": 50
+      },
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1
+          },
+          "boundVariables": {}
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1,
+      "strokeAlign": "OUTSIDE",
+      "effects": [],
+      "isMask": false,
+      "maskType": "ALPHA",
+      "layoutSizingHorizontal": "FIXED",
+      "layoutSizingVertical": "FIXED",
+      "constraints": {
+        "horizontal": "MIN",
+        "vertical": "MIN"
+      },
+      "exportSettings": [],
+      "boundVariables": {},
+      "reactions": [],
+      "characters": "NORTH AMERICAN  WEBSITE ",
+      "fontName": {
+        "family": "Fira Mono",
+        "style": "Regular"
+      },
+      "fontSize": 18,
+      "fontWeight": 400,
+      "lineHeight": {
+        "unit": "PIXELS",
+        "value": 25
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "paragraphSpacing": 0,
+      "textAutoResize": "WIDTH_AND_HEIGHT",
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "CENTER",
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE",
+      "hasMissingFont": false,
+      "hyperlink": null
+    },
+    {
+      "id": "499:51",
+      "name": "Point.ly Title",
+      "type": "TEXT",
+      "visible": true,
+      "opacity": 1,
+      "x": 775,
+      "y": 977,
+      "width": 472,
+      "height": 52,
+      "rotation": 0,
+      "absoluteBoundingBox": {
+        "x": 1190,
+        "y": -11224,
+        "width": 472,
+        "height": 52
+      },
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0,
+            "g": 0,
+            "b": 0
+          },
+          "boundVariables": {}
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1,
+      "strokeAlign": "OUTSIDE",
+      "effects": [],
+      "isMask": false,
+      "maskType": "ALPHA",
+      "layoutSizingHorizontal": "FIXED",
+      "layoutSizingVertical": "FIXED",
+      "constraints": {
+        "horizontal": "MIN",
+        "vertical": "MIN"
+      },
+      "exportSettings": [],
+      "boundVariables": {},
+      "reactions": [],
+      "characters": "Point.ly",
+      "fontName": {
+        "family": "Inter",
+        "style": "Bold",
+        "variationSettings": {
+          "wght": 700,
+          "slnt": 0
+        }
+      },
+      "fontSize": 50,
+      "fontWeight": 700,
+      "lineHeight": {
+        "unit": "PERCENT",
+        "value": 104.99999523162842
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": -2
+      },
+      "paragraphSpacing": 0,
+      "textAutoResize": "HEIGHT",
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "TOP",
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE",
+      "hasMissingFont": false,
+      "hyperlink": null
+    },
+    {
+      "id": "499:52",
+      "name": "02 /",
+      "type": "TEXT",
+      "visible": true,
+      "opacity": 1,
+      "x": 781,
+      "y": 944,
+      "width": 44,
+      "height": 22,
+      "rotation": 0,
+      "absoluteBoundingBox": {
+        "x": 1196,
+        "y": -11257,
+        "width": 44,
+        "height": 22
+      },
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0,
+            "g": 0,
+            "b": 0
+          },
+          "boundVariables": {}
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1,
+      "strokeAlign": "OUTSIDE",
+      "effects": [],
+      "isMask": false,
+      "maskType": "ALPHA",
+      "layoutSizingHorizontal": "FIXED",
+      "layoutSizingVertical": "FIXED",
+      "constraints": {
+        "horizontal": "MIN",
+        "vertical": "MIN"
+      },
+      "exportSettings": [],
+      "boundVariables": {},
+      "reactions": [],
+      "characters": "02 /",
+      "fontName": {
+        "family": "Fira Mono",
+        "style": "Regular"
+      },
+      "fontSize": 18,
+      "fontWeight": 400,
+      "lineHeight": {
+        "unit": "PERCENT",
+        "value": 120.00000476837158
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "paragraphSpacing": 0,
+      "textAutoResize": "HEIGHT",
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "CENTER",
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE",
+      "hasMissingFont": false,
+      "hyperlink": null
+    },
+    {
+      "id": "499:53",
+      "name": "WORKING MVP",
+      "type": "TEXT",
+      "visible": true,
+      "opacity": 1,
+      "x": 781,
+      "y": 1061,
+      "width": 162,
+      "height": 50,
+      "rotation": 0,
+      "absoluteBoundingBox": {
+        "x": 1196,
+        "y": -11140,
+        "width": 162,
+        "height": 50
+      },
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0,
+            "g": 0,
+            "b": 0
+          },
+          "boundVariables": {}
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1,
+      "strokeAlign": "OUTSIDE",
+      "effects": [],
+      "isMask": false,
+      "maskType": "ALPHA",
+      "layoutSizingHorizontal": "FIXED",
+      "layoutSizingVertical": "FIXED",
+      "constraints": {
+        "horizontal": "MIN",
+        "vertical": "MIN"
+      },
+      "exportSettings": [],
+      "boundVariables": {},
+      "reactions": [],
+      "characters": "WORKING \nMVP",
+      "fontName": {
+        "family": "Fira Mono",
+        "style": "Regular"
+      },
+      "fontSize": 18,
+      "fontWeight": 400,
+      "lineHeight": {
+        "unit": "PIXELS",
+        "value": 25
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "paragraphSpacing": 0,
+      "textAutoResize": "HEIGHT",
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "CENTER",
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE",
+      "hasMissingFont": false,
+      "hyperlink": null
+    },
+    {
+      "id": "499:47",
+      "name": "Mask group",
+      "type": "GROUP",
+      "visible": true,
+      "opacity": 1,
+      "x": 887.917236328125,
+      "y": 1015,
+      "width": 422.0827941894531,
+      "height": 397,
+      "rotation": 0,
+      "absoluteBoundingBox": {
+        "x": 1302.917236328125,
+        "y": -11186,
+        "width": 422.0827941894531,
+        "height": 397
+      },
+      "effects": [],
+      "isMask": false,
+      "maskType": "ALPHA",
+      "layoutSizingHorizontal": "FIXED",
+      "layoutSizingVertical": "FIXED",
+      "exportSettings": [],
+      "boundVariables": {},
+      "reactions": [],
+      "children": [
+        {
+          "id": "499:46",
+          "name": "Rectangle 146",
+          "type": "RECTANGLE",
+          "visible": true,
+          "opacity": 1,
+          "x": 887.9172113314271,
+          "y": 1015,
+          "width": 422.0827941894531,
+          "height": 397,
+          "rotation": 0,
+          "absoluteBoundingBox": {
+            "x": 1302.917236328125,
+            "y": -11186,
+            "width": 422.0827941894531,
+            "height": 397
+          },
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0.8509804010391235,
+                "g": 0.8509804010391235,
+                "b": 0.8509804010391235
+              },
+              "boundVariables": {}
+            }
+          ],
+          "strokes": [],
+          "strokeWeight": 1,
+          "strokeAlign": "INSIDE",
+          "effects": [],
+          "cornerRadius": 0,
+          "isMask": true,
+          "maskType": "ALPHA",
+          "layoutSizingHorizontal": "FIXED",
+          "layoutSizingVertical": "FIXED",
+          "constraints": {
+            "horizontal": "MIN",
+            "vertical": "MIN"
+          },
+          "exportSettings": [],
+          "boundVariables": {},
+          "reactions": []
+        },
+        {
+          "id": "499:50",
+          "name": "Group 122",
+          "type": "GROUP",
+          "visible": true,
+          "opacity": 1,
+          "x": 934.569580078125,
+          "y": 1069.095703125,
+          "width": 533.2705688476562,
+          "height": 324.7411193847656,
+          "rotation": 0,
+          "absoluteBoundingBox": {
+            "x": 1349.569580078125,
+            "y": -11131.904296875,
+            "width": 533.2705688476562,
+            "height": 324.7411193847656
+          },
+          "effects": [],
+          "isMask": false,
+          "maskType": "ALPHA",
+          "layoutSizingHorizontal": "FIXED",
+          "layoutSizingVertical": "FIXED",
+          "exportSettings": [],
+          "boundVariables": {},
+          "reactions": [],
+          "children": [
+            {
+              "id": "499:43",
+              "name": "apple_intelligence__bqi8tl754cfm_large_2x 2",
+              "type": "RECTANGLE",
+              "visible": true,
+              "opacity": 1,
+              "x": 934.5695340037346,
+              "y": 1069.0954196229577,
+              "width": 533.2705688476562,
+              "height": 324.7411193847656,
+              "rotation": 0,
+              "absoluteBoundingBox": {
+                "x": 1349.569580078125,
+                "y": -11131.904296875,
+                "width": 533.2705688476562,
+                "height": 324.7411193847656
+              },
+              "fills": [
+                {
+                  "type": "IMAGE",
+                  "visible": true,
+                  "opacity": 1,
+                  "blendMode": "NORMAL",
+                  "scaleMode": "FILL",
+                  "scalingFactor": 0.5,
+                  "rotation": 0,
+                  "filters": {
+                    "exposure": 0,
+                    "contrast": 0,
+                    "saturation": 0,
+                    "temperature": 0,
+                    "tint": 0,
+                    "highlights": 0,
+                    "shadows": 0
+                  },
+                  "imageTransform": [
+                    [
+                      1,
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      1,
+                      0
+                    ]
+                  ],
+                  "imageHash": "f3c1309edb31c700e1760ba1d9273b5fbdf743e6"
+                }
+              ],
+              "strokes": [],
+              "strokeWeight": 1,
+              "strokeAlign": "INSIDE",
+              "effects": [],
+              "cornerRadius": 0,
+              "isMask": false,
+              "maskType": "ALPHA",
+              "layoutSizingHorizontal": "FIXED",
+              "layoutSizingVertical": "FIXED",
+              "constraints": {
+                "horizontal": "MIN",
+                "vertical": "MIN"
+              },
+              "exportSettings": [],
+              "boundVariables": {},
+              "reactions": []
+            }
+          ]
+        },
+        {
+          "id": "499:45",
+          "name": "Mask group",
+          "type": "GROUP",
+          "visible": true,
+          "opacity": 1,
+          "x": 964.33544921875,
+          "y": 1061,
+          "width": 469.0379638671875,
+          "height": 301.26666259765625,
+          "rotation": 0,
+          "absoluteBoundingBox": {
+            "x": 1379.33544921875,
+            "y": -11140,
+            "width": 469.0379638671875,
+            "height": 301.26666259765625
+          },
+          "effects": [],
+          "isMask": false,
+          "maskType": "ALPHA",
+          "layoutSizingHorizontal": "FIXED",
+          "layoutSizingVertical": "FIXED",
+          "exportSettings": [],
+          "boundVariables": {},
+          "reactions": [],
+          "children": [
+            {
+              "id": "499:44",
+              "name": "Rectangle 145",
+              "type": "RECTANGLE",
+              "visible": true,
+              "opacity": 1,
+              "x": 964.3354010283947,
+              "y": 1061,
+              "width": 469.0379638671875,
+              "height": 301.26666259765625,
+              "rotation": 0,
+              "absoluteBoundingBox": {
+                "x": 1379.33544921875,
+                "y": -11140,
+                "width": 469.0379638671875,
+                "height": 301.26666259765625
+              },
+              "fills": [
+                {
+                  "type": "SOLID",
+                  "visible": true,
+                  "opacity": 1,
+                  "blendMode": "NORMAL",
+                  "color": {
+                    "r": 0.8509804010391235,
+                    "g": 0.8509804010391235,
+                    "b": 0.8509804010391235
+                  },
+                  "boundVariables": {}
+                }
+              ],
+              "strokes": [],
+              "strokeWeight": 1,
+              "strokeAlign": "INSIDE",
+              "effects": [],
+              "cornerRadius": 0,
+              "isMask": true,
+              "maskType": "ALPHA",
+              "layoutSizingHorizontal": "FIXED",
+              "layoutSizingVertical": "FIXED",
+              "constraints": {
+                "horizontal": "MIN",
+                "vertical": "MIN"
+              },
+              "exportSettings": [],
+              "boundVariables": {},
+              "reactions": []
+            },
+            {
+              "id": "499:42",
+              "name": "Frame 3 (2) 1",
+              "type": "RECTANGLE",
+              "visible": true,
+              "opacity": 1,
+              "x": 983.9416389465332,
+              "y": 1079.4171047210693,
+              "width": 437.9026794433594,
+              "height": 715.820068359375,
+              "rotation": 0,
+              "absoluteBoundingBox": {
+                "x": 1398.941650390625,
+                "y": -11121.5830078125,
+                "width": 437.9026794433594,
+                "height": 715.820068359375
+              },
+              "fills": [
+                {
+                  "type": "IMAGE",
+                  "visible": true,
+                  "opacity": 1,
+                  "blendMode": "NORMAL",
+                  "scaleMode": "FILL",
+                  "scalingFactor": 0.5,
+                  "rotation": 0,
+                  "filters": {
+                    "exposure": 0,
+                    "contrast": 0,
+                    "saturation": 0,
+                    "temperature": 0,
+                    "tint": 0,
+                    "highlights": 0,
+                    "shadows": 0
+                  },
+                  "imageTransform": [
+                    [
+                      1,
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      1,
+                      0
+                    ]
+                  ],
+                  "imageHash": "3abd11ccbdd626a2438cee9201ab1ec7f13629cb"
+                }
+              ],
+              "strokes": [],
+              "strokeWeight": 1,
+              "strokeAlign": "INSIDE",
+              "effects": [
+                {
+                  "type": "DROP_SHADOW",
+                  "visible": true,
+                  "radius": 4,
+                  "boundVariables": {},
+                  "color": {
+                    "r": 0,
+                    "g": 0,
+                    "b": 0,
+                    "a": 0.25
+                  },
+                  "offset": {
+                    "x": 4,
+                    "y": 4
+                  },
+                  "spread": 0,
+                  "blendMode": "NORMAL",
+                  "showShadowBehindNode": false
+                }
+              ],
+              "cornerRadius": 0,
+              "isMask": false,
+              "maskType": "ALPHA",
+              "layoutSizingHorizontal": "FIXED",
+              "layoutSizingVertical": "FIXED",
+              "constraints": {
+                "horizontal": "MIN",
+                "vertical": "MIN"
+              },
+              "exportSettings": [],
+              "boundVariables": {},
+              "reactions": []
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

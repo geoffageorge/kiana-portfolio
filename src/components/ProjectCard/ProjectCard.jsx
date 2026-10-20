@@ -1,8 +1,18 @@
 import './ProjectCard.css';
+import ProjectArtwork from './ProjectArtwork.jsx';
 
 export default function ProjectCard({ project, onSelect }) {
   const accessibleLabel = `View project ${project.number}: ${project.title}`;
-  const contents = (
+  const contents = project.homeTile ? (
+    <>
+      <ProjectArtwork variant={project.homeTile.artwork} />
+      <div className="project-card__overlay">
+        <p className="project-card__number" data-figma-node={project.number === '01' ? '123:6' : '499:52'}>{project.number} /</p>
+        <h3 data-figma-node={project.number === '01' ? '123:3' : '499:51'}>{project.homeTile.title}</h3>
+        <p className="project-card__summary" data-figma-node={project.number === '01' ? '499:37' : '499:53'}>{project.homeTile.caption.map(line => <span key={line}>{line}</span>)}</p>
+      </div>
+    </>
+  ) : (
     <>
       <div className="project-card__image-wrap"><img src={project.image} alt={project.imageAlt} style={{ objectPosition: project.imagePosition ?? 'center' }} width="640" height="640" loading="lazy" decoding="async" /></div>
       <div className="project-card__caption">
@@ -15,7 +25,7 @@ export default function ProjectCard({ project, onSelect }) {
     </>
   );
   return (
-    <article className="project-card">
+    <article className={`project-card${project.homeTile ? ` project-card--figma project-card--${project.homeTile.artwork}` : ''}`}>
       {project.caseStudyUrl
         ? <a className="project-card__link" href={project.caseStudyUrl} aria-label={accessibleLabel}>{contents}</a>
         : <button className="project-card__link" type="button" onClick={() => onSelect(project)} aria-label={accessibleLabel}>{contents}</button>}

@@ -16,7 +16,7 @@ export default defineConfig({
     { name: 'mobile', use: { ...devices['iPhone 13'], defaultBrowserType: 'chromium', channel: 'chrome' } },
     ...(process.env.PORTFOLIO_TEST_WEBKIT === '1' ? [{
       name: 'safari-webkit',
-      testMatch: ['obayashi-design.spec.js', 'pointly-design.spec.js'],
+      testMatch: ['obayashi-design.spec.js', 'pointly-design.spec.js', 'home-about-design.spec.js'],
       use: { browserName: 'webkit', viewport: { width: 1440, height: 1000 }, deviceScaleFactor: 2 },
     }] : []),
   ],

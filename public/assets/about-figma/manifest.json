@@ -1,0 +1,31 @@
+{
+  "fileKey": "wZSRbIZZXfUlrq902OXE2W",
+  "nodeId": "28:40",
+  "frameName": "About",
+  "assets": [
+    {
+      "file": "white-dress-portrait-without-graduation-sash-copy2.png",
+      "bytes": 301769,
+      "sha256": "b71e440d7649ee186b5aa1d515c6855cd33770ec0bc43305ea454ae0185e7099",
+      "width": 1179,
+      "height": 1334,
+      "mode": "RGB"
+    },
+    {
+      "file": "rectangle138.svg",
+      "bytes": 409,
+      "sha256": "98b5fb10b86a7cf6d975735c4cee5aec21f2d3a6ec4317dbd8caf3593e334847",
+      "width": "111.949",
+      "height": "37.3165",
+      "viewBox": "0 0 111.949 37.3165"
+    },
+    {
+      "file": "white-dress-portrait-without-graduation-sash-copy1.svg",
+      "bytes": 272,
+      "sha256": "8d4b09a0f375b5af6345bc1a8d0e4cdc108beb02a7a84c2d53167ae62fe17768",
+      "width": "210.101",
+      "height": "210.101",
+      "viewBox": "0 0 210.101 210.101"
+    }
+  ]
+}

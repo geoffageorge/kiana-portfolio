@@ -108,9 +108,9 @@ test('white pages, dividing rules, and transparent logos appear throughout the s
       return [[0, 0], [.5, .5], [0, .5]].map(([x, y]) => context.getImageData(Math.floor(x * canvas.width), Math.floor(y * canvas.height), 1, 1).data[3]);
     })).toEqual([0, 0, 0]);
     if (path === '/') {
-      await expect(page.locator('.selected-work__grid')).toHaveCSS('gap', 'normal');
+      await expect(page.locator('.selected-work__grid')).toHaveCSS('gap', page.viewportSize().width < 768 ? '24px' : '27px');
       for (const card of await page.locator('.project-card').all()) await expect(card).toHaveCSS('background-color', 'rgb(255, 255, 255)');
-      await expect(page.locator('.project-card').first()).toHaveCSS('border-bottom-color', 'rgb(223, 222, 219)');
+      await expect(page.locator('.project-card').first()).toHaveCSS('border-bottom-width', '0px');
     }
   }
 });

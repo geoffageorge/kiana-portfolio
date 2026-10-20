@@ -9,12 +9,14 @@ test('portfolio renders only the two current projects with working artwork and p
   await expect(page.getByRole('heading', { name: 'Select Work' })).toBeVisible();
   const cards = page.getByRole('link', { name: /^View project/ });
   await expect(cards).toHaveCount(2);
-  await expect(page.locator('.project-card h3')).toHaveText(['Obayashi North America', 'Point.ly']);
+  await expect(page.locator('.project-card h3')).toHaveText(['Obayashi', 'Point.ly']);
   for (const [index, slug, title] of [[0, 'obayashi', 'Obayashi'], [1, 'pointly', 'Point.ly']]) {
     const card = cards.nth(index);
     await card.scrollIntoViewIfNeeded();
-    await expect(card.locator('img')).toHaveJSProperty('complete', true);
-    expect(await card.locator('img').evaluate((image) => image.naturalWidth)).toBeGreaterThan(0);
+    for (const image of await card.locator('img').all()) {
+      await image.evaluate(image => image.decode());
+      expect(await image.evaluate(image => image.naturalWidth)).toBeGreaterThan(0);
+    }
     await expect(card).toHaveAttribute('href', `/projects/${slug}/`);
     await card.click();
     await expect(page.getByRole('heading', { level: 1 })).toHaveText(title);
@@ -30,18 +32,19 @@ test('shared navigation dialogs work and restore keyboard focus', async ({ page 
   await about.click();
   const dialog = page.getByRole('dialog');
   await expect(dialog).toBeVisible();
-  await expect(dialog.getByRole('heading')).toHaveText('A little about me');
+  await expect(dialog.getByRole('heading')).toHaveText('Curious George, Literally');
+  await expect(dialog.getByRole('link', { name: /Resume/ })).toHaveAttribute('href', '/assets/kiana-george-resume.pdf');
   await page.keyboard.press('Escape');
   await expect(dialog).not.toBeVisible();
   await expect(about).toBeFocused();
-  await page.getByRole('button', { name: 'Resume', exact: true }).click();
-  await expect(dialog.getByRole('heading')).toHaveText('Résumé coming soon');
+  const contact = page.getByRole('navigation').getByRole('button', { name: 'Contact', exact: true });
+  await contact.click();
+  await expect(dialog.getByRole('heading')).toHaveText('Contact Kiana George');
+  await expect(dialog.getByRole('link', { name: 'kikig6204@gmail.com', exact: true })).toHaveAttribute('href', 'mailto:kikig6204@gmail.com');
+  await expect(dialog.getByRole('link', { name: '650 787 1892' })).toHaveAttribute('href', 'tel:+16507871892');
   await page.getByRole('button', { name: 'Close dialog' }).click();
-  await page.getByRole('navigation').getByRole('link', { name: 'Contact', exact: true }).click();
-  await expect(page).toHaveURL(/#contact$/);
-  await expect(page.getByRole('link', { name: 'kianageo@uw.edu', exact: true })).toHaveAttribute('href', 'mailto:kianageo@uw.edu');
-  await page.getByRole('button', { name: 'LinkedIn', exact: true }).click();
-  await expect(dialog.getByRole('heading')).toHaveText('Let’s connect');
+  await expect(contact).toBeFocused();
+  await expect(page.locator('.site-footer').getByRole('link', { name: 'LinkedIn', exact: true })).toHaveAttribute('href', 'https://www.linkedin.com/in/kiana-george-75b061209/');
 });
 
 test('animation loops continuously and respects reduced motion', async ({ page }) => {

@@ -230,11 +230,10 @@ test('shared pages retain navigation and both Figma case studies return to selec
     await page.goto(path);
     await expect(page.getByRole('heading', { level: 1 })).toBeVisible();
     const navigation = page.getByRole('navigation', { name: 'Main navigation' });
+    await expect(navigation.locator(':scope > a, :scope > button')).toHaveText(['Work', 'About', 'Contact']);
     if (['/projects/pointly/', '/projects/obayashi/'].includes(path)) {
-      await expect(navigation.locator(':scope > a, :scope > button')).toHaveText(['About', 'Resume', 'Contact']);
       await page.getByRole('link', { name: 'Back to selected work' }).click();
     } else {
-      await expect(navigation.locator(':scope > a, :scope > button')).toHaveText(['Work', 'About', 'Resume', 'Contact']);
       await navigation.getByRole('link', { name: 'Work', exact: true }).click();
     }
     await expect(page).toHaveURL(/\/#work$/);

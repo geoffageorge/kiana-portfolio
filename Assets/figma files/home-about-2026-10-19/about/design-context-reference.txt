@@ -1,0 +1,48 @@
+const imgWhiteDressPortraitWithoutGraduationSashCopy2 = "/assets/about-figma/white-dress-portrait-without-graduation-sash-copy2.png";
+const imgRectangle138 = "/assets/about-figma/rectangle138.svg";
+const imgWhiteDressPortraitWithoutGraduationSashCopy1 = "/assets/about-figma/white-dress-portrait-without-graduation-sash-copy1.svg";
+
+export default function About() {
+  return (
+    <div className="bg-white relative size-full" data-node-id="28:40" data-name="About">
+      <div className="[word-break:break-word] absolute font-['Inter:Regular'] font-normal leading-[0] left-[127px] not-italic text-[16px] text-black top-[251px] w-[481px] whitespace-pre-wrap" data-node-id="486:9">
+        <p className="leading-[26px] mb-0">Growing up, people called me “Curious George” (yes, my last name is George!), and it still fits. I’m always asking questions and wanting to know more about the people around me. That curiosity led me to broadcast journalism, where I became an award-winning storyteller, and then to UX design, where I combine my curiosity about people with storytelling and creative problem-solving to build meaningful experiences.</p>
+        <p className="leading-[26px] mb-0">
+          <br aria-hidden />
+          Outside of design, you’ll find me running (one marathon and two half marathons so far), hiking, or in the kitchen baking bread and hosting themed dinner parties. I also love exploring new places and perspectives, from studying abroad in Florence and Greece to traveling around the world.
+          <br aria-hidden />
+          <br aria-hidden />
+          Currently, I’m laying the groundwork to develop a food and health platform for women with PCOS, where research and design make health information clearer and more approachable.
+          <br aria-hidden />
+          <br aria-hidden />
+        </p>
+        <p className="leading-[26px] mb-0">Whether I’m interviewing, designing, or hosting, it all comes back to learning people’s stories and finding creative ways to bring them together.</p>
+        <p className="leading-[26px]">​</p>
+      </div>
+      <p className="[word-break:break-word] absolute font-['Inter:Bold'] font-bold leading-[44px] left-[127px] not-italic text-[36px] text-black top-[174px] w-[471px]" data-node-id="486:10">
+        Curious George, Literally
+      </p>
+      <div className="absolute bg-[#25261e] h-[38px] left-[274px] rounded-[4px] top-[868px] w-[139px]" data-node-id="498:26" />
+      <div className="absolute h-[37.316px] left-[127px] top-[868.34px] w-[111.949px]" data-node-id="498:28">
+        <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgRectangle138} />
+      </div>
+      <div className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Fira_Mono:Regular'] h-[18px] justify-center leading-[0] left-[293px] not-italic text-[16px] text-white top-[887.85px] w-[101px]" data-node-id="498:27">
+        <p className="leading-[1.2]">{`LINKEDIN ↗ `}</p>
+      </div>
+      <div className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Fira_Mono:Regular'] h-[18px] justify-center leading-[0] left-[143.96px] not-italic text-[16px] text-white top-[887.85px] w-[81px]" data-node-id="498:29">
+        <p className="leading-[1.2]">{`RESUME ↗ `}</p>
+      </div>
+      <div className="absolute contents left-[620.96px] size-[230.688px] top-[103px]" data-node-id="497:11" data-name="Mask group">
+        <div className="absolute flex h-[439.91px] items-center justify-center left-[521.92px] top-[61.8px] w-[397.776px]" data-node-id="497:9">
+          <div className="flex-none rotate-[5.93deg]">
+            <div className="h-[405.101px] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[109.328px_51.486px] mask-size-[210.118px_210.118px] relative w-[357.829px]" style={{ maskImage: `url("${imgWhiteDressPortraitWithoutGraduationSashCopy1}")` }} data-name="White dress portrait without graduation sash copy 1">
+              <div className="absolute inset-0 overflow-hidden pointer-events-none">
+                <img alt="" className="absolute h-[84.91%] left-[6.08%] max-w-none top-[4.73%] w-[84.95%]" src={imgWhiteDressPortraitWithoutGraduationSashCopy2} />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}

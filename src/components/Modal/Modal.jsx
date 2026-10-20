@@ -1,17 +1,23 @@
 import { useEffect, useRef } from 'react';
 import './Modal.css';
 
-export default function Modal({ open, onClose, title, children, className = '' }) {
+export default function Modal({ open, onClose, returnFocus, title, children, className = '' }) {
   const dialogRef = useRef(null);
 
   useEffect(() => {
     const dialog = dialogRef.current;
     if (!open) { if (dialog.open) dialog.close(); return; }
+    // Safari does not focus a button on mouse click, so retain the actual trigger.
+    const previousFocus = returnFocus ?? document.activeElement;
     dialog.showModal();
     const previousOverflow = document.body.style.overflow;
     document.body.style.overflow = 'hidden';
-    return () => { document.body.style.overflow = previousOverflow; if (dialog.open) dialog.close(); };
-  }, [open]);
+    return () => {
+      document.body.style.overflow = previousOverflow;
+      if (dialog.open) dialog.close();
+      if (previousFocus?.isConnected) previousFocus.focus({ preventScroll: true });
+    };
+  }, [open, returnFocus]);
 
   return (
     <dialog ref={dialogRef} className={`portfolio-modal ${className}`} aria-labelledby="modal-title" onCancel={onClose} onClick={(event) => { if (event.target === event.currentTarget) onClose(); }}>

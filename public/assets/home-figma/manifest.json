@@ -1,0 +1,71 @@
+{
+  "fileKey": "wZSRbIZZXfUlrq902OXE2W",
+  "nodeId": "28:2",
+  "frameName": "Case Studies",
+  "assets": [
+    {
+      "file": "img-slide62.png",
+      "bytes": 730888,
+      "sha256": "b3638dde92852b3ac91a38a554aae66167663a25984b2249d291839383d918e5",
+      "width": 1143,
+      "height": 624,
+      "mode": "RGB"
+    },
+    {
+      "file": "apple-intelligence-bqi8-tl754-cfm-large2-x3.png",
+      "bytes": 967490,
+      "sha256": "69a4e44e454ffb40eef1fb498e175cc763cd7a6451ce1f81cd8563cdaac67120",
+      "width": 1964,
+      "height": 1196,
+      "mode": "RGBA"
+    },
+    {
+      "file": "frame322.png",
+      "bytes": 879850,
+      "sha256": "019549d01da1e9fecc4edc308320dc14f702eb8122b04d4291d7bec3becef6e7",
+      "width": 1437,
+      "height": 2349,
+      "mode": "RGBA"
+    },
+    {
+      "file": "img-slide61.svg",
+      "bytes": 252,
+      "sha256": "a815348524a97a00c16abc771c9fdd2ab435a95eedeb68af6226fa440884ec8f",
+      "width": "577",
+      "height": "577",
+      "viewBox": "0 0 577 577"
+    },
+    {
+      "file": "logo2.svg",
+      "bytes": 1341,
+      "sha256": "d111d3fd7ded1acf98662413a18d042c5adf7c293d124bc9acad6df45b7269e2",
+      "width": "57",
+      "height": "38",
+      "viewBox": "0 0 57 38"
+    },
+    {
+      "file": "line69.svg",
+      "bytes": 251,
+      "sha256": "0f9d0a1060b05cff2f4798f1b2ab403103da6adf5868d1fc19f1e2c2d3071d84",
+      "width": "1177",
+      "height": "0.5",
+      "viewBox": "0 0 1177 0.5"
+    },
+    {
+      "file": "apple-intelligence-bqi8-tl754-cfm-large2-x2.svg",
+      "bytes": 256,
+      "sha256": "c858b3698dff02fb6d71eefcc9403710e8a33ff686b36b3396adc9e84f90ce3b",
+      "width": "422.083",
+      "height": "397",
+      "viewBox": "0 0 422.083 397"
+    },
+    {
+      "file": "frame321.svg",
+      "bytes": 268,
+      "sha256": "ece580a075238b61b852d59b1d66f44f24f9db182f8e9543dae2d60c9cbdbc2b",
+      "width": "469.038",
+      "height": "301.267",
+      "viewBox": "0 0 469.038 301.267"
+    }
+  ]
+}

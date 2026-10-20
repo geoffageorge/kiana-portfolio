@@ -6,7 +6,7 @@ test('Pointly tile opens its project page and shared navigation returns home', a
   await page.getByRole('link', { name: 'View project 02: Point.ly', exact: true }).click();
   await expect(page).toHaveURL(/\/projects\/pointly\/$/);
   await expect(page.getByRole('heading', { level: 1 })).toHaveText('Point.ly');
-  await expect(page.getByRole('link', { name: 'kianageo@uw.edu', exact: true })).toHaveAttribute('href', 'mailto:kianageo@uw.edu');
+  await expect(page.getByRole('link', { name: 'kikig6204@gmail.com', exact: true })).toHaveAttribute('href', 'mailto:kikig6204@gmail.com');
   const about = page.getByRole('button', { name: 'About', exact: true });
   await about.click();
   await expect(page.getByRole('dialog')).toBeVisible();
