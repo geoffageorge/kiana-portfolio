@@ -4,6 +4,8 @@ import { createHash } from 'node:crypto';
 
 const manifest = JSON.parse(await readFile(new URL('../public/assets/pointly-figma/manifest.json', import.meta.url), 'utf8'));
 const revision = JSON.parse(await readFile(new URL('../public/assets/pointly-figma-update/manifest.json', import.meta.url), 'utf8'));
+const dividerInspection = JSON.parse(await readFile(new URL('../public/assets/pointly-figma-update/dividers.json', import.meta.url), 'utf8'));
+const archivedDividers = ['line-69-49', 'line-70-50', 'line-71-51', 'line-72-183'];
 const snapshot = JSON.parse(await readFile(new URL('../Assets/figma files/pointly-frame-90-18-2026-10-19.json', import.meta.url), 'utf8'));
 const geometry = snapshot.geometry;
 
@@ -17,7 +19,7 @@ async function ready(page) {
   });
 }
 
-test('all 50 exported layer assets are unchanged, present, and used on the page', async ({ page }) => {
+test('all 50 Figma exports stay unchanged; non-divider image assets remain in use', async ({ page }) => {
   await ready(page);
   const expected = Object.values(manifest.assets).map(asset => asset.file).sort();
   expect(expected).toHaveLength(50);
@@ -28,7 +30,7 @@ test('all 50 exported layer assets are unchanged, present, and used on the page'
     expect(createHash('sha256').update(served).digest('hex')).toBe(asset.sha256);
   }
   const actual = await page.locator('img[src*="/pointly-figma/"]').evaluateAll(images => images.map(image => image.src.split('/').at(-1)).sort());
-  expect(actual).toEqual(expected);
+  expect(actual).toEqual(Object.entries(manifest.assets).filter(([name]) => !archivedDividers.includes(name)).map(([, asset]) => asset.file).sort());
   expect(await page.locator('img[src*="/pointly-figma/"]').evaluateAll(images => images.every(image => image.complete && image.naturalWidth > 0))).toBe(true);
 });
 
@@ -64,7 +66,7 @@ test('desktop geometry and every image placement match the October 19 Figma fram
     for (const key of ['width', 'height']) expect(Math.abs(actual[key] - asset[key]), `${asset.file} ${key}`).toBeLessThan(1);
   }
   await expect(page.locator('.pointly-reflection')).toHaveCSS('height', '537px');
-  for (const [name, asset] of Object.entries(manifest.assets).filter(([, asset]) => asset.file.endsWith('.svg') && !asset.file.startsWith('vector-'))) {
+  for (const [name, asset] of Object.entries(manifest.assets).filter(([name, asset]) => asset.file.endsWith('.svg') && !asset.file.startsWith('vector-') && !archivedDividers.includes(name))) {
     const image = page.locator(`img[data-figma-asset="${name}"]`);
     const actual = await image.boundingBox();
     for (const key of ['x', 'y']) expect(Math.abs(actual[key] - revision.reusedAssets[name].renderedBounds[key]), `${asset.file} ${key}`).toBeLessThanOrEqual(1);
@@ -74,10 +76,31 @@ test('desktop geometry and every image placement match the October 19 Figma fram
   await expect(page.locator('.pointly-feature-callout').first()).toHaveCSS('background-color', 'rgb(231, 239, 82)');
   await expect(page.locator('.pointly-insight')).toHaveCount(4);
   await expect(page.locator('.pointly-insights > div')).toHaveCSS('grid-template-columns', '439px 439px');
-  const divider = await page.locator('.pointly-project-details img').boundingBox();
+  const divider = await page.locator('.pointly-project-details > .pointly-rule').boundingBox();
   expect(divider.x).toBe(geometry['101:3'].x);
   expect(divider.y).toBe(geometry['101:3'].y);
   expect(divider.width).toBe(geometry['101:3'].width);
+});
+
+test('all five section dividers use visible CSS borders matching Pointly Case Study 2', async ({ page }) => {
+  await ready(page);
+  await expect(page.locator('.pointly-rule')).toHaveCount(5);
+  for (const divider of Object.values(dividerInspection.dividers)) {
+    const rule = page.locator(`.pointly-rule[data-figma-node="${divider.id}"]`);
+    await expect(rule.locator('img')).toHaveCount(0);
+    await expect(rule).toHaveCSS('border-top-style', 'solid');
+    await expect(rule).toHaveCSS('border-top-color', 'rgb(0, 0, 0)');
+    const stroke = await rule.evaluate(n => parseFloat(getComputedStyle(n).borderTopWidth));
+    expect(stroke).toBeGreaterThanOrEqual(divider.strokeWeight);
+    expect(stroke).toBeLessThanOrEqual(1);
+    const actual = await rule.boundingBox();
+    expect(actual.x).toBeGreaterThanOrEqual(0);
+    expect(actual.x + actual.width).toBeLessThanOrEqual(page.viewportSize().width);
+    if (page.viewportSize().width === 1440) {
+      for (const key of ['x','y','width']) expect(Math.abs(actual[key] - divider[key]), `${divider.id} ${key}`).toBeLessThan(1);
+    }
+  }
+  await expect(page.locator('.pointly-goal-connector')).toHaveCount(2);
 });
 
 test('exact local fonts and mixed text styles load without external requests', async ({ page }) => {

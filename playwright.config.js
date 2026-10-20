@@ -9,12 +9,16 @@ export default defineConfig({
   reporter: 'list',
   use: {
     baseURL,
-    channel: 'chrome',
     trace: 'retain-on-failure',
   },
   projects: [
-    { name: 'desktop', use: { viewport: { width: 1440, height: 1000 } } },
+    { name: 'desktop', use: { channel: 'chrome', viewport: { width: 1440, height: 1000 } } },
     { name: 'mobile', use: { ...devices['iPhone 13'], defaultBrowserType: 'chromium', channel: 'chrome' } },
+    ...(process.env.PORTFOLIO_TEST_WEBKIT === '1' ? [{
+      name: 'safari-webkit',
+      testMatch: ['obayashi-design.spec.js', 'pointly-design.spec.js'],
+      use: { browserName: 'webkit', viewport: { width: 1440, height: 1000 }, deviceScaleFactor: 2 },
+    }] : []),
   ],
   webServer: {
     command: production ? 'npm run preview' : 'npm run dev',

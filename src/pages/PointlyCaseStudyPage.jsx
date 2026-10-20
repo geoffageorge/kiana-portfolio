@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import manifest from '../../public/assets/pointly-figma/manifest.json';
 import mvpManifest from '../../public/assets/pointly-figma-update/manifest.json';
+import dividerManifest from '../../public/assets/pointly-figma-update/dividers.json';
 import { assetUrl, siteUrl } from '../lib/urls.js';
 import './PointlyCaseStudyPage.css';
 
@@ -49,8 +50,9 @@ function Exhibit({ name, alt, className = '', onOpenImage, eager = false, assetG
   return <figure className={`pointly-exhibit ${className}`}><button type="button" aria-label={`Enlarge ${alt}`} onClick={() => onOpenImage({ ...image, src: assetUrl(`${assetGroup}/${image.file}`), alt })}><Picture name={name} alt={alt} eager={eager} assetGroup={assetGroup} /></button>{children && <figcaption>{children}</figcaption>}</figure>;
 }
 
-function Rule({ name, assetGroup = 'pointly-figma' }) {
-  return <div className="pointly-rule" aria-hidden="true"><Picture name={name} assetGroup={assetGroup} /></div>;
+function Rule({ id }) {
+  const divider = dividerManifest.dividers[id];
+  return <div className="pointly-rule" data-figma-node={id} aria-hidden="true" style={{ '--rule-width': `${divider.width}px`, '--rule-offset': `${divider.offset}px`, '--rule-weight': `${divider.strokeWeight}px` }} />;
 }
 
 function VisualIdentity() {
@@ -88,7 +90,7 @@ export default function PointlyCaseStudyPage({ onOpenImage }) {
       <div className="pointly-intro__summary"><p data-figma-node="123:5">Turning fragmented loyalty points into new travel possibilities</p><p className="pointly-intro__team">UX@Berkeley project team</p></div>
     </header>
     <div className="pointly-project-details" data-figma-node="413:53">
-      <Rule name="line-61" assetGroup="pointly-figma-update" />
+      <Rule id="101:3" />
       <dl className="pointly-facts">{[
       ['Deliverable', ['Working MVP']], ['Timeline', ['8 months +', 'one day hackathon']],
       ['My contribution', ['UX research', 'Prototyping', 'Visual Identity']],
@@ -126,7 +128,7 @@ export default function PointlyCaseStudyPage({ onOpenImage }) {
       <nav className="pointly-methodology" aria-label="Project sections"><p>Methodology</p>{sections.map(([id, title]) => <a key={id} href={`#${id}`} aria-current={active === id ? 'location' : undefined} onClick={() => setActive(id)}>{title}</a>)}</nav>
       <div className="pointly-content">
         <section id="interviews" className="pointly-section pointly-interviews" aria-labelledby="pointly-interviews-title">
-          <Rule name="line-69-49" /><h2 id="pointly-interviews-title">Different travelers.<br />A shared need for clarity</h2>
+          <Rule id="143:16" /><h2 id="pointly-interviews-title">Different travelers.<br />A shared need for clarity</h2>
           <p className="pointly-section__intro">I interviewed 10 travelers to understand how they managed rewards, evaluated redemption value, and navigated decisions around transfers and group travel.</p>
           <div className="pointly-interview-grid">{interviewees.map(([name, person, detail, quote]) => <figure className="pointly-interview-card" key={person}><blockquote>{quote}</blockquote><Picture name={name} alt={`Illustration of ${person}, a Point.ly interview participant`} /><figcaption><h3>{person}</h3><p>{detail}</p></figcaption></figure>)}</div>
           <figure className="pointly-interview-wide" data-figma-node="136:70"><Picture name="node-74" alt="Illustration of Daniel considering his rewards across travel programs" /><figcaption><h3>Daniel</h3><p>Student, 20s</p></figcaption><blockquote>“I want a single view of all my points so I don’t have to log into multiple accounts.”</blockquote></figure>
@@ -134,13 +136,13 @@ export default function PointlyCaseStudyPage({ onOpenImage }) {
           <div className="pointly-personas"><h3>Three personas emerged</h3><div>{personas.map(([name, title, text]) => <section key={name}><div className="pointly-persona-portrait"><Picture name={name} /></div><h4>{title}</h4><p>{text}</p></section>)}</div></div>
         </section>
         <section id="research" className="pointly-section pointly-research" aria-labelledby="pointly-research-title">
-          <Rule name="line-70-50" /><h2 id="pointly-research-title">Research Revealed Insights</h2>
+          <Rule id="143:18" /><h2 id="pointly-research-title">Research Revealed Insights</h2>
           <div className="pointly-subsection pointly-competitors"><h3>Exploring the Solution Space</h3><p>We analyzed existing rewards platforms to understand competitors’ unique differentiating features</p><ul>{competitors.map(([name, title, text]) => <li key={name}><div className="pointly-competitor-logo"><Picture name={name} alt={title} /></div><p>{text}</p></li>)}</ul></div>
           <div className="pointly-subsection pointly-opportunity-map"><h3>Opportunity Maps</h3><p>We mapped each competitors’ features and user flows to identify strengths, friction points, and opportunities</p><Exhibit name="node-124" alt="Opportunity map comparing rewards platform features, user flows, and research findings" onOpenImage={onOpenImage} /></div>
           <div className="pointly-subsection pointly-insights"><h3>Key Insights and Opportunities</h3><div>{insights.map(([name, title, text]) => <aside className="pointly-insight" key={name}><Picture name={name} /><div><h4>{title}</h4><p>{text}</p></div></aside>)}</div></div>
         </section>
         <section id="design" className="pointly-section pointly-design" aria-labelledby="pointly-design-title">
-          <Rule name="line-71-51" /><h2 id="pointly-design-title">Designing the User Experience</h2>
+          <Rule id="163:12" /><h2 id="pointly-design-title">Designing the User Experience</h2>
           <div className="pointly-subsection pointly-low-fi"><h3>Low-Fi: Testing Different Directions</h3><p>Guided by our research, we quickly explored multiple concepts, including a Chrome extension, centralized rewards wallet, AI trip planning, itinerary comparison, and personalized points recommendations.</p><div className="pointly-low-fi__images"><Exhibit name="node-125" alt="Annotated low-fidelity sketches for a centralized rewards wallet" onOpenImage={onOpenImage} /><Exhibit name="node-126" alt="Annotated low-fidelity explorations of trip planning and points recommendations" onOpenImage={onOpenImage} /></div></div>
           <div className="pointly-subsection pointly-mid-fi"><h3>Mid-Fi: Narrowing the Experience</h3><p>We prioritized the concepts that most directly addressed our research findings: consolidating rewards, simplifying comparisons, and making redemption opportunities actionable. Broader ideas that moved beyond these core needs were deprioritized.</p><div className="pointly-mid-fi__images"><Exhibit name="node-160" alt="Mid-fidelity Point.ly dashboard wireframe" onOpenImage={onOpenImage} /><div className="pointly-mid-fi__comparison"><Exhibit name="node-161" alt="Mid-fidelity flight comparison wireframe" onOpenImage={onOpenImage} /><Exhibit name="node-162" alt="Mid-fidelity booking details wireframe" onOpenImage={onOpenImage} /></div></div></div>
           <div className="pointly-subsection pointly-identity"><h3>Defining the Product’s Visual Language</h3><p>I developed Point.ly’s visual identity and core interface—including color, typography, illustration, and layout—to make credit card points feel clear and approachable, balancing warmth with financial credibility.</p><VisualIdentity /></div>
@@ -153,7 +155,7 @@ export default function PointlyCaseStudyPage({ onOpenImage }) {
           </div>
         </section>
         <section id="retrospective" className="pointly-section pointly-retrospective" aria-labelledby="pointly-retrospective-title">
-          <Rule name="line-72-183" /><h2 id="pointly-retrospective-title">What I Learned</h2>
+          <Rule id="413:11" /><h2 id="pointly-retrospective-title">What I Learned</h2>
           <aside className="pointly-feature-callout pointly-reflection" data-figma-node="413:9"><h3>Reflection</h3><div><p><strong>Different experiences can reveal shared needs.</strong> Interviewing travelers with varying levels of points experience taught me to look beyond individual preferences and use common patterns to guide product priorities.</p><p><strong>AI helped me build faster, but I still had to decide what was worth building.</strong> At the hackathon, I turned our interview findings into a PRD and used AI coding tools to build a working prototype. Testing it with users helped me see where those decisions worked and where they needed refinement.</p><p><strong>The process reinforced two lessons:</strong> making information available is only useful if people can easily understand and act on it, and an established visual palette helps multiple designers create one cohesive experience.</p></div></aside>
         </section>
       </div>

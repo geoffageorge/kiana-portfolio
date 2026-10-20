@@ -1,0 +1,244 @@
+{
+  "fileKey": "wZSRbIZZXfUlrq902OXE2W",
+  "nodeId": "90:18",
+  "inspectedDate": "2026-10-19",
+  "frame": {
+    "name": "Pointly Case Study 2",
+    "width": 1440,
+    "height": 10571
+  },
+  "dividers": {
+    "413:11": {
+      "id": "413:11",
+      "name": "Line 72",
+      "type": "LINE",
+      "parentId": "413:70",
+      "parentName": "What I Learned Section",
+      "visible": true,
+      "x": 426,
+      "y": 9646,
+      "width": 892,
+      "height": 0,
+      "rotation": -0.000005008956538086317,
+      "strokeWeight": 0.5,
+      "strokeAlign": "CENTER",
+      "strokes": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0,
+            "g": 0,
+            "b": 0
+          },
+          "boundVariables": {}
+        }
+      ],
+      "dashPattern": [],
+      "opacity": 1,
+      "exportSettings": [],
+      "offset": 0
+    },
+    "163:12": {
+      "id": "163:12",
+      "name": "Line 71",
+      "type": "LINE",
+      "parentId": "413:72",
+      "parentName": "Design the User Experience Section",
+      "visible": true,
+      "x": 428,
+      "y": 6199,
+      "width": 892,
+      "height": 0,
+      "rotation": -0.000005008956538086317,
+      "strokeWeight": 0.5,
+      "strokeAlign": "CENTER",
+      "strokes": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0,
+            "g": 0,
+            "b": 0
+          },
+          "boundVariables": {}
+        }
+      ],
+      "dashPattern": [],
+      "opacity": 1,
+      "exportSettings": [],
+      "offset": 2
+    },
+    "143:18": {
+      "id": "143:18",
+      "name": "Line 70",
+      "type": "LINE",
+      "parentId": "90:18",
+      "parentName": "Pointly Case Study 2",
+      "visible": true,
+      "x": 428,
+      "y": 4230,
+      "width": 892,
+      "height": 0,
+      "rotation": -0.000005008956538086317,
+      "strokeWeight": 0.5,
+      "strokeAlign": "CENTER",
+      "strokes": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0,
+            "g": 0,
+            "b": 0
+          },
+          "boundVariables": {}
+        }
+      ],
+      "dashPattern": [],
+      "opacity": 1,
+      "exportSettings": [],
+      "offset": 2
+    },
+    "143:16": {
+      "id": "143:16",
+      "name": "Line 69",
+      "type": "LINE",
+      "parentId": "413:75",
+      "parentName": "Interviews + Interview Tiles",
+      "visible": true,
+      "x": 428,
+      "y": 2561,
+      "width": 892,
+      "height": 0,
+      "rotation": -0.000005008956538086317,
+      "strokeWeight": 0.5,
+      "strokeAlign": "CENTER",
+      "strokes": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0,
+            "g": 0,
+            "b": 0
+          },
+          "boundVariables": {}
+        }
+      ],
+      "dashPattern": [],
+      "opacity": 1,
+      "exportSettings": [],
+      "offset": 2
+    },
+    "101:3": {
+      "id": "101:3",
+      "name": "Line 61",
+      "type": "LINE",
+      "parentId": "413:53",
+      "parentName": "Project Details",
+      "visible": true,
+      "x": 120,
+      "y": 373,
+      "width": 1200,
+      "height": 0,
+      "rotation": -0.000005008956130975318,
+      "strokeWeight": 0.5,
+      "strokeAlign": "CENTER",
+      "strokes": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0,
+            "g": 0,
+            "b": 0
+          },
+          "boundVariables": {}
+        }
+      ],
+      "dashPattern": [],
+      "opacity": 1,
+      "exportSettings": [],
+      "offset": 0
+    }
+  },
+  "diagramConnectors": [
+    {
+      "id": "130:33",
+      "name": "Line 65",
+      "type": "LINE",
+      "parentId": "413:71",
+      "parentName": "Goals Section",
+      "visible": true,
+      "x": 649,
+      "y": 2346,
+      "width": 63,
+      "height": 0,
+      "rotation": 0,
+      "strokeWeight": 1,
+      "strokeAlign": "CENTER",
+      "strokes": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0,
+            "g": 0,
+            "b": 0
+          },
+          "boundVariables": {}
+        }
+      ],
+      "dashPattern": [],
+      "opacity": 1,
+      "exportSettings": []
+    },
+    {
+      "id": "130:34",
+      "name": "Line 66",
+      "type": "LINE",
+      "parentId": "413:71",
+      "parentName": "Goals Section",
+      "visible": true,
+      "x": 957,
+      "y": 2346,
+      "width": 63,
+      "height": 0,
+      "rotation": 0,
+      "strokeWeight": 1,
+      "strokeAlign": "CENTER",
+      "strokes": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0,
+            "g": 0,
+            "b": 0
+          },
+          "boundVariables": {}
+        }
+      ],
+      "dashPattern": [],
+      "opacity": 1,
+      "exportSettings": []
+    }
+  ],
+  "implementation": "Native CSS top borders; original SVG exports remain archived."
+}

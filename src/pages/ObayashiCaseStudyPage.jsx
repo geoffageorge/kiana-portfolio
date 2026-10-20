@@ -20,10 +20,7 @@ function Copy({ id, as: Tag = 'p', className = '', htmlId }) {
 
 function Rule({ id }) {
   const divider = manifest.dividers[id];
-  const asset = manifest.assets[divider.asset];
-  return <div className="obayashi-rule" data-figma-node={id} aria-hidden="true" style={{ '--rule-width': `${manifest.slots[id].width}px`, '--rule-offset': `${divider.offset}px` }}>
-    <img src={src(divider.asset)} width={asset.width} height={asset.height} alt="" />
-  </div>;
+  return <div className="obayashi-rule" data-figma-node={id} aria-hidden="true" style={{ '--rule-width': `${manifest.slots[id].width}px`, '--rule-offset': `${divider.offset}px`, '--rule-weight': `${divider.strokeWeight}px` }} />;
 }
 
 function layerStyle(rect, width, height) {

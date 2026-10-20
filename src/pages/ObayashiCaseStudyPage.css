@@ -17,8 +17,8 @@
 .obayashi-intro h1 { margin-top: 11px; font-size: 80px; line-height: 84px; letter-spacing: -1.6px; }
 .obayashi-intro__summary { max-width: 547px; margin-left: 0 !important; padding-top: 52px; font-size: 26px; line-height: 34px; }
 .obayashi-project-details { margin-top: 76px; }
-.obayashi-rule { width: min(var(--rule-width), 100%); height: 1px; margin-left: var(--rule-offset); }
-.obayashi-rule img { position: relative; top: -.5px; width: 100%; height: .5px; max-width: none; }
+/* WebKit cannot decode the exported SVGs with intrinsic heights below one pixel. */
+.obayashi-rule { width: min(var(--rule-width), 100%); height: 1px; margin-left: var(--rule-offset); border-top: var(--rule-weight) solid #000; }
 .obayashi-facts { display: grid; grid-template-columns: 250fr 252fr 250fr 270fr 178fr; min-height: 141px; margin-top: 27px !important; }
 .obayashi-facts dt { margin-bottom: 16.6px; color: #60676c; font: 500 12px/14.4px var(--obayashi-mono); text-transform: uppercase; }
 .obayashi-facts dd { max-width: 170px; font-size: 15px; line-height: 22px; }

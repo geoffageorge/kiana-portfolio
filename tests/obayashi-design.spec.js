@@ -59,7 +59,7 @@ test('home tile opens the complete Figma case study, with working reloads and im
   expect(errors).toEqual([]);
 });
 
-test('all 41 Figma assets keep their source bytes and are used in their intended image or mask slots', async ({ page, request }) => {
+test('Figma source assets keep their bytes and all image and mask assets are used', async ({ page, request }) => {
   const external = [];
   page.on('request', request => { if (!request.url().startsWith(test.info().project.use.baseURL)) external.push(request.url()); });
   await ready(page);
@@ -74,31 +74,31 @@ test('all 41 Figma assets keep their source bytes and are used in their intended
     expect(response.headers()['content-type']).toMatch(/^image\//);
   }
   const used = await page.locator('img, .obayashi-image-viewport, .obayashi-image-clip').evaluateAll(nodes => [...new Set(nodes.flatMap(n => [n.getAttribute('src'), getComputedStyle(n).maskImage]).filter(s => s?.includes('/obayashi-figma/')).map(s => /obayashi-figma\/([^")]+)/.exec(s)[1]))].sort());
-  expect(used).toEqual(Object.values(manifest.assets).map(a => a.file).sort());
+  // Half-pixel divider exports remain archived; native CSS borders render their Figma strokes.
+  expect(used).toEqual(Object.entries(manifest.assets).filter(([name]) => !['details-divider', 'section-divider'].includes(name)).map(([, a]) => a.file).sort());
   expect(await page.locator('.obayashi-case img').evaluateAll(images => images.every(i => i.complete && i.naturalWidth > 0))).toBe(true);
-  await expect(page.locator('.obayashi-case')).toHaveCSS('font-family', '"Obayashi Inter", sans-serif');
-  await expect(page.locator('.obayashi-index')).toHaveCSS('font-family', '"Obayashi Fira Mono", monospace');
+  await expect(page.locator('.obayashi-case')).toHaveCSS('font-family', /^"?Obayashi Inter"?, sans-serif$/);
+  await expect(page.locator('.obayashi-index')).toHaveCSS('font-family', /^"?Obayashi Fira Mono"?, monospace$/);
   await expect(page.locator('.obayashi-quote')).toHaveCSS('background-color', 'rgb(231, 239, 82)');
   expect(external).toEqual([]);
 });
 
-test('all seven section dividers use the updated half-pixel Figma strokes and correct widths', async ({ page, request }) => {
+test('all seven section dividers use visible CSS borders with the Figma widths and offsets', async ({ page }) => {
   await ready(page);
   await expect(page.locator('.obayashi-rule')).toHaveCount(7);
   for (const label of await page.locator('.obayashi-facts dt').all()) await expect(label).toHaveCSS('font-size', '12px');
   for (const node of snapshot.nodes.filter(n => n.type === 'LINE')) {
     const rule = page.locator(`.obayashi-rule[data-figma-node="${node.id}"]`);
-    const image = rule.locator('img');
-    await expect(image).toBeAttached();
+    await expect(rule.locator('img')).toHaveCount(0);
+    await expect(rule).toHaveCSS('border-top-style', 'solid');
+    await expect(rule).toHaveCSS('border-top-color', 'rgb(0, 0, 0)');
+    const stroke = await rule.evaluate(n => parseFloat(getComputedStyle(n).borderTopWidth));
+    // Engines may snap the requested 0.5 px border to one pixel on a 1x display.
+    expect(stroke).toBeGreaterThanOrEqual(node.strokeWeight);
+    expect(stroke).toBeLessThanOrEqual(1);
     const box = await rule.boundingBox();
-    const stroke = await image.boundingBox();
-    expect(stroke.width).toBeCloseTo(box.width, 1);
-    expect(stroke.height).toBeGreaterThan(0.45);
-    expect(stroke.height).toBeLessThan(0.6);
     expect(box.x).toBeGreaterThanOrEqual(0);
     expect(box.x + box.width).toBeLessThanOrEqual(page.viewportSize().width);
-    const svg = await (await request.get(await image.getAttribute('src'))).text();
-    expect(svg).toContain('stroke-width="0.5"');
     if (test.info().project.name === 'desktop') {
       for (const key of ['x', 'y', 'width']) expect(Math.abs(box[key] - geometry[node.id][key]), `${node.name} ${node.id} ${key}`).toBeLessThan(1);
     }

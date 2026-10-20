@@ -21,7 +21,7 @@ test('Pointly tile opens its project page and shared navigation returns home', a
   await expect(page.getByRole('heading', { name: 'Select Work' })).toBeVisible();
 });
 
-test('direct Pointly links and reloads load every new reference image', async ({ page, request }) => {
+test('direct Pointly links and reloads load the reference images and native dividers', async ({ page, request }) => {
   const errors = [];
   page.on('pageerror', error => errors.push(error.message));
   page.on('response', response => { if (response.status() >= 400) errors.push(response.url()); });
@@ -30,9 +30,11 @@ test('direct Pointly links and reloads load every new reference image', async ({
   await expect(page.getByRole('heading', { level: 1 })).toHaveText('Point.ly');
   await expect(page.locator('.pointly-section')).toHaveCount(4);
   const manifest = JSON.parse(await readFile(new URL('../public/assets/pointly-figma/manifest.json', import.meta.url), 'utf8'));
-  const expected = Object.values(manifest.assets).map(image => image.file).sort();
+  const dividerFiles = ['line-69-49.svg', 'line-70-50.svg', 'line-71-51.svg', 'line-72-183.svg'];
+  const expected = Object.values(manifest.assets).filter(image => !dividerFiles.includes(image.file)).map(image => image.file).sort();
   const actual = await page.locator('img[src*="/pointly-figma/"]').evaluateAll(images => [...new Set(images.map(image => image.src.split('/').at(-1)))].sort());
   expect(actual).toEqual(expected);
+  await expect(page.locator('.pointly-rule')).toHaveCount(5);
   for (const image of Object.values(manifest.assets)) {
     const response = await request.get(`/assets/pointly-figma/${image.file}`);
     expect(response.ok(), image.file).toBe(true);
