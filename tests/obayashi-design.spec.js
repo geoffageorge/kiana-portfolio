@@ -51,7 +51,10 @@ test('home tile opens the complete Figma case study, with working reloads and im
   await page.keyboard.press('Escape');
   await expect(image).toBeFocused();
   await expect(page.getByRole('button', { name: /Careers page animation|View full Careers page/ })).toHaveCount(0);
-  await page.getByRole('link', { name: 'Next project: Point.ly' }).click();
+  await expect(page.locator('.obayashi-intro__summary')).toHaveText('Aligning teams, audiences, and priorities into a unified experience');
+  await expect(page.locator('.obayashi-facts')).not.toContainText('Wix');
+  await expect(page.locator('.obayashi-end a')).toHaveCount(1);
+  await page.getByRole('link', { name: 'Next Project: Point.ly' }).click();
   await expect(page.getByRole('heading', { level: 1 })).toHaveText('Point.ly');
   await page.goto('/projects/obayashi_old/');
   await expect(page.getByRole('heading', { level: 1 })).toHaveText('Obayashi North America');
@@ -226,16 +229,12 @@ test('page and laptop reflow from narrow phones through wide desktop without ove
 });
 
 test('shared pages retain navigation and both Figma case studies return to selected work', async ({ page }) => {
-  for (const path of ['/', ...projectRoutes.map(project => `/projects/${project.slug}/`)]) {
+  for (const path of ['/', '/about/', ...projectRoutes.map(project => `/projects/${project.slug}/`)]) {
     await page.goto(path);
     await expect(page.getByRole('heading', { level: 1 })).toBeVisible();
     const navigation = page.getByRole('navigation', { name: 'Main navigation' });
-    await expect(navigation.locator(':scope > a, :scope > button')).toHaveText(['Work', 'About', 'Contact']);
-    if (['/projects/pointly/', '/projects/obayashi/'].includes(path)) {
-      await page.getByRole('link', { name: 'Back to selected work' }).click();
-    } else {
-      await navigation.getByRole('link', { name: 'Work', exact: true }).click();
-    }
+    await expect(navigation.getByRole('link')).toHaveText(['Work', 'About+Contact']);
+    await navigation.getByRole('link', { name: 'Work', exact: true }).click();
     await expect(page).toHaveURL(/\/#work$/);
     await expect(page.getByRole('heading', { name: 'Select Work' })).toBeInViewport();
   }

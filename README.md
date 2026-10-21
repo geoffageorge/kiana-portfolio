@@ -80,6 +80,7 @@ src/
       pointly.js                Point.ly content, captions, and image mapping
       index.js                  Project data registry
   lib/urls.js                   Links and assets on nested pages
+  pages/AboutPage.jsx           Full About+Contact page from Figma frame 522:265
   pages/CaseStudyPage.jsx        Shared project page composition
   pages/PointlyCaseStudyPage.jsx Point.ly layout matching Figma frame 90:18
   pages/ObayashiCaseStudyPage.jsx Complete Obayashi case study from Figma frame 420:76
@@ -90,14 +91,14 @@ src/
     Logo/                       Supplied Ki Logo, at the original displayed size
     BrandName/                  Name and UX design descriptor
     SiteHeader/                 Sticky logo, name, and navigation bar
-    Navigation/                 Work, About, Contact
+    Navigation/                 Work and About+Contact links
     HeroSection/                Clarifying Chaos heading and introduction
     HeroArtwork/                Continuous native SVG animation
     SectionHeading/             Reusable title and subtitle
     ProjectCard/                Figma artwork layers and linked project tiles
     SelectedWork/               Heading and two-column project grid
     SiteFooter/                 Black footer, brand, and contact links
-    Modal/                      Accessible dialog, Figma biography, and contact content
+    Modal/                      Accessible image and project dialogs
     CaseStudyHero/              Project summary, facts, and hero image
     CaseStudyNavigation/        Section navigation
     CaseStudySections/          Six independent section components
@@ -134,25 +135,29 @@ Design Template/                Original design reference, preserved
 
 ## Replace prototype content
 
-- Edit `src/data/site.js` for branding, hero copy, telephone, contact email, résumé, and LinkedIn destinations. The approved email is `kikig6204@gmail.com`; the phone is `650 787 1892`.
+- Edit `src/data/site.js` for branding, hero copy, telephone, contact email, résumé, and LinkedIn destinations. The approved email is `kikig6204@gmail.com`; the new Figma phone is `650-817-5454`.
 - Resume opens `public/assets/kiana-george-resume.pdf` in a new tab. It is an unchanged copy of `Assets/Kiana George Resume.pdf`.
-- LinkedIn opens `https://www.linkedin.com/in/kiana-george-75b061209/` in a new tab from About and the footer.
+- LinkedIn opens `https://www.linkedin.com/in/kiana-george-75b061209/` in a new tab from the About page.
 - Put real project artwork in `public/assets/projects/`, then edit each record in `src/data/projects.js`. Replace its title, image, alt text, category, status, and description.
 - Each card has a `slug` and `caseStudyUrl` pointing to its project page. Obayashi and Point.ly have dedicated case studies; the archived and reserved pages use the reusable template with labeled placeholder content.
 - Only Obayashi and Point.ly appear on the home page. Project 03 and Project 04 remain defined with `showOnHome: false` in `src/data/projects.js`; their project pages and assets are retained. To add the next project, update Project 03's card details and case-study content, then set `showOnHome: true` to display its tile again.
-- The approved Figma biography is in `src/components/Modal/AboutContent.jsx`; the portrait retains its original image, crop, rotation, and circular SVG mask.
+- The current Figma biography is in `src/data/about.js` and rendered by `src/pages/AboutPage.jsx`; the portrait retains its original image, updated crop, rotation, and circular SVG mask.
 
 The hero renders the native SVG from `Assets/clarifying-chaos-solid-colors.html` in `HeroArtwork.jsx` with scoped animation styles in `HeroArtwork.css`. It preserves the five moving labels, 10-second CSS cycle, 25 rotating spirograph ellipses with 12–16-second SVG animation cycles, and the final glowing outline and “Clarity” text. The four ring colors are `#9cbabc`, `#e5ef18`, `#afddb1`, and `#5fd1d3`; the spirograph and final outline use the same palette. It starts automatically and loops continuously. Reduced-motion visitors see the static final circle and labels. The SVG has a transparent background. Its final glowing circle uses native SVG arcs and a blur filter, replacing absolutely positioned HTML inside `foreignObject` that Safari can render in the wrong location. A scene clipPath, hidden SVG overflow, and a contained figure keep every drawing layer within the hero canvas.
 
-All page backgrounds use `--color-page: #fff` in `src/styles/global.css`. Select Work now follows Figma's **Case Studies** frame (`28:2`): Obayashi's staircase tile is first, and the blue Point.ly laptop tile is second. Each tile has a 577px square reference size, 16px corner radius, and overlaid index, title, and caption. The desktop gap is 27px; tiles stack on phones. The black 0.5px rule above them uses a native CSS border to remain visible in WebKit. The separate source image, laptop, webpage, and SVG mask exports are retained in `public/assets/home-figma/`. The frame's obscured duplicate labels and footer artwork are archived in the inspection; the existing shared footer design is retained.
+All page backgrounds use `--color-page: #fff` in `src/styles/global.css`. Select Work now follows Figma's **Case Studies** frame (`28:2`): Obayashi's staircase tile is first, and the blue Point.ly laptop tile is second. Each tile has a 577px square reference size, 16px corner radius, and overlaid index, title, and caption. The desktop gap is 27px; tiles stack on phones. The black 0.5px rule above them uses a native CSS border to remain visible in WebKit. The separate source image, laptop, webpage, and SVG mask exports are retained in `public/assets/home-figma/`. The frame's obscured duplicate labels and old footer artwork remain archived. The CASE STUDIES subtitle is now 15px on all viewport sizes.
 
-About follows Figma frame `28:40` with the full “Curious George, Literally” biography, upper-right portrait, and Resume/LinkedIn buttons. About and Contact share a desktop outer size of **806 × 885px** (30% wider than the previous 620px dialog), capped to the viewport with internal scrolling. Contact uses the same Inter font at **14pt**, with a telephone link and a `mailto:` email link. The email action opens the visitor's configured mail handler. Navigation is **Work / About / Contact** on every page. Dialogs close with Escape, their close button or the backdrop, lock background scrolling, and restore focus to their trigger, including in Safari.
+**Overall Kiana website updates version 2** implements `specs/changes/update 3.md`. About+Contact is a full page at `/about/`, replacing both profile popups. It follows Figma **About -NEW** (`522:265`, 1440 × 1315): the updated four-paragraph biography includes the University of Washington master's program, with a 659px text column, 16px/26px Inter body text, a 36px/44px heading, and the updated 266.141px circular portrait at the upper right. The contact section uses `kikig6204@gmail.com` and the new Figma number `650-817-5454`, with `mailto:` and `tel:` links. Resume and LinkedIn retain their existing destinations and open in new tabs. Both buttons change to `#828a8b` on hover or keyboard focus. A separate `about/index.html` is a Vite build entry, supporting direct visits, reloads, and deployment below a subdirectory.
+
+Navigation is **Work / About+Contact** on every page. The hover underline now belongs to the text label, positioned 4px below its line box. Previously it was positioned 6px above the link's bottom edge, and the case-study headers' zero vertical padding moved it into the letters. Header positioning and the existing image-enlargement dialogs are retained.
+
+The global footer follows Figma **Footer Revised** (`523:49`, 1440 × 234): slate `#3c444b`, a native 57 × 38px SVG logo, white Fira Mono brand text, and a two-line LET’S CONNECT link. The link changes to logo gold `#f4cf14` on hover/focus and opens `/about/`. Older footer labels covered by the revised background are excluded from the rendered page. All four source assets, native dimensions and checksums are in `public/assets/website-v2-figma/manifest.json`; complete frame settings, text runs, image transforms and local-path references are archived in `Assets/figma files/overall-website-v2-2026-10-21/`.
 
 The 11 unchanged Figma exports and checksums are recorded in `public/assets/home-figma/manifest.json` and `public/assets/about-figma/manifest.json`. Complete frame metadata and generated reference layouts, with download URLs replaced by local paths, are archived in `Assets/figma files/home-about-2026-10-19/`. Figma reports Helvetica Neue Bold as missing on Select Work's heading; the existing Helvetica Neue / Helvetica / Arial system stack is retained. Inter and Fira Mono are served locally through `src/styles/portfolio-content.css`.
 
 On devices with a mouse or trackpad, project tiles rise 8 pixels and tilt 2 degrees with a soft shadow on hover. Keyboard focus gives the tile the same lift while retaining the visible focus outline. The new tiles keep their image crops fixed. Touch devices keep the static layout; reduced-motion preferences disable the transforms while retaining the shadow cue.
 
-Header and footer use `public/assets/brand/ki-logo.png`, a transparent extraction of the six colored shapes in `Assets/Ki Logo.jpg`. The displayed logo remains 54 × 36 pixels on desktop and 45 × 30 on phones. The replacement was made with the built-in imagegen tool; its exact extraction prompt is recorded in `Assets/ki-logo-transparent-prompt.txt`.
+The default header uses `public/assets/brand/ki-logo.png`, a transparent extraction of the six colored shapes in `Assets/Ki Logo.jpg`. The displayed logo remains 54 × 36 pixels on desktop and 45 × 30 on phones. The replacement was made with the built-in imagegen tool; its exact extraction prompt is recorded in `Assets/ki-logo-transparent-prompt.txt`.
 
 The shared header stays at the top while scrolling, with a translucent frosted-glass layer that blurs content behind the sharp navigation text. The glass fades to transparent along its lower edge so scrolling content passes smoothly behind it. Its measured height offsets anchor links and the desktop case-study sidebar so content stays visible below it. All fonts are local files or system fallbacks, with no remote font requests.
 
@@ -189,7 +194,7 @@ The temporary text-alignment line and controls have been removed after saving th
 
 ## Project pages and reusable template
 
-Open `/projects/obayashi/` and `/projects/pointly/` for the current case studies, `/projects/obayashi_old/` for the original Obayashi placeholder, or `/projects/template/` for the six-section template preview. The home page shows Obayashi and Point.ly; reserved Project 03 and Project 04 tiles are hidden until their content is ready. Pages retain the sticky glass header and shared footer. Both Figma case studies use their inspected logos, spacing, and Fira Mono, with the approved Work / About / Contact navigation shared by every page. The brand returns home, and each project includes a return-to-work link. Exhibit images can be enlarged in an accessible dialog or opened at full size.
+Open `/projects/obayashi/` and `/projects/pointly/` for the current case studies, `/projects/obayashi_old/` for the original Obayashi placeholder, or `/projects/template/` for the six-section template preview. The home page shows Obayashi and Point.ly; reserved Project 03 and Project 04 tiles are hidden until their content is ready. Pages retain the sticky glass header and shared footer. Both Figma case studies use their inspected logos, spacing, and Fira Mono, with Work / About+Contact navigation shared by every page. The brand returns home, and the Work menu returns to selected work. Exhibit images can be enlarged in an accessible dialog or opened at full size.
 
 The reusable template's six modules are **About**, **Deliverable**, **Completed**, **User Persona**, **Research**, and **Design Evolution**, in that order. Each has its own component in `src/components/CaseStudySections/` and uses the shared section layout. The template supplies placeholder text and imagery for all six. Point.ly now has its own layout in `PointlyCaseStudyPage.jsx` so the supplied redesign does not change other project templates.
 
@@ -204,44 +209,35 @@ The horizontal lines in the live Figma frame “Pointly Case Study 2” (`90:18`
 
 Obayashi follows the directly inspected October 19, 2026 Figma frame `420:76` in `wZSRbIZZXfUlrq902OXE2W`. The reference is 1440 × 12278 with 1200-pixel content, 120-pixel side margins, a 12-column grid and 24-pixel gutters. It includes five project-detail columns, Home/Markets hero screens, the challenge, four green guiding principles, competitive benchmarking, four website-audit findings, priorities and strategy, stakeholder research, a quote, storyboard and brand imagery, sketches and wireframes, final designs, outcomes and reflection. `Assets/figma files/obayashi-inspection-2026-10-19/` retains the exact text, styles, geometry, image fills, constraints, masks, effects, exports and source assets. The original inspection remains intact. The approved revision is saved in `Assets/figma files/obayashi-update-2026-10-19/`, including the current 190-node snapshot, an object-by-object comparison, and seven original SVG exports for the revised dividers, masks, and 35-pixel audit icon. All 24 raster sources are unchanged. The 41 reference PNG/SVG assets in `public/assets/obayashi-figma/` combine those updated exports with the unchanged originals; the manifest records their SHA-256 values, source paths, layer IDs, crop geometry, and seven individually identified dividers. Regenerate using `python3 scripts/import-obayashi-figma.py` (Python standard library only). The older PNG-based assets remain archived.
 
-The approved editorial changes keep Obayashi numbered `01 /` to match its home tile, render one Methodology label, and repair the forced break inside “relevant.” Body/headings use local Inter; labels/navigation use local Fira Mono. Exact colors include slate `#3a4855`, green `#0ba147`, lime `#e7ef52`, and label gray `#60676c`. The six section links stay 24 pixels beneath the glass header on desktop and wrap above the content below 1024 pixels. All seven black section dividers use native CSS top borders, requesting Figma’s 0.5-pixel stroke weight and retaining each line’s width and offset, including the 1200-pixel Project Details rule and six 892-pixel section rules. Browsers may snap that border to one pixel on a 1x display. The two original divider SVG exports remain archived for provenance but are not embedded: WebKit fails to decode their intrinsic heights below one pixel, while Chrome loads them. Native borders avoid that Safari rendering failure and keep the lines visible. The revision updates the Project Details labels to 12 pixels, the hero Home crop, 202 × 200 guiding-principle cards, competitive matrix and interview montage masks, audit icons and text alignment, Key Decision width, storyboard spacing, design heading, and outcomes/reflection spacing. The actual Figma timeline is 10 months. The four revised outcome bullets and implementation-status paragraph come directly from Figma; the status explicitly states that usability and engagement impact has not yet been measured. Outcomes and reflection come from the live frame; no new results or metrics were invented. The original placeholder remains at `/projects/obayashi_old/`. Obayashi's home tile opens `/projects/obayashi/`, and its footer links to Point.ly and back to selected work.
+The approved editorial changes keep Obayashi numbered `01 /` to match its home tile, render one Methodology label, and repair the forced break inside “relevant.” Body/headings use local Inter; labels/navigation use local Fira Mono. Exact colors include slate `#3a4855`, green `#0ba147`, lime `#e7ef52`, and label gray `#60676c`. The six section links stay 24 pixels beneath the glass header on desktop and wrap above the content below 1024 pixels. All seven black section dividers use native CSS top borders, requesting Figma’s 0.5-pixel stroke weight and retaining each line’s width and offset, including the 1200-pixel Project Details rule and six 892-pixel section rules. Browsers may snap that border to one pixel on a 1x display. The two original divider SVG exports remain archived for provenance but are not embedded: WebKit fails to decode their intrinsic heights below one pixel, while Chrome loads them. Native borders avoid that Safari rendering failure and keep the lines visible. The revision updates the Project Details labels to 12 pixels, the hero Home crop, 202 × 200 guiding-principle cards, competitive matrix and interview montage masks, audit icons and text alignment, Key Decision width, storyboard spacing, design heading, and outcomes/reflection spacing. The actual Figma timeline is 10 months. The four revised outcome bullets and implementation-status paragraph come directly from Figma; the status explicitly states that usability and engagement impact has not yet been measured. Outcomes and reflection come from the live frame; no new results or metrics were invented. The original placeholder remains at `/projects/obayashi_old/`. Obayashi's home tile opens `/projects/obayashi/`. Its sentence-case summary is “Aligning teams, audiences, and priorities into a unified experience”; the tools list omits Wix. Its ending contains only “Next Project: Point.ly,” linking to `/projects/pointly/`.
 
 `src/components/CareersLaptop/CareersLaptop.jsx` preserves the original laptop PNG and places the unmodified `Careers 1` export inside the screen. The source display rectangle is `(180, 37, 1604, 1039)` within the 1964 × 1196 image. A clipped browser surface preserves the original bezel, camera notch and base. The page scrolls upward over a 48-second cycle, holds at the top and bottom, then fades briefly to reset. ResizeObserver calculates travel from the full page height and visible screen height, so the final footer appears without empty space. It starts automatically when visible, pauses off-screen or in a hidden tab, and displays a static preview for reduced-motion visitors. The Careers caption and the laptop's original desktop placement are retained. The approved final version displays no Pause/Play or full-page enlargement controls beneath the laptop; the automatic scrolling and loop timing remain unchanged.
 
-### Deploy Select Work, About, and Contact through GitHub
+### Deploy Overall Kiana website updates version 2 through GitHub
 
-The Obayashi and Point.ly Safari divider fixes are already included in commit `a21facf`. This update adds the approved Figma home tiles, biography, resume, profile links, and shared contact dialog. Build and verify, then stage this update:
+The earlier home/About update and Point.ly numbering correction are already committed. This update replaces the profile popups, adds the new About page and footer, fixes the navigation hover underline, and applies the requested subtitle and Obayashi edits. Build and verify, then stage this update, including removal of the two old popup components:
 
 ```sh
 cd "/Users/geoffgeorge/Developer/Kiana Portfolio" &&
 npm run build &&
 PORTFOLIO_TEST_TARGET=production npx playwright test --workers=2 &&
 git add -- \
-  README.md \
-  playwright.config.js \
-  src/App.jsx \
-  src/main.jsx \
-  src/styles/portfolio-content.css \
-  src/data/site.js \
-  src/data/projects.js \
-  src/components/Modal/ \
-  src/components/Navigation/ \
-  src/components/ProjectCard/ \
-  src/components/SelectedWork/ \
+  README.md vite.config.js about/ \
+  src/App.jsx src/lib/urls.js src/data/site.js src/data/about.js \
+  src/pages/AboutPage.jsx src/pages/AboutPage.css \
+  src/pages/ObayashiCaseStudyPage.jsx src/pages/ObayashiCaseStudyPage.css \
+  src/components/Navigation/ src/components/SiteFooter/ \
   src/components/SiteHeader/SiteHeader.jsx \
-  src/components/SiteFooter/SiteFooter.jsx \
-  tests/home-about-design.spec.js \
-  tests/portfolio.spec.js \
-  tests/hero-layout.spec.js \
-  tests/obayashi-design.spec.js \
-  tests/case-study.spec.js \
-  public/assets/home-figma/ \
-  public/assets/about-figma/ \
-  public/assets/kiana-george-resume.pdf \
-  "Assets/Kiana George Resume.pdf" \
-  "Assets/figma files/home-about-2026-10-19/" &&
+  src/components/SelectedWork/SelectedWork.css \
+  src/components/Modal/Modal.css \
+  src/components/Modal/AboutContent.jsx src/components/Modal/ContactContent.jsx \
+  tests/portfolio.spec.js tests/case-study.spec.js tests/hero-layout.spec.js \
+  tests/hero-animation.spec.js tests/home-about-design.spec.js tests/obayashi-design.spec.js \
+  public/assets/website-v2-figma/ \
+  "Assets/figma files/overall-website-v2-2026-10-21/" \
+  "specs/changes/update 3.md" &&
 git diff --cached --stat &&
-git commit -m "Update Figma work tiles, About and Contact dialogs" &&
+git commit -m "Implement overall Kiana website updates version 2" &&
 git push origin main
 ```
 
@@ -262,7 +258,7 @@ For future projects, useful additions are a project overview (role, team, timeli
 
 The original shareable file is copied byte-for-byte into `pointly project/index.html`. `pointly project/case-study.html` extracts the earlier Point.ly case study with local image files. Its manifest records original image positions, alt text, dimensions, and checksums. Those earlier images remain archived in `public/assets/pointly/` and the earlier content in `src/data/caseStudies/pointly.js`; the active Point.ly route uses the new design. The archived source HTML pages are not part of the production site.
 
-The build includes a real `index.html` under every project path, so direct links and reloads work on static hosts without a special SPA redirect. Relative asset paths and `src/lib/urls.js` support publishing the entire `dist/` folder at the domain root or below a directory. `useInitialHashNavigation.js` scrolls incoming fragment links after React, lazy content and fonts are ready, so Work returns directly to `/#work` from project pages and shared section links open at the correct heading.
+The build includes a real `index.html` under `/about/` and every project path, so direct links and reloads work on static hosts without a special SPA redirect. Relative asset paths and `src/lib/urls.js` support publishing the entire `dist/` folder at the domain root or below a directory. `useInitialHashNavigation.js` scrolls incoming fragment links after React, lazy content and fonts are ready, so Work returns directly to `/#work` from project pages and shared section links open at the correct heading.
 
 ## Verification
 
@@ -286,7 +282,7 @@ npx playwright install webkit
 PORTFOLIO_TEST_TARGET=production PORTFOLIO_TEST_WEBKIT=1 npx playwright test --project=safari-webkit --grep "section dividers"
 ```
 
-The approved home/About/Contact checks verify all 11 source exports, the complete Figma biography, source-layer geometry, 806 × 885px matching dialog sizes, phone and email actions, real PDF delivery, new-tab destinations, and focus restoration from narrow phones through desktop. Run them with the same optional WebKit browser:
+The version 2 checks verify all 11 archived exports and four revised assets, the updated biography and portrait geometry, full-page About routing/reloads, footer placement, grey and gold rollover states, underline clearance below the text, phone/email actions, PDF delivery, new-tab destinations, responsive layout, and subdirectory asset/link resolution. Run them with the same optional WebKit browser:
 
 ```sh
 PORTFOLIO_TEST_TARGET=production PORTFOLIO_TEST_WEBKIT=1 npx playwright test --project=safari-webkit tests/home-about-design.spec.js

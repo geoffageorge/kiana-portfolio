@@ -9,7 +9,7 @@ export default defineConfig({
   base: './',
   build: {
     rolldownOptions: {
-      input: { home: resolve(import.meta.dirname, 'index.html'), ...Object.fromEntries(projectRoutes.map(project => [project.slug, resolve(import.meta.dirname, `projects/${project.slug}/index.html`)])) },
+      input: { home: resolve(import.meta.dirname, 'index.html'), about: resolve(import.meta.dirname, 'about/index.html'), ...Object.fromEntries(projectRoutes.map(project => [project.slug, resolve(import.meta.dirname, `projects/${project.slug}/index.html`)])) },
     },
   },
   server: { port: 5173, strictPort: true },

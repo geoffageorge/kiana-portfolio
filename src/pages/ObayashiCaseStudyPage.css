@@ -153,7 +153,7 @@
 .obayashi-retrospective > h2 { margin-top: 34px; }
 .obayashi-reflection { display: grid; grid-template-columns: 164px minmax(0,492px); gap: 72px; width: min(894px,100%); min-height: 508px; margin-top: 27px; margin-left: -3px; padding: 72px 90px 39px 73px; border-radius: 12px; background: var(--obayashi-lime); box-shadow: 2px 2px 4px rgb(0 0 0 / 10%); }
 .obayashi-reflection h3 { font-size: 24px; line-height: 28px; }
-.obayashi-end { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 24px; margin-top: 120px; padding-top: 28px; border-top: 1px solid #c6c6c6; font-size: 16px; }
+.obayashi-end { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 24px; margin-top: 120px; padding-top: 28px; border-top: 1px solid #c6c6c6; font-size: 16px; }
 .obayashi-end a { text-decoration: underline; text-underline-offset: 5px; }
 @media (min-width: 1280px) {
   .obayashi-principles > div { grid-template-columns: repeat(4,202px); gap: 28px; justify-content: start; }

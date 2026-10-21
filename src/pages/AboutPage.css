@@ -1,0 +1,48 @@
+.page-container.page-container--about { width: min(1200px, calc(100% - 80px)); }
+.about-page { position: relative; min-height: calc(1315px - var(--site-header-height)); padding-top: max(40px, calc(183px - var(--site-header-height))); padding-bottom: 126px; color: #000; font: 400 16px/26px var(--portfolio-body); font-optical-sizing: none; }
+.about-page__story { width: min(659px, calc(100% - 390px)); margin-left: 104px; }
+.about-page__eyebrow { margin: 0; font-size: 14px; line-height: 26px; }
+.about-page h1 { position: relative; left: -2px; max-width: 471px; margin: 15px 0 27px; font: 700 36px/44px var(--portfolio-body); letter-spacing: 0; }
+.about-page__copy { min-height: 520px; }
+.about-page__copy p { margin: 0 0 26px; }
+.about-page__copy p:last-child { margin-bottom: 0; }
+.about-page__actions { display: flex; flex-wrap: wrap; gap: 20px 40px; margin-top: 16px; }
+.about-page__button { position: relative; display: inline-flex; align-items: center; justify-content: center; height: 31px; border-radius: 4px; background: #25261e; color: #fff; font: 400 14px/1.2 var(--portfolio-mono); white-space: nowrap; transition: background-color 160ms ease; }
+.about-page__button > span { position: relative; }
+.about-page__button--resume { width: 99px; }
+.about-page__button--resume img { position: absolute; inset: 0; max-width: none; }
+.about-page__button--linkedin { width: 115px; }
+.about-page__button:hover, .about-page__button:focus-visible { background: #828a8b; }
+.about-page__button--resume:hover img, .about-page__button--resume:focus-visible img { opacity: 0; }
+.about-page__contact { margin-top: 60px; }
+.about-page__contact h2 { position: relative; left: -2px; max-width: 471px; margin: 0 0 15px; font: 700 21px/44px var(--portfolio-body); }
+.about-page__contact address { display: grid; gap: 26px; font-style: normal; }
+.about-page__contact p { margin: 0; font-size: 14px; }
+.about-page__contact a { display: block; width: fit-content; max-width: 100%; overflow-wrap: anywhere; }
+.about-page__phone { font-size: 14px; }
+.about-page__contact a:hover { text-decoration: underline; text-underline-offset: 4px; }
+.about-page__portrait { position: absolute; left: 823.039px; top: calc(165.039px - var(--site-header-height)); width: 266.141px; height: 266.141px; margin: 0; overflow: hidden; mask-size: 100% 100%; mask-repeat: no-repeat; }
+.about-page__portrait-rotation { width: 100%; height: 100%; transform: rotate(5.93147deg); }
+.about-page__portrait-source { position: absolute; left: -34.144499%; top: -10.288595%; width: 160.208815%; height: 181.374003%; overflow: hidden; }
+.about-page__portrait img { position: absolute; left: 3.48562%; top: 2.05347%; width: 89.98061%; height: 89.92962%; max-width: none; }
+@media (max-width: 1279px) {
+  .about-page__story { margin-left: 40px; width: min(659px, calc(100% - 350px)); }
+  .about-page__portrait { left: auto; right: 0; width: 240px; height: 240px; top: 40px; }
+}
+@media (max-width: 900px) {
+  .about-page { padding-top: 54px; padding-bottom: 90px; min-height: 0; }
+  .about-page__story { margin-left: 0; width: 100%; }
+  .about-page__eyebrow, .about-page h1 { max-width: calc(100% - 240px); }
+  .about-page h1 { min-height: 160px; margin-bottom: 30px; }
+  .about-page__portrait { top: 54px; width: 210px; height: 210px; }
+  .about-page__copy { min-height: 0; }
+  .about-page__actions { margin-top: 30px; }
+}
+@media (max-width: 767px) {
+  .page-container.page-container--about { width: calc(100% - 40px); }
+  .about-page { padding-top: 40px; padding-bottom: 70px; }
+  .about-page__eyebrow, .about-page h1 { max-width: calc(100% - 144px); }
+  .about-page h1 { min-height: 130px; font-size: 28px; line-height: 36px; }
+  .about-page__portrait { top: 40px; width: 128px; height: 128px; }
+  .about-page__actions { gap: 20px; }
+}

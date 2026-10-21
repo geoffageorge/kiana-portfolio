@@ -1,7 +1,14 @@
-.site-footer { background: #000; color: #dedede; }
-.site-footer__inner { display: flex; align-items: flex-start; justify-content: space-between; gap: 32px; min-height: 234px; padding-block: 62px; }
-.site-footer__brand { gap: 24px; }
-.site-footer__links { display: flex; flex-direction: column; align-items: flex-end; gap: 8px; padding-top: 8px; color: #8cb9c6; font-family: var(--font-mono); font-size: 14px; line-height: 1.5; text-transform: uppercase; }
-.site-footer__links button { border: 0; background: transparent; color: inherit; font: inherit; text-transform: inherit; }
-.site-footer__links a:hover, .site-footer__links button:hover { color: #fff; text-decoration: underline; text-underline-offset: 4px; }
-@media (max-width: 767px) { .site-footer__inner { flex-direction: column; gap: 34px; padding-block: 42px; min-height: 250px; } .site-footer__brand { gap: 16px; } .site-footer__links { align-items: flex-start; font-size: 13px; padding-top: 0; } }
+.site-footer { background: #3c444b; color: #fff; }
+.site-footer__inner { display: flex; align-items: flex-start; justify-content: space-between; gap: 32px; width: min(1180px, calc(100% - 80px)); min-height: 234px; padding-top: 61px; padding-bottom: 60px; }
+.site-footer__brand { display: flex; align-items: center; gap: 23px; }
+.site-footer__brand > img { flex: 0 0 auto; max-width: none; }
+.site-footer .brand-name { gap: 9px; font: 400 15px/18px var(--portfolio-mono); white-space: pre; transform: translateY(4px); }
+.site-footer__connect { flex: 0 0 76px; margin-top: 7px; margin-right: -5px; font: 400 14px/17px var(--portfolio-mono); transition: color 160ms ease; }
+.site-footer__connect:hover, .site-footer__connect:focus-visible { color: #f4cf14; }
+@media (max-width: 900px) { .site-footer .brand-name { font-size: 12px; } }
+@media (max-width: 767px) {
+  .site-footer__inner { flex-direction: column; width: calc(100% - 40px); gap: 32px; padding-block: 42px; min-height: 250px; }
+  .site-footer__brand { gap: 16px; }
+  .site-footer .brand-name { gap: 0; font-size: 11px; line-height: 18px; transform: none; }
+  .site-footer__connect { flex-basis: auto; margin: 0; }
+}

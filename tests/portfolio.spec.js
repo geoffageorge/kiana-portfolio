@@ -26,25 +26,18 @@ test('portfolio renders only the two current projects with working artwork and p
   expect(errors).toEqual([]);
 });
 
-test('shared navigation dialogs work and restore keyboard focus', async ({ page }) => {
+test('shared About+Contact link opens the full page and Work returns home', async ({ page }) => {
   await page.goto('/');
-  const about = page.getByRole('button', { name: 'About', exact: true });
+  const about = page.getByRole('link', { name: 'About+Contact', exact: true });
   await about.click();
-  const dialog = page.getByRole('dialog');
-  await expect(dialog).toBeVisible();
-  await expect(dialog.getByRole('heading')).toHaveText('Curious George, Literally');
-  await expect(dialog.getByRole('link', { name: /Resume/ })).toHaveAttribute('href', '/assets/kiana-george-resume.pdf');
-  await page.keyboard.press('Escape');
-  await expect(dialog).not.toBeVisible();
-  await expect(about).toBeFocused();
-  const contact = page.getByRole('navigation').getByRole('button', { name: 'Contact', exact: true });
-  await contact.click();
-  await expect(dialog.getByRole('heading')).toHaveText('Contact Kiana George');
-  await expect(dialog.getByRole('link', { name: 'kikig6204@gmail.com', exact: true })).toHaveAttribute('href', 'mailto:kikig6204@gmail.com');
-  await expect(dialog.getByRole('link', { name: '650 787 1892' })).toHaveAttribute('href', 'tel:+16507871892');
-  await page.getByRole('button', { name: 'Close dialog' }).click();
-  await expect(contact).toBeFocused();
-  await expect(page.locator('.site-footer').getByRole('link', { name: 'LinkedIn', exact: true })).toHaveAttribute('href', 'https://www.linkedin.com/in/kiana-george-75b061209/');
+  await expect(page).toHaveURL(/\/about\/$/);
+  await expect(page.getByRole('heading', { level: 1 })).toHaveText('Curious George, Literally');
+  await expect(page.getByRole('link', { name: /Resume/ })).toHaveAttribute('href', '/assets/kiana-george-resume.pdf');
+  await expect(page.getByRole('dialog')).toHaveCount(0);
+  await expect(page.getByRole('link', { name: 'kikig6204@gmail.com', exact: true })).toHaveAttribute('href', 'mailto:kikig6204@gmail.com');
+  await expect(page.getByRole('link', { name: '650-817-5454' })).toHaveAttribute('href', 'tel:+16508175454');
+  await page.getByRole('navigation', { name: 'Main navigation' }).getByRole('link', { name: 'Work', exact: true }).click();
+  await expect(page).toHaveURL(/\/#work$/);
 });
 
 test('animation loops continuously and respects reduced motion', async ({ page }) => {

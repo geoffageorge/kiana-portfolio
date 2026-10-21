@@ -83,7 +83,7 @@ test('hero matches the original rings, labels, fades, and spirograph throughout 
 });
 
 test('page background and sticky header work on home and project pages', async ({ page }) => {
-  for (const path of ['/', '/projects/pointly/', '/projects/template/', '/projects/obayashi/', '/projects/obayashi_old/', '/projects/project-03/', '/projects/project-04/']) {
+  for (const path of ['/', '/about/', '/projects/pointly/', '/projects/template/', '/projects/obayashi/', '/projects/obayashi_old/', '/projects/project-03/', '/projects/project-04/']) {
     await page.goto(path);
     await expect(page.getByRole('heading', { level: 1 })).toBeVisible();
     await expect(page.locator('body')).toHaveCSS('background-color', 'rgb(255, 255, 255)');
@@ -97,6 +97,9 @@ test('page background and sticky header work on home and project pages', async (
       await expect.poll(() => page.locator('#work').evaluate(node => node.getBoundingClientRect().top >= document.querySelector('.site-header').getBoundingClientRect().bottom)).toBe(true);
       await page.getByRole('link', { name: 'Kiana George home', exact: true }).click();
       await expect.poll(() => page.evaluate(() => window.scrollY)).toBeLessThan(1);
+    } else if (path === '/about/') {
+      await page.getByRole('navigation', { name: 'Main navigation' }).getByRole('link', { name: 'Work', exact: true }).click();
+      await expect(page).toHaveURL(/\/#work$/);
     } else {
       const obayashi = path === '/projects/obayashi/';
       await page.getByRole('navigation', { name: 'Project sections' }).getByRole('link', { name: obayashi ? 'Web Audit' : /Research/ }).click();

@@ -1,11 +1,10 @@
 import './Navigation.css';
 
-export default function Navigation({ onAbout, onContact, workHref = '#work' }) {
+export default function Navigation({ aboutHref, workHref = '#work', aboutActive = false }) {
   return (
     <nav className="site-nav" aria-label="Main navigation">
-      <a href={workHref}>Work</a>
-      <button type="button" onClick={onAbout}>About</button>
-      <button type="button" onClick={onContact}>Contact</button>
+      <a href={workHref}><span className="site-nav__label">Work</span></a>
+      <a href={aboutHref} aria-current={aboutActive ? 'page' : undefined}><span className="site-nav__label">About+Contact</span></a>
     </nav>
   );
 }

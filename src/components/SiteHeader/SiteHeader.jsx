@@ -6,7 +6,7 @@ import Navigation from '../Navigation/Navigation.jsx';
 import { assetUrl } from '../../lib/urls.js';
 import './SiteHeader.css';
 
-export default function SiteHeader({ site, onAbout, onContact, homeHref = '#top', workHref = '#work', variant = 'default' }) {
+export default function SiteHeader({ site, aboutHref, aboutActive = false, homeHref = '#top', workHref = '#work', variant = 'default' }) {
   const headerRef = useRef(null);
 
   useLayoutEffect(() => {
@@ -29,7 +29,7 @@ export default function SiteHeader({ site, onAbout, onContact, homeHref = '#top'
             {variant === 'obayashi' ? <img className="obayashi-mark" src={assetUrl('obayashi-figma/logo.svg')} width="57" height="38" alt="" aria-hidden="true" data-figma-node="479:58" /> : variant === 'pointly' ? <PointlyMark /> : <Logo />}
             <BrandName name={site.name} descriptor={site.descriptor} />
           </a>
-          <Navigation onAbout={onAbout} onContact={onContact} workHref={workHref} />
+          <Navigation aboutHref={aboutHref} aboutActive={aboutActive} workHref={workHref} />
         </div>
       </header>
     </>

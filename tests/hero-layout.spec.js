@@ -86,7 +86,11 @@ test('white pages, dividing rules, and transparent logos appear throughout the s
     await expect(page.locator('body')).toHaveCSS('background-color', 'rgb(255, 255, 255)');
     const logos = page.locator('.brand-logo');
     const figmaCaseStudy = ['/projects/pointly/', '/projects/obayashi/'].includes(path);
-    await expect(logos).toHaveCount(figmaCaseStudy ? 1 : 2);
+    await expect(logos).toHaveCount(figmaCaseStudy ? 0 : 1);
+    const footerLogo = page.locator('.site-footer__brand > img');
+    await expect(footerLogo).toHaveAttribute('src', '/assets/website-v2-figma/footer-logo.svg');
+    await expect(footerLogo).toHaveAttribute('width', '57');
+    await expect(footerLogo).toHaveAttribute('height', '38');
     if (path === '/projects/pointly/') {
       await expect(page.locator('.pointly-mark img')).toHaveCount(6);
     } else if (path === '/projects/obayashi/') {
@@ -102,7 +106,7 @@ test('white pages, dividing rules, and transparent logos appear throughout the s
       expect(size.width).toBe(page.viewportSize().width < 768 ? 45 : 54);
       expect(size.height).toBe(page.viewportSize().width < 768 ? 30 : 36);
     }
-    expect(await logos.first().evaluate(image => {
+    if (!figmaCaseStudy) expect(await logos.first().evaluate(image => {
       const canvas = document.createElement('canvas'); canvas.width = image.naturalWidth; canvas.height = image.naturalHeight;
       const context = canvas.getContext('2d'); context.drawImage(image, 0, 0);
       return [[0, 0], [.5, .5], [0, .5]].map(([x, y]) => context.getImageData(Math.floor(x * canvas.width), Math.floor(y * canvas.height), 1, 1).data[3]);

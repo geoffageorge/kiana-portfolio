@@ -1,0 +1,45 @@
+const imgLogo2 = "/assets/website-v2-figma/footer-logo.svg";
+
+export default function FooterRevised() {
+  return (
+    <div className="bg-white relative size-full" data-node-id="523:49" data-name="Footer Revised">
+      <div className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Instrument_Sans:SemiBold'] font-semibold h-[73px] justify-center leading-[0] left-[129px] text-[36px] text-white top-[87.5px] w-[472px]" data-node-id="523:23" style={{ fontVariationSettings: '"wdth" 100' }}>
+        <p className="leading-[1.05]">Select Work</p>
+      </div>
+      <div className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Fira_Mono:Regular'] justify-center leading-[0] left-[130px] not-italic text-[14px] text-white top-[119.5px] whitespace-nowrap" data-node-id="523:24">
+        <p className="leading-[1.2]">CASE STUDIES</p>
+      </div>
+      <div className="absolute bg-[#f7f7f7] h-[234px] left-0 top-0 w-[1440px]" data-node-id="523:25" />
+      <div className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Fira_Mono:Regular'] justify-center leading-[0] left-[calc(83.33%-1px)] not-italic text-[14px] text-black top-[85.5px] whitespace-nowrap" data-node-id="523:26">
+        <p className="leading-[1.2]">{`LINKEDIN ↗ `}</p>
+      </div>
+      <div className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Fira_Mono:Regular'] justify-center leading-[0] left-[calc(91.67%-100px)] not-italic text-[15px] text-black top-[114px] whitespace-nowrap" data-node-id="523:27">
+        <p className="leading-[1.2]">EMAIL ↗</p>
+      </div>
+      <div className="absolute h-[38px] left-[130px] top-[61px] w-[57px]" data-node-id="523:28" data-name="Logo 2">
+        <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgLogo2} />
+      </div>
+      <div className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Fira_Mono:Regular'] justify-center leading-[0] left-[calc(8.33%+90px)] not-italic text-[15px] text-black top-[84px] whitespace-nowrap" data-node-id="523:35">
+        <p className="leading-[1.2] whitespace-pre">{`KIANA GEORGE  / UX DESIGN + INSIGHTS `}</p>
+      </div>
+      <div className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Instrument_Sans:SemiBold'] font-semibold h-[73px] justify-center leading-[0] left-[129px] text-[36px] text-white top-[87.5px] w-[472px]" data-node-id="523:36" style={{ fontVariationSettings: '"wdth" 100' }}>
+        <p className="leading-[1.05]">Select Work</p>
+      </div>
+      <div className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Fira_Mono:Regular'] justify-center leading-[0] left-[130px] not-italic text-[14px] text-white top-[119.5px] whitespace-nowrap" data-node-id="523:37">
+        <p className="leading-[1.2]">CASE STUDIES</p>
+      </div>
+      <div className="absolute bg-[#3c444b] h-[234px] left-0 top-0 w-[1440px]" data-node-id="523:38" />
+      <div className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Fira_Mono:Regular'] justify-center leading-[0] left-[calc(91.67%-81px)] not-italic text-[14px] text-white top-[85px] whitespace-nowrap" data-node-id="523:39">
+        <p className="leading-[1.2] mb-0 whitespace-pre">{`LET’S `}</p>
+        <p className="leading-[1.2] whitespace-pre">{`CONNECT ↗ `}</p>
+      </div>
+      <div className="absolute h-[38px] left-[130px] top-[61px] w-[57px]" data-node-id="523:41" data-name="Logo 3">
+        <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgLogo2} />
+      </div>
+      <div className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Fira_Mono:Regular'] justify-center leading-[0] left-[calc(8.33%+90px)] not-italic text-[15px] text-white top-[84px] whitespace-nowrap" data-node-id="523:48">
+        <p className="leading-[1.2] whitespace-pre">{`KIANA GEORGE  / UX DESIGN + INSIGHTS `}</p>
+      </div>
+    </div>
+  );
+}
+

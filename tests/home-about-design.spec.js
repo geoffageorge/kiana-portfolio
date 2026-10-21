@@ -62,83 +62,165 @@ test('Select Work uses the Figma tile text, artwork geometry and Safari-compatib
     }
   }
   await expect(page.locator('.project-artwork--pointly')).toHaveCSS('background-color', 'rgb(136, 207, 253)');
+  await expect(page.locator('.selected-work .section-heading p')).toHaveCSS('font-size', '15px');
 });
 
-test('About reproduces the biography and both profile popups share the approved size', async ({ page }) => {
+const version2Frame = async name => JSON.parse(await file(`Assets/figma files/overall-website-v2-2026-10-21/${name}-inspection.json`));
+
+test('version 2 Figma assets retain their bytes and all four appear in the new page', async ({ page, request }) => {
+  const manifest = JSON.parse(await file('public/assets/website-v2-figma/manifest.json'));
+  expect(manifest.assets).toHaveLength(4);
+  for (const asset of manifest.assets) {
+    const local = await file(`public/assets/website-v2-figma/${asset.file}`);
+    expect(hash(local)).toBe(asset.sha256);
+    const response = await request.get(`/assets/website-v2-figma/${asset.file}`);
+    expect(response.ok()).toBe(true);
+    expect(hash(await response.body())).toBe(asset.sha256);
+  }
+  await page.goto('/about/');
+  await page.locator('img').evaluateAll(images => Promise.all(images.map(i => i.decode())));
+  const used = await page.locator('img, .about-page__portrait').evaluateAll(nodes => [...new Set(nodes.flatMap(n => [n.getAttribute('src'), getComputedStyle(n).maskImage]).filter(s => s?.includes('/website-v2-figma/')).map(s => /website-v2-figma\/([^\")]+)/.exec(s)[1]))].sort());
+  expect(used).toEqual(manifest.assets.map(a => a.file).sort());
+});
+
+test('About+Contact is a full page with the revised Figma biography, contact details and desktop geometry', async ({ page }) => {
   await page.goto('/');
-  await page.getByRole('button', { name: 'About', exact: true }).click();
-  const dialog = page.getByRole('dialog');
+  await page.getByRole('link', { name: 'About+Contact', exact: true }).click();
+  await expect(page).toHaveURL(/\/about\/$/);
+  await page.reload();
+  await expect(page).toHaveTitle('About + Contact / Kiana George');
   await page.evaluate(() => document.fonts.ready);
-  const source = flatten(await sourceFrame('about')).find(n => n.id === '486:9').characters;
-  const paragraphs = source.split(/[\n\u2028]+/).map(p => p.trim()).filter(Boolean);
-  await expect(dialog.locator('.about-content__copy p')).toHaveText(paragraphs);
-  await expect(dialog.getByRole('heading')).toHaveText('Curious George, Literally');
-  await expect(dialog.locator('.about-content__copy p').first()).toHaveCSS('font-size', '16px');
-  await expect(dialog.locator('.about-content__copy p').first()).toHaveCSS('line-height', '26px');
-  await dialog.getByRole('img', { name: 'Kiana George', exact: true }).evaluate(i => i.decode());
-  const before = await dialog.boundingBox();
-  expect(before.width).toBe(Math.min(806, page.viewportSize().width - 40));
-  expect(before.height).toBe(Math.min(885, page.viewportSize().height - 60));
-  const portrait = await dialog.locator('.about-portrait').boundingBox();
-  const heading = await dialog.getByRole('heading').boundingBox();
-  expect(portrait.x).toBeGreaterThan(heading.x + heading.width);
-  expect(portrait.y).toBeLessThan(heading.y + heading.height);
-  await page.keyboard.press('Escape');
-  await page.getByRole('button', { name: 'Contact', exact: true }).click();
-  const after = await dialog.boundingBox();
-  expect(after).toEqual(before);
-  const phone = dialog.getByRole('link', { name: '650 787 1892' });
-  await expect(phone).toHaveAttribute('href', 'tel:+16507871892');
-  expect(await phone.evaluate(n => parseFloat(getComputedStyle(n).fontSize))).toBeCloseTo(14 * 96 / 72, 3);
-  await expect(dialog.getByRole('link', { name: 'kikig6204@gmail.com' })).toHaveAttribute('href', 'mailto:kikig6204@gmail.com');
-  await expect(dialog.locator('.contact-content__row svg')).toHaveCount(2);
-  const email = await dialog.getByRole('link', { name: 'kikig6204@gmail.com' }).boundingBox();
-  expect(email.y).toBeGreaterThan((await phone.boundingBox()).y);
+  const frame = await version2Frame('about');
+  const nodes = flatten(frame);
+  const source = nodes.find(n => n.id === '522:266').characters;
+  await expect(page.locator('.about-page__copy p')).toHaveText(source.split(/[\n\u2028]+/).map(p => p.trim()).filter(Boolean));
+  await expect(page.getByRole('heading', { level: 1 })).toHaveText('Curious George, Literally');
+  await expect(page.locator('.about-page__copy')).toHaveCSS('font-size', '16px');
+  await expect(page.locator('.about-page__copy')).toHaveCSS('line-height', '26px');
+  await expect(page.getByRole('link', { name: 'kikig6204@gmail.com', exact: true })).toHaveAttribute('href', 'mailto:kikig6204@gmail.com');
+  await expect(page.getByRole('link', { name: '650-817-5454' })).toHaveAttribute('href', 'tel:+16508175454');
+  await expect(page.getByRole('dialog')).toHaveCount(0);
+  if (page.viewportSize().width === 1440) {
+    for (const id of ['522:268','522:266','522:269','522:267','522:270','522:271']) {
+      const expected = nodes.find(n => n.id === id);
+      const actual = await page.locator(`[data-figma-node="${id}"]`).boundingBox();
+      for (const key of ['x','y','width']) expect(Math.abs(actual[key] - expected[key]), `${id} ${key}`).toBeLessThan(1);
+    }
+    const sourceImage = nodes.find(n => n.id === '522:276');
+    const actualImage = await page.locator('.about-page__portrait-source').boundingBox();
+    const bounds = sourceImage.absoluteBoundingBox;
+    const expected = { x: bounds.x - frame.absoluteBoundingBox.x, y: bounds.y - frame.absoluteBoundingBox.y, width: bounds.width, height: bounds.height };
+    for (const key of ['x','y','width','height']) expect(Math.abs(actualImage[key] - expected[key]), `portrait ${key}`).toBeLessThan(1);
+  }
 });
 
-test('Resume and LinkedIn open new tabs from About', async ({ page, context }) => {
-  await page.goto('/');
-  await page.getByRole('button', { name: 'About', exact: true }).click();
-  const dialog = page.getByRole('dialog');
-  const resume = dialog.getByRole('link', { name: /Resume/ });
+test('Resume and LinkedIn retain real PDF delivery and new-tab destinations', async ({ page, context }) => {
+  await page.goto('/about/');
+  const resume = page.getByRole('link', { name: /Resume/ });
   await expect(resume).toHaveAttribute('target', '_blank');
   const resumeTab = page.waitForEvent('popup');
   const resumeResponse = context.waitForEvent('response', r => r.url().endsWith('/assets/kiana-george-resume.pdf'));
   await resume.click();
   const pdf = await resumeTab;
-  // Headless WebKit has no PDF viewer; verify the new target and real PDF response.
   expect((await resumeResponse).headers()['content-type']).toMatch(/^application\/pdf/);
   if (!pdf.isClosed()) await pdf.close();
   const url = 'https://www.linkedin.com/in/kiana-george-75b061209/';
-  // Validate navigation without depending on LinkedIn's login/network behavior.
   await context.route(url, route => route.fulfill({ contentType: 'text/html', body: '<title>LinkedIn destination</title>' }));
   const linkedInTab = page.waitForEvent('popup');
-  await dialog.getByRole('link', { name: /LinkedIn/ }).click();
+  await page.getByRole('link', { name: /LinkedIn/ }).click();
   const linkedIn = await linkedInTab;
   await expect(linkedIn).toHaveURL(url);
   expect(await linkedIn.evaluate(() => window.opener)).toBeNull();
   await linkedIn.close();
-  await expect(dialog).toBeVisible();
 });
 
-test('popups remain usable on narrow phones, tablets and desktop', async ({ page }) => {
-  for (const width of [320, 393, 768, 1440]) {
-    await page.setViewportSize({ width, height: 900 });
-    await page.goto('/');
-    for (const name of ['About', 'Contact']) {
-      const trigger = page.getByRole('button', { name, exact: true });
-      await trigger.click();
-      const dialog = page.getByRole('dialog');
-      expect(await dialog.evaluate(n => n.scrollWidth <= n.clientWidth)).toBe(true);
-      expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
-      const close = dialog.getByRole('button', { name: 'Close dialog' });
-      await expect(close).toBeInViewport();
-      if (name === 'About') {
-        await dialog.getByRole('link', { name: /LinkedIn/ }).scrollIntoViewIfNeeded();
-        await expect(dialog.getByRole('link', { name: /LinkedIn/ })).toBeInViewport();
+test('profile button rollovers use the requested grey and footer rollover uses gold', async ({ page }) => {
+  await page.goto('/about/');
+  for (const button of await page.locator('.about-page__button').all()) {
+    await button.hover();
+    await expect(button).toHaveCSS('background-color', 'rgb(130, 138, 139)');
+    const image = button.locator('img');
+    if (await image.count()) await expect(image).toHaveCSS('opacity', '0');
+  }
+  const connect = page.locator('.site-footer__connect');
+  await connect.hover();
+  await expect(connect).toHaveCSS('color', 'rgb(244, 207, 20)');
+  await expect(connect).toHaveAttribute('href', '/about/');
+});
+
+test('the revised footer and two-link navigation appear on every active page', async ({ page }) => {
+  const frame = await version2Frame('footer');
+  const source = flatten(frame);
+  for (const path of ['/', '/about/', '/projects/obayashi/', '/projects/pointly/', '/projects/template/']) {
+    await page.goto(path);
+    const nav = page.getByRole('navigation', { name: 'Main navigation' });
+    await expect(nav.getByRole('link')).toHaveText(['Work','About+Contact']);
+    await expect(nav.getByRole('button')).toHaveCount(0);
+    await expect(page.locator('.site-footer')).toHaveCSS('background-color', 'rgb(60, 68, 75)');
+    if (page.viewportSize().width === 1440) {
+      const footer = await page.locator('.site-footer').boundingBox();
+      expect(footer.height).toBe(frame.height);
+      for (const id of ['523:41', '523:39']) {
+        const target = source.find(n => n.id === id);
+        const actual = await page.locator(`[data-figma-node="${id}"]`).boundingBox();
+        for (const key of ['x','width','height']) expect(Math.abs(actual[key] - target[key]), `${id} ${key}`).toBeLessThan(1);
+        expect(Math.abs(actual.y - footer.y - target.y)).toBeLessThan(1);
       }
-      await page.keyboard.press('Escape');
-      await expect(trigger).toBeFocused();
+    }
+    await page.locator('.site-footer__connect').click();
+    await expect(page).toHaveURL(/\/about\/$/);
+    await expect(page.getByRole('heading', { level: 1 })).toHaveText('Curious George, Literally');
+  }
+});
+
+test('navigation rollover underlines stay below the text in all header variants', async ({ page }) => {
+  for (const path of ['/', '/about/', '/projects/obayashi/', '/projects/pointly/']) {
+    await page.goto(path);
+    const links = page.getByRole('navigation', { name: 'Main navigation' }).getByRole('link');
+    for (const link of await links.all()) {
+      await link.hover();
+      const label = link.locator('.site-nav__label');
+      await expect.poll(() => label.evaluate(n => getComputedStyle(n,'::after').transform)).toBe('matrix(1, 0, 0, 1, 0, 0)');
+      const rule = await label.evaluate(n => {
+        const range = document.createRange(); range.selectNodeContents(n);
+        const style = getComputedStyle(n,'::after');
+        return { y: n.getBoundingClientRect().top + parseFloat(style.top), textBottom: range.getBoundingClientRect().bottom, height: parseFloat(style.height) };
+      });
+      expect(rule.y, path).toBeGreaterThan(rule.textBottom);
+      expect(rule.height).toBe(1);
     }
   }
+});
+
+test('About page and footer reflow without overlap or horizontal scrolling', async ({ page }) => {
+  for (const width of [320,393,768,1024,1440,1920]) {
+    await page.setViewportSize({ width, height: 1000 });
+    await page.goto('/about/');
+    await page.evaluate(() => document.fonts.ready);
+    expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
+    const story = await page.locator('.about-page__copy').boundingBox();
+    const portrait = await page.locator('.about-page__portrait').boundingBox();
+    expect(story.x + story.width <= portrait.x || story.y >= portrait.y + portrait.height).toBe(true);
+    expect(portrait.x).toBeGreaterThanOrEqual(0);
+    expect(portrait.x + portrait.width).toBeLessThanOrEqual(width);
+    const contact = await page.locator('.about-page__contact').boundingBox();
+    const footer = await page.locator('.site-footer').boundingBox();
+    expect(footer.y).toBeGreaterThanOrEqual(contact.y + contact.height);
+  }
+});
+
+test('About URLs and assets resolve correctly under a deployment subdirectory', async ({ page, request, baseURL }) => {
+  await page.route('**/portfolio/**', async route => {
+    const url = new URL(route.request().url());
+    const response = await request.get(`${baseURL}${url.pathname.replace('/portfolio/', '/')}${url.search}`);
+    await route.fulfill({ response });
+  });
+  await page.goto('/portfolio/about/');
+  await expect(page.getByRole('heading', { level: 1 })).toHaveText('Curious George, Literally');
+  await expect(page.getByRole('link', { name: /Resume/ })).toHaveAttribute('href', '/portfolio/assets/kiana-george-resume.pdf');
+  await expect(page.locator('.site-footer__connect')).toHaveAttribute('href', '/portfolio/about/');
+  await expect(page.locator('.about-page__portrait img')).toHaveAttribute('src', '/portfolio/assets/website-v2-figma/portrait.png');
+  await page.getByRole('navigation', { name: 'Main navigation' }).getByRole('link', { name: 'Work', exact: true }).click();
+  await expect(page).toHaveURL(/\/portfolio\/#work$/);
+  await expect(page.getByRole('heading', { name: 'Select Work' })).toBeInViewport();
 });

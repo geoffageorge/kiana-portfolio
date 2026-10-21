@@ -1,16 +1,20 @@
 import { useEffect, useState } from 'react';
 import manifest from '../../public/assets/obayashi-figma/manifest.json';
-import { assetUrl, projectUrl, siteUrl } from '../lib/urls.js';
+import { assetUrl, projectUrl } from '../lib/urls.js';
 import CareersLaptop from '../components/CareersLaptop/CareersLaptop.jsx';
 import './ObayashiCaseStudyPage.css';
 
 const sections = [['competitive-analysis', 'Competitive Analysis'], ['web-audit', 'Web Audit'], ['priorities', 'Priorities'], ['brand-narrative', 'Brand Narrative'], ['site-design', 'Site Design'], ['retrospective', 'Retrospective']];
 const src = name => assetUrl(`obayashi-figma/${manifest.assets[name].file}`);
 const text = id => manifest.texts[id].text.trim().replace(/\u2028/g, '\n');
+const editorialText = {
+  '420:272': 'Aligning teams, audiences, and priorities into a unified experience',
+  '420:264': 'Figma\nClaude\nMobirise',
+};
 
 function Copy({ id, as: Tag = 'p', className = '', htmlId }) {
   const node = manifest.texts[id];
-  return <Tag id={htmlId} className={className} data-figma-node={id}>{node.segments.map(([start, end, style], index) => {
+  return <Tag id={htmlId} className={className} data-figma-node={id}>{editorialText[id] ?? node.segments.map(([start, end, style], index) => {
     let value = node.text.slice(start, end).replace(/\u2028/g, '\n');
     if (index === node.segments.length - 1) value = value.trimEnd();
     return manifest.textStyles[style].weight >= 700
@@ -163,6 +167,6 @@ export default function ObayashiCaseStudyPage({ onOpenImage }) {
         </section>
       </div>
     </div>
-    <div className="obayashi-end"><a href={`${siteUrl()}#work`}>Back to selected work <span aria-hidden="true">↗</span></a><a href={projectUrl('pointly')}>Next project: Point.ly <span aria-hidden="true">↗</span></a></div>
+    <div className="obayashi-end"><a href={projectUrl('pointly')}>Next Project: Point.ly <span aria-hidden="true">↗</span></a></div>
   </article>;
 }

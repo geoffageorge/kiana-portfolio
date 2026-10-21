@@ -1,0 +1,81 @@
+const imgWhiteDressPortraitWithoutGraduationSashCopy2 = "/assets/website-v2-figma/portrait.png";
+const imgRectangle140 = "/assets/website-v2-figma/resume-button.svg";
+const imgWhiteDressPortraitWithoutGraduationSashCopy1 = "/assets/website-v2-figma/portrait-mask.svg";
+
+export default function AboutNew() {
+  return (
+    <div className="bg-white relative size-full" data-node-id="522:265" data-name="About -NEW">
+      <div className="[word-break:break-word] absolute font-['Inter:Regular'] font-normal leading-[0] left-[calc(8.33%+104px)] not-italic text-[16px] text-black top-[295px] w-[659px] whitespace-pre-wrap" data-node-id="522:266">
+        <p className="leading-[26px] mb-0">
+          Growing up, people called me “Curious George” (yes, my last name is George!), and it still fits. I’m always asking questions and wanting to know more about the people around me. That curiosity led me to broadcast journalism, where I became an award-winning storyteller. Now, as a UX designer, I combine my interest in people’s experiences with storytelling and creative problem-solving to design thoughtful, intuitive products.
+          <br aria-hidden />
+          <br aria-hidden />
+          Currently, I’m pursuing a master’s in information management with a concentration in UX at the University of Washington’s Information School. I’m also laying the groundwork for a food and health platform for women with PCOS, using research and design to make health information clearer and more approachable.
+          <br aria-hidden />
+          <br aria-hidden />
+          Outside of design, you’ll find me running (one marathon and two half marathons so far), hiking, or in the kitchen baking bread and hosting themed dinner parties. I also love exploring new places and perspectives, from studying abroad in Florence and Greece to traveling around the world.
+          <br aria-hidden />
+          <br aria-hidden />
+        </p>
+        <p className="leading-[26px] mb-0">Whether I’m interviewing, designing, or hosting, it all comes back to learning people’s stories and finding creative ways to bring them together.</p>
+        <p className="leading-[26px]">​</p>
+      </div>
+      <div className="[word-break:break-word] absolute font-['Inter:Regular'] font-normal leading-[0] left-[calc(8.33%+104px)] not-italic text-[0px] text-black top-[981px] w-[659px] whitespace-pre-wrap" data-node-id="522:267">
+        <p className="leading-[26px] mb-0 text-[14px]">EMAIL</p>
+        <p className="mb-0">
+          <span className="leading-[26px] text-[16px]">
+            kikig6204@gmail.com
+            <br aria-hidden />
+            <br aria-hidden />
+          </span>
+          <span className="leading-[26px] text-[14px]">
+            PHONE
+            <br aria-hidden />
+            650-817-5454
+          </span>
+          <span className="leading-[26px] text-[16px]">
+            <br aria-hidden />
+            <br aria-hidden />
+            <br aria-hidden />
+          </span>
+        </p>
+        <p className="leading-[26px] text-[16px]">​</p>
+      </div>
+      <p className="[word-break:break-word] absolute font-['Inter:Bold'] font-bold leading-[44px] left-[calc(8.33%+102px)] not-italic text-[36px] text-black top-[224px] w-[471px]" data-node-id="522:268">
+        Curious George, Literally
+      </p>
+      <p className="[word-break:break-word] absolute font-['Inter:Bold'] font-bold leading-[44px] left-[calc(8.33%+102px)] not-italic text-[21px] text-black top-[922px] w-[471px]" data-node-id="522:269">
+        Let’s Connect
+      </p>
+      <div className="absolute bg-[#25261e] h-[31px] left-[calc(16.67%+123px)] rounded-[4px] top-[831px] w-[115px]" data-node-id="522:270" />
+      <div className="absolute h-[31px] left-[calc(8.33%+104px)] top-[831px] w-[99px]" data-node-id="522:271">
+        <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgRectangle140} />
+      </div>
+      <div className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Fira_Mono:Regular'] h-[22px] justify-center leading-[0] left-[calc(16.67%+139px)] not-italic text-[14px] text-white top-[846px] w-[104px]" data-node-id="522:272">
+        <p className="leading-[1.2]">{`LINKEDIN ↗ `}</p>
+      </div>
+      <div className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Fira_Mono:Regular'] h-[18px] justify-center leading-[0] left-[calc(8.33%+116px)] not-italic text-[14px] text-white top-[846px] w-[76px]" data-node-id="522:273">
+        <p className="leading-[1.2]">{`RESUME ↗ `}</p>
+      </div>
+      <div className="absolute contents left-[calc(66.67%-30px)] size-[292.219px] top-[152px]" data-node-id="522:274" data-name="Mask group">
+        <div className="absolute flex h-[524.189px] items-center justify-center left-[calc(58.33%-19.94px)] top-[115.37px] w-[473.982px]" data-node-id="522:276">
+          <div className="flex-none rotate-[5.93deg]">
+            <div className="h-[482.711px] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[122.965px_49.656px] mask-size-[266.163px_266.162px] relative w-[426.382px]" style={{ maskImage: `url("${imgWhiteDressPortraitWithoutGraduationSashCopy1}")` }} data-name="White dress portrait without graduation sash copy 1">
+              <div className="absolute inset-0 overflow-hidden pointer-events-none">
+                <img alt="" className="absolute h-[89.93%] left-[3.49%] max-w-none top-[2.05%] w-[89.98%]" src={imgWhiteDressPortraitWithoutGraduationSashCopy2} />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p className="[word-break:break-word] absolute font-['Inter:Regular'] font-normal leading-[0] left-[calc(8.33%+104px)] not-italic text-[0px] text-black top-[183px] w-[204px]" data-node-id="522:277">
+        <span className="leading-[26px] text-[14px]">ABOUT</span>
+        <span className="leading-[26px] text-[15px]">
+          <br aria-hidden />
+          <br aria-hidden />
+        </span>
+      </p>
+    </div>
+  );
+}
+

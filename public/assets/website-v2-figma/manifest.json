@@ -1,0 +1,39 @@
+{
+  "fileKey": "wZSRbIZZXfUlrq902OXE2W",
+  "inspectedDate": "2026-10-21",
+  "aboutFrame": "522:265",
+  "footerFrame": "523:49",
+  "assets": [
+    {
+      "file": "footer-logo.svg",
+      "bytes": 1341,
+      "sha256": "d111d3fd7ded1acf98662413a18d042c5adf7c293d124bc9acad6df45b7269e2",
+      "width": "57",
+      "height": "38",
+      "viewBox": "0 0 57 38"
+    },
+    {
+      "file": "portrait-mask.svg",
+      "bytes": 272,
+      "sha256": "4a62a1f7d95db7e899198661397af502d2a84284bb857d29450ee98baa8f6681",
+      "width": "266.141",
+      "height": "266.141",
+      "viewBox": "0 0 266.141 266.141"
+    },
+    {
+      "file": "portrait.png",
+      "bytes": 301769,
+      "sha256": "b71e440d7649ee186b5aa1d515c6855cd33770ec0bc43305ea454ae0185e7099",
+      "width": 1179,
+      "height": 1334
+    },
+    {
+      "file": "resume-button.svg",
+      "bytes": 339,
+      "sha256": "a6c2eb18a3455a0648a544b9af9067820355b61372908deb444ee90ba0032730",
+      "width": "99",
+      "height": "31",
+      "viewBox": "0 0 99 31"
+    }
+  ]
+}

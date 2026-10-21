@@ -1,0 +1,1311 @@
+{
+  "id": "522:265",
+  "name": "About -NEW ",
+  "type": "FRAME",
+  "visible": true,
+  "opacity": 1,
+  "x": 6479,
+  "y": -24979,
+  "width": 1440,
+  "height": 1315,
+  "relativeTransform": [
+    [
+      1,
+      0,
+      6479
+    ],
+    [
+      0,
+      1,
+      -24979
+    ]
+  ],
+  "absoluteBoundingBox": {
+    "x": 6479,
+    "y": -24979,
+    "width": 1440,
+    "height": 1315
+  },
+  "fills": [
+    {
+      "type": "SOLID",
+      "visible": true,
+      "opacity": 1,
+      "blendMode": "NORMAL",
+      "color": {
+        "r": 1,
+        "g": 1,
+        "b": 1
+      },
+      "boundVariables": {}
+    }
+  ],
+  "strokes": [],
+  "strokeWeight": 1,
+  "effects": [],
+  "cornerRadius": 0,
+  "isMask": false,
+  "maskType": "ALPHA",
+  "clipsContent": true,
+  "layoutMode": "NONE",
+  "itemSpacing": 0,
+  "paddingTop": 0,
+  "paddingRight": 0,
+  "paddingBottom": 0,
+  "paddingLeft": 0,
+  "constraints": {
+    "horizontal": "MIN",
+    "vertical": "MIN"
+  },
+  "exportSettings": [
+    {
+      "format": "PNG",
+      "suffix": "",
+      "contentsOnly": true,
+      "colorProfile": "DOCUMENT",
+      "constraint": {
+        "type": "SCALE",
+        "value": 1
+      }
+    }
+  ],
+  "boundVariables": {},
+  "reactions": [],
+  "children": [
+    {
+      "id": "522:266",
+      "name": "Growing up, people called me “Curious George” (yes, my last name is George!), and it still fits. I’m always asking questions and wanting to know more about the people around me. That curiosity led me to broadcast journalism, where I became an award-winning storyteller. Now, as a UX designer, I combine my interest in people’s experiences with storytelling and creative problem-solving to design thoughtful, intuitive products.  Currently, I’m pursuing a master’s in information management with a concentration in UX at the University of Washington’s Information School. I’m also laying the groundwork for a food and health platform for women with PCOS, using research and design to make health information clearer and more approachable.  Outside of design, you’ll find me running (one marathon and two half marathons so far), hiking, or in the kitchen baking bread and hosting themed dinner parties. I also love exploring new places and perspectives, from studying abroad in Florence and Greece to traveling around the world.  Whether I’m interviewing, designing, or hosting, it all comes back to learning people’s stories and finding creative ways to bring them together.",
+      "type": "TEXT",
+      "visible": true,
+      "opacity": 1,
+      "x": 224,
+      "y": 295,
+      "width": 659,
+      "height": 520,
+      "relativeTransform": [
+        [
+          1,
+          0,
+          224
+        ],
+        [
+          0,
+          1,
+          295
+        ]
+      ],
+      "absoluteBoundingBox": {
+        "x": 6703,
+        "y": -24684,
+        "width": 659,
+        "height": 520
+      },
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0,
+            "g": 0,
+            "b": 0
+          },
+          "boundVariables": {}
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1,
+      "effects": [],
+      "isMask": false,
+      "maskType": "ALPHA",
+      "constraints": {
+        "horizontal": "MIN",
+        "vertical": "MIN"
+      },
+      "exportSettings": [],
+      "boundVariables": {},
+      "reactions": [],
+      "characters": "Growing up, people called me “Curious George” (yes, my last name is George!), and it still fits. I’m always asking questions and wanting to know more about the people around me. That curiosity led me to broadcast journalism, where I became an award-winning storyteller. Now, as a UX designer, I combine my interest in people’s experiences with storytelling and creative problem-solving to design thoughtful, intuitive products.  Currently, I’m pursuing a master’s in information management with a concentration in UX at the University of Washington’s Information School. I’m also laying the groundwork for a food and health platform for women with PCOS, using research and design to make health information clearer and more approachable.  Outside of design, you’ll find me running (one marathon and two half marathons so far), hiking, or in the kitchen baking bread and hosting themed dinner parties. I also love exploring new places and perspectives, from studying abroad in Florence and Greece to traveling around the world. \nWhether I’m interviewing, designing, or hosting, it all comes back to learning people’s stories and finding creative ways to bring them together.\n",
+      "fontName": {
+        "family": "Inter",
+        "style": "Regular",
+        "variationSettings": {
+          "wght": 400,
+          "slnt": 0
+        }
+      },
+      "fontSize": 16,
+      "fontWeight": 400,
+      "lineHeight": {
+        "unit": "PIXELS",
+        "value": 26
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "paragraphSpacing": 0,
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "TOP",
+      "textAutoResize": "HEIGHT",
+      "hasMissingFont": false,
+      "segments": [
+        {
+          "characters": "Growing up, people called me “Curious George” (yes, my last name is George!), and it still fits. I’m always asking questions and wanting to know more about the people around me. That curiosity led me to broadcast journalism, where I became an award-winning storyteller. Now, as a UX designer, I combine my interest in people’s experiences with storytelling and creative problem-solving to design thoughtful, intuitive products.  Currently, I’m pursuing a master’s in information management with a concentration in UX at the University of Washington’s Information School. I’m also laying the groundwork for a food and health platform for women with PCOS, using research and design to make health information clearer and more approachable.  Outside of design, you’ll find me running (one marathon and two half marathons so far), hiking, or in the kitchen baking bread and hosting themed dinner parties. I also love exploring new places and perspectives, from studying abroad in Florence and Greece to traveling around the world. \nWhether I’m interviewing, designing, or hosting, it all comes back to learning people’s stories and finding creative ways to bring them together.\n",
+          "start": 0,
+          "end": 1174,
+          "fontSize": 16,
+          "fontName": {
+            "family": "Inter",
+            "style": "Regular",
+            "variationSettings": {
+              "wght": 400,
+              "slnt": 0
+            }
+          },
+          "fontWeight": 400,
+          "lineHeight": {
+            "unit": "PIXELS",
+            "value": 26
+          },
+          "letterSpacing": {
+            "unit": "PERCENT",
+            "value": 0
+          },
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0,
+                "g": 0,
+                "b": 0
+              },
+              "boundVariables": {}
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "522:267",
+      "name": "EMAIL kikig6204@gmail.com  PHONE 650-817-5454  ",
+      "type": "TEXT",
+      "visible": true,
+      "opacity": 1,
+      "x": 224,
+      "y": 981,
+      "width": 659,
+      "height": 208,
+      "relativeTransform": [
+        [
+          1,
+          0,
+          224
+        ],
+        [
+          0,
+          1,
+          981
+        ]
+      ],
+      "absoluteBoundingBox": {
+        "x": 6703,
+        "y": -23998,
+        "width": 659,
+        "height": 208
+      },
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0,
+            "g": 0,
+            "b": 0
+          },
+          "boundVariables": {}
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1,
+      "effects": [],
+      "isMask": false,
+      "maskType": "ALPHA",
+      "constraints": {
+        "horizontal": "MIN",
+        "vertical": "MIN"
+      },
+      "exportSettings": [],
+      "boundVariables": {},
+      "reactions": [],
+      "characters": "EMAIL\nkikig6204@gmail.com  PHONE 650-817-5454  \n",
+      "fontName": {
+        "family": "Inter",
+        "style": "Regular",
+        "variationSettings": {
+          "wght": 400,
+          "slnt": 0
+        }
+      },
+      "fontWeight": 400,
+      "lineHeight": {
+        "unit": "PIXELS",
+        "value": 26
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "paragraphSpacing": 0,
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "TOP",
+      "textAutoResize": "HEIGHT",
+      "hasMissingFont": false,
+      "segments": [
+        {
+          "characters": "EMAIL\n",
+          "start": 0,
+          "end": 6,
+          "fontSize": 14,
+          "fontName": {
+            "family": "Inter",
+            "style": "Regular",
+            "variationSettings": {
+              "wght": 400,
+              "slnt": 0
+            }
+          },
+          "fontWeight": 400,
+          "lineHeight": {
+            "unit": "PIXELS",
+            "value": 26
+          },
+          "letterSpacing": {
+            "unit": "PERCENT",
+            "value": 0
+          },
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0,
+                "g": 0,
+                "b": 0
+              },
+              "boundVariables": {}
+            }
+          ]
+        },
+        {
+          "characters": "kikig6204@gmail.com  ",
+          "start": 6,
+          "end": 27,
+          "fontSize": 16,
+          "fontName": {
+            "family": "Inter",
+            "style": "Regular",
+            "variationSettings": {
+              "wght": 400,
+              "slnt": 0
+            }
+          },
+          "fontWeight": 400,
+          "lineHeight": {
+            "unit": "PIXELS",
+            "value": 26
+          },
+          "letterSpacing": {
+            "unit": "PERCENT",
+            "value": 0
+          },
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0,
+                "g": 0,
+                "b": 0
+              },
+              "boundVariables": {}
+            }
+          ]
+        },
+        {
+          "characters": "PHONE 650-817-5454",
+          "start": 27,
+          "end": 45,
+          "fontSize": 14,
+          "fontName": {
+            "family": "Inter",
+            "style": "Regular",
+            "variationSettings": {
+              "wght": 400,
+              "slnt": 0
+            }
+          },
+          "fontWeight": 400,
+          "lineHeight": {
+            "unit": "PIXELS",
+            "value": 26
+          },
+          "letterSpacing": {
+            "unit": "PERCENT",
+            "value": 0
+          },
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0,
+                "g": 0,
+                "b": 0
+              },
+              "boundVariables": {}
+            }
+          ]
+        },
+        {
+          "characters": "  \n",
+          "start": 45,
+          "end": 48,
+          "fontSize": 16,
+          "fontName": {
+            "family": "Inter",
+            "style": "Regular",
+            "variationSettings": {
+              "wght": 400,
+              "slnt": 0
+            }
+          },
+          "fontWeight": 400,
+          "lineHeight": {
+            "unit": "PIXELS",
+            "value": 26
+          },
+          "letterSpacing": {
+            "unit": "PERCENT",
+            "value": 0
+          },
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0,
+                "g": 0,
+                "b": 0
+              },
+              "boundVariables": {}
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "522:268",
+      "name": "Curious George, Literally",
+      "type": "TEXT",
+      "visible": true,
+      "opacity": 1,
+      "x": 222,
+      "y": 224,
+      "width": 471,
+      "height": 44,
+      "relativeTransform": [
+        [
+          1,
+          0,
+          222
+        ],
+        [
+          0,
+          1,
+          224
+        ]
+      ],
+      "absoluteBoundingBox": {
+        "x": 6701,
+        "y": -24755,
+        "width": 471,
+        "height": 44
+      },
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0,
+            "g": 0,
+            "b": 0
+          },
+          "boundVariables": {}
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1,
+      "effects": [],
+      "isMask": false,
+      "maskType": "ALPHA",
+      "constraints": {
+        "horizontal": "MIN",
+        "vertical": "MIN"
+      },
+      "exportSettings": [],
+      "boundVariables": {},
+      "reactions": [],
+      "characters": "Curious George, Literally",
+      "fontName": {
+        "family": "Inter",
+        "style": "Bold",
+        "variationSettings": {
+          "wght": 700,
+          "slnt": 0
+        }
+      },
+      "fontSize": 36,
+      "fontWeight": 700,
+      "lineHeight": {
+        "unit": "PIXELS",
+        "value": 44
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "paragraphSpacing": 0,
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "TOP",
+      "textAutoResize": "HEIGHT",
+      "hasMissingFont": false,
+      "segments": [
+        {
+          "characters": "Curious George, Literally",
+          "start": 0,
+          "end": 25,
+          "fontSize": 36,
+          "fontName": {
+            "family": "Inter",
+            "style": "Bold",
+            "variationSettings": {
+              "wght": 700,
+              "slnt": 0
+            }
+          },
+          "fontWeight": 700,
+          "lineHeight": {
+            "unit": "PIXELS",
+            "value": 44
+          },
+          "letterSpacing": {
+            "unit": "PERCENT",
+            "value": 0
+          },
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0,
+                "g": 0,
+                "b": 0
+              },
+              "boundVariables": {}
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "522:269",
+      "name": "Let’s Connect",
+      "type": "TEXT",
+      "visible": true,
+      "opacity": 1,
+      "x": 222,
+      "y": 922,
+      "width": 471,
+      "height": 44,
+      "relativeTransform": [
+        [
+          1,
+          0,
+          222
+        ],
+        [
+          0,
+          1,
+          922
+        ]
+      ],
+      "absoluteBoundingBox": {
+        "x": 6701,
+        "y": -24057,
+        "width": 471,
+        "height": 44
+      },
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0,
+            "g": 0,
+            "b": 0
+          },
+          "boundVariables": {}
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1,
+      "effects": [],
+      "isMask": false,
+      "maskType": "ALPHA",
+      "constraints": {
+        "horizontal": "MIN",
+        "vertical": "MIN"
+      },
+      "exportSettings": [],
+      "boundVariables": {},
+      "reactions": [],
+      "characters": "Let’s Connect",
+      "fontName": {
+        "family": "Inter",
+        "style": "Bold",
+        "variationSettings": {
+          "wght": 700,
+          "slnt": 0
+        }
+      },
+      "fontSize": 21,
+      "fontWeight": 700,
+      "lineHeight": {
+        "unit": "PIXELS",
+        "value": 44
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "paragraphSpacing": 0,
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "TOP",
+      "textAutoResize": "HEIGHT",
+      "hasMissingFont": false,
+      "segments": [
+        {
+          "characters": "Let’s Connect",
+          "start": 0,
+          "end": 13,
+          "fontSize": 21,
+          "fontName": {
+            "family": "Inter",
+            "style": "Bold",
+            "variationSettings": {
+              "wght": 700,
+              "slnt": 0
+            }
+          },
+          "fontWeight": 700,
+          "lineHeight": {
+            "unit": "PIXELS",
+            "value": 44
+          },
+          "letterSpacing": {
+            "unit": "PERCENT",
+            "value": 0
+          },
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0,
+                "g": 0,
+                "b": 0
+              },
+              "boundVariables": {}
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "522:270",
+      "name": "Rectangle 139",
+      "type": "RECTANGLE",
+      "visible": true,
+      "opacity": 1,
+      "x": 363,
+      "y": 831,
+      "width": 115,
+      "height": 31,
+      "relativeTransform": [
+        [
+          1,
+          0,
+          363
+        ],
+        [
+          0,
+          1,
+          831
+        ]
+      ],
+      "absoluteBoundingBox": {
+        "x": 6842,
+        "y": -24148,
+        "width": 115,
+        "height": 31
+      },
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0.14567290246486664,
+            "g": 0.147216796875,
+            "b": 0.11691802740097046
+          },
+          "boundVariables": {}
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1,
+      "effects": [],
+      "cornerRadius": 4,
+      "isMask": false,
+      "maskType": "ALPHA",
+      "constraints": {
+        "horizontal": "MIN",
+        "vertical": "MIN"
+      },
+      "exportSettings": [],
+      "boundVariables": {},
+      "reactions": []
+    },
+    {
+      "id": "522:271",
+      "name": "Rectangle 140",
+      "type": "VECTOR",
+      "visible": true,
+      "opacity": 1,
+      "x": 224,
+      "y": 831,
+      "width": 99,
+      "height": 31,
+      "relativeTransform": [
+        [
+          1,
+          0,
+          224
+        ],
+        [
+          0,
+          1,
+          831
+        ]
+      ],
+      "absoluteBoundingBox": {
+        "x": 6703,
+        "y": -24148,
+        "width": 99,
+        "height": 31
+      },
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0.14567290246486664,
+            "g": 0.147216796875,
+            "b": 0.11691802740097046
+          },
+          "boundVariables": {}
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1,
+      "effects": [],
+      "cornerRadius": 4,
+      "isMask": false,
+      "maskType": "ALPHA",
+      "constraints": {
+        "horizontal": "MIN",
+        "vertical": "MIN"
+      },
+      "exportSettings": [],
+      "boundVariables": {},
+      "reactions": []
+    },
+    {
+      "id": "522:272",
+      "name": "LINKEDIN ↗",
+      "type": "TEXT",
+      "visible": true,
+      "opacity": 1,
+      "x": 379,
+      "y": 835,
+      "width": 104,
+      "height": 22,
+      "relativeTransform": [
+        [
+          1,
+          0,
+          379
+        ],
+        [
+          0,
+          1,
+          835
+        ]
+      ],
+      "absoluteBoundingBox": {
+        "x": 6858,
+        "y": -24144,
+        "width": 104,
+        "height": 22
+      },
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1
+          },
+          "boundVariables": {}
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1,
+      "effects": [],
+      "isMask": false,
+      "maskType": "ALPHA",
+      "constraints": {
+        "horizontal": "MIN",
+        "vertical": "MIN"
+      },
+      "exportSettings": [],
+      "boundVariables": {},
+      "reactions": [],
+      "characters": "LINKEDIN ↗ ",
+      "fontName": {
+        "family": "Fira Mono",
+        "style": "Regular"
+      },
+      "fontSize": 14,
+      "fontWeight": 400,
+      "lineHeight": {
+        "unit": "PERCENT",
+        "value": 120.00000476837158
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "paragraphSpacing": 0,
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "CENTER",
+      "textAutoResize": "NONE",
+      "hasMissingFont": false,
+      "segments": [
+        {
+          "characters": "LINKEDIN ↗ ",
+          "start": 0,
+          "end": 11,
+          "fontSize": 14,
+          "fontName": {
+            "family": "Fira Mono",
+            "style": "Regular"
+          },
+          "fontWeight": 400,
+          "lineHeight": {
+            "unit": "PERCENT",
+            "value": 120.00000476837158
+          },
+          "letterSpacing": {
+            "unit": "PERCENT",
+            "value": 0
+          },
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 1,
+                "g": 1,
+                "b": 1
+              },
+              "boundVariables": {}
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "522:273",
+      "name": "RESUME ↗",
+      "type": "TEXT",
+      "visible": true,
+      "opacity": 1,
+      "x": 236,
+      "y": 837,
+      "width": 76,
+      "height": 18,
+      "relativeTransform": [
+        [
+          1,
+          0,
+          236
+        ],
+        [
+          0,
+          1,
+          837
+        ]
+      ],
+      "absoluteBoundingBox": {
+        "x": 6715,
+        "y": -24142,
+        "width": 76,
+        "height": 18
+      },
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1
+          },
+          "boundVariables": {}
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1,
+      "effects": [],
+      "isMask": false,
+      "maskType": "ALPHA",
+      "constraints": {
+        "horizontal": "MIN",
+        "vertical": "MIN"
+      },
+      "exportSettings": [],
+      "boundVariables": {},
+      "reactions": [],
+      "characters": "RESUME ↗ ",
+      "fontName": {
+        "family": "Fira Mono",
+        "style": "Regular"
+      },
+      "fontSize": 14,
+      "fontWeight": 400,
+      "lineHeight": {
+        "unit": "PERCENT",
+        "value": 120.00000476837158
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "paragraphSpacing": 0,
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "CENTER",
+      "textAutoResize": "NONE",
+      "hasMissingFont": false,
+      "segments": [
+        {
+          "characters": "RESUME ↗ ",
+          "start": 0,
+          "end": 9,
+          "fontSize": 14,
+          "fontName": {
+            "family": "Fira Mono",
+            "style": "Regular"
+          },
+          "fontWeight": 400,
+          "lineHeight": {
+            "unit": "PERCENT",
+            "value": 120.00000476837158
+          },
+          "letterSpacing": {
+            "unit": "PERCENT",
+            "value": 0
+          },
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 1,
+                "g": 1,
+                "b": 1
+              },
+              "boundVariables": {}
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "522:274",
+      "name": "Mask group",
+      "type": "GROUP",
+      "visible": true,
+      "opacity": 1,
+      "x": 957.502685546875,
+      "y": 152,
+      "width": 266.1414794921875,
+      "height": 266.1414794921875,
+      "relativeTransform": [
+        [
+          0.9946461915969849,
+          -0.10333892703056335,
+          957.502685546875
+        ],
+        [
+          0.10333892703056335,
+          0.9946461915969849,
+          152
+        ]
+      ],
+      "absoluteBoundingBox": {
+        "x": 7409.000154758451,
+        "y": -24827,
+        "width": 292.2193839319407,
+        "height": 292.2193839319407
+      },
+      "effects": [],
+      "isMask": false,
+      "maskType": "ALPHA",
+      "exportSettings": [],
+      "boundVariables": {},
+      "reactions": [],
+      "children": [
+        {
+          "id": "522:275",
+          "name": "Ellipse 15",
+          "type": "ELLIPSE",
+          "visible": true,
+          "opacity": 1,
+          "x": 957.5025663287897,
+          "y": 152.00000118187532,
+          "width": 266.1414794921875,
+          "height": 266.1414794921875,
+          "relativeTransform": [
+            [
+              0.9946461915969849,
+              -0.10333892703056335,
+              957.5025663287897
+            ],
+            [
+              0.10333892703056335,
+              0.9946461915969849,
+              152.00000118187532
+            ]
+          ],
+          "absoluteBoundingBox": {
+            "x": 7409.000154758451,
+            "y": -24827,
+            "width": 292.2193839319407,
+            "height": 292.2193839319407
+          },
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0.8509804010391235,
+                "g": 0.8509804010391235,
+                "b": 0.8509804010391235
+              },
+              "boundVariables": {}
+            }
+          ],
+          "strokes": [],
+          "strokeWeight": 1,
+          "effects": [],
+          "cornerRadius": 0,
+          "isMask": true,
+          "maskType": "ALPHA",
+          "constraints": {
+            "horizontal": "MIN",
+            "vertical": "MIN"
+          },
+          "exportSettings": [],
+          "boundVariables": {},
+          "reactions": []
+        },
+        {
+          "id": "522:276",
+          "name": "White dress portrait without graduation sash copy 1",
+          "type": "RECTANGLE",
+          "visible": true,
+          "opacity": 1,
+          "x": 869.9460537598933,
+          "y": 115.37369597882685,
+          "width": 426.3821105957031,
+          "height": 482.7114562988281,
+          "relativeTransform": [
+            [
+              0.9946461915969849,
+              -0.10333892703056338,
+              869.9460537598933
+            ],
+            [
+              0.10333892703056333,
+              0.9946461915969849,
+              115.37369597882685
+            ]
+          ],
+          "absoluteBoundingBox": {
+            "x": 7299.063405103218,
+            "y": -24863.626953125,
+            "width": 473.9822264283821,
+            "height": 524.1889814618517
+          },
+          "fills": [
+            {
+              "type": "IMAGE",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "scaleMode": "CROP",
+              "scalingFactor": 0.5,
+              "filters": {
+                "exposure": 0,
+                "contrast": 0,
+                "saturation": 0,
+                "temperature": 0,
+                "tint": 0,
+                "highlights": 0,
+                "shadows": 0
+              },
+              "imageTransform": [
+                [
+                  1.1113492250442505,
+                  3.819441627503581e-17,
+                  -0.038737423717975616
+                ],
+                [
+                  -4.557637127608359e-17,
+                  1.111980676651001,
+                  -0.02283420041203499
+                ]
+              ],
+              "imageHash": "4c966abba5c56aa2379657db65ae302334d529b7"
+            }
+          ],
+          "strokes": [],
+          "strokeWeight": 1,
+          "effects": [],
+          "cornerRadius": 0,
+          "isMask": false,
+          "maskType": "ALPHA",
+          "constraints": {
+            "horizontal": "MIN",
+            "vertical": "MIN"
+          },
+          "exportSettings": [],
+          "boundVariables": {},
+          "reactions": []
+        }
+      ]
+    },
+    {
+      "id": "522:277",
+      "name": "ABOUT ",
+      "type": "TEXT",
+      "visible": true,
+      "opacity": 1,
+      "x": 224,
+      "y": 183,
+      "width": 204,
+      "height": 53,
+      "relativeTransform": [
+        [
+          1,
+          0,
+          224
+        ],
+        [
+          0,
+          1,
+          183
+        ]
+      ],
+      "absoluteBoundingBox": {
+        "x": 6703,
+        "y": -24796,
+        "width": 204,
+        "height": 53
+      },
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0,
+            "g": 0,
+            "b": 0
+          },
+          "boundVariables": {}
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1,
+      "effects": [],
+      "isMask": false,
+      "maskType": "ALPHA",
+      "constraints": {
+        "horizontal": "MIN",
+        "vertical": "MIN"
+      },
+      "exportSettings": [],
+      "boundVariables": {},
+      "reactions": [],
+      "characters": "ABOUT ",
+      "fontName": {
+        "family": "Inter",
+        "style": "Regular",
+        "variationSettings": {
+          "wght": 400,
+          "slnt": 0
+        }
+      },
+      "fontWeight": 400,
+      "lineHeight": {
+        "unit": "PIXELS",
+        "value": 26
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "paragraphSpacing": 0,
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "TOP",
+      "textAutoResize": "HEIGHT",
+      "hasMissingFont": false,
+      "segments": [
+        {
+          "characters": "ABOUT",
+          "start": 0,
+          "end": 5,
+          "fontSize": 14,
+          "fontName": {
+            "family": "Inter",
+            "style": "Regular",
+            "variationSettings": {
+              "wght": 400,
+              "slnt": 0
+            }
+          },
+          "fontWeight": 400,
+          "lineHeight": {
+            "unit": "PIXELS",
+            "value": 26
+          },
+          "letterSpacing": {
+            "unit": "PERCENT",
+            "value": 0
+          },
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0,
+                "g": 0,
+                "b": 0
+              },
+              "boundVariables": {}
+            }
+          ]
+        },
+        {
+          "characters": " ",
+          "start": 5,
+          "end": 6,
+          "fontSize": 15,
+          "fontName": {
+            "family": "Inter",
+            "style": "Regular",
+            "variationSettings": {
+              "wght": 400,
+              "slnt": 0
+            }
+          },
+          "fontWeight": 400,
+          "lineHeight": {
+            "unit": "PIXELS",
+            "value": 26
+          },
+          "letterSpacing": {
+            "unit": "PERCENT",
+            "value": 0
+          },
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0,
+                "g": 0,
+                "b": 0
+              },
+              "boundVariables": {}
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

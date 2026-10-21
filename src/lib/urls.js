@@ -3,8 +3,10 @@
 export function portfolioBase() {
   const pathname = window.location.pathname;
   const projectStart = pathname.lastIndexOf('/projects/');
+  const about = /\/about(?:\/(?:index\.html)?)?$/.exec(pathname);
   const root = projectStart >= 0
     ? pathname.slice(0, projectStart + 1)
+    : about ? pathname.slice(0, about.index + 1)
     : pathname.endsWith('/') ? pathname : pathname.slice(0, pathname.lastIndexOf('/') + 1);
   return new URL(root, window.location.origin);
 }
@@ -12,6 +14,7 @@ export function portfolioBase() {
 export const siteUrl = (path = '') => new URL(path, portfolioBase()).pathname;
 export const assetUrl = (path) => siteUrl(`assets/${path}`);
 export const projectUrl = (slug) => siteUrl(`projects/${slug}/`);
+export const isAboutPage = () => /^about(?:\/(?:index\.html)?)?$/.test(window.location.pathname.slice(portfolioBase().pathname.length));
 
 export function currentProjectSlug() {
   const relativePath = window.location.pathname.slice(portfolioBase().pathname.length);
