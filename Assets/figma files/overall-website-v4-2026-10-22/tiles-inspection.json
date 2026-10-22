@@ -1,0 +1,923 @@
+{
+  "id": "28:2",
+  "name": "Selected Works Tiles",
+  "x": 415,
+  "y": -12201,
+  "width": 1440,
+  "height": 1826,
+  "nodes": [
+    {
+      "id": "28:2",
+      "parent": "0:1",
+      "name": "Selected Works Tiles",
+      "type": "FRAME",
+      "x": 0,
+      "y": 0,
+      "width": 1440,
+      "height": 1826,
+      "visible": true,
+      "isMask": false,
+      "rotation": 0
+    },
+    {
+      "id": "499:26",
+      "parent": "28:2",
+      "name": "Mask group",
+      "type": "GROUP",
+      "x": 129,
+      "y": 869,
+      "width": 577,
+      "height": 577,
+      "visible": true,
+      "isMask": false,
+      "rotation": 0
+    },
+    {
+      "id": "499:23",
+      "parent": "499:26",
+      "name": "Rectangle 140",
+      "type": "RECTANGLE",
+      "x": 129,
+      "y": 869,
+      "width": 577,
+      "height": 577,
+      "visible": true,
+      "isMask": true,
+      "rotation": 0
+    },
+    {
+      "id": "499:35",
+      "parent": "28:2",
+      "name": "Mask group",
+      "type": "GROUP",
+      "x": 129,
+      "y": 881,
+      "width": 577,
+      "height": 577,
+      "visible": true,
+      "isMask": false,
+      "rotation": 0
+    },
+    {
+      "id": "499:33",
+      "parent": "499:35",
+      "name": "Rectangle 144",
+      "type": "RECTANGLE",
+      "x": 129,
+      "y": 881,
+      "width": 577,
+      "height": 577,
+      "visible": true,
+      "isMask": true,
+      "rotation": 0
+    },
+    {
+      "id": "499:22",
+      "parent": "499:35",
+      "name": "img_slide_6 1",
+      "type": "RECTANGLE",
+      "x": -88,
+      "y": 841,
+      "width": 1363,
+      "height": 744,
+      "visible": true,
+      "isMask": false,
+      "rotation": -180
+    },
+    {
+      "id": "28:4",
+      "parent": "28:2",
+      "name": "Select Work",
+      "type": "TEXT",
+      "x": 129,
+      "y": 752,
+      "width": 472,
+      "height": 40,
+      "visible": true,
+      "isMask": false,
+      "rotation": 0,
+      "text": "Select Work",
+      "fontName": {
+        "family": "Helvetica Neue",
+        "style": "Bold"
+      },
+      "fontSize": 38,
+      "lineHeight": {
+        "unit": "PERCENT",
+        "value": 104.99999523162842
+      }
+    },
+    {
+      "id": "28:15",
+      "parent": "28:2",
+      "name": "CASE STUDIES",
+      "type": "TEXT",
+      "x": 130,
+      "y": 800,
+      "width": 130,
+      "height": 22,
+      "visible": true,
+      "isMask": false,
+      "rotation": 0,
+      "text": "CASE STUDIES",
+      "fontName": {
+        "family": "Fira Mono",
+        "style": "Regular"
+      },
+      "fontSize": 18,
+      "lineHeight": {
+        "unit": "PERCENT",
+        "value": 120.00000476837158
+      }
+    },
+    {
+      "id": "28:17",
+      "parent": "28:2",
+      "name": "Select Work",
+      "type": "TEXT",
+      "x": 129,
+      "y": 1643,
+      "width": 472,
+      "height": 73,
+      "visible": true,
+      "isMask": false,
+      "rotation": 0,
+      "text": "Select Work",
+      "fontName": {
+        "family": "Instrument Sans",
+        "style": "SemiBold",
+        "variationSettings": {
+          "wght": 600,
+          "wdth": 100
+        }
+      },
+      "fontSize": 36,
+      "lineHeight": {
+        "unit": "PERCENT",
+        "value": 104.99999523162842
+      }
+    },
+    {
+      "id": "28:26",
+      "parent": "28:2",
+      "name": "CASE STUDIES",
+      "type": "TEXT",
+      "x": 130,
+      "y": 1703,
+      "width": 101,
+      "height": 17,
+      "visible": true,
+      "isMask": false,
+      "rotation": 0,
+      "text": "CASE STUDIES",
+      "fontName": {
+        "family": "Fira Mono",
+        "style": "Regular"
+      },
+      "fontSize": 14,
+      "lineHeight": {
+        "unit": "PERCENT",
+        "value": 120.00000476837158
+      }
+    },
+    {
+      "id": "28:28",
+      "parent": "28:2",
+      "name": "Rectangle 1",
+      "type": "RECTANGLE",
+      "x": 0,
+      "y": 1592,
+      "width": 1440,
+      "height": 234,
+      "visible": true,
+      "isMask": false,
+      "rotation": 0
+    },
+    {
+      "id": "28:29",
+      "parent": "28:2",
+      "name": "LINKEDIN ↗",
+      "type": "TEXT",
+      "x": 1199,
+      "y": 1669,
+      "width": 84,
+      "height": 17,
+      "visible": true,
+      "isMask": false,
+      "rotation": 0,
+      "text": "LINKEDIN ↗ ",
+      "fontName": {
+        "family": "Fira Mono",
+        "style": "Regular"
+      },
+      "fontSize": 14,
+      "lineHeight": {
+        "unit": "PERCENT",
+        "value": 120.00000476837158
+      }
+    },
+    {
+      "id": "28:30",
+      "parent": "28:2",
+      "name": "EMAIL ↗",
+      "type": "TEXT",
+      "x": 1220,
+      "y": 1697,
+      "width": 63,
+      "height": 18,
+      "visible": true,
+      "isMask": false,
+      "rotation": 0,
+      "text": "EMAIL ↗",
+      "fontName": {
+        "family": "Fira Mono",
+        "style": "Regular"
+      },
+      "fontSize": 15,
+      "lineHeight": {
+        "unit": "PERCENT",
+        "value": 120.00000476837158
+      }
+    },
+    {
+      "id": "28:31",
+      "parent": "28:2",
+      "name": "Logo 2",
+      "type": "FRAME",
+      "x": 130,
+      "y": 1653,
+      "width": 57,
+      "height": 38,
+      "visible": true,
+      "isMask": false,
+      "rotation": 0
+    },
+    {
+      "id": "28:32",
+      "parent": "28:31",
+      "name": "Vector",
+      "type": "VECTOR",
+      "x": 133.13714599609375,
+      "y": 1654.66015625,
+      "width": 16.4162540435791,
+      "height": 16.41814613342285,
+      "visible": true,
+      "isMask": false,
+      "rotation": 0
+    },
+    {
+      "id": "28:33",
+      "parent": "28:31",
+      "name": "Vector",
+      "type": "VECTOR",
+      "x": 150.9586181640625,
+      "y": 1654.66015625,
+      "width": 16.418912887573242,
+      "height": 16.41814613342285,
+      "visible": true,
+      "isMask": false,
+      "rotation": 0
+    },
+    {
+      "id": "28:34",
+      "parent": "28:31",
+      "name": "Vector",
+      "type": "VECTOR",
+      "x": 150.958589553833,
+      "y": 1672.3670101165771,
+      "width": 16.418912887573242,
+      "height": 16.41814613342285,
+      "visible": true,
+      "isMask": false,
+      "rotation": 180
+    },
+    {
+      "id": "28:35",
+      "parent": "28:31",
+      "name": "Vector",
+      "type": "VECTOR",
+      "x": 168.586181640625,
+      "y": 1672.369140625,
+      "width": 16.418914794921875,
+      "height": 16.41814613342285,
+      "visible": true,
+      "isMask": false,
+      "rotation": 0
+    },
+    {
+      "id": "28:36",
+      "parent": "28:31",
+      "name": "Vector",
+      "type": "VECTOR",
+      "x": 133.13715171813965,
+      "y": 1672.3670101165771,
+      "width": 16.4162540435791,
+      "height": 16.41814613342285,
+      "visible": true,
+      "isMask": false,
+      "rotation": 180
+    },
+    {
+      "id": "28:37",
+      "parent": "28:31",
+      "name": "Vector",
+      "type": "VECTOR",
+      "x": 167.47845458984375,
+      "y": 1662.1611328125,
+      "width": 17.521299362182617,
+      "height": 8.916956901550293,
+      "visible": true,
+      "isMask": false,
+      "rotation": 0
+    },
+    {
+      "id": "28:38",
+      "parent": "28:2",
+      "name": "KIANA GEORGE / UX DESIGN + INSIGHTS",
+      "type": "TEXT",
+      "x": 210,
+      "y": 1667,
+      "width": 324,
+      "height": 18,
+      "visible": true,
+      "isMask": false,
+      "rotation": 0,
+      "text": "KIANA GEORGE  / UX DESIGN + INSIGHTS ",
+      "fontName": {
+        "family": "Fira Mono",
+        "style": "Regular"
+      },
+      "fontSize": 15,
+      "lineHeight": {
+        "unit": "PERCENT",
+        "value": 120.00000476837158
+      }
+    },
+    {
+      "id": "523:9",
+      "parent": "28:2",
+      "name": "Select Work",
+      "type": "TEXT",
+      "x": 129,
+      "y": 1643,
+      "width": 472,
+      "height": 73,
+      "visible": true,
+      "isMask": false,
+      "rotation": 0,
+      "text": "Select Work",
+      "fontName": {
+        "family": "Instrument Sans",
+        "style": "SemiBold",
+        "variationSettings": {
+          "wght": 600,
+          "wdth": 100
+        }
+      },
+      "fontSize": 36,
+      "lineHeight": {
+        "unit": "PERCENT",
+        "value": 104.99999523162842
+      }
+    },
+    {
+      "id": "523:10",
+      "parent": "28:2",
+      "name": "CASE STUDIES",
+      "type": "TEXT",
+      "x": 130,
+      "y": 1703,
+      "width": 101,
+      "height": 17,
+      "visible": true,
+      "isMask": false,
+      "rotation": 0,
+      "text": "CASE STUDIES",
+      "fontName": {
+        "family": "Fira Mono",
+        "style": "Regular"
+      },
+      "fontSize": 14,
+      "lineHeight": {
+        "unit": "PERCENT",
+        "value": 120.00000476837158
+      }
+    },
+    {
+      "id": "523:11",
+      "parent": "28:2",
+      "name": "Rectangle 142",
+      "type": "RECTANGLE",
+      "x": 0,
+      "y": 1592,
+      "width": 1440,
+      "height": 234,
+      "visible": true,
+      "isMask": false,
+      "rotation": 0
+    },
+    {
+      "id": "523:12",
+      "parent": "28:2",
+      "name": "LINKEDIN ↗",
+      "type": "TEXT",
+      "x": 1199,
+      "y": 1669,
+      "width": 84,
+      "height": 17,
+      "visible": true,
+      "isMask": false,
+      "rotation": 0,
+      "text": "LINKEDIN ↗ ",
+      "fontName": {
+        "family": "Fira Mono",
+        "style": "Regular"
+      },
+      "fontSize": 14,
+      "lineHeight": {
+        "unit": "PERCENT",
+        "value": 120.00000476837158
+      }
+    },
+    {
+      "id": "523:13",
+      "parent": "28:2",
+      "name": "EMAIL ↗",
+      "type": "TEXT",
+      "x": 1220,
+      "y": 1697,
+      "width": 63,
+      "height": 18,
+      "visible": true,
+      "isMask": false,
+      "rotation": 0,
+      "text": "EMAIL ↗",
+      "fontName": {
+        "family": "Fira Mono",
+        "style": "Regular"
+      },
+      "fontSize": 15,
+      "lineHeight": {
+        "unit": "PERCENT",
+        "value": 120.00000476837158
+      }
+    },
+    {
+      "id": "523:14",
+      "parent": "28:2",
+      "name": "Logo 3",
+      "type": "FRAME",
+      "x": 130,
+      "y": 1653,
+      "width": 57,
+      "height": 38,
+      "visible": true,
+      "isMask": false,
+      "rotation": 0
+    },
+    {
+      "id": "523:15",
+      "parent": "523:14",
+      "name": "Vector",
+      "type": "VECTOR",
+      "x": 133.13714599609375,
+      "y": 1654.66015625,
+      "width": 16.4162540435791,
+      "height": 16.41814613342285,
+      "visible": true,
+      "isMask": false,
+      "rotation": 0
+    },
+    {
+      "id": "523:16",
+      "parent": "523:14",
+      "name": "Vector",
+      "type": "VECTOR",
+      "x": 150.9586181640625,
+      "y": 1654.66015625,
+      "width": 16.418912887573242,
+      "height": 16.41814613342285,
+      "visible": true,
+      "isMask": false,
+      "rotation": 0
+    },
+    {
+      "id": "523:17",
+      "parent": "523:14",
+      "name": "Vector",
+      "type": "VECTOR",
+      "x": 150.958589553833,
+      "y": 1672.3670101165771,
+      "width": 16.418912887573242,
+      "height": 16.41814613342285,
+      "visible": true,
+      "isMask": false,
+      "rotation": 180
+    },
+    {
+      "id": "523:18",
+      "parent": "523:14",
+      "name": "Vector",
+      "type": "VECTOR",
+      "x": 168.586181640625,
+      "y": 1672.369140625,
+      "width": 16.418914794921875,
+      "height": 16.41814613342285,
+      "visible": true,
+      "isMask": false,
+      "rotation": 0
+    },
+    {
+      "id": "523:19",
+      "parent": "523:14",
+      "name": "Vector",
+      "type": "VECTOR",
+      "x": 133.13715171813965,
+      "y": 1672.3670101165771,
+      "width": 16.4162540435791,
+      "height": 16.41814613342285,
+      "visible": true,
+      "isMask": false,
+      "rotation": 180
+    },
+    {
+      "id": "523:20",
+      "parent": "523:14",
+      "name": "Vector",
+      "type": "VECTOR",
+      "x": 167.47845458984375,
+      "y": 1662.1611328125,
+      "width": 17.521299362182617,
+      "height": 8.916956901550293,
+      "visible": true,
+      "isMask": false,
+      "rotation": 0
+    },
+    {
+      "id": "523:21",
+      "parent": "28:2",
+      "name": "KIANA GEORGE / UX DESIGN + INSIGHTS",
+      "type": "TEXT",
+      "x": 210,
+      "y": 1667,
+      "width": 324,
+      "height": 18,
+      "visible": true,
+      "isMask": false,
+      "rotation": 0,
+      "text": "KIANA GEORGE  / UX DESIGN + INSIGHTS ",
+      "fontName": {
+        "family": "Fira Mono",
+        "style": "Regular"
+      },
+      "fontSize": 15,
+      "lineHeight": {
+        "unit": "PERCENT",
+        "value": 120.00000476837158
+      }
+    },
+    {
+      "id": "499:21",
+      "parent": "28:2",
+      "name": "Line 69",
+      "type": "LINE",
+      "x": 133,
+      "y": 854,
+      "width": 1177,
+      "height": 0,
+      "visible": true,
+      "isMask": false,
+      "rotation": -5.008956538086317e-06
+    },
+    {
+      "id": "499:24",
+      "parent": "28:2",
+      "name": "Rectangle 141",
+      "type": "RECTANGLE",
+      "x": 733,
+      "y": 881,
+      "width": 577,
+      "height": 577,
+      "visible": true,
+      "isMask": false,
+      "rotation": 0
+    },
+    {
+      "id": "123:3",
+      "parent": "28:2",
+      "name": "Point.ly Title",
+      "type": "TEXT",
+      "x": 173,
+      "y": 965,
+      "width": 472,
+      "height": 76,
+      "visible": true,
+      "isMask": false,
+      "rotation": 0,
+      "text": "Obayashi",
+      "fontName": {
+        "family": "Inter",
+        "style": "Bold",
+        "variationSettings": {
+          "wght": 700,
+          "slnt": 0
+        }
+      },
+      "fontSize": 50,
+      "lineHeight": {
+        "unit": "PERCENT",
+        "value": 104.99999523162842
+      }
+    },
+    {
+      "id": "123:6",
+      "parent": "28:2",
+      "name": "01 /",
+      "type": "TEXT",
+      "x": 179,
+      "y": 932,
+      "width": 44,
+      "height": 22,
+      "visible": true,
+      "isMask": false,
+      "rotation": 0,
+      "text": "01 /",
+      "fontName": {
+        "family": "Fira Mono",
+        "style": "Regular"
+      },
+      "fontSize": 18,
+      "lineHeight": {
+        "unit": "PERCENT",
+        "value": 120.00000476837158
+      }
+    },
+    {
+      "id": "499:37",
+      "parent": "28:2",
+      "name": "NORTH AMERICAN  WEBSITE",
+      "type": "TEXT",
+      "x": 179,
+      "y": 1049,
+      "width": 162,
+      "height": 50,
+      "visible": true,
+      "isMask": false,
+      "rotation": 0,
+      "text": "NORTH AMERICAN  WEBSITE ",
+      "fontName": {
+        "family": "Fira Mono",
+        "style": "Regular"
+      },
+      "fontSize": 18,
+      "lineHeight": {
+        "unit": "PIXELS",
+        "value": 25
+      }
+    },
+    {
+      "id": "499:51",
+      "parent": "28:2",
+      "name": "Point.ly Title",
+      "type": "TEXT",
+      "x": 774,
+      "y": 965,
+      "width": 472,
+      "height": 52,
+      "visible": true,
+      "isMask": false,
+      "rotation": 0,
+      "text": "Point.ly",
+      "fontName": {
+        "family": "Inter",
+        "style": "Bold",
+        "variationSettings": {
+          "wght": 700,
+          "slnt": 0
+        }
+      },
+      "fontSize": 50,
+      "lineHeight": {
+        "unit": "PERCENT",
+        "value": 104.99999523162842
+      }
+    },
+    {
+      "id": "499:52",
+      "parent": "28:2",
+      "name": "02 /",
+      "type": "TEXT",
+      "x": 780,
+      "y": 932,
+      "width": 44,
+      "height": 22,
+      "visible": true,
+      "isMask": false,
+      "rotation": 0,
+      "text": "02 /",
+      "fontName": {
+        "family": "Fira Mono",
+        "style": "Regular"
+      },
+      "fontSize": 18,
+      "lineHeight": {
+        "unit": "PERCENT",
+        "value": 120.00000476837158
+      }
+    },
+    {
+      "id": "499:53",
+      "parent": "28:2",
+      "name": "HIGH-FIDELITY PROTOTYPE",
+      "type": "TEXT",
+      "x": 780,
+      "y": 1049,
+      "width": 162,
+      "height": 50,
+      "visible": true,
+      "isMask": false,
+      "rotation": 0,
+      "text": "HIGH-FIDELITY PROTOTYPE",
+      "fontName": {
+        "family": "Fira Mono",
+        "style": "Regular"
+      },
+      "fontSize": 18,
+      "lineHeight": {
+        "unit": "PIXELS",
+        "value": 25
+      }
+    },
+    {
+      "id": "499:47",
+      "parent": "28:2",
+      "name": "Mask group",
+      "type": "GROUP",
+      "x": 909.1895751953125,
+      "y": 1041,
+      "width": 400.81048583984375,
+      "height": 376.9918212890625,
+      "visible": true,
+      "isMask": false,
+      "rotation": 0
+    },
+    {
+      "id": "499:46",
+      "parent": "499:47",
+      "name": "Rectangle 146",
+      "type": "RECTANGLE",
+      "x": 909.1895751953125,
+      "y": 1041,
+      "width": 400.81048583984375,
+      "height": 376.9918212890625,
+      "visible": true,
+      "isMask": true,
+      "rotation": 0
+    },
+    {
+      "id": "499:50",
+      "parent": "499:47",
+      "name": "Group 122",
+      "type": "GROUP",
+      "x": 953.49072265625,
+      "y": 1092.3701171875,
+      "width": 506.39459228515625,
+      "height": 308.37469482421875,
+      "visible": true,
+      "isMask": false,
+      "rotation": 0
+    },
+    {
+      "id": "499:43",
+      "parent": "499:50",
+      "name": "apple_intelligence__bqi8tl754cfm_large_2x 2",
+      "type": "RECTANGLE",
+      "x": 953.49072265625,
+      "y": 1092.3701171875,
+      "width": 506.39459228515625,
+      "height": 308.37469482421875,
+      "visible": true,
+      "isMask": false,
+      "rotation": 0
+    },
+    {
+      "id": "499:45",
+      "parent": "499:47",
+      "name": "Mask group",
+      "type": "GROUP",
+      "x": 981.75634765625,
+      "y": 1084.681640625,
+      "width": 445.399169921875,
+      "height": 286.0832824707031,
+      "visible": true,
+      "isMask": false,
+      "rotation": 0
+    },
+    {
+      "id": "499:44",
+      "parent": "499:45",
+      "name": "Rectangle 145",
+      "type": "RECTANGLE",
+      "x": 981.75634765625,
+      "y": 1084.681640625,
+      "width": 445.399169921875,
+      "height": 286.0832824707031,
+      "visible": true,
+      "isMask": true,
+      "rotation": 0
+    },
+    {
+      "id": "499:42",
+      "parent": "499:45",
+      "name": "Frame 3 (2) 1",
+      "type": "RECTANGLE",
+      "x": 1000.3743896484375,
+      "y": 1102.171875,
+      "width": 415.83306884765625,
+      "height": 679.7438354492188,
+      "visible": true,
+      "isMask": false,
+      "rotation": 0
+    },
+    {
+      "id": "557:53",
+      "parent": "28:2",
+      "name": "Project Lead UX research Product Strategy Interface Design Visual Identity   ",
+      "type": "TEXT",
+      "x": 179,
+      "y": 1157,
+      "width": 170,
+      "height": 184,
+      "visible": true,
+      "isMask": false,
+      "rotation": 0,
+      "text": "Project Lead UX research Product Strategy Interface Design Visual Identity   ",
+      "fontName": {
+        "family": "Inter",
+        "style": "Regular",
+        "variationSettings": {
+          "wght": 400,
+          "slnt": 0
+        }
+      },
+      "fontSize": 15,
+      "lineHeight": {
+        "unit": "PIXELS",
+        "value": 23
+      }
+    },
+    {
+      "id": "557:54",
+      "parent": "28:2",
+      "name": "UX research Content Strategy Information Architecture Website Design  ",
+      "type": "TEXT",
+      "x": 780,
+      "y": 1157,
+      "width": 184,
+      "height": 138,
+      "visible": true,
+      "isMask": false,
+      "rotation": 0,
+      "text": "UX research Content Strategy Information Architecture Website Design  ",
+      "fontName": {
+        "family": "Inter",
+        "style": "Regular",
+        "variationSettings": {
+          "wght": 400,
+          "slnt": 0
+        }
+      },
+      "fontSize": 15,
+      "lineHeight": {
+        "unit": "PIXELS",
+        "value": 23
+      }
+    },
+    {
+      "id": "557:55",
+      "parent": "28:2",
+      "name": "Vector 4",
+      "type": "VECTOR",
+      "x": 179,
+      "y": 1139,
+      "width": 44,
+      "height": 0,
+      "visible": true,
+      "isMask": false,
+      "rotation": 0
+    },
+    {
+      "id": "559:9",
+      "parent": "28:2",
+      "name": "Vector 5",
+      "type": "VECTOR",
+      "x": 780,
+      "y": 1139,
+      "width": 44,
+      "height": 0,
+      "visible": true,
+      "isMask": false,
+      "rotation": 0
+    }
+  ]
+}

@@ -1,12 +1,12 @@
 import { useEffect, useState } from 'react';
-import manifest from '../../public/assets/pointly-figma/manifest.json';
-import mvpManifest from '../../public/assets/pointly-figma-update/manifest.json';
+import design from '../../public/assets/website-v4-figma/pointly-design.json';
 import dividerManifest from '../../public/assets/pointly-figma-update/dividers.json';
 import { assetUrl, siteUrl } from '../lib/urls.js';
 import './PointlyCaseStudyPage.css';
 
 const sections = [['interviews', 'Interviews'], ['research', 'Research'], ['design', 'Design'], ['retrospective', 'Retrospective']];
-const imageSets = { 'pointly-figma': manifest, 'pointly-figma-update': mvpManifest };
+const copy = id => design.texts[id].trim().replace(/\u2028/g, '\n');
+const source = image => assetUrl(image.path.replace('assets/', ''));
 const mvpScreens = [
   { name: 'connected-wallet', title: 'Rewards Dashboard', description: 'View balances across rewards programs in one place.', alt: 'Point.ly connected rewards dashboard with balances across rewards programs' },
   { name: 'recommended-stays', title: 'Personalized Recommendations', description: 'Explore stays based on available points and preferences.', alt: 'Point.ly personalized hotel recommendations based on points and preferences' },
@@ -23,31 +23,31 @@ const personas = [
   ['node-82', 'The Casual Redeemer', 'Uses points sporadically and prioritizes ease.'],
 ];
 const competitors = [
-  ['seats-aero-2-87', 'Seats.aero', 'Guided award search with step-by-step booking support.'],
-  ['roame-2-88', 'Roame', 'Broad multi-program search for quickly finding award availability.'],
-  ['pointsyeah-2-86', 'PointsYeah', 'Flight and hotel award search with strong free tools.'],
-  ['awardtool-2-91', 'AwardTool', 'Flexible award search with filters and trend data.'],
-  ['maxmypoint-2-90', 'MaxMyPoint', 'Hotel-focused award availability and redemption alerts.'],
-  ['node-89', 'AwardWallet', 'Centralized tracking for points balances and expirations.'],
-  ['node-92', 'The Points Guy', 'Educational content, points valuations, and credit-card guidance.'],
-  ['node-85', 'point.me', 'Powerful, fast award search designed for experienced users.'],
+  ['seats-aero-2-87', 'Seats.aero'], ['roame-2-88', 'Roame'],
+  ['pointsyeah-2-86', 'PointsYeah'], ['awardtool-2-91', 'AwardTool'],
+  ['maxmypoint-2-90', 'MaxMyPoint'], ['node-89', 'AwardWallet'],
+  ['node-92', 'The Points Guy'], ['node-85', 'point.me'],
 ];
 const insights = [
-  ['node-128', <>Insight: Points mean nothing<br />without context</>, 'Knowing you have 80,000 points is meaningless unless you know what they can buy and whether transferring is worth it.'],
-  ['node-127', <>Insight: Expertise created<br />an uneven playing field</>, 'Savvy travelers knew the transfer partners and redemption tricks. Everyone else had the same options but no easy way to find them.'],
-  ['node-121', 'Opportunity: Suggest ways to pool rewards for group travel', 'For people planning together, looking at combined resources rather than individual balances could open travel options'],
-  ['node-120', <>Opportunity: Provide ideas to<br />close points gaps fast</>, 'Instead of a flat “not enough points,” provide a list of creative ways to close the gap, such as current promos and affiliated points programs.'],
+  ['node-128', '348:8', '348:7'], ['node-127', '348:5', '145:138'],
+  ['node-121', '348:16', '348:15'], ['node-120', '348:12', '348:11'],
 ];
 
-function Picture({ name, alt = '', className = '', eager = false, assetGroup = 'pointly-figma' }) {
-  const image = imageSets[assetGroup].assets[name];
-  const nodeId = assetGroup === 'pointly-figma' ? mvpManifest.reusedAssets[name]?.figmaNodeId ?? image.figmaNodeId : image.figmaNodeId;
-  return <img className={className} src={assetUrl(`${assetGroup}/${image.file}`)} width={image.width} height={image.height} alt={alt} loading={eager ? 'eager' : 'lazy'} decoding="async" data-figma-node={nodeId} data-figma-asset={assetGroup === 'pointly-figma' ? name : undefined} />;
+function Picture({ name, alt = '', className = '', eager = false }) {
+  const image = design.images[name];
+  const { slot, mask, paint } = image;
+  const nativeVector = image.path.endsWith('.svg');
+  const attributes = { src: source(image), alt, width: image.width, height: image.height, loading: eager ? 'eager' : 'lazy', decoding: 'async' };
+  if (nativeVector) return <img {...attributes} className={`pointly-picture ${className}`} data-figma-node={image.figmaNodeId} data-figma-asset={name} />;
+  const transform = paint?.scaleMode === 'CROP' ? paint.imageTransform : null;
+  const crop = transform ? { left: `${-transform[0][2] / transform[0][0] * 100}%`, top: `${-transform[1][2] / transform[1][1] * 100}%`, width: `${100 / transform[0][0]}%`, height: `${100 / transform[1][1]}%`, objectFit: 'fill' } : undefined;
+  const layer = mask ? { left: `${mask.image.x / mask.width * 100}%`, top: `${mask.image.y / mask.height * 100}%`, width: `${mask.image.width / mask.width * 100}%`, height: `${mask.image.height / mask.height * 100}%` } : crop;
+  return <span className={`pointly-picture ${className}`} data-figma-node={image.figmaNodeId} data-figma-asset={name} style={{ aspectRatio: `${mask?.width ?? slot.width} / ${mask?.height ?? slot.height}`, ...(mask && { maskImage: `url("${source(mask)}")` }) }}><img {...attributes} style={layer} /></span>;
 }
 
-function Exhibit({ name, alt, className = '', onOpenImage, eager = false, assetGroup = 'pointly-figma', children }) {
-  const image = imageSets[assetGroup].assets[name];
-  return <figure className={`pointly-exhibit ${className}`}><button type="button" aria-label={`Enlarge ${alt}`} onClick={() => onOpenImage({ ...image, src: assetUrl(`${assetGroup}/${image.file}`), alt })}><Picture name={name} alt={alt} eager={eager} assetGroup={assetGroup} /></button>{children && <figcaption>{children}</figcaption>}</figure>;
+function Exhibit({ name, alt, className = '', onOpenImage, eager = false, children }) {
+  const image = design.images[name];
+  return <figure className={`pointly-exhibit ${className}`}><button type="button" aria-label={`Enlarge ${alt}`} onClick={event => onOpenImage({ ...image, src: source(image), alt }, event.currentTarget)}><Picture name={name} alt={alt} eager={eager} /></button>{children && <figcaption>{children}</figcaption>}</figure>;
 }
 
 function Rule({ id }) {
@@ -86,15 +86,15 @@ export default function PointlyCaseStudyPage({ onOpenImage }) {
 
   return <article className="pointly-case" data-figma-node="90:18">
     <header className="pointly-intro">
-      <div><p className="pointly-index">02 /</p><h1 data-figma-node="123:3">Point.ly</h1></div>
-      <div className="pointly-intro__summary"><p data-figma-node="123:5">Turning fragmented loyalty points into new travel possibilities</p><p className="pointly-intro__team">UX@Berkeley project team</p></div>
+      <div><p className="pointly-index">02 /</p><h1 data-figma-node="499:60">Point.ly</h1></div>
+      <div className="pointly-intro__summary"><p data-figma-node="499:59">Turning fragmented loyalty points into new travel possibilities</p><p className="pointly-intro__team">UX@Berkeley project team</p></div>
     </header>
     <div className="pointly-project-details" data-figma-node="413:53">
       <Rule id="101:3" />
       <dl className="pointly-facts">{[
-      ['Deliverable', ['Working MVP']], ['Timeline', ['8 months +', 'one day hackathon']],
-      ['My contribution', ['UX research', 'Prototyping', 'Visual Identity']],
-      ['Methods', ['10 User Interviews', 'Competitive Analysis', 'Product Strategy', 'PRD Development', 'Prototyping', 'Usability Testing']],
+      ['Deliverable', ['High-Fidelity Prototype']], ['Timeline', ['8 months +', 'one day hackathon']],
+      ['My contribution', ['Project Lead', 'UX research', 'Product Strategy', 'Interface Design', 'Visual Identity']],
+      ['Methods', ['10 User Interviews', 'Competitive Analysis', 'PRD Development', 'Prototyping', 'Usability Testing']],
       ['Tools', ['Figma', 'Cursor', 'Claude', 'Gemini']],
       ].map(([label, lines]) => <div key={label}><dt>{label}</dt><dd>{lines.map(line => <span key={line}>{line}</span>)}</dd></div>)}</dl>
     </div>
@@ -137,9 +137,9 @@ export default function PointlyCaseStudyPage({ onOpenImage }) {
         </section>
         <section id="research" className="pointly-section pointly-research" aria-labelledby="pointly-research-title">
           <Rule id="143:18" /><h2 id="pointly-research-title">Research Revealed Insights</h2>
-          <div className="pointly-subsection pointly-competitors"><h3>Exploring the Solution Space</h3><p>We analyzed existing rewards platforms to understand competitors’ unique differentiating features</p><ul>{competitors.map(([name, title, text]) => <li key={name}><div className="pointly-competitor-logo"><Picture name={name} alt={title} /></div><p>{text}</p></li>)}</ul></div>
-          <div className="pointly-subsection pointly-opportunity-map"><h3>Opportunity Maps</h3><p>We mapped each competitors’ features and user flows to identify strengths, friction points, and opportunities</p><Exhibit name="node-124" alt="Opportunity map comparing rewards platform features, user flows, and research findings" onOpenImage={onOpenImage} /></div>
-          <div className="pointly-subsection pointly-insights"><h3>Key Insights and Opportunities</h3><div>{insights.map(([name, title, text]) => <aside className="pointly-insight" key={name}><Picture name={name} /><div><h4>{title}</h4><p>{text}</p></div></aside>)}</div></div>
+          <div className="pointly-subsection pointly-competitors"><h3 data-figma-node="145:125">{copy('145:125')}</h3><p data-figma-node="143:74">{copy('143:74')}</p><ul aria-label="Rewards platforms reviewed">{competitors.map(([name, title]) => <li key={name}><Picture name={name} alt={title} /></li>)}</ul></div>
+          <div className="pointly-subsection pointly-opportunity-map"><h3 data-figma-node="163:10">Opportunity Maps</h3><p data-figma-node="163:9">{copy('163:9')}</p><Exhibit name="node-124" alt="Opportunity map comparing rewards platform features, user flows, and research findings" onOpenImage={onOpenImage} /></div>
+          <div className="pointly-subsection pointly-insights"><h3>Key Insights and Opportunities</h3><div>{insights.map(([name, title, text]) => <aside className="pointly-insight" key={name}><Picture name={name} /><div><h4 data-figma-node={title}>{copy(title)}</h4><p data-figma-node={text}>{copy(text)}</p></div></aside>)}</div></div>
         </section>
         <section id="design" className="pointly-section pointly-design" aria-labelledby="pointly-design-title">
           <Rule id="163:12" /><h2 id="pointly-design-title">Designing the User Experience</h2>
@@ -147,10 +147,10 @@ export default function PointlyCaseStudyPage({ onOpenImage }) {
           <div className="pointly-subsection pointly-mid-fi"><h3>Mid-Fi: Narrowing the Experience</h3><p>We prioritized the concepts that most directly addressed our research findings: consolidating rewards, simplifying comparisons, and making redemption opportunities actionable. Broader ideas that moved beyond these core needs were deprioritized.</p><div className="pointly-mid-fi__images"><Exhibit name="node-160" alt="Mid-fidelity Point.ly dashboard wireframe" onOpenImage={onOpenImage} /><div className="pointly-mid-fi__comparison"><Exhibit name="node-161" alt="Mid-fidelity flight comparison wireframe" onOpenImage={onOpenImage} /><Exhibit name="node-162" alt="Mid-fidelity booking details wireframe" onOpenImage={onOpenImage} /></div></div></div>
           <div className="pointly-subsection pointly-identity"><h3>Defining the Product’s Visual Language</h3><p>I developed Point.ly’s visual identity and core interface—including color, typography, illustration, and layout—to make credit card points feel clear and approachable, balancing warmth with financial credibility.</p><VisualIdentity /></div>
           <div id="mvp-prototype" className="pointly-subsection pointly-mvp">
-            <h3>From Research to MVP Prototype</h3>
-            <p>We designed the experience to help travelers decide how to use their points. Our high-fidelity MVP prototype brought rewards balances, personalized stays, and points-versus-cash comparisons together to support more informed booking decisions. The project remained at the prototype stage.</p>
+            <h3>From Research to High-Fidelity Prototype</h3>
+            <p>We designed the experience to help travelers decide how to use their points. Our high-fidelity prototype brought rewards balances, personalized stays, and points-versus-cash comparisons together to support more informed booking decisions. The project remained at the prototype stage.</p>
             <div className="pointly-mvp-gallery">
-              {mvpScreens.map(({ name, title, description, alt }) => <Exhibit key={name} name={name} alt={alt} assetGroup="pointly-figma-update" className="pointly-mvp-feature" onOpenImage={onOpenImage}><h4>{title}</h4><p>{description}</p></Exhibit>)}
+              {mvpScreens.map(({ name, title, description, alt }) => <Exhibit key={name} name={name} alt={alt} className="pointly-mvp-feature" onOpenImage={onOpenImage}><h4>{title}</h4><p>{description}</p></Exhibit>)}
             </div>
           </div>
         </section>

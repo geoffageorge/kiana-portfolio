@@ -1,0 +1,104 @@
+const imgPortrait2 = "/assets/website-v4-figma/about-imgPortrait2.png";
+const imgLinkedInBanner22 = "/assets/website-v4-figma/about-imgLinkedInBanner22.png";
+const imgPortrait1 = "/assets/website-v4-figma/about-imgPortrait1.svg";
+const imgRectangle140 = "/assets/website-v2-figma/resume-button.svg";
+const imgLogo2 = "/assets/website-v4-figma/about-imgLogo2.svg";
+const imgLinkedInBanner21 = "/assets/website-v4-figma/about-imgLinkedInBanner21.svg";
+
+export default function AboutNew() {
+  return (
+    <div className="bg-white relative size-full" data-node-id="522:265" data-name="About -NEW">
+      <div className="absolute contents left-[calc(66.67%-19px)] top-[164px]" data-node-id="560:18" data-name="Mask group">
+        <div className="absolute h-[443.318px] left-[calc(58.33%+19.6px)] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[81.403px_18.502px] mask-size-[269px_269px] top-[145.5px] w-[391.808px]" data-node-id="560:16" style={{ maskImage: `url("${imgPortrait1}")` }} data-name="portrait 1">
+          <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgPortrait2} />
+        </div>
+      </div>
+      <div className="absolute contents left-[calc(66.67%-19px)] top-[164px]" data-node-id="560:19" data-name="Mask group">
+        <div className="absolute h-[446px] left-[calc(58.33%+19px)] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[82px_17px] mask-size-[269px_269px] top-[147px] w-[393px]" data-node-id="560:21" style={{ maskImage: `url("${imgPortrait1}")` }} data-name="portrait 1">
+          <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgPortrait2} />
+        </div>
+      </div>
+      <div className="[word-break:break-word] absolute font-['Inter:Regular'] font-normal leading-[0] left-[calc(8.33%+104px)] not-italic text-[16px] text-black top-[295px] w-[626px] whitespace-pre-wrap" data-node-id="522:266">
+        <p className="leading-[26px] mb-0">
+          Growing up, people called me “Curious George” (yes, my last name is George!), and it still fits. I’m always asking questions and wanting to know more about the people around me. That curiosity led me to broadcast journalism, where I became an award-winning storyteller. Now, as a UX designer, I combine my interest in people’s experiences with storytelling and creative problem-solving to design thoughtful, intuitive products.
+          <br aria-hidden />
+          <br aria-hidden />
+          Currently, I’m pursuing a master’s in information management with a concentration in UX at the University of Washington’s Information School. I’m also laying the groundwork for a food and health platform for women with PCOS, using research and design to make health information clearer and more approachable.
+          <br aria-hidden />
+          <br aria-hidden />
+          Outside of design, you’ll find me running (one marathon and two half marathons so far), hiking, or in the kitchen baking bread and hosting themed dinner parties. I also love exploring new places and perspectives, from studying abroad in Florence and Greece to traveling around the world.
+          <br aria-hidden />
+          <br aria-hidden />
+        </p>
+        <p className="leading-[26px] mb-0">Whether I’m interviewing, designing, or hosting, it all comes back to learning people’s stories and finding creative ways to bring them together.</p>
+        <p className="leading-[26px]">​</p>
+      </div>
+      <div className="[word-break:break-word] absolute font-['Inter:Regular'] font-normal leading-[0] left-[calc(66.67%+45px)] not-italic text-[0px] text-black top-[528px] w-[659px] whitespace-pre-wrap" data-node-id="522:267">
+        <p className="leading-[26px] mb-0 text-[14px]">EMAIL</p>
+        <p className="mb-0">
+          <span className="leading-[26px] text-[16px]">
+            kikig6204@gmail.com
+            <br aria-hidden />
+            <br aria-hidden />
+          </span>
+          <span className="leading-[26px] text-[14px]">
+            PHONE
+            <br aria-hidden />
+            650-817-5454
+          </span>
+          <span className="leading-[26px] text-[16px]">
+            <br aria-hidden />
+            <br aria-hidden />
+            <br aria-hidden />
+          </span>
+        </p>
+        <p className="leading-[26px] text-[16px]">​</p>
+      </div>
+      <p className="[word-break:break-word] absolute font-['Inter:Bold'] font-bold leading-[44px] left-[calc(8.33%+102px)] not-italic text-[36px] text-black top-[224px] w-[471px]" data-node-id="522:268">
+        Curious George, Literally
+      </p>
+      <p className="[word-break:break-word] absolute font-['Inter:Bold'] font-bold leading-[44px] left-[calc(66.67%+43px)] not-italic text-[21px] text-black top-[469px] w-[471px]" data-node-id="522:269">
+        Let’s Connect
+      </p>
+      <div className="absolute bg-[#25261e] h-[31px] left-[calc(16.67%+123px)] rounded-[4px] top-[831px] w-[115px]" data-node-id="522:270" />
+      <div className="absolute h-[31px] left-[calc(8.33%+104px)] top-[831px] w-[99px]" data-node-id="522:271">
+        <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgRectangle140} />
+      </div>
+      <div className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Fira_Mono:Regular'] h-[22px] justify-center leading-[0] left-[calc(16.67%+139px)] not-italic text-[14px] text-white top-[846px] w-[104px]" data-node-id="522:272">
+        <p className="leading-[1.2]">{`LINKEDIN ↗ `}</p>
+      </div>
+      <div className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Fira_Mono:Regular'] h-[18px] justify-center leading-[0] left-[calc(8.33%+116px)] not-italic text-[14px] text-white top-[846px] w-[76px]" data-node-id="522:273">
+        <p className="leading-[1.2]">{`RESUME ↗ `}</p>
+      </div>
+      <p className="[word-break:break-word] absolute font-['Inter:Regular'] font-normal leading-[0] left-[calc(8.33%+104px)] not-italic text-[0px] text-black top-[183px] w-[204px]" data-node-id="522:277">
+        <span className="leading-[26px] text-[14px]">ABOUT</span>
+        <span className="leading-[26px] text-[15px]">
+          <br aria-hidden />
+          <br aria-hidden />
+        </span>
+      </p>
+      <div className="absolute contents left-[128px] top-[56px]" data-node-id="557:29" data-name="Logo + Navigation">
+        <div className="absolute h-[38px] left-[128px] top-[56px] w-[57px]" data-node-id="557:30" data-name="Logo 2">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgLogo2} />
+        </div>
+        <div className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Fira_Mono:Regular'] justify-center leading-[0] left-[calc(8.33%+88px)] not-italic text-[15px] text-black top-[79px] whitespace-nowrap" data-node-id="557:37">
+          <p className="leading-[1.2] whitespace-pre">{`KIANA GEORGE  / UX DESIGN + INSIGHTS `}</p>
+        </div>
+        <div className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Fira_Mono:Regular'] justify-center leading-[0] left-[calc(75%-24px)] not-italic text-[15px] text-black top-[79px] whitespace-nowrap" data-node-id="557:38">
+          <p className="leading-[1.2]">ABOUT</p>
+        </div>
+        <div className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Fira_Mono:Regular'] justify-center leading-[0] left-[calc(83.33%-53px)] not-italic text-[15px] text-black top-[79px] whitespace-nowrap" data-node-id="557:39">
+          <p className="leading-[1.2]">RESUME</p>
+        </div>
+        <div className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Fira_Mono:Regular'] justify-center leading-[0] left-[calc(91.67%-72px)] not-italic text-[15px] text-black top-[79px] whitespace-nowrap" data-node-id="557:40">
+          <p className="leading-[1.2]">CONTACT</p>
+        </div>
+      </div>
+      <div className="absolute contents left-0 top-[995px]" data-node-id="557:47" data-name="Mask group">
+        <div className="absolute h-[209.258px] left-0 mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-size-[1468.098px_209px] top-[995px] w-[1669.939px]" data-node-id="557:10" style={{ maskImage: `url("${imgLinkedInBanner21}")` }} data-name="LinkedInBanner2 1">
+          <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgLinkedInBanner22} />
+        </div>
+      </div>
+    </div>
+  );
+}

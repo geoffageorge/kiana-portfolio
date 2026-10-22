@@ -1,0 +1,67 @@
+{
+  "name": "Overall Kiana website updates version 4",
+  "validatedDate": "2026-10-22",
+  "baseCommit": "6498faa",
+  "fileKey": "wZSRbIZZXfUlrq902OXE2W",
+  "frames": {
+    "tiles": "28:2",
+    "about": "522:265",
+    "obayashiDetails": "420:253",
+    "careers": "563:7",
+    "pointly": "90:18"
+  },
+  "validation": {
+    "productionBuild": "passed",
+    "fullRegression": {
+      "passed": 185,
+      "skipped": 1,
+      "failed": 0,
+      "flaky": 0
+    },
+    "afterFinalVisualAdjustments": {
+      "passed": 70,
+      "failed": 0,
+      "flaky": 0
+    },
+    "browsers": [
+      "Google Chrome",
+      "Playwright WebKit 26.5 (Safari engine)",
+      "Playwright Firefox 153.0"
+    ],
+    "layouts": [
+      "1440px desktop",
+      "390px phone viewport",
+      "responsive sweeps from 320px through 1920px"
+    ],
+    "limits": [
+      "No installed Safari app or real mobile hardware automation; Firefox mobile is a phone-sized desktop-engine viewport."
+    ],
+    "finalObayashiContentCorrection": {
+      "passed": 21,
+      "skipped": 1,
+      "failed": 0,
+      "typography": "Regular Inter, 15px desktop/tablet or 14px phone, 22px line height; all five details columns match.",
+      "whiteGapBeforeShowcase": {
+        "desktopAndTabletPx": 30,
+        "phonePx": 32
+      },
+      "responsiveWidthsChecked": [
+        320,
+        390,
+        768,
+        1024,
+        1440,
+        1920
+      ]
+    }
+  },
+  "approvedExceptions": [
+    "Obayashi TOOLS uses only Figma and Claude per the user\u2019s final correction.",
+    "Obayashi MY CONTRIBUTION uses Project Lead, UX research, Product Strategy, Interface Design, and Visual Identity per the user\u2019s final correction."
+  ],
+  "editorialCorrections": [
+    "Pointly deliverable typo Protoype corrected to Prototype.",
+    "Duplicate Methods labels rendered once."
+  ],
+  "deployment": "Not committed, pushed, or deployed by the implementation task."
+}

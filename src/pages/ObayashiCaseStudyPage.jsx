@@ -9,7 +9,11 @@ const src = name => assetUrl(`obayashi-figma/${manifest.assets[name].file}`);
 const text = id => manifest.texts[id].text.trim().replace(/\u2028/g, '\n');
 const editorialText = {
   '420:272': 'Aligning teams, audiences, and priorities into a unified experience',
-  '420:264': 'Figma\nClaude\nMobirise',
+  '420:255': '36-page website redesign and internal\nhandoff',
+  '420:258': '10 months',
+  '420:261': '17 Stakeholder Interviews\nCompetitive Analysis\nContent Audit\nSitemap Development',
+  '420:264': 'Figma\nClaude',
+  '420:267': 'Project Lead\nUX research\nProduct Strategy\nInterface Design\nVisual Identity',
 };
 
 function Copy({ id, as: Tag = 'p', className = '', htmlId }) {
@@ -45,7 +49,7 @@ function Exhibit({ name, alt, cropName = name, slotId, className = '', onOpenIma
     <img src={src(name)} alt={alt} width={asset.width} height={asset.height} loading={eager ? 'eager' : 'lazy'} decoding="async" data-figma-asset={name} style={paintStyle} />
   </span>;
   return <figure className={`obayashi-exhibit ${className}`}>
-    <button type="button" aria-label={`Enlarge ${alt}`} onClick={() => onOpenImage({ ...asset, src: src(name), alt, caption: captionId ? text(captionId).replace(/\n/g, ' ') : caption })}>
+    <button type="button" aria-label={`Enlarge ${alt}`} onClick={event => onOpenImage({ ...asset, src: src(name), alt, caption: captionId ? text(captionId).replace(/\n/g, ' ') : caption }, event.currentTarget)}>
       <span className="obayashi-image-viewport" data-figma-slot={crop?.nodeId ?? slotId ?? asset.figmaNodeIds[0]} style={{ aspectRatio: `${width} / ${height}`, ...(crop && { maskImage: `url("${src(crop.mask)}")` }) }}>
         {inner ? <span className="obayashi-image-clip" style={{ ...layerStyle(inner, width, height), maskImage: `url("${src(inner.mask)}")` }}>{picture}</span> : picture}
       </span>

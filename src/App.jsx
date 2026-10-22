@@ -38,12 +38,12 @@ export default function App() {
       <main id="main" className={`page-container${showAbout ? ' page-container--about' : isPointly || isObayashi ? ' page-container--case-study' : ''}`} tabIndex={-1}>
         {showAbout ? <AboutPage site={site} /> : projectSlug ? (
           <Suspense fallback={<p className="case-loading" role="status">Loading project…</p>}>
-            <ProjectPage slug={projectSlug} onOpenImage={(image) => setDialog({ kind: 'image', title: image.alt, image })} />
+            <ProjectPage slug={projectSlug} onOpenImage={(image, returnFocus) => setDialog({ kind: 'image', title: image.alt, image, returnFocus })} />
           </Suspense>
         ) : <><HeroSection site={site} /><SelectedWork projects={projects} onSelect={(project) => setDialog({ kind: 'project', title: `Project ${project.number}`, project })} /></>}
       </main>
       <SiteFooter site={site} />
-      <Modal open={Boolean(dialog)} onClose={closeDialog} title={dialog?.title ?? ''} className={dialog?.kind === 'image' ? 'portfolio-modal--image' : ''}>
+      <Modal open={Boolean(dialog)} onClose={closeDialog} returnFocus={dialog?.returnFocus} title={dialog?.title ?? ''} className={dialog?.kind === 'image' ? 'portfolio-modal--image' : ''}>
         {dialog?.kind === 'image' && <div className="modal-copy">
           <img className="modal-evidence-image" src={dialog.image.src} alt={dialog.image.alt} width={dialog.image.width ?? 1200} height={dialog.image.height ?? 750} />
           {dialog.image.caption && <p className="modal-image-caption">{dialog.image.caption}</p>}

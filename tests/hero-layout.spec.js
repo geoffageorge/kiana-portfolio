@@ -88,19 +88,19 @@ test('white pages, dividing rules, and transparent logos appear throughout the s
     const figmaCaseStudy = ['/projects/pointly/', '/projects/obayashi/'].includes(path);
     await expect(logos).toHaveCount(figmaCaseStudy ? 0 : 1);
     const footerLogo = page.locator('.site-footer__brand > img');
-    await expect(footerLogo).toHaveAttribute('src', '/assets/website-v2-figma/footer-logo.svg');
+    await expect(footerLogo).toHaveAttribute('src', '/assets/brand/ki-logo-v4.svg');
     await expect(footerLogo).toHaveAttribute('width', '57');
     await expect(footerLogo).toHaveAttribute('height', '38');
     if (path === '/projects/pointly/') {
-      await expect(page.locator('.pointly-mark img')).toHaveCount(6);
+      await expect(page.locator('.pointly-mark img')).toHaveCount(1);
     } else if (path === '/projects/obayashi/') {
-      await expect(page.locator('.obayashi-mark')).toHaveAttribute('src', '/assets/obayashi-figma/logo.svg');
+      await expect(page.locator('.obayashi-mark')).toHaveAttribute('src', '/assets/brand/ki-logo-v4.svg');
       const mark = await page.locator('.obayashi-mark').boundingBox();
       expect(mark.width).toBe(57);
       expect(mark.height).toBe(38);
     }
     for (const logo of await logos.all()) {
-      await expect(logo).toHaveAttribute('src', '/assets/brand/ki-logo.png');
+      await expect(logo).toHaveAttribute('src', '/assets/brand/ki-logo-v4.svg');
       await logo.evaluate(image => image.decode());
       const size = await logo.boundingBox();
       expect(size.width).toBe(page.viewportSize().width < 768 ? 45 : 54);
@@ -109,7 +109,7 @@ test('white pages, dividing rules, and transparent logos appear throughout the s
     if (!figmaCaseStudy) expect(await logos.first().evaluate(image => {
       const canvas = document.createElement('canvas'); canvas.width = image.naturalWidth; canvas.height = image.naturalHeight;
       const context = canvas.getContext('2d'); context.drawImage(image, 0, 0);
-      return [[0, 0], [.5, .5], [0, .5]].map(([x, y]) => context.getImageData(Math.floor(x * canvas.width), Math.floor(y * canvas.height), 1, 1).data[3]);
+      return [[0, 0], [0, 1], [0, .5]].map(([x, y]) => context.getImageData(Math.floor(x * canvas.width), Math.min(canvas.height - 1, Math.floor(y * canvas.height)), 1, 1).data[3]);
     })).toEqual([0, 0, 0]);
     if (path === '/') {
       await expect(page.locator('.selected-work__grid')).toHaveCSS('gap', page.viewportSize().width < 768 ? '24px' : '27px');

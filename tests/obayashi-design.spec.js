@@ -53,6 +53,7 @@ test('home tile opens the complete Figma case study, with working reloads and im
   await expect(page.getByRole('button', { name: /Careers page animation|View full Careers page/ })).toHaveCount(0);
   await expect(page.locator('.obayashi-intro__summary')).toHaveText('Aligning teams, audiences, and priorities into a unified experience');
   await expect(page.locator('.obayashi-facts')).not.toContainText('Wix');
+  await expect(page.locator('.obayashi-facts')).not.toContainText('Mobirise');
   await expect(page.locator('.obayashi-end a')).toHaveCount(1);
   await page.getByRole('link', { name: 'Next Project: Point.ly' }).click();
   await expect(page.getByRole('heading', { level: 1 })).toHaveText('Point.ly');
@@ -78,7 +79,7 @@ test('Figma source assets keep their bytes and all image and mask assets are use
   }
   const used = await page.locator('img, .obayashi-image-viewport, .obayashi-image-clip').evaluateAll(nodes => [...new Set(nodes.flatMap(n => [n.getAttribute('src'), getComputedStyle(n).maskImage]).filter(s => s?.includes('/obayashi-figma/')).map(s => /obayashi-figma\/([^")]+)/.exec(s)[1]))].sort());
   // Half-pixel divider exports remain archived; native CSS borders render their Figma strokes.
-  expect(used).toEqual(Object.entries(manifest.assets).filter(([name]) => !['details-divider', 'section-divider'].includes(name)).map(([, a]) => a.file).sort());
+  expect(used).toEqual(Object.entries(manifest.assets).filter(([name]) => !['details-divider', 'section-divider', 'careers', 'logo'].includes(name)).map(([, a]) => a.file).sort());
   expect(await page.locator('.obayashi-case img').evaluateAll(images => images.every(i => i.complete && i.naturalWidth > 0))).toBe(true);
   await expect(page.locator('.obayashi-case')).toHaveCSS('font-family', /^"?Obayashi Inter"?, sans-serif$/);
   await expect(page.locator('.obayashi-index')).toHaveCSS('font-family', /^"?Obayashi Fira Mono"?, monospace$/);

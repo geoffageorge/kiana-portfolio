@@ -26,19 +26,23 @@
 .project-card--figma .project-card__link { position: relative; aspect-ratio: 1; padding: 0; border-radius: inherit; background: transparent; }
 .project-card--figma .project-card__overlay { position: absolute; inset: 0; pointer-events: none; color: #000; }
 .project-card--obayashi .project-card__overlay { color: #fff; }
-.project-card--figma .project-card__number, .project-card--figma .project-card__summary { position: absolute; left: 8.3189%; margin: 0; font: 400 3.11958cqw/1.22222 var(--portfolio-mono); }
-.project-card--obayashi .project-card__number, .project-card--obayashi .project-card__summary { left: 10.2253%; }
-.project-card--figma .project-card__number { top: 10.9185%; }
-.project-card--figma h3 { position: absolute; left: 7.27903%; top: 16.63778%; margin: 0; font: 700 8.66551cqw/1.05 var(--portfolio-body); letter-spacing: -.17331cqw; }
-.project-card--obayashi h3 { left: 9.18544%; }
-.project-card--figma .project-card__summary { top: 31.19584%; line-height: 1.38889; }
+.project-card--figma .project-card__number, .project-card--figma .project-card__summary { position: absolute; left: 8.14558%; margin: 0; font: 400 3.11958cqw/1.22222 var(--portfolio-mono); }
+.project-card--obayashi .project-card__number, .project-card--obayashi .project-card__summary { left: 8.66551%; }
+.project-card--figma .project-card__number { top: 8.83882%; }
+.project-card--figma h3 { position: absolute; left: 7.10572%; top: 14.55806%; margin: 0; font: 700 8.66551cqw/1.05 var(--portfolio-body); letter-spacing: -.17331cqw; }
+.project-card--obayashi h3 { left: 7.62565%; }
+.project-card--figma .project-card__summary { top: 29.11612%; line-height: 1.38889; }
 .project-card__summary span { display: block; }
+.project-card__role-rule { position: absolute; top: 44.71404%; left: 8.14558%; width: 7.62565%; border-top: 1px solid currentColor; }
+.project-card__roles { position: absolute; left: 8.14558%; top: 47.83362%; width: 31.88908%; margin: 0; font: 400 2.59965cqw/1.53333 var(--portfolio-body); }
+.project-card--obayashi :is(.project-card__role-rule, .project-card__roles) { left: 8.66551%; }
+.project-card__roles span { display: block; }
 .project-artwork { position: absolute; inset: 0; overflow: hidden; border-radius: 16px; mask-size: 100% 100%; mask-repeat: no-repeat; }
 .project-artwork img { display: block; position: absolute; max-width: none; }
 .project-artwork--pointly { background: #88cffd; }
 .project-artwork__staircase { position: absolute; left: -37.60832%; top: -6.93241%; width: 236.22184%; height: 128.94281%; transform: scaleX(-1); }
 .project-artwork__staircase img { left: -10.86761%; top: 4.56671%; width: 100%; height: 100.01411%; }
-.project-artwork__laptop-crop { position: absolute; left: 26.84874%; top: 23.22357%; width: 73.15126%; height: 68.80416%; mask-size: 100% 100%; mask-repeat: no-repeat; }
+.project-artwork__laptop-crop { position: absolute; left: 30.53553%; top: 27.72964%; width: 69.46447%; height: 65.33657%; mask-size: 100% 100%; mask-repeat: no-repeat; }
 .project-artwork__laptop { left: 11.05243%; top: 13.62605%; width: 126.34367%; height: 81.79877%; }
 .project-artwork__screen-crop { position: absolute; left: 18.10597%; top: 11.5869%; width: 111.12748%; height: 75.88581%; mask-size: 100% 100%; mask-repeat: no-repeat; }
 .project-artwork__screen { left: 4.18009%; top: 6.11322%; width: 93.36282%; height: 237.60348%; box-shadow: .69324cqw .69324cqw .69324cqw rgb(0 0 0 / 25%); }

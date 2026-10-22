@@ -1,0 +1,351 @@
+{
+  "id": "420:253",
+  "name": "Project Details",
+  "x": 5000,
+  "y": -15867,
+  "width": 1200,
+  "height": 147,
+  "nodes": [
+    {
+      "id": "420:253",
+      "parent": "420:76",
+      "name": "Project Details",
+      "type": "GROUP",
+      "x": 0,
+      "y": 0,
+      "width": 1200,
+      "height": 147,
+      "visible": true,
+      "isMask": false,
+      "rotation": 0
+    },
+    {
+      "id": "420:254",
+      "parent": "420:253",
+      "name": "Deliverable",
+      "type": "GROUP",
+      "x": 0,
+      "y": 28,
+      "width": 170,
+      "height": 97,
+      "visible": true,
+      "isMask": false,
+      "rotation": 0
+    },
+    {
+      "id": "420:255",
+      "parent": "420:254",
+      "name": "36-page website redesign and internal handoff",
+      "type": "TEXT",
+      "x": 0,
+      "y": 59,
+      "width": 170,
+      "height": 66,
+      "visible": true,
+      "isMask": false,
+      "rotation": 0,
+      "text": "36-page website redesign and internal \nhandoff",
+      "fontName": {
+        "family": "Inter",
+        "style": "Regular",
+        "variationSettings": {
+          "wght": 400,
+          "slnt": 0
+        }
+      },
+      "fontSize": 15,
+      "lineHeight": {
+        "unit": "PIXELS",
+        "value": 22
+      }
+    },
+    {
+      "id": "420:256",
+      "parent": "420:254",
+      "name": "DELIVERABLE",
+      "type": "TEXT",
+      "x": 0,
+      "y": 28,
+      "width": 80,
+      "height": 14,
+      "visible": true,
+      "isMask": false,
+      "rotation": 0,
+      "text": "DELIVERABLE",
+      "fontName": {
+        "family": "Fira Mono",
+        "style": "Medium"
+      },
+      "fontSize": 12,
+      "lineHeight": {
+        "unit": "PERCENT",
+        "value": 120.00000476837158
+      }
+    },
+    {
+      "id": "420:257",
+      "parent": "420:253",
+      "name": "Timeline",
+      "type": "GROUP",
+      "x": 250,
+      "y": 28,
+      "width": 172,
+      "height": 53,
+      "visible": true,
+      "isMask": false,
+      "rotation": 0
+    },
+    {
+      "id": "420:258",
+      "parent": "420:257",
+      "name": "10 months",
+      "type": "TEXT",
+      "x": 252,
+      "y": 59,
+      "width": 170,
+      "height": 22,
+      "visible": true,
+      "isMask": false,
+      "rotation": 0,
+      "text": "10 months",
+      "fontName": {
+        "family": "Inter",
+        "style": "Regular",
+        "variationSettings": {
+          "wght": 400,
+          "slnt": 0
+        }
+      },
+      "fontSize": 15,
+      "lineHeight": {
+        "unit": "PIXELS",
+        "value": 22
+      }
+    },
+    {
+      "id": "420:259",
+      "parent": "420:257",
+      "name": "TIMELINE",
+      "type": "TEXT",
+      "x": 250,
+      "y": 28,
+      "width": 66,
+      "height": 14,
+      "visible": true,
+      "isMask": false,
+      "rotation": 0,
+      "text": "TIMELINE",
+      "fontName": {
+        "family": "Fira Mono",
+        "style": "Medium"
+      },
+      "fontSize": 12,
+      "lineHeight": {
+        "unit": "PERCENT",
+        "value": 120.00000476837158
+      }
+    },
+    {
+      "id": "420:260",
+      "parent": "420:253",
+      "name": "Methods",
+      "type": "GROUP",
+      "x": 752,
+      "y": 28,
+      "width": 190,
+      "height": 119,
+      "visible": true,
+      "isMask": false,
+      "rotation": 0
+    },
+    {
+      "id": "420:261",
+      "parent": "420:260",
+      "name": "17 Stakeholder Interviews Competitive Analysis Content Audit Sitemap Development",
+      "type": "TEXT",
+      "x": 752,
+      "y": 59,
+      "width": 190,
+      "height": 88,
+      "visible": true,
+      "isMask": false,
+      "rotation": 0,
+      "text": "17 Stakeholder Interviews Competitive Analysis \nContent Audit\nSitemap Development",
+      "fontName": {
+        "family": "Inter",
+        "style": "Regular",
+        "variationSettings": {
+          "wght": 400,
+          "slnt": 0
+        }
+      },
+      "fontSize": 15,
+      "lineHeight": {
+        "unit": "PIXELS",
+        "value": 22
+      }
+    },
+    {
+      "id": "420:262",
+      "parent": "420:260",
+      "name": "METHODS",
+      "type": "TEXT",
+      "x": 752,
+      "y": 28,
+      "width": 51,
+      "height": 14,
+      "visible": true,
+      "isMask": false,
+      "rotation": 0,
+      "text": "METHODS",
+      "fontName": {
+        "family": "Fira Mono",
+        "style": "Medium"
+      },
+      "fontSize": 12,
+      "lineHeight": {
+        "unit": "PERCENT",
+        "value": 120.00000476837158
+      }
+    },
+    {
+      "id": "420:263",
+      "parent": "420:253",
+      "name": "Tools",
+      "type": "GROUP",
+      "x": 1022,
+      "y": 28,
+      "width": 81,
+      "height": 119,
+      "visible": true,
+      "isMask": false,
+      "rotation": 0
+    },
+    {
+      "id": "420:264",
+      "parent": "420:263",
+      "name": "Figma Wix Claude ",
+      "type": "TEXT",
+      "x": 1022,
+      "y": 59,
+      "width": 81,
+      "height": 88,
+      "visible": true,
+      "isMask": false,
+      "rotation": 0,
+      "text": "Figma Wix Claude ",
+      "fontName": {
+        "family": "Inter",
+        "style": "Regular",
+        "variationSettings": {
+          "wght": 400,
+          "slnt": 0
+        }
+      },
+      "fontSize": 15,
+      "lineHeight": {
+        "unit": "PIXELS",
+        "value": 22
+      }
+    },
+    {
+      "id": "420:265",
+      "parent": "420:263",
+      "name": "TOOLS",
+      "type": "TEXT",
+      "x": 1022,
+      "y": 28,
+      "width": 36,
+      "height": 14,
+      "visible": true,
+      "isMask": false,
+      "rotation": 0,
+      "text": "TOOLS",
+      "fontName": {
+        "family": "Fira Mono",
+        "style": "Medium"
+      },
+      "fontSize": 12,
+      "lineHeight": {
+        "unit": "PERCENT",
+        "value": 120.00000476837158
+      }
+    },
+    {
+      "id": "420:266",
+      "parent": "420:253",
+      "name": "Contribution",
+      "type": "GROUP",
+      "x": 502,
+      "y": 28,
+      "width": 182,
+      "height": 53,
+      "visible": true,
+      "isMask": false,
+      "rotation": 0
+    },
+    {
+      "id": "420:267",
+      "parent": "420:266",
+      "name": "z",
+      "type": "TEXT",
+      "x": 502,
+      "y": 59,
+      "width": 182,
+      "height": 22,
+      "visible": true,
+      "isMask": false,
+      "rotation": 0,
+      "text": "z",
+      "fontName": {
+        "family": "Inter",
+        "style": "Regular",
+        "variationSettings": {
+          "wght": 400,
+          "slnt": 0
+        }
+      },
+      "fontSize": 15,
+      "lineHeight": {
+        "unit": "PIXELS",
+        "value": 22
+      }
+    },
+    {
+      "id": "420:268",
+      "parent": "420:266",
+      "name": "MY CONTRIBUTION",
+      "type": "TEXT",
+      "x": 502,
+      "y": 28,
+      "width": 108,
+      "height": 14,
+      "visible": true,
+      "isMask": false,
+      "rotation": 0,
+      "text": "MY CONTRIBUTION",
+      "fontName": {
+        "family": "Fira Mono",
+        "style": "Medium"
+      },
+      "fontSize": 12,
+      "lineHeight": {
+        "unit": "PERCENT",
+        "value": 120.00000476837158
+      }
+    },
+    {
+      "id": "420:269",
+      "parent": "420:253",
+      "name": "Line 61",
+      "type": "LINE",
+      "x": 0,
+      "y": 0,
+      "width": 1200,
+      "height": 0,
+      "visible": true,
+      "isMask": false,
+      "rotation": -5.008956130975318e-06
+    }
+  ]
+}

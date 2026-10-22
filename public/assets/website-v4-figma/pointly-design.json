@@ -1,0 +1,2928 @@
+{
+  "frame": {
+    "fileKey": "wZSRbIZZXfUlrq902OXE2W",
+    "nodeId": "90:18",
+    "name": "Pointly Case Study 2",
+    "width": 1440,
+    "height": 10571,
+    "inspectedDate": "2026-10-22"
+  },
+  "geometry": {
+    "90:18": {
+      "x": 0,
+      "y": 0,
+      "width": 1440,
+      "height": 10571
+    },
+    "413:70": {
+      "x": 426,
+      "y": 9402,
+      "width": 918,
+      "height": 643
+    },
+    "413:8": {
+      "x": 428,
+      "y": 9437,
+      "width": 845,
+      "height": 44
+    },
+    "413:9": {
+      "x": 426,
+      "y": 9508,
+      "width": 894,
+      "height": 537
+    },
+    "413:10": {
+      "x": 499,
+      "y": 9580,
+      "width": 845,
+      "height": 105
+    },
+    "413:11": {
+      "x": 426,
+      "y": 9402,
+      "width": 892,
+      "height": 0
+    },
+    "413:12": {
+      "x": 735,
+      "y": 9580,
+      "width": 492,
+      "height": 397
+    },
+    "413:69": {
+      "x": 414,
+      "y": 7926,
+      "width": 868,
+      "height": 1385
+    },
+    "413:13": {
+      "x": 1025,
+      "y": 9067,
+      "width": 239,
+      "height": 96
+    },
+    "413:14": {
+      "x": 426,
+      "y": 7926,
+      "width": 845,
+      "height": 24
+    },
+    "413:15": {
+      "x": 426,
+      "y": 7965,
+      "width": 856,
+      "height": 78
+    },
+    "413:16": {
+      "x": 415,
+      "y": 8909,
+      "width": 565,
+      "height": 402
+    },
+    "413:17": {
+      "x": 414,
+      "y": 8487,
+      "width": 563.5982666015625,
+      "height": 401
+    },
+    "413:18": {
+      "x": 414,
+      "y": 8073,
+      "width": 566,
+      "height": 393
+    },
+    "413:19": {
+      "x": 1025,
+      "y": 8226,
+      "width": 219,
+      "height": 120
+    },
+    "413:20": {
+      "x": 1025,
+      "y": 8644,
+      "width": 235,
+      "height": 96
+    },
+    "413:68": {
+      "x": 422,
+      "y": 7299,
+      "width": 898,
+      "height": 551
+    },
+    "413:21": {
+      "x": 426,
+      "y": 7299,
+      "width": 845,
+      "height": 24
+    },
+    "413:22": {
+      "x": 425,
+      "y": 7338,
+      "width": 856,
+      "height": 78
+    },
+    "413:23": {
+      "x": 422,
+      "y": 7428,
+      "width": 898,
+      "height": 422
+    },
+    "413:24": {
+      "x": 912,
+      "y": 7524,
+      "width": 36,
+      "height": 14
+    },
+    "413:25": {
+      "x": 1091,
+      "y": 7524,
+      "width": 51,
+      "height": 14
+    },
+    "413:26": {
+      "x": 912,
+      "y": 7602,
+      "width": 29,
+      "height": 14
+    },
+    "413:27": {
+      "x": 471,
+      "y": 7514,
+      "width": 120,
+      "height": 120
+    },
+    "413:28": {
+      "x": 602,
+      "y": 7514,
+      "width": 120,
+      "height": 120
+    },
+    "413:29": {
+      "x": 733,
+      "y": 7514,
+      "width": 120,
+      "height": 120
+    },
+    "413:30": {
+      "x": 484,
+      "y": 7531,
+      "width": 79,
+      "height": 14
+    },
+    "413:31": {
+      "x": 617,
+      "y": 7532,
+      "width": 72,
+      "height": 14
+    },
+    "413:32": {
+      "x": 751,
+      "y": 7532,
+      "width": 70,
+      "height": 14
+    },
+    "413:33": {
+      "x": 669,
+      "y": 7702,
+      "width": 87,
+      "height": 88
+    },
+    "413:34": {
+      "x": 572,
+      "y": 7702,
+      "width": 88,
+      "height": 88
+    },
+    "413:35": {
+      "x": 471,
+      "y": 7702,
+      "width": 92,
+      "height": 88
+    },
+    "413:36": {
+      "x": 765,
+      "y": 7702,
+      "width": 88,
+      "height": 88
+    },
+    "413:37": {
+      "x": 484,
+      "y": 7718,
+      "width": 57,
+      "height": 14
+    },
+    "413:38": {
+      "x": 587,
+      "y": 7718,
+      "width": 55,
+      "height": 14
+    },
+    "413:39": {
+      "x": 682,
+      "y": 7719,
+      "width": 60,
+      "height": 13
+    },
+    "413:40": {
+      "x": 778,
+      "y": 7719,
+      "width": 64,
+      "height": 13
+    },
+    "413:41": {
+      "x": 471,
+      "y": 7469,
+      "width": 139,
+      "height": 35
+    },
+    "413:42": {
+      "x": 911,
+      "y": 7469,
+      "width": 139,
+      "height": 35
+    },
+    "413:43": {
+      "x": 471,
+      "y": 7657,
+      "width": 191,
+      "height": 35
+    },
+    "413:44": {
+      "x": 911,
+      "y": 7548,
+      "width": 107,
+      "height": 24
+    },
+    "413:45": {
+      "x": 1090,
+      "y": 7547,
+      "width": 135,
+      "height": 24
+    },
+    "413:46": {
+      "x": 911,
+      "y": 7625,
+      "width": 142,
+      "height": 144
+    },
+    "413:47": {
+      "x": 1100,
+      "y": 7664,
+      "width": 183,
+      "height": 151
+    },
+    "413:67": {
+      "x": 422,
+      "y": 6701,
+      "width": 879,
+      "height": 516
+    },
+    "413:65": {
+      "x": 426,
+      "y": 6701,
+      "width": 857,
+      "height": 118
+    },
+    "187:3": {
+      "x": 426,
+      "y": 6701,
+      "width": 845,
+      "height": 25
+    },
+    "187:4": {
+      "x": 427,
+      "y": 6741,
+      "width": 856,
+      "height": 78
+    },
+    "413:48": {
+      "x": 422,
+      "y": 6854,
+      "width": 473,
+      "height": 350
+    },
+    "413:49": {
+      "x": 916,
+      "y": 6854,
+      "width": 340,
+      "height": 248
+    },
+    "413:50": {
+      "x": 1041,
+      "y": 7029,
+      "width": 260,
+      "height": 188
+    },
+    "163:12": {
+      "x": 428,
+      "y": 5955,
+      "width": 892,
+      "height": 0
+    },
+    "163:11": {
+      "x": 428,
+      "y": 5985,
+      "width": 845,
+      "height": 44
+    },
+    "553:28": {
+      "x": 426,
+      "y": 6089,
+      "width": 884,
+      "height": 91
+    },
+    "163:13": {
+      "x": 426,
+      "y": 6089,
+      "width": 845,
+      "height": 24
+    },
+    "163:14": {
+      "x": 426,
+      "y": 6128,
+      "width": 884,
+      "height": 52
+    },
+    "145:154": {
+      "x": 428,
+      "y": 6233,
+      "width": 314,
+      "height": 389
+    },
+    "145:155": {
+      "x": 761,
+      "y": 6233,
+      "width": 556,
+      "height": 388
+    },
+    "143:17": {
+      "x": 426,
+      "y": 4260,
+      "width": 845,
+      "height": 44
+    },
+    "143:18": {
+      "x": 428,
+      "y": 4230,
+      "width": 892,
+      "height": 0
+    },
+    "413:58": {
+      "x": 413,
+      "y": 3892,
+      "width": 880,
+      "height": 247
+    },
+    "138:96": {
+      "x": 426,
+      "y": 3892,
+      "width": 845,
+      "height": 105
+    },
+    "143:7": {
+      "x": 426,
+      "y": 4035,
+      "width": 250,
+      "height": 78
+    },
+    "143:8": {
+      "x": 735,
+      "y": 4035,
+      "width": 243,
+      "height": 104
+    },
+    "143:9": {
+      "x": 1038,
+      "y": 4035,
+      "width": 255,
+      "height": 78
+    },
+    "143:11": {
+      "x": 729,
+      "y": 3949,
+      "width": 80,
+      "height": 80
+    },
+    "143:12": {
+      "x": 1030,
+      "y": 3949,
+      "width": 81,
+      "height": 80
+    },
+    "143:13": {
+      "x": 413,
+      "y": 3944,
+      "width": 91,
+      "height": 91
+    },
+    "413:60": {
+      "x": 426,
+      "y": 3681,
+      "width": 918,
+      "height": 185
+    },
+    "138:92": {
+      "x": 426,
+      "y": 3681,
+      "width": 894,
+      "height": 142
+    },
+    "138:95": {
+      "x": 499,
+      "y": 3726,
+      "width": 845,
+      "height": 105
+    },
+    "138:94": {
+      "x": 735,
+      "y": 3726,
+      "width": 535,
+      "height": 140
+    },
+    "413:75": {
+      "x": 322,
+      "y": 2561,
+      "width": 998,
+      "height": 1087
+    },
+    "143:16": {
+      "x": 428,
+      "y": 2561,
+      "width": 892,
+      "height": 0
+    },
+    "136:44": {
+      "x": 428,
+      "y": 2605,
+      "width": 845,
+      "height": 82
+    },
+    "137:3": {
+      "x": 428,
+      "y": 2713,
+      "width": 865,
+      "height": 57
+    },
+    "136:46": {
+      "x": 428,
+      "y": 2809,
+      "width": 280,
+      "height": 403
+    },
+    "136:77": {
+      "x": 1040,
+      "y": 2809,
+      "width": 280,
+      "height": 403
+    },
+    "136:57": {
+      "x": 426,
+      "y": 2956,
+      "width": 284,
+      "height": 190
+    },
+    "136:61": {
+      "x": 465,
+      "y": 2852,
+      "width": 207,
+      "height": 96
+    },
+    "136:81": {
+      "x": 1072,
+      "y": 2852,
+      "width": 215,
+      "height": 189
+    },
+    "136:60": {
+      "x": 483,
+      "y": 3135,
+      "width": 170,
+      "height": 66
+    },
+    "136:84": {
+      "x": 1095,
+      "y": 3135,
+      "width": 170,
+      "height": 68
+    },
+    "136:70": {
+      "x": 422,
+      "y": 3245,
+      "width": 898,
+      "height": 403
+    },
+    "136:73": {
+      "x": 897,
+      "y": 3384,
+      "width": 368,
+      "height": 251
+    },
+    "136:71": {
+      "x": 539,
+      "y": 3566,
+      "width": 170,
+      "height": 66
+    },
+    "136:52": {
+      "x": 322,
+      "y": 3212,
+      "width": 614,
+      "height": 409
+    },
+    "136:75": {
+      "x": 732,
+      "y": 2809,
+      "width": 280,
+      "height": 403
+    },
+    "136:82": {
+      "x": 793,
+      "y": 3135,
+      "width": 170,
+      "height": 66
+    },
+    "136:79": {
+      "x": 775,
+      "y": 2852,
+      "width": 207,
+      "height": 96
+    },
+    "136:53": {
+      "x": 736,
+      "y": 2960,
+      "width": 262,
+      "height": 175
+    },
+    "143:10": {
+      "x": 1066,
+      "y": 2929,
+      "width": 227,
+      "height": 200
+    },
+    "413:73": {
+      "x": 120,
+      "y": 2545,
+      "width": 136,
+      "height": 196
+    },
+    "136:36": {
+      "x": 120,
+      "y": 2614,
+      "width": 136,
+      "height": 28
+    },
+    "136:89": {
+      "x": 120,
+      "y": 2647,
+      "width": 136,
+      "height": 28
+    },
+    "136:90": {
+      "x": 120,
+      "y": 2680,
+      "width": 136,
+      "height": 28
+    },
+    "136:91": {
+      "x": 120,
+      "y": 2713,
+      "width": 136,
+      "height": 28
+    },
+    "136:45": {
+      "x": 120,
+      "y": 2545,
+      "width": 132,
+      "height": 24
+    },
+    "413:71": {
+      "x": 120,
+      "y": 2244,
+      "width": 1122,
+      "height": 195
+    },
+    "130:33": {
+      "x": 649,
+      "y": 2346,
+      "width": 63,
+      "height": 0
+    },
+    "130:34": {
+      "x": 957,
+      "y": 2346,
+      "width": 63,
+      "height": 0
+    },
+    "128:19": {
+      "x": 436,
+      "y": 2244,
+      "width": 195,
+      "height": 195
+    },
+    "128:20": {
+      "x": 735,
+      "y": 2244,
+      "width": 195,
+      "height": 195
+    },
+    "128:21": {
+      "x": 1047,
+      "y": 2244,
+      "width": 195,
+      "height": 195
+    },
+    "128:18": {
+      "x": 120,
+      "y": 2308,
+      "width": 472,
+      "height": 76
+    },
+    "128:23": {
+      "x": 448,
+      "y": 2337,
+      "width": 170,
+      "height": 44
+    },
+    "130:28": {
+      "x": 748,
+      "y": 2337,
+      "width": 170,
+      "height": 44
+    },
+    "130:30": {
+      "x": 1060,
+      "y": 2347,
+      "width": 170,
+      "height": 44
+    },
+    "130:31": {
+      "x": 1091,
+      "y": 2291,
+      "width": 108,
+      "height": 44
+    },
+    "128:26": {
+      "x": 489,
+      "y": 2303,
+      "width": 87,
+      "height": 22
+    },
+    "130:29": {
+      "x": 795,
+      "y": 2303,
+      "width": 76,
+      "height": 22
+    },
+    "413:54": {
+      "x": 120,
+      "y": 1789,
+      "width": 1200,
+      "height": 381
+    },
+    "90:28": {
+      "x": 736,
+      "y": 2089,
+      "width": 584,
+      "height": 81
+    },
+    "90:27": {
+      "x": 736,
+      "y": 1988,
+      "width": 584,
+      "height": 81
+    },
+    "90:26": {
+      "x": 736,
+      "y": 1887,
+      "width": 584,
+      "height": 81
+    },
+    "123:17": {
+      "x": 734,
+      "y": 1789,
+      "width": 586,
+      "height": 78
+    },
+    "90:20": {
+      "x": 120,
+      "y": 1789,
+      "width": 472,
+      "height": 76
+    },
+    "553:29": {
+      "x": 425,
+      "y": 4364,
+      "width": 896,
+      "height": 1458
+    },
+    "145:126": {
+      "x": 1049,
+      "y": 4557,
+      "width": 118,
+      "height": 40
+    },
+    "145:113": {
+      "x": 1049,
+      "y": 4560,
+      "width": 104,
+      "height": 35
+    },
+    "145:114": {
+      "x": 863,
+      "y": 4496,
+      "width": 105,
+      "height": 26
+    },
+    "145:115": {
+      "x": 487,
+      "y": 4501,
+      "width": 106,
+      "height": 21
+    },
+    "145:116": {
+      "x": 676,
+      "y": 4505,
+      "width": 104,
+      "height": 17
+    },
+    "145:117": {
+      "x": 661,
+      "y": 4548,
+      "width": 125,
+      "height": 62
+    },
+    "145:120": {
+      "x": 490,
+      "y": 4559,
+      "width": 103,
+      "height": 33
+    },
+    "145:121": {
+      "x": 1050,
+      "y": 4502,
+      "width": 103,
+      "height": 24
+    },
+    "145:123": {
+      "x": 846,
+      "y": 4552,
+      "width": 145,
+      "height": 48
+    },
+    "553:27": {
+      "x": 425,
+      "y": 4364,
+      "width": 845,
+      "height": 83
+    },
+    "145:125": {
+      "x": 425,
+      "y": 4364,
+      "width": 845,
+      "height": 24
+    },
+    "143:74": {
+      "x": 426,
+      "y": 4403,
+      "width": 822,
+      "height": 44
+    },
+    "145:134": {
+      "x": 425,
+      "y": 5250,
+      "width": 845,
+      "height": 24
+    },
+    "145:135": {
+      "x": 426,
+      "y": 5314,
+      "width": 822,
+      "height": 26
+    },
+    "348:3": {
+      "x": 882,
+      "y": 5307,
+      "width": 439,
+      "height": 249
+    },
+    "348:10": {
+      "x": 882,
+      "y": 5573,
+      "width": 439,
+      "height": 249
+    },
+    "348:14": {
+      "x": 427,
+      "y": 5573,
+      "width": 439,
+      "height": 249
+    },
+    "348:6": {
+      "x": 425,
+      "y": 5307,
+      "width": 439,
+      "height": 249
+    },
+    "145:138": {
+      "x": 999,
+      "y": 5401,
+      "width": 282,
+      "height": 91
+    },
+    "348:11": {
+      "x": 999,
+      "y": 5666,
+      "width": 269,
+      "height": 91
+    },
+    "348:15": {
+      "x": 544,
+      "y": 5666,
+      "width": 269,
+      "height": 91
+    },
+    "348:7": {
+      "x": 542,
+      "y": 5406,
+      "width": 277,
+      "height": 91
+    },
+    "348:5": {
+      "x": 999,
+      "y": 5343,
+      "width": 296,
+      "height": 48
+    },
+    "348:12": {
+      "x": 999,
+      "y": 5608,
+      "width": 296,
+      "height": 48
+    },
+    "348:16": {
+      "x": 544,
+      "y": 5608,
+      "width": 296,
+      "height": 48
+    },
+    "348:8": {
+      "x": 542,
+      "y": 5343,
+      "width": 296,
+      "height": 48
+    },
+    "145:145": {
+      "x": 915,
+      "y": 5599,
+      "width": 59,
+      "height": 59
+    },
+    "348:17": {
+      "x": 457,
+      "y": 5599,
+      "width": 59,
+      "height": 59
+    },
+    "145:147": {
+      "x": 913,
+      "y": 5337,
+      "width": 59,
+      "height": 59
+    },
+    "348:9": {
+      "x": 457,
+      "y": 5337,
+      "width": 59,
+      "height": 59
+    },
+    "163:10": {
+      "x": 425,
+      "y": 4682,
+      "width": 845,
+      "height": 24
+    },
+    "163:9": {
+      "x": 426,
+      "y": 4721,
+      "width": 893,
+      "height": 44
+    },
+    "145:158": {
+      "x": 484,
+      "y": 5039,
+      "width": 258,
+      "height": 38
+    },
+    "145:159": {
+      "x": 484,
+      "y": 5039,
+      "width": 258,
+      "height": 38
+    },
+    "145:151": {
+      "x": 425,
+      "y": 4799,
+      "width": 896,
+      "height": 380
+    },
+    "462:25": {
+      "x": 120,
+      "y": 603,
+      "width": 1200,
+      "height": 1093
+    },
+    "320:51": {
+      "x": 120,
+      "y": 1312,
+      "width": 1200,
+      "height": 384
+    },
+    "320:56": {
+      "x": 190,
+      "y": 1377,
+      "width": 1061,
+      "height": 237
+    },
+    "307:12": {
+      "x": 548,
+      "y": 1377,
+      "width": 342,
+      "height": 237
+    },
+    "308:17": {
+      "x": 190,
+      "y": 1378,
+      "width": 340,
+      "height": 236
+    },
+    "308:20": {
+      "x": 909,
+      "y": 1377,
+      "width": 342,
+      "height": 237
+    },
+    "274:4": {
+      "x": 120,
+      "y": 603,
+      "width": 1200,
+      "height": 655
+    },
+    "175:13": {
+      "x": 785,
+      "y": 682,
+      "width": 488,
+      "height": 497
+    },
+    "175:12": {
+      "x": 785,
+      "y": 682,
+      "width": 488,
+      "height": 497
+    },
+    "175:5": {
+      "x": 800,
+      "y": 388,
+      "width": 455,
+      "height": 744
+    },
+    "320:53": {
+      "x": 145,
+      "y": 727,
+      "width": 772,
+      "height": 531
+    },
+    "320:52": {
+      "x": 170,
+      "y": 766,
+      "width": 695,
+      "height": 1136
+    },
+    "413:53": {
+      "x": 120,
+      "y": 373,
+      "width": 1200,
+      "height": 235
+    },
+    "123:12": {
+      "x": 120,
+      "y": 402,
+      "width": 170,
+      "height": 52
+    },
+    "94:13": {
+      "x": 120,
+      "y": 432,
+      "width": 170,
+      "height": 22
+    },
+    "94:6": {
+      "x": 120,
+      "y": 402,
+      "width": 73,
+      "height": 13
+    },
+    "123:11": {
+      "x": 380,
+      "y": 402,
+      "width": 172,
+      "height": 74
+    },
+    "123:9": {
+      "x": 382,
+      "y": 432,
+      "width": 170,
+      "height": 44
+    },
+    "123:10": {
+      "x": 380,
+      "y": 402,
+      "width": 66,
+      "height": 13
+    },
+    "123:14": {
+      "x": 902,
+      "y": 402,
+      "width": 170,
+      "height": 140
+    },
+    "94:14": {
+      "x": 902,
+      "y": 432,
+      "width": 170,
+      "height": 110
+    },
+    "94:10": {
+      "x": 902,
+      "y": 402,
+      "width": 47,
+      "height": 13
+    },
+    "462:9": {
+      "x": 902,
+      "y": 402,
+      "width": 47,
+      "height": 13
+    },
+    "462:11": {
+      "x": 902,
+      "y": 402,
+      "width": 47,
+      "height": 13
+    },
+    "123:13": {
+      "x": 1141,
+      "y": 402,
+      "width": 81,
+      "height": 118
+    },
+    "94:16": {
+      "x": 1141,
+      "y": 432,
+      "width": 81,
+      "height": 88
+    },
+    "94:11": {
+      "x": 1141,
+      "y": 402,
+      "width": 33,
+      "height": 13
+    },
+    "123:16": {
+      "x": 642,
+      "y": 402,
+      "width": 170,
+      "height": 206
+    },
+    "94:15": {
+      "x": 642,
+      "y": 432,
+      "width": 170,
+      "height": 176
+    },
+    "94:12": {
+      "x": 642,
+      "y": 402,
+      "width": 99,
+      "height": 13
+    },
+    "101:3": {
+      "x": 120,
+      "y": 373,
+      "width": 1200,
+      "height": 0
+    },
+    "499:58": {
+      "x": 120,
+      "y": 146,
+      "width": 1161,
+      "height": 154
+    },
+    "499:59": {
+      "x": 734,
+      "y": 198,
+      "width": 547,
+      "height": 102
+    },
+    "499:60": {
+      "x": 120,
+      "y": 179,
+      "width": 472,
+      "height": 76
+    },
+    "499:61": {
+      "x": 126,
+      "y": 146,
+      "width": 44,
+      "height": 22
+    },
+    "496:20": {
+      "x": 734,
+      "y": 300,
+      "width": 263,
+      "height": 22
+    }
+  },
+  "texts": {
+    "413:8": "What I Learned",
+    "413:10": "Reflection",
+    "413:12": "Different experiences can reveal shared needs. Interviewing travelers with varying levels of points experience taught me to look beyond individual preferences and use common patterns to guide product priorities.\n AI helped me build faster, but I still had to decide what was worth building. At the hackathon, I turned our interview findings into a PRD and used AI coding tools to build a working prototype. Testing it with users helped me see where those decisions worked and where they needed refinement.\n The process reinforced two lessons: making information available is only useful if people can easily understand and act on it, and an established visual palette helps multiple designers create one cohesive experience.\n",
+    "413:13": "Property Detail  Compare points, cash price, and  redemption value before booking.\n",
+    "413:14": "From Research to High-Fidelity Prototype",
+    "413:15": "We designed the experience to help travelers decide how to use their points. Our high-fidelity prototype brought rewards balances, personalized stays, and points-versus-cash comparisons together to support more informed booking decisions. The project remained at the prototype stage.",
+    "413:19": "Rewards Dashboard  View balances across rewards  programs in one place.\n ",
+    "413:20": "Personalized Recommendations Explore stays based on available  points and preferences.",
+    "413:21": "Defining the Product’s Visual Language",
+    "413:22": "I developed Point.ly’s visual identity and core interface—including color, typography, illustration, and layout—to make credit card points feel clear and approachable, balancing warmth with financial credibility. ",
+    "413:24": "HEADS",
+    "413:25": "BUTTONS",
+    "413:26": "BODY ",
+    "413:30": "FCFCF8",
+    "413:31": "DE8E5C",
+    "413:32": "23395A",
+    "413:37": "BECDD6",
+    "413:38": "D9564D",
+    "413:39": "4E76B6",
+    "413:40": "40B3FC",
+    "413:41": "Primary palette",
+    "413:42": "Typography",
+    "413:43": "Secondary Palette",
+    "413:44": "Poppins Bold",
+    "413:45": "Poppins Medium",
+    "413:46": "Inter Regular\nInter Regular Italic\nInter Medium\nInter Medium Italic\nInter Bold\nInter Bold Italic",
+    "187:3": "Mid-Fi: Narrowing the Experience ",
+    "187:4": "We prioritized the concepts that most directly addressed our research findings: consolidating rewards, simplifying comparisons, and making redemption opportunities actionable. Broader ideas that moved beyond these core needs were deprioritized.",
+    "163:11": "Designing the User Experience",
+    "163:13": "Low-Fi: Testing Different Directions ",
+    "163:14": "Guided by our research, we quickly explored multiple concepts, including a Chrome extension, centralized rewards wallet, AI trip planning, itinerary comparison, and personalized points recommendations. ",
+    "143:17": "Research Revealed Insights",
+    "138:96": "Three personas emerged",
+    "143:7": "The Strategic Optimizer Knows the system and works to maximize value.",
+    "143:8": "The Aspirational Expert Understands the basics and wants value, but needs guidance.",
+    "143:9": "The Casual Redeemer Uses points sporadically and prioritizes ease.",
+    "138:95": "Insight",
+    "138:94": "Users did not necessarily need more ways to earn points. They needed help understanding the value already sitting in their wallets.",
+    "136:44": "Different travelers.  A shared need for clarity",
+    "137:3": "I interviewed 10 travelers to understand how they managed rewards, evaluated redemption value, and navigated decisions around transfers and group travel.",
+    "136:61": "“The bank portals feel like Expedia from 2010. It’s hard to know if I’m getting a good deal.”",
+    "136:81": "“I want to plan trips with friends, but it’s so hard to coordinate and share options together.”",
+    "136:60": "Isa  Tech Worker, 30s ",
+    "136:84": "Afsaneh Professional 50s ",
+    "136:73": "“I want a single view of all my points so I don’t have to log into multiple accounts.”",
+    "136:71": "Daniel Student, 20s ",
+    "136:82": "Jasmine Professional, 30s ",
+    "136:79": "“It’s hard to understand the real value of a points transfer — will I actually save money?”",
+    "136:36": "Interviews",
+    "136:89": "Research",
+    "136:90": "Design",
+    "136:91": "Retrospective",
+    "136:45": "METHODOLOGY",
+    "128:18": "Goals",
+    "128:23": "One view of all rewards",
+    "130:28": "Easy booking comparisons",
+    "130:30": "Certainty of\nbest value",
+    "130:31": "BUILD CONFIDENCE",
+    "128:26": "SIMPLIFY",
+    "130:29": "CLARIFY",
+    "90:28": "Groups can’t pool rewards Friends may have significant rewards collectively, but few tools show what becomes possible when their points are considered together.",
+    "90:27": "Finding the best redemption requires expertise Comparing cash, points, transfer partners, and booking portals means navigating different values, rules, and systems.",
+    "90:26": "Scattered rewards Travelers accumulate points across credit cards, airlines, and hotels without a clear view of what they can unlock together.",
+    "123:17": "Point.ly began as a startup concept from a United Airlines manager who wanted to give travelers one view of their rewards. Travelers face three problems:",
+    "90:20": "The  \nChallenge",
+    "145:125": "Competitive Analysis - Learning from Existing Solutions",
+    "143:74": "We compared rewards platforms across award search, balance tracking, and redemption guidance to understand how they help travelers find and evaluate options.",
+    "145:134": "Key Insights and Opportunities",
+    "145:135": " ",
+    "145:138": "Finding an available flight was only the first step. Travelers still had to navigate transfer partners and program rules to judge whether it was a worthwhile redemption.",
+    "348:11": "Instead of a flat “not enough points,” provide a list of creative ways to close the gap, such as current promos and affiliated points programs. ",
+    "348:15": "For people planning together, looking at combined resources rather than individual balances could open travel options",
+    "348:7": "Knowing you have 80,000 points lacks meaning unless you know what they can book and whether transferring them provides  better value.",
+    "348:5": "Insight: Maximizing points  required expertise.",
+    "348:12": "Opportunity: Provide ideas to  close points gaps fast",
+    "348:16": "Opportunity: Suggest ways to pool rewards for group travel",
+    "348:8": "Insight: A points balance does not explain its travel value.",
+    "163:10": "Opportunity Maps",
+    "163:9": "We mapped competitors’ features and user flows to examine how they supported discovery, comparison, and redemption, identifying friction points where travelers had to connect the steps themselves.",
+    "145:158": "Hotel-for-points booking (legacy brand; now part of Rocketmiles).",
+    "145:159": "Hotel-for-points booking (legacy brand; now part of Rocketmiles).",
+    "94:13": "High-Fidelity Protoype",
+    "94:6": "DELIVERABLE",
+    "123:9": "8 months + one day hackathon",
+    "123:10": "TIMELINE",
+    "94:14": "10 User Interviews Competitive Analysis \nPRD Development Prototyping Usability Testing",
+    "94:10": "METHODS",
+    "462:11": "METHODS",
+    "94:16": "Figma Cursor Claude Gemini",
+    "94:11": "TOOLS",
+    "94:15": "Project Lead UX research Product Strategy Interface Design Visual Identity   ",
+    "94:12": "MY CONTRIBUTION",
+    "499:59": "Turning fragmented loyalty points into new travel possibilities\n",
+    "499:60": "Point.ly",
+    "499:61": "02 /",
+    "496:20": "UX@Berkeley project team"
+  },
+  "images": {
+    "node-66": {
+      "path": "assets/website-v4-figma/pointly-imgThoughtfulInterviewWithLaptop11.png",
+      "bytes": 1100777,
+      "sha256": "78b7789ef0f35b1475fff70682696111b6a4ebe7a419c7e7f853cd52bbc0ed41",
+      "width": 1536,
+      "height": 1024,
+      "figmaNodeId": "136:57",
+      "slot": {
+        "x": 426,
+        "y": 2956,
+        "width": 284,
+        "height": 190
+      },
+      "paint": {
+        "type": "IMAGE",
+        "visible": true,
+        "opacity": 1,
+        "blendMode": "NORMAL",
+        "scaleMode": "CROP",
+        "scalingFactor": 0.5,
+        "filters": {
+          "exposure": 0,
+          "contrast": 0,
+          "saturation": 0,
+          "temperature": 0,
+          "tint": 0,
+          "highlights": 0,
+          "shadows": 0
+        },
+        "imageTransform": [
+          [
+            0.9190938472747803,
+            0,
+            0.040453072637319565
+          ],
+          [
+            0,
+            0.9223300814628601,
+            0.03883495181798935
+          ]
+        ],
+        "imageHash": "4c94e22e5ed2ba19ab233a42af7712192f8505ee"
+      }
+    },
+    "node-79": {
+      "path": "assets/website-v4-figma/pointly-imgJasminesThoughtfulBalance71.png",
+      "bytes": 1116307,
+      "sha256": "44bee4ae750b802fc7ef94b22a11c035f13b5b81c8dee4e5fede6bb8e214f6d0",
+      "width": 1536,
+      "height": 1024,
+      "figmaNodeId": "136:53",
+      "slot": {
+        "x": 736,
+        "y": 2960,
+        "width": 262,
+        "height": 175
+      },
+      "paint": {
+        "type": "IMAGE",
+        "visible": true,
+        "opacity": 1,
+        "blendMode": "NORMAL",
+        "scaleMode": "FILL",
+        "scalingFactor": 0.5,
+        "rotation": 0,
+        "filters": {
+          "exposure": 0,
+          "contrast": 0,
+          "saturation": 0,
+          "temperature": 0,
+          "tint": 0,
+          "highlights": 0,
+          "shadows": 0
+        },
+        "imageTransform": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0
+          ]
+        ],
+        "imageHash": "96b107cfcd0e79dc74ecc40861eb37bedd0d982d"
+      }
+    },
+    "node-80": {
+      "path": "assets/website-v4-figma/pointly-imgProfessionalCheckingAGroupChat1.png",
+      "bytes": 740586,
+      "sha256": "b78840a4b1d45f3222b1af8d2338b952df53ffd8beff72d5506285561a450100",
+      "width": 1337,
+      "height": 1176,
+      "figmaNodeId": "143:10",
+      "slot": {
+        "x": 1066,
+        "y": 2929,
+        "width": 227,
+        "height": 200
+      },
+      "paint": {
+        "type": "IMAGE",
+        "visible": true,
+        "opacity": 1,
+        "blendMode": "NORMAL",
+        "scaleMode": "FILL",
+        "scalingFactor": 0.5,
+        "rotation": 0,
+        "filters": {
+          "exposure": 0,
+          "contrast": 0,
+          "saturation": 0,
+          "temperature": 0,
+          "tint": 0,
+          "highlights": 0,
+          "shadows": 0
+        },
+        "imageTransform": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0
+          ]
+        ],
+        "imageHash": "727fb8b6221ba58c30ee36b1dfa668e7f0168553"
+      }
+    },
+    "node-74": {
+      "path": "assets/website-v4-figma/pointly-imgConcernedManHoldingPhoneWithAccountTiles41.png",
+      "bytes": 1036228,
+      "sha256": "8c6a33e526cd2ef3428cee51d305aa6adaff7851b498fc83854c1c37869721ce",
+      "width": 1536,
+      "height": 1024,
+      "figmaNodeId": "136:52",
+      "slot": {
+        "x": 322,
+        "y": 3212,
+        "width": 614,
+        "height": 409
+      },
+      "paint": {
+        "type": "IMAGE",
+        "visible": true,
+        "opacity": 1,
+        "blendMode": "NORMAL",
+        "scaleMode": "CROP",
+        "scalingFactor": 0.5,
+        "filters": {
+          "exposure": 0,
+          "contrast": 0,
+          "saturation": 0,
+          "temperature": 0,
+          "tint": 0,
+          "highlights": 0,
+          "shadows": 0
+        },
+        "imageTransform": [
+          [
+            1,
+            0,
+            -0.032573290169239044
+          ],
+          [
+            0,
+            0.9991856813430786,
+            0.0004071661096531898
+          ]
+        ],
+        "imageHash": "e598f7bf7a6554ee8d3870c1e2592b6e286703e1"
+      }
+    },
+    "node-83": {
+      "path": "assets/website-v4-figma/pointly-imgStrategicOptimizerPortrait1.png",
+      "bytes": 537343,
+      "sha256": "04d86ecab47b7a842899e035e70c6a3d214212f438cc82bf3c9f22e52b20e0ff",
+      "width": 1254,
+      "height": 1254,
+      "figmaNodeId": "143:13",
+      "slot": {
+        "x": 413,
+        "y": 3944,
+        "width": 91,
+        "height": 91
+      },
+      "paint": {
+        "type": "IMAGE",
+        "visible": true,
+        "opacity": 1,
+        "blendMode": "NORMAL",
+        "scaleMode": "FILL",
+        "scalingFactor": 0.5,
+        "rotation": 0,
+        "filters": {
+          "exposure": 0,
+          "contrast": 0,
+          "saturation": 0,
+          "temperature": 0,
+          "tint": 0,
+          "highlights": 0,
+          "shadows": 0
+        },
+        "imageTransform": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0
+          ]
+        ],
+        "imageHash": "2453024a2ad9b5ba0adcfdc2f4d781ce71f1a173"
+      }
+    },
+    "node-81": {
+      "path": "assets/website-v4-figma/pointly-imgAspiringExpertWithBlueNeckline21.png",
+      "bytes": 615020,
+      "sha256": "d8cdafe2c92c30d65692eb861f33090296b18dea4f1d9d0adc31cd67211245b1",
+      "width": 1254,
+      "height": 1254,
+      "figmaNodeId": "143:11",
+      "slot": {
+        "x": 729,
+        "y": 3949,
+        "width": 80,
+        "height": 80
+      },
+      "paint": {
+        "type": "IMAGE",
+        "visible": true,
+        "opacity": 1,
+        "blendMode": "NORMAL",
+        "scaleMode": "FILL",
+        "scalingFactor": 0.5,
+        "rotation": 0,
+        "filters": {
+          "exposure": 0,
+          "contrast": 0,
+          "saturation": 0,
+          "temperature": 0,
+          "tint": 0,
+          "highlights": 0,
+          "shadows": 0
+        },
+        "imageTransform": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0
+          ]
+        ],
+        "imageHash": "53468fb30da4a2b027e98b9249eeef00be5bb443"
+      }
+    },
+    "node-82": {
+      "path": "assets/website-v4-figma/pointly-imgCasualRedeemerPortraitIsolated31.png",
+      "bytes": 569070,
+      "sha256": "d7bdbefd45de6c487b362e5b1a2c7b6097cb0f9a8ef1c09ca1d0c7349407fb62",
+      "width": 1254,
+      "height": 1254,
+      "figmaNodeId": "143:12",
+      "slot": {
+        "x": 1030,
+        "y": 3949,
+        "width": 81,
+        "height": 80
+      },
+      "paint": {
+        "type": "IMAGE",
+        "visible": true,
+        "opacity": 1,
+        "blendMode": "NORMAL",
+        "scaleMode": "FILL",
+        "scalingFactor": 0.5,
+        "rotation": 0,
+        "filters": {
+          "exposure": 0,
+          "contrast": 0,
+          "saturation": 0,
+          "temperature": 0,
+          "tint": 0,
+          "highlights": 0,
+          "shadows": 0
+        },
+        "imageTransform": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0
+          ]
+        ],
+        "imageHash": "1b8fb7541fb2b2924b2cb6388bcf4ca19cc35288"
+      }
+    },
+    "seats-aero-2-87": {
+      "path": "assets/website-v4-figma/pointly-imgSeatsAero2.png",
+      "bytes": 33824,
+      "sha256": "bcdd4b5f0bc77f453d8fd9c8970413da343a4322180fcb5b15f51a072c0001b1",
+      "width": 462,
+      "height": 91,
+      "figmaNodeId": "145:115",
+      "slot": {
+        "x": 487,
+        "y": 4501,
+        "width": 106,
+        "height": 21
+      },
+      "paint": {
+        "type": "IMAGE",
+        "visible": true,
+        "opacity": 1,
+        "blendMode": "NORMAL",
+        "scaleMode": "FILL",
+        "scalingFactor": 0.5,
+        "rotation": 0,
+        "filters": {
+          "exposure": 0,
+          "contrast": 0,
+          "saturation": 0,
+          "temperature": 0,
+          "tint": 0,
+          "highlights": 0,
+          "shadows": 0
+        },
+        "imageTransform": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0
+          ]
+        ],
+        "imageHash": "205175c70c95697a6178b1ad0e8fd9e4ec1091a9"
+      }
+    },
+    "roame-2-88": {
+      "path": "assets/website-v4-figma/pointly-imgRoame2.png",
+      "bytes": 13109,
+      "sha256": "bc7c30274926ab566eff6585a08b3364630690ec84c96d0c04bb05d3d8d7d275",
+      "width": 372,
+      "height": 60,
+      "figmaNodeId": "145:116",
+      "slot": {
+        "x": 676,
+        "y": 4505,
+        "width": 104,
+        "height": 17
+      },
+      "paint": {
+        "type": "IMAGE",
+        "visible": true,
+        "opacity": 1,
+        "blendMode": "NORMAL",
+        "scaleMode": "FILL",
+        "scalingFactor": 0.5,
+        "rotation": 0,
+        "filters": {
+          "exposure": 0,
+          "contrast": 0,
+          "saturation": 0,
+          "temperature": 0,
+          "tint": 0,
+          "highlights": 0,
+          "shadows": 0
+        },
+        "imageTransform": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0
+          ]
+        ],
+        "imageHash": "e837463d2a15ecb61afdd357232f13edaabcfb48"
+      }
+    },
+    "pointsyeah-2-86": {
+      "path": "assets/website-v4-figma/pointly-imgPointsyeah2.png",
+      "bytes": 27922,
+      "sha256": "47b8fca269c7fe54340e7e2e5f4202801ec1a3bcf5f2011b4cf4cf333ce9d274",
+      "width": 413,
+      "height": 101,
+      "figmaNodeId": "145:114",
+      "slot": {
+        "x": 863,
+        "y": 4496,
+        "width": 105,
+        "height": 26
+      },
+      "paint": {
+        "type": "IMAGE",
+        "visible": true,
+        "opacity": 1,
+        "blendMode": "NORMAL",
+        "scaleMode": "FILL",
+        "scalingFactor": 0.5,
+        "rotation": 0,
+        "filters": {
+          "exposure": 0,
+          "contrast": 0,
+          "saturation": 0,
+          "temperature": 0,
+          "tint": 0,
+          "highlights": 0,
+          "shadows": 0
+        },
+        "imageTransform": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0
+          ]
+        ],
+        "imageHash": "1dad5099bb3bbfa5f09468f5fbef239b7fc8e375"
+      }
+    },
+    "awardtool-2-91": {
+      "path": "assets/website-v4-figma/pointly-imgAwardtool2.png",
+      "bytes": 26737,
+      "sha256": "acb9c0f6e1d79573f88f71104f720f20f522d95f9d18822bf162ca121f9dce18",
+      "width": 387,
+      "height": 90,
+      "figmaNodeId": "145:121",
+      "slot": {
+        "x": 1050,
+        "y": 4502,
+        "width": 103,
+        "height": 24
+      },
+      "paint": {
+        "type": "IMAGE",
+        "visible": true,
+        "opacity": 1,
+        "blendMode": "NORMAL",
+        "scaleMode": "FILL",
+        "scalingFactor": 0.5,
+        "rotation": 0,
+        "filters": {
+          "exposure": 0,
+          "contrast": 0,
+          "saturation": 0,
+          "temperature": 0,
+          "tint": 0,
+          "highlights": 0,
+          "shadows": 0
+        },
+        "imageTransform": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0
+          ]
+        ],
+        "imageHash": "78dc62b21b74ed7112cf8df963f4e2fff13f3b69"
+      }
+    },
+    "maxmypoint-2-90": {
+      "path": "assets/website-v4-figma/pointly-imgMaxmypoint2.png",
+      "bytes": 33375,
+      "sha256": "fe530e4e1c2091be569ef21d6f7e850db7db148ace18d398d67d84d46a4aa3de",
+      "width": 407,
+      "height": 130,
+      "figmaNodeId": "145:120",
+      "slot": {
+        "x": 490,
+        "y": 4559,
+        "width": 103,
+        "height": 33
+      },
+      "paint": {
+        "type": "IMAGE",
+        "visible": true,
+        "opacity": 1,
+        "blendMode": "NORMAL",
+        "scaleMode": "FILL",
+        "scalingFactor": 0.5,
+        "rotation": 0,
+        "filters": {
+          "exposure": 0,
+          "contrast": 0,
+          "saturation": 0,
+          "temperature": 0,
+          "tint": 0,
+          "highlights": 0,
+          "shadows": 0
+        },
+        "imageTransform": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0
+          ]
+        ],
+        "imageHash": "a5fe058434b4b86ecc7b9bbf67d809ef1f724bed"
+      }
+    },
+    "node-89": {
+      "path": "assets/website-v4-figma/pointly-imgAwardWalletLogoOnWhite2.png",
+      "bytes": 265888,
+      "sha256": "3fdd89816e0dc7f2b8210fba16d382f276e584be24157950a044bf2885bcc0b2",
+      "width": 1774,
+      "height": 887,
+      "figmaNodeId": "145:117",
+      "slot": {
+        "x": 661,
+        "y": 4548,
+        "width": 125,
+        "height": 62
+      },
+      "paint": {
+        "type": "IMAGE",
+        "visible": true,
+        "opacity": 1,
+        "blendMode": "NORMAL",
+        "scaleMode": "FILL",
+        "scalingFactor": 0.5,
+        "rotation": 0,
+        "filters": {
+          "exposure": 0,
+          "contrast": 0,
+          "saturation": 0,
+          "temperature": 0,
+          "tint": 0,
+          "highlights": 0,
+          "shadows": 0
+        },
+        "imageTransform": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0
+          ]
+        ],
+        "imageHash": "b97cb4b4e642914460ca61235f96836016a98d23"
+      }
+    },
+    "node-92": {
+      "path": "assets/website-v4-figma/pointly-imgThePointsGuyLogo2.png",
+      "bytes": 1008718,
+      "sha256": "6ef6e87b2293ce17e362b3302f013de0b66c1f78f8560edd3ab9495a3640f9f5",
+      "width": 2172,
+      "height": 724,
+      "figmaNodeId": "145:123",
+      "slot": {
+        "x": 846,
+        "y": 4552,
+        "width": 145,
+        "height": 48
+      },
+      "paint": {
+        "type": "IMAGE",
+        "visible": true,
+        "opacity": 1,
+        "blendMode": "NORMAL",
+        "scaleMode": "FILL",
+        "scalingFactor": 0.5,
+        "rotation": 0,
+        "filters": {
+          "exposure": 0,
+          "contrast": 0,
+          "saturation": 0,
+          "temperature": 0,
+          "tint": 0,
+          "highlights": 0,
+          "shadows": 0
+        },
+        "imageTransform": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0
+          ]
+        ],
+        "imageHash": "6cc393cf2b9e6784c943fd1f87b840d0e8b25e4e"
+      }
+    },
+    "node-85": {
+      "path": "assets/website-v4-figma/pointly-imgMinimalistPointMeWordmarkLogo2.png",
+      "bytes": 140199,
+      "sha256": "52d54d82e5e1fe291cdf20754160f1b8657cc8e7877c39a8d19607120120b697",
+      "width": 2158,
+      "height": 729,
+      "figmaNodeId": "145:113",
+      "slot": {
+        "x": 1049,
+        "y": 4560,
+        "width": 104,
+        "height": 35
+      },
+      "paint": {
+        "type": "IMAGE",
+        "visible": true,
+        "opacity": 1,
+        "blendMode": "NORMAL",
+        "scaleMode": "CROP",
+        "scalingFactor": 0.5,
+        "filters": {
+          "exposure": 0,
+          "contrast": 0,
+          "saturation": 0,
+          "temperature": 0,
+          "tint": 0,
+          "highlights": 0,
+          "shadows": 0
+        },
+        "imageTransform": [
+          [
+            0.5992505550384521,
+            0,
+            0.2003747522830963
+          ],
+          [
+            0,
+            0.5999999642372131,
+            0.19999998807907104
+          ]
+        ],
+        "imageHash": "27b14be0771d3156265243ac15e2d9bc5f592f55"
+      }
+    },
+    "node-128": {
+      "path": "assets/website-v4-figma/pointly-imgMinimalMonolineLightbulbInsightIcon12.png",
+      "bytes": 792684,
+      "sha256": "38a85e9eb302871574a7880cc7b553dc7a27880396f686c3414903bc37627fcb",
+      "width": 1254,
+      "height": 1254,
+      "figmaNodeId": "348:9",
+      "slot": {
+        "x": 457,
+        "y": 5337,
+        "width": 59,
+        "height": 59
+      },
+      "paint": {
+        "type": "IMAGE",
+        "visible": true,
+        "opacity": 1,
+        "blendMode": "NORMAL",
+        "scaleMode": "FILL",
+        "scalingFactor": 0.5,
+        "rotation": 0,
+        "filters": {
+          "exposure": 0,
+          "contrast": 0,
+          "saturation": 0,
+          "temperature": 0,
+          "tint": 0,
+          "highlights": 0,
+          "shadows": 0
+        },
+        "imageTransform": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0
+          ]
+        ],
+        "imageHash": "1e6b19ec629dae747eacc884eb1af784e136ddbc"
+      }
+    },
+    "node-127": {
+      "path": "assets/website-v4-figma/pointly-imgMinimalMonolineLightbulbInsightIcon12.png",
+      "bytes": 792684,
+      "sha256": "38a85e9eb302871574a7880cc7b553dc7a27880396f686c3414903bc37627fcb",
+      "width": 1254,
+      "height": 1254,
+      "figmaNodeId": "145:147",
+      "slot": {
+        "x": 913,
+        "y": 5337,
+        "width": 59,
+        "height": 59
+      },
+      "paint": {
+        "type": "IMAGE",
+        "visible": true,
+        "opacity": 1,
+        "blendMode": "NORMAL",
+        "scaleMode": "FILL",
+        "scalingFactor": 0.5,
+        "rotation": 0,
+        "filters": {
+          "exposure": 0,
+          "contrast": 0,
+          "saturation": 0,
+          "temperature": 0,
+          "tint": 0,
+          "highlights": 0,
+          "shadows": 0
+        },
+        "imageTransform": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0
+          ]
+        ],
+        "imageHash": "1e6b19ec629dae747eacc884eb1af784e136ddbc"
+      }
+    },
+    "node-121": {
+      "path": "assets/website-v4-figma/pointly-imgFourPointSparkleOnWhiteDisc21.png",
+      "bytes": 798926,
+      "sha256": "261648360e2fc2fa0e3c53b7edced16b4d28351c6767271d753ed20d415be5b0",
+      "width": 1254,
+      "height": 1254,
+      "figmaNodeId": "348:17",
+      "slot": {
+        "x": 457,
+        "y": 5599,
+        "width": 59,
+        "height": 59
+      },
+      "paint": {
+        "type": "IMAGE",
+        "visible": true,
+        "opacity": 1,
+        "blendMode": "NORMAL",
+        "scaleMode": "FILL",
+        "scalingFactor": 0.5,
+        "rotation": 0,
+        "filters": {
+          "exposure": 0,
+          "contrast": 0,
+          "saturation": 0,
+          "temperature": 0,
+          "tint": 0,
+          "highlights": 0,
+          "shadows": 0
+        },
+        "imageTransform": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0
+          ]
+        ],
+        "imageHash": "088378d9c947dfe17f2459b70222a20a79a833dc"
+      }
+    },
+    "node-120": {
+      "path": "assets/website-v4-figma/pointly-imgFourPointSparkleOnWhiteDisc21.png",
+      "bytes": 798926,
+      "sha256": "261648360e2fc2fa0e3c53b7edced16b4d28351c6767271d753ed20d415be5b0",
+      "width": 1254,
+      "height": 1254,
+      "figmaNodeId": "145:145",
+      "slot": {
+        "x": 915,
+        "y": 5599,
+        "width": 59,
+        "height": 59
+      },
+      "paint": {
+        "type": "IMAGE",
+        "visible": true,
+        "opacity": 1,
+        "blendMode": "NORMAL",
+        "scaleMode": "FILL",
+        "scalingFactor": 0.5,
+        "rotation": 0,
+        "filters": {
+          "exposure": 0,
+          "contrast": 0,
+          "saturation": 0,
+          "temperature": 0,
+          "tint": 0,
+          "highlights": 0,
+          "shadows": 0
+        },
+        "imageTransform": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0
+          ]
+        ],
+        "imageHash": "088378d9c947dfe17f2459b70222a20a79a833dc"
+      }
+    },
+    "node-124": {
+      "path": "assets/website-v4-figma/pointly-imgScreenshot20260916At10452Pm2.png",
+      "bytes": 395239,
+      "sha256": "d66f4c1c2972f0ac046cab5eac197c75b7bb8363ed329e243374f9d1feec8c7f",
+      "width": 2108,
+      "height": 894,
+      "figmaNodeId": "145:151",
+      "slot": {
+        "x": 425,
+        "y": 4799,
+        "width": 896,
+        "height": 380
+      },
+      "paint": {
+        "type": "IMAGE",
+        "visible": true,
+        "opacity": 1,
+        "blendMode": "NORMAL",
+        "scaleMode": "FILL",
+        "scalingFactor": 0.5,
+        "rotation": 0,
+        "filters": {
+          "exposure": 0,
+          "contrast": 0,
+          "saturation": 0,
+          "temperature": 0,
+          "tint": 0,
+          "highlights": 0,
+          "shadows": 0
+        },
+        "imageTransform": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0
+          ]
+        ],
+        "imageHash": "972c1ab2cf832d9bc1c7f62516c080aa0420f763"
+      }
+    },
+    "node-125": {
+      "path": "assets/website-v4-figma/pointly-imgScreenshot20260925At92444Am2.png",
+      "bytes": 179430,
+      "sha256": "389bea78ac55b6dfdc2dc7a3941b1c7c5e576402a5cbeb62cfa5a7ca50254e6d",
+      "width": 734,
+      "height": 918,
+      "figmaNodeId": "145:154",
+      "slot": {
+        "x": 428,
+        "y": 6233,
+        "width": 314,
+        "height": 389
+      },
+      "paint": {
+        "type": "IMAGE",
+        "visible": true,
+        "opacity": 1,
+        "blendMode": "NORMAL",
+        "scaleMode": "CROP",
+        "scalingFactor": 0.5,
+        "filters": {
+          "exposure": 0,
+          "contrast": 0,
+          "saturation": 0,
+          "temperature": 0,
+          "tint": 0,
+          "highlights": 0,
+          "shadows": 0
+        },
+        "imageTransform": [
+          [
+            0.9945504069328308,
+            0,
+            0.00544959120452404
+          ],
+          [
+            0,
+            0.9869281053543091,
+            0
+          ]
+        ],
+        "imageHash": "ff79c3e4a9962a4f97f29be6066a10bf547ac19a"
+      }
+    },
+    "node-126": {
+      "path": "assets/website-v4-figma/pointly-imgScreenshot20260925At92339Am2.png",
+      "bytes": 394141,
+      "sha256": "7100cc7bdb659d330ccbf96c7d3b9479dfaf94ee76f46eacb79fea143aff952e",
+      "width": 1392,
+      "height": 972,
+      "figmaNodeId": "145:155",
+      "slot": {
+        "x": 761,
+        "y": 6233,
+        "width": 556,
+        "height": 388
+      },
+      "paint": {
+        "type": "IMAGE",
+        "visible": true,
+        "opacity": 1,
+        "blendMode": "NORMAL",
+        "scaleMode": "FILL",
+        "scalingFactor": 0.5,
+        "rotation": 0,
+        "filters": {
+          "exposure": 0,
+          "contrast": 0,
+          "saturation": 0,
+          "temperature": 0,
+          "tint": 0,
+          "highlights": 0,
+          "shadows": 0
+        },
+        "imageTransform": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0
+          ]
+        ],
+        "imageHash": "d6e845a4fb6cc67fdcdd12c4b79acdb15e82471b"
+      }
+    },
+    "node-160": {
+      "path": "assets/website-v4-figma/pointly-imgScreenshot20260916At10822Pm1.png",
+      "bytes": 97214,
+      "sha256": "afa00f42a39c326c4c215f4f24ccb0edc2e4499aad23185e027b6dfcebf49387",
+      "width": 1322,
+      "height": 980,
+      "figmaNodeId": "413:48",
+      "slot": {
+        "x": 422,
+        "y": 6854,
+        "width": 473,
+        "height": 350
+      },
+      "paint": {
+        "type": "IMAGE",
+        "visible": true,
+        "opacity": 1,
+        "blendMode": "NORMAL",
+        "scaleMode": "FILL",
+        "scalingFactor": 0.5,
+        "rotation": 0,
+        "filters": {
+          "exposure": 0,
+          "contrast": 0,
+          "saturation": 0,
+          "temperature": 0,
+          "tint": 0,
+          "highlights": 0,
+          "shadows": 0
+        },
+        "imageTransform": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0
+          ]
+        ],
+        "imageHash": "c591cac4e68e8da494022e35ef5da4fc36518659"
+      }
+    },
+    "node-161": {
+      "path": "assets/website-v4-figma/pointly-imgScreenshot20260916At10840Pm1.png",
+      "bytes": 102079,
+      "sha256": "e794852bf756f385c05f370a2c4605b3f2111c92aee8a965282857a551e683f5",
+      "width": 1294,
+      "height": 944,
+      "figmaNodeId": "413:49",
+      "slot": {
+        "x": 916,
+        "y": 6854,
+        "width": 340,
+        "height": 248
+      },
+      "paint": {
+        "type": "IMAGE",
+        "visible": true,
+        "opacity": 1,
+        "blendMode": "NORMAL",
+        "scaleMode": "FILL",
+        "scalingFactor": 0.5,
+        "rotation": 0,
+        "filters": {
+          "exposure": 0,
+          "contrast": 0,
+          "saturation": 0,
+          "temperature": 0,
+          "tint": 0,
+          "highlights": 0,
+          "shadows": 0
+        },
+        "imageTransform": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0
+          ]
+        ],
+        "imageHash": "052a7fb7e0b8436856e50a345961e3b96b78c155"
+      }
+    },
+    "node-162": {
+      "path": "assets/website-v4-figma/pointly-imgScreenshot20260916At10830Pm1.png",
+      "bytes": 336318,
+      "sha256": "6b43d4f544fcd84853a6e84dafb82abfd12e231d39ccfcb3977313a705e14390",
+      "width": 1288,
+      "height": 930,
+      "figmaNodeId": "413:50",
+      "slot": {
+        "x": 1041,
+        "y": 7029,
+        "width": 260,
+        "height": 188
+      },
+      "paint": {
+        "type": "IMAGE",
+        "visible": true,
+        "opacity": 1,
+        "blendMode": "NORMAL",
+        "scaleMode": "FILL",
+        "scalingFactor": 0.5,
+        "rotation": 0,
+        "filters": {
+          "exposure": 0,
+          "contrast": 0,
+          "saturation": 0,
+          "temperature": 0,
+          "tint": 0,
+          "highlights": 0,
+          "shadows": 0
+        },
+        "imageTransform": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0
+          ]
+        ],
+        "imageHash": "84943653c2b17caf819290be1f394fc84f191470"
+      }
+    },
+    "node-154": {
+      "path": "assets/website-v4-figma/pointly-imgTravelerWalkingBesideAGlobe1.png",
+      "bytes": 959902,
+      "sha256": "304c8a923366d0b1f4e8775e2e26cbe015a99fcf6c48b452c59660ab2ef20c94",
+      "width": 1382,
+      "height": 1138,
+      "figmaNodeId": "413:47",
+      "slot": {
+        "x": 1100,
+        "y": 7664,
+        "width": 183,
+        "height": 151
+      },
+      "paint": {
+        "type": "IMAGE",
+        "visible": true,
+        "opacity": 1,
+        "blendMode": "NORMAL",
+        "scaleMode": "FILL",
+        "scalingFactor": 0.5,
+        "rotation": 0,
+        "filters": {
+          "exposure": 0,
+          "contrast": 0,
+          "saturation": 0,
+          "temperature": 0,
+          "tint": 0,
+          "highlights": 0,
+          "shadows": 0
+        },
+        "imageTransform": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0
+          ]
+        ],
+        "imageHash": "bd73b762b372b374d3c48ed04728cb78fb6c5f62"
+      }
+    },
+    "frame-3-2-159": {
+      "path": "assets/website-v4-figma/pointly-imgFrame33.png",
+      "bytes": 879584,
+      "sha256": "60380788340d998985cd5e939b7e82c46b93e47c20c4713ac5b7c98daf72d624",
+      "width": 1437,
+      "height": 2349,
+      "figmaNodeId": "175:5",
+      "slot": {
+        "x": 800,
+        "y": 388,
+        "width": 455,
+        "height": 744
+      },
+      "paint": {
+        "type": "IMAGE",
+        "visible": true,
+        "opacity": 1,
+        "blendMode": "NORMAL",
+        "scaleMode": "FILL",
+        "scalingFactor": 0.5,
+        "rotation": 0,
+        "filters": {
+          "exposure": 0,
+          "contrast": 0,
+          "saturation": 0,
+          "temperature": 0,
+          "tint": 0,
+          "highlights": 0,
+          "shadows": 0
+        },
+        "imageTransform": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0
+          ]
+        ],
+        "imageHash": "83f399e8aa2275111c642692766eec9296ca4e3f"
+      },
+      "mask": {
+        "path": "assets/website-v4-figma/pointly-imgFrame32.svg",
+        "bytes": 243,
+        "sha256": "48df5f0c313ae1d2ec8d8cab15295047bf5b70477673cf176d0af29aaeba52df",
+        "width": 488,
+        "height": 497,
+        "x": 785,
+        "y": 682,
+        "image": {
+          "x": 15,
+          "y": -294,
+          "width": 455,
+          "height": 744
+        }
+      }
+    },
+    "frame-3-2-1-186": {
+      "path": "assets/home-figma/frame322.png",
+      "bytes": 879850,
+      "sha256": "019549d01da1e9fecc4edc308320dc14f702eb8122b04d4291d7bec3becef6e7",
+      "width": 1437,
+      "height": 2349,
+      "figmaNodeId": "320:52",
+      "slot": {
+        "x": 170,
+        "y": 766,
+        "width": 695,
+        "height": 1136
+      },
+      "paint": {
+        "type": "IMAGE",
+        "visible": true,
+        "opacity": 1,
+        "blendMode": "NORMAL",
+        "scaleMode": "FILL",
+        "scalingFactor": 0.5,
+        "rotation": 0,
+        "filters": {
+          "exposure": 0,
+          "contrast": 0,
+          "saturation": 0,
+          "temperature": 0,
+          "tint": 0,
+          "highlights": 0,
+          "shadows": 0
+        },
+        "imageTransform": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0
+          ]
+        ],
+        "imageHash": "3abd11ccbdd626a2438cee9201ab1ec7f13629cb"
+      },
+      "mask": {
+        "path": "assets/website-v4-figma/pointly-imgFrame321.svg",
+        "bytes": 244,
+        "sha256": "344ba38c1f4f099c39290a95cfa9058f0928007fcd52cb6efc4ea8336a5ce73e",
+        "width": 772,
+        "height": 531,
+        "x": 145,
+        "y": 727,
+        "image": {
+          "x": 25,
+          "y": 39,
+          "width": 695,
+          "height": 1136
+        }
+      }
+    },
+    "05-featured-stay-2-178": {
+      "path": "assets/website-v4-figma/pointly-img05FeaturedStay2.png",
+      "bytes": 996639,
+      "sha256": "712db883ad1f7e0fefcc39a2b31baea8552cce1f058958827a09b9c07813c783",
+      "width": 1505,
+      "height": 1045,
+      "figmaNodeId": "308:17",
+      "slot": {
+        "x": 190,
+        "y": 1378,
+        "width": 340,
+        "height": 236
+      },
+      "paint": {
+        "type": "IMAGE",
+        "visible": true,
+        "opacity": 1,
+        "blendMode": "NORMAL",
+        "scaleMode": "FILL",
+        "scalingFactor": 0.5,
+        "rotation": 0,
+        "filters": {
+          "exposure": 0,
+          "contrast": 0,
+          "saturation": 0,
+          "temperature": 0,
+          "tint": 0,
+          "highlights": 0,
+          "shadows": 0
+        },
+        "imageTransform": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0
+          ]
+        ],
+        "imageHash": "e2afc1955a9e294418dd7b5dd7e1f219fdb5f1d8"
+      }
+    },
+    "04-points-options-1-177": {
+      "path": "assets/website-v4-figma/pointly-img04PointsOptions1.png",
+      "bytes": 340266,
+      "sha256": "402f5c1c7873dccbb7bef0457363ab77b8280ccf7989e5b57c3c48073d63a78e",
+      "width": 1505,
+      "height": 1045,
+      "figmaNodeId": "307:12",
+      "slot": {
+        "x": 548,
+        "y": 1377,
+        "width": 342,
+        "height": 237
+      },
+      "paint": {
+        "type": "IMAGE",
+        "visible": true,
+        "opacity": 1,
+        "blendMode": "NORMAL",
+        "scaleMode": "FILL",
+        "scalingFactor": 0.5,
+        "rotation": 0,
+        "filters": {
+          "exposure": 0,
+          "contrast": 0,
+          "saturation": 0,
+          "temperature": 0,
+          "tint": 0,
+          "highlights": 0,
+          "shadows": 0
+        },
+        "imageTransform": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0
+          ]
+        ],
+        "imageHash": "cf4ed8b5351a2bef9912f53553c9a4c486dcb958"
+      }
+    },
+    "08-pro-tips-2-179": {
+      "path": "assets/website-v4-figma/pointly-img08ProTips2.png",
+      "bytes": 319034,
+      "sha256": "eed58660c74e2fa89958b9eb1e4e7fe96c24cd9ac01c3607c9388069d1ad0999",
+      "width": 1505,
+      "height": 1045,
+      "figmaNodeId": "308:20",
+      "slot": {
+        "x": 909,
+        "y": 1377,
+        "width": 342,
+        "height": 237
+      },
+      "paint": {
+        "type": "IMAGE",
+        "visible": true,
+        "opacity": 1,
+        "blendMode": "NORMAL",
+        "scaleMode": "FILL",
+        "scalingFactor": 0.5,
+        "rotation": 0,
+        "filters": {
+          "exposure": 0,
+          "contrast": 0,
+          "saturation": 0,
+          "temperature": 0,
+          "tint": 0,
+          "highlights": 0,
+          "shadows": 0
+        },
+        "imageTransform": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0
+          ]
+        ],
+        "imageHash": "33a8ab88873b599527c65221c38a0156c87c4ed0"
+      }
+    },
+    "connected-wallet": {
+      "path": "assets/pointly-figma-update/connected-wallet.png",
+      "bytes": 377000,
+      "sha256": "39f30dae7ee6ffa34f171c7518228e6f0b26953dbc180bd67616383da6616c82",
+      "width": 1505,
+      "height": 1045,
+      "figmaNodeId": "413:18",
+      "slot": {
+        "x": 414,
+        "y": 8073,
+        "width": 566,
+        "height": 393
+      },
+      "paint": {
+        "type": "IMAGE",
+        "visible": true,
+        "opacity": 1,
+        "blendMode": "NORMAL",
+        "scaleMode": "FILL",
+        "scalingFactor": 0.5,
+        "rotation": 0,
+        "filters": {
+          "exposure": 0,
+          "contrast": 0,
+          "saturation": 0,
+          "temperature": 0,
+          "tint": 0,
+          "highlights": 0,
+          "shadows": 0
+        },
+        "imageTransform": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0
+          ]
+        ],
+        "imageHash": "a9c7bda168c3e8673b073b2f30b812ae08d42d7c"
+      }
+    },
+    "recommended-stays": {
+      "path": "assets/pointly-figma-update/recommended-stays.png",
+      "bytes": 882899,
+      "sha256": "557b1b87b8df1ef19c7e273ca11894d67fed8e02e23a7c079790fad2162e9d81",
+      "width": 1487,
+      "height": 1058,
+      "figmaNodeId": "413:17",
+      "slot": {
+        "x": 414,
+        "y": 8487,
+        "width": 563.5982666015625,
+        "height": 401
+      },
+      "paint": {
+        "type": "IMAGE",
+        "visible": true,
+        "opacity": 1,
+        "blendMode": "NORMAL",
+        "scaleMode": "FILL",
+        "scalingFactor": 0.5,
+        "rotation": 0,
+        "filters": {
+          "exposure": 0,
+          "contrast": 0,
+          "saturation": 0,
+          "temperature": 0,
+          "tint": 0,
+          "highlights": 0,
+          "shadows": 0
+        },
+        "imageTransform": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0
+          ]
+        ],
+        "imageHash": "32b60f6c97a327525e4475ab6f093ad1a83f6184"
+      }
+    },
+    "stay-details": {
+      "path": "assets/pointly-figma-update/stay-details.png",
+      "bytes": 957053,
+      "sha256": "bf68a8c6e37a910bc03e7a7c9cfeb3cf9b807af24eff6affed2c74b19bd45942",
+      "width": 1487,
+      "height": 1058,
+      "figmaNodeId": "413:16",
+      "slot": {
+        "x": 415,
+        "y": 8909,
+        "width": 565,
+        "height": 402
+      },
+      "paint": {
+        "type": "IMAGE",
+        "visible": true,
+        "opacity": 1,
+        "blendMode": "NORMAL",
+        "scaleMode": "FILL",
+        "scalingFactor": 0.5,
+        "rotation": 0,
+        "filters": {
+          "exposure": 0,
+          "contrast": 0,
+          "saturation": 0,
+          "temperature": 0,
+          "tint": 0,
+          "highlights": 0,
+          "shadows": 0
+        },
+        "imageTransform": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0
+          ]
+        ],
+        "imageHash": "8bf8b4113b4c8720869b3203c62be1233bf938c9"
+      }
+    },
+    "rectangle-3-140": {
+      "path": "assets/website-v4-figma/pointly-imgRectangle3.svg",
+      "bytes": 337,
+      "sha256": "24a409092f3eea84bd7f4ee1d50323ed24e593f045a3f567619716ea5e2b3ea1",
+      "width": 87.0,
+      "height": 88.0,
+      "figmaNodeId": "413:33",
+      "slot": {
+        "x": 669,
+        "y": 7702,
+        "width": 87,
+        "height": 88
+      }
+    },
+    "rectangle-4-141": {
+      "path": "assets/website-v4-figma/pointly-imgRectangle4.svg",
+      "bytes": 337,
+      "sha256": "f427e832cef0c33bfcd9863665dd9fa21915e7152dc892a5fa537ff134112e4e",
+      "width": 88.0,
+      "height": 88.0,
+      "figmaNodeId": "413:34",
+      "slot": {
+        "x": 572,
+        "y": 7702,
+        "width": 88,
+        "height": 88
+      }
+    },
+    "rectangle-5-142": {
+      "path": "assets/website-v4-figma/pointly-imgRectangle5.svg",
+      "bytes": 337,
+      "sha256": "1a4b3938507e28b37d077a7ac6c20981146ce9ac25bddc0764ee1155fd788926",
+      "width": 92.0,
+      "height": 88.0,
+      "figmaNodeId": "413:35",
+      "slot": {
+        "x": 471,
+        "y": 7702,
+        "width": 92,
+        "height": 88
+      }
+    },
+    "rectangle-19-143": {
+      "path": "assets/website-v4-figma/pointly-imgRectangle19.svg",
+      "bytes": 338,
+      "sha256": "117ab53646722f6ffe22b8cfb09f3d99890689ad6c9267fa419fec49328221be",
+      "width": 88.0,
+      "height": 88.0,
+      "figmaNodeId": "413:36",
+      "slot": {
+        "x": 765,
+        "y": 7702,
+        "width": 88,
+        "height": 88
+      }
+    },
+    "line-65-62": {
+      "path": "assets/website-v4-figma/pointly-imgLine65.svg",
+      "bytes": 221,
+      "sha256": "29ba56a8d8477b1668e53558711dea6b4996c41552ddc346c5a126025d77aaf9",
+      "width": 63.0,
+      "height": 1.0,
+      "figmaNodeId": "130:33",
+      "slot": {
+        "x": 649,
+        "y": 2346,
+        "width": 63,
+        "height": 0
+      }
+    },
+    "line-66-63": {
+      "path": "assets/website-v4-figma/pointly-imgLine65.svg",
+      "bytes": 221,
+      "sha256": "29ba56a8d8477b1668e53558711dea6b4996c41552ddc346c5a126025d77aaf9",
+      "width": 63.0,
+      "height": 1.0,
+      "figmaNodeId": "130:34",
+      "slot": {
+        "x": 957,
+        "y": 2346,
+        "width": 63,
+        "height": 0
+      }
+    },
+    "ellipse-12-52": {
+      "path": "assets/website-v4-figma/pointly-imgEllipse12.svg",
+      "bytes": 390,
+      "sha256": "d35440d2dbde007a866edf246eb12bf6f0abc3548750fd6255b0b98e38890b13",
+      "width": 195.0,
+      "height": 195.0,
+      "figmaNodeId": "128:19",
+      "slot": {
+        "x": 436,
+        "y": 2244,
+        "width": 195,
+        "height": 195
+      }
+    },
+    "ellipse-13-53": {
+      "path": "assets/website-v4-figma/pointly-imgEllipse12.svg",
+      "bytes": 390,
+      "sha256": "d35440d2dbde007a866edf246eb12bf6f0abc3548750fd6255b0b98e38890b13",
+      "width": 195.0,
+      "height": 195.0,
+      "figmaNodeId": "128:20",
+      "slot": {
+        "x": 735,
+        "y": 2244,
+        "width": 195,
+        "height": 195
+      }
+    },
+    "ellipse-14-54": {
+      "path": "assets/website-v4-figma/pointly-imgEllipse12.svg",
+      "bytes": 390,
+      "sha256": "d35440d2dbde007a866edf246eb12bf6f0abc3548750fd6255b0b98e38890b13",
+      "width": 195.0,
+      "height": 195.0,
+      "figmaNodeId": "128:21",
+      "slot": {
+        "x": 1047,
+        "y": 2244,
+        "width": 195,
+        "height": 195
+      }
+    }
+  }
+}

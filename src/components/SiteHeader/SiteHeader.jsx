@@ -26,7 +26,7 @@ export default function SiteHeader({ site, aboutHref, aboutActive = false, homeH
       <header ref={headerRef} className={`site-header${variant !== 'default' ? ` site-header--${variant}` : ''}`}>
         <div className="site-header__inner page-container">
           <a className="site-header__brand flex items-center" href={homeHref} aria-label={`${site.name} home`}>
-            {variant === 'obayashi' ? <img className="obayashi-mark" src={assetUrl('obayashi-figma/logo.svg')} width="57" height="38" alt="" aria-hidden="true" data-figma-node="479:58" /> : variant === 'pointly' ? <PointlyMark /> : <Logo />}
+            {variant === 'obayashi' ? <img className="obayashi-mark" src={assetUrl('brand/ki-logo-v4.svg')} width="57" height="38" alt="" aria-hidden="true" data-figma-node="479:58" /> : variant === 'pointly' ? <PointlyMark /> : <Logo />}
             <BrandName name={site.name} descriptor={site.descriptor} />
           </a>
           <Navigation aboutHref={aboutHref} aboutActive={aboutActive} workHref={workHref} />

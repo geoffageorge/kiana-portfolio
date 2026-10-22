@@ -1,0 +1,713 @@
+const img07StayDetails1 = "/assets/pointly-figma-update/stay-details.png";
+const img06RecommendedStays1 = "/assets/pointly-figma-update/recommended-stays.png";
+const img02ConnectedWallet1 = "/assets/pointly-figma-update/connected-wallet.png";
+const imgTravelerWalkingBesideAGlobe1 = "/assets/website-v4-figma/pointly-imgTravelerWalkingBesideAGlobe1.png";
+const imgScreenshot20260916At10822Pm1 = "/assets/website-v4-figma/pointly-imgScreenshot20260916At10822Pm1.png";
+const imgScreenshot20260916At10840Pm1 = "/assets/website-v4-figma/pointly-imgScreenshot20260916At10840Pm1.png";
+const imgScreenshot20260916At10830Pm1 = "/assets/website-v4-figma/pointly-imgScreenshot20260916At10830Pm1.png";
+const imgScreenshot20260925At92444Am2 = "/assets/website-v4-figma/pointly-imgScreenshot20260925At92444Am2.png";
+const imgScreenshot20260925At92339Am2 = "/assets/website-v4-figma/pointly-imgScreenshot20260925At92339Am2.png";
+const imgAspiringExpertWithBlueNeckline21 = "/assets/website-v4-figma/pointly-imgAspiringExpertWithBlueNeckline21.png";
+const imgCasualRedeemerPortraitIsolated31 = "/assets/website-v4-figma/pointly-imgCasualRedeemerPortraitIsolated31.png";
+const imgStrategicOptimizerPortrait1 = "/assets/website-v4-figma/pointly-imgStrategicOptimizerPortrait1.png";
+const imgThoughtfulInterviewWithLaptop11 = "/assets/website-v4-figma/pointly-imgThoughtfulInterviewWithLaptop11.png";
+const imgConcernedManHoldingPhoneWithAccountTiles41 = "/assets/website-v4-figma/pointly-imgConcernedManHoldingPhoneWithAccountTiles41.png";
+const imgJasminesThoughtfulBalance71 = "/assets/website-v4-figma/pointly-imgJasminesThoughtfulBalance71.png";
+const imgProfessionalCheckingAGroupChat1 = "/assets/website-v4-figma/pointly-imgProfessionalCheckingAGroupChat1.png";
+const imgMinimalistPointMeWordmarkLogo2 = "/assets/website-v4-figma/pointly-imgMinimalistPointMeWordmarkLogo2.png";
+const imgPointsyeah2 = "/assets/website-v4-figma/pointly-imgPointsyeah2.png";
+const imgSeatsAero2 = "/assets/website-v4-figma/pointly-imgSeatsAero2.png";
+const imgRoame2 = "/assets/website-v4-figma/pointly-imgRoame2.png";
+const imgAwardWalletLogoOnWhite2 = "/assets/website-v4-figma/pointly-imgAwardWalletLogoOnWhite2.png";
+const imgMaxmypoint2 = "/assets/website-v4-figma/pointly-imgMaxmypoint2.png";
+const imgAwardtool2 = "/assets/website-v4-figma/pointly-imgAwardtool2.png";
+const imgThePointsGuyLogo2 = "/assets/website-v4-figma/pointly-imgThePointsGuyLogo2.png";
+const imgFourPointSparkleOnWhiteDisc21 = "/assets/website-v4-figma/pointly-imgFourPointSparkleOnWhiteDisc21.png";
+const imgMinimalMonolineLightbulbInsightIcon12 = "/assets/website-v4-figma/pointly-imgMinimalMonolineLightbulbInsightIcon12.png";
+const imgScreenshot20260916At10452Pm2 = "/assets/website-v4-figma/pointly-imgScreenshot20260916At10452Pm2.png";
+const img04PointsOptions1 = "/assets/website-v4-figma/pointly-img04PointsOptions1.png";
+const img05FeaturedStay2 = "/assets/website-v4-figma/pointly-img05FeaturedStay2.png";
+const img08ProTips2 = "/assets/website-v4-figma/pointly-img08ProTips2.png";
+const imgFrame33 = "/assets/website-v4-figma/pointly-imgFrame33.png";
+const imgFrame322 = "/assets/home-figma/frame322.png";
+const imgLine72 = "/assets/obayashi-figma/section-divider.svg";
+const imgRectangle3 = "/assets/website-v4-figma/pointly-imgRectangle3.svg";
+const imgRectangle4 = "/assets/website-v4-figma/pointly-imgRectangle4.svg";
+const imgRectangle5 = "/assets/website-v4-figma/pointly-imgRectangle5.svg";
+const imgRectangle19 = "/assets/website-v4-figma/pointly-imgRectangle19.svg";
+const imgLine65 = "/assets/website-v4-figma/pointly-imgLine65.svg";
+const imgEllipse12 = "/assets/website-v4-figma/pointly-imgEllipse12.svg";
+const imgFrame32 = "/assets/website-v4-figma/pointly-imgFrame32.svg";
+const imgFrame321 = "/assets/website-v4-figma/pointly-imgFrame321.svg";
+const imgLine61 = "/assets/obayashi-figma/details-divider.svg";
+
+export default function PointlyCaseStudy2() {
+  return (
+    <div className="bg-white relative size-full" data-node-id="90:18" data-name="Pointly Case Study 2">
+      <div className="absolute contents left-[calc(25%+66px)] top-[9402px]" data-node-id="413:70" data-name="What I Learned Section">
+        <p className="[word-break:break-word] absolute font-['Inter:Bold'] font-bold leading-[1.15] left-[calc(25%+68px)] not-italic text-[38px] text-black top-[9437px] w-[845px]" data-node-id="413:8">
+          What I Learned
+        </p>
+        <div className="absolute bg-[#e7ef52] h-[537px] left-[calc(25%+66px)] rounded-[12px] shadow-[2px_2px_4px_0px_rgba(0,0,0,0.1)] top-[9508px] w-[894px]" data-node-id="413:9" data-name="Conclusion Rectangle" />
+        <p className="[word-break:break-word] absolute font-['Inter:Bold'] font-bold h-[105px] leading-[1.15] left-[calc(25%+139px)] not-italic text-[24px] text-black top-[9580px] w-[845px]" data-node-id="413:10">
+          Reflection
+        </p>
+        <div className="absolute h-0 left-[calc(25%+66px)] top-[9402px] w-[892px]" data-node-id="413:11">
+          <div className="absolute inset-[-0.5px_0_0_0]">
+            <img alt="" className="block max-w-none size-full" src={imgLine72} />
+          </div>
+        </div>
+        <div className="[word-break:break-word] absolute font-['Inter:Regular'] font-normal h-[397px] leading-[0] left-[calc(50%+15px)] not-italic text-[16px] text-black top-[9580px] w-[492px] whitespace-pre-wrap" data-node-id="413:12">
+          <p className="mb-0">
+            <span className="[word-break:break-word] font-['Inter:Bold'] font-bold leading-[26px] not-italic">Different experiences can reveal shared needs.</span>
+            <span className="leading-[26px]">{` Interviewing travelers with varying levels of points experience taught me to look beyond individual preferences and use common patterns to guide product priorities.`}</span>
+          </p>
+          <p className="mb-0">
+            <span className="leading-[26px]">
+              <br aria-hidden />
+            </span>
+            <span className="[word-break:break-word] font-['Inter:Bold'] font-bold leading-[26px] not-italic">AI helped me build faster, but I still had to decide what was worth building.</span>
+            <span className="leading-[26px]">{` At the hackathon, I turned our interview findings into a PRD and used AI coding tools to build a working prototype. Testing it with users helped me see where those decisions worked and where they needed refinement.`}</span>
+          </p>
+          <p className="mb-0">
+            <span className="leading-[26px]">
+              <br aria-hidden />
+            </span>
+            <span className="[word-break:break-word] font-['Inter:Bold'] font-bold leading-[26px] not-italic">The process reinforced two lessons:</span>
+            <span className="leading-[26px]">{` making information available is only useful if people can easily understand and act on it, and an established visual palette helps multiple designers create one cohesive experience.`}</span>
+          </p>
+          <p className="leading-[26px]">​</p>
+        </div>
+      </div>
+      <div className="absolute contents left-[calc(25%+54px)] top-[7926px]" data-node-id="413:69" data-name="From Research to MVP Prototype">
+        <div className="[word-break:break-word] absolute font-['Inter:Regular'] font-normal leading-[0] left-[calc(75%-55px)] not-italic text-[0px] text-black top-[9067px] whitespace-nowrap" data-node-id="413:13">
+          <p className="mb-0 text-[15px] whitespace-pre">
+            <span className="[word-break:break-word] font-['Inter:Bold'] font-bold leading-[24px] not-italic">Property Detail</span>
+            <span className="leading-[24px]">
+              {` `}
+              <br aria-hidden />
+              {`Compare points, cash price, and `}
+              <br aria-hidden />
+              redemption value before booking.
+            </span>
+          </p>
+          <p className="leading-[24px] text-[15px] whitespace-pre">​</p>
+        </div>
+        <p className="[word-break:break-word] absolute font-['Inter:Bold'] font-bold leading-[1.15] left-[calc(25%+66px)] not-italic text-[21px] text-black top-[7926px] w-[845px]" data-node-id="413:14">
+          From Research to High-Fidelity Prototype
+        </p>
+        <p className="[word-break:break-word] absolute font-['Inter:Regular'] font-normal leading-[26px] left-[calc(25%+66px)] not-italic text-[16px] text-black top-[7965px] w-[856px]" data-node-id="413:15">
+          We designed the experience to help travelers decide how to use their points. Our high-fidelity prototype brought rewards balances, personalized stays, and points-versus-cash comparisons together to support more informed booking decisions. The project remained at the prototype stage.
+        </p>
+        <div className="absolute h-[402px] left-[calc(25%+55px)] shadow-[4px_4px_4px_0px_rgba(0,0,0,0.1)] top-[8909px] w-[565px]" data-node-id="413:16" data-name="07-stay-details 1">
+          <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={img07StayDetails1} />
+        </div>
+        <div className="absolute h-[401px] left-[calc(25%+54px)] shadow-[4px_4px_4px_0px_rgba(0,0,0,0.1)] top-[8487px] w-[563.598px]" data-node-id="413:17" data-name="06-recommended-stays 1">
+          <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={img06RecommendedStays1} />
+        </div>
+        <div className="absolute h-[393px] left-[calc(25%+54px)] shadow-[4px_4px_4px_0px_rgba(0,0,0,0.1)] top-[8073px] w-[566px]" data-node-id="413:18" data-name="02-connected-wallet 1">
+          <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={img02ConnectedWallet1} />
+        </div>
+        <div className="[word-break:break-word] absolute font-['Inter:Regular'] font-normal leading-[0] left-[calc(75%-55px)] not-italic text-[0px] text-black top-[8226px] whitespace-nowrap" data-node-id="413:19">
+          <p className="mb-0 text-[15px] whitespace-pre">
+            <span className="[word-break:break-word] font-['Inter:Bold'] font-bold leading-[24px] not-italic">Rewards Dashboard</span>
+            <span className="leading-[24px]">
+              {` `}
+              <br aria-hidden />
+              {`View balances across rewards `}
+              <br aria-hidden />
+              programs in one place.
+            </span>
+          </p>
+          <p className="leading-[24px] text-[15px] whitespace-pre">
+            <br aria-hidden />
+            <br aria-hidden />
+          </p>
+        </div>
+        <p className="[word-break:break-word] absolute font-['Inter:Regular'] font-normal leading-[0] left-[calc(75%-55px)] not-italic text-[0px] text-black top-[8644px] whitespace-pre" data-node-id="413:20">
+          <span className="font-['Inter:Bold'] font-bold leading-[24px] text-[15px]">
+            Personalized
+            <br aria-hidden />
+            Recommendations
+          </span>
+          <span className="leading-[24px] text-[15px]">
+            <br aria-hidden />
+            {`Explore stays based on available `}
+            <br aria-hidden />
+            points and preferences.
+          </span>
+        </p>
+      </div>
+      <div className="absolute contents left-[calc(25%+62px)] top-[7299px]" data-node-id="413:68" data-name="Designing an Approachable Identity">
+        <p className="[word-break:break-word] absolute font-['Inter:Bold'] font-bold leading-[1.15] left-[calc(25%+66px)] not-italic text-[21px] text-black top-[7299px] w-[845px]" data-node-id="413:21">
+          Defining the Product’s Visual Language
+        </p>
+        <p className="[word-break:break-word] absolute font-['Inter:Regular'] font-normal leading-[26px] left-[calc(25%+65px)] not-italic text-[16px] text-black top-[7338px] w-[856px]" data-node-id="413:22">
+          I developed Point.ly’s visual identity and core interface—including color, typography, illustration, and layout—to make credit card points feel clear and approachable, balancing warmth with financial credibility.
+          <br aria-hidden />
+          <br aria-hidden />
+        </p>
+        <div className="absolute bg-[#f7f7f7] h-[422px] left-[calc(25%+62px)] rounded-[12px] shadow-[2px_2px_4px_0px_rgba(0,0,0,0.1)] top-[7428px] w-[898px]" data-node-id="413:23" data-name="Daniel Rectangle 98" />
+        <div className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Fira_Mono:Medium'] justify-center leading-[0] left-[calc(66.67%-48px)] not-italic text-[12px] text-black top-[7531px] whitespace-nowrap" data-node-id="413:24">
+          <p className="leading-[1.2]">HEADS</p>
+        </div>
+        <div className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Fira_Mono:Medium'] justify-center leading-[0] left-[calc(75%+11px)] not-italic text-[12px] text-black top-[7531px] whitespace-nowrap" data-node-id="413:25">
+          <p className="leading-[1.2]">BUTTONS</p>
+        </div>
+        <div className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Fira_Mono:Medium'] justify-center leading-[0] left-[calc(66.67%-48px)] not-italic text-[12px] text-black top-[7609px] whitespace-nowrap" data-node-id="413:26">
+          <p className="leading-[1.2]">{`BODY `}</p>
+        </div>
+        <div className="absolute bg-[#fcfcf8] left-[calc(25%+111px)] rounded-[8px] size-[120px] top-[7514px]" data-node-id="413:27" />
+        <div className="absolute bg-[#de8e5c] left-[calc(33.33%+122px)] rounded-[8px] size-[120px] top-[7514px]" data-node-id="413:28" />
+        <div className="absolute bg-[#23395a] left-[calc(50%+13px)] rounded-[8px] size-[120px] top-[7514px]" data-node-id="413:29" />
+        <div className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Fira_Mono:Medium'] h-[14px] justify-center leading-[0] left-[calc(25%+124px)] not-italic text-[14px] text-black top-[7538px] w-[79px]" data-node-id="413:30">
+          <p className="leading-[1.2]">FCFCF8</p>
+        </div>
+        <div className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Fira_Mono:Medium'] h-[14px] justify-center leading-[0] left-[calc(41.67%+17px)] not-italic text-[14px] text-white top-[7539px] w-[72px]" data-node-id="413:31">
+          <p className="leading-[1.2]">DE8E5C</p>
+        </div>
+        <div className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Fira_Mono:Medium'] h-[14px] justify-center leading-[0] left-[calc(50%+31px)] not-italic text-[14px] text-white top-[7539px] w-[70px]" data-node-id="413:32">
+          <p className="leading-[1.2]">23395A</p>
+        </div>
+        <div className="absolute h-[88px] left-[calc(41.67%+69px)] top-[7702px] w-[87px]" data-node-id="413:33">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgRectangle3} />
+        </div>
+        <div className="absolute left-[calc(33.33%+92px)] size-[88px] top-[7702px]" data-node-id="413:34">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgRectangle4} />
+        </div>
+        <div className="absolute h-[88px] left-[calc(25%+111px)] top-[7702px] w-[92px]" data-node-id="413:35">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgRectangle5} />
+        </div>
+        <div className="absolute left-[calc(50%+45px)] size-[88px] top-[7702px]" data-node-id="413:36">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgRectangle19} />
+        </div>
+        <div className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Fira_Mono:Medium'] h-[14px] justify-center leading-[0] left-[calc(25%+124px)] not-italic text-[14px] text-black top-[7725px] w-[57px]" data-node-id="413:37">
+          <p className="leading-[1.2]">BECDD6</p>
+        </div>
+        <div className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Fira_Mono:Medium'] h-[14px] justify-center leading-[0] left-[calc(33.33%+107px)] not-italic text-[14px] text-white top-[7725px] w-[55px]" data-node-id="413:38">
+          <p className="leading-[1.2]">D9564D</p>
+        </div>
+        <div className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Fira_Mono:Medium'] h-[13px] justify-center leading-[0] left-[calc(41.67%+82px)] not-italic text-[14px] text-white top-[7725.5px] w-[60px]" data-node-id="413:39">
+          <p className="leading-[1.2]">4E76B6</p>
+        </div>
+        <div className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Fira_Mono:Medium'] h-[13px] justify-center leading-[0] left-[calc(50%+58px)] not-italic text-[14px] text-white top-[7725.5px] w-[64px]" data-node-id="413:40">
+          <p className="leading-[1.2]">40B3FC</p>
+        </div>
+        <div className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Instrument_Sans:SemiBold'] font-semibold h-[35px] justify-center leading-[0] left-[calc(25%+111px)] text-[16px] text-black top-[7486.5px] w-[139px]" data-node-id="413:41" style={{ fontVariationSettings: '"wdth" 100' }}>
+          <p className="leading-[1.05]">Primary palette</p>
+        </div>
+        <div className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Instrument_Sans:SemiBold'] font-semibold h-[35px] justify-center leading-[0] left-[calc(58.33%+71px)] text-[16px] text-black top-[7486.5px] w-[139px]" data-node-id="413:42" style={{ fontVariationSettings: '"wdth" 100' }}>
+          <p className="leading-[1.05]">Typography</p>
+        </div>
+        <div className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Instrument_Sans:SemiBold'] font-semibold h-[35px] justify-center leading-[0] left-[calc(25%+111px)] text-[16px] text-black top-[7674.5px] w-[191px]" data-node-id="413:43" style={{ fontVariationSettings: '"wdth" 100' }}>
+          <p className="leading-[1.05]">Secondary Palette</p>
+        </div>
+        <p className="[word-break:break-word] absolute font-['Poppins:Bold'] leading-[24px] left-[calc(58.33%+71px)] not-italic text-[16px] text-black top-[7548px] w-[107px]" data-node-id="413:44">
+          Poppins Bold
+        </p>
+        <p className="[word-break:break-word] absolute font-['Poppins:Medium'] leading-[24px] left-[calc(75%+10px)] not-italic text-[16px] text-black top-[7547px] w-[135px]" data-node-id="413:45">
+          Poppins Medium
+        </p>
+        <div className="[word-break:break-word] absolute font-['Inter:Bold'] font-bold leading-[0] left-[calc(58.33%+71px)] not-italic text-[0px] text-black top-[7625px] whitespace-nowrap" data-node-id="413:46">
+          <p className="font-['Inter:Regular'] font-normal leading-[24px] mb-0 text-[16px]">Inter Regular</p>
+          <p className="font-['Inter:Italic'] font-normal italic leading-[24px] mb-0 text-[16px]">Inter Regular Italic</p>
+          <p className="font-['Inter:Medium'] font-medium leading-[24px] mb-0 text-[16px]">Inter Medium</p>
+          <p className="font-['Inter:Medium_Italic'] font-medium italic leading-[24px] mb-0 text-[16px]">Inter Medium Italic</p>
+          <p className="leading-[24px] mb-0 text-[16px]">Inter Bold</p>
+          <p className="leading-[24px] text-[16px]">Inter Bold Italic</p>
+        </div>
+        <div className="absolute h-[151px] left-[calc(75%+20px)] top-[7664px] w-[183px]" data-node-id="413:47" data-name="Traveler walking beside a globe 1">
+          <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgTravelerWalkingBesideAGlobe1} />
+        </div>
+      </div>
+      <div className="absolute contents left-[calc(25%+62px)] top-[6701px]" data-node-id="413:67" data-name="Mid-Fi Section">
+        <div className="[word-break:break-word] absolute contents left-[calc(25%+66px)] not-italic text-black top-[6701px]" data-node-id="413:65">
+          <p className="absolute font-['Inter:Bold'] font-bold leading-[1.15] left-[calc(25%+66px)] text-[22px] top-[6701px] w-[845px]" data-node-id="187:3">{`Mid-Fi: Narrowing the Experience `}</p>
+          <p className="absolute font-['Inter:Regular'] font-normal leading-[26px] left-[calc(25%+67px)] text-[16px] top-[6741px] w-[856px]" data-node-id="187:4">
+            We prioritized the concepts that most directly addressed our research findings: consolidating rewards, simplifying comparisons, and making redemption opportunities actionable. Broader ideas that moved beyond these core needs were deprioritized.
+          </p>
+        </div>
+        <div className="absolute h-[350px] left-[calc(25%+62px)] top-[6854px] w-[473px]" data-node-id="413:48" data-name="Screenshot 2026-09-16 at 1.08.22 PM 1">
+          <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgScreenshot20260916At10822Pm1} />
+        </div>
+        <div className="absolute h-[248px] left-[calc(66.67%-44px)] top-[6854px] w-[340px]" data-node-id="413:49" data-name="Screenshot 2026-09-16 at 1.08.40 PM 1">
+          <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgScreenshot20260916At10840Pm1} />
+        </div>
+        <div className="absolute h-[188px] left-[calc(75%-39px)] top-[7029px] w-[260px]" data-node-id="413:50" data-name="Screenshot 2026-09-16 at 1.08.30 PM 1">
+          <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgScreenshot20260916At10830Pm1} />
+        </div>
+      </div>
+      <div className="absolute h-0 left-[calc(25%+68px)] top-[5955px] w-[892px]" data-node-id="163:12">
+        <div className="absolute inset-[-0.5px_0_0_0]">
+          <img alt="" className="block max-w-none size-full" src={imgLine72} />
+        </div>
+      </div>
+      <p className="[word-break:break-word] absolute font-['Inter:Bold'] font-bold leading-[1.15] left-[calc(25%+68px)] not-italic text-[38px] text-black top-[5985px] w-[845px]" data-node-id="163:11">
+        Designing the User Experience
+      </p>
+      <div className="[word-break:break-word] absolute contents left-[calc(25%+66px)] not-italic text-black top-[6089px]" data-node-id="553:28">
+        <p className="absolute font-['Inter:Bold'] font-bold leading-[1.15] left-[calc(25%+66px)] text-[21px] top-[6089px] w-[845px]" data-node-id="163:13">{`Low-Fi: Testing Different Directions `}</p>
+        <p className="absolute font-['Inter:Regular'] font-normal leading-[26px] left-[calc(25%+66px)] text-[16px] top-[6128px] w-[884px]" data-node-id="163:14">{`Guided by our research, we quickly explored multiple concepts, including a Chrome extension, centralized rewards wallet, AI trip planning, itinerary comparison, and personalized points recommendations. `}</p>
+      </div>
+      <div className="absolute border border-black border-solid h-[389px] left-[calc(25%+68px)] top-[6233px] w-[314px]" data-node-id="145:154" data-name="Screenshot 2026-09-25 at 9.24.44 AM 2">
+        <div className="absolute inset-0 overflow-hidden pointer-events-none">
+          <img alt="" className="absolute h-[101.32%] left-[-0.55%] max-w-none top-0 w-[100.55%]" src={imgScreenshot20260925At92444Am2} />
+        </div>
+      </div>
+      <div className="absolute border border-black border-solid h-[388px] left-[calc(50%+41px)] top-[6233px] w-[556px]" data-node-id="145:155" data-name="Screenshot 2026-09-25 at 9.23.39 AM 2">
+        <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgScreenshot20260925At92339Am2} />
+      </div>
+      <p className="[word-break:break-word] absolute font-['Inter:Bold'] font-bold leading-[1.15] left-[calc(25%+66px)] not-italic text-[38px] text-black top-[4260px] w-[845px]" data-node-id="143:17">
+        Research Revealed Insights
+      </p>
+      <div className="absolute h-0 left-[calc(25%+68px)] top-[4230px] w-[892px]" data-node-id="143:18">
+        <div className="absolute inset-[-0.5px_0_0_0]">
+          <img alt="" className="block max-w-none size-full" src={imgLine72} />
+        </div>
+      </div>
+      <div className="absolute contents left-[calc(25%+53px)] top-[3892px]" data-node-id="413:58" data-name="Personas">
+        <p className="[word-break:break-word] absolute font-['Inter:Bold'] font-bold h-[105px] leading-[1.15] left-[calc(25%+66px)] not-italic text-[21px] text-black top-[3892px] w-[845px]" data-node-id="138:96">
+          Three personas emerged
+        </p>
+        <p className="[word-break:break-word] absolute font-['Instrument_Sans:Bold'] font-bold leading-[0] left-[calc(25%+66px)] not-italic text-[0px] text-black top-[4035px] w-[250px]" data-node-id="143:7" style={{ fontVariationSettings: '"wdth" 100' }}>
+          <span className="font-['Inter:Bold'] leading-[26px] text-[16px]">The Strategic Optimizer</span>
+          <span className="font-['Inter:Bold'] leading-[26px] text-[16px]">
+            <br aria-hidden />
+          </span>
+          <span className="font-['Inter:Regular'] font-normal leading-[26px] text-[16px]">Knows the system and works to maximize value.</span>
+        </p>
+        <p className="[word-break:break-word] absolute font-['Instrument_Sans:Bold'] font-bold leading-[0] left-[calc(50%+15px)] not-italic text-[0px] text-black top-[4035px] w-[243px]" data-node-id="143:8" style={{ fontVariationSettings: '"wdth" 100' }}>
+          <span className="font-['Inter:Bold'] leading-[26px] text-[16px]">The Aspirational Expert</span>
+          <span className="font-['Inter:Bold'] leading-[26px] text-[16px]">
+            <br aria-hidden />
+          </span>
+          <span className="font-['Inter:Regular'] font-normal leading-[26px] text-[16px]">Understands the basics and wants value, but needs guidance.</span>
+        </p>
+        <p className="[word-break:break-word] absolute font-['Instrument_Sans:Bold'] font-bold leading-[0] left-[calc(75%-42px)] not-italic text-[0px] text-black top-[4035px] w-[255px]" data-node-id="143:9" style={{ fontVariationSettings: '"wdth" 100' }}>
+          <span className="font-['Inter:Bold'] leading-[26px] text-[16px]">The Casual Redeemer</span>
+          <span className="font-['Inter:Bold'] leading-[26px] text-[16px]">
+            <br aria-hidden />
+          </span>
+          <span className="font-['Inter:Regular'] font-normal leading-[26px] text-[16px]">Uses points sporadically and prioritizes ease.</span>
+        </p>
+        <div className="absolute left-[calc(50%+9px)] size-[80px] top-[3949px]" data-node-id="143:11" data-name="Aspiring expert with blue neckline-2 1">
+          <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgAspiringExpertWithBlueNeckline21} />
+        </div>
+        <div className="absolute h-[80px] left-[calc(75%-50px)] top-[3949px] w-[81px]" data-node-id="143:12" data-name="Casual Redeemer Portrait, Isolated-3 1">
+          <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgCasualRedeemerPortraitIsolated31} />
+        </div>
+        <div className="absolute left-[calc(25%+53px)] size-[91px] top-[3944px]" data-node-id="143:13" data-name="Strategic Optimizer Portrait 1">
+          <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgStrategicOptimizerPortrait1} />
+        </div>
+      </div>
+      <div className="absolute contents left-[calc(25%+66px)] top-[3681px]" data-node-id="413:60" data-name="Insight Bar Yellow">
+        <div className="absolute bg-[#e7ef52] h-[142px] left-[calc(25%+66px)] rounded-[12px] shadow-[2px_2px_4px_0px_rgba(0,0,0,0.1)] top-[3681px] w-[894px]" data-node-id="138:92" data-name="Conclusion Rectangle" />
+        <p className="[word-break:break-word] absolute font-['Inter:Bold'] font-bold h-[105px] leading-[1.15] left-[calc(25%+139px)] not-italic text-[22px] text-black top-[3726px] w-[845px]" data-node-id="138:95">
+          Insight
+        </p>
+        <p className="[word-break:break-word] absolute font-['Inter:Regular'] font-normal h-[140px] leading-[24px] left-[calc(50%+15px)] not-italic text-[16px] text-black top-[3726px] w-[535px]" data-node-id="138:94">
+          Users did not necessarily need more ways to earn points. They needed help understanding the value already sitting in their wallets.
+        </p>
+      </div>
+      <div className="absolute contents left-[calc(16.67%+82px)] top-[2561px]" data-node-id="413:75" data-name="Interviews + Interview Tiles">
+        <div className="absolute h-0 left-[calc(25%+68px)] top-[2561px] w-[892px]" data-node-id="143:16">
+          <div className="absolute inset-[-0.5px_0_0_0]">
+            <img alt="" className="block max-w-none size-full" src={imgLine72} />
+          </div>
+        </div>
+        <p className="[word-break:break-word] absolute font-['Inter:Bold'] font-bold leading-[1.15] left-[calc(25%+68px)] not-italic text-[36px] text-black top-[2605px] w-[845px] whitespace-pre-wrap" data-node-id="136:44">
+          {`Different travelers. `}
+          <br aria-hidden />A shared need for clarity
+        </p>
+        <p className="[word-break:break-word] absolute font-['Inter:Regular'] font-normal h-[57px] leading-[26px] left-[calc(25%+68px)] not-italic text-[16px] text-black top-[2713px] w-[865px]" data-node-id="137:3">
+          I interviewed 10 travelers to understand how they managed rewards, evaluated redemption value, and navigated decisions around transfers and group travel.
+        </p>
+        <div className="absolute bg-[#f7f7f7] h-[403px] left-[calc(25%+68px)] rounded-[12px] shadow-[2px_2px_4px_0px_rgba(0,0,0,0.1)] top-[2809px] w-[280px]" data-node-id="136:46" data-name="Isa Rectangle 94" />
+        <div className="absolute bg-[#f7f7f7] h-[403px] left-[calc(75%-40px)] rounded-[12px] shadow-[2px_2px_4px_0px_rgba(0,0,0,0.1)] top-[2809px] w-[280px]" data-node-id="136:77" data-name="Isa Rectangle 99" />
+        <div className="absolute h-[190px] left-[calc(25%+66px)] top-[2956px] w-[284px]" data-node-id="136:57" data-name="Thoughtful interview with laptop-1 1">
+          <div className="absolute inset-0 overflow-hidden pointer-events-none">
+            <img alt="" className="absolute h-[108.42%] left-[-4.4%] max-w-none top-[-4.21%] w-[108.8%]" src={imgThoughtfulInterviewWithLaptop11} />
+          </div>
+        </div>
+        <p className="-translate-x-1/2 [word-break:break-word] absolute font-['Inter:Regular'] font-normal leading-[24px] left-[calc(25%+208.5px)] not-italic text-[16px] text-black text-center top-[2852px] w-[207px]" data-node-id="136:61">
+          “The bank portals feel like Expedia from 2010. It’s hard to know if I’m getting a good deal.”
+        </p>
+        <p className="-translate-x-1/2 [word-break:break-word] absolute font-['Inter:Regular'] font-normal h-[189px] leading-[24px] left-[calc(75%+99.5px)] not-italic text-[16px] text-black text-center top-[2852px] w-[215px]" data-node-id="136:81">
+          “I want to plan trips with friends, but it’s so hard to coordinate and share options together.”
+        </p>
+        <p className="-translate-x-1/2 [word-break:break-word] absolute font-['Inter:Regular'] font-normal leading-[0] left-[calc(25%+208px)] not-italic text-[0px] text-black text-center top-[3135px] w-[170px] whitespace-pre-wrap" data-node-id="136:60">
+          <span className="font-['Inter:Bold'] font-bold leading-[22px] text-[18px]">{`Isa `}</span>
+          <span className="leading-[22px] text-[15px]">
+            <br aria-hidden />
+            Tech Worker, 30s
+            <br aria-hidden />
+            <br aria-hidden />
+          </span>
+        </p>
+        <p className="-translate-x-1/2 [word-break:break-word] absolute font-['Inter:Regular'] font-normal leading-[0] left-[calc(75%+100px)] not-italic text-[0px] text-black text-center top-[3135px] w-[170px]" data-node-id="136:84">
+          <span className="font-['Inter:Bold'] font-bold leading-[22px] text-[18px]">Afsaneh</span>
+          <span className="leading-[22px] text-[15px]">
+            <br aria-hidden />
+            Professional 50s
+            <br aria-hidden />
+            <br aria-hidden />
+          </span>
+        </p>
+        <div className="absolute bg-[#f7f7f7] h-[403px] left-[calc(25%+62px)] rounded-[12px] shadow-[2px_2px_4px_0px_rgba(0,0,0,0.1)] top-[3245px] w-[898px]" data-node-id="136:70" data-name="Daniel Rectangle 97" />
+        <p className="[word-break:break-word] absolute font-['Inter:Regular'] font-normal h-[251px] leading-[36px] left-[calc(58.33%+57px)] not-italic text-[22px] text-black top-[3384px] w-[368px]" data-node-id="136:73">
+          “I want a single view of all my points so I don’t have to log into multiple accounts.”
+        </p>
+        <p className="-translate-x-1/2 [word-break:break-word] absolute font-['Inter:Regular'] font-normal leading-[0] left-[calc(33.33%+144px)] not-italic text-[0px] text-black text-center top-[3566px] w-[170px]" data-node-id="136:71">
+          <span className="font-['Inter:Bold'] font-bold leading-[22px] text-[18px]">Daniel</span>
+          <span className="leading-[22px] text-[15px]">
+            <br aria-hidden />
+            Student, 20s
+            <br aria-hidden />
+            <br aria-hidden />
+          </span>
+        </p>
+        <div className="absolute h-[409px] left-[calc(16.67%+82px)] top-[3212px] w-[614px]" data-node-id="136:52" data-name="Concerned man holding phone with account tiles-4 1">
+          <div className="absolute inset-0 overflow-hidden pointer-events-none">
+            <img alt="" className="absolute h-[100.08%] left-[3.26%] max-w-none top-[-0.04%] w-full" src={imgConcernedManHoldingPhoneWithAccountTiles41} />
+          </div>
+        </div>
+        <div className="absolute bg-[#f7f7f7] h-[403px] left-[calc(50%+12px)] rounded-[12px] shadow-[2px_2px_4px_0px_rgba(0,0,0,0.1)] top-[2809px] w-[280px]" data-node-id="136:75" data-name="Isa Rectangle 97" />
+        <p className="-translate-x-1/2 [word-break:break-word] absolute font-['Inter:Regular'] font-normal leading-[0] left-[calc(50%+158px)] not-italic text-[0px] text-black text-center top-[3135px] w-[170px]" data-node-id="136:82">
+          <span className="font-['Inter:Bold'] font-bold leading-[22px] text-[18px]">Jasmine</span>
+          <span className="leading-[22px] text-[15px]">
+            <br aria-hidden />
+            Professional, 30s
+            <br aria-hidden />
+            <br aria-hidden />
+          </span>
+        </p>
+        <p className="-translate-x-1/2 [word-break:break-word] absolute font-['Inter:Regular'] font-normal leading-[24px] left-[calc(50%+158.5px)] not-italic text-[16px] text-black text-center top-[2852px] w-[207px]" data-node-id="136:79">
+          “It’s hard to understand the real value of a points transfer — will I actually save money?”
+        </p>
+        <div className="absolute h-[175px] left-[calc(50%+16px)] top-[2960px] w-[262px]" data-node-id="136:53" data-name="Jasmine’s thoughtful balance-7 1">
+          <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgJasminesThoughtfulBalance71} />
+        </div>
+        <div className="absolute h-[200px] left-[calc(75%-14px)] top-[2929px] w-[227px]" data-node-id="143:10" data-name="Professional checking a group chat 1">
+          <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgProfessionalCheckingAGroupChat1} />
+        </div>
+      </div>
+      <div className="[word-break:break-word] absolute contents left-[120px] not-italic top-[2545px]" data-node-id="413:73" data-name="Left Side Nav - Methodology">
+        <p className="absolute font-['Inter:Bold'] font-bold leading-[28px] left-[120px] text-[16px] text-black top-[2614px] w-[136px]" data-node-id="136:36">
+          Interviews
+        </p>
+        <p className="absolute font-['Inter:Regular'] font-normal leading-[28px] left-[120px] text-[16px] text-black top-[2647px] w-[136px]" data-node-id="136:89">
+          Research
+        </p>
+        <p className="absolute font-['Inter:Regular'] font-normal leading-[28px] left-[120px] text-[16px] text-black top-[2680px] w-[136px]" data-node-id="136:90">
+          Design
+        </p>
+        <p className="absolute font-['Inter:Regular'] font-normal leading-[28px] left-[120px] text-[16px] text-black top-[2713px] w-[136px]" data-node-id="136:91">
+          Retrospective
+        </p>
+        <div className="-translate-y-1/2 absolute flex flex-col font-['Fira_Mono:Regular'] justify-center leading-[0] left-[120px] text-[#60676c] text-[20px] top-[2557px] whitespace-nowrap" data-node-id="136:45">
+          <p className="leading-[1.2]">METHODOLOGY</p>
+        </div>
+      </div>
+      <div className="absolute contents left-[120px] top-[2244px]" data-node-id="413:71" data-name="Goals Section">
+        <div className="absolute h-0 left-[calc(41.67%+49px)] top-[2346px] w-[63px]" data-node-id="130:33">
+          <div className="absolute inset-[-1px_0_0_0]">
+            <img alt="" className="block max-w-none size-full" src={imgLine65} />
+          </div>
+        </div>
+        <div className="absolute h-0 left-[calc(66.67%-3px)] top-[2346px] w-[63px]" data-node-id="130:34">
+          <div className="absolute inset-[-1px_0_0_0]">
+            <img alt="" className="block max-w-none size-full" src={imgLine65} />
+          </div>
+        </div>
+        <div className="absolute left-[calc(25%+76px)] size-[195px] top-[2244px]" data-node-id="128:19">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse12} />
+        </div>
+        <div className="absolute left-[calc(50%+15px)] size-[195px] top-[2244px]" data-node-id="128:20">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse12} />
+        </div>
+        <div className="absolute left-[calc(75%-33px)] size-[195px] top-[2244px]" data-node-id="128:21">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse12} />
+        </div>
+        <p className="[word-break:break-word] absolute font-['Inter:Bold'] font-bold h-[76px] leading-[1.05] left-[120px] not-italic text-[38px] text-black top-[2308px] w-[472px]" data-node-id="128:18">
+          Goals
+        </p>
+        <p className="-translate-x-1/2 [word-break:break-word] absolute font-['Inter:Regular'] font-normal leading-[22px] left-[calc(25%+173px)] not-italic text-[15px] text-black text-center top-[2337px] w-[170px]" data-node-id="128:23">
+          One view of
+          <br aria-hidden />
+          all rewards
+        </p>
+        <p className="-translate-x-1/2 [word-break:break-word] absolute font-['Inter:Regular'] font-normal leading-[22px] left-[calc(50%+113px)] not-italic text-[15px] text-black text-center top-[2337px] w-[170px]" data-node-id="130:28">
+          Easy booking
+          <br aria-hidden />
+          comparisons
+        </p>
+        <div className="-translate-x-1/2 [word-break:break-word] absolute font-['Inter:Regular'] font-normal leading-[0] left-[calc(75%+65px)] not-italic text-[15px] text-black text-center top-[2347px] w-[170px]" data-node-id="130:30">
+          <p className="leading-[22px] mb-0">Certainty of</p>
+          <p className="leading-[22px]">best value</p>
+        </div>
+        <div className="-translate-x-1/2 -translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Fira_Mono:Medium'] justify-center leading-[0] left-[calc(75%+65px)] not-italic text-[#40b3fc] text-[18px] text-center top-[2313px] whitespace-nowrap" data-node-id="130:31">
+          <p className="leading-[1.2]">
+            BUILD
+            <br aria-hidden />
+            CONFIDENCE
+          </p>
+        </div>
+        <div className="-translate-x-1/2 -translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Fira_Mono:Medium'] justify-center leading-[0] left-[calc(25%+172.5px)] not-italic text-[#40b3fc] text-[18px] text-center top-[2314px] whitespace-nowrap" data-node-id="128:26">
+          <p className="leading-[1.2]">SIMPLIFY</p>
+        </div>
+        <div className="-translate-x-1/2 -translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Fira_Mono:Medium'] justify-center leading-[0] left-[calc(50%+113px)] not-italic text-[#40b3fc] text-[18px] text-center top-[2314px] whitespace-nowrap" data-node-id="130:29">
+          <p className="leading-[1.2]">CLARIFY</p>
+        </div>
+      </div>
+      <div className="[word-break:break-word] absolute contents left-[120px] not-italic text-black top-[1789px]" data-node-id="413:54" data-name="Challlenge Section">
+        <p className="absolute font-['Instrument_Sans:Bold'] font-bold leading-[0] left-[calc(50%+16px)] text-[0px] top-[2089px] w-[584px]" data-node-id="90:28" style={{ fontVariationSettings: '"wdth" 100' }}>
+          <span className="font-['Inter:Bold'] leading-[26px] text-[16px]">Groups can’t pool rewards</span>
+          <span className="font-['Inter:Bold'] leading-[26px] text-[22px]">
+            <br aria-hidden />
+          </span>
+          <span className="font-['Inter:Regular'] font-normal leading-[26px] text-[16px]">Friends may have significant rewards collectively, but few tools show what becomes possible when their points are considered together.</span>
+        </p>
+        <p className="absolute font-['Instrument_Sans:Bold'] font-bold leading-[0] left-[calc(50%+16px)] text-[0px] top-[1988px] w-[584px]" data-node-id="90:27" style={{ fontVariationSettings: '"wdth" 100' }}>
+          <span className="font-['Inter:Bold'] leading-[26px] text-[16px]">Finding the best redemption requires expertise</span>
+          <span className="font-['Inter:Bold'] leading-[26px] text-[22px]">
+            <br aria-hidden />
+          </span>
+          <span className="font-['Inter:Regular'] font-normal leading-[26px] text-[16px]">Comparing cash, points, transfer partners, and booking portals means navigating different values, rules, and systems.</span>
+        </p>
+        <p className="absolute font-['Instrument_Sans:Bold'] font-bold leading-[0] left-[calc(50%+16px)] text-[0px] top-[1887px] w-[584px]" data-node-id="90:26" style={{ fontVariationSettings: '"wdth" 100' }}>
+          <span className="font-['Inter:Bold'] leading-[26px] text-[16px]">Scattered rewards</span>
+          <span className="font-['Inter:Bold'] leading-[26px] text-[22px]">
+            <br aria-hidden />
+          </span>
+          <span className="font-['Inter:Regular'] font-normal leading-[26px] text-[16px]">Travelers accumulate points across credit cards, airlines, and hotels without a clear view of what they can unlock together.</span>
+        </p>
+        <p className="absolute font-['Inter:Regular'] font-normal leading-[26px] left-[calc(50%+14px)] text-[16px] top-[1789px] w-[586px]" data-node-id="123:17">
+          Point.ly began as a startup concept from a United Airlines manager who wanted to give travelers one view of their rewards. Travelers face three problems:
+        </p>
+        <div className="absolute font-['Inter:Bold'] font-bold h-[76px] leading-[0] left-[120px] text-[38px] top-[1789px] w-[472px] whitespace-pre-wrap" data-node-id="90:20">
+          <p className="leading-[1.05] mb-0">{`The  `}</p>
+          <p className="leading-[1.05]">Challenge</p>
+        </div>
+      </div>
+      <div className="absolute contents left-[calc(25%+65px)] top-[4364px]" data-node-id="553:29">
+        <div className="absolute h-[40px] left-[calc(75%-31px)] top-[4557px] w-[118px]" data-node-id="145:126">
+          <div className="absolute h-[35px] left-0 top-[3px] w-[104px]" data-node-id="145:113" data-name="Minimalist point.me Wordmark Logo 2">
+            <div className="absolute inset-0 overflow-hidden pointer-events-none">
+              <img alt="" className="absolute h-[166.67%] left-[-33.44%] max-w-none top-[-33.33%] w-[166.88%]" src={imgMinimalistPointMeWordmarkLogo2} />
+            </div>
+          </div>
+        </div>
+        <div className="absolute h-[26px] left-[calc(58.33%+23px)] top-[4496px] w-[105px]" data-node-id="145:114" data-name="pointsyeah 2">
+          <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgPointsyeah2} />
+        </div>
+        <div className="absolute h-[21px] left-[calc(25%+127px)] top-[4501px] w-[106px]" data-node-id="145:115" data-name="seats-aero 2">
+          <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgSeatsAero2} />
+        </div>
+        <div className="absolute h-[17px] left-[calc(41.67%+76px)] top-[4505px] w-[104px]" data-node-id="145:116" data-name="roame 2">
+          <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgRoame2} />
+        </div>
+        <div className="absolute h-[62px] left-[calc(41.67%+61px)] top-[4548px] w-[125px]" data-node-id="145:117" data-name="AwardWallet Logo on White 2">
+          <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgAwardWalletLogoOnWhite2} />
+        </div>
+        <div className="absolute h-[33px] left-[calc(25%+130px)] top-[4559px] w-[103px]" data-node-id="145:120" data-name="maxmypoint 2">
+          <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgMaxmypoint2} />
+        </div>
+        <div className="absolute h-[24px] left-[calc(75%-30px)] top-[4502px] w-[103px]" data-node-id="145:121" data-name="awardtool 2">
+          <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgAwardtool2} />
+        </div>
+        <div className="absolute h-[48px] left-[calc(58.33%+6px)] top-[4552px] w-[145px]" data-node-id="145:123" data-name="The Points Guy Logo 2">
+          <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgThePointsGuyLogo2} />
+        </div>
+        <div className="[word-break:break-word] absolute contents left-[calc(25%+65px)] not-italic text-black top-[4364px]" data-node-id="553:27">
+          <p className="absolute font-['Inter:Bold'] font-bold leading-[1.15] left-[calc(25%+65px)] text-[21px] top-[4364px] w-[845px]" data-node-id="145:125">
+            Competitive Analysis - Learning from Existing Solutions
+          </p>
+          <p className="absolute font-['Inter:Regular'] font-normal leading-[22px] left-[calc(25%+66px)] text-[16px] top-[4403px] w-[822px]" data-node-id="143:74">
+            We compared rewards platforms across award search, balance tracking, and redemption guidance to understand how they help travelers find and evaluate options.
+          </p>
+        </div>
+        <p className="[word-break:break-word] absolute font-['Inter:Bold'] font-bold leading-[1.15] left-[calc(25%+65px)] not-italic text-[21px] text-black top-[5250px] w-[845px]" data-node-id="145:134">
+          Key Insights and Opportunities
+        </p>
+        <p className="[word-break:break-word] absolute font-['Inter:Regular'] font-normal h-[26px] leading-[26px] left-[calc(25%+66px)] not-italic text-[16px] text-black top-[5314px] w-[822px]" data-node-id="145:135">{` `}</p>
+        <div className="absolute bg-[#e7ef52] h-[249px] left-[calc(58.33%+42px)] rounded-[8px] top-[5307px] w-[439px]" data-node-id="348:3" data-name="Points Box" />
+        <div className="absolute bg-[#e7ef52] h-[249px] left-[calc(58.33%+42px)] rounded-[8px] top-[5573px] w-[439px]" data-node-id="348:10" data-name="Points Box" />
+        <div className="absolute bg-[#e7ef52] h-[249px] left-[calc(25%+67px)] rounded-[8px] top-[5573px] w-[439px]" data-node-id="348:14" data-name="Points Box" />
+        <div className="absolute bg-[#e7ef52] h-[249px] left-[calc(25%+65px)] rounded-[8px] top-[5307px] w-[439px]" data-node-id="348:6" data-name="Points Box" />
+        <p className="[word-break:break-word] absolute font-['Inter:Regular'] font-normal h-[91px] leading-[24px] left-[calc(66.67%+39px)] not-italic text-[16px] text-black top-[5401px] w-[282px]" data-node-id="145:138">
+          Finding an available flight was only the first step. Travelers still had to navigate transfer partners and program rules to judge whether it was a worthwhile redemption.
+        </p>
+        <p className="[word-break:break-word] absolute font-['Inter:Regular'] font-normal h-[91px] leading-[24px] left-[calc(66.67%+39px)] not-italic text-[16px] text-black top-[5666px] w-[269px]" data-node-id="348:11">
+          Instead of a flat “not enough points,” provide a list of creative ways to close the gap, such as current promos and affiliated points programs.
+          <br aria-hidden />
+          <br aria-hidden />
+        </p>
+        <p className="[word-break:break-word] absolute font-['Inter:Regular'] font-normal h-[91px] leading-[24px] left-[calc(33.33%+64px)] not-italic text-[16px] text-black top-[5666px] w-[269px]" data-node-id="348:15">
+          For people planning together, looking at combined resources rather than individual balances could open travel options
+        </p>
+        <p className="[word-break:break-word] absolute font-['Inter:Regular'] font-normal h-[91px] leading-[24px] left-[calc(33.33%+62px)] not-italic text-[16px] text-black top-[5406px] w-[277px] whitespace-pre-wrap" data-node-id="348:7">
+          {`Knowing you have 80,000 points lacks meaning unless you know what they can book and whether transferring them provides `}
+          <br aria-hidden />
+          better value.
+        </p>
+        <p className="[word-break:break-word] absolute font-['Inter:Bold'] font-bold leading-[24px] left-[calc(66.67%+39px)] not-italic text-[16px] text-black top-[5343px] w-[296px] whitespace-pre-wrap" data-node-id="348:5">
+          {`Insight: Maximizing points `}
+          <br aria-hidden />
+          required expertise.
+        </p>
+        <p className="[word-break:break-word] absolute font-['Inter:Bold'] font-bold leading-[24px] left-[calc(66.67%+39px)] not-italic text-[16px] text-black top-[5608px] w-[296px] whitespace-pre-wrap" data-node-id="348:12">
+          {`Opportunity: Provide ideas to `}
+          <br aria-hidden />
+          close points gaps fast
+        </p>
+        <p className="[word-break:break-word] absolute font-['Inter:Bold'] font-bold leading-[24px] left-[calc(33.33%+64px)] not-italic text-[16px] text-black top-[5608px] w-[296px]" data-node-id="348:16">
+          Opportunity: Suggest ways to pool rewards for group travel
+        </p>
+        <p className="[word-break:break-word] absolute font-['Inter:Bold'] font-bold leading-[24px] left-[calc(33.33%+62px)] not-italic text-[16px] text-black top-[5343px] w-[296px]" data-node-id="348:8">
+          Insight: A points balance does not explain its travel value.
+        </p>
+        <div className="absolute left-[calc(66.67%-45px)] size-[59px] top-[5599px]" data-node-id="145:145" data-name="Four-point sparkle on white disc-2 1">
+          <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgFourPointSparkleOnWhiteDisc21} />
+        </div>
+        <div className="absolute left-[calc(25%+97px)] size-[59px] top-[5599px]" data-node-id="348:17" data-name="Four-point sparkle on white disc-2 3">
+          <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgFourPointSparkleOnWhiteDisc21} />
+        </div>
+        <div className="absolute left-[calc(66.67%-47px)] size-[59px] top-[5337px]" data-node-id="145:147" data-name="Minimal monoline lightbulb insight icon-1 2">
+          <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgMinimalMonolineLightbulbInsightIcon12} />
+        </div>
+        <div className="absolute left-[calc(25%+97px)] size-[59px] top-[5337px]" data-node-id="348:9" data-name="Minimal monoline lightbulb insight icon-1 3">
+          <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgMinimalMonolineLightbulbInsightIcon12} />
+        </div>
+        <p className="[word-break:break-word] absolute font-['Inter:Bold'] font-bold leading-[1.15] left-[calc(25%+65px)] not-italic text-[21px] text-black top-[4682px] w-[845px]" data-node-id="163:10">
+          Opportunity Maps
+        </p>
+        <p className="[word-break:break-word] absolute font-['Inter:Regular'] font-normal leading-[22px] left-[calc(25%+66px)] not-italic text-[16px] text-black top-[4721px] w-[893px]" data-node-id="163:9">
+          We mapped competitors’ features and user flows to examine how they supported discovery, comparison, and redemption, identifying friction points where travelers had to connect the steps themselves.
+        </p>
+        <div className="-translate-x-1/2 -translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Instrument_Sans:Regular'] font-normal justify-center leading-[0] left-[calc(25%+253px)] text-[16px] text-black text-center top-[5058px] w-[258px]" data-node-id="145:158" style={{ fontVariationSettings: '"wdth" 100' }}>
+          <p className="leading-[1.2]">Hotel-for-points booking (legacy brand; now part of Rocketmiles).</p>
+        </div>
+        <div className="-translate-x-1/2 -translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Instrument_Sans:Regular'] font-normal justify-center leading-[0] left-[calc(25%+253px)] text-[16px] text-black text-center top-[5058px] w-[258px]" data-node-id="145:159" style={{ fontVariationSettings: '"wdth" 100' }}>
+          <p className="leading-[1.2]">Hotel-for-points booking (legacy brand; now part of Rocketmiles).</p>
+        </div>
+        <div className="absolute h-[380px] left-[calc(25%+65px)] top-[4799px] w-[896px]" data-node-id="145:151" data-name="Screenshot 2026-09-16 at 1.04.52 PM 2">
+          <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgScreenshot20260916At10452Pm2} />
+        </div>
+      </div>
+      <div className="absolute contents left-[120px] top-[603px]" data-node-id="462:25" data-name="Screen Images">
+        <div className="absolute bg-[#88cffd] h-[384px] left-[120px] rounded-[16px] top-[1312px] w-[1200px]" data-node-id="320:51" />
+        <div className="absolute contents left-[190px] top-[1377px]" data-node-id="320:56">
+          <div className="absolute h-[237px] left-[calc(33.33%+68px)] shadow-[4px_4px_4px_0px_rgba(0,0,0,0.15)] top-[1377px] w-[342px]" data-node-id="307:12" data-name="04-points-options 1">
+            <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={img04PointsOptions1} />
+          </div>
+          <div className="absolute h-[236px] left-[190px] shadow-[4px_4px_4px_0px_rgba(0,0,0,0.15)] top-[1378px] w-[340px]" data-node-id="308:17" data-name="05-featured-stay 2">
+            <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={img05FeaturedStay2} />
+          </div>
+          <div className="absolute h-[237px] left-[calc(58.33%+69px)] shadow-[4px_4px_4px_0px_rgba(0,0,0,0.15)] top-[1377px] w-[342px]" data-node-id="308:20" data-name="08-pro-tips 2">
+            <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={img08ProTips2} />
+          </div>
+        </div>
+        <div className="absolute bg-[#88cffd] h-[655px] left-[120px] rounded-[16px] top-[603px] w-[1200px]" data-node-id="274:4" />
+        <div className="absolute contents left-[calc(50%+65px)] top-[682px]" data-node-id="175:13" data-name="Mask group">
+          <div className="absolute h-[744px] left-[calc(50%+80px)] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-15px_294px] mask-size-[488px_497px] shadow-[4px_4px_8px_0px_rgba(0,0,0,0.25)] top-[388px] w-[455px]" data-node-id="175:5" style={{ maskImage: `url("${imgFrame32}")` }} data-name="Frame 3 2">
+            <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgFrame33} />
+          </div>
+        </div>
+        <div className="absolute h-[1136px] left-[170px] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-25px_-39px] mask-size-[772px_531px] shadow-[4px_4px_4px_0px_rgba(0,0,0,0.25)] top-[766px] w-[695px]" data-node-id="320:52" style={{ maskImage: `url("${imgFrame321}")` }} data-name="Frame 3 (2) 1">
+          <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgFrame322} />
+        </div>
+      </div>
+      <div className="absolute contents left-[120px] top-[373px]" data-node-id="413:53" data-name="Project Details">
+        <div className="[word-break:break-word] absolute contents left-[120px] not-italic top-[402px]" data-node-id="123:12" data-name="Deliverable">
+          <p className="absolute font-['Inter:Regular'] font-normal leading-[22px] left-[120px] text-[15px] text-black top-[432px] w-[170px]" data-node-id="94:13">
+            High-Fidelity Protoype
+          </p>
+          <div className="-translate-y-1/2 absolute flex flex-col font-['Fira_Mono:Medium'] justify-center leading-[0] left-[120px] text-[#60676c] text-[11px] top-[408.5px] whitespace-nowrap" data-node-id="94:6">
+            <p className="leading-[1.2]">DELIVERABLE</p>
+          </div>
+        </div>
+        <div className="[word-break:break-word] absolute contents left-[calc(16.67%+140px)] not-italic top-[402px]" data-node-id="123:11" data-name="Timeline">
+          <p className="absolute font-['Inter:Regular'] font-normal leading-[22px] left-[calc(16.67%+142px)] text-[15px] text-black top-[432px] w-[170px]" data-node-id="123:9">
+            8 months +<br aria-hidden />
+            one day hackathon
+          </p>
+          <div className="-translate-y-1/2 absolute flex flex-col font-['Fira_Mono:Medium'] justify-center leading-[0] left-[calc(16.67%+140px)] text-[#60676c] text-[11px] top-[408.5px] w-[66px]" data-node-id="123:10">
+            <p className="leading-[1.2]">TIMELINE</p>
+          </div>
+        </div>
+        <div className="[word-break:break-word] absolute contents leading-[0] left-[calc(58.33%+62px)] not-italic top-[402px]" data-node-id="123:14" data-name="Methods">
+          <div className="absolute font-['Inter:Regular'] font-normal left-[calc(58.33%+62px)] text-[15px] text-black top-[432px] w-[170px] whitespace-pre-wrap" data-node-id="94:14">
+            <p className="leading-[22px] mb-0">{`10 User Interviews Competitive Analysis `}</p>
+            <p className="leading-[22px]">
+              PRD Development Prototyping
+              <br aria-hidden />
+              Usability Testing
+            </p>
+          </div>
+          <div className="-translate-y-1/2 absolute flex flex-col font-['Fira_Mono:Medium'] justify-center left-[calc(58.33%+62px)] text-[#60676c] text-[11px] top-[408.5px] whitespace-nowrap" data-node-id="94:10">
+            <p className="leading-[1.2]">METHODS</p>
+          </div>
+        </div>
+        <div className="absolute contents left-[calc(58.33%+62px)] top-[402px]" data-node-id="462:9" data-name="Methods">
+          <div className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Fira_Mono:Medium'] justify-center leading-[0] left-[calc(58.33%+62px)] not-italic text-[#60676c] text-[11px] top-[408.5px] whitespace-nowrap" data-node-id="462:11">
+            <p className="leading-[1.2]">METHODS</p>
+          </div>
+        </div>
+        <div className="[word-break:break-word] absolute contents left-[calc(83.33%-59px)] not-italic top-[402px]" data-node-id="123:13" data-name="Tools">
+          <p className="absolute font-['Inter:Regular'] font-normal leading-[22px] left-[calc(83.33%-59px)] text-[15px] text-black top-[432px] w-[81px]" data-node-id="94:16">
+            Figma
+            <br aria-hidden />
+            Cursor
+            <br aria-hidden />
+            Claude
+            <br aria-hidden />
+            Gemini
+          </p>
+          <div className="-translate-y-1/2 absolute flex flex-col font-['Fira_Mono:Medium'] justify-center leading-[0] left-[calc(83.33%-59px)] text-[#60676c] text-[11px] top-[408.5px] whitespace-nowrap" data-node-id="94:11">
+            <p className="leading-[1.2]">TOOLS</p>
+          </div>
+        </div>
+        <div className="[word-break:break-word] absolute contents left-[calc(41.67%+42px)] not-italic top-[402px]" data-node-id="123:16" data-name="Contribution">
+          <p className="absolute font-['Inter:Regular'] font-normal leading-[22px] left-[calc(41.67%+42px)] text-[15px] text-black top-[432px] w-[170px] whitespace-pre-wrap" data-node-id="94:15">
+            Project Lead
+            <br aria-hidden />
+            UX research
+            <br aria-hidden />
+            Product Strategy
+            <br aria-hidden />
+            Interface Design
+            <br aria-hidden />
+            Visual Identity
+            <br aria-hidden />
+            <br aria-hidden />
+            <br aria-hidden />
+            <br aria-hidden />
+          </p>
+          <div className="-translate-y-1/2 absolute flex flex-col font-['Fira_Mono:Medium'] justify-center leading-[0] left-[calc(41.67%+42px)] text-[#60676c] text-[11px] top-[408.5px] whitespace-nowrap" data-node-id="94:12">
+            <p className="leading-[1.2]">MY CONTRIBUTION</p>
+          </div>
+        </div>
+        <div className="absolute h-0 left-[120px] top-[373px] w-[1200px]" data-node-id="101:3">
+          <div className="absolute inset-[-0.5px_0_0_0]">
+            <img alt="" className="block max-w-none size-full" src={imgLine61} />
+          </div>
+        </div>
+      </div>
+      <div className="[word-break:break-word] absolute contents left-[120px] not-italic top-[146px]" data-node-id="499:58" data-name="Project Title/Description">
+        <div className="absolute font-['Inter:Regular'] font-normal leading-[0] left-[calc(50%+14px)] text-[26px] text-black top-[198px] w-[547px]" data-node-id="499:59">
+          <p className="leading-[34px] mb-0">Turning fragmented loyalty points into new travel possibilities</p>
+          <p className="leading-[34px]">​</p>
+        </div>
+        <p className="absolute font-['Inter:Bold'] font-bold h-[76px] leading-[1.05] left-[120px] text-[80px] text-black top-[179px] tracking-[-1.6px] w-[472px]" data-node-id="499:60">
+          Point.ly
+        </p>
+        <div className="-translate-y-1/2 absolute flex flex-col font-['Fira_Mono:Regular'] justify-center leading-[0] left-[126px] text-[#60676c] text-[18px] top-[157px] whitespace-nowrap" data-node-id="499:61">
+          <p className="leading-[1.2]">02 /</p>
+        </div>
+      </div>
+      <p className="[word-break:break-word] absolute font-['Inter:Regular'] font-normal leading-[22px] left-[calc(50%+14px)] not-italic text-[15px] text-black top-[300px] w-[263px]" data-node-id="496:20">
+        UX@Berkeley project team
+      </p>
+    </div>
+  );
+}

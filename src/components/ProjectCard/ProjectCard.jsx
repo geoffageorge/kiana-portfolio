@@ -10,6 +10,8 @@ export default function ProjectCard({ project, onSelect }) {
         <p className="project-card__number" data-figma-node={project.number === '01' ? '123:6' : '499:52'}>{project.number} /</p>
         <h3 data-figma-node={project.number === '01' ? '123:3' : '499:51'}>{project.homeTile.title}</h3>
         <p className="project-card__summary" data-figma-node={project.number === '01' ? '499:37' : '499:53'}>{project.homeTile.caption.map(line => <span key={line}>{line}</span>)}</p>
+        <span className="project-card__role-rule" data-figma-node={project.number === '01' ? '557:55' : '559:9'} aria-hidden="true" />
+        <p className="project-card__roles" data-figma-node={project.number === '01' ? '557:53' : '557:54'}>{project.homeTile.roles.map(role => <span key={role}>{role}</span>)}</p>
       </div>
     </>
   ) : (

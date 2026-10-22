@@ -1,0 +1,541 @@
+{
+  "id": "522:265",
+  "name": "About -NEW ",
+  "x": 6479,
+  "y": -20393,
+  "width": 1440,
+  "height": 1204,
+  "nodes": [
+    {
+      "id": "522:265",
+      "parent": "0:1",
+      "name": "About -NEW ",
+      "type": "FRAME",
+      "x": 0,
+      "y": 0,
+      "width": 1440,
+      "height": 1204,
+      "visible": true,
+      "isMask": false,
+      "rotation": 0
+    },
+    {
+      "id": "560:18",
+      "parent": "522:265",
+      "name": "Mask group",
+      "type": "GROUP",
+      "x": 941,
+      "y": 164,
+      "width": 269,
+      "height": 269,
+      "visible": true,
+      "isMask": false,
+      "rotation": 0
+    },
+    {
+      "id": "559:15",
+      "parent": "560:18",
+      "name": "Ellipse 16",
+      "type": "ELLIPSE",
+      "x": 941,
+      "y": 164,
+      "width": 269,
+      "height": 269,
+      "visible": true,
+      "isMask": true,
+      "rotation": 0
+    },
+    {
+      "id": "560:16",
+      "parent": "560:18",
+      "name": "portrait 1",
+      "type": "RECTANGLE",
+      "x": 859.5966796875,
+      "y": 145.498046875,
+      "width": 391.8079528808594,
+      "height": 443.3179016113281,
+      "visible": true,
+      "isMask": false,
+      "rotation": 0
+    },
+    {
+      "id": "560:19",
+      "parent": "522:265",
+      "name": "Mask group",
+      "type": "GROUP",
+      "x": 941,
+      "y": 164,
+      "width": 269,
+      "height": 269,
+      "visible": true,
+      "isMask": false,
+      "rotation": 0
+    },
+    {
+      "id": "560:20",
+      "parent": "560:19",
+      "name": "Ellipse 16",
+      "type": "ELLIPSE",
+      "x": 941,
+      "y": 164,
+      "width": 269,
+      "height": 269,
+      "visible": true,
+      "isMask": true,
+      "rotation": 0
+    },
+    {
+      "id": "560:21",
+      "parent": "560:19",
+      "name": "portrait 1",
+      "type": "RECTANGLE",
+      "x": 859,
+      "y": 147,
+      "width": 393,
+      "height": 446,
+      "visible": true,
+      "isMask": false,
+      "rotation": 0
+    },
+    {
+      "id": "522:266",
+      "parent": "522:265",
+      "name": "Growing up, people called me “Curious George” (yes, my last name is George!), and it still fits. I’m always asking questions and wanting to know more about the people around me. That curiosity led me to broadcast journalism, where I became an award-winning storyteller. Now, as a UX designer, I combine my interest in people’s experiences with storytelling and creative problem-solving to design thoughtful, intuitive products.  Currently, I’m pursuing a master’s in information management with a concentration in UX at the University of Washington’s Information School. I’m also laying the groundwork for a food and health platform for women with PCOS, using research and design to make health information clearer and more approachable.  Outside of design, you’ll find me running (one marathon and two half marathons so far), hiking, or in the kitchen baking bread and hosting themed dinner parties. I also love exploring new places and perspectives, from studying abroad in Florence and Greece to traveling around the world.  Whether I’m interviewing, designing, or hosting, it all comes back to learning people’s stories and finding creative ways to bring them together.",
+      "type": "TEXT",
+      "x": 224,
+      "y": 295,
+      "width": 626,
+      "height": 520,
+      "visible": true,
+      "isMask": false,
+      "rotation": 0,
+      "text": "Growing up, people called me “Curious George” (yes, my last name is George!), and it still fits. I’m always asking questions and wanting to know more about the people around me. That curiosity led me to broadcast journalism, where I became an award-winning storyteller. Now, as a UX designer, I combine my interest in people’s experiences with storytelling and creative problem-solving to design thoughtful, intuitive products.  Currently, I’m pursuing a master’s in information management with a concentration in UX at the University of Washington’s Information School. I’m also laying the groundwork for a food and health platform for women with PCOS, using research and design to make health information clearer and more approachable.  Outside of design, you’ll find me running (one marathon and two half marathons so far), hiking, or in the kitchen baking bread and hosting themed dinner parties. I also love exploring new places and perspectives, from studying abroad in Florence and Greece to traveling around the world. \nWhether I’m interviewing, designing, or hosting, it all comes back to learning people’s stories and finding creative ways to bring them together.\n",
+      "fontName": {
+        "family": "Inter",
+        "style": "Regular",
+        "variationSettings": {
+          "wght": 400,
+          "slnt": 0
+        }
+      },
+      "fontSize": 16,
+      "lineHeight": {
+        "unit": "PIXELS",
+        "value": 26
+      }
+    },
+    {
+      "id": "522:267",
+      "parent": "522:265",
+      "name": "EMAIL kikig6204@gmail.com  PHONE 650-817-5454  ",
+      "type": "TEXT",
+      "x": 1005,
+      "y": 528,
+      "width": 659,
+      "height": 208,
+      "visible": true,
+      "isMask": false,
+      "rotation": 0,
+      "text": "EMAIL\nkikig6204@gmail.com  PHONE 650-817-5454  \n",
+      "fontName": {
+        "family": "Inter",
+        "style": "Regular",
+        "variationSettings": {
+          "wght": 400,
+          "slnt": 0
+        }
+      },
+      "lineHeight": {
+        "unit": "PIXELS",
+        "value": 26
+      }
+    },
+    {
+      "id": "522:268",
+      "parent": "522:265",
+      "name": "Curious George, Literally",
+      "type": "TEXT",
+      "x": 222,
+      "y": 224,
+      "width": 471,
+      "height": 44,
+      "visible": true,
+      "isMask": false,
+      "rotation": 0,
+      "text": "Curious George, Literally",
+      "fontName": {
+        "family": "Inter",
+        "style": "Bold",
+        "variationSettings": {
+          "wght": 700,
+          "slnt": 0
+        }
+      },
+      "fontSize": 36,
+      "lineHeight": {
+        "unit": "PIXELS",
+        "value": 44
+      }
+    },
+    {
+      "id": "522:269",
+      "parent": "522:265",
+      "name": "Let’s Connect",
+      "type": "TEXT",
+      "x": 1003,
+      "y": 469,
+      "width": 471,
+      "height": 44,
+      "visible": true,
+      "isMask": false,
+      "rotation": 0,
+      "text": "Let’s Connect",
+      "fontName": {
+        "family": "Inter",
+        "style": "Bold",
+        "variationSettings": {
+          "wght": 700,
+          "slnt": 0
+        }
+      },
+      "fontSize": 21,
+      "lineHeight": {
+        "unit": "PIXELS",
+        "value": 44
+      }
+    },
+    {
+      "id": "522:270",
+      "parent": "522:265",
+      "name": "Rectangle 139",
+      "type": "RECTANGLE",
+      "x": 363,
+      "y": 831,
+      "width": 115,
+      "height": 31,
+      "visible": true,
+      "isMask": false,
+      "rotation": 0
+    },
+    {
+      "id": "522:271",
+      "parent": "522:265",
+      "name": "Rectangle 140",
+      "type": "VECTOR",
+      "x": 224,
+      "y": 831,
+      "width": 99,
+      "height": 31,
+      "visible": true,
+      "isMask": false,
+      "rotation": 0
+    },
+    {
+      "id": "522:272",
+      "parent": "522:265",
+      "name": "LINKEDIN ↗",
+      "type": "TEXT",
+      "x": 379,
+      "y": 835,
+      "width": 104,
+      "height": 22,
+      "visible": true,
+      "isMask": false,
+      "rotation": 0,
+      "text": "LINKEDIN ↗ ",
+      "fontName": {
+        "family": "Fira Mono",
+        "style": "Regular"
+      },
+      "fontSize": 14,
+      "lineHeight": {
+        "unit": "PERCENT",
+        "value": 120.00000476837158
+      }
+    },
+    {
+      "id": "522:273",
+      "parent": "522:265",
+      "name": "RESUME ↗",
+      "type": "TEXT",
+      "x": 236,
+      "y": 837,
+      "width": 76,
+      "height": 18,
+      "visible": true,
+      "isMask": false,
+      "rotation": 0,
+      "text": "RESUME ↗ ",
+      "fontName": {
+        "family": "Fira Mono",
+        "style": "Regular"
+      },
+      "fontSize": 14,
+      "lineHeight": {
+        "unit": "PERCENT",
+        "value": 120.00000476837158
+      }
+    },
+    {
+      "id": "522:277",
+      "parent": "522:265",
+      "name": "ABOUT ",
+      "type": "TEXT",
+      "x": 224,
+      "y": 183,
+      "width": 204,
+      "height": 53,
+      "visible": true,
+      "isMask": false,
+      "rotation": 0,
+      "text": "ABOUT ",
+      "fontName": {
+        "family": "Inter",
+        "style": "Regular",
+        "variationSettings": {
+          "wght": 400,
+          "slnt": 0
+        }
+      },
+      "lineHeight": {
+        "unit": "PIXELS",
+        "value": 26
+      }
+    },
+    {
+      "id": "557:29",
+      "parent": "522:265",
+      "name": "Logo + Navigation",
+      "type": "GROUP",
+      "x": 128,
+      "y": 56,
+      "width": 1183,
+      "height": 38,
+      "visible": true,
+      "isMask": false,
+      "rotation": 0
+    },
+    {
+      "id": "557:30",
+      "parent": "557:29",
+      "name": "Logo 2",
+      "type": "FRAME",
+      "x": 128,
+      "y": 56,
+      "width": 57,
+      "height": 38,
+      "visible": true,
+      "isMask": false,
+      "rotation": 0
+    },
+    {
+      "id": "557:31",
+      "parent": "557:30",
+      "name": "Vector",
+      "type": "VECTOR",
+      "x": 131.13720703125,
+      "y": 57.66015625,
+      "width": 16.4162540435791,
+      "height": 16.41814613342285,
+      "visible": true,
+      "isMask": false,
+      "rotation": 0
+    },
+    {
+      "id": "557:32",
+      "parent": "557:30",
+      "name": "Vector",
+      "type": "VECTOR",
+      "x": 148.95849609375,
+      "y": 57.66015625,
+      "width": 16.418912887573242,
+      "height": 16.41814613342285,
+      "visible": true,
+      "isMask": false,
+      "rotation": 0
+    },
+    {
+      "id": "557:33",
+      "parent": "557:30",
+      "name": "Vector",
+      "type": "VECTOR",
+      "x": 148.95852851867676,
+      "y": 75.36701011657715,
+      "width": 16.418912887573242,
+      "height": 16.41814613342285,
+      "visible": true,
+      "isMask": false,
+      "rotation": 180
+    },
+    {
+      "id": "557:34",
+      "parent": "557:30",
+      "name": "Vector",
+      "type": "VECTOR",
+      "x": 166.5859375,
+      "y": 75.369140625,
+      "width": 16.418914794921875,
+      "height": 16.41814613342285,
+      "visible": true,
+      "isMask": false,
+      "rotation": 0
+    },
+    {
+      "id": "557:35",
+      "parent": "557:30",
+      "name": "Vector",
+      "type": "VECTOR",
+      "x": 131.1369686126709,
+      "y": 75.36701011657715,
+      "width": 16.4162540435791,
+      "height": 16.41814613342285,
+      "visible": true,
+      "isMask": false,
+      "rotation": 180
+    },
+    {
+      "id": "557:36",
+      "parent": "557:30",
+      "name": "Vector",
+      "type": "VECTOR",
+      "x": 165.478515625,
+      "y": 65.162109375,
+      "width": 17.521299362182617,
+      "height": 8.916956901550293,
+      "visible": true,
+      "isMask": false,
+      "rotation": 0
+    },
+    {
+      "id": "557:37",
+      "parent": "557:29",
+      "name": "KIANA GEORGE / UX DESIGN + INSIGHTS",
+      "type": "TEXT",
+      "x": 208,
+      "y": 70,
+      "width": 324,
+      "height": 18,
+      "visible": true,
+      "isMask": false,
+      "rotation": 0,
+      "text": "KIANA GEORGE  / UX DESIGN + INSIGHTS ",
+      "fontName": {
+        "family": "Fira Mono",
+        "style": "Regular"
+      },
+      "fontSize": 15,
+      "lineHeight": {
+        "unit": "PERCENT",
+        "value": 120.00000476837158
+      }
+    },
+    {
+      "id": "557:38",
+      "parent": "557:29",
+      "name": "ABOUT",
+      "type": "TEXT",
+      "x": 1056,
+      "y": 70,
+      "width": 45,
+      "height": 18,
+      "visible": true,
+      "isMask": false,
+      "rotation": 0,
+      "text": "ABOUT",
+      "fontName": {
+        "family": "Fira Mono",
+        "style": "Regular"
+      },
+      "fontSize": 15,
+      "lineHeight": {
+        "unit": "PERCENT",
+        "value": 120.00000476837158
+      }
+    },
+    {
+      "id": "557:39",
+      "parent": "557:29",
+      "name": "RESUME",
+      "type": "TEXT",
+      "x": 1147,
+      "y": 70,
+      "width": 54,
+      "height": 18,
+      "visible": true,
+      "isMask": false,
+      "rotation": 0,
+      "text": "RESUME",
+      "fontName": {
+        "family": "Fira Mono",
+        "style": "Regular"
+      },
+      "fontSize": 15,
+      "lineHeight": {
+        "unit": "PERCENT",
+        "value": 120.00000476837158
+      }
+    },
+    {
+      "id": "557:40",
+      "parent": "557:29",
+      "name": "CONTACT",
+      "type": "TEXT",
+      "x": 1248,
+      "y": 70,
+      "width": 63,
+      "height": 18,
+      "visible": true,
+      "isMask": false,
+      "rotation": 0,
+      "text": "CONTACT",
+      "fontName": {
+        "family": "Fira Mono",
+        "style": "Regular"
+      },
+      "fontSize": 15,
+      "lineHeight": {
+        "unit": "PERCENT",
+        "value": 120.00000476837158
+      }
+    },
+    {
+      "id": "557:47",
+      "parent": "522:265",
+      "name": "Mask group",
+      "type": "GROUP",
+      "x": 0,
+      "y": 995,
+      "width": 1468.0975341796875,
+      "height": 209,
+      "visible": true,
+      "isMask": false,
+      "rotation": 0
+    },
+    {
+      "id": "557:45",
+      "parent": "557:47",
+      "name": "Rectangle 148",
+      "type": "RECTANGLE",
+      "x": 0,
+      "y": 995,
+      "width": 1468.0975341796875,
+      "height": 209,
+      "visible": true,
+      "isMask": true,
+      "rotation": 0
+    },
+    {
+      "id": "557:10",
+      "parent": "557:47",
+      "name": "LinkedInBanner2 1",
+      "type": "RECTANGLE",
+      "x": 0,
+      "y": 995,
+      "width": 1669.9393310546875,
+      "height": 209.25819396972656,
+      "visible": true,
+      "isMask": false,
+      "rotation": 0
+    }
+  ]
+}

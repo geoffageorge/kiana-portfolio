@@ -1,7 +1,7 @@
 .selected-work { padding-bottom: 134px; }
 .selected-work .section-heading { margin-bottom: 32px; }
 .selected-work .section-heading h2 { margin-bottom: 8px; font: 700 38px/1.05 'Helvetica Neue', Helvetica, Arial, sans-serif; letter-spacing: 0; }
-.selected-work .section-heading p { font: 400 15px/22px var(--portfolio-mono); color: #000; }
+.selected-work .section-heading p { font: 400 18px/22px var(--portfolio-mono); color: #000; }
 /* Figma Line 69 has a subpixel intrinsic SVG height; use a native border for WebKit. */
 .selected-work__grid { position: relative; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 27px; padding-top: 27px; }
 .selected-work__grid::before { content: ''; position: absolute; top: 0; left: 4px; right: 0; border-top: .5px solid #000; }

@@ -1,0 +1,158 @@
+const imgImgSlide62 = "/assets/home-figma/img-slide62.png";
+const imgAppleIntelligenceBqi8Tl754CfmLarge2X3 = "/assets/home-figma/apple-intelligence-bqi8-tl754-cfm-large2-x3.png";
+const imgFrame322 = "/assets/home-figma/frame322.png";
+const imgImgSlide61 = "/assets/home-figma/img-slide61.svg";
+const imgLogo2 = "/assets/home-figma/logo2.svg";
+const imgLine69 = "/assets/home-figma/line69.svg";
+const imgAppleIntelligenceBqi8Tl754CfmLarge2X2 = "/assets/website-v4-figma/tiles-imgAppleIntelligenceBqi8Tl754CfmLarge2X2.svg";
+const imgFrame321 = "/assets/website-v4-figma/tiles-imgFrame321.svg";
+const imgVector4 = "/assets/website-v4-figma/tiles-imgVector4.svg";
+const imgVector5 = "/assets/website-v4-figma/tiles-imgVector5.svg";
+
+export default function SelectedWorksTiles() {
+  return (
+    <div className="bg-white relative size-full" data-node-id="28:2" data-name="Selected Works Tiles">
+      <div className="absolute contents left-[129px] top-[869px]" data-node-id="499:26" data-name="Mask group" />
+      <div className="absolute contents left-[129px] top-[881px]" data-node-id="499:35" data-name="Mask group">
+        <div className="absolute flex h-[744px] items-center justify-center left-[-88px] top-[841px] w-[1363px]" data-node-id="499:22">
+          <div className="-scale-y-100 flex-none rotate-180">
+            <div className="h-[744px] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[217px_40px] mask-size-[577px_577px] relative w-[1363px]" style={{ maskImage: `url("${imgImgSlide61}")` }} data-name="img_slide_6 1">
+              <div className="absolute inset-0 overflow-hidden pointer-events-none">
+                <img alt="" className="absolute h-[100.01%] left-[-10.87%] max-w-none top-[4.57%] w-full" src={imgImgSlide62} />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Helvetica_Neue:Bold'] justify-center leading-[0] left-[129px] not-italic text-[38px] text-black top-[772px] w-[472px]" data-node-id="28:4">
+        <p className="leading-[1.05]">Select Work</p>
+      </div>
+      <div className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Fira_Mono:Regular'] justify-center leading-[0] left-[130px] not-italic text-[18px] text-black top-[811px] whitespace-nowrap" data-node-id="28:15">
+        <p className="leading-[1.2]">CASE STUDIES</p>
+      </div>
+      <div className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Instrument_Sans:SemiBold'] font-semibold h-[73px] justify-center leading-[0] left-[129px] text-[36px] text-white top-[1679.5px] w-[472px]" data-node-id="28:17" style={{ fontVariationSettings: '"wdth" 100' }}>
+        <p className="leading-[1.05]">Select Work</p>
+      </div>
+      <div className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Fira_Mono:Regular'] justify-center leading-[0] left-[130px] not-italic text-[14px] text-white top-[1711.5px] whitespace-nowrap" data-node-id="28:26">
+        <p className="leading-[1.2]">CASE STUDIES</p>
+      </div>
+      <div className="absolute bg-[#f7f7f7] h-[234px] left-0 top-[1592px] w-[1440px]" data-node-id="28:28" />
+      <div className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Fira_Mono:Regular'] justify-center leading-[0] left-[1199px] not-italic text-[14px] text-black top-[1677.5px] whitespace-nowrap" data-node-id="28:29">
+        <p className="leading-[1.2]">{`LINKEDIN ↗ `}</p>
+      </div>
+      <div className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Fira_Mono:Regular'] justify-center leading-[0] left-[1220px] not-italic text-[15px] text-black top-[1706px] whitespace-nowrap" data-node-id="28:30">
+        <p className="leading-[1.2]">EMAIL ↗</p>
+      </div>
+      <div className="absolute h-[38px] left-[130px] top-[1653px] w-[57px]" data-node-id="28:31" data-name="Logo 2">
+        <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgLogo2} />
+      </div>
+      <div className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Fira_Mono:Regular'] justify-center leading-[0] left-[210px] not-italic text-[15px] text-black top-[1676px] whitespace-nowrap" data-node-id="28:38">
+        <p className="leading-[1.2] whitespace-pre">{`KIANA GEORGE  / UX DESIGN + INSIGHTS `}</p>
+      </div>
+      <div className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Instrument_Sans:SemiBold'] font-semibold h-[73px] justify-center leading-[0] left-[129px] text-[36px] text-white top-[1679.5px] w-[472px]" data-node-id="523:9" style={{ fontVariationSettings: '"wdth" 100' }}>
+        <p className="leading-[1.05]">Select Work</p>
+      </div>
+      <div className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Fira_Mono:Regular'] justify-center leading-[0] left-[130px] not-italic text-[14px] text-white top-[1711.5px] whitespace-nowrap" data-node-id="523:10">
+        <p className="leading-[1.2]">CASE STUDIES</p>
+      </div>
+      <div className="absolute bg-[#f7f7f7] h-[234px] left-0 top-[1592px] w-[1440px]" data-node-id="523:11" />
+      <div className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Fira_Mono:Regular'] justify-center leading-[0] left-[1199px] not-italic text-[14px] text-black top-[1677.5px] whitespace-nowrap" data-node-id="523:12">
+        <p className="leading-[1.2]">{`LINKEDIN ↗ `}</p>
+      </div>
+      <div className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Fira_Mono:Regular'] justify-center leading-[0] left-[1220px] not-italic text-[15px] text-black top-[1706px] whitespace-nowrap" data-node-id="523:13">
+        <p className="leading-[1.2]">EMAIL ↗</p>
+      </div>
+      <div className="absolute h-[38px] left-[130px] top-[1653px] w-[57px]" data-node-id="523:14" data-name="Logo 3">
+        <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgLogo2} />
+      </div>
+      <div className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Fira_Mono:Regular'] justify-center leading-[0] left-[210px] not-italic text-[15px] text-black top-[1676px] whitespace-nowrap" data-node-id="523:21">
+        <p className="leading-[1.2] whitespace-pre">{`KIANA GEORGE  / UX DESIGN + INSIGHTS `}</p>
+      </div>
+      <div className="absolute h-0 left-[133px] top-[854px] w-[1177px]" data-node-id="499:21">
+        <div className="absolute inset-[-0.5px_0_0_0]">
+          <img alt="" className="block max-w-none size-full" src={imgLine69} />
+        </div>
+      </div>
+      <div className="absolute bg-[#88cffd] left-[733px] rounded-[16px] size-[577px] top-[881px]" data-node-id="499:24" />
+      <p className="[word-break:break-word] absolute font-['Inter:Bold'] font-bold h-[76px] leading-[1.05] left-[173px] not-italic text-[50px] text-white top-[965px] tracking-[-1px] w-[472px]" data-node-id="123:3">
+        Obayashi
+      </p>
+      <div className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Fira_Mono:Regular'] justify-center leading-[0] left-[179px] not-italic text-[18px] text-white top-[943px] whitespace-nowrap" data-node-id="123:6">
+        <p className="leading-[1.2]">01 /</p>
+      </div>
+      <div className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Fira_Mono:Regular'] justify-center leading-[0] left-[179px] not-italic text-[18px] text-white top-[1074px] whitespace-nowrap" data-node-id="499:37">
+        <p className="leading-[25px] whitespace-pre">
+          {`NORTH AMERICAN `}
+          <br aria-hidden />
+          {`WEBSITE `}
+        </p>
+      </div>
+      <p className="[word-break:break-word] absolute font-['Inter:Bold'] font-bold leading-[1.05] left-[774px] not-italic text-[50px] text-black top-[965px] tracking-[-1px] w-[472px]" data-node-id="499:51">
+        Point.ly
+      </p>
+      <div className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Fira_Mono:Regular'] justify-center leading-[0] left-[780px] not-italic text-[18px] text-black top-[943px] w-[44px]" data-node-id="499:52">
+        <p className="leading-[1.2]">02 /</p>
+      </div>
+      <div className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Fira_Mono:Regular'] justify-center leading-[0] left-[780px] not-italic text-[18px] text-black top-[1074px] w-[162px]" data-node-id="499:53">
+        <p className="leading-[25px]">
+          HIGH-FIDELITY
+          <br aria-hidden />
+          PROTOTYPE
+        </p>
+      </div>
+      <div className="absolute contents left-[909.19px] top-[1041px]" data-node-id="499:47" data-name="Mask group">
+        <div className="absolute contents left-[953.49px] top-[1092.37px]" data-node-id="499:50">
+          <div className="absolute h-[308.375px] left-[953.49px] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-44.301px_-51.37px] mask-size-[400.81px_376.992px] top-[1092.37px] w-[506.395px]" data-node-id="499:43" style={{ maskImage: `url("${imgAppleIntelligenceBqi8Tl754CfmLarge2X2}")` }} data-name="apple_intelligence__bqi8tl754cfm_large_2x 2">
+            <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgAppleIntelligenceBqi8Tl754CfmLarge2X3} />
+          </div>
+        </div>
+        <div className="absolute contents left-[981.76px] top-[1084.68px]" data-node-id="499:45" data-name="Mask group">
+          <div className="absolute h-[679.744px] left-[1000.37px] mask-position-[-91.185px_-61.172px,_-18.618px_-17.49px] mask-size-[400.81px_376.992px,_445.399px_286.083px] shadow-[4px_4px_4px_0px_rgba(0,0,0,0.25)] top-[1102.17px] w-[415.833px]" data-node-id="499:42" style={{ maskImage: `url("${imgAppleIntelligenceBqi8Tl754CfmLarge2X2}"), url("${imgFrame321}")` }} data-name="Frame 3 (2) 1">
+            <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgFrame322} />
+          </div>
+        </div>
+      </div>
+      <p className="[word-break:break-word] absolute font-['Inter:Regular'] font-normal leading-[0] left-[179px] not-italic text-[15px] text-black top-[1157px] w-[170px] whitespace-pre-wrap" data-node-id="557:53">
+        <span className="leading-[23px] text-white">
+          Project Lead
+          <br aria-hidden />
+          UX research
+          <br aria-hidden />
+          Product Strategy
+          <br aria-hidden />
+          Interface Design
+          <br aria-hidden />
+          Visual Identity
+        </span>
+        <span className="leading-[23px]">
+          <br aria-hidden />
+          <br aria-hidden />
+          <br aria-hidden />
+          <br aria-hidden />
+        </span>
+      </p>
+      <p className="[word-break:break-word] absolute font-['Inter:Regular'] font-normal leading-[23px] left-[780px] not-italic text-[15px] text-black top-[1157px] w-[184px] whitespace-pre-wrap" data-node-id="557:54">
+        UX research
+        <br aria-hidden />
+        Content Strategy
+        <br aria-hidden />
+        Information Architecture
+        <br aria-hidden />
+        Website Design
+        <br aria-hidden />
+        <br aria-hidden />
+        <br aria-hidden />
+      </p>
+      <div className="absolute h-0 left-[179px] top-[1139px] w-[44px]" data-node-id="557:55">
+        <div className="absolute inset-[-0.5px_0]">
+          <img alt="" className="block max-w-none size-full" src={imgVector4} />
+        </div>
+      </div>
+      <div className="absolute h-0 left-[780px] top-[1139px] w-[44px]" data-node-id="559:9">
+        <div className="absolute inset-[-0.5px_0]">
+          <img alt="" className="block max-w-none size-full" src={imgVector5} />
+        </div>
+      </div>
+    </div>
+  );
+}

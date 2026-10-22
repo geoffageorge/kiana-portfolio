@@ -1,0 +1,446 @@
+{
+  "version": 4,
+  "inspectedDate": "2026-10-22",
+  "fileKey": "wZSRbIZZXfUlrq902OXE2W",
+  "assets": {
+    "tiles": {
+      "imgImgSlide62": {
+        "path": "assets/home-figma/img-slide62.png",
+        "bytes": 730888,
+        "sha256": "b3638dde92852b3ac91a38a554aae66167663a25984b2249d291839383d918e5",
+        "width": 1143,
+        "height": 624
+      },
+      "imgAppleIntelligenceBqi8Tl754CfmLarge2X3": {
+        "path": "assets/home-figma/apple-intelligence-bqi8-tl754-cfm-large2-x3.png",
+        "bytes": 967490,
+        "sha256": "69a4e44e454ffb40eef1fb498e175cc763cd7a6451ce1f81cd8563cdaac67120",
+        "width": 1964,
+        "height": 1196
+      },
+      "imgFrame322": {
+        "path": "assets/home-figma/frame322.png",
+        "bytes": 879850,
+        "sha256": "019549d01da1e9fecc4edc308320dc14f702eb8122b04d4291d7bec3becef6e7",
+        "width": 1437,
+        "height": 2349
+      },
+      "imgImgSlide61": {
+        "path": "assets/home-figma/img-slide61.svg",
+        "bytes": 252,
+        "sha256": "a815348524a97a00c16abc771c9fdd2ab435a95eedeb68af6226fa440884ec8f",
+        "width": 577.0,
+        "height": 577.0
+      },
+      "imgLogo2": {
+        "path": "assets/home-figma/logo2.svg",
+        "bytes": 1341,
+        "sha256": "d111d3fd7ded1acf98662413a18d042c5adf7c293d124bc9acad6df45b7269e2",
+        "width": 57.0,
+        "height": 38.0
+      },
+      "imgLine69": {
+        "path": "assets/home-figma/line69.svg",
+        "bytes": 251,
+        "sha256": "0f9d0a1060b05cff2f4798f1b2ab403103da6adf5868d1fc19f1e2c2d3071d84",
+        "width": 1177.0,
+        "height": 0.5
+      },
+      "imgAppleIntelligenceBqi8Tl754CfmLarge2X2": {
+        "path": "assets/website-v4-figma/tiles-imgAppleIntelligenceBqi8Tl754CfmLarge2X2.svg",
+        "bytes": 265,
+        "sha256": "ef8986fb80cf1a05f37a30d07791c9f69a1ac5201e8069ee2460b19d86e1c5dd",
+        "width": 400.81,
+        "height": 376.992
+      },
+      "imgFrame321": {
+        "path": "assets/website-v4-figma/tiles-imgFrame321.svg",
+        "bytes": 268,
+        "sha256": "aa9a5d143519e84b7f2cb88ee8bcd310ef69ed129c6f71b5536ed8d91f3d6e7b",
+        "width": 445.399,
+        "height": 286.083
+      },
+      "imgVector4": {
+        "path": "assets/website-v4-figma/tiles-imgVector4.svg",
+        "bytes": 222,
+        "sha256": "5c407f868ad9a4aeb380a10e7ed0abd5bc48375129bc1cd968fc0f7a978d72f7",
+        "width": 44.0,
+        "height": 1.0
+      },
+      "imgVector5": {
+        "path": "assets/website-v4-figma/tiles-imgVector5.svg",
+        "bytes": 222,
+        "sha256": "d7c3dfed3579ad7f9293662f5c9ea52c25af29ad21aca69a5c354d1f196ebfdf",
+        "width": 44.0,
+        "height": 1.0
+      }
+    },
+    "about": {
+      "imgPortrait2": {
+        "path": "assets/website-v4-figma/about-imgPortrait2.png",
+        "bytes": 302095,
+        "sha256": "a47bb77ad37889127861c0feb4e434517b0bc0f523a53528c621c3b851d7019a",
+        "width": 1179,
+        "height": 1334
+      },
+      "imgLinkedInBanner22": {
+        "path": "assets/website-v4-figma/about-imgLinkedInBanner22.png",
+        "bytes": 859603,
+        "sha256": "e021c0de8001b40f041c139da8dc7586bb90bf276738f962eb52f8f5c8e85d2c",
+        "width": 2833,
+        "height": 355
+      },
+      "imgPortrait1": {
+        "path": "assets/website-v4-figma/about-imgPortrait1.svg",
+        "bytes": 250,
+        "sha256": "a58157c6ff27da06429da1107ba3937a4063c74afa3a980c878d89e8ed657754",
+        "width": 269.0,
+        "height": 269.0
+      },
+      "imgRectangle140": {
+        "path": "assets/website-v2-figma/resume-button.svg",
+        "bytes": 339,
+        "sha256": "a6c2eb18a3455a0648a544b9af9067820355b61372908deb444ee90ba0032730",
+        "width": 99.0,
+        "height": 31.0
+      },
+      "imgLogo2": {
+        "path": "assets/website-v4-figma/about-imgLogo2.svg",
+        "bytes": 1341,
+        "sha256": "b58d12f08d30bce627813e4260b52ad27c8fb12f674aa74112d97b1975ce592f",
+        "width": 57.0,
+        "height": 38.0
+      },
+      "imgLinkedInBanner21": {
+        "path": "assets/website-v4-figma/about-imgLinkedInBanner21.svg",
+        "bytes": 253,
+        "sha256": "384363c58146c7b07ea490ce2aa81032210152ace0f23c538cd374947b3d4394",
+        "width": 1468.1,
+        "height": 209.0
+      }
+    },
+    "pointly": {
+      "img07StayDetails1": {
+        "path": "assets/pointly-figma-update/stay-details.png",
+        "bytes": 957053,
+        "sha256": "bf68a8c6e37a910bc03e7a7c9cfeb3cf9b807af24eff6affed2c74b19bd45942",
+        "width": 1487,
+        "height": 1058
+      },
+      "img06RecommendedStays1": {
+        "path": "assets/pointly-figma-update/recommended-stays.png",
+        "bytes": 882899,
+        "sha256": "557b1b87b8df1ef19c7e273ca11894d67fed8e02e23a7c079790fad2162e9d81",
+        "width": 1487,
+        "height": 1058
+      },
+      "img02ConnectedWallet1": {
+        "path": "assets/pointly-figma-update/connected-wallet.png",
+        "bytes": 377000,
+        "sha256": "39f30dae7ee6ffa34f171c7518228e6f0b26953dbc180bd67616383da6616c82",
+        "width": 1505,
+        "height": 1045
+      },
+      "imgTravelerWalkingBesideAGlobe1": {
+        "path": "assets/website-v4-figma/pointly-imgTravelerWalkingBesideAGlobe1.png",
+        "bytes": 959902,
+        "sha256": "304c8a923366d0b1f4e8775e2e26cbe015a99fcf6c48b452c59660ab2ef20c94",
+        "width": 1382,
+        "height": 1138
+      },
+      "imgScreenshot20260916At10822Pm1": {
+        "path": "assets/website-v4-figma/pointly-imgScreenshot20260916At10822Pm1.png",
+        "bytes": 97214,
+        "sha256": "afa00f42a39c326c4c215f4f24ccb0edc2e4499aad23185e027b6dfcebf49387",
+        "width": 1322,
+        "height": 980
+      },
+      "imgScreenshot20260916At10840Pm1": {
+        "path": "assets/website-v4-figma/pointly-imgScreenshot20260916At10840Pm1.png",
+        "bytes": 102079,
+        "sha256": "e794852bf756f385c05f370a2c4605b3f2111c92aee8a965282857a551e683f5",
+        "width": 1294,
+        "height": 944
+      },
+      "imgScreenshot20260916At10830Pm1": {
+        "path": "assets/website-v4-figma/pointly-imgScreenshot20260916At10830Pm1.png",
+        "bytes": 336318,
+        "sha256": "6b43d4f544fcd84853a6e84dafb82abfd12e231d39ccfcb3977313a705e14390",
+        "width": 1288,
+        "height": 930
+      },
+      "imgScreenshot20260925At92444Am2": {
+        "path": "assets/website-v4-figma/pointly-imgScreenshot20260925At92444Am2.png",
+        "bytes": 179430,
+        "sha256": "389bea78ac55b6dfdc2dc7a3941b1c7c5e576402a5cbeb62cfa5a7ca50254e6d",
+        "width": 734,
+        "height": 918
+      },
+      "imgScreenshot20260925At92339Am2": {
+        "path": "assets/website-v4-figma/pointly-imgScreenshot20260925At92339Am2.png",
+        "bytes": 394141,
+        "sha256": "7100cc7bdb659d330ccbf96c7d3b9479dfaf94ee76f46eacb79fea143aff952e",
+        "width": 1392,
+        "height": 972
+      },
+      "imgAspiringExpertWithBlueNeckline21": {
+        "path": "assets/website-v4-figma/pointly-imgAspiringExpertWithBlueNeckline21.png",
+        "bytes": 615020,
+        "sha256": "d8cdafe2c92c30d65692eb861f33090296b18dea4f1d9d0adc31cd67211245b1",
+        "width": 1254,
+        "height": 1254
+      },
+      "imgCasualRedeemerPortraitIsolated31": {
+        "path": "assets/website-v4-figma/pointly-imgCasualRedeemerPortraitIsolated31.png",
+        "bytes": 569070,
+        "sha256": "d7bdbefd45de6c487b362e5b1a2c7b6097cb0f9a8ef1c09ca1d0c7349407fb62",
+        "width": 1254,
+        "height": 1254
+      },
+      "imgStrategicOptimizerPortrait1": {
+        "path": "assets/website-v4-figma/pointly-imgStrategicOptimizerPortrait1.png",
+        "bytes": 537343,
+        "sha256": "04d86ecab47b7a842899e035e70c6a3d214212f438cc82bf3c9f22e52b20e0ff",
+        "width": 1254,
+        "height": 1254
+      },
+      "imgThoughtfulInterviewWithLaptop11": {
+        "path": "assets/website-v4-figma/pointly-imgThoughtfulInterviewWithLaptop11.png",
+        "bytes": 1100777,
+        "sha256": "78b7789ef0f35b1475fff70682696111b6a4ebe7a419c7e7f853cd52bbc0ed41",
+        "width": 1536,
+        "height": 1024
+      },
+      "imgConcernedManHoldingPhoneWithAccountTiles41": {
+        "path": "assets/website-v4-figma/pointly-imgConcernedManHoldingPhoneWithAccountTiles41.png",
+        "bytes": 1036228,
+        "sha256": "8c6a33e526cd2ef3428cee51d305aa6adaff7851b498fc83854c1c37869721ce",
+        "width": 1536,
+        "height": 1024
+      },
+      "imgJasminesThoughtfulBalance71": {
+        "path": "assets/website-v4-figma/pointly-imgJasminesThoughtfulBalance71.png",
+        "bytes": 1116307,
+        "sha256": "44bee4ae750b802fc7ef94b22a11c035f13b5b81c8dee4e5fede6bb8e214f6d0",
+        "width": 1536,
+        "height": 1024
+      },
+      "imgProfessionalCheckingAGroupChat1": {
+        "path": "assets/website-v4-figma/pointly-imgProfessionalCheckingAGroupChat1.png",
+        "bytes": 740586,
+        "sha256": "b78840a4b1d45f3222b1af8d2338b952df53ffd8beff72d5506285561a450100",
+        "width": 1337,
+        "height": 1176
+      },
+      "imgMinimalistPointMeWordmarkLogo2": {
+        "path": "assets/website-v4-figma/pointly-imgMinimalistPointMeWordmarkLogo2.png",
+        "bytes": 140199,
+        "sha256": "52d54d82e5e1fe291cdf20754160f1b8657cc8e7877c39a8d19607120120b697",
+        "width": 2158,
+        "height": 729
+      },
+      "imgPointsyeah2": {
+        "path": "assets/website-v4-figma/pointly-imgPointsyeah2.png",
+        "bytes": 27922,
+        "sha256": "47b8fca269c7fe54340e7e2e5f4202801ec1a3bcf5f2011b4cf4cf333ce9d274",
+        "width": 413,
+        "height": 101
+      },
+      "imgSeatsAero2": {
+        "path": "assets/website-v4-figma/pointly-imgSeatsAero2.png",
+        "bytes": 33824,
+        "sha256": "bcdd4b5f0bc77f453d8fd9c8970413da343a4322180fcb5b15f51a072c0001b1",
+        "width": 462,
+        "height": 91
+      },
+      "imgRoame2": {
+        "path": "assets/website-v4-figma/pointly-imgRoame2.png",
+        "bytes": 13109,
+        "sha256": "bc7c30274926ab566eff6585a08b3364630690ec84c96d0c04bb05d3d8d7d275",
+        "width": 372,
+        "height": 60
+      },
+      "imgAwardWalletLogoOnWhite2": {
+        "path": "assets/website-v4-figma/pointly-imgAwardWalletLogoOnWhite2.png",
+        "bytes": 265888,
+        "sha256": "3fdd89816e0dc7f2b8210fba16d382f276e584be24157950a044bf2885bcc0b2",
+        "width": 1774,
+        "height": 887
+      },
+      "imgMaxmypoint2": {
+        "path": "assets/website-v4-figma/pointly-imgMaxmypoint2.png",
+        "bytes": 33375,
+        "sha256": "fe530e4e1c2091be569ef21d6f7e850db7db148ace18d398d67d84d46a4aa3de",
+        "width": 407,
+        "height": 130
+      },
+      "imgAwardtool2": {
+        "path": "assets/website-v4-figma/pointly-imgAwardtool2.png",
+        "bytes": 26737,
+        "sha256": "acb9c0f6e1d79573f88f71104f720f20f522d95f9d18822bf162ca121f9dce18",
+        "width": 387,
+        "height": 90
+      },
+      "imgThePointsGuyLogo2": {
+        "path": "assets/website-v4-figma/pointly-imgThePointsGuyLogo2.png",
+        "bytes": 1008718,
+        "sha256": "6ef6e87b2293ce17e362b3302f013de0b66c1f78f8560edd3ab9495a3640f9f5",
+        "width": 2172,
+        "height": 724
+      },
+      "imgFourPointSparkleOnWhiteDisc21": {
+        "path": "assets/website-v4-figma/pointly-imgFourPointSparkleOnWhiteDisc21.png",
+        "bytes": 798926,
+        "sha256": "261648360e2fc2fa0e3c53b7edced16b4d28351c6767271d753ed20d415be5b0",
+        "width": 1254,
+        "height": 1254
+      },
+      "imgMinimalMonolineLightbulbInsightIcon12": {
+        "path": "assets/website-v4-figma/pointly-imgMinimalMonolineLightbulbInsightIcon12.png",
+        "bytes": 792684,
+        "sha256": "38a85e9eb302871574a7880cc7b553dc7a27880396f686c3414903bc37627fcb",
+        "width": 1254,
+        "height": 1254
+      },
+      "imgScreenshot20260916At10452Pm2": {
+        "path": "assets/website-v4-figma/pointly-imgScreenshot20260916At10452Pm2.png",
+        "bytes": 395239,
+        "sha256": "d66f4c1c2972f0ac046cab5eac197c75b7bb8363ed329e243374f9d1feec8c7f",
+        "width": 2108,
+        "height": 894
+      },
+      "img04PointsOptions1": {
+        "path": "assets/website-v4-figma/pointly-img04PointsOptions1.png",
+        "bytes": 340266,
+        "sha256": "402f5c1c7873dccbb7bef0457363ab77b8280ccf7989e5b57c3c48073d63a78e",
+        "width": 1505,
+        "height": 1045
+      },
+      "img05FeaturedStay2": {
+        "path": "assets/website-v4-figma/pointly-img05FeaturedStay2.png",
+        "bytes": 996639,
+        "sha256": "712db883ad1f7e0fefcc39a2b31baea8552cce1f058958827a09b9c07813c783",
+        "width": 1505,
+        "height": 1045
+      },
+      "img08ProTips2": {
+        "path": "assets/website-v4-figma/pointly-img08ProTips2.png",
+        "bytes": 319034,
+        "sha256": "eed58660c74e2fa89958b9eb1e4e7fe96c24cd9ac01c3607c9388069d1ad0999",
+        "width": 1505,
+        "height": 1045
+      },
+      "imgFrame33": {
+        "path": "assets/website-v4-figma/pointly-imgFrame33.png",
+        "bytes": 879584,
+        "sha256": "60380788340d998985cd5e939b7e82c46b93e47c20c4713ac5b7c98daf72d624",
+        "width": 1437,
+        "height": 2349
+      },
+      "imgFrame322": {
+        "path": "assets/home-figma/frame322.png",
+        "bytes": 879850,
+        "sha256": "019549d01da1e9fecc4edc308320dc14f702eb8122b04d4291d7bec3becef6e7",
+        "width": 1437,
+        "height": 2349
+      },
+      "imgLine72": {
+        "path": "assets/obayashi-figma/section-divider.svg",
+        "bytes": 277,
+        "sha256": "f513bc1891d7373662dd4c4c2d6506ba43b803bf85930bcbf86316a66be07451",
+        "width": 892.0,
+        "height": 0.500078
+      },
+      "imgRectangle3": {
+        "path": "assets/website-v4-figma/pointly-imgRectangle3.svg",
+        "bytes": 337,
+        "sha256": "24a409092f3eea84bd7f4ee1d50323ed24e593f045a3f567619716ea5e2b3ea1",
+        "width": 87.0,
+        "height": 88.0
+      },
+      "imgRectangle4": {
+        "path": "assets/website-v4-figma/pointly-imgRectangle4.svg",
+        "bytes": 337,
+        "sha256": "f427e832cef0c33bfcd9863665dd9fa21915e7152dc892a5fa537ff134112e4e",
+        "width": 88.0,
+        "height": 88.0
+      },
+      "imgRectangle5": {
+        "path": "assets/website-v4-figma/pointly-imgRectangle5.svg",
+        "bytes": 337,
+        "sha256": "1a4b3938507e28b37d077a7ac6c20981146ce9ac25bddc0764ee1155fd788926",
+        "width": 92.0,
+        "height": 88.0
+      },
+      "imgRectangle19": {
+        "path": "assets/website-v4-figma/pointly-imgRectangle19.svg",
+        "bytes": 338,
+        "sha256": "117ab53646722f6ffe22b8cfb09f3d99890689ad6c9267fa419fec49328221be",
+        "width": 88.0,
+        "height": 88.0
+      },
+      "imgLine65": {
+        "path": "assets/website-v4-figma/pointly-imgLine65.svg",
+        "bytes": 221,
+        "sha256": "29ba56a8d8477b1668e53558711dea6b4996c41552ddc346c5a126025d77aaf9",
+        "width": 63.0,
+        "height": 1.0
+      },
+      "imgEllipse12": {
+        "path": "assets/website-v4-figma/pointly-imgEllipse12.svg",
+        "bytes": 390,
+        "sha256": "d35440d2dbde007a866edf246eb12bf6f0abc3548750fd6255b0b98e38890b13",
+        "width": 195.0,
+        "height": 195.0
+      },
+      "imgFrame32": {
+        "path": "assets/website-v4-figma/pointly-imgFrame32.svg",
+        "bytes": 243,
+        "sha256": "48df5f0c313ae1d2ec8d8cab15295047bf5b70477673cf176d0af29aaeba52df",
+        "width": 488.0,
+        "height": 497.0
+      },
+      "imgFrame321": {
+        "path": "assets/website-v4-figma/pointly-imgFrame321.svg",
+        "bytes": 244,
+        "sha256": "344ba38c1f4f099c39290a95cfa9058f0928007fcd52cb6efc4ea8336a5ce73e",
+        "width": 772.0,
+        "height": 531.0
+      },
+      "imgLine61": {
+        "path": "assets/obayashi-figma/details-divider.svg",
+        "bytes": 280,
+        "sha256": "f89ec03d95ec0647d260761572a9e83d1f62c3a1aa1441488d8ca344749a3889",
+        "width": 1200.0,
+        "height": 0.500105
+      }
+    },
+    "careers": {
+      "imgCareers1": {
+        "path": "assets/website-v4-figma/careers-imgCareers1.png",
+        "bytes": 2538848,
+        "sha256": "b48372fc48197f2333b7bac5d9abe5d32788a01ede814d4cc8fdd1aee432c418",
+        "width": 914,
+        "height": 4096
+      }
+    },
+    "obayashi-details": {
+      "imgLine61": {
+        "path": "assets/obayashi-figma/details-divider.svg",
+        "bytes": 280,
+        "sha256": "f89ec03d95ec0647d260761572a9e83d1f62c3a1aa1441488d8ca344749a3889",
+        "width": 1200.0,
+        "height": 0.500105
+      }
+    }
+  },
+  "logo": {
+    "path": "assets/brand/ki-logo-v4.svg",
+    "sourcePath": "assets/website-v4-figma/about-imgLogo2.svg",
+    "sourceNode": "557:30",
+    "change": "Shared current Figma SVG; the sixth vector already uses the requested #EFDD12. All source paths and root dimensions are unchanged.",
+    "width": 57,
+    "height": 38,
+    "sha256": "b58d12f08d30bce627813e4260b52ad27c8fb12f674aa74112d97b1975ce592f"
+  }
+}

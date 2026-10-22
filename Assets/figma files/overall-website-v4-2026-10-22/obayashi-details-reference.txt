@@ -1,0 +1,66 @@
+const imgLine61 = "/assets/obayashi-figma/details-divider.svg";
+
+export default function ProjectDetails() {
+  return (
+    <div className="contents relative size-full" data-node-id="420:253" data-name="Project Details">
+      <div className="[word-break:break-word] absolute contents leading-[0] left-[120px] not-italic top-[375px]" data-node-id="420:254" data-name="Deliverable">
+        <div className="absolute font-['Inter:Regular'] font-normal left-[120px] text-[15px] text-black top-[406px] w-[170px] whitespace-pre-wrap" data-node-id="420:255">
+          <p className="leading-[22px] mb-0">{`36-page website redesign and internal `}</p>
+          <p className="leading-[22px]">handoff</p>
+        </div>
+        <div className="-translate-y-1/2 absolute flex flex-col font-['Fira_Mono:Medium'] justify-center left-[120px] text-[#60676c] text-[12px] top-[382px] whitespace-nowrap" data-node-id="420:256">
+          <p className="leading-[1.2]">DELIVERABLE</p>
+        </div>
+      </div>
+      <div className="[word-break:break-word] absolute contents left-[calc(16.67%+130px)] not-italic top-[375px]" data-node-id="420:257" data-name="Timeline">
+        <p className="absolute font-['Inter:Regular'] font-normal leading-[22px] left-[calc(16.67%+132px)] text-[15px] text-black top-[406px] w-[170px]" data-node-id="420:258">
+          10 months
+        </p>
+        <div className="-translate-y-1/2 absolute flex flex-col font-['Fira_Mono:Medium'] justify-center leading-[0] left-[calc(16.67%+130px)] text-[#60676c] text-[12px] top-[382px] w-[66px]" data-node-id="420:259">
+          <p className="leading-[1.2]">TIMELINE</p>
+        </div>
+      </div>
+      <div className="[word-break:break-word] absolute contents leading-[0] left-[calc(58.33%+32px)] not-italic top-[375px]" data-node-id="420:260" data-name="Methods">
+        <div className="absolute font-['Inter:Regular'] font-normal left-[calc(58.33%+32px)] text-[15px] text-black top-[406px] w-[190px] whitespace-pre-wrap" data-node-id="420:261">
+          <p className="leading-[22px] mb-0">
+            17 Stakeholder Interviews
+            <br aria-hidden />
+            {`Competitive Analysis `}
+          </p>
+          <p className="leading-[22px] mb-0">Content Audit</p>
+          <p className="leading-[22px]">Sitemap Development</p>
+        </div>
+        <div className="-translate-y-1/2 absolute flex flex-col font-['Fira_Mono:Medium'] justify-center left-[calc(58.33%+32px)] text-[#60676c] text-[12px] top-[382px] whitespace-nowrap" data-node-id="420:262">
+          <p className="leading-[1.2]">METHODS</p>
+        </div>
+      </div>
+      <div className="[word-break:break-word] absolute contents left-[calc(83.33%-58px)] not-italic top-[375px]" data-node-id="420:263" data-name="Tools">
+        <p className="absolute font-['Inter:Regular'] font-normal leading-[22px] left-[calc(83.33%-58px)] text-[15px] text-black top-[406px] w-[81px]" data-node-id="420:264">
+          Figma
+          <br aria-hidden />
+          Wix
+          <br aria-hidden />
+          Claude
+          <br aria-hidden />
+          <br aria-hidden />
+        </p>
+        <div className="-translate-y-1/2 absolute flex flex-col font-['Fira_Mono:Medium'] justify-center leading-[0] left-[calc(83.33%-58px)] text-[#60676c] text-[12px] top-[382px] whitespace-nowrap" data-node-id="420:265">
+          <p className="leading-[1.2]">TOOLS</p>
+        </div>
+      </div>
+      <div className="[word-break:break-word] absolute contents left-[calc(41.67%+22px)] not-italic top-[375px]" data-node-id="420:266" data-name="Contribution">
+        <p className="absolute font-['Inter:Regular'] font-normal leading-[22px] left-[calc(41.67%+22px)] text-[15px] text-black top-[406px] w-[182px]" data-node-id="420:267">
+          z
+        </p>
+        <div className="-translate-y-1/2 absolute flex flex-col font-['Fira_Mono:Medium'] justify-center leading-[0] left-[calc(41.67%+22px)] text-[#60676c] text-[12px] top-[382px] whitespace-nowrap" data-node-id="420:268">
+          <p className="leading-[1.2]">MY CONTRIBUTION</p>
+        </div>
+      </div>
+      <div className="absolute h-0 left-[120px] top-[347px] w-[1200px]" data-node-id="420:269">
+        <div className="absolute inset-[-0.5px_0_0_0]">
+          <img alt="" className="block max-w-none size-full" src={imgLine61} />
+        </div>
+      </div>
+    </div>
+  );
+}

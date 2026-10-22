@@ -28,17 +28,19 @@ test('direct Pointly links and reloads load the reference images and native divi
   await page.reload();
   await expect(page.getByRole('heading', { level: 1 })).toHaveText('Point.ly');
   await expect(page.locator('.pointly-section')).toHaveCount(4);
-  const manifest = JSON.parse(await readFile(new URL('../public/assets/pointly-figma/manifest.json', import.meta.url), 'utf8'));
-  const dividerFiles = ['line-69-49.svg', 'line-70-50.svg', 'line-71-51.svg', 'line-72-183.svg'];
-  const expected = Object.values(manifest.assets).filter(image => !dividerFiles.includes(image.file)).map(image => image.file).sort();
-  const actual = await page.locator('img[src*="/pointly-figma/"]').evaluateAll(images => [...new Set(images.map(image => image.src.split('/').at(-1)))].sort());
-  expect(actual).toEqual(expected);
-  await expect(page.locator('.pointly-rule')).toHaveCount(5);
-  for (const image of Object.values(manifest.assets)) {
-    const response = await request.get(`/assets/pointly-figma/${image.file}`);
-    expect(response.ok(), image.file).toBe(true);
-    expect(response.headers()['content-type']).toMatch(/^image\//);
+  const design = JSON.parse(await readFile(new URL('../public/assets/website-v4-figma/pointly-design.json', import.meta.url), 'utf8'));
+  await page.evaluate(async () => {
+    for (const image of document.images) image.loading = 'eager';
+    await Promise.all([...document.images].map(image => image.decode()));
+  });
+  for (const [name, asset] of Object.entries(design.images)) {
+    const slot = page.locator(`[data-figma-asset="${name}"]`);
+    await expect(slot).toHaveCount(1);
+    const image = asset.path.endsWith('.svg') ? slot : slot.locator('img');
+    await expect(image).toHaveAttribute('src', `/${asset.path}`);
+    expect((await request.get(`/${asset.path}`)).ok()).toBe(true);
   }
+  await expect(page.locator('.pointly-rule')).toHaveCount(5);
   expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
   expect(errors).toEqual([]);
 });
@@ -53,7 +55,7 @@ test('section links and image enlargement work with keyboard focus', async ({ pa
   const dialog = page.getByRole('dialog');
   await expect(dialog).toBeVisible();
   await expect(dialog.getByRole('heading')).toHaveText('Point.ly homepage final design and destination discovery');
-  await expect(dialog.getByRole('link', { name: 'Open full-size image' })).toHaveAttribute('href', /frame-3-2-1-186\.png$/);
+  await expect(dialog.getByRole('link', { name: 'Open full-size image' })).toHaveAttribute('href', /frame322\.png$/);
   await page.keyboard.press('Escape');
   await expect(dialog).not.toBeVisible();
   await expect(image).toBeFocused();
@@ -61,7 +63,7 @@ test('section links and image enlargement work with keyboard focus', async ({ pa
   await mvpImage.click();
   await expect(dialog).toBeVisible();
   await expect(dialog.getByRole('heading')).toHaveText('Mid-fidelity booking details wireframe');
-  await expect(dialog.getByRole('link', { name: 'Open full-size image' })).toHaveAttribute('href', /node-162\.png$/);
+  await expect(dialog.getByRole('link', { name: 'Open full-size image' })).toHaveAttribute('href', /pointly-imgScreenshot20260916At10830Pm1\.png$/);
   await page.keyboard.press('Escape');
   await expect(mvpImage).toBeFocused();
 });

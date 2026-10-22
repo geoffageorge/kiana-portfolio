@@ -4,7 +4,7 @@
 .site-footer__brand > img { flex: 0 0 auto; max-width: none; }
 .site-footer .brand-name { gap: 9px; font: 400 15px/18px var(--portfolio-mono); white-space: pre; transform: translateY(4px); }
 .site-footer__connect { flex: 0 0 76px; margin-top: 7px; margin-right: -5px; font: 400 14px/17px var(--portfolio-mono); transition: color 160ms ease; }
-.site-footer__connect:hover, .site-footer__connect:focus-visible { color: #f4cf14; }
+.site-footer__connect:hover, .site-footer__connect:focus-visible { color: #c5cdce; }
 @media (max-width: 900px) { .site-footer .brand-name { font-size: 12px; } }
 @media (max-width: 767px) {
   .site-footer__inner { flex-direction: column; width: calc(100% - 40px); gap: 32px; padding-block: 42px; min-height: 250px; }

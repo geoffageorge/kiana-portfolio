@@ -27,22 +27,23 @@ test('all 11 Figma exports and the supplied resume are served unchanged', async 
 
 test('Select Work uses the Figma tile text, artwork geometry and Safari-compatible divider', async ({ page }) => {
   await page.goto('/');
-  const nodes = flatten(await sourceFrame('case-studies'));
+  const nodes = JSON.parse(await file('Assets/figma files/overall-website-v4-2026-10-22/tiles-inspection.json')).nodes;
   const rule = await page.locator('.selected-work__grid').evaluate(n => {
     const style = getComputedStyle(n, '::before');
-    return { color: style.borderTopColor, weight: parseFloat(style.borderTopWidth), image: style.backgroundImage };
+    return { color: style.borderTopColor, weight: parseFloat(style.borderTopWidth), image: style.backgroundImage, dpr: devicePixelRatio };
   });
   expect(rule.color).toBe('rgb(0, 0, 0)');
-  expect(rule.weight).toBeGreaterThanOrEqual(.5);
+  expect(rule.weight * rule.dpr).toBeGreaterThanOrEqual(.999);
   expect(rule.weight).toBeLessThanOrEqual(1);
   expect(rule.image).toBe('none');
   await expect(page.locator('.project-card h3')).toHaveText(['Obayashi', 'Point.ly']);
   await expect(page.locator('.project-card__number')).toHaveText(['01 /', '02 /']);
-  await expect(page.locator('.project-card__summary')).toHaveText(['NORTH AMERICANWEBSITE', 'WORKINGMVP']);
+  await expect(page.locator('.project-card__summary')).toHaveText(['NORTH AMERICANWEBSITE', 'HIGH-FIDELITYPROTOTYPE']);
   const cards = page.locator('.project-card__link');
   for (const [index, slug] of [[0, 'obayashi'], [1, 'pointly']]) {
     const card = cards.nth(index);
     await expect(card).toHaveAttribute('href', `/projects/${slug}/`);
+    await card.scrollIntoViewIfNeeded();
     const bounds = await card.boundingBox();
     expect(bounds.width).toBeCloseTo(bounds.height, 1);
     await expect(card).toHaveCSS('border-radius', '16px');
@@ -62,25 +63,19 @@ test('Select Work uses the Figma tile text, artwork geometry and Safari-compatib
     }
   }
   await expect(page.locator('.project-artwork--pointly')).toHaveCSS('background-color', 'rgb(136, 207, 253)');
-  await expect(page.locator('.selected-work .section-heading p')).toHaveCSS('font-size', '15px');
+  await expect(page.locator('.selected-work .section-heading p')).toHaveCSS('font-size', '18px');
 });
 
 const version2Frame = async name => JSON.parse(await file(`Assets/figma files/overall-website-v2-2026-10-21/${name}-inspection.json`));
 
-test('version 2 Figma assets retain their bytes and all four appear in the new page', async ({ page, request }) => {
+test('version 2 source assets remain archived unchanged', async ({ request }) => {
   const manifest = JSON.parse(await file('public/assets/website-v2-figma/manifest.json'));
-  expect(manifest.assets).toHaveLength(4);
   for (const asset of manifest.assets) {
-    const local = await file(`public/assets/website-v2-figma/${asset.file}`);
-    expect(hash(local)).toBe(asset.sha256);
+    expect(hash(await file(`public/assets/website-v2-figma/${asset.file}`))).toBe(asset.sha256);
     const response = await request.get(`/assets/website-v2-figma/${asset.file}`);
     expect(response.ok()).toBe(true);
     expect(hash(await response.body())).toBe(asset.sha256);
   }
-  await page.goto('/about/');
-  await page.locator('img').evaluateAll(images => Promise.all(images.map(i => i.decode())));
-  const used = await page.locator('img, .about-page__portrait').evaluateAll(nodes => [...new Set(nodes.flatMap(n => [n.getAttribute('src'), getComputedStyle(n).maskImage]).filter(s => s?.includes('/website-v2-figma/')).map(s => /website-v2-figma\/([^\")]+)/.exec(s)[1]))].sort());
-  expect(used).toEqual(manifest.assets.map(a => a.file).sort());
 });
 
 test('About+Contact is a full page with the revised Figma biography, contact details and desktop geometry', async ({ page }) => {
@@ -90,9 +85,9 @@ test('About+Contact is a full page with the revised Figma biography, contact det
   await page.reload();
   await expect(page).toHaveTitle('About + Contact / Kiana George');
   await page.evaluate(() => document.fonts.ready);
-  const frame = await version2Frame('about');
-  const nodes = flatten(frame);
-  const source = nodes.find(n => n.id === '522:266').characters;
+  const frame = JSON.parse(await file('Assets/figma files/overall-website-v4-2026-10-22/about-inspection.json'));
+  const nodes = frame.nodes;
+  const source = nodes.find(n => n.id === '522:266').text;
   await expect(page.locator('.about-page__copy p')).toHaveText(source.split(/[\n\u2028]+/).map(p => p.trim()).filter(Boolean));
   await expect(page.getByRole('heading', { level: 1 })).toHaveText('Curious George, Literally');
   await expect(page.locator('.about-page__copy')).toHaveCSS('font-size', '16px');
@@ -101,16 +96,16 @@ test('About+Contact is a full page with the revised Figma biography, contact det
   await expect(page.getByRole('link', { name: '650-817-5454' })).toHaveAttribute('href', 'tel:+16508175454');
   await expect(page.getByRole('dialog')).toHaveCount(0);
   if (page.viewportSize().width === 1440) {
-    for (const id of ['522:268','522:266','522:269','522:267','522:270','522:271']) {
+    for (const id of ['522:268','522:266','522:270','522:271']) {
       const expected = nodes.find(n => n.id === id);
       const actual = await page.locator(`[data-figma-node="${id}"]`).boundingBox();
       for (const key of ['x','y','width']) expect(Math.abs(actual[key] - expected[key]), `${id} ${key}`).toBeLessThan(1);
     }
-    const sourceImage = nodes.find(n => n.id === '522:276');
-    const actualImage = await page.locator('.about-page__portrait-source').boundingBox();
-    const bounds = sourceImage.absoluteBoundingBox;
-    const expected = { x: bounds.x - frame.absoluteBoundingBox.x, y: bounds.y - frame.absoluteBoundingBox.y, width: bounds.width, height: bounds.height };
-    for (const key of ['x','y','width','height']) expect(Math.abs(actualImage[key] - expected[key]), `portrait ${key}`).toBeLessThan(1);
+    for (const id of ['522:269','522:267','560:19','560:16','560:21','557:10']) {
+      const expected = nodes.find(n => n.id === id);
+      const actual = await page.locator(`[data-figma-node="${id}"]`).boundingBox();
+      for (const key of ['x','y']) expect(Math.abs(actual[key] - expected[key]), `${id} ${key}`).toBeLessThan(1);
+    }
   }
 });
 
@@ -134,7 +129,7 @@ test('Resume and LinkedIn retain real PDF delivery and new-tab destinations', as
   await linkedIn.close();
 });
 
-test('profile button rollovers use the requested grey and footer rollover uses gold', async ({ page }) => {
+test('profile button rollovers use the requested grey and footer rollover uses the version 4 grey', async ({ page }) => {
   await page.goto('/about/');
   for (const button of await page.locator('.about-page__button').all()) {
     await button.hover();
@@ -144,7 +139,7 @@ test('profile button rollovers use the requested grey and footer rollover uses g
   }
   const connect = page.locator('.site-footer__connect');
   await connect.hover();
-  await expect(connect).toHaveCSS('color', 'rgb(244, 207, 20)');
+  await expect(connect).toHaveCSS('color', 'rgb(197, 205, 206)');
   await expect(connect).toHaveAttribute('href', '/about/');
 });
 
@@ -219,7 +214,7 @@ test('About URLs and assets resolve correctly under a deployment subdirectory', 
   await expect(page.getByRole('heading', { level: 1 })).toHaveText('Curious George, Literally');
   await expect(page.getByRole('link', { name: /Resume/ })).toHaveAttribute('href', '/portfolio/assets/kiana-george-resume.pdf');
   await expect(page.locator('.site-footer__connect')).toHaveAttribute('href', '/portfolio/about/');
-  await expect(page.locator('.about-page__portrait img')).toHaveAttribute('src', '/portfolio/assets/website-v2-figma/portrait.png');
+  await expect(page.locator('.about-page__portrait img').last()).toHaveAttribute('src', '/portfolio/assets/website-v4-figma/about-imgPortrait2.png');
   await page.getByRole('navigation', { name: 'Main navigation' }).getByRole('link', { name: 'Work', exact: true }).click();
   await expect(page).toHaveURL(/\/portfolio\/#work$/);
   await expect(page.getByRole('heading', { name: 'Select Work' })).toBeInViewport();

@@ -1,4 +1,5 @@
 import { assetUrl } from '../../lib/urls.js';
+import manifest from '../../../public/assets/website-v4-figma/manifest.json';
 
 const image = (file) => assetUrl(`home-figma/${file}`);
 
@@ -14,9 +15,9 @@ export default function ProjectArtwork({ variant }) {
 
   return (
     <div className="project-artwork project-artwork--pointly" data-figma-node="499:24">
-      <div className="project-artwork__laptop-crop" data-figma-node="499:47" style={{ maskImage: `url("${image('apple-intelligence-bqi8-tl754-cfm-large2-x2.svg')}")` }}>
+      <div className="project-artwork__laptop-crop" data-figma-node="499:47" style={{ maskImage: `url("${assetUrl(manifest.assets.tiles.imgAppleIntelligenceBqi8Tl754CfmLarge2X2.path.replace('assets/', ''))}")` }}>
         <img className="project-artwork__laptop" src={image('apple-intelligence-bqi8-tl754-cfm-large2-x3.png')} alt="" width="1964" height="1196" loading="lazy" decoding="async" data-figma-node="499:43" />
-        <div className="project-artwork__screen-crop" data-figma-node="499:45" style={{ maskImage: `url("${image('frame321.svg')}")` }}>
+        <div className="project-artwork__screen-crop" data-figma-node="499:45" style={{ maskImage: `url("${assetUrl(manifest.assets.tiles.imgFrame321.path.replace('assets/', ''))}")` }}>
           <img className="project-artwork__screen" src={image('frame322.png')} alt="Point.ly travel booking website displayed on a laptop" width="1437" height="2349" loading="lazy" decoding="async" data-figma-node="499:42" />
         </div>
       </div>
