@@ -1,0 +1,330 @@
+{
+  "fileKey": "wZSRbIZZXfUlrq902OXE2W",
+  "inspectedDate": "2026-10-27",
+  "nodes": [
+    {
+      "id": "90:18",
+      "name": "Pointly Case Study 2",
+      "type": "FRAME",
+      "width": 1440,
+      "height": 10571,
+      "bounds": {
+        "x": 3044,
+        "y": -13771,
+        "width": 1440,
+        "height": 10571
+      }
+    },
+    {
+      "id": "462:26",
+      "name": "Pointly Captions 1",
+      "type": "GROUP",
+      "width": 903,
+      "height": 44,
+      "bounds": {
+        "x": 3238,
+        "y": -12143,
+        "width": 903,
+        "height": 44
+      }
+    },
+    {
+      "id": "462:22",
+      "name": "Personalized Stay Recommendations",
+      "type": "TEXT",
+      "width": 270,
+      "height": 22,
+      "bounds": {
+        "x": 3238,
+        "y": -12143,
+        "width": 270,
+        "height": 22
+      },
+      "text": "Personalized Stay Recommendations",
+      "segments": [
+        {
+          "characters": "Personalized Stay Recommendations",
+          "start": 0,
+          "end": 33,
+          "fontSize": 15,
+          "fontName": {
+            "family": "Inter",
+            "style": "Semi Bold",
+            "variationSettings": {
+              "wght": 600,
+              "slnt": 0
+            }
+          },
+          "lineHeight": {
+            "unit": "PIXELS",
+            "value": 22
+          },
+          "letterSpacing": {
+            "unit": "PERCENT",
+            "value": 0
+          },
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0,
+                "g": 0,
+                "b": 0
+              },
+              "boundVariables": {}
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "462:23",
+      "name": "AI-Assisted Transfer Recommendations ",
+      "type": "TEXT",
+      "width": 290,
+      "height": 44,
+      "bounds": {
+        "x": 3596,
+        "y": -12143,
+        "width": 290,
+        "height": 44
+      },
+      "text": "AI-Assisted Transfer Recommendations ",
+      "segments": [
+        {
+          "characters": "AI-Assisted Transfer Recommendations ",
+          "start": 0,
+          "end": 37,
+          "fontSize": 15,
+          "fontName": {
+            "family": "Inter",
+            "style": "Semi Bold",
+            "variationSettings": {
+              "wght": 600,
+              "slnt": 0
+            }
+          },
+          "lineHeight": {
+            "unit": "PIXELS",
+            "value": 22
+          },
+          "letterSpacing": {
+            "unit": "PERCENT",
+            "value": 0
+          },
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0,
+                "g": 0,
+                "b": 0
+              },
+              "boundVariables": {}
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "462:24",
+      "name": "Redemption Tips & Alerts",
+      "type": "TEXT",
+      "width": 184,
+      "height": 22,
+      "bounds": {
+        "x": 3957,
+        "y": -12143,
+        "width": 184,
+        "height": 22
+      },
+      "text": "Redemption Tips & Alerts",
+      "segments": [
+        {
+          "characters": "Redemption Tips & Alerts",
+          "start": 0,
+          "end": 24,
+          "fontSize": 15,
+          "fontName": {
+            "family": "Inter",
+            "style": "Semi Bold",
+            "variationSettings": {
+              "wght": 600,
+              "slnt": 0
+            }
+          },
+          "lineHeight": {
+            "unit": "PIXELS",
+            "value": 22
+          },
+          "letterSpacing": {
+            "unit": "PERCENT",
+            "value": 0
+          },
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0,
+                "g": 0,
+                "b": 0
+              },
+              "boundVariables": {}
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "320:51",
+      "name": "Rectangle 96",
+      "type": "RECTANGLE",
+      "width": 1200,
+      "height": 384,
+      "bounds": {
+        "x": 3164,
+        "y": -12459,
+        "width": 1200,
+        "height": 384
+      }
+    },
+    {
+      "id": "308:17",
+      "name": "05-featured-stay 2",
+      "type": "RECTANGLE",
+      "width": 340,
+      "height": 236,
+      "bounds": {
+        "x": 3234,
+        "y": -12393,
+        "width": 340,
+        "height": 236
+      }
+    },
+    {
+      "id": "307:12",
+      "name": "04-points-options 1",
+      "type": "RECTANGLE",
+      "width": 342,
+      "height": 237,
+      "bounds": {
+        "x": 3592,
+        "y": -12394,
+        "width": 342,
+        "height": 237
+      }
+    },
+    {
+      "id": "308:20",
+      "name": "08-pro-tips 2",
+      "type": "RECTANGLE",
+      "width": 342,
+      "height": 237,
+      "bounds": {
+        "x": 3953,
+        "y": -12394,
+        "width": 342,
+        "height": 237
+      }
+    },
+    {
+      "id": "274:4",
+      "name": "Rectangle 95",
+      "type": "RECTANGLE",
+      "width": 1200,
+      "height": 655,
+      "bounds": {
+        "x": 3164,
+        "y": -13168,
+        "width": 1200,
+        "height": 655
+      }
+    },
+    {
+      "id": "320:52",
+      "name": "Frame 3 (2) 1",
+      "type": "RECTANGLE",
+      "width": 695,
+      "height": 1136,
+      "bounds": {
+        "x": 3214,
+        "y": -13005,
+        "width": 695,
+        "height": 1136
+      }
+    },
+    {
+      "id": "175:5",
+      "name": "Frame 3 2",
+      "type": "RECTANGLE",
+      "width": 455,
+      "height": 744,
+      "bounds": {
+        "x": 3844,
+        "y": -13383,
+        "width": 455,
+        "height": 744
+      }
+    }
+  ],
+  "reusedAssets": {
+    "img04PointsOptions1": {
+      "path": "assets/website-v4-figma/pointly-img04PointsOptions1.png",
+      "bytes": 340266,
+      "sha256": "402f5c1c7873dccbb7bef0457363ab77b8280ccf7989e5b57c3c48073d63a78e",
+      "width": 1505,
+      "height": 1045
+    },
+    "img05FeaturedStay2": {
+      "path": "assets/website-v4-figma/pointly-img05FeaturedStay2.png",
+      "bytes": 996639,
+      "sha256": "712db883ad1f7e0fefcc39a2b31baea8552cce1f058958827a09b9c07813c783",
+      "width": 1505,
+      "height": 1045
+    },
+    "img08ProTips2": {
+      "path": "assets/website-v4-figma/pointly-img08ProTips2.png",
+      "bytes": 319034,
+      "sha256": "eed58660c74e2fa89958b9eb1e4e7fe96c24cd9ac01c3607c9388069d1ad0999",
+      "width": 1505,
+      "height": 1045
+    },
+    "imgFrame33": {
+      "path": "assets/website-v4-figma/pointly-imgFrame33.png",
+      "bytes": 879584,
+      "sha256": "60380788340d998985cd5e939b7e82c46b93e47c20c4713ac5b7c98daf72d624",
+      "width": 1437,
+      "height": 2349
+    },
+    "imgFrame322": {
+      "path": "assets/home-figma/frame322.png",
+      "bytes": 879850,
+      "sha256": "019549d01da1e9fecc4edc308320dc14f702eb8122b04d4291d7bec3becef6e7",
+      "width": 1437,
+      "height": 2349
+    },
+    "imgFrame32": {
+      "path": "assets/website-v4-figma/pointly-imgFrame32.svg",
+      "bytes": 243,
+      "sha256": "48df5f0c313ae1d2ec8d8cab15295047bf5b70477673cf176d0af29aaeba52df",
+      "width": 488.0,
+      "height": 497.0
+    },
+    "imgFrame321": {
+      "path": "assets/website-v4-figma/pointly-imgFrame321.svg",
+      "bytes": 244,
+      "sha256": "344ba38c1f4f099c39290a95cfa9058f0928007fcd52cb6efc4ea8336a5ce73e",
+      "width": 772.0,
+      "height": 531.0
+    }
+  }
+}

@@ -1,0 +1,35 @@
+const img04PointsOptions1 = "/assets/website-v4-figma/pointly-img04PointsOptions1.png";
+const img05FeaturedStay2 = "/assets/website-v4-figma/pointly-img05FeaturedStay2.png";
+const img08ProTips2 = "/assets/website-v4-figma/pointly-img08ProTips2.png";
+const imgFrame33 = "/assets/website-v4-figma/pointly-imgFrame33.png";
+const imgFrame322 = "/assets/home-figma/frame322.png";
+const imgFrame32 = "/assets/website-v4-figma/pointly-imgFrame32.svg";
+const imgFrame321 = "/assets/website-v4-figma/pointly-imgFrame321.svg";
+
+export default function ScreenImages() {
+  return (
+    <div className="contents relative size-full" data-node-id="462:25" data-name="Screen Images">
+      <div className="absolute bg-[#88cffd] h-[384px] left-[120px] rounded-[16px] top-[1312px] w-[1200px]" data-node-id="320:51" />
+      <div className="absolute contents left-[190px] top-[1377px]" data-node-id="320:56">
+        <div className="absolute h-[237px] left-[calc(33.33%+68px)] shadow-[4px_4px_4px_0px_rgba(0,0,0,0.15)] top-[1377px] w-[342px]" data-node-id="307:12" data-name="04-points-options 1">
+          <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={img04PointsOptions1} />
+        </div>
+        <div className="absolute h-[236px] left-[190px] shadow-[4px_4px_4px_0px_rgba(0,0,0,0.15)] top-[1378px] w-[340px]" data-node-id="308:17" data-name="05-featured-stay 2">
+          <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={img05FeaturedStay2} />
+        </div>
+        <div className="absolute h-[237px] left-[calc(58.33%+69px)] shadow-[4px_4px_4px_0px_rgba(0,0,0,0.15)] top-[1377px] w-[342px]" data-node-id="308:20" data-name="08-pro-tips 2">
+          <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={img08ProTips2} />
+        </div>
+      </div>
+      <div className="absolute bg-[#88cffd] h-[655px] left-[120px] rounded-[16px] top-[603px] w-[1200px]" data-node-id="274:4" />
+      <div className="absolute contents left-[calc(50%+65px)] top-[682px]" data-node-id="175:13" data-name="Mask group">
+        <div className="absolute h-[744px] left-[calc(50%+80px)] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-15px_294px] mask-size-[488px_497px] shadow-[4px_4px_8px_0px_rgba(0,0,0,0.25)] top-[388px] w-[455px]" data-node-id="175:5" style={{ maskImage: `url("${imgFrame32}")` }} data-name="Frame 3 2">
+          <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgFrame33} />
+        </div>
+      </div>
+      <div className="absolute h-[1136px] left-[170px] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-25px_-39px] mask-size-[772px_531px] shadow-[4px_4px_4px_0px_rgba(0,0,0,0.25)] top-[766px] w-[695px]" data-node-id="320:52" style={{ maskImage: `url("${imgFrame321}")` }} data-name="Frame 3 (2) 1">
+        <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgFrame322} />
+      </div>
+    </div>
+  );
+}

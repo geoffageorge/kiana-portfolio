@@ -34,6 +34,8 @@ test('every Pointly source asset keeps its bytes and renders in its inspected sl
       const expected = asset.mask ?? geometry[asset.figmaNodeId];
       for (const key of ['x','y','width','height']) {
         if (key === 'height' && ['line-65-62','line-66-63'].includes(name)) continue;
+        // The requested shadow clearance intentionally raises this source slot.
+        if (name === 'frame-3-2-1-186' && key === 'y') continue;
         expect(Math.abs(actual[key] - expected[key]), `${name} ${key}`).toBeLessThan(1);
       }
       if (asset.paint?.scaleMode === 'CROP') {

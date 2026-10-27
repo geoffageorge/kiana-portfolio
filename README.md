@@ -215,28 +215,42 @@ The approved editorial changes keep Obayashi numbered `01 /` to match its home t
 
 `src/components/CareersLaptop/CareersLaptop.jsx` preserves the original laptop PNG and places the unmodified image from the updated `Careers 2` frame (`563:7`, child `555:30`) inside the screen. Its source frame is 658 × 2949 and its downloaded raster is 914 × 4096. The source display rectangle is `(180, 37, 1604, 1039)` within the 1964 × 1196 image. A clipped browser surface preserves the original bezel, camera notch and base. The page scrolls upward over a 48-second cycle, holds at the top and bottom, then fades briefly to reset. ResizeObserver calculates travel from the full page height and visible screen height, so the final footer appears without empty space. It starts automatically when visible, pauses off-screen or in a hidden tab, and displays a static preview for reduced-motion visitors. The Careers caption and the laptop's original desktop placement are retained. The approved final version displays no Pause/Play or full-page enlargement controls beneath the laptop; the automatic scrolling and loop timing remain unchanged.
 
-### Deploy Overall Kiana website updates version 4 through GitHub
+### Deploy the Point.ly image and caption follow-up through GitHub
 
-This update includes the revised home tiles and their roles, About layout and photo banner, shared yellow logo and grey footer hover, Obayashi Project Details and Careers 2 animation image, and the complete updated Point.ly frame. Point.ly’s Research section uses the eight-logo grid, revised comparison copy and insight cards. Project Details lists a High-Fidelity Prototype and the five contribution roles. Its Design heading and second sentence use “High-Fidelity Prototype” / “Our high-fidelity prototype.” The Figma deliverable typo “Protoype” is displayed as “Prototype”; duplicate Methods labels are rendered once. The complete `Pointly Case Study 2` frame (`90:18`) is used for implementation and final comparison; the shorter similarly named concepts are separate frames. All existing horizontal divider fixes remain native CSS borders. Image dialogs now pass their actual opening button to the existing modal focus-return mechanism so Safari returns keyboard focus correctly.
+Version 4, including the final Obayashi content correction, is already committed as `e638739` on `main` and synchronized with `origin/main`. This follow-up changes only the Point.ly page, its regression checks, and the Figma inspection record.
 
-The previous version is already committed on `main`. The version 4 bundle also includes the final Obayashi content correction: Tools lists only Figma and Claude; My Contribution lists Project Lead, UX research, Product Strategy, Interface Design, and Visual Identity. To push **all pending version 4 changes**, run:
+The opening “Your points. More possibilities” screen now sits 16px above the blue panel’s bottom edge, leaving room for its original drop shadow. Its source image and SVG mask remain unchanged. At the 1440px reference width this raises the screen by 16px; smaller viewports retain the same shadow clearance.
+
+The next three screens use captions from Figma **Pointly Captions 1** (`462:26`), inspected October 27, 2026:
+
+- Personalized Stay Recommendations (`462:22`)
+- AI-Assisted Transfer Recommendations (`462:23`)
+- Redemption Tips & Alerts (`462:24`)
+
+They use black Inter Semi Bold (600), 15px type, 22px line height, zero letter spacing, and left alignment. Each caption sits 14px below its image with a 4px left inset, matching the source coordinates. The three images retain their desktop positions; the second column differs by less than one pixel because of grid rounding. The blue panel grows when captions wrap on tablets, and the three cards stack below 768px to preserve readable type. The source frame’s extra trailing blank line in the middle caption is omitted.
+
+`Assets/figma files/pointly-captions-2026-10-27/` preserves the caption text/styles/positions, current screen geometry, and generated references with local asset paths. All seven referenced image and SVG assets were downloaded to temporary storage and verified byte-for-byte against the existing local assets; no new public image files are needed. The source Figma screen still meets the blue panel’s lower edge; the upward adjustment follows the user’s explicit website correction.
+
+Validated October 27, 2026: the production build succeeds. Chrome desktop/phone checks passed 91 tests, with one desktop-only geometry check skipped on mobile; WebKit and Firefox desktop/phone checks passed all 100 tests, for 191 passing checks overall. Visual checks confirm the shadow clearance and caption layout in all three engines. Checks cover the exact Figma caption text and typography, image/caption spacing, responsive containment at 320–1440px, image enlargement and keyboard focus, navigation, About/resume links, native dividers, and the Obayashi scrolling laptop. The temporary WebKit/Firefox installations were refreshed before their successful run.
+
+To push this follow-up:
 
 ```sh
 cd "/Users/geoffgeorge/Developer/Kiana Portfolio" &&
 npm run build &&
 git add -- \
-  README.md playwright.config.js src/ tests/ \
-  public/assets/website-v4-figma/ public/assets/brand/ki-logo-v4.svg \
-  "Assets/figma files/overall-website-v4-2026-10-22/" \
-  "specs/changes/update 4.md" &&
+  README.md \
+  src/pages/PointlyCaseStudyPage.jsx src/pages/PointlyCaseStudyPage.css \
+  tests/pointly-design.spec.js tests/version4.spec.js \
+  "Assets/figma files/pointly-captions-2026-10-27/" &&
 git diff --cached --stat &&
-git commit -m "Implement overall Kiana website updates version 4" &&
+git commit -m "Contain Pointly hero screen and add Figma captions" &&
 git push origin main
 ```
 
-These paths leave the unrelated `.node-version` and template-image deletions, personal RTF files, and placeholder images unstaged. Keep `dist/` and `node_modules/` ignored; Cloudflare builds from committed source. No commit, push, or production deployment is performed by the local implementation task.
+These paths exclude unrelated `.node-version` and template-image deletions, personal RTF files, and placeholder images. Keep `dist/` and `node_modules/` ignored; Cloudflare builds from committed source. No commit, push, or production deployment is performed by this local implementation task.
 
-The existing remote is `https://github.com/geoffageorge/kiana-portfolio.git`. Its Cloudflare Workers Builds configuration uses production branch `main`, build command `npm run build`, deploy command `npx wrangler deploy`, and the repository root. A push to the connected branch triggers the configured build. After it succeeds, verify `/`, `/about/`, `/projects/obayashi/`, and `/projects/pointly/` on `https://www.kianageorge.com/`, including a reload, both home tile links, the Careers animation, the PDF, LinkedIn, and section dividers. Browser automation tests Chrome, Playwright WebKit (Safari’s engine), and Firefox on desktop and phone viewports; it does not control an installed Safari app or real mobile hardware. The live Cloudflare connection is not changed by these source changes.
+The existing remote is `https://github.com/geoffageorge/kiana-portfolio.git`. Its Cloudflare Workers Builds configuration uses production branch `main`, build command `npm run build`, deploy command `npx wrangler deploy`, and the repository root. After pushing, check the configured Cloudflare build, then reload `https://www.kianageorge.com/projects/pointly/` and verify both blue panels, all three captions, image enlargement, and navigation on desktop and phone widths. Browser automation uses Chrome, Playwright WebKit (Safari’s engine), and Firefox; phone tests use emulated or phone-sized viewports, rather than real mobile hardware. The live Cloudflare connection is not changed by this source update.
 
 To add another case study:
 

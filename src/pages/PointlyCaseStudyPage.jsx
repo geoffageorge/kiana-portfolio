@@ -45,9 +45,9 @@ function Picture({ name, alt = '', className = '', eager = false }) {
   return <span className={`pointly-picture ${className}`} data-figma-node={image.figmaNodeId} data-figma-asset={name} style={{ aspectRatio: `${mask?.width ?? slot.width} / ${mask?.height ?? slot.height}`, ...(mask && { maskImage: `url("${source(mask)}")` }) }}><img {...attributes} style={layer} /></span>;
 }
 
-function Exhibit({ name, alt, className = '', onOpenImage, eager = false, children }) {
+function Exhibit({ name, alt, className = '', onOpenImage, eager = false, captionId, children }) {
   const image = design.images[name];
-  return <figure className={`pointly-exhibit ${className}`}><button type="button" aria-label={`Enlarge ${alt}`} onClick={event => onOpenImage({ ...image, src: source(image), alt }, event.currentTarget)}><Picture name={name} alt={alt} eager={eager} /></button>{children && <figcaption>{children}</figcaption>}</figure>;
+  return <figure className={`pointly-exhibit ${className}`}><button type="button" aria-label={`Enlarge ${alt}`} onClick={event => onOpenImage({ ...image, src: source(image), alt }, event.currentTarget)}><Picture name={name} alt={alt} eager={eager} /></button>{children && <figcaption data-figma-node={captionId}>{children}</figcaption>}</figure>;
 }
 
 function Rule({ id }) {
@@ -103,9 +103,9 @@ export default function PointlyCaseStudyPage({ onOpenImage }) {
       <Exhibit name="frame-3-2-1-186" alt="Point.ly homepage final design and destination discovery" className="pointly-showcase__home" onOpenImage={onOpenImage} eager />
     </div>
     <div className="pointly-rewards-flow" aria-label="Point.ly personalized travel recommendations" data-figma-node="320:51">
-      <Exhibit name="05-featured-stay-2-178" alt="Point.ly featured stay recommendation" className="pointly-flow__stay" onOpenImage={onOpenImage} eager />
-      <Exhibit name="04-points-options-1-177" alt="Point.ly points and transfer options" className="pointly-flow__options" onOpenImage={onOpenImage} eager />
-      <Exhibit name="08-pro-tips-2-179" alt="Point.ly tips for getting more from travel rewards" className="pointly-flow__tips" onOpenImage={onOpenImage} eager />
+      <Exhibit name="05-featured-stay-2-178" alt="Point.ly featured stay recommendation" className="pointly-flow__stay" onOpenImage={onOpenImage} eager captionId="462:22">Personalized Stay Recommendations</Exhibit>
+      <Exhibit name="04-points-options-1-177" alt="Point.ly points and transfer options" className="pointly-flow__options" onOpenImage={onOpenImage} eager captionId="462:23">AI-Assisted Transfer Recommendations</Exhibit>
+      <Exhibit name="08-pro-tips-2-179" alt="Point.ly tips for getting more from travel rewards" className="pointly-flow__tips" onOpenImage={onOpenImage} eager captionId="462:24">Redemption Tips &amp; Alerts</Exhibit>
     </div>
     <section className="pointly-challenge" aria-labelledby="pointly-challenge-title">
       <h2 id="pointly-challenge-title">The <br />Challenge</h2>

@@ -39,15 +39,13 @@ span.pointly-picture > img { position: absolute; inset: 0; width: 100%; height: 
 .pointly-showcase { position: relative; height: 655px; margin-top: 39px; border-radius: 16px; background: var(--pointly-blue); }
 .pointly-showcase .pointly-exhibit { position: absolute; }
 .pointly-showcase__destinations { top: 79px; left: 55.4166667%; width: 40.6666667%; }
-.pointly-showcase__home { top: 124px; left: 2.0833333%; width: 64.3333333%; }
+.pointly-showcase__home { bottom: 16px; left: 2.0833333%; width: 64.3333333%; }
 .pointly-showcase__destinations { filter: drop-shadow(4px 4px 8px rgb(0 0 0 / 25%)); }
 .pointly-showcase__home { filter: drop-shadow(4px 4px 4px rgb(0 0 0 / 25%)); }
-.pointly-rewards-flow { position: relative; height: 384px; margin-top: 54px; border-radius: 16px; background: var(--pointly-blue); }
-.pointly-rewards-flow .pointly-exhibit { position: absolute; top: 65px; }
+.pointly-rewards-flow { display: grid; grid-template-columns: minmax(0,340fr) minmax(0,342fr) minmax(0,342fr); align-items: start; column-gap: 1.743638%; position: relative; min-height: 384px; margin-top: 54px; padding: 65px 5.75% 46px 5.8333333%; border-radius: 16px; background: var(--pointly-blue); }
 .pointly-rewards-flow .pointly-exhibit > button { box-shadow: 4px 4px 4px rgb(0 0 0 / 15%); }
-.pointly-rewards-flow .pointly-flow__stay { top: 66px; left: 5.8333333%; width: 28.3333333%; }
-.pointly-flow__options { left: 35.6666667%; width: 28.5%; }
-.pointly-flow__tips { left: 65.75%; width: 28.5%; }
+.pointly-rewards-flow .pointly-flow__stay { margin-top: 1px; }
+.pointly-rewards-flow figcaption { width: fit-content; max-width: calc(100% - 4px); margin: 14px 0 0 4px; color: #000; font: normal 600 15px/22px 'Inter', sans-serif; letter-spacing: 0; text-align: left; }
 .pointly-challenge { display: grid; grid-template-columns: 586fr 586fr; gap: 28px; min-height: 381px; margin-top: 93px; }
 .pointly-challenge h2 { line-height: 1.05; }
 .pointly-challenge__copy > div { margin-left: 2px; }
@@ -235,10 +233,7 @@ span.pointly-picture > img { position: absolute; inset: 0; width: 100%; height: 
   .pointly-facts { grid-template-columns: repeat(3,minmax(0,1fr)); row-gap: 28px; margin-top: 27px !important; }
   .pointly-showcase { height: auto; aspect-ratio: 1200/655; margin-top: 40px; }
   .pointly-showcase__destinations { top: 12.0610687%; }
-  .pointly-showcase__home { top: 18.9312977%; }
-  .pointly-rewards-flow { height: auto; aspect-ratio: 1200/384; margin-top: 32px; }
-  .pointly-rewards-flow .pointly-exhibit { top: 16.9270833%; }
-  .pointly-rewards-flow .pointly-flow__stay { top: 17.1875%; }
+  .pointly-rewards-flow { min-height: 0; margin-top: 32px; padding-block: 5.4166667% 3.8333333%; }
   .pointly-challenge { min-height: 0; margin-top: 64px; }
   .pointly-goals { grid-template-columns: 1fr; gap: 24px; height: auto; margin-top: 56px; }
   .pointly-goals > h2 { padding-top: 0; }
@@ -289,6 +284,8 @@ span.pointly-picture > img { position: absolute; inset: 0; width: 100%; height: 
   .pointly-facts dd { font-size: 14px; }
   .pointly-facts > div:nth-child(2) dd { margin: 0; }
   .pointly-showcase, .pointly-rewards-flow { border-radius: 10px; }
+  .pointly-rewards-flow { grid-template-columns: minmax(0,1fr); gap: 28px; padding: 24px; }
+  .pointly-rewards-flow .pointly-flow__stay { margin-top: 0; }
   .pointly-challenge { grid-template-columns: 1fr; gap: 24px; margin-top: 48px; }
   .pointly-challenge h2 br { display: none; }
   .pointly-challenge h3 { font-size: 16px; line-height: 26px; }

@@ -4,6 +4,7 @@ import { createHash } from 'node:crypto';
 
 const manifest=JSON.parse(await readFile(new URL('../public/assets/website-v4-figma/manifest.json',import.meta.url),'utf8'));
 const pointly=JSON.parse(await readFile(new URL('../public/assets/website-v4-figma/pointly-design.json',import.meta.url),'utf8'));
+const captionInspection=JSON.parse(await readFile(new URL('../Assets/figma files/pointly-captions-2026-10-27/inspection.json',import.meta.url),'utf8'));
 const sha=bytes=>createHash('sha256').update(bytes).digest('hex');
 
 async function ready(page,path) {
@@ -142,4 +143,59 @@ test('updated pages fit phone, tablet, and desktop widths with no runtime errors
     }
   }
   expect(errors).toEqual([]);
+});
+
+test('Pointly opening image and its shadow fit the blue panel and all three Figma captions render below their images',async({page})=>{
+  await ready(page,'/projects/pointly/');
+  const frame=captionInspection.nodes.find(n=>n.id==='90:18');
+  const sources=captionInspection.nodes.filter(n=>['462:22','462:23','462:24'].includes(n.id));
+  for(const width of [page.viewportSize().width,320,768,1024]) {
+    await page.setViewportSize({width,height:1000});
+    const panel=await page.locator('.pointly-showcase').boundingBox();
+    const opening=page.locator('.pointly-showcase__home');
+    const image=await opening.boundingBox();
+    const clearance=panel.y+panel.height-image.y-image.height;
+    expect(clearance).toBeGreaterThanOrEqual(12);
+    expect(clearance).toBeLessThanOrEqual(20);
+    expect(image.y).toBeGreaterThan(panel.y);
+    expect(image.x).toBeGreaterThan(panel.x);
+    expect(image.x+image.width).toBeLessThan(panel.x+panel.width);
+    await expect(opening).toHaveCSS('filter',/drop-shadow/);
+    const rewards=page.locator('.pointly-rewards-flow');
+    const bounds=await rewards.boundingBox();
+    const figures=rewards.locator('figure');
+    await expect(figures).toHaveCount(3);
+    for(const [index,source] of sources.entries()) {
+      const figure=figures.nth(index);
+      const caption=figure.locator('figcaption');
+      await expect(caption).toHaveText(source.text.trim());
+      await expect(caption).toHaveAttribute('data-figma-node',source.id);
+      await expect(caption).toHaveCSS('font-family',/^"?Inter"?, sans-serif$/);
+      await expect(caption).toHaveCSS('font-size',`${source.segments[0].fontSize}px`);
+      await expect(caption).toHaveCSS('font-weight','600');
+      await expect(caption).toHaveCSS('font-style','normal');
+      await expect(caption).toHaveCSS('line-height',`${source.segments[0].lineHeight.value}px`);
+      await expect(caption).toHaveCSS('color','rgb(0, 0, 0)');
+      const picture=await figure.locator('button').boundingBox();
+      const text=await caption.boundingBox();
+      expect(text.y-picture.y-picture.height).toBeCloseTo(14,1);
+      expect(text.x-picture.x).toBeCloseTo(4,1);
+      expect(text.x+text.width).toBeLessThanOrEqual(bounds.x+bounds.width);
+      expect(text.y+text.height).toBeLessThan(bounds.y+bounds.height);
+      if(width===1440) {
+        expect(Math.abs(text.x-(source.bounds.x-frame.bounds.x))).toBeLessThan(1);
+        expect(Math.abs(text.y-(source.bounds.y-frame.bounds.y))).toBeLessThan(1);
+      }
+      if(width<768 && index>0) {
+        const previous=await figures.nth(index-1).boundingBox();
+        expect(picture.y).toBeGreaterThan(previous.y+previous.height);
+      }
+    }
+    expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
+  }
+  const screenshot=page.getByRole('button',{name:'Enlarge Point.ly points and transfer options',exact:true});
+  await screenshot.click();
+  await expect(page.getByRole('dialog')).toBeVisible();
+  await page.keyboard.press('Escape');
+  await expect(screenshot).toBeFocused();
 });

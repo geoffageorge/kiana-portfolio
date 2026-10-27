@@ -1,0 +1,15 @@
+export default function PointlyCaptions1() {
+  return (
+    <div className="[word-break:break-word] contents font-['Inter:Semi_Bold'] font-semibold leading-[22px] not-italic relative size-full text-[15px] text-black whitespace-nowrap" data-node-id="462:26" data-name="Pointly Captions 1">
+      <p className="absolute left-0 top-0" data-node-id="462:22">
+        Personalized Stay Recommendations
+      </p>
+      <p className="absolute left-0 top-0" data-node-id="462:23">
+        AI-Assisted Transfer Recommendations
+        <br aria-hidden />
+        <br aria-hidden />
+      </p>
+      <p className="absolute left-0 top-0" data-node-id="462:24">{`Redemption Tips & Alerts`}</p>
+    </div>
+  );
+}
