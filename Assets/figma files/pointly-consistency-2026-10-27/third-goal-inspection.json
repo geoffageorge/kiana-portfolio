@@ -1,0 +1,38 @@
+{
+  "fileKey": "wZSRbIZZXfUlrq902OXE2W",
+  "frameId": "90:18",
+  "inspectedDate": "2026-10-27",
+  "scope": "Vertical placement inside the third Goals circle only; coordinates relative to the case-study frame",
+  "circle": {
+    "id": "128:21",
+    "x": 1047,
+    "y": 2244,
+    "width": 195,
+    "height": 195
+  },
+  "heading": {
+    "id": "130:31",
+    "x": 1091,
+    "y": 2291,
+    "width": 108,
+    "height": 44,
+    "text": "BUILD\nCONFIDENCE",
+    "fontFamily": "Fira Mono",
+    "fontWeight": 500,
+    "fontSize": 18,
+    "lineHeight": 21.6,
+    "verticalAlign": "center"
+  },
+  "description": {
+    "id": "130:30",
+    "x": 1060,
+    "y": 2347,
+    "width": 170,
+    "height": 44,
+    "text": "Certainty of\nbest value",
+    "fontFamily": "Inter",
+    "fontWeight": 400,
+    "fontSize": 15,
+    "lineHeight": 22
+  }
+}

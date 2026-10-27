@@ -215,9 +215,13 @@ The approved editorial changes keep Obayashi numbered `01 /` to match its home t
 
 `src/components/CareersLaptop/CareersLaptop.jsx` preserves the original laptop PNG and places the unmodified image from the updated `Careers 2` frame (`563:7`, child `555:30`) inside the screen. Its source frame is 658 × 2949 and its downloaded raster is 914 × 4096. The source display rectangle is `(180, 37, 1604, 1039)` within the 1964 × 1196 image. A clipped browser surface preserves the original bezel, camera notch and base. The page scrolls upward over a 48-second cycle, holds at the top and bottom, then fades briefly to reset. ResizeObserver calculates travel from the full page height and visible screen height, so the final footer appears without empty space. It starts automatically when visible, pauses off-screen or in a hidden tab, and displays a static preview for reduced-motion visitors. The Careers caption and the laptop's original desktop placement are retained. The approved final version displays no Pause/Play or full-page enlargement controls beneath the laptop; the automatic scrolling and loop timing remain unchanged.
 
-### Deploy the Point.ly screen alignment correction through GitHub
+### Deploy the Point.ly rounded shadows and third Goals circle placement through GitHub
 
-Version 4 (`e638739`) and the Point.ly caption follow-up (`fc51835`) are already committed on `main` and synchronized with `origin/main`. This correction changes only the Point.ly opening screen alignment, its regression checks, and the Figma inspection notes.
+The previous Point.ly opening-screen alignment correction (`494bdac`) is already committed on `main` and synchronized with `origin/main`. This follow-up bundles the three smaller screen shadows with the vertical text placement inside the third Goals circle, plus the regression check and Figma inspection notes.
+
+The three screens in the second blue container now cast shadows from their rounded PNG alpha edges instead of rectangular button boxes. Image sizes, captions, and hover/enlargement behavior are retained.
+
+Only the BUILD CONFIDENCE circle's vertical text placement changes. Its two-line heading is centered at 69px below the circle's top, and its description begins 103px below the top, matching the current Figma nodes `130:31` and `130:30` within circle `128:21`. The first two circles retain their previous text positions; no shared alignment is imposed across the three circles. Fonts, colors, line breaks, circle geometry, and horizontal positions are retained. `Assets/figma files/pointly-consistency-2026-10-27/third-goal-inspection.json` records the independent source geometry used by the responsive regression check, and `inspection.md` explains the derivation. No public assets are replaced.
 
 The opening “Your points. More possibilities” screen now meets the blue panel’s bottom edge exactly, with no blue strip below its white edge and no bottom shadow. The panel clips painted overflow at that boundary, preserving Figma’s side shadow. Its source image and SVG mask remain unchanged. This supersedes the previous 16px clearance and matches the directly re-inspected Figma placement at desktop and smaller viewport sizes.
 
@@ -233,9 +237,11 @@ They use black Inter Semi Bold (600), 15px type, 22px line height, zero letter s
 
 The previous caption revision passed 191 checks, with one desktop-only geometry check skipped on mobile. The alignment correction restores the strict opening-screen y-coordinate comparison against Figma and updates the responsive check to require zero bottom clearance, clipping of painted overflow, and no bottom border.
 
-Validated October 27, 2026: the alignment correction passes the production build and all 76 affected geometry, caption, asset, navigation, and responsive regression checks, with no skipped or flaky results. The run covers Chrome, WebKit (Safari’s engine), and Firefox desktop/phone layouts. Desktop and phone screenshots in all three engines confirm exactly matching bottom edges and plain white space below the panel with no shadow; responsive assertions also cover 320px, 768px, and 1024px widths. No commit or push has been made for this correction.
+Validated October 27, 2026: the previous opening-screen alignment correction passed the production build and all 76 affected geometry, caption, asset, navigation, and responsive regression checks. Desktop and phone screenshots confirmed matching bottom edges with no shadow beneath that panel.
 
-To push this alignment correction:
+Validated October 27, 2026: the final bundle passes the production build and all 76 affected regression checks, with no failures, skips, or flaky results. Chrome, WebKit (Safari’s engine), and Firefox desktop/phone screenshots confirm the third-circle placement and rounded shadows. The heading center is within 0.02px of the inspected 69px anchor and the description starts at 103px; responsive checks also cover 320px, 768px, and 1024px widths and preserve the first two circles' prior offsets. Phone checks use emulated or phone-sized viewports, rather than real mobile hardware. No commit or push has been made for this bundle.
+
+To push both the rounded shadows and third-circle placement:
 
 ```sh
 cd "/Users/geoffgeorge/Developer/Kiana Portfolio" &&
@@ -243,10 +249,10 @@ npm run build &&
 git add -- \
   README.md \
   src/pages/PointlyCaseStudyPage.css \
-  tests/pointly-design.spec.js tests/version4.spec.js \
-  "Assets/figma files/pointly-alignment-2026-10-27/" &&
+  tests/version4.spec.js \
+  "Assets/figma files/pointly-consistency-2026-10-27/" &&
 git diff --cached --stat &&
-git commit -m "Align Pointly opening screen flush with blue panel" &&
+git commit -m "Round Pointly screen shadows and match third Goals circle to Figma" &&
 git push origin main
 ```
 

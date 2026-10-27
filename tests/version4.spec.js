@@ -5,6 +5,7 @@ import { createHash } from 'node:crypto';
 const manifest=JSON.parse(await readFile(new URL('../public/assets/website-v4-figma/manifest.json',import.meta.url),'utf8'));
 const pointly=JSON.parse(await readFile(new URL('../public/assets/website-v4-figma/pointly-design.json',import.meta.url),'utf8'));
 const captionInspection=JSON.parse(await readFile(new URL('../Assets/figma files/pointly-captions-2026-10-27/inspection.json',import.meta.url),'utf8'));
+const thirdGoalInspection=JSON.parse(await readFile(new URL('../Assets/figma files/pointly-consistency-2026-10-27/third-goal-inspection.json',import.meta.url),'utf8'));
 const sha=bytes=>createHash('sha256').update(bytes).digest('hex');
 
 async function ready(page,path) {
@@ -145,7 +146,7 @@ test('updated pages fit phone, tablet, and desktop widths with no runtime errors
   expect(errors).toEqual([]);
 });
 
-test('Pointly opening image meets the blue panel bottom with no shadow below it and all three Figma captions render below their images',async({page})=>{
+test('Pointly opening image and captions retain their placement and only the third Goals text matches its inspected Figma positions',async({page})=>{
   await ready(page,'/projects/pointly/');
   const frame=captionInspection.nodes.find(n=>n.id==='90:18');
   const sources=captionInspection.nodes.filter(n=>['462:22','462:23','462:24'].includes(n.id));
@@ -194,6 +195,31 @@ test('Pointly opening image meets the blue panel bottom with no shadow below it 
       if(width<768 && index>0) {
         const previous=await figures.nth(index-1).boundingBox();
         expect(picture.y).toBeGreaterThan(previous.y+previous.height);
+      }
+    }
+    const goals=page.locator('.pointly-goals__steps li');
+    await expect(goals).toHaveCount(3);
+    for(const [index,goal] of (await goals.all()).entries()) {
+      const circle=await goal.boundingBox();
+      const title=goal.locator('strong');
+      const body=goal.locator('span:not(.pointly-picture)');
+      const heading=await title.boundingBox();
+      const description=await body.boundingBox();
+      const scale=circle.height/thirdGoalInspection.circle.height;
+      if(index===2) {
+        const {circle:sourceCircle,heading:sourceHeading,description:sourceDescription}=thirdGoalInspection;
+        expect((heading.y+heading.height/2-circle.y)/scale).toBeCloseTo(sourceHeading.y+sourceHeading.height/2-sourceCircle.y,1);
+        expect((description.y-circle.y)/scale).toBeCloseTo(sourceDescription.y-sourceCircle.y,1);
+        await expect(title).toHaveCSS('font-size',`${sourceHeading.fontSize}px`);
+        await expect(title).toHaveCSS('line-height',`${sourceHeading.lineHeight}px`);
+        await expect(body).toHaveCSS('font-size',`${sourceDescription.fontSize}px`);
+        await expect(body).toHaveCSS('line-height',`${sourceDescription.lineHeight}px`);
+        expect(description.y).toBeGreaterThan(heading.y+heading.height);
+        expect(description.y+description.height).toBeLessThan(circle.y+circle.height);
+      } else {
+        // The first two circles keep their previously committed text positions.
+        expect((heading.y-circle.y)/scale).toBeCloseTo(58,1);
+        expect((description.y-circle.y)/scale).toBeCloseTo(93,1);
       }
     }
     expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
