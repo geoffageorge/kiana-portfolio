@@ -36,10 +36,11 @@ span.pointly-picture > img { position: absolute; inset: 0; width: 100%; height: 
 .pointly-facts dd { max-width: 170px; font-size: 15px; line-height: 22px; }
 .pointly-facts dd span { display: block; }
 .pointly-facts > div:nth-child(2) dd { margin-left: 2px; }
-.pointly-showcase { position: relative; height: 655px; margin-top: 39px; border-radius: 16px; background: var(--pointly-blue); }
+/* Match Figma's flush white bottom edge while clipping the shadow below the panel. */
+.pointly-showcase { position: relative; overflow: hidden; height: 655px; margin-top: 39px; border-radius: 16px; background: var(--pointly-blue); }
 .pointly-showcase .pointly-exhibit { position: absolute; }
 .pointly-showcase__destinations { top: 79px; left: 55.4166667%; width: 40.6666667%; }
-.pointly-showcase__home { bottom: 16px; left: 2.0833333%; width: 64.3333333%; }
+.pointly-showcase__home { bottom: 0; left: 2.0833333%; width: 64.3333333%; }
 .pointly-showcase__destinations { filter: drop-shadow(4px 4px 8px rgb(0 0 0 / 25%)); }
 .pointly-showcase__home { filter: drop-shadow(4px 4px 4px rgb(0 0 0 / 25%)); }
 .pointly-rewards-flow { display: grid; grid-template-columns: minmax(0,340fr) minmax(0,342fr) minmax(0,342fr); align-items: start; column-gap: 1.743638%; position: relative; min-height: 384px; margin-top: 54px; padding: 65px 5.75% 46px 5.8333333%; border-radius: 16px; background: var(--pointly-blue); }

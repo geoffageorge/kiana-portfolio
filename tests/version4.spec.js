@@ -145,22 +145,27 @@ test('updated pages fit phone, tablet, and desktop widths with no runtime errors
   expect(errors).toEqual([]);
 });
 
-test('Pointly opening image and its shadow fit the blue panel and all three Figma captions render below their images',async({page})=>{
+test('Pointly opening image meets the blue panel bottom with no shadow below it and all three Figma captions render below their images',async({page})=>{
   await ready(page,'/projects/pointly/');
   const frame=captionInspection.nodes.find(n=>n.id==='90:18');
   const sources=captionInspection.nodes.filter(n=>['462:22','462:23','462:24'].includes(n.id));
   for(const width of [page.viewportSize().width,320,768,1024]) {
     await page.setViewportSize({width,height:1000});
-    const panel=await page.locator('.pointly-showcase').boundingBox();
+    const showcase=page.locator('.pointly-showcase');
+    const panel=await showcase.boundingBox();
     const opening=page.locator('.pointly-showcase__home');
     const image=await opening.boundingBox();
     const clearance=panel.y+panel.height-image.y-image.height;
-    expect(clearance).toBeGreaterThanOrEqual(12);
-    expect(clearance).toBeLessThanOrEqual(20);
+    expect(Math.abs(clearance)).toBeLessThan(0.1);
     expect(image.y).toBeGreaterThan(panel.y);
     expect(image.x).toBeGreaterThan(panel.x);
     expect(image.x+image.width).toBeLessThan(panel.x+panel.width);
     await expect(opening).toHaveCSS('filter',/drop-shadow/);
+    // Preserve Figma's side shadow, clipping all painted overflow at the bottom.
+    await expect(showcase).toHaveCSS('overflow','hidden');
+    await expect(opening.locator('button')).toHaveCSS('border-bottom-width','0px');
+    const picture=await opening.locator('.pointly-picture').boundingBox();
+    expect(Math.abs(panel.y+panel.height-picture.y-picture.height)).toBeLessThan(0.1);
     const rewards=page.locator('.pointly-rewards-flow');
     const bounds=await rewards.boundingBox();
     const figures=rewards.locator('figure');

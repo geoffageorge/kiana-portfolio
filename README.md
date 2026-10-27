@@ -215,11 +215,11 @@ The approved editorial changes keep Obayashi numbered `01 /` to match its home t
 
 `src/components/CareersLaptop/CareersLaptop.jsx` preserves the original laptop PNG and places the unmodified image from the updated `Careers 2` frame (`563:7`, child `555:30`) inside the screen. Its source frame is 658 × 2949 and its downloaded raster is 914 × 4096. The source display rectangle is `(180, 37, 1604, 1039)` within the 1964 × 1196 image. A clipped browser surface preserves the original bezel, camera notch and base. The page scrolls upward over a 48-second cycle, holds at the top and bottom, then fades briefly to reset. ResizeObserver calculates travel from the full page height and visible screen height, so the final footer appears without empty space. It starts automatically when visible, pauses off-screen or in a hidden tab, and displays a static preview for reduced-motion visitors. The Careers caption and the laptop's original desktop placement are retained. The approved final version displays no Pause/Play or full-page enlargement controls beneath the laptop; the automatic scrolling and loop timing remain unchanged.
 
-### Deploy the Point.ly image and caption follow-up through GitHub
+### Deploy the Point.ly screen alignment correction through GitHub
 
-Version 4, including the final Obayashi content correction, is already committed as `e638739` on `main` and synchronized with `origin/main`. This follow-up changes only the Point.ly page, its regression checks, and the Figma inspection record.
+Version 4 (`e638739`) and the Point.ly caption follow-up (`fc51835`) are already committed on `main` and synchronized with `origin/main`. This correction changes only the Point.ly opening screen alignment, its regression checks, and the Figma inspection notes.
 
-The opening “Your points. More possibilities” screen now sits 16px above the blue panel’s bottom edge, leaving room for its original drop shadow. Its source image and SVG mask remain unchanged. At the 1440px reference width this raises the screen by 16px; smaller viewports retain the same shadow clearance.
+The opening “Your points. More possibilities” screen now meets the blue panel’s bottom edge exactly, with no blue strip below its white edge and no bottom shadow. The panel clips painted overflow at that boundary, preserving Figma’s side shadow. Its source image and SVG mask remain unchanged. This supersedes the previous 16px clearance and matches the directly re-inspected Figma placement at desktop and smaller viewport sizes.
 
 The next three screens use captions from Figma **Pointly Captions 1** (`462:26`), inspected October 27, 2026:
 
@@ -229,22 +229,24 @@ The next three screens use captions from Figma **Pointly Captions 1** (`462:26`)
 
 They use black Inter Semi Bold (600), 15px type, 22px line height, zero letter spacing, and left alignment. Each caption sits 14px below its image with a 4px left inset, matching the source coordinates. The three images retain their desktop positions; the second column differs by less than one pixel because of grid rounding. The blue panel grows when captions wrap on tablets, and the three cards stack below 768px to preserve readable type. The source frame’s extra trailing blank line in the middle caption is omitted.
 
-`Assets/figma files/pointly-captions-2026-10-27/` preserves the caption text/styles/positions, current screen geometry, and generated references with local asset paths. All seven referenced image and SVG assets were downloaded to temporary storage and verified byte-for-byte against the existing local assets; no new public image files are needed. The source Figma screen still meets the blue panel’s lower edge; the upward adjustment follows the user’s explicit website correction.
+`Assets/figma files/pointly-captions-2026-10-27/` preserves the caption text/styles/positions and generated references with local asset paths. `Assets/figma files/pointly-alignment-2026-10-27/inspection.md` records the new alignment inspection: at the 1440px reference width, the blue panel and opening screen mask both end at y1258. The two top-screen images and their two masks were downloaded again and verified against the existing source hashes; no new public assets are needed.
 
-Validated October 27, 2026: the production build succeeds. Chrome desktop/phone checks passed 91 tests, with one desktop-only geometry check skipped on mobile; WebKit and Firefox desktop/phone checks passed all 100 tests, for 191 passing checks overall. Visual checks confirm the shadow clearance and caption layout in all three engines. Checks cover the exact Figma caption text and typography, image/caption spacing, responsive containment at 320–1440px, image enlargement and keyboard focus, navigation, About/resume links, native dividers, and the Obayashi scrolling laptop. The temporary WebKit/Firefox installations were refreshed before their successful run.
+The previous caption revision passed 191 checks, with one desktop-only geometry check skipped on mobile. The alignment correction restores the strict opening-screen y-coordinate comparison against Figma and updates the responsive check to require zero bottom clearance, clipping of painted overflow, and no bottom border.
 
-To push this follow-up:
+Validated October 27, 2026: the alignment correction passes the production build and all 76 affected geometry, caption, asset, navigation, and responsive regression checks, with no skipped or flaky results. The run covers Chrome, WebKit (Safari’s engine), and Firefox desktop/phone layouts. Desktop and phone screenshots in all three engines confirm exactly matching bottom edges and plain white space below the panel with no shadow; responsive assertions also cover 320px, 768px, and 1024px widths. No commit or push has been made for this correction.
+
+To push this alignment correction:
 
 ```sh
 cd "/Users/geoffgeorge/Developer/Kiana Portfolio" &&
 npm run build &&
 git add -- \
   README.md \
-  src/pages/PointlyCaseStudyPage.jsx src/pages/PointlyCaseStudyPage.css \
+  src/pages/PointlyCaseStudyPage.css \
   tests/pointly-design.spec.js tests/version4.spec.js \
-  "Assets/figma files/pointly-captions-2026-10-27/" &&
+  "Assets/figma files/pointly-alignment-2026-10-27/" &&
 git diff --cached --stat &&
-git commit -m "Contain Pointly hero screen and add Figma captions" &&
+git commit -m "Align Pointly opening screen flush with blue panel" &&
 git push origin main
 ```
 
