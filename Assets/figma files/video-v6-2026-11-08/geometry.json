@@ -1,0 +1,1044 @@
+{
+  "frameId": "609:115",
+  "width": 1440,
+  "height": 2583,
+  "pagePrototype": {
+    "backgrounds": [
+      {
+        "type": "SOLID",
+        "visible": true,
+        "opacity": 0,
+        "blendMode": "NORMAL",
+        "color": {
+          "r": 0,
+          "g": 0,
+          "b": 0
+        },
+        "boundVariables": {}
+      }
+    ],
+    "flowStartingPoints": []
+  },
+  "nodes": [
+    {
+      "id": "609:115",
+      "name": "Video",
+      "type": "FRAME",
+      "parentId": "0:1",
+      "x": 0,
+      "y": 0,
+      "width": 1440,
+      "height": 2583
+    },
+    {
+      "id": "610:33",
+      "name": "I worked with Obayashi North America’s HR team to create a video giving prospective candidates an inside look at the company’s culture and employee experience. My role included conducting employee interviews, filming, and editing the final video.",
+      "type": "TEXT",
+      "parentId": "609:115",
+      "x": 121,
+      "y": 393,
+      "width": 546,
+      "height": 104
+    },
+    {
+      "id": "610:25",
+      "name": "As anti-Asian hate incidents escalated across the U.S., I led a  team of student journalists to create a multimedia news package documenting their impact and the community’s response.  I built the website and assembled the full package, coordinated articles and podcasts, produced the video, contributed photography, and created an incident timeline, personal accounts section, and donation and involvement resources.  The project won the National Scholastic Press Association’s Multimedia News Story of the Year award.",
+      "type": "TEXT",
+      "parentId": "609:115",
+      "x": 121,
+      "y": 874,
+      "width": 529,
+      "height": 286
+    },
+    {
+      "id": "610:34",
+      "name": "Corporate Video",
+      "type": "TEXT",
+      "parentId": "609:115",
+      "x": 119,
+      "y": 329,
+      "width": 589,
+      "height": 44
+    },
+    {
+      "id": "610:26",
+      "name": "Multimedia Journalism",
+      "type": "TEXT",
+      "parentId": "609:115",
+      "x": 119,
+      "y": 810,
+      "width": 589,
+      "height": 44
+    },
+    {
+      "id": "609:118",
+      "name": "SELECTED VIDEO WORK",
+      "type": "TEXT",
+      "parentId": "609:115",
+      "x": 121,
+      "y": 217,
+      "width": 254,
+      "height": 26
+    },
+    {
+      "id": "612:123",
+      "name": "Group 147",
+      "type": "GROUP",
+      "parentId": "609:115",
+      "x": 121,
+      "y": 1200,
+      "width": 239,
+      "height": 31
+    },
+    {
+      "id": "610:27",
+      "name": "Rectangle 139",
+      "type": "RECTANGLE",
+      "parentId": "612:123",
+      "x": 121,
+      "y": 1200,
+      "width": 239,
+      "height": 31
+    },
+    {
+      "id": "610:28",
+      "name": "SEE MULTIMEDIA PACKAGE ↗",
+      "type": "TEXT",
+      "parentId": "612:123",
+      "x": 137,
+      "y": 1204,
+      "width": 223,
+      "height": 22
+    },
+    {
+      "id": "612:124",
+      "name": "Group 148",
+      "type": "GROUP",
+      "parentId": "609:115",
+      "x": 121,
+      "y": 531,
+      "width": 145,
+      "height": 31
+    },
+    {
+      "id": "612:121",
+      "name": "Rectangle 140",
+      "type": "RECTANGLE",
+      "parentId": "612:124",
+      "x": 121,
+      "y": 531,
+      "width": 145,
+      "height": 31
+    },
+    {
+      "id": "612:122",
+      "name": "WATCH VIDEO ↗",
+      "type": "TEXT",
+      "parentId": "612:124",
+      "x": 137,
+      "y": 535,
+      "width": 126,
+      "height": 22
+    },
+    {
+      "id": "609:116",
+      "name": "I use video to explore the people, places, and ideas that make a community. I take each story from concept to final edit, handling research, interviews, on-location filming, photography, and video editing.",
+      "type": "TEXT",
+      "parentId": "609:115",
+      "x": 121,
+      "y": 1492,
+      "width": 950,
+      "height": 52
+    },
+    {
+      "id": "609:117",
+      "name": "Broadcast Journalism",
+      "type": "TEXT",
+      "parentId": "609:115",
+      "x": 119,
+      "y": 1435,
+      "width": 961,
+      "height": 44
+    },
+    {
+      "id": "612:107",
+      "name": "Mask group",
+      "type": "GROUP",
+      "parentId": "609:115",
+      "x": 120,
+      "y": 1606,
+      "width": 382,
+      "height": 356
+    },
+    {
+      "id": "612:99",
+      "name": "Rectangle 166",
+      "type": "RECTANGLE",
+      "parentId": "612:107",
+      "x": 120,
+      "y": 1606,
+      "width": 382,
+      "height": 356
+    },
+    {
+      "id": "612:96",
+      "name": "Group 144",
+      "type": "GROUP",
+      "parentId": "612:107",
+      "x": 120.24462890625,
+      "y": 1604.48828125,
+      "width": 381.75537109375,
+      "height": 366.51171875
+    },
+    {
+      "id": "612:88",
+      "name": "Group 136",
+      "type": "GROUP",
+      "parentId": "612:96",
+      "x": 120.24462890625,
+      "y": 1604.48828125,
+      "width": 381.75537109375,
+      "height": 366.51171875
+    },
+    {
+      "id": "609:198",
+      "name": "Group 131",
+      "type": "GROUP",
+      "parentId": "612:88",
+      "x": 120.24462890625,
+      "y": 1604.48828125,
+      "width": 381.75537109375,
+      "height": 366.51171875
+    },
+    {
+      "id": "609:174",
+      "name": "Screenshot 2026-11-08 at 9.03.23 AM 1",
+      "type": "RECTANGLE",
+      "parentId": "609:198",
+      "x": 120.24462890625,
+      "y": 1604.48828125,
+      "width": 381.3741455078125,
+      "height": 205.01100158691406
+    },
+    {
+      "id": "609:190",
+      "name": "Rectangle 149",
+      "type": "RECTANGLE",
+      "parentId": "609:198",
+      "x": 121,
+      "y": 1810,
+      "width": 381,
+      "height": 152
+    },
+    {
+      "id": "609:191",
+      "name": "The Cultured Pickle Shop:  The Art of Fermentation",
+      "type": "TEXT",
+      "parentId": "609:198",
+      "x": 152,
+      "y": 1862,
+      "width": 325,
+      "height": 109
+    },
+    {
+      "id": "609:192",
+      "name": "CalTV",
+      "type": "TEXT",
+      "parentId": "609:198",
+      "x": 151.962890625,
+      "y": 1830,
+      "width": 292.2610168457031,
+      "height": 21.145498275756836
+    },
+    {
+      "id": "612:103",
+      "name": "Mask group",
+      "type": "GROUP",
+      "parentId": "609:115",
+      "x": 531,
+      "y": 1606,
+      "width": 382,
+      "height": 356
+    },
+    {
+      "id": "612:100",
+      "name": "Rectangle 167",
+      "type": "RECTANGLE",
+      "parentId": "612:103",
+      "x": 531,
+      "y": 1606,
+      "width": 382,
+      "height": 356
+    },
+    {
+      "id": "612:97",
+      "name": "Group 145",
+      "type": "GROUP",
+      "parentId": "612:103",
+      "x": 531.755859375,
+      "y": 1606,
+      "width": 381.244140625,
+      "height": 356
+    },
+    {
+      "id": "612:89",
+      "name": "Group 137",
+      "type": "GROUP",
+      "parentId": "612:97",
+      "x": 531.755859375,
+      "y": 1606,
+      "width": 381.244140625,
+      "height": 356
+    },
+    {
+      "id": "609:199",
+      "name": "Group 132",
+      "type": "GROUP",
+      "parentId": "612:89",
+      "x": 531.755859375,
+      "y": 1606,
+      "width": 381.244140625,
+      "height": 356
+    },
+    {
+      "id": "609:173",
+      "name": "Screenshot 2026-11-08 at 9.02.11 AM 1",
+      "type": "RECTANGLE",
+      "parentId": "609:199",
+      "x": 531.755859375,
+      "y": 1606,
+      "width": 381,
+      "height": 204.8773651123047
+    },
+    {
+      "id": "609:193",
+      "name": "Rectangle 150",
+      "type": "RECTANGLE",
+      "parentId": "609:199",
+      "x": 532,
+      "y": 1811,
+      "width": 381,
+      "height": 151
+    },
+    {
+      "id": "609:194",
+      "name": "Food Co-Operatives in Berkeley:  Breaking Norms and Innovating ",
+      "type": "TEXT",
+      "parentId": "609:199",
+      "x": 563,
+      "y": 1862,
+      "width": 328,
+      "height": 65.7529296875
+    },
+    {
+      "id": "609:195",
+      "name": "CalTV",
+      "type": "TEXT",
+      "parentId": "609:199",
+      "x": 562.75,
+      "y": 1830,
+      "width": 292.5535888671875,
+      "height": 22.091594696044922
+    },
+    {
+      "id": "612:50",
+      "name": "Screenshot 2026-11-08 at 2.33.08 PM 1",
+      "type": "RECTANGLE",
+      "parentId": "609:115",
+      "x": 732,
+      "y": 284,
+      "width": 588,
+      "height": 331
+    },
+    {
+      "id": "612:102",
+      "name": "Mask group",
+      "type": "GROUP",
+      "parentId": "609:115",
+      "x": 939,
+      "y": 1606,
+      "width": 382,
+      "height": 356
+    },
+    {
+      "id": "612:101",
+      "name": "Rectangle 168",
+      "type": "RECTANGLE",
+      "parentId": "612:102",
+      "x": 939,
+      "y": 1606,
+      "width": 382,
+      "height": 356
+    },
+    {
+      "id": "612:98",
+      "name": "Group 146",
+      "type": "GROUP",
+      "parentId": "612:102",
+      "x": 939,
+      "y": 1606,
+      "width": 381,
+      "height": 356
+    },
+    {
+      "id": "612:90",
+      "name": "Group 138",
+      "type": "GROUP",
+      "parentId": "612:98",
+      "x": 939,
+      "y": 1606,
+      "width": 381,
+      "height": 356
+    },
+    {
+      "id": "612:61",
+      "name": "Rectangle 165",
+      "type": "RECTANGLE",
+      "parentId": "612:90",
+      "x": 939,
+      "y": 1606,
+      "width": 381,
+      "height": 205
+    },
+    {
+      "id": "610:19",
+      "name": "Screenshot 2026-11-08 at 9.52.10 AM 1",
+      "type": "RECTANGLE",
+      "parentId": "612:90",
+      "x": 946,
+      "y": 1606,
+      "width": 366,
+      "height": 205
+    },
+    {
+      "id": "612:56",
+      "name": "Group 132",
+      "type": "GROUP",
+      "parentId": "612:90",
+      "x": 939,
+      "y": 1811,
+      "width": 381,
+      "height": 151
+    },
+    {
+      "id": "612:58",
+      "name": "Rectangle 150",
+      "type": "RECTANGLE",
+      "parentId": "612:56",
+      "x": 939,
+      "y": 1811,
+      "width": 381,
+      "height": 151
+    },
+    {
+      "id": "612:59",
+      "name": "Claire Mack cranks out crunch cakes for the community",
+      "type": "TEXT",
+      "parentId": "612:56",
+      "x": 970,
+      "y": 1862,
+      "width": 328,
+      "height": 65.7529296875
+    },
+    {
+      "id": "612:60",
+      "name": "Scot Scoop",
+      "type": "TEXT",
+      "parentId": "612:56",
+      "x": 969.75,
+      "y": 1830,
+      "width": 292.5535888671875,
+      "height": 22.091594696044922
+    },
+    {
+      "id": "612:110",
+      "name": "Mask group",
+      "type": "GROUP",
+      "parentId": "609:115",
+      "x": 936,
+      "y": 1994,
+      "width": 382,
+      "height": 356
+    },
+    {
+      "id": "612:106",
+      "name": "Rectangle 169",
+      "type": "RECTANGLE",
+      "parentId": "612:110",
+      "x": 936,
+      "y": 1994,
+      "width": 382,
+      "height": 356
+    },
+    {
+      "id": "612:91",
+      "name": "Group 139",
+      "type": "GROUP",
+      "parentId": "612:110",
+      "x": 936,
+      "y": 1994,
+      "width": 384,
+      "height": 365
+    },
+    {
+      "id": "610:24",
+      "name": "Screenshot 2026-11-08 at 9.58.23 AM 1",
+      "type": "RECTANGLE",
+      "parentId": "612:91",
+      "x": 936,
+      "y": 1994,
+      "width": 384,
+      "height": 214
+    },
+    {
+      "id": "612:76",
+      "name": "Group 133",
+      "type": "GROUP",
+      "parentId": "612:91",
+      "x": 939,
+      "y": 2208,
+      "width": 381,
+      "height": 151
+    },
+    {
+      "id": "612:77",
+      "name": "Rectangle 150",
+      "type": "RECTANGLE",
+      "parentId": "612:76",
+      "x": 939,
+      "y": 2208,
+      "width": 381,
+      "height": 151
+    },
+    {
+      "id": "612:78",
+      "name": "Half Moon Bay Wasabi spices up the sushi scene",
+      "type": "TEXT",
+      "parentId": "612:76",
+      "x": 970,
+      "y": 2259,
+      "width": 328,
+      "height": 65.7529296875
+    },
+    {
+      "id": "612:79",
+      "name": "Scot Scoop",
+      "type": "TEXT",
+      "parentId": "612:76",
+      "x": 969.75,
+      "y": 2227,
+      "width": 292.5535888671875,
+      "height": 22.091594696044922
+    },
+    {
+      "id": "612:109",
+      "name": "Mask group",
+      "type": "GROUP",
+      "parentId": "609:115",
+      "x": 530,
+      "y": 1994,
+      "width": 382,
+      "height": 356
+    },
+    {
+      "id": "612:105",
+      "name": "Rectangle 168",
+      "type": "RECTANGLE",
+      "parentId": "612:109",
+      "x": 530,
+      "y": 1994,
+      "width": 382,
+      "height": 356
+    },
+    {
+      "id": "612:94",
+      "name": "Group 142",
+      "type": "GROUP",
+      "parentId": "612:109",
+      "x": 529,
+      "y": 1994,
+      "width": 383,
+      "height": 365
+    },
+    {
+      "id": "612:92",
+      "name": "Group 140",
+      "type": "GROUP",
+      "parentId": "612:94",
+      "x": 529,
+      "y": 1994,
+      "width": 383,
+      "height": 365
+    },
+    {
+      "id": "610:20",
+      "name": "Screenshot 2026-11-08 at 9.41.08 AM 1",
+      "type": "RECTANGLE",
+      "parentId": "612:92",
+      "x": 529,
+      "y": 1994,
+      "width": 383,
+      "height": 215
+    },
+    {
+      "id": "612:80",
+      "name": "Group 134",
+      "type": "GROUP",
+      "parentId": "612:92",
+      "x": 532,
+      "y": 2208,
+      "width": 380,
+      "height": 151
+    },
+    {
+      "id": "612:81",
+      "name": "Rectangle 150",
+      "type": "RECTANGLE",
+      "parentId": "612:80",
+      "x": 532,
+      "y": 2208,
+      "width": 380,
+      "height": 151
+    },
+    {
+      "id": "612:82",
+      "name": "Castro Street: A colorful safe haven",
+      "type": "TEXT",
+      "parentId": "612:80",
+      "x": 562.918701171875,
+      "y": 2259,
+      "width": 327.13909912109375,
+      "height": 65.7529296875
+    },
+    {
+      "id": "612:83",
+      "name": "Scot Scoop",
+      "type": "TEXT",
+      "parentId": "612:80",
+      "x": 562.669189453125,
+      "y": 2227,
+      "width": 291.7857360839844,
+      "height": 22.091594696044922
+    },
+    {
+      "id": "612:108",
+      "name": "Mask group",
+      "type": "GROUP",
+      "parentId": "609:115",
+      "x": 120,
+      "y": 1994,
+      "width": 382,
+      "height": 356
+    },
+    {
+      "id": "612:104",
+      "name": "Rectangle 167",
+      "type": "RECTANGLE",
+      "parentId": "612:108",
+      "x": 120,
+      "y": 1994,
+      "width": 382,
+      "height": 356
+    },
+    {
+      "id": "612:95",
+      "name": "Group 143",
+      "type": "GROUP",
+      "parentId": "612:108",
+      "x": 119,
+      "y": 1994,
+      "width": 385,
+      "height": 365
+    },
+    {
+      "id": "612:93",
+      "name": "Group 141",
+      "type": "GROUP",
+      "parentId": "612:95",
+      "x": 119,
+      "y": 1994,
+      "width": 385,
+      "height": 365
+    },
+    {
+      "id": "610:22",
+      "name": "Screenshot 2026-11-08 at 9.57.34 AM 1",
+      "type": "RECTANGLE",
+      "parentId": "612:93",
+      "x": 119,
+      "y": 1994,
+      "width": 385,
+      "height": 215
+    },
+    {
+      "id": "612:84",
+      "name": "Group 135",
+      "type": "GROUP",
+      "parentId": "612:93",
+      "x": 119,
+      "y": 2208,
+      "width": 383,
+      "height": 151
+    },
+    {
+      "id": "612:85",
+      "name": "Rectangle 150",
+      "type": "RECTANGLE",
+      "parentId": "612:84",
+      "x": 119,
+      "y": 2208,
+      "width": 383,
+      "height": 151
+    },
+    {
+      "id": "612:86",
+      "name": "Colette Crutcher pieces together city art",
+      "type": "TEXT",
+      "parentId": "612:84",
+      "x": 150.162841796875,
+      "y": 2259,
+      "width": 329.7217712402344,
+      "height": 65.7529296875
+    },
+    {
+      "id": "612:87",
+      "name": "Scot Scoop",
+      "type": "TEXT",
+      "parentId": "612:84",
+      "x": 149.911376953125,
+      "y": 2227,
+      "width": 294.08929443359375,
+      "height": 22.091594696044922
+    },
+    {
+      "id": "612:128",
+      "name": "Group 150",
+      "type": "GROUP",
+      "parentId": "609:115",
+      "x": 758,
+      "y": 539,
+      "width": 46,
+      "height": 46
+    },
+    {
+      "id": "612:129",
+      "name": "Ellipse 17",
+      "type": "ELLIPSE",
+      "parentId": "612:128",
+      "x": 758,
+      "y": 539,
+      "width": 46,
+      "height": 46
+    },
+    {
+      "id": "612:130",
+      "name": "Polygon 4",
+      "type": "POLYGON",
+      "parentId": "612:128",
+      "x": 770.8528986347383,
+      "y": 551.1757803333458,
+      "width": 20.970587693386733,
+      "height": 20.970589600736275
+    },
+    {
+      "id": "612:142",
+      "name": "Group 152",
+      "type": "GROUP",
+      "parentId": "609:115",
+      "x": 758,
+      "y": 1059,
+      "width": 46,
+      "height": 46
+    },
+    {
+      "id": "612:143",
+      "name": "Ellipse 17",
+      "type": "ELLIPSE",
+      "parentId": "612:142",
+      "x": 758,
+      "y": 1059,
+      "width": 46,
+      "height": 46
+    },
+    {
+      "id": "612:144",
+      "name": "Polygon 4",
+      "type": "POLYGON",
+      "parentId": "612:142",
+      "x": 770.8528986347383,
+      "y": 1071.1757803333458,
+      "width": 20.970587693386733,
+      "height": 20.970589600736275
+    },
+    {
+      "id": "619:15",
+      "name": "Screenshot 2026-11-08 at 6.34.19 PM 1",
+      "type": "RECTANGLE",
+      "parentId": "609:115",
+      "x": 732,
+      "y": 866,
+      "width": 589,
+      "height": 335
+    },
+    {
+      "id": "619:16",
+      "name": "Group 153",
+      "type": "GROUP",
+      "parentId": "609:115",
+      "x": 758,
+      "y": 1110,
+      "width": 46,
+      "height": 46
+    },
+    {
+      "id": "619:17",
+      "name": "Ellipse 17",
+      "type": "ELLIPSE",
+      "parentId": "619:16",
+      "x": 758,
+      "y": 1110,
+      "width": 46,
+      "height": 46
+    },
+    {
+      "id": "619:18",
+      "name": "Polygon 4",
+      "type": "POLYGON",
+      "parentId": "619:16",
+      "x": 770.8528986347383,
+      "y": 1122.1757803333458,
+      "width": 20.970587693386733,
+      "height": 20.970589600736275
+    },
+    {
+      "id": "619:36",
+      "name": "The Surge of Asian Hate",
+      "type": "TEXT",
+      "parentId": "609:115",
+      "x": 734,
+      "y": 1216,
+      "width": 328,
+      "height": 65.7529296875
+    },
+    {
+      "id": "619:38",
+      "name": "Obayashi Corporate Culture",
+      "type": "TEXT",
+      "parentId": "609:115",
+      "x": 734,
+      "y": 629,
+      "width": 328,
+      "height": 65.7529296875
+    },
+    {
+      "id": "619:39",
+      "name": "ABOUT+CONTACT",
+      "type": "TEXT",
+      "parentId": "609:115",
+      "x": 1199,
+      "y": 70,
+      "width": 117,
+      "height": 18
+    },
+    {
+      "id": "619:40",
+      "name": "JOURNALISM",
+      "type": "TEXT",
+      "parentId": "609:115",
+      "x": 911,
+      "y": 70,
+      "width": 90,
+      "height": 18
+    },
+    {
+      "id": "619:41",
+      "name": "SOCIAL MEDIA",
+      "type": "TEXT",
+      "parentId": "609:115",
+      "x": 1046,
+      "y": 70,
+      "width": 108,
+      "height": 18
+    },
+    {
+      "id": "619:42",
+      "name": "VIDEO",
+      "type": "TEXT",
+      "parentId": "609:115",
+      "x": 821,
+      "y": 70,
+      "width": 45,
+      "height": 18
+    },
+    {
+      "id": "619:43",
+      "name": "UX",
+      "type": "TEXT",
+      "parentId": "609:115",
+      "x": 758,
+      "y": 70,
+      "width": 18,
+      "height": 18
+    },
+    {
+      "id": "619:44",
+      "name": "Vector",
+      "type": "VECTOR",
+      "parentId": "609:115",
+      "x": 117.000244140625,
+      "y": 57.66015625,
+      "width": 16.4162540435791,
+      "height": 16.41814613342285
+    },
+    {
+      "id": "619:45",
+      "name": "Vector",
+      "type": "VECTOR",
+      "parentId": "609:115",
+      "x": 134.821533203125,
+      "y": 57.66015625,
+      "width": 16.418912887573242,
+      "height": 16.41814613342285
+    },
+    {
+      "id": "619:46",
+      "name": "Vector",
+      "type": "VECTOR",
+      "parentId": "609:115",
+      "x": 134.82156562805176,
+      "y": 75.36701011657715,
+      "width": 16.418912887573242,
+      "height": 16.41814613342285
+    },
+    {
+      "id": "619:47",
+      "name": "Vector",
+      "type": "VECTOR",
+      "parentId": "609:115",
+      "x": 152.448974609375,
+      "y": 75.369140625,
+      "width": 16.418914794921875,
+      "height": 16.41814613342285
+    },
+    {
+      "id": "619:48",
+      "name": "Vector",
+      "type": "VECTOR",
+      "parentId": "609:115",
+      "x": 117.0000057220459,
+      "y": 75.36701011657715,
+      "width": 16.4162540435791,
+      "height": 16.41814613342285
+    },
+    {
+      "id": "619:49",
+      "name": "Vector",
+      "type": "VECTOR",
+      "parentId": "609:115",
+      "x": 151.341552734375,
+      "y": 65.162109375,
+      "width": 17.521299362182617,
+      "height": 8.916956901550293
+    },
+    {
+      "id": "619:50",
+      "name": "KIANA GEORGE",
+      "type": "TEXT",
+      "parentId": "609:115",
+      "x": 193.863037109375,
+      "y": 70,
+      "width": 108,
+      "height": 18
+    },
+    {
+      "id": "619:51",
+      "name": "Vector",
+      "type": "VECTOR",
+      "parentId": "609:115",
+      "x": 117.000244140625,
+      "y": 57.66015625,
+      "width": 16.4162540435791,
+      "height": 16.41814613342285
+    },
+    {
+      "id": "619:52",
+      "name": "Vector",
+      "type": "VECTOR",
+      "parentId": "609:115",
+      "x": 134.821533203125,
+      "y": 57.66015625,
+      "width": 16.418912887573242,
+      "height": 16.41814613342285
+    },
+    {
+      "id": "619:53",
+      "name": "Vector",
+      "type": "VECTOR",
+      "parentId": "609:115",
+      "x": 134.82156562805176,
+      "y": 75.36701011657715,
+      "width": 16.418912887573242,
+      "height": 16.41814613342285
+    },
+    {
+      "id": "619:54",
+      "name": "Vector",
+      "type": "VECTOR",
+      "parentId": "609:115",
+      "x": 152.448974609375,
+      "y": 75.369140625,
+      "width": 16.418914794921875,
+      "height": 16.41814613342285
+    },
+    {
+      "id": "619:55",
+      "name": "Vector",
+      "type": "VECTOR",
+      "parentId": "609:115",
+      "x": 117.0000057220459,
+      "y": 75.36701011657715,
+      "width": 16.4162540435791,
+      "height": 16.41814613342285
+    },
+    {
+      "id": "619:56",
+      "name": "Vector",
+      "type": "VECTOR",
+      "parentId": "609:115",
+      "x": 151.341552734375,
+      "y": 65.162109375,
+      "width": 17.521299362182617,
+      "height": 8.916956901550293
+    },
+    {
+      "id": "619:57",
+      "name": "KIANA GEORGE",
+      "type": "TEXT",
+      "parentId": "609:115",
+      "x": 193.863037109375,
+      "y": 70,
+      "width": 108,
+      "height": 18
+    },
+    {
+      "id": "619:140",
+      "name": "Line 69",
+      "type": "LINE",
+      "parentId": "609:115",
+      "x": 127,
+      "y": 732,
+      "width": 1193,
+      "height": 0.00010429538087919354
+    },
+    {
+      "id": "619:141",
+      "name": "Line 70",
+      "type": "LINE",
+      "parentId": "609:115",
+      "x": 127,
+      "y": 1351,
+      "width": 1193,
+      "height": 0.00010429538087919354
+    }
+  ]
+}

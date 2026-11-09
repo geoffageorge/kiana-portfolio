@@ -38,7 +38,7 @@ export default function App() {
         homeHref={projectSlug || isSectionPage ? siteUrl() : '#top'}
         activePage={showAbout ? 'about' : showJournalism ? 'journalism' : showVideo ? 'video' : projectSlug ? undefined : 'ux'}
       />
-      <main id="main" className={`page-container${showAbout ? ' page-container--about' : showJournalism || showVideo ? ' page-container--features' : isPointly || isObayashi ? ' page-container--case-study' : ''}`} tabIndex={-1}>
+      <main id="main" className={`page-container${showAbout ? ' page-container--about' : showJournalism ? ' page-container--features' : showVideo ? ' page-container--video' : isPointly || isObayashi ? ' page-container--case-study' : ''}`} tabIndex={-1}>
         {showAbout ? <AboutPage site={site} /> : showJournalism || showVideo ? <Suspense fallback={<p className="case-loading" role="status">Loading page…</p>}>{showJournalism ? <JournalismPage /> : <VideoPage />}</Suspense> : projectSlug ? (
           <Suspense fallback={<p className="case-loading" role="status">Loading project…</p>}>
             <ProjectPage slug={projectSlug} onOpenImage={(image, returnFocus) => setDialog({ kind: 'image', title: image.alt, image, returnFocus })} />

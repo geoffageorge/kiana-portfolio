@@ -1,0 +1,77 @@
+{
+  "fileKey": "wZSRbIZZXfUlrq902OXE2W",
+  "frameId": "609:115",
+  "inspectedDate": "2026-11-08",
+  "assets": [
+    {
+      "file": "obayashi-culture.png",
+      "width": 3840,
+      "height": 2162,
+      "bytes": 5957686,
+      "sha256": "66cf682553bf74c7ba93e70cc75f1def17d1d692bb1e3fe5d79065e1bacd4189"
+    },
+    {
+      "file": "aapi-multimedia.png",
+      "width": 2086,
+      "height": 1185,
+      "bytes": 3156106,
+      "sha256": "1d28beec6bb1df4d9f765b7ac000c8547165636c9b6f9b2adc56237e98846a1d"
+    },
+    {
+      "file": "cultured-pickle-shop.png",
+      "width": 852,
+      "height": 458,
+      "bytes": 564902,
+      "sha256": "82954bfd8c9c58093fb76ffa97e8912e53a57d8f3b32b02a39bc41eb1d98d4ed"
+    },
+    {
+      "file": "food-cooperatives.png",
+      "width": 848,
+      "height": 456,
+      "bytes": 618602,
+      "sha256": "d0e0c0904a579dd4e1aae74b08f35dc869ef1cc6bd9c6f7113a55e2fbf746ebe"
+    },
+    {
+      "file": "claire-mack.png",
+      "width": 1198,
+      "height": 672,
+      "bytes": 1089997,
+      "sha256": "d41974d6c78155c66c6a61381cc0a548e8466e6ae13b72125ff7e64e9a218202"
+    },
+    {
+      "file": "colette-crutcher.png",
+      "width": 1200,
+      "height": 670,
+      "bytes": 1753834,
+      "sha256": "1df57b879160099ada7b97811116869551f1ab30bd315b961a50e388ac02ca5a"
+    },
+    {
+      "file": "castro-street.png",
+      "width": 1200,
+      "height": 674,
+      "bytes": 1493193,
+      "sha256": "26df855b92bcf5f65b4b45946b1fdb2483f841bd0ce53e90a2b4d501c53f6327"
+    },
+    {
+      "file": "wasabi.png",
+      "width": 1202,
+      "height": 670,
+      "bytes": 1300971,
+      "sha256": "b676c08a9e73d548f7cabb633d2e9cef2b96a417f5db1eacbc9f856b78523341"
+    },
+    {
+      "file": "broadcast-card-mask.svg",
+      "width": 382,
+      "height": 356,
+      "bytes": 252,
+      "sha256": "833b48d1246807d6f4d8a53f2660d0a8a993710bf46d52795036019b249967a8"
+    },
+    {
+      "file": "play-button.svg",
+      "width": 46,
+      "height": 46,
+      "bytes": 430,
+      "sha256": "4bea24519b4e4c88edf80307cfd2fb7464d9d06b0d42990a50ab8f0161046a93"
+    }
+  ]
+}

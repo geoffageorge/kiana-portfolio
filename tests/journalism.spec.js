@@ -39,7 +39,7 @@ test('version 5 shares the four Figma navigation options, preserved branding, an
   await page.reload();
   await expect(page).toHaveTitle('Journalism / Kiana George');
   await nav.getByRole('link', { name: 'VIDEO', exact: true }).click();
-  await expect(page.getByRole('heading', { level: 1 })).toHaveText('VIDEO');
+  await expect(page.getByRole('heading', { level: 1 })).toHaveText('SELECTED VIDEO WORK');
   await page.reload();
   await expect(page).toHaveTitle('Video / Kiana George');
   await expect(page.locator('.site-footer__connect')).toHaveAttribute('href', '/about/');
@@ -155,7 +155,7 @@ test('new pages fit phone, tablet and desktop widths without broken media, overl
 });
 
 test('Journalism and Video support direct index URLs and deployment below a subdirectory', async ({ page, request, baseURL }) => {
-  for (const [path, heading] of [['journalism', 'Selected Features'], ['video', 'VIDEO']]) {
+  for (const [path, heading] of [['journalism', 'Selected Features'], ['video', 'SELECTED VIDEO WORK']]) {
     await ready(page, `/${path}/index.html`);
     await expect(page.getByRole('heading', { level: 1 })).toHaveText(heading);
   }
@@ -170,7 +170,7 @@ test('Journalism and Video support direct index URLs and deployment below a subd
   for (const [index, href] of ['/portfolio/', '/portfolio/video/', '/portfolio/journalism/', '/portfolio/about/'].entries()) await expect(nav.getByRole('link').nth(index)).toHaveAttribute('href', href);
   await nav.getByRole('link', { name: 'VIDEO', exact: true }).click();
   await expect(page).toHaveURL(/\/portfolio\/video\/$/);
-  await expect(page.getByRole('heading', { level: 1 })).toHaveText('VIDEO');
+  await expect(page.getByRole('heading', { level: 1 })).toHaveText('SELECTED VIDEO WORK');
   await nav.getByRole('link', { name: 'UX', exact: true }).click();
   await expect(page).toHaveURL(/\/portfolio\/$/);
   await expect(page.getByRole('heading', { level: 1 })).toHaveText('ClarifyingChaos');

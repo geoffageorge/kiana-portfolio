@@ -1,0 +1,98 @@
+{
+  "checkedDate": "2026-11-08",
+  "build": {
+    "command": "npm run build",
+    "status": "passed"
+  },
+  "regression": {
+    "command": "PORTFOLIO_TEST_TARGET=production PORTFOLIO_TEST_CROSS_BROWSER=1 npx playwright test --workers=2",
+    "passed": 275,
+    "skipped": 1,
+    "failed": 0,
+    "flaky": 0,
+    "durationSeconds": 244.97,
+    "projects": {
+      "desktop": {
+        "passed": 60,
+        "skipped": 0,
+        "failed": 0,
+        "flaky": 0
+      },
+      "mobile": {
+        "passed": 59,
+        "skipped": 1,
+        "failed": 0,
+        "flaky": 0
+      },
+      "safari-webkit": {
+        "passed": 39,
+        "skipped": 0,
+        "failed": 0,
+        "flaky": 0
+      },
+      "safari-mobile": {
+        "passed": 39,
+        "skipped": 0,
+        "failed": 0,
+        "flaky": 0
+      },
+      "firefox": {
+        "passed": 39,
+        "skipped": 0,
+        "failed": 0,
+        "flaky": 0
+      },
+      "firefox-mobile": {
+        "passed": 39,
+        "skipped": 0,
+        "failed": 0,
+        "flaky": 0
+      }
+    },
+    "knownSkippedChecks": [
+      {
+        "project": "mobile",
+        "file": "obayashi-design.spec.js",
+        "title": "desktop image geometry matches the inspected frame, including every crop and repeated Markets image"
+      }
+    ],
+    "videoChecksPassedPerProject": 7
+  },
+  "visualReview": {
+    "engines": [
+      "Chrome",
+      "Playwright WebKit (Safari engine)",
+      "Firefox"
+    ],
+    "screenshotWidths": [
+      1440,
+      390
+    ],
+    "responsiveTestWidths": [
+      320,
+      390,
+      768,
+      1024,
+      1440,
+      1920
+    ],
+    "desktopSourceTolerancePx": 1,
+    "limitations": "Engine-based browser checks with emulated or phone-sized viewports; native Safari and real mobile hardware were not automated."
+  },
+  "externalLinks": {
+    "uniqueDestinations": 8,
+    "http200Responses": 8,
+    "videoContentVerified": 7,
+    "details": "link-validation.json",
+    "pendingOwnerAction": {
+      "url": "https://www.youtube.com/watch?v=TxbdosIT9pM",
+      "status": "Private video",
+      "action": "Owner will change visibility to public/unlisted; exact Figma URL retained by explicit request."
+    }
+  },
+  "deployment": {
+    "committed": false,
+    "pushed": false,
+    "published": false
+  }
+}

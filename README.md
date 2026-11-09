@@ -2,7 +2,39 @@
 
 A local React + Vite portfolio built from `Design Template/KK design 1.png`, the prototype directions, and the architecture specifications. Tailwind CSS provides the base and utilities; each component owns its custom CSS. The build produces static files with no backend or external media services.
 
-## Add Journalism Page update version 5 — current deployment
+## Add Video Page update version 6 — current deployment
+
+Version 6 implements `specs/changes/update 6.md` using the checked plan in `specs/changes/update-6-plan.md`. Official Figma MCP access and the design-to-code/Plugin API skills were verified with a Pro plan and Full seat. The [Video frame](https://www.figma.com/design/wZSRbIZZXfUlrq902OXE2W/?node-id=609-115) contains Corporate Video, Multimedia Journalism, and Broadcast Journalism.
+
+The `/video/` placeholder is replaced with two featured previews and six broadcast tiles, exact source text and prototype destinations, original assets, responsive layouts, and the shared home-card 3D hover/focus effect with reduced-motion support. The existing UX, VIDEO, JOURNALISM, and ABOUT+CONTACT navigation and footer are retained. Two native CSS dividers preserve Figma's half-pixel rules in Safari/WebKit.
+
+`Assets/figma files/video-v6-2026-11-08/` contains the 102-node design/prototype inspection, independent text and geometry fixtures, original exports, design reference, and link/test validation. Ten unchanged runtime assets and generated content are in `public/assets/video-figma/`. Regenerate them with `node scripts/import-video-figma.mjs`.
+
+Validated November 8, 2026: production build passed; the complete six-project regression suite passed **275 checks**, with one existing desktop-only Obayashi geometry check skipped on mobile. No failed or flaky results remained. Tests cover Figma content/geometry/crops, unchanged asset hashes, all ten Video links, keyboard focus, shared 3D/reduced-motion behavior, responsive containment, visible dividers, direct/reloaded/subdirectory routes, and existing home, About, Journalism and case-study functionality. Desktop and phone screenshots were reviewed in Chrome, Playwright WebKit (Safari's engine), and Firefox. These checks use browser engines and emulated or phone-sized viewports; native Safari and real mobile hardware were not automated.
+
+All eight distinct external destinations returned HTTP 200; seven were verified to contain public video content. The Corporate YouTube video is **private**. As explicitly requested, its exact Figma URL is retained: `https://www.youtube.com/watch?v=TxbdosIT9pM`. Change its visibility to **public or unlisted** before public deployment so visitors can watch it.
+
+To commit and push version 6:
+
+```sh
+cd "/Users/geoffgeorge/Developer/Kiana Portfolio" &&
+npm run build &&
+git add -- \
+  README.md src/ tests/ video/ \
+  public/assets/video-figma/ scripts/import-video-figma.mjs \
+  playwright.config.js \
+  "Assets/figma files/video-v6-2026-11-08/" \
+  "specs/changes/update 6.md" specs/changes/update-6-plan.md &&
+git diff --cached --stat &&
+git commit -m "Add Video Page update version 6" &&
+git push origin main
+```
+
+These paths exclude the unrelated `.node-version` and template-image deletions, placeholder images, and personal RTF files. Keep `dist/`, `node_modules/`, browser binaries and test output untracked. No commit, push or production deployment has been performed for version 6.
+
+The existing Cloudflare Workers Builds connection builds `main` using `npm run build` and deploys with `npx wrangler deploy`. After it succeeds, check `https://www.kianageorge.com/video/`, all eight preview destinations, the four navigation options, and the existing case studies. No hosting configuration changes are needed.
+
+## Add Journalism Page update version 5 — reference
 
 Version 5 follows `specs/changes/update 5.md` and the checked plan in `specs/changes/update-5-plan.md`. Figma MCP access and the design-to-code/Plugin API skills were verified with a Pro plan and Full seat. The source [Journalism frame](https://www.figma.com/design/wZSRbIZZXfUlrq902OXE2W/?node-id=607-7) contains Selected Features and four tiles.
 
@@ -31,7 +63,7 @@ git commit -m "Add Journalism Page update version 5" &&
 git push origin main
 ```
 
-These paths exclude unrelated `.node-version` and template-image deletions, placeholder images, and personal RTF files. Keep `dist/`, `node_modules/`, browser binaries, and test output untracked. No commit, push, or production deployment has been performed for version 5.
+These historical version 5 paths exclude unrelated `.node-version` and template-image deletions, placeholder images, and personal RTF files. Keep `dist/`, `node_modules/`, browser binaries, and test output untracked. Use the version 6 commands above for the current update.
 
 The existing Cloudflare Workers Builds connection builds `main` using `npm run build` and deploys with `npx wrangler deploy`. After the build succeeds, check `https://www.kianageorge.com/journalism/` and `https://www.kianageorge.com/video/`, the four header links, the four external tile links, and both existing case studies. Cloudflare configuration does not need to change for these static routes.
 

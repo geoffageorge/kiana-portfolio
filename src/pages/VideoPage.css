@@ -1,0 +1,55 @@
+.page-container--video { width: min(1200px, calc(100% - 80px)); }
+.video-page { min-height: 2454px; padding-top: 88px; padding-bottom: 233px; color: #000; font-family: var(--portfolio-body); font-optical-sizing: none; letter-spacing: 0; }
+.video-page :is(h1,h2,h3,p) { margin: 0; }
+.video-page__label { max-width: 254px; margin-left: 1px !important; font: 400 15px/26px var(--portfolio-body); }
+.video-feature { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 24px; align-items: start; }
+.video-feature--corporate { min-height: 448px; margin-top: 41px; }
+.video-feature--corporate .video-feature__copy { padding-top: 45px; }
+.video-feature--multimedia { min-height: 541px; margin-top: 77px; }
+.video-feature--multimedia .video-feature__preview { margin-top: 56px; }
+.video-feature h2 { width: calc(100% + 1px); margin-left: -1px; font: 700 36px/44px var(--portfolio-body); }
+.video-feature__description { margin: 20px 0 0 1px; font: 400 16px/26px var(--portfolio-body); white-space: pre-line; }
+.video-feature__button { display: flex; align-items: center; margin-left: 1px; padding-left: 16px; border-radius: 4px; background: #25261e; color: #fff; font: 400 14px/16.8px var(--portfolio-mono); white-space: nowrap; }
+.video-feature__button span { display: flex; align-items: center; height: 22px; }
+.video-feature__button:hover { background: #3c444b; }
+.video-feature__preview { min-width: 0; border: 0; background: transparent; }
+.video-feature__preview .project-card__link { padding: 0; background: transparent; border-radius: 16px; }
+.video-feature__poster { position: relative; overflow: hidden; border-radius: 16px; }
+.video-feature__thumbnail { display: block; width: 100%; height: 100%; object-fit: cover; }
+.video-feature__play { position: absolute; display: block; width: 46px; height: auto; }
+.video-feature__preview .video-feature__title { color: #000; font: 600 20px/28px var(--portfolio-body); letter-spacing: 0; }
+/* Native borders preserve Figma's half-pixel rules in Safari/WebKit. */
+.video-rule { width: calc(100% - var(--rule-offset)); height: 1px; margin-left: var(--rule-offset); border-top: var(--rule-weight) solid #000; }
+.video-broadcast { margin-top: 83px; }
+.video-broadcast > h2 { max-width: 961px; margin-left: -1px; font: 700 36px/44px var(--portfolio-body); }
+.video-broadcast__description { max-width: 950px; margin: 13px 0 0 1px !important; font: 400 16px/26px var(--portfolio-body); }
+.video-grid { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); align-items: start; gap: 32px 28px; width: calc(100% + 2px); margin-top: 62px; }
+.video-card { position: relative; left: var(--card-shift); min-width: 0; border: 0; border-radius: 16px; }
+.video-card .project-card__link { padding: 0; border-radius: inherit; background: transparent; }
+.video-card__surface { mask-size: 100% 100%; mask-repeat: no-repeat; }
+.video-card__image { position: relative; overflow: hidden; }
+.video-card__image-layer { position: absolute; display: block; }
+.video-card__image-layer img { display: block; width: 100%; height: 100%; max-width: none; object-fit: cover; }
+.video-card__caption { position: relative; padding-right: 20px; padding-bottom: 20px; }
+.video-card__background { position: absolute; top: 0; height: 100%; background: #f7f7f7; }
+.video-card__caption p { position: relative; color: #7c8b98; font: 500 15px/28px var(--portfolio-body); }
+.video-card__caption h3 { position: relative; color: #000; font: 600 20px/28px var(--portfolio-body); letter-spacing: 0; white-space: pre-line; }
+@media (hover: hover) and (pointer: fine) { .video-page .project-card:hover img { transform: none; } }
+@media (max-width: 1023px) {
+  .video-page { min-height: 0; padding-top: 56px; padding-bottom: 100px; }
+  .video-feature { grid-template-columns: minmax(0,1fr); gap: 32px; min-height: 0; }
+  .video-feature .video-feature__copy { padding-top: 0; }
+  .video-feature .video-feature__preview { margin-top: 0; }
+  .video-feature--corporate { margin-top: 40px; }
+  .video-feature--multimedia, .video-broadcast { margin-top: 48px; }
+  .video-feature h2 { width: auto; }
+  .video-rule { margin-top: 48px; }
+  .video-grid { grid-template-columns: repeat(2,minmax(0,1fr)); width: 100%; gap: 28px; margin-top: 40px; }
+  .video-card { left: 0; }
+}
+@media (max-width: 767px) {
+  .page-container--video { width: calc(100% - 40px); }
+  .video-page { padding-top: 48px; padding-bottom: 80px; }
+  .video-feature h2, .video-broadcast > h2 { margin-left: 0; font-size: 30px; line-height: 38px; }
+  .video-grid { grid-template-columns: minmax(0,1fr); gap: 24px; }
+}
