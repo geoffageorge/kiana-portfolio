@@ -2,7 +2,7 @@
 .ux-page { min-height: 1128px; padding-top: 76px; padding-bottom: 251px; color: #000; font-family: var(--portfolio-body); font-optical-sizing: none; letter-spacing: 0; }
 .ux-page :is(h1,p) { margin: 0; }
 .ux-page .ux-page__label { max-width: 254px; font: 400 15px/26px var(--portfolio-body); }
-.ux-page h1 { max-width: 471px; margin: 24px 0 0 1px; font: 700 36px/44px var(--portfolio-body); letter-spacing: 0; }
+.ux-page h1 { max-width: 471px; margin: 24px 0 0 1px; font: 700 32px/44px var(--portfolio-body); letter-spacing: 0; }
 .ux-page .ux-page__description { max-width: 994px; margin: 13px 0 0 3px; font: 400 16px/26px var(--portfolio-body); white-space: pre-line; }
 .ux-page__grid { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 46px; margin-top: 65px; }
 @media (max-width: 1023px) { .ux-page { min-height: 0; padding-top: 56px; padding-bottom: 100px; } }

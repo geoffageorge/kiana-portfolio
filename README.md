@@ -2,7 +2,42 @@
 
 A local React + Vite portfolio built from `Design Template/KK design 1.png`, the prototype directions, and the architecture specifications. Tailwind CSS provides the base and utilities; each component owns its custom CSS. The build produces static files with no backend or external media services.
 
-## Change Hero section update version 7 — current deployment
+## VIDEO section changes update version 8 — current deployment
+
+Version 8 implements `specs/changes/update 8.md` using the checked plan in `specs/changes/update-8-plan.md`. Official Figma MCP access and the design-to-code/Plugin API skills were confirmed with a Pro plan and Full seat. The source is [Video 2, frame 657:7](https://www.figma.com/design/wZSRbIZZXfUlrq902OXE2W/?node-id=657-7).
+
+The live `/video/` page now uses Video 2's eight clean thumbnails, eight smaller play icons, exact visible copy, separate masks/caption artwork, source crop geometry, three 32px section headings and two native dividers. The existing VIDEO menu option, shared four-option navigation and footer are retained. Selected Features on Journalism and Selected Case Studies on UX are also 32px. The previous Video page, runtime assets/data, importer, tests and shared motion CSS reference are archived outside the production build at `Assets/archived pages/video-v6-before-v8-2026-11-09/`, with hashes for all 17 original files and rollback directions.
+
+Linked home/UX cards, Journalism tiles and Video previews/cards share the subtle effect observed on [Apple's Mac shop](https://www.apple.com/shop/buy-mac): 1% scale, a 300ms transition and light shadow, replacing the previous perspective/tilt. Keyboard focus and press use the same feedback; reduced motion disables transforms. As explicitly confirmed, the top two Video previews animate only the image boxes while their titles remain stationary. Each play icon opens its matching preview destination, correcting copied AAPI actions in Figma. Idle surfaces keep their Figma appearance.
+
+`Assets/figma files/video-v8-2026-11-09/` retains the complete relevant 117-node design/prototype inspection, independent geometry/text, twenty original exports, local reference, Apple motion provenance and link/test validation. Twelve unchanged runtime assets and generated content are in `public/assets/video-v8-figma/`. Regenerate them with `node scripts/import-video-v8-figma.mjs`. No temporary Figma URLs, new dependencies or hosting configuration changes are required.
+
+All eight distinct external destinations returned HTTP 200 and exposed video content in live checks. The Corporate YouTube URL now returns public video metadata successfully. The Wix package exposes a video element hosted by video.wixstatic.com; the three article destinations contain public YouTube embeds. These live checks are recorded separately from deterministic button/preview/play-icon navigation tests.
+
+Validated November 9, 2026: production build passed. Final regression coverage verifies **367 passing checks**, with one existing desktop-only Obayashi geometry check skipped on mobile. The full run passed 364 checks and exposed three mobile test failures caused by focus scrolling/press targeting. Those measurements were corrected. A final geometry audit also corrected the new caption SVG's global width cap; production was rebuilt, and all 18 affected geometry/interaction rechecks passed across six browser projects. No failed or flaky checks remain unresolved. Coverage includes source assets/crops/copy, all button/preview/play destinations, 32px headings, subtle hover/focus/press and reduced motion, fixed preview titles, archive integrity/build exclusion, native dividers, all shared routes and existing pages. Desktop/phone screenshots were reviewed in Chrome, WebKit (Safari's engine) and Firefox. These are browser-engine/emulated or phone-sized checks; native Safari and real mobile hardware were not automated. Detailed original/final results are in the archived `validation.json`.
+
+To commit and push version 8:
+
+```sh
+cd "/Users/geoffgeorge/Developer/Kiana Portfolio" &&
+npm run build &&
+git add -A -- \
+  README.md src/ tests/ playwright.config.js \
+  public/assets/video-v8-figma/ public/assets/video-figma/ \
+  scripts/import-video-v8-figma.mjs scripts/import-video-figma.mjs \
+  "Assets/archived pages/video-v6-before-v8-2026-11-09/" \
+  "Assets/figma files/video-v8-2026-11-09/" \
+  "specs/changes/update 8.md" specs/changes/update-8-plan.md &&
+git diff --cached --stat &&
+git commit -m "Update Video page and subtle tile motion version 8" &&
+git push origin main
+```
+
+The removed old asset/importer paths are included intentionally so Git records their move into the archive. These scoped paths exclude unrelated `.node-version` and template-image deletions, placeholder images and personal RTF files. Keep `dist/`, `node_modules/`, browser binaries and test output untracked. No version 8 commit, push or deployment has been performed.
+
+After the existing Cloudflare Workers Builds deployment succeeds, check `https://www.kianageorge.com/video/`, all eight video destinations and their play icons, the 32px headings on `/journalism/` and `/ux/`, subtle hover/keyboard feedback on all linked cards, and the top two previews' stationary titles. Also check the home hero, both case studies, About+Contact, phone layouts and reduced motion. The existing `main` build (`npm run build`, then `npx wrangler deploy`) does not need configuration changes.
+
+## Change Hero section update version 7 — reference
 
 Version 7 implements `specs/changes/update 7.md` using the checked plan in `specs/changes/update-7-plan.md`. Official Figma MCP access and the design-to-code/Plugin API skills were confirmed with a Pro plan and Full seat. The [UX frame](https://www.figma.com/design/wZSRbIZZXfUlrq902OXE2W/?node-id=619-58) contains its introductory header and exactly two case-study tiles.
 
@@ -30,7 +65,7 @@ git commit -m "Change Hero section update version 7" &&
 git push origin main
 ```
 
-These paths exclude unrelated `.node-version` and template-image deletions, placeholder images and personal RTF files. Keep `dist/`, `node_modules/`, browser binaries and test output untracked. No version 7 commit, push or production deployment has been performed.
+These historical version 7 paths exclude unrelated `.node-version` and template-image deletions, placeholder images and personal RTF files. Keep `dist/`, `node_modules/`, browser binaries and test output untracked. Use the version 8 commands above for the current update.
 
 The existing Cloudflare Workers Builds connection builds `main` with `npm run build` and deploys with `npx wrangler deploy`. After it succeeds, check `https://www.kianageorge.com/` for automatic hero playback, Replay and Featured; check `https://www.kianageorge.com/ux/` directly and through the UX menu; open both project tiles and verify the logo returns home. Also check Video, Journalism and About+Contact. Test a phone layout and a reduced-motion preference. Cloudflare configuration does not need to change.
 

@@ -1,0 +1,92 @@
+{
+  "archivedDate": "2026-11-09",
+  "baseCommit": "c81000f",
+  "previousFrame": "609:115",
+  "files": [
+    {
+      "file": "ProjectCard.css",
+      "bytes": 5279,
+      "sha256": "76c1187facc5e126b7de56ca379316bd4f12a98a8d52d5f3c81c6f7a336e3f80"
+    },
+    {
+      "file": "VideoPage.css",
+      "bytes": 4589,
+      "sha256": "336a3a0a4b51bde807f40f55206c0a3b395b6cc47ac30d6007cf52a2a754fe11"
+    },
+    {
+      "file": "VideoPage.jsx",
+      "bytes": 6031,
+      "sha256": "9aa9480022d16085fbfd7b81dd994a51526b5f798b6167cc49f8590378bfec04"
+    },
+    {
+      "file": "import-video-figma.mjs",
+      "bytes": 5863,
+      "sha256": "725c54c1bcda4179aa923a290b2df5963a2b071c88943e957b9281e099ec0120"
+    },
+    {
+      "file": "runtime-assets/aapi-multimedia.png",
+      "bytes": 3156106,
+      "sha256": "1d28beec6bb1df4d9f765b7ac000c8547165636c9b6f9b2adc56237e98846a1d"
+    },
+    {
+      "file": "runtime-assets/broadcast-card-mask.svg",
+      "bytes": 252,
+      "sha256": "833b48d1246807d6f4d8a53f2660d0a8a993710bf46d52795036019b249967a8"
+    },
+    {
+      "file": "runtime-assets/castro-street.png",
+      "bytes": 1493193,
+      "sha256": "26df855b92bcf5f65b4b45946b1fdb2483f841bd0ce53e90a2b4d501c53f6327"
+    },
+    {
+      "file": "runtime-assets/claire-mack.png",
+      "bytes": 1089997,
+      "sha256": "d41974d6c78155c66c6a61381cc0a548e8466e6ae13b72125ff7e64e9a218202"
+    },
+    {
+      "file": "runtime-assets/colette-crutcher.png",
+      "bytes": 1753834,
+      "sha256": "1df57b879160099ada7b97811116869551f1ab30bd315b961a50e388ac02ca5a"
+    },
+    {
+      "file": "runtime-assets/content.json",
+      "bytes": 9970,
+      "sha256": "e069ae253c7d0e2bbcc3b5efde7337f5a3f5a4f45dd4f726177f4a77cac6d51e"
+    },
+    {
+      "file": "runtime-assets/cultured-pickle-shop.png",
+      "bytes": 564902,
+      "sha256": "82954bfd8c9c58093fb76ffa97e8912e53a57d8f3b32b02a39bc41eb1d98d4ed"
+    },
+    {
+      "file": "runtime-assets/food-cooperatives.png",
+      "bytes": 618602,
+      "sha256": "d0e0c0904a579dd4e1aae74b08f35dc869ef1cc6bd9c6f7113a55e2fbf746ebe"
+    },
+    {
+      "file": "runtime-assets/manifest.json",
+      "bytes": 2087,
+      "sha256": "a59c623b1d1c795ca3ddac6b740ac7a5deaf16474da7c0bf5712d2af4941541a"
+    },
+    {
+      "file": "runtime-assets/obayashi-culture.png",
+      "bytes": 5957686,
+      "sha256": "66cf682553bf74c7ba93e70cc75f1def17d1d692bb1e3fe5d79065e1bacd4189"
+    },
+    {
+      "file": "runtime-assets/play-button.svg",
+      "bytes": 430,
+      "sha256": "4bea24519b4e4c88edf80307cfd2fb7464d9d06b0d42990a50ab8f0161046a93"
+    },
+    {
+      "file": "runtime-assets/wasabi.png",
+      "bytes": 1300971,
+      "sha256": "b676c08a9e73d548f7cabb633d2e9cef2b96a417f5db1eacbc9f856b78523341"
+    },
+    {
+      "file": "video.spec.js",
+      "bytes": 11093,
+      "sha256": "f0bc526c0b360ba7798190390e41aa3bf4ec85c389ca1ecde4e70e0cc0c48ee8"
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "source": {
+    "id": "657:55",
+    "name": "Rectangle 150",
+    "type": "VECTOR",
+    "parentId": "657:52",
+    "childCount": 0,
+    "x": 932,
+    "y": 2208,
+    "width": 388,
+    "height": 151,
+    "visible": true
+  },
+  "measurements": [
+    {
+      "engine": "chrome",
+      "nodeId": "657:55",
+      "actual": {
+        "x": 932,
+        "y": 2208,
+        "width": 388,
+        "height": 151
+      },
+      "tolerancePx": 1,
+      "status": "passed"
+    },
+    {
+      "engine": "webkit",
+      "nodeId": "657:55",
+      "actual": {
+        "x": 932,
+        "y": 2208,
+        "width": 387.984375,
+        "height": 151
+      },
+      "tolerancePx": 1,
+      "status": "passed"
+    },
+    {
+      "engine": "firefox",
+      "nodeId": "657:55",
+      "actual": {
+        "x": 932,
+        "y": 2208,
+        "width": 388,
+        "height": 151
+      },
+      "tolerancePx": 1,
+      "status": "passed"
+    }
+  ]
+}

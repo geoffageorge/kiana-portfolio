@@ -3,11 +3,11 @@ import { readFile } from 'node:fs/promises';
 import { createHash } from 'node:crypto';
 
 const file = path => readFile(new URL(`../${path}`, import.meta.url));
-const archive = 'Assets/figma files/video-v6-2026-11-08/';
+const archive = 'Assets/figma files/video-v8-2026-11-09/';
 const geometry = JSON.parse(await file(`${archive}geometry.json`));
 const design = JSON.parse(await file(`${archive}design-inspection.json`));
 const typography = JSON.parse(await file(`${archive}text-inspection.json`));
-const manifest = JSON.parse(await file('public/assets/video-figma/manifest.json'));
+const manifest = JSON.parse(await file('public/assets/video-v8-figma/manifest.json'));
 const hash = bytes => createHash('sha256').update(bytes).digest('hex');
 const sourceUrl = id => design.nodes.find(n => n.id === id).reactions.flatMap(r => r.actions ?? []).find(a => a.type === 'URL').url;
 const copy = value => value.replace(/\u2028/g, '\n').trim();
@@ -22,7 +22,7 @@ async function ready(page, path = '/video/') {
   });
 }
 
-test('Video replaces the placeholder with all three Figma sections and retains the shared navigation and footer', async ({ page }) => {
+test('Video 2 replaces the archived Video page with all three Figma sections and retains the shared navigation and footer', async ({ page }) => {
   await page.goto('/');
   await page.getByRole('navigation', { name: 'Main navigation' }).getByRole('link', { name: 'VIDEO', exact: true }).click();
   await expect(page).toHaveURL(/\/video\/$/);
@@ -31,6 +31,9 @@ test('Video replaces the placeholder with all three Figma sections and retains t
   await expect(page.getByRole('heading', { level: 2 })).toHaveText(['Corporate Video', 'Multimedia Journalism', 'Broadcast Journalism']);
   await expect(page.locator('.video-feature__preview')).toHaveCount(2);
   await expect(page.locator('.video-card')).toHaveCount(6);
+  await expect(page.locator('.video-card__play')).toHaveCount(6);
+  await expect(page.locator('.video-feature__play')).toHaveCount(2);
+  for (const heading of await page.locator('.video-page h2').all()) await expect(heading).toHaveCSS('font-size', '32px');
   const nav = page.getByRole('navigation', { name: 'Main navigation' });
   await expect(nav.getByRole('link')).toHaveText(['UX', 'VIDEO', 'JOURNALISM', 'ABOUT+CONTACT']);
   await expect(nav.getByRole('link', { name: 'VIDEO', exact: true })).toHaveAttribute('aria-current', 'page');
@@ -43,16 +46,16 @@ test('Video replaces the placeholder with all three Figma sections and retains t
   await expect(page.getByRole('heading', { level: 1 })).toHaveText('Selected Case Studies');
 });
 
-test('all ten original Video image, mask and play assets are served unchanged', async ({ request }) => {
-  await expect(manifest.assets).toHaveLength(10);
+test('all twelve original Video 2 image, mask and play assets are served unchanged', async ({ request }) => {
+  await expect(manifest.assets).toHaveLength(12);
   for (const asset of manifest.assets) {
     const source = await file(`${archive}source-assets/${asset.file}`);
-    const deployed = await file(`public/assets/video-figma/${asset.file}`);
+    const deployed = await file(`public/assets/video-v8-figma/${asset.file}`);
     expect(deployed.length).toBeGreaterThan(0);
     expect(deployed.length).toBe(asset.bytes);
     expect(hash(source), asset.file).toBe(asset.sha256);
     expect(hash(deployed), asset.file).toBe(asset.sha256);
-    const response = await request.get(`/assets/video-figma/${asset.file}`);
+    const response = await request.get(`/assets/video-v8-figma/${asset.file}`);
     expect(response.ok(), asset.file).toBe(true);
     expect(hash(await response.body()), asset.file).toBe(asset.sha256);
   }
@@ -60,12 +63,12 @@ test('all ten original Video image, mask and play assets are served unchanged', 
 
 test('Video content, image crops, play icons and desktop positions match the independent Figma inspection', async ({ page }) => {
   await ready(page);
-  const textIds = ['609:118', '610:34', '610:33', '610:26', '610:25', '609:117', '609:116', '612:122', '610:28', '619:38', '619:36', '609:191', '609:192', '609:194', '609:195', '612:59', '612:60', '612:86', '612:87', '612:82', '612:83', '612:78', '612:79'];
+  const textIds = ['657:12', '657:10', '657:8', '657:11', '657:9', '657:20', '657:19', '657:18', '657:15', '657:87', '657:86', '657:28', '657:29', '657:37', '657:38', '657:48', '657:49', '657:74', '657:75', '657:65', '657:66', '657:56', '657:57'];
   for (const id of textIds) {
     const source = typography.nodes.find(n => n.id === id);
     const node = page.locator(`.video-page [data-figma-node="${id}"]`);
     await expect(node).toHaveText(copy(source.characters));
-    await expect(node).toHaveCSS('font-weight', String(source.segments[0].fontWeight));
+    await expect(node).toHaveCSS('font-weight', String(/Bold/.test(source.fontName.style) ? (/Semi/.test(source.fontName.style) ? 600 : 700) : source.fontName.style === 'Medium' ? 500 : 400));
     if (page.viewportSize().width === 1440) {
       await expect(node).toHaveCSS('font-size', `${source.segments[0].fontSize}px`);
       const actual = await node.boundingBox(), expected = geometry.nodes.find(n => n.id === id);
@@ -73,10 +76,11 @@ test('Video content, image crops, play icons and desktop positions match the ind
     }
   }
   const masks = await page.locator('.video-card__surface').evaluateAll(nodes => nodes.map(n => getComputedStyle(n).maskImage));
-  expect(masks.every(mask => mask.includes('/assets/video-figma/broadcast-card-mask.svg'))).toBe(true);
+  expect(masks.filter(mask => mask.includes('/assets/video-v8-figma/broadcast-card-mask.svg'))).toHaveLength(5);
+  expect(masks.filter(mask => mask.includes('/assets/video-v8-figma/colette-card-mask.svg'))).toHaveLength(1);
   for (const image of await page.locator('.video-page img').all()) expect(await image.evaluate(n => n.complete && n.naturalWidth > 0)).toBe(true);
   if (page.viewportSize().width === 1440) {
-    const ids = ['612:124', '612:123', '612:50', '619:15', '612:128', '619:16', '612:107', '612:103', '612:102', '612:108', '612:109', '612:110', '609:174', '609:173', '610:19', '610:22', '610:20', '610:24'];
+    const ids = ['657:16', '657:13', '657:39', '657:82', '666:15', '666:12', '657:21', '657:30', '657:40', '657:67', '657:58', '657:50', '657:26', '657:35', '657:45', '657:71', '657:62', '657:53', '657:55', '666:26', '666:29', '666:9', '663:23', '663:17', '663:20'];
     for (const id of ids) {
       const actual = await page.locator(`.video-page [data-figma-node="${id}"]`).boundingBox();
       const expected = geometry.nodes.find(n => n.id === id);
@@ -86,21 +90,24 @@ test('Video content, image crops, play icons and desktop positions match the ind
   }
 });
 
-test('both feature buttons and all eight tiles open their exact active Figma URLs in new tabs', async ({ page, context }) => {
+test('buttons, previews and all eight play icons open the matching preview destination in new tabs', async ({ page, context }) => {
   await ready(page);
   const targets = [
-    [page.locator('.video-feature__button').nth(0), '612:124'], [page.locator('.video-feature__button').nth(1), '612:123'],
-    [page.locator('.video-feature__preview a').nth(0), '612:50'], [page.locator('.video-feature__preview a').nth(1), '619:16'],
-    ...['612:107', '612:103', '612:102', '612:108', '612:109', '612:110'].map(id => [page.locator(`.video-card[data-figma-node="${id}"] > a`), id]),
+    [page.locator('.video-feature__button').nth(0), '657:16'], [page.locator('.video-feature__button').nth(1), '657:13'],
+    [page.locator('.video-feature__preview a').nth(0), '657:39'], [page.locator('.video-feature__preview a').nth(1), '666:12'],
+    ...['657:21', '657:30', '657:40', '657:67', '657:58', '657:50'].map(id => [page.locator(`.video-card[data-figma-node="${id}"] > a`), id]),
+    [page.locator('.video-feature__play').nth(0), '657:39'], [page.locator('.video-feature__play').nth(1), '657:13'],
+    ...['657:21', '657:30', '657:40', '657:67', '657:58', '657:50'].map(id => [page.locator(`.video-card[data-figma-node="${id}"] .video-card__play`), id]),
   ];
   for (const [link, id] of targets) {
     const url = sourceUrl(id);
-    await expect(link).toHaveAttribute('href', url);
-    await expect(link).toHaveAttribute('target', '_blank');
+    const anchor=await link.evaluate(n=>n.tagName==='A');
+    const control=anchor?link:link.locator('xpath=ancestor::a');
+    await expect(control).toHaveAttribute('href', url);
+    await expect(control).toHaveAttribute('target', '_blank');
     await context.route(url, route => route.fulfill({ contentType: 'text/html', body: '<title>Video prototype destination</title>' }));
     const popupPromise = page.waitForEvent('popup');
-    await link.focus();
-    await page.keyboard.press('Enter');
+    if(anchor) {await control.focus();await page.keyboard.press('Enter');} else await link.click();
     const popup = await popupPromise;
     await expect(popup).toHaveURL(url);
     expect(await popup.evaluate(() => window.opener)).toBeNull();
@@ -109,23 +116,26 @@ test('both feature buttons and all eight tiles open their exact active Figma URL
   }
 });
 
-test('Video tiles reuse the home 3D hover/focus effect and honor reduced motion', async ({ page }) => {
-  await page.goto('/');
-  const effect = await page.locator('.project-card').first().evaluate(n => getComputedStyle(n).getPropertyValue('--project-card-pop'));
+test('featured image boxes use the subtle shared pop while their titles stay still', async ({ page }) => {
   await ready(page);
-  const tiles = page.locator('.video-page .project-card');
-  await expect(tiles).toHaveCount(8);
-  for (const tile of await tiles.all()) expect(await tile.evaluate(n => getComputedStyle(n).getPropertyValue('--project-card-pop'))).toBe(effect);
-  const link = tiles.first().locator('a');
+  const link=page.locator('.video-feature__preview .project-card__link').first();
+  const poster=link.locator('.video-feature__poster');
+  const title=link.locator('h3');
+  // Mobile keyboard focus scrolls the viewport; compare document coordinates.
+  const measure=()=>title.evaluate(n=>{const r=n.getBoundingClientRect();return{x:r.x+scrollX,y:r.y+scrollY,width:r.width,height:r.height};});
+  const before=await measure();
   await link.focus();
-  await expect.poll(() => link.evaluate(n => getComputedStyle(n).transform)).not.toBe('none');
-  if (await page.evaluate(() => matchMedia('(hover:hover) and (pointer:fine)').matches)) {
-    await link.blur();
-    await link.hover();
-    await expect.poll(() => link.evaluate(n => getComputedStyle(n).transform)).not.toBe('none');
+  await expect.poll(()=>poster.evaluate(n=>Number(new DOMMatrix(getComputedStyle(n).transform).a.toFixed(3)))).toBe(1.01);
+  await expect(link).toHaveCSS('transform','none');
+  const after=await measure();
+  for(const key of ['x','y','width','height']) expect(after[key]).toBeCloseTo(before[key],1);
+  if(await page.evaluate(()=>matchMedia('(hover:hover) and (pointer:fine)').matches)) {
+    await link.blur();await poster.hover();
+    await expect.poll(()=>poster.evaluate(n=>Number(new DOMMatrix(getComputedStyle(n).transform).a.toFixed(3)))).toBe(1.01);
+    await expect(link).toHaveCSS('transform','none');
   }
-  await page.emulateMedia({ reducedMotion: 'reduce' });
-  await expect(link).toHaveCSS('transform', 'none');
+  await page.emulateMedia({reducedMotion:'reduce'});
+  await expect(poster).toHaveCSS('transform','none');
 });
 
 test('Video fits phones, tablets and desktops with visible native dividers and no clipped text or runtime errors', async ({ page }) => {
@@ -170,8 +180,8 @@ test('the complete Video page supports direct index URLs and subdirectory deploy
     await route.fulfill({ response });
   });
   await ready(page, '/portfolio/video/');
-  await expect(page.locator('.video-feature__thumbnail').first()).toHaveAttribute('src', '/portfolio/assets/video-figma/obayashi-culture.png');
-  await expect(page.locator('.video-feature__play').first()).toHaveAttribute('src', '/portfolio/assets/video-figma/play-button.svg');
+  await expect(page.locator('.video-feature__thumbnail').first()).toHaveAttribute('src', '/portfolio/assets/video-v8-figma/obayashi-culture.png');
+  await expect(page.locator('.video-feature__play').first()).toHaveAttribute('src', '/portfolio/assets/video-v8-figma/play-button.svg');
   await expect(page.locator('.site-footer__connect')).toHaveAttribute('href', '/portfolio/about/');
   await page.getByRole('navigation', { name: 'Main navigation' }).getByRole('link', { name: 'JOURNALISM', exact: true }).click();
   await expect(page).toHaveURL(/\/portfolio\/journalism\/$/);

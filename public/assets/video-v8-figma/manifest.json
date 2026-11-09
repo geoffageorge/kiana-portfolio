@@ -1,0 +1,91 @@
+{
+  "fileKey": "wZSRbIZZXfUlrq902OXE2W",
+  "frameId": "657:7",
+  "inspectedDate": "2026-11-09",
+  "assets": [
+    {
+      "file": "obayashi-culture.png",
+      "width": 3840,
+      "height": 2162,
+      "bytes": 5957686,
+      "sha256": "66cf682553bf74c7ba93e70cc75f1def17d1d692bb1e3fe5d79065e1bacd4189"
+    },
+    {
+      "file": "aapi-multimedia.png",
+      "width": 2086,
+      "height": 1185,
+      "bytes": 3156106,
+      "sha256": "1d28beec6bb1df4d9f765b7ac000c8547165636c9b6f9b2adc56237e98846a1d"
+    },
+    {
+      "file": "cultured-pickle-shop.png",
+      "width": 1654,
+      "height": 1014,
+      "bytes": 2175079,
+      "sha256": "0e665ed3b41daa32ada2e601765e1676f80bd6e0e62d15325aec4c0fc7baa73b"
+    },
+    {
+      "file": "food-cooperatives.png",
+      "width": 2372,
+      "height": 1475,
+      "bytes": 3721662,
+      "sha256": "119bfa3b30b059038dc7f70eb43ab249a5cbf8dd4c915e3cdaa2bd42edc344f1"
+    },
+    {
+      "file": "claire-mack.png",
+      "width": 1485,
+      "height": 888,
+      "bytes": 1513558,
+      "sha256": "07f5dfb0fbed31d366f02d892f09257c29bf24b6e4be88eba546609c3e6c8008"
+    },
+    {
+      "file": "colette-crutcher.png",
+      "width": 1660,
+      "height": 1023,
+      "bytes": 2877514,
+      "sha256": "21fa4488daf863b4f1b2672cc767e79ea1059b15bb24f48a365cc565579af9ee"
+    },
+    {
+      "file": "castro-street.png",
+      "width": 1477,
+      "height": 849,
+      "bytes": 1469684,
+      "sha256": "1ece18d6334d92f81c920e342f5d778f302add0348d0ec9624c2f75776c4dacd"
+    },
+    {
+      "file": "wasabi.png",
+      "width": 1864,
+      "height": 1098,
+      "bytes": 3331817,
+      "sha256": "c9c29440e58ed37f72f433df489fa54eac9ce4290f996e4b9a6e1a65964bdd66"
+    },
+    {
+      "file": "broadcast-card-mask.svg",
+      "width": 382,
+      "height": 356,
+      "bytes": 252,
+      "sha256": "833b48d1246807d6f4d8a53f2660d0a8a993710bf46d52795036019b249967a8"
+    },
+    {
+      "file": "colette-card-mask.svg",
+      "width": 382,
+      "height": 356,
+      "bytes": 252,
+      "sha256": "870318520e606e6561f8a893611a67d05fb83a9b35585b1fa6c820667e4a33c1"
+    },
+    {
+      "file": "wasabi-caption.svg",
+      "width": 388,
+      "height": 151,
+      "bytes": 241,
+      "sha256": "5542e993b0621947423fb24acd39ec21e776bdcbf81d0354c017172c0656cdb1"
+    },
+    {
+      "file": "play-button.svg",
+      "width": 28.1841,
+      "height": 28.1841,
+      "bytes": 461,
+      "sha256": "8b3ab8b8f1e50582046fb84640b6c5460129c03f5e4c7d8df4e2ba23e922afc8"
+    }
+  ]
+}

@@ -54,7 +54,7 @@ test('UX uses the exact Figma introduction, typography, tile wording and desktop
     expect(await slot.evaluate(n=>[...n.childNodes].map(child=>child.textContent).join('\n').replace(/\s+/g,' ').trim())).toBe(copy(source.characters).replace(/\s+/g,' '));
     if (page.viewportSize().width===1440) {
       // WebKit retains tiny floating-point differences for container units.
-      expect(await slot.evaluate(n=>parseFloat(getComputedStyle(n).fontSize))).toBeCloseTo(source.fontSize,3);
+      expect(await slot.evaluate(n=>parseFloat(getComputedStyle(n).fontSize))).toBeCloseTo(id==='619:60'?32:source.fontSize,3);
       await expect(slot).toHaveCSS('font-weight',source.fontName.style==='Bold'?'700':'400');
       const expected=geometry.nodes.find(n=>n.id===id), actual=await slot.boundingBox();
       for (const key of ['x','y']) expect(Math.abs(actual[key]-expected[key]),`${id} ${key}`).toBeLessThan(.6);

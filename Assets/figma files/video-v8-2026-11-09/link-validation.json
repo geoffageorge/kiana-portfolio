@@ -1,0 +1,77 @@
+{
+  "date": "2026-11-09",
+  "links": [
+    {
+      "name": "corporate",
+      "url": "https://www.youtube.com/watch?v=TxbdosIT9pM",
+      "httpStatus": 200,
+      "videoContentVerified": true,
+      "videoTitle": "Obayshi Corporate Culture",
+      "metadataStatus": 200,
+      "method": "Live destination HTML and public YouTube oEmbed metadata; article embed inspected where applicable"
+    },
+    {
+      "name": "multimedia",
+      "url": "https://scotscenterchs.wixsite.com/aapi",
+      "httpStatus": 200,
+      "videoContentVerified": true,
+      "method": "Live page HTML plus normal browser video element inspection",
+      "videoHost": "video.wixstatic.com",
+      "videoReadyStateObserved": 1
+    },
+    {
+      "name": "pickle",
+      "url": "https://www.youtube.com/watch?v=AL2rxCkH-JQ",
+      "httpStatus": 200,
+      "videoContentVerified": true,
+      "videoTitle": "The Cultured Pickle Shop: The Art of Fermentation",
+      "metadataStatus": 200,
+      "method": "Live destination HTML and public YouTube oEmbed metadata; article embed inspected where applicable"
+    },
+    {
+      "name": "cooperatives",
+      "url": "https://www.youtube.com/watch?v=-xH8wz2k_So",
+      "httpStatus": 200,
+      "videoContentVerified": true,
+      "videoTitle": "Food Co-Operatives in Berkeley: Breaking Norms and Innovating",
+      "metadataStatus": 200,
+      "method": "Live destination HTML and public YouTube oEmbed metadata; article embed inspected where applicable"
+    },
+    {
+      "name": "claire",
+      "url": "https://scotscoop.com/claire-mack-cranks-out-crunch-cakes-for-the-community/",
+      "httpStatus": 200,
+      "videoContentVerified": true,
+      "videoTitle": "Claire Mack cranks out crunch cakes for the community",
+      "metadataStatus": 200,
+      "method": "Live destination HTML and public YouTube oEmbed metadata; article embed inspected where applicable"
+    },
+    {
+      "name": "colette",
+      "url": "https://scotscoop.com/colette-crutcher-pieces-together-city-art/",
+      "httpStatus": 200,
+      "videoContentVerified": true,
+      "videoTitle": "Colette Crutcher pieces together city art",
+      "metadataStatus": 200,
+      "method": "Live destination HTML and public YouTube oEmbed metadata; article embed inspected where applicable"
+    },
+    {
+      "name": "castro",
+      "url": "https://scotscoop.com/castro-street-a-colorful-safe-haven/",
+      "httpStatus": 200,
+      "videoContentVerified": true,
+      "videoTitle": "Castro Street: A colorful safe haven",
+      "metadataStatus": 200,
+      "method": "Live destination HTML and public YouTube oEmbed metadata; article embed inspected where applicable"
+    },
+    {
+      "name": "wasabi",
+      "url": "https://www.youtube.com/watch?v=bVRONBlSAOo",
+      "httpStatus": 200,
+      "videoContentVerified": true,
+      "videoTitle": "Half Moon Bay Wasabi spices up the sushi scene",
+      "metadataStatus": 200,
+      "method": "Live destination HTML and public YouTube oEmbed metadata; article embed inspected where applicable"
+    }
+  ]
+}

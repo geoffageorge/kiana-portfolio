@@ -1,0 +1,49 @@
+.project-card { position: relative; min-width: 0; border-block: 1px solid var(--color-rule); background: #fff; --project-card-pop: perspective(1200px) translateY(-8px) translateZ(20px) rotateX(2deg); --project-card-shadow: 0 22px 42px -16px rgb(35 67 82 / 24%), 0 8px 16px -10px rgb(35 67 82 / 18%); }
+.project-card__link { display: block; width: 100%; padding: 28px; color: inherit; text-align: left; background: #fff; border: 0; transform-origin: center 60%; transition: transform 320ms cubic-bezier(.2,.65,.3,1), box-shadow 320ms cubic-bezier(.2,.65,.3,1); }
+.project-card:focus-within { z-index: 1; }
+.project-card__link:focus-visible { transform: var(--project-card-pop); box-shadow: var(--project-card-shadow); }
+.project-card__image-wrap { overflow: hidden; aspect-ratio: 1; background: #e7e9e6; }
+.project-card__image-wrap img { display: block; width: 100%; height: 100%; object-fit: cover; transition: transform 450ms cubic-bezier(.2,.65,.3,1); }
+.project-card__caption { padding-top: 34px; }
+.project-card h3 { margin: 0 0 9px; font-size: clamp(20px, 1.78vw, 26px); font-weight: 400; line-height: 1.25; letter-spacing: -0.75px; }
+.project-card__details { display: flex; justify-content: space-between; align-items: center; gap: 16px; }
+.project-card__details p { display: flex; flex-wrap: wrap; gap: 7px; margin: 0; font-family: var(--font-mono); font-size: 11px; line-height: 1.6; text-transform: uppercase; }
+.project-card__slash { color: #a6a6a0; }
+.project-card__details svg { flex: 0 0 22px; width: 22px; height: 22px; transition: transform 200ms ease; }
+@media (hover: hover) and (pointer: fine) {
+  .project-card:hover { z-index: 1; }
+  .project-card:hover .project-card__link { transform: var(--project-card-pop); box-shadow: var(--project-card-shadow); }
+  .project-card:hover img { transform: scale(1.025); }
+  .project-card:hover .project-card__details svg { transform: translateX(4px); }
+}
+@media (max-width: 1100px) { .project-card__link { padding: 22px; } .project-card__caption { padding-top: 24px; } .project-card__details p { font-size: 9px; gap: 5px; } }
+@media (max-width: 767px) { .project-card__link { padding: 18px; } .project-card h3 { font-size: 23px; } .project-card__details p { font-size: 10px; } .project-card__caption { padding-top: 24px; } }
+@media (prefers-reduced-motion: reduce) {
+  .project-card .project-card__link, .project-card .project-card__link img, .project-card .project-card__details svg { transform: none !important; transition: none; }
+}
+
+.project-card--figma { container-type: inline-size; border: 0; border-radius: 16px; background: #fff; }
+.project-card--figma .project-card__link { position: relative; aspect-ratio: 1; padding: 0; border-radius: inherit; background: transparent; }
+.project-card--figma .project-card__overlay { position: absolute; inset: 0; pointer-events: none; color: #000; }
+.project-card--obayashi .project-card__overlay { color: #fff; }
+.project-card--figma .project-card__number, .project-card--figma .project-card__summary { position: absolute; left: 8.14558%; margin: 0; font: 400 3.11958cqw/1.22222 var(--portfolio-mono); }
+.project-card--obayashi .project-card__number, .project-card--obayashi .project-card__summary { left: 8.66551%; }
+.project-card--figma .project-card__number { top: 8.83882%; }
+.project-card--figma h3 { position: absolute; left: 7.10572%; top: 14.55806%; margin: 0; font: 700 8.66551cqw/1.05 var(--portfolio-body); letter-spacing: -.17331cqw; }
+.project-card--obayashi h3 { left: 7.62565%; }
+.project-card--figma .project-card__summary { top: 29.11612%; line-height: 1.38889; }
+.project-card__summary span { display: block; }
+.project-card__role-rule { position: absolute; top: 44.71404%; left: 8.14558%; width: 7.62565%; border-top: 1px solid currentColor; }
+.project-card__roles { position: absolute; left: 8.14558%; top: 47.83362%; width: 31.88908%; margin: 0; font: 400 2.59965cqw/1.53333 var(--portfolio-body); }
+.project-card--obayashi :is(.project-card__role-rule, .project-card__roles) { left: 8.66551%; }
+.project-card__roles span { display: block; }
+.project-artwork { position: absolute; inset: 0; overflow: hidden; border-radius: 16px; mask-size: 100% 100%; mask-repeat: no-repeat; }
+.project-artwork img { display: block; position: absolute; max-width: none; }
+.project-artwork--pointly { background: #88cffd; }
+.project-artwork__staircase { position: absolute; left: -37.60832%; top: -6.93241%; width: 236.22184%; height: 128.94281%; transform: scaleX(-1); }
+.project-artwork__staircase img { left: -10.86761%; top: 4.56671%; width: 100%; height: 100.01411%; }
+.project-artwork__laptop-crop { position: absolute; left: 30.53553%; top: 27.72964%; width: 69.46447%; height: 65.33657%; mask-size: 100% 100%; mask-repeat: no-repeat; }
+.project-artwork__laptop { left: 11.05243%; top: 13.62605%; width: 126.34367%; height: 81.79877%; }
+.project-artwork__screen-crop { position: absolute; left: 18.10597%; top: 11.5869%; width: 111.12748%; height: 75.88581%; mask-size: 100% 100%; mask-repeat: no-repeat; }
+.project-artwork__screen { left: 4.18009%; top: 6.11322%; width: 93.36282%; height: 237.60348%; box-shadow: .69324cqw .69324cqw .69324cqw rgb(0 0 0 / 25%); }
+@media (hover: hover) and (pointer: fine) { .project-card--figma:hover img { transform: none; } }

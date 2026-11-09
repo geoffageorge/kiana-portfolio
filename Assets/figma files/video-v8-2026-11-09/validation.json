@@ -1,0 +1,147 @@
+{
+  "checkedDate": "2026-11-09",
+  "build": {
+    "command": "npm run build",
+    "status": "passed",
+    "rebuiltAfterCaptionFix": true
+  },
+  "regression": {
+    "fullRun": {
+      "command": "PORTFOLIO_TEST_TARGET=production PORTFOLIO_TEST_CROSS_BROWSER=1 npx playwright test --workers=2",
+      "passed": 364,
+      "failed": 3,
+      "skipped": 1,
+      "flaky": 0,
+      "durationSeconds": 411.94
+    },
+    "resolvedChecks": [
+      {
+        "issue": "Two phone title-position assertions treated focus-induced viewport scrolling as title animation.",
+        "resolution": "Compare document coordinates before/after focus; no title transform or application layout change required."
+      },
+      {
+        "issue": "One phone press test selected a target while native focus scrolling was still settling.",
+        "resolution": "Explicitly center the link using instant scrolling, wait for layout, then hit-test a visible point below the sticky header."
+      },
+      {
+        "issue": "A final per-asset geometry audit found the global max-width cap narrowed the new Wasabi caption SVG.",
+        "resolution": "Set max-width:none on the caption background layer to preserve its original 388px source width; add that SVG to independent geometry assertions."
+      }
+    ],
+    "finalRecheck": {
+      "command": "PORTFOLIO_TEST_TARGET=production PORTFOLIO_TEST_CROSS_BROWSER=1 npx playwright test tests/video.spec.js tests/update8.spec.js --grep 'Video content, image crops|featured image boxes|every linked tile' --workers=2",
+      "passed": 18,
+      "failed": 0,
+      "flaky": 0,
+      "durationSeconds": 57.71
+    },
+    "finalCoverage": {
+      "passed": 367,
+      "skipped": 1,
+      "failed": 0,
+      "flaky": 0,
+      "method": "Complete regression results combined with the passing post-fix source geometry and interaction rechecks in all six projects.",
+      "projects": {
+        "desktop": {
+          "passed": 70,
+          "skipped": 0,
+          "failed": 0,
+          "flaky": 0
+        },
+        "mobile": {
+          "passed": 69,
+          "skipped": 1,
+          "failed": 0,
+          "flaky": 0
+        },
+        "safari-webkit": {
+          "passed": 57,
+          "skipped": 0,
+          "failed": 0,
+          "flaky": 0
+        },
+        "safari-mobile": {
+          "passed": 57,
+          "skipped": 0,
+          "failed": 0,
+          "flaky": 0
+        },
+        "firefox": {
+          "passed": 57,
+          "skipped": 0,
+          "failed": 0,
+          "flaky": 0
+        },
+        "firefox-mobile": {
+          "passed": 57,
+          "skipped": 0,
+          "failed": 0,
+          "flaky": 0
+        }
+      },
+      "knownSkippedChecks": [
+        {
+          "project": "mobile",
+          "file": "obayashi-design.spec.js",
+          "title": "desktop image geometry matches the inspected frame, including every crop and repeated Markets image"
+        }
+      ]
+    }
+  },
+  "source": {
+    "frameId": "657:7",
+    "inspectedNodes": 117,
+    "downloadedOriginalExports": 20,
+    "unchangedRuntimeAssets": 12,
+    "missingFonts": 0,
+    "confirmedChoices": [
+      "Animate only top preview images; retain stationary titles",
+      "Use matching preview URLs for all play icons"
+    ]
+  },
+  "externalLinks": {
+    "uniqueDestinations": 8,
+    "http200Responses": 8,
+    "videoContentVerified": 8,
+    "corporatePublicMetadataVerified": true,
+    "details": "link-validation.json"
+  },
+  "visualReview": {
+    "pages": [
+      "/video/",
+      "/journalism/",
+      "/ux/"
+    ],
+    "engines": [
+      "Chrome",
+      "Playwright WebKit (Safari engine)",
+      "Firefox"
+    ],
+    "screenshotWidths": [
+      1440,
+      390
+    ],
+    "responsiveTestWidths": [
+      320,
+      390,
+      768,
+      1024,
+      1440,
+      1920
+    ],
+    "desktopSourceTolerancePx": 1,
+    "captionGeometry": "caption-svg-geometry.json",
+    "limitations": "Engine-based browser checks with emulated or phone-sized layouts; native Safari and real mobile hardware were not automated."
+  },
+  "archive": {
+    "path": "Assets/archived pages/video-v6-before-v8-2026-11-09/",
+    "originalFilesHashVerified": 17,
+    "excludedFromProductionBuild": true
+  },
+  "deployment": {
+    "scopedGitAddDryRun": "passed",
+    "committed": false,
+    "pushed": false,
+    "published": false
+  }
+}

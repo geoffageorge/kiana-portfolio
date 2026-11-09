@@ -1,0 +1,309 @@
+const imgScreenshot20261108At90323Am2 = "source-assets/cultured-pickle-shop.png";
+const imgScreenshot20261108At90211Am1 = "source-assets/food-cooperatives.png";
+const imgScreenshot20261108At23308Pm1 = "source-assets/obayashi-culture.png";
+const imgScreenshot20261108At95210Am1 = "source-assets/claire-mack.png";
+const imgScreenshot20261108At95823Am1 = "source-assets/wasabi.png";
+const imgScreenshot20261108At94108Am1 = "source-assets/castro-street.png";
+const imgScreenshot20261108At95734Am2 = "source-assets/colette-crutcher.png";
+const imgScreenshot20261108At63419Pm1 = "source-assets/aapi-multimedia.png";
+const imgScreenshot20261108At90323Am1 = "source-assets/broadcast-card-mask.svg";
+const imgRectangle150 = "source-assets/wasabi-caption.svg";
+const imgScreenshot20261108At95734Am1 = "source-assets/colette-card-mask.svg";
+const imgGroup152 = "source-assets/covered-play-button.svg";
+const imgGroup154 = "source-assets/play-button.svg";
+const imgVector = "source-assets/brand-vector-1.svg";
+const imgVector1 = "source-assets/brand-vector-2.svg";
+const imgVector2 = "source-assets/brand-vector-3.svg";
+const imgVector3 = "source-assets/brand-vector-4.svg";
+const imgVector4 = "source-assets/brand-vector-5.svg";
+const imgVector5 = "source-assets/brand-vector-6.svg";
+const imgLine69 = "source-assets/divider.svg";
+
+export default function Video2() {
+  return (
+    <div className="bg-white relative size-full" data-node-id="657:7" data-name="Video 2">
+      <p className="[word-break:break-word] absolute font-['Inter:Regular'] font-normal leading-[26px] left-[121px] not-italic text-[16px] text-black top-[393px] w-[546px]" data-node-id="657:8">
+        I worked with Obayashi North America’s HR team to create a video giving prospective candidates an inside look at the company’s culture and employee experience. My role included conducting employee interviews, filming, and editing the final video.
+      </p>
+      <div className="[word-break:break-word] absolute font-['Inter:Regular'] font-normal leading-[0] left-[121px] not-italic text-[16px] text-black top-[874px] w-[529px] whitespace-pre-wrap" data-node-id="657:9">
+        <p className="leading-[26px] mb-0">
+          {`As anti-Asian hate incidents escalated across the U.S., I led a `}
+          <br aria-hidden />
+          team of student journalists to create a multimedia news package documenting their impact and the community’s response.
+          <br aria-hidden />
+          <br aria-hidden />
+        </p>
+        <p className="leading-[26px] mb-0">
+          I built the website and assembled the full package, coordinated articles and podcasts, produced the video, contributed photography, and created an incident timeline, personal accounts section, and donation and involvement resources.
+          <br aria-hidden />
+          <br aria-hidden />
+        </p>
+        <p className="leading-[26px]">The project won the National Scholastic Press Association’s Multimedia News Story of the Year award.</p>
+      </div>
+      <p className="[word-break:break-word] absolute font-['Inter:Bold'] font-bold leading-[44px] left-[119px] not-italic text-[32px] text-black top-[329px] w-[589px]" data-node-id="657:10">
+        Corporate Video
+      </p>
+      <p className="[word-break:break-word] absolute font-['Inter:Bold'] font-bold leading-[44px] left-[119px] not-italic text-[32px] text-black top-[810px] w-[589px]" data-node-id="657:11">
+        Multimedia Journalism
+      </p>
+      <p className="[word-break:break-word] absolute font-['Inter:Regular'] font-normal leading-[26px] left-[121px] not-italic text-[15px] text-black top-[217px] w-[254px]" data-node-id="657:12">
+        SELECTED VIDEO WORK
+      </p>
+      <a className="absolute contents cursor-pointer left-[121px] top-[1200px]" href="https://scotscenterchs.wixsite.com/aapi" data-node-id="657:13" target="_blank">
+        <div className="absolute bg-[#25261e] h-[31px] left-[121px] rounded-[4px] top-[1200px] w-[239px]" data-node-id="657:14" />
+        <div className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Fira_Mono:Regular'] h-[22px] justify-center leading-[0] left-[137px] not-italic text-[14px] text-white top-[1215px] w-[223px]" data-node-id="657:15">
+          <p className="leading-[1.2]">SEE MULTIMEDIA PACKAGE ↗</p>
+        </div>
+      </a>
+      <a className="absolute contents cursor-pointer left-[121px] top-[531px]" href="https://www.youtube.com/watch?v=TxbdosIT9pM" data-node-id="657:16" target="_blank">
+        <div className="absolute bg-[#25261e] h-[31px] left-[121px] rounded-[4px] top-[531px] w-[145px]" data-node-id="657:17" />
+        <div className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Fira_Mono:Regular'] h-[22px] justify-center leading-[0] left-[137px] not-italic text-[14px] text-white top-[546px] w-[126px]" data-node-id="657:18">
+          <p className="leading-[1.2]">WATCH VIDEO ↗</p>
+        </div>
+      </a>
+      <p className="[word-break:break-word] absolute font-['Inter:Regular'] font-normal leading-[26px] left-[121px] not-italic text-[16px] text-black top-[1492px] w-[950px]" data-node-id="657:19">
+        I use video to explore the people, places, and ideas that make a community. I take each story from concept to final edit, handling research, interviews, on-location filming, photography, and video editing.
+      </p>
+      <p className="[word-break:break-word] absolute font-['Inter:Bold'] font-bold leading-[44px] left-[119px] not-italic text-[32px] text-black top-[1435px] w-[961px]" data-node-id="657:20">
+        Broadcast Journalism
+      </p>
+      <a className="absolute contents cursor-pointer left-[120px] top-[1606px]" href="https://www.youtube.com/watch?v=AL2rxCkH-JQ" data-node-id="657:21" target="_blank" data-name="Mask group">
+        <div className="absolute contents left-[120.24px] top-[1604.49px]" data-node-id="657:23">
+          <div className="absolute contents left-[120.24px] top-[1604.49px]" data-node-id="657:25">
+            <div className="absolute h-[205.011px] left-[120.24px] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-0.245px_1.512px] mask-size-[382px_356px] top-[1604.49px] w-[381.374px]" data-node-id="657:26" style={{ maskImage: `url("${imgScreenshot20261108At90323Am1}")` }} data-name="Screenshot 2026-11-08 at 9.03.23 AM 1">
+              <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgScreenshot20261108At90323Am2} />
+            </div>
+            <div className="absolute bg-[#f7f7f7] h-[152px] left-[121px] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-1px_-204px] mask-size-[382px_356px] top-[1810px] w-[381px]" data-node-id="657:27" style={{ maskImage: `url("${imgScreenshot20261108At90323Am1}")` }} />
+            <p className="[word-break:break-word] absolute font-['Inter:Semi_Bold'] font-semibold h-[109px] leading-[28px] left-[152px] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-32px_-256px] mask-size-[382px_356px] not-italic text-[20px] text-black top-[1862px] w-[325px] whitespace-pre-wrap" data-node-id="657:28" style={{ maskImage: `url("${imgScreenshot20261108At90323Am1}")` }}>
+              {`The Cultured Pickle Shop: `}
+              <br aria-hidden />
+              The Art of Fermentation
+            </p>
+            <p className="[word-break:break-word] absolute font-['Inter:Medium'] font-medium h-[21.145px] leading-[28px] left-[151.96px] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-31.963px_-224px] mask-size-[382px_356px] not-italic text-[#7c8b98] text-[15px] top-[1830px] w-[292.261px]" data-node-id="657:29" style={{ maskImage: `url("${imgScreenshot20261108At90323Am1}")` }}>
+              CalTV
+            </p>
+          </div>
+        </div>
+      </a>
+      <a className="absolute contents cursor-pointer left-[531px] top-[1606px]" href="https://www.youtube.com/watch?v=-xH8wz2k_So" data-node-id="657:30" target="_blank" data-name="Mask group">
+        <div className="absolute contents left-[531.76px] top-[1606px]" data-node-id="657:32">
+          <div className="absolute contents left-[531.76px] top-[1606px]" data-node-id="657:33">
+            <div className="absolute contents left-[531.76px] top-[1606px]" data-node-id="657:34">
+              <div className="absolute h-[204.877px] left-[531.76px] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-0.756px_0px] mask-size-[382px_356px] top-[1606px] w-[381px]" data-node-id="657:35" style={{ maskImage: `url("${imgScreenshot20261108At90323Am1}")` }} data-name="Screenshot 2026-11-08 at 9.02.11 AM 1">
+                <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgScreenshot20261108At90211Am1} />
+              </div>
+              <div className="absolute bg-[#f7f7f7] h-[151px] left-[532px] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-1px_-205px] mask-size-[382px_356px] top-[1811px] w-[381px]" data-node-id="657:36" style={{ maskImage: `url("${imgScreenshot20261108At90323Am1}")` }} />
+              <p className="[word-break:break-word] absolute font-['Inter:Semi_Bold'] font-semibold h-[65.753px] leading-[28px] left-[563px] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-32px_-256px] mask-size-[382px_356px] not-italic text-[20px] text-black top-[1862px] w-[328px] whitespace-pre-wrap" data-node-id="657:37" style={{ maskImage: `url("${imgScreenshot20261108At90323Am1}")` }}>
+                {`Food Co-Operatives in Berkeley: `}
+                <br aria-hidden />
+                Breaking Norms and Innovating
+                <br aria-hidden />
+                <br aria-hidden />
+              </p>
+              <p className="[word-break:break-word] absolute font-['Inter:Medium'] font-medium h-[22.092px] leading-[28px] left-[562.75px] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-31.75px_-224px] mask-size-[382px_356px] not-italic text-[#7c8b98] text-[15px] top-[1830px] w-[292.554px]" data-node-id="657:38" style={{ maskImage: `url("${imgScreenshot20261108At90323Am1}")` }}>
+                CalTV
+              </p>
+            </div>
+          </div>
+        </div>
+      </a>
+      <a className="absolute block cursor-pointer h-[331px] left-[732px] rounded-[16px] top-[284px] w-[588px]" href="https://www.youtube.com/watch?v=TxbdosIT9pM" data-node-id="657:39" target="_blank" data-name="Screenshot 2026-11-08 at 2.33.08 PM 1">
+        <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none rounded-[16px] size-full" src={imgScreenshot20261108At23308Pm1} />
+      </a>
+      <a className="absolute contents cursor-pointer left-[939px] top-[1606px]" href="https://scotscoop.com/claire-mack-cranks-out-crunch-cakes-for-the-community/" data-node-id="657:40" target="_blank" data-name="Mask group">
+        <div className="absolute contents left-[936px] top-[1603px]" data-node-id="657:42">
+          <div className="absolute contents left-[936px] top-[1603px]" data-node-id="657:43">
+            <div className="absolute h-[215px] left-[936px] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[3px_3px] mask-size-[382px_356px] top-[1603px] w-[383px]" data-node-id="657:45" style={{ maskImage: `url("${imgScreenshot20261108At90323Am1}")` }} data-name="Screenshot 2026-11-08 at 9.52.10 AM 1">
+              <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgScreenshot20261108At95210Am1} />
+            </div>
+            <div className="absolute contents left-[939px] top-[1811px]" data-node-id="657:46">
+              <div className="absolute bg-[#f7f7f7] h-[151px] left-[939px] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[0px_-205px] mask-size-[382px_356px] top-[1811px] w-[381px]" data-node-id="657:47" style={{ maskImage: `url("${imgScreenshot20261108At90323Am1}")` }} />
+              <p className="[word-break:break-word] absolute font-['Inter:Semi_Bold'] font-semibold h-[65.753px] leading-[28px] left-[970px] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-31px_-256px] mask-size-[382px_356px] not-italic text-[20px] text-black top-[1862px] w-[328px]" data-node-id="657:48" style={{ maskImage: `url("${imgScreenshot20261108At90323Am1}")` }}>
+                Claire Mack cranks out crunch
+                <br aria-hidden />
+                cakes for the community
+              </p>
+              <p className="[word-break:break-word] absolute font-['Inter:Medium'] font-medium h-[22.092px] leading-[28px] left-[969.75px] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-30.75px_-224px] mask-size-[382px_356px] not-italic text-[#7c8b98] text-[15px] top-[1830px] w-[292.554px]" data-node-id="657:49" style={{ maskImage: `url("${imgScreenshot20261108At90323Am1}")` }}>
+                Scot Scoop
+              </p>
+            </div>
+          </div>
+        </div>
+      </a>
+      <a className="absolute contents cursor-pointer left-[936px] top-[1994px]" href="https://www.youtube.com/watch?v=bVRONBlSAOo" data-node-id="657:50" target="_blank" data-name="Mask group">
+        <div className="absolute contents left-[932px] top-[1994px]" data-node-id="657:52">
+          <div className="absolute h-[214px] left-[936px] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-size-[382px_356px] top-[1994px] w-[384px]" data-node-id="657:53" style={{ maskImage: `url("${imgScreenshot20261108At90323Am1}")` }} data-name="Screenshot 2026-11-08 at 9.58.23 AM 1">
+            <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgScreenshot20261108At95823Am1} />
+          </div>
+          <div className="absolute h-[151px] left-[932px] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[4px_-214px] mask-size-[382px_356px] top-[2208px] w-[388px]" data-node-id="657:55" style={{ maskImage: `url("${imgScreenshot20261108At90323Am1}")` }}>
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgRectangle150} />
+          </div>
+          <p className="[word-break:break-word] absolute font-['Inter:Semi_Bold'] font-semibold h-[65.753px] leading-[28px] left-[970px] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-34px_-265px] mask-size-[382px_356px] not-italic text-[20px] text-black top-[2259px] w-[328px]" data-node-id="657:56" style={{ maskImage: `url("${imgScreenshot20261108At90323Am1}")` }}>
+            Half Moon Bay Wasabi spices up the sushi scene
+          </p>
+          <p className="[word-break:break-word] absolute font-['Inter:Medium'] font-medium h-[22.092px] leading-[28px] left-[969.75px] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-33.75px_-233px] mask-size-[382px_356px] not-italic text-[#7c8b98] text-[15px] top-[2227px] w-[292.554px]" data-node-id="657:57" style={{ maskImage: `url("${imgScreenshot20261108At90323Am1}")` }}>
+            Scot Scoop
+          </p>
+        </div>
+      </a>
+      <a className="absolute contents cursor-pointer left-[530px] top-[1994px]" href="https://scotscoop.com/castro-street-a-colorful-safe-haven/" data-node-id="657:58" target="_blank" data-name="Mask group">
+        <div className="absolute contents left-[529px] top-[1994px]" data-node-id="657:60">
+          <div className="absolute contents left-[529px] top-[1994px]" data-node-id="657:61">
+            <div className="absolute h-[215px] left-[529px] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[1px_0px] mask-size-[382px_356px] top-[1994px] w-[383px]" data-node-id="657:62" style={{ maskImage: `url("${imgScreenshot20261108At90323Am1}")` }} data-name="Screenshot 2026-11-08 at 9.41.08 AM 1">
+              <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgScreenshot20261108At94108Am1} />
+            </div>
+            <div className="absolute contents left-[532px] top-[2208px]" data-node-id="657:63">
+              <div className="absolute bg-[#f7f7f7] h-[151px] left-[532px] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-2px_-214px] mask-size-[382px_356px] top-[2208px] w-[380px]" data-node-id="657:64" style={{ maskImage: `url("${imgScreenshot20261108At90323Am1}")` }} />
+              <p className="[word-break:break-word] absolute font-['Inter:Semi_Bold'] font-semibold h-[65.753px] leading-[28px] left-[562.92px] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-32.918px_-265px] mask-size-[382px_356px] not-italic text-[20px] text-black top-[2259px] w-[327.139px]" data-node-id="657:65" style={{ maskImage: `url("${imgScreenshot20261108At90323Am1}")` }}>
+                Castro Street: A colorful
+                <br aria-hidden />
+                safe haven
+              </p>
+              <p className="[word-break:break-word] absolute font-['Inter:Medium'] font-medium h-[22.092px] leading-[28px] left-[562.67px] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-32.669px_-233px] mask-size-[382px_356px] not-italic text-[#7c8b98] text-[15px] top-[2227px] w-[291.786px]" data-node-id="657:66" style={{ maskImage: `url("${imgScreenshot20261108At90323Am1}")` }}>
+                Scot Scoop
+              </p>
+            </div>
+          </div>
+        </div>
+      </a>
+      <a className="absolute contents cursor-pointer left-[120px] top-[1994px]" href="https://scotscoop.com/colette-crutcher-pieces-together-city-art/" data-node-id="657:67" target="_blank" data-name="Mask group">
+        <div className="absolute contents left-[119px] top-[1994px]" data-node-id="657:69">
+          <div className="absolute contents left-[119px] top-[1994px]" data-node-id="657:70">
+            <div className="absolute h-[215px] left-[119px] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[1px_0px] mask-size-[382px_356px] top-[1994px] w-[385px]" data-node-id="657:71" style={{ maskImage: `url("${imgScreenshot20261108At95734Am1}")` }} data-name="Screenshot 2026-11-08 at 9.57.34 AM 1">
+              <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgScreenshot20261108At95734Am2} />
+            </div>
+            <div className="absolute contents left-[119px] top-[2208px]" data-node-id="657:72">
+              <div className="absolute bg-[#f7f7f7] h-[151px] left-[119px] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[1px_-214px] mask-size-[382px_356px] top-[2208px] w-[383px]" data-node-id="657:73" style={{ maskImage: `url("${imgScreenshot20261108At95734Am1}")` }} />
+              <div className="[word-break:break-word] absolute font-['Inter:Semi_Bold'] font-semibold h-[65.753px] leading-[0] left-[150.16px] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-30.163px_-265px] mask-size-[382px_356px] not-italic text-[20px] text-black top-[2259px] w-[329.722px] whitespace-pre-wrap" data-node-id="657:74" style={{ maskImage: `url("${imgScreenshot20261108At95734Am1}")` }}>
+                <p className="leading-[28px] mb-0">Colette Crutcher pieces together city art</p>
+                <p className="leading-[28px] mb-0">​</p>
+                <p className="leading-[28px]">​</p>
+              </div>
+              <p className="[word-break:break-word] absolute font-['Inter:Medium'] font-medium h-[22.092px] leading-[28px] left-[149.91px] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-29.912px_-233px] mask-size-[382px_356px] not-italic text-[#7c8b98] text-[15px] top-[2227px] w-[294.089px]" data-node-id="657:75" style={{ maskImage: `url("${imgScreenshot20261108At95734Am1}")` }}>
+                Scot Scoop
+              </p>
+            </div>
+          </div>
+        </div>
+      </a>
+      <div className="absolute left-[758px] size-[46px] top-[1059px]" data-node-id="657:79">
+        <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgGroup152} />
+      </div>
+      <div className="absolute h-[335px] left-[732px] rounded-[16px] top-[866px] w-[589px]" data-node-id="657:82" data-name="Screenshot 2026-11-08 at 6.34.19 PM 1">
+        <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none rounded-[16px] size-full" src={imgScreenshot20261108At63419Pm1} />
+      </div>
+      <a className="absolute block cursor-pointer left-[544px] size-[28.184px] top-[2169px]" href="https://scotscenterchs.wixsite.com/aapi" data-node-id="663:17" target="_blank">
+        <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgGroup154} />
+      </a>
+      <a className="absolute block cursor-pointer left-[138px] size-[28.184px] top-[2169px]" href="https://scotscenterchs.wixsite.com/aapi" data-node-id="663:23" target="_blank">
+        <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgGroup154} />
+      </a>
+      <a className="absolute block cursor-pointer left-[954px] size-[28.184px] top-[2169px]" href="https://scotscenterchs.wixsite.com/aapi" data-node-id="663:20" target="_blank">
+        <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgGroup154} />
+      </a>
+      <a className="absolute block cursor-pointer left-[954px] size-[28.184px] top-[1770px]" href="https://scotscenterchs.wixsite.com/aapi" data-node-id="666:9" target="_blank">
+        <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgGroup154} />
+      </a>
+      <a className="absolute block cursor-pointer left-[544px] size-[28.184px] top-[1770px]" href="https://scotscenterchs.wixsite.com/aapi" data-node-id="666:29" target="_blank">
+        <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgGroup154} />
+      </a>
+      <a className="absolute block cursor-pointer left-[138px] size-[28.184px] top-[1770px]" href="https://scotscenterchs.wixsite.com/aapi" data-node-id="666:26" target="_blank">
+        <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgGroup154} />
+      </a>
+      <a className="absolute block cursor-pointer left-[753px] size-[28.184px] top-[1153px]" href="https://scotscenterchs.wixsite.com/aapi" data-node-id="666:12" target="_blank">
+        <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgGroup154} />
+      </a>
+      <a className="absolute block cursor-pointer left-[753px] size-[28.184px] top-[567px]" href="https://scotscenterchs.wixsite.com/aapi" data-node-id="666:15" target="_blank">
+        <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgGroup154} />
+      </a>
+      <p className="[word-break:break-word] absolute font-['Inter:Semi_Bold'] font-semibold h-[65.753px] leading-[28px] left-[734px] not-italic text-[20px] text-black top-[1216px] w-[328px]" data-node-id="657:86">
+        The Surge of Asian Hate
+      </p>
+      <p className="[word-break:break-word] absolute font-['Inter:Semi_Bold'] font-semibold h-[65.753px] leading-[28px] left-[734px] not-italic text-[20px] text-black top-[629px] w-[328px]" data-node-id="657:87">{`Obayashi Corporate Culture `}</p>
+      <div className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Fira_Mono:Regular'] justify-center leading-[0] left-[1199px] not-italic text-[15px] text-black top-[79px] whitespace-nowrap" data-node-id="657:88">
+        <p className="leading-[1.2]">ABOUT+CONTACT</p>
+      </div>
+      <div className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Fira_Mono:Regular'] justify-center leading-[0] left-[911px] not-italic text-[15px] text-black top-[79px] whitespace-nowrap" data-node-id="657:89">
+        <p className="leading-[1.2]">JOURNALISM</p>
+      </div>
+      <div className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Fira_Mono:Regular'] justify-center leading-[0] left-[1046px] not-italic text-[15px] text-black top-[79px] whitespace-nowrap" data-node-id="657:90">
+        <p className="leading-[1.2]">SOCIAL MEDIA</p>
+      </div>
+      <div className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Fira_Mono:Regular'] justify-center leading-[0] left-[821px] not-italic text-[15px] text-black top-[79px] whitespace-nowrap" data-node-id="657:91">
+        <p className="leading-[1.2]">VIDEO</p>
+      </div>
+      <div className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Fira_Mono:Regular'] justify-center leading-[0] left-[758px] not-italic text-[15px] text-black top-[79px] whitespace-nowrap" data-node-id="657:92">
+        <p className="leading-[1.2]">UX</p>
+      </div>
+      <div className="absolute inset-[2.23%_90.73%_97.13%_8.13%]" data-node-id="657:93" data-name="Vector">
+        <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgVector} />
+      </div>
+      <div className="absolute inset-[2.23%_89.5%_97.13%_9.36%]" data-node-id="657:94" data-name="Vector">
+        <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgVector1} />
+      </div>
+      <div className="absolute flex inset-[2.92%_89.5%_96.45%_9.36%] items-center justify-center" data-node-id="657:95" style={{ containerType: "size" }}>
+        <div className="flex-none h-[100cqh] rotate-180 w-[100cqw]">
+          <div className="relative size-full" data-name="Vector">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgVector2} />
+          </div>
+        </div>
+      </div>
+      <div className="absolute inset-[2.92%_88.27%_96.45%_10.59%]" data-node-id="657:96" data-name="Vector">
+        <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgVector3} />
+      </div>
+      <div className="absolute flex inset-[2.92%_90.73%_96.45%_8.13%] items-center justify-center" data-node-id="657:97" style={{ containerType: "size" }}>
+        <div className="flex-none h-[100cqh] rotate-180 w-[100cqw]">
+          <div className="relative size-full" data-name="Vector">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgVector4} />
+          </div>
+        </div>
+      </div>
+      <div className="absolute inset-[2.52%_88.27%_97.13%_10.51%]" data-node-id="657:98" data-name="Vector">
+        <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgVector5} />
+      </div>
+      <div className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Fira_Mono:Regular'] justify-center leading-[0] left-[193.86px] not-italic text-[15px] text-black top-[79px] whitespace-nowrap" data-node-id="657:99">
+        <p className="leading-[1.2] whitespace-pre">{`KIANA GEORGE  `}</p>
+      </div>
+      <div className="absolute inset-[2.23%_90.73%_97.13%_8.13%]" data-node-id="657:100" data-name="Vector">
+        <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgVector} />
+      </div>
+      <div className="absolute inset-[2.23%_89.5%_97.13%_9.36%]" data-node-id="657:101" data-name="Vector">
+        <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgVector1} />
+      </div>
+      <div className="absolute flex inset-[2.92%_89.5%_96.45%_9.36%] items-center justify-center" data-node-id="657:102" style={{ containerType: "size" }}>
+        <div className="flex-none h-[100cqh] rotate-180 w-[100cqw]">
+          <div className="relative size-full" data-name="Vector">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgVector2} />
+          </div>
+        </div>
+      </div>
+      <div className="absolute inset-[2.92%_88.27%_96.45%_10.59%]" data-node-id="657:103" data-name="Vector">
+        <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgVector3} />
+      </div>
+      <div className="absolute flex inset-[2.92%_90.73%_96.45%_8.13%] items-center justify-center" data-node-id="657:104" style={{ containerType: "size" }}>
+        <div className="flex-none h-[100cqh] rotate-180 w-[100cqw]">
+          <div className="relative size-full" data-name="Vector">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgVector4} />
+          </div>
+        </div>
+      </div>
+      <div className="absolute inset-[2.52%_88.27%_97.13%_10.51%]" data-node-id="657:105" data-name="Vector">
+        <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgVector5} />
+      </div>
+      <div className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Fira_Mono:Regular'] justify-center leading-[0] left-[193.86px] not-italic text-[15px] text-black top-[79px] whitespace-nowrap" data-node-id="657:106">
+        <p className="leading-[1.2] whitespace-pre">{`KIANA GEORGE  `}</p>
+      </div>
+      <div className="absolute h-0 left-[127px] top-[732px] w-[1193px]" data-node-id="657:107">
+        <div className="absolute inset-[-0.5px_0_0_0]">
+          <img alt="" className="block max-w-none size-full" src={imgLine69} />
+        </div>
+      </div>
+      <div className="absolute h-0 left-[127px] top-[1351px] w-[1193px]" data-node-id="657:108">
+        <div className="absolute inset-[-0.5px_0_0_0]">
+          <img alt="" className="block max-w-none size-full" src={imgLine69} />
+        </div>
+      </div>
+    </div>
+  );
+}
+

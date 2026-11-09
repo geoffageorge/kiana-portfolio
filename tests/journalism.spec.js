@@ -71,7 +71,7 @@ test('Journalism has exactly four features with the inspected Figma content, fon
     await expect(node).toHaveText(source.characters);
     await expect(node).toHaveCSS('font-weight', String(source.segments[0].fontWeight));
     if (page.viewportSize().width === 1440) {
-      await expect(node).toHaveCSS('font-size', `${source.segments[0].fontSize}px`);
+      await expect(node).toHaveCSS('font-size', `${source.id === '607:16' ? 32 : source.segments[0].fontSize}px`);
       await expect(node).toHaveCSS('line-height', `${source.segments[0].lineHeight.value}px`);
       const expected = geometry.nodes.find(n => n.id === source.id);
       const actual = await node.boundingBox();

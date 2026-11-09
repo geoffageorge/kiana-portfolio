@@ -6,7 +6,7 @@ import { join } from 'node:path';
 const production = process.env.PORTFOLIO_TEST_TARGET === 'production';
 const baseURL = production ? 'http://127.0.0.1:4173' : 'http://127.0.0.1:5173';
 const crossBrowser = process.env.PORTFOLIO_TEST_CROSS_BROWSER === '1';
-const regressionSpecs = ['ux.spec.js', 'hero-animation.spec.js', 'hero-layout.spec.js', 'hero-canvas.spec.js', 'video.spec.js', 'journalism.spec.js', 'version4.spec.js', 'home-about-design.spec.js', 'case-study.spec.js', 'portfolio.spec.js'];
+const regressionSpecs = ['update8.spec.js', 'ux.spec.js', 'hero-animation.spec.js', 'hero-layout.spec.js', 'hero-canvas.spec.js', 'video.spec.js', 'journalism.spec.js', 'version4.spec.js', 'home-about-design.spec.js', 'case-study.spec.js', 'portfolio.spec.js'];
 // Keep automated Firefox app data separate from the personal profile, which
 // macOS 27 protects even when Playwright supplies a temporary browser profile.
 const firefoxLaunchOptions = crossBrowser && process.platform === 'darwin'
