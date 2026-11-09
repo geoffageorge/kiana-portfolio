@@ -2,7 +2,41 @@
 
 A local React + Vite portfolio built from `Design Template/KK design 1.png`, the prototype directions, and the architecture specifications. Tailwind CSS provides the base and utilities; each component owns its custom CSS. The build produces static files with no backend or external media services.
 
-## VIDEO section changes update version 8 — current deployment
+## New Hero animation section update version 9 — current deployment
+
+Version 9 implements `specs/changes/update 9.md` using the checked plan in `specs/changes/update-9-plan.md`. All six original files in `Assets/new hero 2/` were reviewed. The home hero now uses their four labelled close-ups, faster four-circle convergence, merged ring and gradient-line/headline reveal, with no spirograph. It starts automatically on page load, plays once and rests on its final message.
+
+The source package includes Replay; the explicit no-controls requirement takes precedence. The runtime removes that button and its event binding. There are **no play, pause or replay controls**. The eager iframe uses the remaining 560px desktop/460px phone scene. Two minimal responsive repairs preserve the supplied font-sizing formula without clipping on narrow no-JavaScript fallbacks or after browser resizing. Artwork, copy, colors and sequence timing are preserved. The shared header, Featured cards, footer and other pages remain unchanged.
+
+The six original source files remain intact. `public/assets/hero-v9/manifest.json` records their hashes and the generated runtime hash. Regenerate with `node scripts/import-hero-v9.mjs`. `Assets/new hero 2/implementation-notes.md` explains source review, control removal, responsive adjustments and verification. The Figma page inspection found only an empty Hero 1 and an older About/portrait Hero 1, so the specifically supplied local package is the source for this replacement.
+
+The previous runtime, HeroSection JSX/CSS and hero test snapshots are archived outside the production build at `Assets/archived pages/hero-v7-before-v9-2026-11-09/`. The user's already-renamed original source is retained at `Assets/new hero section 1/`; its three files match the previously tracked `Assets/new hero section/` byte-for-byte. Include the old source path deletion and renamed folder together when committing.
+
+Validated November 9, 2026: the production build passes and final regression coverage validates **385 checks**, with one existing desktop-only Obayashi geometry check skipped on mobile. The full run passed 383 checks and exposed two Firefox source-comparison failures caused by the test's synthetic clock being lost during iframe navigation. The clock was corrected; all 12 affected checks then passed across six browser configurations. No failed or flaky checks remain unresolved. Coverage includes fourteen source animation states, real-clock autoplay/reload, no controls, reduced motion, no-JavaScript fallback, responsive resizing, direct/subdirectory routes, archive integrity and existing website functionality. Desktop/phone screenshots were reviewed in Chrome, WebKit (Safari's engine) and Firefox. Native Safari and real mobile hardware were not automated. Detailed results and hashes are recorded in `Assets/new hero 2/validation.json`.
+
+To commit and push version 9:
+
+```sh
+cd "/Users/geoffgeorge/Developer/Kiana Portfolio" &&
+npm run build &&
+git add -A -- \
+  README.md src/components/HeroSection/ tests/ \
+  public/assets/hero-v9/ public/assets/hero-v7/ \
+  scripts/import-hero-v9.mjs \
+  "Assets/new hero 2/" \
+  "Assets/new hero section/" "Assets/new hero section 1/" \
+  "Assets/archived pages/hero-v7-before-v9-2026-11-09/" \
+  "specs/changes/update 9.md" specs/changes/update-9-plan.md &&
+git diff --cached --stat &&
+git commit -m "Replace home hero animation version 9" &&
+git push origin main
+```
+
+The removed source/runtime paths intentionally record the archive and source-folder rename. These scoped paths exclude unrelated `.node-version` and template-image deletions, placeholder images and personal RTF files. Keep `dist/`, `node_modules/`, browser binaries and test output untracked. No version 9 commit, push or production deployment has been performed.
+
+After the existing Cloudflare Workers Builds deployment succeeds, open `https://www.kianageorge.com/` in a fresh or refreshed tab. Confirm the sequence starts without interaction, shows the four close-ups and convergence, ends on the headline, and displays no controls. Reload to verify autoplay restarts; check phone layout, desktop-to-phone resizing and reduced motion, then verify the Featured links and four navigation destinations. The current `main` build (`npm run build`, then `npx wrangler deploy`) needs no configuration changes. The integrated production build is tested locally; live-site playback is checked after the user deploys it.
+
+## VIDEO section changes update version 8 — reference
 
 Version 8 implements `specs/changes/update 8.md` using the checked plan in `specs/changes/update-8-plan.md`. Official Figma MCP access and the design-to-code/Plugin API skills were confirmed with a Pro plan and Full seat. The source is [Video 2, frame 657:7](https://www.figma.com/design/wZSRbIZZXfUlrq902OXE2W/?node-id=657-7).
 
@@ -33,7 +67,7 @@ git commit -m "Update Video page and subtle tile motion version 8" &&
 git push origin main
 ```
 
-The removed old asset/importer paths are included intentionally so Git records their move into the archive. These scoped paths exclude unrelated `.node-version` and template-image deletions, placeholder images and personal RTF files. Keep `dist/`, `node_modules/`, browser binaries and test output untracked. No version 8 commit, push or deployment has been performed.
+The removed old asset/importer paths are included intentionally so Git records their move into the archive. These historical version 8 paths exclude unrelated `.node-version` and template-image deletions, placeholder images and personal RTF files. Keep `dist/`, `node_modules/`, browser binaries and test output untracked. Use the version 9 commands above for the current update.
 
 After the existing Cloudflare Workers Builds deployment succeeds, check `https://www.kianageorge.com/video/`, all eight video destinations and their play icons, the 32px headings on `/journalism/` and `/ux/`, subtle hover/keyboard feedback on all linked cards, and the top two previews' stationary titles. Also check the home hero, both case studies, About+Contact, phone layouts and reduced motion. The existing `main` build (`npm run build`, then `npx wrangler deploy`) does not need configuration changes.
 
@@ -65,7 +99,7 @@ git commit -m "Change Hero section update version 7" &&
 git push origin main
 ```
 
-These historical version 7 paths exclude unrelated `.node-version` and template-image deletions, placeholder images and personal RTF files. Keep `dist/`, `node_modules/`, browser binaries and test output untracked. Use the version 8 commands above for the current update.
+These historical version 7 paths exclude unrelated `.node-version` and template-image deletions, placeholder images and personal RTF files. Keep `dist/`, `node_modules/`, browser binaries and test output untracked. Use the version 9 commands above for the current update.
 
 The existing Cloudflare Workers Builds connection builds `main` with `npm run build` and deploys with `npx wrangler deploy`. After it succeeds, check `https://www.kianageorge.com/` for automatic hero playback, Replay and Featured; check `https://www.kianageorge.com/ux/` directly and through the UX menu; open both project tiles and verify the logo returns home. Also check Video, Journalism and About+Contact. Test a phone layout and a reduced-motion preference. Cloudflare configuration does not need to change.
 
@@ -267,7 +301,7 @@ Design Template/                Original design reference, preserved
 
 ## Replace prototype content
 
-- Edit `src/data/site.js` for branding, telephone, contact email, résumé, and LinkedIn destinations. The approved email is `kikig6204@gmail.com`; the new Figma phone is `650-817-5454`. Version 7 hero copy and motion are supplied by `Assets/new hero section/animation.html`; its unchanged runtime copy is `public/assets/hero-v7/animation.html`. UX introductory copy is in `src/data/ux.json`.
+- Edit `src/data/site.js` for branding, telephone, contact email, résumé, and LinkedIn destinations. The approved email is `kikig6204@gmail.com`; the new Figma phone is `650-817-5454`. Version 9 hero copy and motion come from `Assets/new hero 2/`; regenerate its control-free runtime with `node scripts/import-hero-v9.mjs`. UX introductory copy is in `src/data/ux.json`.
 - Resume opens `public/assets/kiana-george-resume.pdf` in a new tab. It is an unchanged copy of `Assets/Kiana George Resume.pdf`.
 - LinkedIn opens `https://www.linkedin.com/in/kiana-george-75b061209/` in a new tab from the About page.
 - Put real project artwork in `public/assets/projects/`, then edit each record in `src/data/projects.js`. Replace its title, image, alt text, category, status, and description.

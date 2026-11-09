@@ -1,0 +1,56 @@
+{
+  "archivedDate": "2026-11-09",
+  "baseCommit": "7569868",
+  "files": [
+    {
+      "file": "HeroSection.css",
+      "bytes": 280,
+      "sha256": "79802285b659ff97c599aa1f8e794d8ba4ae1cf966936dbebac2161842a8e8b9"
+    },
+    {
+      "file": "HeroSection.jsx",
+      "bytes": 469,
+      "sha256": "d15f0fd5623e3eabe7a6ac8a2902fc69ecbb54a410c792b2987797d0ed86daa9"
+    },
+    {
+      "file": "runtime-animation.html",
+      "bytes": 11566,
+      "sha256": "1c69465f7622faea91995e49d918f94aa0e75bf6ca92c743c02f11ae37be55e3"
+    },
+    {
+      "file": "tests/hero-animation.spec.js",
+      "bytes": 5285,
+      "sha256": "bfa385f41af1f08b6f09ff7d5e1da098e415522df2aa52ac26c1d78db45e14e8"
+    },
+    {
+      "file": "tests/hero-canvas.spec.js",
+      "bytes": 1675,
+      "sha256": "f760a5f5c8ad9c7fd66947415fa657aed24099f0045ed9630fa3f67d91d98ea2"
+    },
+    {
+      "file": "tests/hero-layout.spec.js",
+      "bytes": 5024,
+      "sha256": "881234d64cf8cac129c7f2f3a4a91712d35e8fb4becfd68d910d810fc99c146d"
+    }
+  ],
+  "renamedSourceFiles": [
+    {
+      "file": "Assets/new hero section 1/README.txt",
+      "previousPath": "Assets/new hero section/README.txt",
+      "bytes": 1089,
+      "sha256": "e3ebda4b09565bb1daf841f867b632132d79c896876178c2966410fbdd4a561a"
+    },
+    {
+      "file": "Assets/new hero section 1/animation.html",
+      "previousPath": "Assets/new hero section/animation.html",
+      "bytes": 11566,
+      "sha256": "1c69465f7622faea91995e49d918f94aa0e75bf6ca92c743c02f11ae37be55e3"
+    },
+    {
+      "file": "Assets/new hero section 1/embed.html",
+      "previousPath": "Assets/new hero section/embed.html",
+      "bytes": 11272,
+      "sha256": "5357dbcbb34d269be3cb3e26edc78e73586c360794be77a2e7b35c893e8b2088"
+    }
+  ]
+}

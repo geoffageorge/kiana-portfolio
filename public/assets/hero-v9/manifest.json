@@ -1,0 +1,52 @@
+{
+  "importedDate": "2026-11-09",
+  "sourceFolder": "Assets/new hero 2",
+  "componentId": "kg-quick-convergence",
+  "sourceFiles": [
+    {
+      "file": "README.txt",
+      "bytes": 3000,
+      "sha256": "bc4c43cfef508dd95d9caed3610503ad1763dfb2d66a9e6ff5af5ee8c1eeabad"
+    },
+    {
+      "file": "animation.html",
+      "bytes": 9231,
+      "sha256": "4c708f05ec516647ed5251fbd5327527b150a3502cda8cd34ac02ea42786a3bf"
+    },
+    {
+      "file": "embed.html",
+      "bytes": 8945,
+      "sha256": "8a152dd91a2a19650e88c695b8cc7c5b2f40edbac3d1192b61bb1ce131d54be9"
+    },
+    {
+      "file": "component.html",
+      "bytes": 1152,
+      "sha256": "6f40a0f3555ddc4c25a707cace0f5eb6af8c0f3b8f58b267da463633a823d506"
+    },
+    {
+      "file": "animation.css",
+      "bytes": 3831,
+      "sha256": "52d4bd3875f71992b5219efb4ad5cafbfc1cf5cfcee636b9ccbf5a609da7c3f3"
+    },
+    {
+      "file": "animation.js",
+      "bytes": 3926,
+      "sha256": "edc9ede7e3c5007d65282be4f2e6f48848f7d050b10c09631d8f3975a407d48c"
+    }
+  ],
+  "runtime": {
+    "file": "animation.html",
+    "bytes": 9307,
+    "sha256": "fbd423bbef11a9d278b6b0e390d07561a446f3431ba7ab7537971c0616c20f03"
+  },
+  "adaptations": [
+    "Remove the Replay button and its event binding to meet the no-controls requirement.",
+    "Use the source draw() font-sizing formula for the no-JavaScript fallback.",
+    "Redraw the current state on resize without restarting the sequence or duplicating animation frames."
+  ],
+  "sceneHeight": {
+    "desktop": 560,
+    "phone": 460,
+    "phoneMaxWidth": 480
+  }
+}

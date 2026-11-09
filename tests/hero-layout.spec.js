@@ -3,14 +3,14 @@ import { test, expect } from '@playwright/test';
 test('the new supplied hero replaces the old artwork and ignores saved legacy overrides', async ({ page }) => {
   await page.addInitScript(() => localStorage.setItem('kiana-hero-artwork', JSON.stringify({ settings: { viewBox: { x: -600, y: -450, width: 600, height: 1800 } } })));
   await page.goto('/');
-  await expect(page.locator('.hero-section__animation')).toHaveAttribute('src', '/assets/hero-v7/animation.html');
+  await expect(page.locator('.hero-section__animation')).toHaveAttribute('src', '/assets/hero-v9/animation.html');
   await expect(page.locator('.hero-artwork,.hero-section__copy')).toHaveCount(0);
   await expect(page.getByText('Clarifying Chaos', { exact: true })).toHaveCount(0);
   await expect(page.getByRole('heading', { name: 'Featured', exact: true })).toBeVisible();
   await expect(page.locator('.selected-work .eyebrow')).toHaveText('Case studies');
   await expect(page.locator('.selected-work .eyebrow')).toHaveCSS('text-transform', 'uppercase');
   await page.reload();
-  await expect(page.locator('.hero-section__animation')).toHaveAttribute('src', '/assets/hero-v7/animation.html');
+  await expect(page.locator('.hero-section__animation')).toHaveAttribute('src', '/assets/hero-v9/animation.html');
 });
 
 test('the supplied hero sits directly below the header and fits phone, tablet and desktop containers', async ({ page }) => {
@@ -25,7 +25,7 @@ test('the supplied hero sits directly below the header and fits phone, tablet an
       return { hero: rect('.hero-section__animation'), header: rect('.site-header'), work: rect('#work'), main: rect('#main'), scrollWidth: document.documentElement.scrollWidth };
     });
     expect(boxes.hero.top).toBeCloseTo(boxes.header.bottom, 1);
-    expect(boxes.hero.height).toBe(width <= 480 ? 540 : 630);
+    expect(boxes.hero.height).toBe(width <= 480 ? 460 : 560);
     expect(boxes.hero.x).toBeCloseTo(boxes.main.x, 1);
     expect(boxes.hero.width).toBeCloseTo(boxes.main.width, 1);
     expect(boxes.work.top - boxes.hero.bottom).toBeCloseTo(32, 1);
@@ -73,5 +73,18 @@ test('white pages, dividing rules, and transparent logos appear throughout the s
       for (const card of await page.locator('.project-card').all()) await expect(card).toHaveCSS('background-color', 'rgb(255, 255, 255)');
       await expect(page.locator('.project-card').first()).toHaveCSS('border-bottom-width', '0px');
     }
+  }
+});
+
+test('the final hero remains contained when the browser resizes after the animation has settled',async({page})=>{
+  await page.emulateMedia({reducedMotion:'reduce'});
+  await page.setViewportSize({width:1440,height:1000});await page.goto('/');
+  const frame=page.frameLocator('.hero-section__animation');
+  await expect(frame.locator('.subhead')).toHaveCSS('opacity','1');
+  for(const width of [390,320,768,1920]){
+    await page.setViewportSize({width,height:1000});
+    await expect.poll(()=>frame.locator('.headline-row').evaluateAll(nodes=>nodes.every(n=>n.scrollWidth<=n.clientWidth+1))).toBe(true);
+    expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
+    await expect(frame.getByRole('button')).toHaveCount(0);
   }
 });

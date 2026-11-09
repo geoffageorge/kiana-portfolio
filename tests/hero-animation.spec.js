@@ -1,59 +1,92 @@
 import { test, expect } from '@playwright/test';
-import { readFile } from 'node:fs/promises';
+import { readFile, stat } from 'node:fs/promises';
 import { createHash } from 'node:crypto';
 
-const hash = data => createHash('sha256').update(data).digest('hex');
+const file=path=>readFile(new URL(`../${path}`,import.meta.url));
+const hash=data=>createHash('sha256').update(data).digest('hex');
+const manifest=JSON.parse(await file('public/assets/hero-v9/manifest.json'));
 
-test('the supplied standalone hero is served unchanged and embedded eagerly with an accessible title', async ({ page, request }) => {
-  const source = await readFile(new URL('../Assets/new hero section/animation.html', import.meta.url));
-  const deployed = await readFile(new URL('../public/assets/hero-v7/animation.html', import.meta.url));
-  expect(hash(deployed)).toBe(hash(source));
-  const response = await request.get('/assets/hero-v7/animation.html');
-  expect(response.ok()).toBe(true);
-  expect(response.headers()['content-type']).toContain('text/html');
-  expect(hash(await response.body())).toBe(hash(source));
+test('the reviewed Hero 2 files produce an eager accessible runtime with no playback controls',async({page,request})=>{
+  expect(manifest.sourceFiles).toHaveLength(6);
+  for(const asset of manifest.sourceFiles){
+    const source=await file(`${manifest.sourceFolder}/${asset.file}`);
+    expect(source.length).toBe(asset.bytes);expect(hash(source)).toBe(asset.sha256);
+  }
+  const runtime=await file('public/assets/hero-v9/animation.html');
+  expect(hash(runtime)).toBe(manifest.runtime.sha256);
+  const response=await request.get('/assets/hero-v9/animation.html');
+  expect(response.ok()).toBe(true);expect(response.headers()['content-type']).toContain('text/html');
+  expect(hash(await response.body())).toBe(manifest.runtime.sha256);
   await page.goto('/');
-  const embed = page.locator('.hero-section__animation');
-  await expect(embed).toHaveAttribute('loading', 'eager');
-  await expect(embed).toHaveAttribute('title', 'Kiana George portfolio animation');
+  await expect(page.locator('.hero-section__animation')).toHaveAttribute('loading','eager');
+  await expect(page.locator('.hero-section__animation')).toHaveAttribute('title','Kiana George: Understanding people. Shaping digital experiences.');
   await expect(page.locator('#hero-title')).toHaveText('Understanding people. Shaping digital experiences.');
-  await expect(page.frameLocator('.hero-section__animation').locator('h1')).toHaveText('Understanding people.Shaping digital experiences.');
+  const frame=page.frameLocator('.hero-section__animation');
+  await expect(frame.locator('#kg-quick-convergence')).toHaveCount(1);
+  await expect(frame.locator('.spiro,svg,.focus-word,.supporting-word')).toHaveCount(0);
+  await expect(frame.getByRole('button')).toHaveCount(0);
+  await expect(frame.locator('.replay,video,audio,input')).toHaveCount(0);
+  await expect(frame.locator('.orbit-donut .label')).toHaveText(['GATHER','CONNECT','SYNTHESIZE','SHAPE']);
 });
 
-test('the hero starts on page load, reveals its final headline, supports keyboard replay and restarts on reload', async ({ page }) => {
+test('the hero autoplays on initial load, finishes without controls, rests on the message and restarts on reload',async({page})=>{
   test.setTimeout(30000);
+  await page.emulateMedia({reducedMotion:'no-preference'});
   await page.goto('/');
   const frame=page.frameLocator('.hero-section__animation');
-  const spiro=frame.locator('.spiro');
-  await expect(spiro.locator('path')).toHaveCount(8);
-  const start=await spiro.evaluate(n=>n.style.transform);
-  await expect.poll(()=>spiro.evaluate(n=>n.style.transform)).not.toBe(start);
-  await expect(frame.locator('.subhead')).toHaveCSS('opacity', '1', { timeout: 12000 });
-  expect(await frame.locator('.headline-mask').evaluate(n=>getComputedStyle(n).clipPath.startsWith('inset(0%'))).toBe(true);
-  await expect(spiro).toHaveCSS('opacity', '0');
-  const replay=frame.getByRole('button', {name:'REPLAY ↗', exact:true});
-  await replay.focus();
-  await page.keyboard.press('Enter');
-  await expect.poll(()=>spiro.evaluate(n=>Number(getComputedStyle(n).opacity))).toBeGreaterThan(.2);
-  await expect(frame.locator('.subhead')).toHaveCSS('opacity', '0');
+  const ring=frame.locator('.orbit-donut').first();
+  await expect(ring).toHaveCSS('opacity','1');
+  const start=await ring.evaluate(n=>n.style.transform);
+  await expect.poll(()=>ring.evaluate(n=>n.style.transform)).not.toBe(start);
+  await expect(frame.locator('.subhead')).toHaveCSS('opacity','1',{timeout:12000});
+  await expect(ring).toHaveCSS('opacity','0');
+  expect(await frame.locator('.headline-mask').evaluate(n=>n.style.clipPath.startsWith('inset(0%'))).toBe(true);
+  await expect(frame.locator('h1')).toHaveText('Understanding people.Shaping digital experiences.');
+  await expect(frame.getByRole('button')).toHaveCount(0);
+  await page.waitForTimeout(1000);
+  const settled=await frame.locator('.merged').evaluate(n=>({width:n.style.width,height:n.style.height,opacity:n.style.opacity}));
+  await page.waitForTimeout(200);
+  expect(await frame.locator('.merged').evaluate(n=>({width:n.style.width,height:n.style.height,opacity:n.style.opacity}))).toEqual(settled);
   await page.reload();
-  await expect.poll(()=>spiro.evaluate(n=>Number(getComputedStyle(n).opacity))).toBeGreaterThan(.2);
-  const before=await spiro.evaluate(n=>n.style.transform);
-  await expect.poll(()=>spiro.evaluate(n=>n.style.transform)).not.toBe(before);
+  await expect(ring).toHaveCSS('opacity','1');
+  const before=await ring.evaluate(n=>n.style.transform);
+  await expect.poll(()=>ring.evaluate(n=>n.style.transform)).not.toBe(before);
 });
 
-test('an initial reduced-motion preference displays the supplied final state without automatic movement', async ({ page }) => {
-  await page.emulateMedia({ reducedMotion:'reduce' });
-  await page.goto('/');
+test('reduced motion shows the final message immediately without movement or controls',async({page})=>{
+  await page.emulateMedia({reducedMotion:'reduce'});await page.goto('/');
   const frame=page.frameLocator('.hero-section__animation');
   await expect(frame.locator('.subhead')).toHaveCSS('opacity','1');
-  await expect(frame.locator('.spiro')).toHaveCSS('opacity','0');
-  await expect(frame.locator('.orbit-donut')).toHaveCount(4);
   expect(await frame.locator('.orbit-donut').evaluateAll(nodes=>nodes.every(n=>getComputedStyle(n).opacity==='0'))).toBe(true);
   const before=await frame.locator('.headline-mask').evaluate(n=>n.style.clipPath);
   await page.waitForTimeout(200);
   expect(await frame.locator('.headline-mask').evaluate(n=>n.style.clipPath)).toBe(before);
   expect(before.startsWith('inset(0%')).toBe(true);
+  await expect(frame.getByRole('button')).toHaveCount(0);
+});
+
+test('the standalone no-JavaScript fallback keeps both headline lines and the subheading readable',async({browser,baseURL})=>{
+  const context=await browser.newContext({javaScriptEnabled:false});
+  const page=await context.newPage();
+  try{
+    for(const width of [280,350,1180]){
+      await page.setViewportSize({width,height:width<=480?460:560});
+      await page.goto(`${baseURL}/assets/hero-v9/animation.html`);
+      await expect(page.locator('h1')).toBeVisible();
+      await expect(page.locator('.subhead')).toHaveCSS('opacity','1');
+      expect(await page.locator('.headline-row').evaluateAll(nodes=>nodes.every(n=>n.scrollWidth<=n.clientWidth+1))).toBe(true);
+      await expect(page.getByRole('button')).toHaveCount(0);
+    }
+  }finally{await context.close();}
+});
+
+test('the old hero and renamed original source remain archived with their original bytes and outside the build',async()=>{
+  const prefix='Assets/archived pages/hero-v7-before-v9-2026-11-09/';
+  const record=JSON.parse(await file(prefix+'archive-manifest.json'));
+  expect(record.files).toHaveLength(6);expect(record.renamedSourceFiles).toHaveLength(3);
+  for(const item of record.files)expect(hash(await file(prefix+item.file))).toBe(item.sha256);
+  for(const item of record.renamedSourceFiles)expect(hash(await file(item.file))).toBe(item.sha256);
+  expect(await stat(new URL('../dist/assets/hero-v7/',import.meta.url)).catch(()=>null)).toBeNull();
 });
 
 test('page background and sticky navigation work on home, UX and project pages', async ({ page }) => {

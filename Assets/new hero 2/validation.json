@@ -1,0 +1,172 @@
+{
+  "update": "New Hero animation section update version 9",
+  "validatedDate": "2026-11-09",
+  "baseCommit": "7569868",
+  "productionBuild": "passed; regenerated runtime and rebuilt after browser validation, runtime hash unchanged",
+  "source": {
+    "importedDate": "2026-11-09",
+    "sourceFolder": "Assets/new hero 2",
+    "componentId": "kg-quick-convergence",
+    "sourceFiles": [
+      {
+        "file": "README.txt",
+        "bytes": 3000,
+        "sha256": "bc4c43cfef508dd95d9caed3610503ad1763dfb2d66a9e6ff5af5ee8c1eeabad"
+      },
+      {
+        "file": "animation.html",
+        "bytes": 9231,
+        "sha256": "4c708f05ec516647ed5251fbd5327527b150a3502cda8cd34ac02ea42786a3bf"
+      },
+      {
+        "file": "embed.html",
+        "bytes": 8945,
+        "sha256": "8a152dd91a2a19650e88c695b8cc7c5b2f40edbac3d1192b61bb1ce131d54be9"
+      },
+      {
+        "file": "component.html",
+        "bytes": 1152,
+        "sha256": "6f40a0f3555ddc4c25a707cace0f5eb6af8c0f3b8f58b267da463633a823d506"
+      },
+      {
+        "file": "animation.css",
+        "bytes": 3831,
+        "sha256": "52d4bd3875f71992b5219efb4ad5cafbfc1cf5cfcee636b9ccbf5a609da7c3f3"
+      },
+      {
+        "file": "animation.js",
+        "bytes": 3926,
+        "sha256": "edc9ede7e3c5007d65282be4f2e6f48848f7d050b10c09631d8f3975a407d48c"
+      }
+    ],
+    "runtime": {
+      "file": "animation.html",
+      "bytes": 9307,
+      "sha256": "fbd423bbef11a9d278b6b0e390d07561a446f3431ba7ab7537971c0616c20f03"
+    },
+    "adaptations": [
+      "Remove the Replay button and its event binding to meet the no-controls requirement.",
+      "Use the source draw() font-sizing formula for the no-JavaScript fallback.",
+      "Redraw the current state on resize without restarting the sequence or duplicating animation frames."
+    ],
+    "sceneHeight": {
+      "desktop": 560,
+      "phone": 460,
+      "phoneMaxWidth": 480
+    }
+  },
+  "figma": {
+    "fileKey": "wZSRbIZZXfUlrq902OXE2W",
+    "page": "0:1",
+    "inspectedHeroNodes": [
+      "354:108",
+      "354:129"
+    ],
+    "finding": "An empty Hero 1 and an older About/portrait Hero 1; no separate Hero 2 match found in the inspected page. Explicitly supplied local Hero 2 package is authoritative."
+  },
+  "browserValidation": {
+    "fullRun": {
+      "startTime": "2026-11-09T22:24:20.370Z",
+      "duration": 409384.493,
+      "expected": 383,
+      "skipped": 1,
+      "unexpected": 2,
+      "flaky": 0
+    },
+    "sourceComparisonRecheck": {
+      "startTime": "2026-11-09T22:35:05.147Z",
+      "duration": 9054.584,
+      "expected": 12,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0
+    },
+    "finalUniqueCoverage": {
+      "passed": 385,
+      "skipped": 1,
+      "unresolvedFailed": 0,
+      "flaky": 0,
+      "projects": {
+        "desktop": {
+          "passed": 73,
+          "skipped": 0
+        },
+        "mobile": {
+          "passed": 72,
+          "skipped": 1
+        },
+        "safari-webkit": {
+          "passed": 60,
+          "skipped": 0
+        },
+        "safari-mobile": {
+          "passed": 60,
+          "skipped": 0
+        },
+        "firefox": {
+          "passed": 60,
+          "skipped": 0
+        },
+        "firefox-mobile": {
+          "passed": 60,
+          "skipped": 0
+        }
+      }
+    },
+    "testHarnessCorrection": "Firefox replaced the iframe performance instance during navigation, losing its synthetic performance.now override. The deterministic source test now overrides Performance.prototype.now and verifies the clock is zero in both documents. All 12 affected checks passed across six projects. Runtime animation was unchanged by this test correction.",
+    "existingSkip": [
+      {
+        "file": "obayashi-design.spec.js",
+        "title": "desktop image geometry matches the inspected frame, including every crop and repeated Markets image",
+        "project": "mobile",
+        "status": "skipped"
+      }
+    ],
+    "scope": [
+      "Source file/runtime/archive hashes and production build exclusion",
+      "Four labels, eager iframe, accessible heading and absence of all playback controls",
+      "Fourteen deterministic source animation states, independently verified real-clock autoplay, reload and settled state",
+      "Initial reduced motion, no-JavaScript fallback at 280/350/1180px and resize containment",
+      "Responsive widths 320\u20131920px, shared header/Featured/footer layout, direct and subdirectory routes",
+      "Existing UX/Video/Journalism/About/case-study navigation, content, links, dividers, Careers laptop and tile motion"
+    ],
+    "limits": "Chrome, Playwright WebKit (Safari engine) and Firefox at desktop and emulated/phone-sized viewports. Native Safari and real mobile hardware were not automated. Full-run results plus affected-test rechecks establish final unique coverage; no redundant full-suite rerun was required after a test-only clock repair.",
+    "localReports": {
+      "full": "/private/tmp/kiana-v9-qa/results.json",
+      "affectedRecheck": "/private/tmp/kiana-v9-qa/source-clock-recheck.json"
+    }
+  },
+  "visualReview": {
+    "engines": [
+      "Chrome",
+      "WebKit",
+      "Firefox"
+    ],
+    "viewportWidths": [
+      1440,
+      390
+    ],
+    "phasesSeconds": {
+      "gather": 0.6,
+      "fourCircles": 4.5,
+      "merge": 5.4,
+      "horizontalGradientLine": 7.11,
+      "final": 9.1
+    },
+    "artifacts": "/private/tmp/kiana-v9-qa/; phase sheets and full home screenshots reviewed",
+    "result": "Supplied composition, circle sequence, gradient stretch and final copy retained; no controls or residual control row, responsive text contained."
+  },
+  "archive": {
+    "folder": "Assets/archived pages/hero-v7-before-v9-2026-11-09",
+    "verifiedFiles": 6,
+    "verifiedRenamedSourceFiles": 3,
+    "excludedFromProductionBuild": true
+  },
+  "deployment": {
+    "committed": false,
+    "pushed": false,
+    "deployed": false,
+    "instructions": "README.md current version 9 section",
+    "postDeployment": "Verify fresh-load autoplay, reload, final message, absence of controls, phone/resizing/reduced-motion behavior and existing navigation on https://www.kianageorge.com/ after Cloudflare completes."
+  }
+}
