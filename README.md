@@ -2,7 +2,39 @@
 
 A local React + Vite portfolio built from `Design Template/KK design 1.png`, the prototype directions, and the architecture specifications. Tailwind CSS provides the base and utilities; each component owns its custom CSS. The build produces static files with no backend or external media services.
 
-## Add Video Page update version 6 — current deployment
+## Change Hero section update version 7 — current deployment
+
+Version 7 implements `specs/changes/update 7.md` using the checked plan in `specs/changes/update-7-plan.md`. Official Figma MCP access and the design-to-code/Plugin API skills were confirmed with a Pro plan and Full seat. The [UX frame](https://www.figma.com/design/wZSRbIZZXfUlrq902OXE2W/?node-id=619-58) contains its introductory header and exactly two case-study tiles.
+
+The home page now uses the supplied `Assets/new hero section/animation.html` unchanged in an eager iframe directly below the navigation, replacing the old rendered Clarifying Chaos copy and SVG. The animation plays automatically once, retains its Replay button, and shows the final headline immediately for an initial reduced-motion preference. Its own recommended 630px desktop/540px phone sizing and isolated styles are preserved. The home work heading is now Featured, with CASE STUDIES, the existing divider and both linked cards retained.
+
+The new `/ux/` page uses Figma's exact introductory copy, fonts, desktop positions and two 577px tiles, with responsive reflow. All six original image/mask exports are byte-for-byte matches for existing home assets, so UX composes the same two card components with their 3D hover/focus and reduced-motion rules. UX in the shared menu now opens `/ux/`; the logo/name still returns home. The existing four-option navigation, footer, About, Journalism, Video and case studies remain available. Direct, reloaded, index.html and subdirectory URLs are supported. No dependencies or hosting settings changed.
+
+`Assets/figma files/ux-v7-2026-11-08/` retains the complete relevant 49-node design/prototype inspection, independent geometry/text, original exports, asset hashes/reuse mapping, local design reference and validation. The runtime animation is `public/assets/hero-v7/animation.html`. The source UX frame has no active prototype actions; both project destinations come from the explicit version 7 requirements.
+
+Validated November 8, 2026: production build passed. Final regression coverage verifies **349 passing checks**, with one existing desktop-only Obayashi geometry check skipped on mobile. The full run passed 348 checks and found one exact-string typography assertion: WebKit reports a nominal 50px font as 49.999992px. After changing that test to a numeric tolerance, the affected Figma typography/geometry check passed in all six browser projects. No application change was needed and no failed or flaky checks remain unresolved. Coverage includes source asset identity, Figma copy/geometry, actual hero autoplay/replay/reload and initial reduced motion, responsive layouts, tile click/keyboard/3D behavior, all shared routes and existing-page functionality. Screenshots of home and UX were reviewed at 1440px and 390px in Chrome, WebKit and Firefox; responsive assertions also cover 320, 768, 1024 and 1920px. These are browser-engine/emulated or phone-sized checks; native Safari and real mobile hardware were not automated.
+
+To commit and push version 7:
+
+```sh
+cd "/Users/geoffgeorge/Developer/Kiana Portfolio" &&
+npm run build &&
+git add -- \
+  README.md src/ tests/ ux/ playwright.config.js \
+  public/assets/hero-v7/ \
+  "Assets/new hero section/" \
+  "Assets/figma files/ux-v7-2026-11-08/" \
+  "specs/changes/update 7.md" specs/changes/update-7-plan.md &&
+git diff --cached --stat &&
+git commit -m "Change Hero section update version 7" &&
+git push origin main
+```
+
+These paths exclude unrelated `.node-version` and template-image deletions, placeholder images and personal RTF files. Keep `dist/`, `node_modules/`, browser binaries and test output untracked. No version 7 commit, push or production deployment has been performed.
+
+The existing Cloudflare Workers Builds connection builds `main` with `npm run build` and deploys with `npx wrangler deploy`. After it succeeds, check `https://www.kianageorge.com/` for automatic hero playback, Replay and Featured; check `https://www.kianageorge.com/ux/` directly and through the UX menu; open both project tiles and verify the logo returns home. Also check Video, Journalism and About+Contact. Test a phone layout and a reduced-motion preference. Cloudflare configuration does not need to change.
+
+## Add Video Page update version 6 — reference
 
 Version 6 implements `specs/changes/update 6.md` using the checked plan in `specs/changes/update-6-plan.md`. Official Figma MCP access and the design-to-code/Plugin API skills were verified with a Pro plan and Full seat. The [Video frame](https://www.figma.com/design/wZSRbIZZXfUlrq902OXE2W/?node-id=609-115) contains Corporate Video, Multimedia Journalism, and Broadcast Journalism.
 
@@ -30,7 +62,7 @@ git commit -m "Add Video Page update version 6" &&
 git push origin main
 ```
 
-These paths exclude the unrelated `.node-version` and template-image deletions, placeholder images, and personal RTF files. Keep `dist/`, `node_modules/`, browser binaries and test output untracked. No commit, push or production deployment has been performed for version 6.
+These historical version 6 paths exclude unrelated `.node-version` and template-image deletions, placeholder images, and personal RTF files. Keep `dist/`, `node_modules/`, browser binaries and test output untracked. Use the version 7 commands above for the current update.
 
 The existing Cloudflare Workers Builds connection builds `main` using `npm run build` and deploys with `npx wrangler deploy`. After it succeeds, check `https://www.kianageorge.com/video/`, all eight preview destinations, the four navigation options, and the existing case studies. No hosting configuration changes are needed.
 
@@ -156,9 +188,9 @@ src/
     Logo/                       Supplied Ki Logo, at the original displayed size
     BrandName/                  Name and UX design descriptor
     SiteHeader/                 Sticky logo, name, and navigation bar
-    Navigation/                 Work and About+Contact links
-    HeroSection/                Clarifying Chaos heading and introduction
-    HeroArtwork/                Continuous native SVG animation
+    Navigation/                 UX, Video, Journalism and About+Contact links
+    HeroSection/                Supplied version 7 animation embed
+    HeroArtwork/                Retained legacy SVG reference, no longer rendered
     SectionHeading/             Reusable title and subtitle
     ProjectCard/                Figma artwork layers and linked project tiles
     SelectedWork/               Heading and two-column project grid
@@ -200,7 +232,7 @@ Design Template/                Original design reference, preserved
 
 ## Replace prototype content
 
-- Edit `src/data/site.js` for branding, hero copy, telephone, contact email, résumé, and LinkedIn destinations. The approved email is `kikig6204@gmail.com`; the new Figma phone is `650-817-5454`.
+- Edit `src/data/site.js` for branding, telephone, contact email, résumé, and LinkedIn destinations. The approved email is `kikig6204@gmail.com`; the new Figma phone is `650-817-5454`. Version 7 hero copy and motion are supplied by `Assets/new hero section/animation.html`; its unchanged runtime copy is `public/assets/hero-v7/animation.html`. UX introductory copy is in `src/data/ux.json`.
 - Resume opens `public/assets/kiana-george-resume.pdf` in a new tab. It is an unchanged copy of `Assets/Kiana George Resume.pdf`.
 - LinkedIn opens `https://www.linkedin.com/in/kiana-george-75b061209/` in a new tab from the About page.
 - Put real project artwork in `public/assets/projects/`, then edit each record in `src/data/projects.js`. Replace its title, image, alt text, category, status, and description.

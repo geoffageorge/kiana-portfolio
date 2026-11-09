@@ -1,0 +1,120 @@
+{
+  "checkedDate": "2026-11-08",
+  "build": {
+    "command": "npm run build",
+    "status": "passed"
+  },
+  "regression": {
+    "fullRun": {
+      "command": "PORTFOLIO_TEST_TARGET=production PORTFOLIO_TEST_CROSS_BROWSER=1 npx playwright test --workers=2",
+      "passed": 348,
+      "failed": 1,
+      "skipped": 1,
+      "flaky": 0,
+      "durationSeconds": 346.93
+    },
+    "resolvedAssertion": {
+      "test": "UX uses the exact Figma introduction, typography, tile wording and desktop positions",
+      "project": "safari-webkit",
+      "cause": "Container units serialize the nominal 50px font as 49.999992px in WebKit; exact-string assertion was too strict.",
+      "fix": "Compare numeric computed font size to the independent Figma value with three-decimal-place tolerance.",
+      "runtimeChangesRequired": false
+    },
+    "targetedRecheck": {
+      "command": "PORTFOLIO_TEST_TARGET=production PORTFOLIO_TEST_CROSS_BROWSER=1 npx playwright test tests/ux.spec.js --grep 'UX uses the exact Figma' --workers=2",
+      "passed": 6,
+      "failed": 0,
+      "flaky": 0,
+      "durationSeconds": 5.03
+    },
+    "finalCoverage": {
+      "passed": 349,
+      "skipped": 1,
+      "failed": 0,
+      "flaky": 0,
+      "method": "Full regression results with the corrected typography/geometry check reverified in all six projects. Runtime code remained unchanged between runs.",
+      "projects": {
+        "desktop": {
+          "passed": 67,
+          "skipped": 0,
+          "failed": 0,
+          "flaky": 0
+        },
+        "mobile": {
+          "passed": 66,
+          "skipped": 1,
+          "failed": 0,
+          "flaky": 0
+        },
+        "safari-webkit": {
+          "passed": 54,
+          "skipped": 0,
+          "failed": 0,
+          "flaky": 0
+        },
+        "safari-mobile": {
+          "passed": 54,
+          "skipped": 0,
+          "failed": 0,
+          "flaky": 0
+        },
+        "firefox": {
+          "passed": 54,
+          "skipped": 0,
+          "failed": 0,
+          "flaky": 0
+        },
+        "firefox-mobile": {
+          "passed": 54,
+          "skipped": 0,
+          "failed": 0,
+          "flaky": 0
+        }
+      },
+      "knownSkippedChecks": [
+        {
+          "project": "mobile",
+          "file": "obayashi-design.spec.js",
+          "title": "desktop image geometry matches the inspected frame, including every crop and repeated Markets image"
+        }
+      ]
+    }
+  },
+  "visualReview": {
+    "pages": [
+      "/",
+      "/ux/"
+    ],
+    "engines": [
+      "Chrome",
+      "Playwright WebKit (Safari engine)",
+      "Firefox"
+    ],
+    "screenshotWidths": [
+      1440,
+      390
+    ],
+    "responsiveTestWidths": [
+      320,
+      390,
+      768,
+      1024,
+      1440,
+      1920
+    ],
+    "desktopSourceTolerancePx": 0.6,
+    "limitations": "Browser-engine checks with emulated or phone-sized viewports; native Safari and real mobile hardware were not automated. The inline preview host was unavailable; local production browser QA and screenshots succeeded."
+  },
+  "sourceAssets": {
+    "figmaNodesInspected": 49,
+    "originalExportsDownloaded": 14,
+    "exactArtworkAssetsReused": 6,
+    "artworkReuseDetails": "asset-reuse.json",
+    "suppliedHeroServedUnchanged": true
+  },
+  "deployment": {
+    "committed": false,
+    "pushed": false,
+    "published": false
+  }
+}

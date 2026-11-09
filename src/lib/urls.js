@@ -3,7 +3,7 @@
 export function portfolioBase() {
   const pathname = window.location.pathname;
   const projectStart = pathname.lastIndexOf('/projects/');
-  const section = /\/(?:about|journalism|video)(?:\/(?:index\.html)?)?$/.exec(pathname);
+  const section = /\/(?:about|journalism|video|ux)(?:\/(?:index\.html)?)?$/.exec(pathname);
   const root = projectStart >= 0
     ? pathname.slice(0, projectStart + 1)
     : section ? pathname.slice(0, section.index + 1)
@@ -17,6 +17,7 @@ export const projectUrl = (slug) => siteUrl(`projects/${slug}/`);
 export const isAboutPage = () => /^about(?:\/(?:index\.html)?)?$/.test(window.location.pathname.slice(portfolioBase().pathname.length));
 export const isJournalismPage = () => /^journalism(?:\/(?:index\.html)?)?$/.test(window.location.pathname.slice(portfolioBase().pathname.length));
 export const isVideoPage = () => /^video(?:\/(?:index\.html)?)?$/.test(window.location.pathname.slice(portfolioBase().pathname.length));
+export const isUXPage = () => /^ux(?:\/(?:index\.html)?)?$/.test(window.location.pathname.slice(portfolioBase().pathname.length));
 
 export function currentProjectSlug() {
   const relativePath = window.location.pathname.slice(portfolioBase().pathname.length);

@@ -1,0 +1,60 @@
+{
+  "date": "2026-11-08",
+  "frameId": "619:58",
+  "assets": [
+    {
+      "source": "obayashi-staircase.png",
+      "reusedFile": "public/assets/home-figma/img-slide62.png",
+      "bytes": 730888,
+      "sha256": "b3638dde92852b3ac91a38a554aae66167663a25984b2249d291839383d918e5",
+      "width": 1143,
+      "height": 624
+    },
+    {
+      "source": "pointly-laptop.png",
+      "reusedFile": "public/assets/home-figma/apple-intelligence-bqi8-tl754-cfm-large2-x3.png",
+      "bytes": 967490,
+      "sha256": "69a4e44e454ffb40eef1fb498e175cc763cd7a6451ce1f81cd8563cdaac67120",
+      "width": 1964,
+      "height": 1196
+    },
+    {
+      "source": "pointly-screen.png",
+      "reusedFile": "public/assets/home-figma/frame322.png",
+      "bytes": 879850,
+      "sha256": "019549d01da1e9fecc4edc308320dc14f702eb8122b04d4291d7bec3becef6e7",
+      "width": 1437,
+      "height": 2349
+    },
+    {
+      "source": "obayashi-mask.svg",
+      "reusedFile": "public/assets/home-figma/img-slide61.svg",
+      "bytes": 252,
+      "sha256": "a815348524a97a00c16abc771c9fdd2ab435a95eedeb68af6226fa440884ec8f",
+      "width": 577.0,
+      "height": 577.0
+    },
+    {
+      "source": "laptop-mask.svg",
+      "reusedFile": "public/assets/website-v4-figma/tiles-imgAppleIntelligenceBqi8Tl754CfmLarge2X2.svg",
+      "bytes": 265,
+      "sha256": "ef8986fb80cf1a05f37a30d07791c9f69a1ac5201e8069ee2460b19d86e1c5dd",
+      "width": 400.81,
+      "height": 376.992
+    },
+    {
+      "source": "screen-mask.svg",
+      "reusedFile": "public/assets/website-v4-figma/tiles-imgFrame321.svg",
+      "bytes": 268,
+      "sha256": "aa9a5d143519e84b7f2cb88ee8bcd310ef69ed129c6f71b5536ed8d91f3d6e7b",
+      "width": 445.399,
+      "height": 286.083
+    }
+  ],
+  "hero": {
+    "source": "Assets/new hero section/animation.html",
+    "runtime": "public/assets/hero-v7/animation.html",
+    "bytes": 11566,
+    "sha256": "1c69465f7622faea91995e49d918f94aa0e75bf6ca92c743c02f11ae37be55e3"
+  }
+}

@@ -40,7 +40,7 @@ test('Video replaces the placeholder with all three Figma sections and retains t
   await nav.getByRole('link', { name: 'JOURNALISM', exact: true }).click();
   await expect(page.getByRole('heading', { level: 1 })).toHaveText('Selected Features');
   await nav.getByRole('link', { name: 'UX', exact: true }).click();
-  await expect(page.getByRole('heading', { level: 1 })).toHaveText('ClarifyingChaos');
+  await expect(page.getByRole('heading', { level: 1 })).toHaveText('Selected Case Studies');
 });
 
 test('all ten original Video image, mask and play assets are served unchanged', async ({ request }) => {

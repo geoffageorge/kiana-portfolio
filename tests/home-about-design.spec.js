@@ -25,7 +25,7 @@ test('all 11 Figma exports and the supplied resume are served unchanged', async 
   expect(hash(await resume.body())).toBe(hash(await file('Assets/Kiana George Resume.pdf')));
 });
 
-test('Select Work uses the Figma tile text, artwork geometry and Safari-compatible divider', async ({ page }) => {
+test('Featured retains the Figma tile text, artwork geometry and Safari-compatible divider', async ({ page }) => {
   await page.goto('/');
   const nodes = JSON.parse(await file('Assets/figma files/overall-website-v4-2026-10-22/tiles-inspection.json')).nodes;
   const rule = await page.locator('.selected-work__grid').evaluate(n => {
@@ -216,6 +216,6 @@ test('About URLs and assets resolve correctly under a deployment subdirectory', 
   await expect(page.locator('.site-footer__connect')).toHaveAttribute('href', '/portfolio/about/');
   await expect(page.locator('.about-page__portrait img').last()).toHaveAttribute('src', '/portfolio/assets/website-v4-figma/about-imgPortrait2.png');
   await page.getByRole('navigation', { name: 'Main navigation' }).getByRole('link', { name: 'UX', exact: true }).click();
-  await expect(page).toHaveURL(/\/portfolio\/$/);
-  await expect(page.getByRole('heading', { name: 'Select Work' })).toBeVisible();
+  await expect(page).toHaveURL(/\/portfolio\/ux\/$/);
+  await expect(page.getByRole('heading', { name: 'Selected Case Studies' })).toBeVisible();
 });

@@ -229,14 +229,14 @@ test('page and laptop reflow from narrow phones through wide desktop without ove
   }
 });
 
-test('shared pages retain navigation and both Figma case studies return to selected work', async ({ page }) => {
+test('shared pages retain navigation and both Figma case studies open the UX selection', async ({ page }) => {
   for (const path of ['/', '/about/', ...projectRoutes.map(project => `/projects/${project.slug}/`)]) {
     await page.goto(path);
     await expect(page.getByRole('heading', { level: 1 })).toBeVisible();
     const navigation = page.getByRole('navigation', { name: 'Main navigation' });
     await expect(navigation.getByRole('link')).toHaveText(['UX', 'VIDEO', 'JOURNALISM', 'ABOUT+CONTACT']);
     await navigation.getByRole('link', { name: 'UX', exact: true }).click();
-    await expect(page).toHaveURL(/\/$/);
-    await expect(page.getByRole('heading', { name: 'Select Work' })).toBeVisible();
+    await expect(page).toHaveURL(/\/ux\/$/);
+    await expect(page.getByRole('heading', { name: 'Selected Case Studies' })).toBeVisible();
   }
 });

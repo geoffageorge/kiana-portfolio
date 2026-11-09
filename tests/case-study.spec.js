@@ -13,11 +13,11 @@ test('Pointly tile opens its project page and shared navigation returns home', a
   await page.goBack();
   await page.getByRole('link', { name: 'Back to selected work' }).click();
   await expect(page).toHaveURL(/\/#work$/);
-  await expect(page.getByRole('heading', { level: 1 })).toHaveText('ClarifyingChaos');
+  await expect(page.getByRole('heading', { level: 1 })).toHaveText('Understanding people. Shaping digital experiences.');
   await page.goBack();
   await expect(page.getByRole('heading', { level: 1 })).toHaveText('Point.ly');
   await page.getByRole('link', { name: 'Kiana George home', exact: true }).click();
-  await expect(page.getByRole('heading', { name: 'Select Work' })).toBeVisible();
+  await expect(page.getByRole('heading', { name: 'Featured' })).toBeVisible();
 });
 
 test('direct Pointly links and reloads load the reference images and native dividers', async ({ page, request }) => {

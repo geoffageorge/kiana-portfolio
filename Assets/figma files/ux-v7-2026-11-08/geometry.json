@@ -1,0 +1,513 @@
+{
+  "frameId": "619:58",
+  "width": 1440,
+  "height": 1257,
+  "nodes": [
+    {
+      "id": "619:58",
+      "name": "UX",
+      "type": "FRAME",
+      "parentId": "0:1",
+      "x": 0,
+      "y": 0,
+      "width": 1440,
+      "height": 1257,
+      "visible": true
+    },
+    {
+      "id": "619:59",
+      "name": "I use research to understand how people think, what they need, and how they interact with technology.  Through interviews, analysis, and design, I turn those insights into clearer, more intuitive digital experiences.",
+      "type": "TEXT",
+      "parentId": "619:58",
+      "x": 123,
+      "y": 312,
+      "width": 994,
+      "height": 52,
+      "visible": true
+    },
+    {
+      "id": "619:60",
+      "name": "Selected Case Studies",
+      "type": "TEXT",
+      "parentId": "619:58",
+      "x": 121,
+      "y": 255,
+      "width": 471,
+      "height": 44,
+      "visible": true
+    },
+    {
+      "id": "619:61",
+      "name": "UX RESEARCH & DESIGN",
+      "type": "TEXT",
+      "parentId": "619:58",
+      "x": 120,
+      "y": 205,
+      "width": 254,
+      "height": 26,
+      "visible": true
+    },
+    {
+      "id": "619:62",
+      "name": "ABOUT+CONTACT",
+      "type": "TEXT",
+      "parentId": "619:58",
+      "x": 1203,
+      "y": 70,
+      "width": 117,
+      "height": 18,
+      "visible": true
+    },
+    {
+      "id": "619:63",
+      "name": "JOURNALISM",
+      "type": "TEXT",
+      "parentId": "619:58",
+      "x": 915,
+      "y": 70,
+      "width": 90,
+      "height": 18,
+      "visible": true
+    },
+    {
+      "id": "619:64",
+      "name": "SOCIAL MEDIA",
+      "type": "TEXT",
+      "parentId": "619:58",
+      "x": 1050,
+      "y": 70,
+      "width": 108,
+      "height": 18,
+      "visible": true
+    },
+    {
+      "id": "619:65",
+      "name": "VIDEO",
+      "type": "TEXT",
+      "parentId": "619:58",
+      "x": 825,
+      "y": 70,
+      "width": 45,
+      "height": 18,
+      "visible": true
+    },
+    {
+      "id": "619:66",
+      "name": "UX",
+      "type": "TEXT",
+      "parentId": "619:58",
+      "x": 762,
+      "y": 70,
+      "width": 18,
+      "height": 18,
+      "visible": true
+    },
+    {
+      "id": "619:100",
+      "name": "Vector",
+      "type": "VECTOR",
+      "parentId": "619:58",
+      "x": 121.000244140625,
+      "y": 40.109375,
+      "width": 16.4162540435791,
+      "height": 11.420924186706543,
+      "visible": true
+    },
+    {
+      "id": "619:101",
+      "name": "Vector",
+      "type": "VECTOR",
+      "parentId": "619:58",
+      "x": 138.821533203125,
+      "y": 40.109375,
+      "width": 16.418912887573242,
+      "height": 11.420924186706543,
+      "visible": true
+    },
+    {
+      "id": "619:102",
+      "name": "Vector",
+      "type": "VECTOR",
+      "parentId": "619:58",
+      "x": 138.82156562805176,
+      "y": 52.42673206329346,
+      "width": 16.418912887573242,
+      "height": 11.420924186706543,
+      "visible": true
+    },
+    {
+      "id": "619:103",
+      "name": "Vector",
+      "type": "VECTOR",
+      "parentId": "619:58",
+      "x": 156.448974609375,
+      "y": 52.4296875,
+      "width": 16.418914794921875,
+      "height": 11.420924186706543,
+      "visible": true
+    },
+    {
+      "id": "619:104",
+      "name": "Vector",
+      "type": "VECTOR",
+      "parentId": "619:58",
+      "x": 121.0000057220459,
+      "y": 52.42673206329346,
+      "width": 16.4162540435791,
+      "height": 11.420924186706543,
+      "visible": true
+    },
+    {
+      "id": "619:105",
+      "name": "Vector",
+      "type": "VECTOR",
+      "parentId": "619:58",
+      "x": 155.341552734375,
+      "y": 45.328125,
+      "width": 17.521299362182617,
+      "height": 6.20288610458374,
+      "visible": true
+    },
+    {
+      "id": "619:106",
+      "name": "KIANA GEORGE",
+      "type": "TEXT",
+      "parentId": "619:58",
+      "x": 197.863037109375,
+      "y": 70,
+      "width": 108,
+      "height": 18,
+      "visible": true
+    },
+    {
+      "id": "619:107",
+      "name": "Vector",
+      "type": "VECTOR",
+      "parentId": "619:58",
+      "x": 121.000244140625,
+      "y": 40.109375,
+      "width": 16.4162540435791,
+      "height": 11.420924186706543,
+      "visible": true
+    },
+    {
+      "id": "619:108",
+      "name": "Vector",
+      "type": "VECTOR",
+      "parentId": "619:58",
+      "x": 138.821533203125,
+      "y": 40.109375,
+      "width": 16.418912887573242,
+      "height": 11.420924186706543,
+      "visible": true
+    },
+    {
+      "id": "619:109",
+      "name": "Vector",
+      "type": "VECTOR",
+      "parentId": "619:58",
+      "x": 138.82156562805176,
+      "y": 52.42673206329346,
+      "width": 16.418912887573242,
+      "height": 11.420924186706543,
+      "visible": true
+    },
+    {
+      "id": "619:110",
+      "name": "Vector",
+      "type": "VECTOR",
+      "parentId": "619:58",
+      "x": 156.448974609375,
+      "y": 52.4296875,
+      "width": 16.418914794921875,
+      "height": 11.420924186706543,
+      "visible": true
+    },
+    {
+      "id": "619:111",
+      "name": "Vector",
+      "type": "VECTOR",
+      "parentId": "619:58",
+      "x": 121.0000057220459,
+      "y": 52.42673206329346,
+      "width": 16.4162540435791,
+      "height": 11.420924186706543,
+      "visible": true
+    },
+    {
+      "id": "619:112",
+      "name": "Vector",
+      "type": "VECTOR",
+      "parentId": "619:58",
+      "x": 155.341552734375,
+      "y": 45.328125,
+      "width": 17.521299362182617,
+      "height": 6.20288610458374,
+      "visible": true
+    },
+    {
+      "id": "619:113",
+      "name": "KIANA GEORGE",
+      "type": "TEXT",
+      "parentId": "619:58",
+      "x": 197.863037109375,
+      "y": 70,
+      "width": 108,
+      "height": 18,
+      "visible": true
+    },
+    {
+      "id": "619:114",
+      "name": "Mask group",
+      "type": "GROUP",
+      "parentId": "619:58",
+      "x": 120,
+      "y": 417,
+      "width": 577,
+      "height": 577,
+      "visible": true
+    },
+    {
+      "id": "619:115",
+      "name": "Rectangle 140",
+      "type": "RECTANGLE",
+      "parentId": "619:114",
+      "x": 120,
+      "y": 417,
+      "width": 577,
+      "height": 577,
+      "visible": true
+    },
+    {
+      "id": "619:116",
+      "name": "Mask group",
+      "type": "GROUP",
+      "parentId": "619:58",
+      "x": 120,
+      "y": 429,
+      "width": 577,
+      "height": 577,
+      "visible": true
+    },
+    {
+      "id": "619:117",
+      "name": "Rectangle 144",
+      "type": "RECTANGLE",
+      "parentId": "619:116",
+      "x": 120,
+      "y": 429,
+      "width": 577,
+      "height": 577,
+      "visible": true
+    },
+    {
+      "id": "619:118",
+      "name": "img_slide_6 1",
+      "type": "RECTANGLE",
+      "parentId": "619:116",
+      "x": -97,
+      "y": 389,
+      "width": 1363,
+      "height": 744,
+      "visible": true
+    },
+    {
+      "id": "619:122",
+      "name": "Rectangle 141",
+      "type": "RECTANGLE",
+      "parentId": "619:58",
+      "x": 743,
+      "y": 429,
+      "width": 577,
+      "height": 577,
+      "visible": true
+    },
+    {
+      "id": "619:123",
+      "name": "Point.ly Title",
+      "type": "TEXT",
+      "parentId": "619:58",
+      "x": 164,
+      "y": 513,
+      "width": 472,
+      "height": 76,
+      "visible": true
+    },
+    {
+      "id": "619:124",
+      "name": "01 /",
+      "type": "TEXT",
+      "parentId": "619:58",
+      "x": 170,
+      "y": 480,
+      "width": 44,
+      "height": 22,
+      "visible": true
+    },
+    {
+      "id": "619:125",
+      "name": "NORTH AMERICAN  WEBSITE",
+      "type": "TEXT",
+      "parentId": "619:58",
+      "x": 170,
+      "y": 597,
+      "width": 162,
+      "height": 50,
+      "visible": true
+    },
+    {
+      "id": "619:126",
+      "name": "Point.ly Title",
+      "type": "TEXT",
+      "parentId": "619:58",
+      "x": 784,
+      "y": 513,
+      "width": 472,
+      "height": 52,
+      "visible": true
+    },
+    {
+      "id": "619:127",
+      "name": "02 /",
+      "type": "TEXT",
+      "parentId": "619:58",
+      "x": 790,
+      "y": 480,
+      "width": 44,
+      "height": 22,
+      "visible": true
+    },
+    {
+      "id": "619:128",
+      "name": "HIGH-FIDELITY PROTOTYPE",
+      "type": "TEXT",
+      "parentId": "619:58",
+      "x": 790,
+      "y": 597,
+      "width": 162,
+      "height": 50,
+      "visible": true
+    },
+    {
+      "id": "619:129",
+      "name": "Mask group",
+      "type": "GROUP",
+      "parentId": "619:58",
+      "x": 919.1895751953125,
+      "y": 589,
+      "width": 400.81048583984375,
+      "height": 376.9918212890625,
+      "visible": true
+    },
+    {
+      "id": "619:130",
+      "name": "Rectangle 146",
+      "type": "RECTANGLE",
+      "parentId": "619:129",
+      "x": 919.1895751953125,
+      "y": 589,
+      "width": 400.81048583984375,
+      "height": 376.9918212890625,
+      "visible": true
+    },
+    {
+      "id": "619:131",
+      "name": "Group 122",
+      "type": "GROUP",
+      "parentId": "619:129",
+      "x": 963.49072265625,
+      "y": 640.37109375,
+      "width": 506.39459228515625,
+      "height": 308.37469482421875,
+      "visible": true
+    },
+    {
+      "id": "619:132",
+      "name": "apple_intelligence__bqi8tl754cfm_large_2x 2",
+      "type": "RECTANGLE",
+      "parentId": "619:131",
+      "x": 963.49072265625,
+      "y": 640.37109375,
+      "width": 506.39459228515625,
+      "height": 308.37469482421875,
+      "visible": true
+    },
+    {
+      "id": "619:133",
+      "name": "Mask group",
+      "type": "GROUP",
+      "parentId": "619:129",
+      "x": 991.75634765625,
+      "y": 632.681640625,
+      "width": 445.399169921875,
+      "height": 286.0832824707031,
+      "visible": true
+    },
+    {
+      "id": "619:134",
+      "name": "Rectangle 145",
+      "type": "RECTANGLE",
+      "parentId": "619:133",
+      "x": 991.75634765625,
+      "y": 632.681640625,
+      "width": 445.399169921875,
+      "height": 286.0832824707031,
+      "visible": true
+    },
+    {
+      "id": "619:135",
+      "name": "Frame 3 (2) 1",
+      "type": "RECTANGLE",
+      "parentId": "619:133",
+      "x": 1010.3743896484375,
+      "y": 650.171875,
+      "width": 415.83306884765625,
+      "height": 679.7438354492188,
+      "visible": true
+    },
+    {
+      "id": "619:136",
+      "name": "Project Lead UX research Product Strategy Interface Design Visual Identity   ",
+      "type": "TEXT",
+      "parentId": "619:58",
+      "x": 170,
+      "y": 705,
+      "width": 170,
+      "height": 184,
+      "visible": true
+    },
+    {
+      "id": "619:137",
+      "name": "UX research Content Strategy Information Architecture Website Design  ",
+      "type": "TEXT",
+      "parentId": "619:58",
+      "x": 790,
+      "y": 705,
+      "width": 184,
+      "height": 138,
+      "visible": true
+    },
+    {
+      "id": "619:138",
+      "name": "Vector 4",
+      "type": "VECTOR",
+      "parentId": "619:58",
+      "x": 170,
+      "y": 687,
+      "width": 44,
+      "height": 0,
+      "visible": true
+    },
+    {
+      "id": "619:139",
+      "name": "Vector 5",
+      "type": "VECTOR",
+      "parentId": "619:58",
+      "x": 790,
+      "y": 687,
+      "width": 44,
+      "height": 0,
+      "visible": true
+    }
+  ]
+}

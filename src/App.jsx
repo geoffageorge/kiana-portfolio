@@ -7,7 +7,7 @@ import Modal from './components/Modal/Modal.jsx';
 import AboutPage from './pages/AboutPage.jsx';
 import { site } from './data/site.js';
 import { projects } from './data/projects.js';
-import { currentProjectSlug, isAboutPage, isJournalismPage, isVideoPage, siteUrl } from './lib/urls.js';
+import { currentProjectSlug, isAboutPage, isJournalismPage, isVideoPage, isUXPage, siteUrl } from './lib/urls.js';
 import { useInitialHashNavigation } from './lib/useInitialHashNavigation.js';
 
 const CaseStudyPage = lazy(() => import('./pages/CaseStudyPage.jsx'));
@@ -15,6 +15,7 @@ const PointlyCaseStudyPage = lazy(() => import('./pages/PointlyCaseStudyPage.jsx
 const ObayashiCaseStudyPage = lazy(() => import('./pages/ObayashiCaseStudyPage.jsx'));
 const JournalismPage = lazy(() => import('./pages/JournalismPage.jsx'));
 const VideoPage = lazy(() => import('./pages/VideoPage.jsx'));
+const UXPage = lazy(() => import('./pages/UXPage.jsx'));
 
 export default function App() {
   useInitialHashNavigation();
@@ -24,7 +25,8 @@ export default function App() {
   const showAbout = isAboutPage();
   const showJournalism = isJournalismPage();
   const showVideo = isVideoPage();
-  const isSectionPage = showAbout || showJournalism || showVideo;
+  const showUX = isUXPage();
+  const isSectionPage = showAbout || showJournalism || showVideo || showUX;
   const isPointly = projectSlug === 'pointly';
   const isObayashi = projectSlug === 'obayashi';
   const ProjectPage = isPointly ? PointlyCaseStudyPage : isObayashi ? ObayashiCaseStudyPage : CaseStudyPage;
@@ -36,14 +38,14 @@ export default function App() {
         variant={isPointly ? 'pointly' : isObayashi ? 'obayashi' : 'default'}
         site={site}
         homeHref={projectSlug || isSectionPage ? siteUrl() : '#top'}
-        activePage={showAbout ? 'about' : showJournalism ? 'journalism' : showVideo ? 'video' : projectSlug ? undefined : 'ux'}
+        activePage={showAbout ? 'about' : showJournalism ? 'journalism' : showVideo ? 'video' : showUX ? 'ux' : undefined}
       />
-      <main id="main" className={`page-container${showAbout ? ' page-container--about' : showJournalism ? ' page-container--features' : showVideo ? ' page-container--video' : isPointly || isObayashi ? ' page-container--case-study' : ''}`} tabIndex={-1}>
-        {showAbout ? <AboutPage site={site} /> : showJournalism || showVideo ? <Suspense fallback={<p className="case-loading" role="status">Loading page…</p>}>{showJournalism ? <JournalismPage /> : <VideoPage />}</Suspense> : projectSlug ? (
+      <main id="main" className={`page-container${showAbout ? ' page-container--about' : showJournalism ? ' page-container--features' : showVideo ? ' page-container--video' : showUX ? ' page-container--ux' : isPointly || isObayashi ? ' page-container--case-study' : ''}`} tabIndex={-1}>
+        {showAbout ? <AboutPage site={site} /> : showJournalism || showVideo || showUX ? <Suspense fallback={<p className="case-loading" role="status">Loading page…</p>}>{showJournalism ? <JournalismPage /> : showVideo ? <VideoPage /> : <UXPage projects={projects} />}</Suspense> : projectSlug ? (
           <Suspense fallback={<p className="case-loading" role="status">Loading project…</p>}>
             <ProjectPage slug={projectSlug} onOpenImage={(image, returnFocus) => setDialog({ kind: 'image', title: image.alt, image, returnFocus })} />
           </Suspense>
-        ) : <><HeroSection site={site} /><SelectedWork projects={projects} onSelect={(project) => setDialog({ kind: 'project', title: `Project ${project.number}`, project })} /></>}
+        ) : <><HeroSection /><SelectedWork projects={projects} onSelect={(project) => setDialog({ kind: 'project', title: `Project ${project.number}`, project })} /></>}
       </main>
       <SiteFooter site={site} />
       <Modal open={Boolean(dialog)} onClose={closeDialog} returnFocus={dialog?.returnFocus} title={dialog?.title ?? ''} className={dialog?.kind === 'image' ? 'portfolio-modal--image' : ''}>

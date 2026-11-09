@@ -5,8 +5,8 @@ test('portfolio renders only the two current projects with working artwork and p
   page.on('pageerror', (error) => errors.push(error.message));
   page.on('response', (response) => { if (response.status() >= 400) errors.push(`${response.status()} ${response.url()}`); });
   await page.goto('/');
-  await expect(page.getByRole('heading', { level: 1 })).toHaveText('ClarifyingChaos');
-  await expect(page.getByRole('heading', { name: 'Select Work' })).toBeVisible();
+  await expect(page.getByRole('heading', { level: 1 })).toHaveText('Understanding people. Shaping digital experiences.');
+  await expect(page.getByRole('heading', { name: 'Featured' })).toBeVisible();
   const cards = page.getByRole('link', { name: /^View project/ });
   await expect(cards).toHaveCount(2);
   await expect(page.locator('.project-card h3')).toHaveText(['Obayashi', 'Point.ly']);
@@ -26,7 +26,7 @@ test('portfolio renders only the two current projects with working artwork and p
   expect(errors).toEqual([]);
 });
 
-test('shared About+Contact link opens the full page and UX returns home', async ({ page }) => {
+test('shared About+Contact link opens the full page and UX opens its case-study page', async ({ page }) => {
   await page.goto('/');
   const about = page.getByRole('link', { name: 'ABOUT+CONTACT', exact: true });
   await about.click();
@@ -37,30 +37,7 @@ test('shared About+Contact link opens the full page and UX returns home', async 
   await expect(page.getByRole('link', { name: 'kikig6204@gmail.com', exact: true })).toHaveAttribute('href', 'mailto:kikig6204@gmail.com');
   await expect(page.getByRole('link', { name: '650-817-5454' })).toHaveAttribute('href', 'tel:+16508175454');
   await page.getByRole('navigation', { name: 'Main navigation' }).getByRole('link', { name: 'UX', exact: true }).click();
-  await expect(page).toHaveURL(/\/$/);
-});
-
-test('animation loops continuously and respects reduced motion', async ({ page }) => {
-  await page.goto('/');
-  const animation = page.locator('.hero-artwork__svg');
-  await expect(animation).toBeVisible();
-  await expect(animation.locator('.ring')).toHaveCount(4);
-  await expect(page.getByRole('button', { name: /(?:Pause|Play|Replay) hero animation/ })).toHaveCount(0);
-  const startTime = await animation.evaluate(svg => svg.getCurrentTime());
-  await page.waitForTimeout(200);
-  expect(await animation.evaluate(svg => svg.getCurrentTime())).toBeGreaterThan(startTime);
-  expect(await animation.evaluate(svg => !svg.animationsPaused() && svg.getAnimations({ subtree: true }).every(item => item.playState === 'running' && item.effect.getTiming().iterations === Infinity))).toBe(true);
-  // Let the actual page clock cross a complete 10-second cycle, without seeking
-  // or clicking any controls, to verify automatic looping after initial load.
-  await expect.poll(() => animation.evaluate(svg => svg.getAnimations({ subtree: true }).every(item => item.playState === 'running' && item.effect.getComputedTiming().currentIteration >= 1)), { timeout: 15000 }).toBe(true);
-  expect(await animation.evaluate(svg => svg.getCurrentTime())).toBeGreaterThan(10);
-  await page.reload();
-  await expect.poll(() => animation.evaluate(svg => !svg.animationsPaused() && svg.getCurrentTime() > .1 && svg.getAnimations({ subtree: true }).length === 15)).toBe(true);
-  await page.emulateMedia({ reducedMotion: 'reduce' });
-  await expect(animation.locator('.orbit')).not.toBeVisible();
-  await expect(animation.locator('.clarity')).toHaveCSS('opacity', '1');
-  await expect.poll(() => animation.evaluate(svg => svg.animationsPaused() && svg.getAnimations({ subtree: true }).length === 0)).toBe(true);
-  await expect(page.getByRole('button', { name: /hero animation/ })).toHaveCount(0);
+  await expect(page).toHaveURL(/\/ux\/$/);
 });
 
 test('layout fits narrow phones and tablets', async ({ page }) => {

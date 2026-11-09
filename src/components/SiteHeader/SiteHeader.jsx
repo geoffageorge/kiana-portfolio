@@ -29,7 +29,7 @@ export default function SiteHeader({ site, homeHref = '#top', activePage, varian
             {variant === 'obayashi' ? <img className="obayashi-mark" src={assetUrl('brand/ki-logo-v4.svg')} width="57" height="38" alt="" aria-hidden="true" data-figma-node="479:58" /> : variant === 'pointly' ? <PointlyMark /> : <Logo />}
             <BrandName name={site.name} />
           </a>
-          <Navigation homeHref={siteUrl()} videoHref={siteUrl('video/')} journalismHref={siteUrl('journalism/')} aboutHref={siteUrl('about/')} activePage={activePage} />
+          <Navigation uxHref={siteUrl('ux/')} videoHref={siteUrl('video/')} journalismHref={siteUrl('journalism/')} aboutHref={siteUrl('about/')} activePage={activePage} />
         </div>
       </header>
     </>

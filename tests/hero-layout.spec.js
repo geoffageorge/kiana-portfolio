@@ -1,80 +1,39 @@
 import { test, expect } from '@playwright/test';
-import settings from '../Assets/heroArtwork-1.json' with { type: 'json' };
-import heroBefore from '../Assets/figma files/journalism-v5-2026-11-08/hero-before.json' with { type: 'json' };
 
-test('saved artwork settings are fixed and old browser overrides are ignored', async ({ page }) => {
-  await page.addInitScript(values => localStorage.setItem('kiana-hero-artwork', JSON.stringify({
-    defaults: JSON.stringify(values), settings: { ...values, viewBox: { x: -600, y: -450, width: 600, height: 1800 } },
-  })), settings);
+test('the new supplied hero replaces the old artwork and ignores saved legacy overrides', async ({ page }) => {
+  await page.addInitScript(() => localStorage.setItem('kiana-hero-artwork', JSON.stringify({ settings: { viewBox: { x: -600, y: -450, width: 600, height: 1800 } } })));
   await page.goto('/');
-  await expect(page.locator('.hero-artwork__svg')).toHaveAttribute('viewBox', '50 0 1000 900');
-  await expect(page.getByText('Adjust hero artwork')).toHaveCount(0);
-  expect(await page.locator('.hero-artwork').evaluate(node => ({
-    width: node.style.maxWidth,
-    x: node.style.getPropertyValue('--hero-offset-x'),
-    y: node.style.getPropertyValue('--hero-offset-y'),
-    labelX: node.querySelector('.pill').style.getPropertyValue('--px'),
-  }))).toEqual({ width: '960px', x: '200px', y: '200px', labelX: '-30px' });
-  expect(await page.locator('.ring').evaluateAll(nodes => nodes.map(node => node.getAttribute('stroke'))))
-    .toEqual(['#9cbabc', '#e5ef18', '#afddb1', '#5fd1d3']);
+  await expect(page.locator('.hero-section__animation')).toHaveAttribute('src', '/assets/hero-v7/animation.html');
+  await expect(page.locator('.hero-artwork,.hero-section__copy')).toHaveCount(0);
+  await expect(page.getByText('Clarifying Chaos', { exact: true })).toHaveCount(0);
+  await expect(page.getByRole('heading', { name: 'Featured', exact: true })).toBeVisible();
+  await expect(page.locator('.selected-work .eyebrow')).toHaveText('Case studies');
+  await expect(page.locator('.selected-work .eyebrow')).toHaveCSS('text-transform', 'uppercase');
   await page.reload();
-  await expect(page.locator('.hero-artwork__svg')).toHaveAttribute('viewBox', '50 0 1000 900');
+  await expect(page.locator('.hero-section__animation')).toHaveAttribute('src', '/assets/hero-v7/animation.html');
 });
 
-test('artwork aligns with the desktop brand and stays clear on responsive layouts', async ({ page }) => {
-  for (const width of [320, 393, 768, 1024, 1440, 1920]) {
+test('the supplied hero sits directly below the header and fits phone, tablet and desktop containers', async ({ page }) => {
+  await page.emulateMedia({ reducedMotion: 'reduce' });
+  for (const width of [320, 390, 768, 1024, 1440, 1920]) {
     await page.setViewportSize({ width, height: 1000 });
     await page.goto('/');
-    const bounds = await page.evaluate(() => {
-      const rect = selector => document.querySelector(selector).getBoundingClientRect().toJSON();
-      return { art: rect('.hero-artwork__svg'), title: rect('#hero-title'), paragraph: rect('.hero-section__copy p'), header: rect('.site-header'), work: rect('#work'), scrollWidth: document.documentElement.scrollWidth };
+    const frame = page.frameLocator('.hero-section__animation');
+    await expect(frame.locator('.subhead')).toHaveCSS('opacity', '1');
+    const boxes = await page.evaluate(() => {
+      const rect = s => document.querySelector(s).getBoundingClientRect().toJSON();
+      return { hero: rect('.hero-section__animation'), header: rect('.site-header'), work: rect('#work'), main: rect('#main'), scrollWidth: document.documentElement.scrollWidth };
     });
-    expect(bounds.art.top).toBeGreaterThan(bounds.header.bottom);
-    expect(bounds.art.bottom).toBeLessThan(bounds.work.top);
-    expect(bounds.art.left).toBeGreaterThanOrEqual(0);
-    expect(bounds.art.right).toBeLessThanOrEqual(width);
-    expect(bounds.scrollWidth).toBeLessThanOrEqual(width);
-    if (width < 1024) {
-      expect(bounds.art.top).toBeGreaterThan(bounds.paragraph.bottom);
-    } else {
-      // The removed header descriptor no longer controls the artwork position.
-      expect(Math.abs(bounds.art.left - heroBefore.find(row => row.width === width).artLeft)).toBeLessThan(.2);
-      expect(bounds.title.top + bounds.title.height / 2).toBeCloseTo(bounds.art.top + bounds.art.height / 2 + settings.copyPlacement.y, 1);
-      // The requested viewBox extends into the copy column, but its transparent
-      // area contains no artwork there. Check the actual visible shapes.
-      for (const seconds of [0, 2.5, 5, 7.8, 10.2]) {
-        const overlaps = await page.locator('.hero-artwork__svg').evaluate(async (svg, time) => {
-          svg.pauseAnimations(); svg.setCurrentTime(time);
-          for (const animation of svg.getAnimations({ subtree: true })) { animation.pause(); animation.currentTime = time * 1000; }
-          await new Promise(resolve => requestAnimationFrame(resolve));
-          // Text containers include empty space to the right of shorter lines.
-          // Check the rendered text fragments so that only text collisions fail.
-          const copy = ['#hero-title', '.hero-section__copy p'].flatMap(selector => {
-            const walker = document.createTreeWalker(document.querySelector(selector), NodeFilter.SHOW_TEXT);
-            const boxes = [];
-            while (walker.nextNode()) {
-              if (!walker.currentNode.textContent.trim()) continue;
-              const range = document.createRange();
-              range.selectNodeContents(walker.currentNode);
-              boxes.push(...range.getClientRects());
-            }
-            return boxes;
-          });
-          return [...svg.querySelectorAll('.threads ellipse,.ring,.pill,.end,.clarity')].some(node => {
-            if (Number(getComputedStyle(node).opacity) < .01 || Number(getComputedStyle(node.parentElement).opacity) < .01) return false;
-            const shape = node.getBoundingClientRect();
-            return copy.some(text => shape.left < text.right && shape.right > text.left && shape.top < text.bottom && shape.bottom > text.top);
-          });
-        }, seconds);
-        expect(overlaps, `visible artwork stays clear of copy at ${width}px / ${seconds}s`).toBe(false);
-      }
-      // A resize while scrolled must retain the initial-load placement.
-      await page.evaluate(() => window.scrollTo({ top: 400, behavior: 'instant' }));
-      await page.setViewportSize({ width: width + 1, height: 1000 });
-      await page.setViewportSize({ width, height: 1000 });
-      await page.evaluate(() => window.scrollTo({ top: 0, behavior: 'instant' }));
-      await expect.poll(() => page.locator('.hero-artwork__svg').evaluate(svg => svg.getBoundingClientRect().top)).toBeCloseTo(bounds.art.top, 1);
-    }
+    expect(boxes.hero.top).toBeCloseTo(boxes.header.bottom, 1);
+    expect(boxes.hero.height).toBe(width <= 480 ? 540 : 630);
+    expect(boxes.hero.x).toBeCloseTo(boxes.main.x, 1);
+    expect(boxes.hero.width).toBeCloseTo(boxes.main.width, 1);
+    expect(boxes.work.top - boxes.hero.bottom).toBeCloseTo(32, 1);
+    expect(boxes.scrollWidth).toBeLessThanOrEqual(width);
+    expect(await frame.locator('html').evaluate(n => n.scrollWidth <= innerWidth && n.scrollHeight <= innerHeight)).toBe(true);
+    expect(await frame.locator('h1').evaluate(n => {
+      const r=n.getBoundingClientRect(); return r.left >= 0 && r.right <= innerWidth;
+    })).toBe(true);
   }
 });
 

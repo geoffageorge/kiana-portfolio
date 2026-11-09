@@ -5,7 +5,7 @@ import './SelectedWork.css';
 export default function SelectedWork({ projects, onSelect }) {
   return (
     <section className="selected-work" id="work" aria-labelledby="work-title" data-figma-node="28:2">
-      <SectionHeading id="work-title" title="Select Work" subtitle="Case studies" />
+      <SectionHeading id="work-title" title="Featured" subtitle="Case studies" />
       <div className="selected-work__grid">{projects.filter(project => project.showOnHome !== false).map((project) => <ProjectCard key={project.id} project={project} onSelect={onSelect} />)}</div>
     </section>
   );

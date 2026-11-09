@@ -26,7 +26,7 @@ test('version 5 shares the four Figma navigation options, preserved branding, an
     await ready(page, path);
     const nav = page.getByRole('navigation', { name: 'Main navigation' });
     await expect(nav.getByRole('link')).toHaveText(['UX', 'VIDEO', 'JOURNALISM', 'ABOUT+CONTACT']);
-    for (const [index, href] of ['/', '/video/', '/journalism/', '/about/'].entries()) await expect(nav.getByRole('link').nth(index)).toHaveAttribute('href', href);
+    for (const [index, href] of ['/ux/', '/video/', '/journalism/', '/about/'].entries()) await expect(nav.getByRole('link').nth(index)).toHaveAttribute('href', href);
     await expect(page.locator('.site-header .brand-name')).toHaveText('Kiana George');
     await expect(page.locator('.site-header .brand-name__descriptor')).toHaveCount(0);
     await expect(page.locator('.site-header').getByText('SOCIAL MEDIA', { exact: true })).toHaveCount(0);
@@ -46,8 +46,8 @@ test('version 5 shares the four Figma navigation options, preserved branding, an
   await nav.getByRole('link', { name: 'ABOUT+CONTACT', exact: true }).click();
   await expect(page.getByRole('heading', { level: 1 })).toHaveText('Curious George, Literally');
   await nav.getByRole('link', { name: 'UX', exact: true }).click();
-  await expect(page).toHaveURL(/\/$/);
-  await expect(page.getByRole('heading', { level: 1 })).toHaveText('ClarifyingChaos');
+  await expect(page).toHaveURL(/\/ux\/$/);
+  await expect(page.getByRole('heading', { level: 1 })).toHaveText('Selected Case Studies');
 });
 
 test('all eight Journalism image and mask exports are nonempty and served without changing their bytes', async ({ request }) => {
@@ -167,11 +167,11 @@ test('Journalism and Video support direct index URLs and deployment below a subd
   await ready(page, '/portfolio/journalism/');
   await expect(page.locator('.journalism-card img').first()).toHaveAttribute('src', '/portfolio/assets/journalism-figma/food-culture.png');
   const nav = page.getByRole('navigation', { name: 'Main navigation' });
-  for (const [index, href] of ['/portfolio/', '/portfolio/video/', '/portfolio/journalism/', '/portfolio/about/'].entries()) await expect(nav.getByRole('link').nth(index)).toHaveAttribute('href', href);
+  for (const [index, href] of ['/portfolio/ux/', '/portfolio/video/', '/portfolio/journalism/', '/portfolio/about/'].entries()) await expect(nav.getByRole('link').nth(index)).toHaveAttribute('href', href);
   await nav.getByRole('link', { name: 'VIDEO', exact: true }).click();
   await expect(page).toHaveURL(/\/portfolio\/video\/$/);
   await expect(page.getByRole('heading', { level: 1 })).toHaveText('SELECTED VIDEO WORK');
   await nav.getByRole('link', { name: 'UX', exact: true }).click();
-  await expect(page).toHaveURL(/\/portfolio\/$/);
-  await expect(page.getByRole('heading', { level: 1 })).toHaveText('ClarifyingChaos');
+  await expect(page).toHaveURL(/\/portfolio\/ux\/$/);
+  await expect(page.getByRole('heading', { level: 1 })).toHaveText('Selected Case Studies');
 });

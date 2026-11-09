@@ -1,0 +1,2727 @@
+{
+  "frameId": "619:58",
+  "nodes": [
+    {
+      "id": "619:58",
+      "name": "UX",
+      "type": "FRAME",
+      "parentId": "0:1",
+      "x": -2169,
+      "y": -20393,
+      "width": 1440,
+      "height": 1257,
+      "visible": true,
+      "locked": false,
+      "opacity": 1,
+      "blendMode": "PASS_THROUGH",
+      "isMask": false,
+      "maskType": "ALPHA",
+      "rotation": 0,
+      "relativeTransform": [
+        [
+          1,
+          0,
+          -2169
+        ],
+        [
+          0,
+          1,
+          -20393
+        ]
+      ],
+      "absoluteTransform": [
+        [
+          1,
+          0,
+          -2169
+        ],
+        [
+          0,
+          1,
+          -20393
+        ]
+      ],
+      "absoluteBoundingBox": {
+        "x": -2169,
+        "y": -20393,
+        "width": 1440,
+        "height": 1257
+      },
+      "absoluteRenderBounds": {
+        "x": -2169,
+        "y": -20393,
+        "width": 1440,
+        "height": 1257
+      },
+      "constraints": {
+        "horizontal": "MIN",
+        "vertical": "MIN"
+      },
+      "layoutMode": "NONE",
+      "layoutSizingHorizontal": "FIXED",
+      "layoutSizingVertical": "FIXED",
+      "primaryAxisSizingMode": "AUTO",
+      "counterAxisSizingMode": "FIXED",
+      "primaryAxisAlignItems": "MIN",
+      "counterAxisAlignItems": "MIN",
+      "layoutAlign": "INHERIT",
+      "layoutGrow": 0,
+      "layoutPositioning": "AUTO",
+      "layoutWrap": "NO_WRAP",
+      "itemSpacing": 0,
+      "paddingTop": 0,
+      "paddingRight": 0,
+      "paddingBottom": 0,
+      "paddingLeft": 0,
+      "minWidth": null,
+      "maxWidth": null,
+      "minHeight": null,
+      "maxHeight": null,
+      "clipsContent": true,
+      "layoutGrids": [
+        {
+          "pattern": "COLUMNS",
+          "visible": true,
+          "color": {
+            "r": 0.7490196228027344,
+            "g": 0.7490196228027344,
+            "b": 0.7490196228027344,
+            "a": 0.10000000149011612
+          },
+          "gutterSize": 24,
+          "alignment": "STRETCH",
+          "count": 12,
+          "offset": 120,
+          "boundVariables": {}
+        }
+      ],
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1
+          },
+          "boundVariables": {}
+        }
+      ],
+      "fillStyleId": "",
+      "strokes": [],
+      "strokeStyleId": "",
+      "strokeWeight": 1,
+      "strokeAlign": "INSIDE",
+      "strokeCap": "NONE",
+      "strokeJoin": "MITER",
+      "strokeTopWeight": 1,
+      "strokeRightWeight": 1,
+      "strokeBottomWeight": 1,
+      "strokeLeftWeight": 1,
+      "dashPattern": [],
+      "cornerRadius": 0,
+      "topLeftRadius": 0,
+      "topRightRadius": 0,
+      "bottomLeftRadius": 0,
+      "bottomRightRadius": 0,
+      "cornerSmoothing": 0,
+      "effects": [],
+      "effectStyleId": "",
+      "exportSettings": [
+        {
+          "format": "PNG",
+          "suffix": "",
+          "contentsOnly": true,
+          "colorProfile": "DOCUMENT",
+          "constraint": {
+            "type": "SCALE",
+            "value": 1
+          }
+        }
+      ],
+      "reactions": [],
+      "overflowDirection": "NONE",
+      "overlayPositionType": "CENTER",
+      "overlayBackground": {
+        "type": "NONE"
+      },
+      "overlayBackgroundInteraction": "NONE",
+      "boundVariables": {},
+      "explicitVariableModes": {}
+    },
+    {
+      "id": "619:100",
+      "name": "Vector",
+      "type": "VECTOR",
+      "parentId": "619:58",
+      "x": 121.000244140625,
+      "y": 40.11002731323242,
+      "width": 16.4162540435791,
+      "height": 11.420924186706543,
+      "visible": true,
+      "locked": false,
+      "opacity": 1,
+      "blendMode": "PASS_THROUGH",
+      "isMask": false,
+      "maskType": "ALPHA",
+      "rotation": 0,
+      "relativeTransform": [
+        [
+          1,
+          0,
+          121.000244140625
+        ],
+        [
+          0,
+          1,
+          40.11002731323242
+        ]
+      ],
+      "absoluteTransform": [
+        [
+          1,
+          0,
+          -2047.999755859375
+        ],
+        [
+          0,
+          1,
+          -20352.890625
+        ]
+      ],
+      "absoluteBoundingBox": {
+        "x": -2047.999755859375,
+        "y": -20352.890625,
+        "width": 16.4162540435791,
+        "height": 11.420924186706543
+      },
+      "absoluteRenderBounds": {
+        "x": -2047.999755859375,
+        "y": -20352.890625,
+        "width": 16.416259765625,
+        "height": 11.421875
+      },
+      "constraints": {
+        "horizontal": "SCALE",
+        "vertical": "SCALE"
+      },
+      "layoutSizingHorizontal": "FIXED",
+      "layoutSizingVertical": "FIXED",
+      "layoutAlign": "INHERIT",
+      "layoutGrow": 0,
+      "layoutPositioning": "AUTO",
+      "minWidth": null,
+      "maxWidth": null,
+      "minHeight": null,
+      "maxHeight": null,
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0.5647059082984924,
+            "g": 0.7019608020782471,
+            "b": 0.7490196228027344
+          },
+          "boundVariables": {}
+        }
+      ],
+      "fillStyleId": "",
+      "strokes": [],
+      "strokeStyleId": "",
+      "strokeWeight": 1,
+      "strokeAlign": "INSIDE",
+      "strokeCap": "NONE",
+      "strokeJoin": "MITER",
+      "dashPattern": [],
+      "cornerRadius": 0,
+      "cornerSmoothing": 0,
+      "effects": [],
+      "effectStyleId": "",
+      "exportSettings": [],
+      "reactions": [],
+      "boundVariables": {},
+      "explicitVariableModes": {}
+    },
+    {
+      "id": "619:101",
+      "name": "Vector",
+      "type": "VECTOR",
+      "parentId": "619:58",
+      "x": 138.821533203125,
+      "y": 40.11002731323242,
+      "width": 16.418912887573242,
+      "height": 11.420924186706543,
+      "visible": true,
+      "locked": false,
+      "opacity": 1,
+      "blendMode": "PASS_THROUGH",
+      "isMask": false,
+      "maskType": "ALPHA",
+      "rotation": 0,
+      "relativeTransform": [
+        [
+          1,
+          0,
+          138.821533203125
+        ],
+        [
+          0,
+          1,
+          40.11002731323242
+        ]
+      ],
+      "absoluteTransform": [
+        [
+          1,
+          0,
+          -2030.178466796875
+        ],
+        [
+          0,
+          1,
+          -20352.890625
+        ]
+      ],
+      "absoluteBoundingBox": {
+        "x": -2030.178466796875,
+        "y": -20352.890625,
+        "width": 16.418912887573242,
+        "height": 11.420924186706543
+      },
+      "absoluteRenderBounds": {
+        "x": -2030.178466796875,
+        "y": -20352.890625,
+        "width": 16.4189453125,
+        "height": 11.421875
+      },
+      "constraints": {
+        "horizontal": "SCALE",
+        "vertical": "SCALE"
+      },
+      "layoutSizingHorizontal": "FIXED",
+      "layoutSizingVertical": "FIXED",
+      "layoutAlign": "INHERIT",
+      "layoutGrow": 0,
+      "layoutPositioning": "AUTO",
+      "minWidth": null,
+      "maxWidth": null,
+      "minHeight": null,
+      "maxHeight": null,
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0.9254902005195618,
+            "g": 0.16078431904315948,
+            "b": 0.48235294222831726
+          },
+          "boundVariables": {}
+        }
+      ],
+      "fillStyleId": "",
+      "strokes": [],
+      "strokeStyleId": "",
+      "strokeWeight": 1,
+      "strokeAlign": "INSIDE",
+      "strokeCap": "NONE",
+      "strokeJoin": "MITER",
+      "dashPattern": [],
+      "cornerRadius": 0,
+      "cornerSmoothing": 0,
+      "effects": [],
+      "effectStyleId": "",
+      "exportSettings": [],
+      "reactions": [],
+      "boundVariables": {},
+      "explicitVariableModes": {}
+    },
+    {
+      "id": "619:102",
+      "name": "Vector",
+      "type": "VECTOR",
+      "parentId": "619:58",
+      "x": 155.240478515625,
+      "y": 63.84833526611328,
+      "width": 16.418912887573242,
+      "height": 11.420924186706543,
+      "visible": true,
+      "locked": false,
+      "opacity": 1,
+      "blendMode": "PASS_THROUGH",
+      "isMask": false,
+      "maskType": "ALPHA",
+      "rotation": 180,
+      "relativeTransform": [
+        [
+          -1,
+          1.7605728039446402e-16,
+          155.240478515625
+        ],
+        [
+          -8.518591159946287e-17,
+          -1,
+          63.84833526611328
+        ]
+      ],
+      "absoluteTransform": [
+        [
+          -1,
+          1.7605728039446402e-16,
+          -2013.759521484375
+        ],
+        [
+          -8.518591159946287e-17,
+          -1,
+          -20329.15234375
+        ]
+      ],
+      "absoluteBoundingBox": {
+        "x": -2030.1784343719482,
+        "y": -20340.573267936707,
+        "width": 16.418912887573242,
+        "height": 11.420924186706543
+      },
+      "absoluteRenderBounds": {
+        "x": -2030.178466796875,
+        "y": -20340.57421875,
+        "width": 16.4189453125,
+        "height": 11.421875
+      },
+      "constraints": {
+        "horizontal": "SCALE",
+        "vertical": "SCALE"
+      },
+      "layoutSizingHorizontal": "FIXED",
+      "layoutSizingVertical": "FIXED",
+      "layoutAlign": "INHERIT",
+      "layoutGrow": 0,
+      "layoutPositioning": "AUTO",
+      "minWidth": null,
+      "maxWidth": null,
+      "minHeight": null,
+      "maxHeight": null,
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0.572549045085907,
+            "g": 0.8274509906768799,
+            "b": 0.7843137383460999
+          },
+          "boundVariables": {}
+        }
+      ],
+      "fillStyleId": "",
+      "strokes": [],
+      "strokeStyleId": "",
+      "strokeWeight": 1,
+      "strokeAlign": "INSIDE",
+      "strokeCap": "NONE",
+      "strokeJoin": "MITER",
+      "dashPattern": [],
+      "cornerRadius": 0,
+      "cornerSmoothing": 0,
+      "effects": [],
+      "effectStyleId": "",
+      "exportSettings": [],
+      "reactions": [],
+      "boundVariables": {},
+      "explicitVariableModes": {}
+    },
+    {
+      "id": "619:103",
+      "name": "Vector",
+      "type": "VECTOR",
+      "parentId": "619:58",
+      "x": 156.448974609375,
+      "y": 52.42889404296875,
+      "width": 16.418914794921875,
+      "height": 11.420924186706543,
+      "visible": true,
+      "locked": false,
+      "opacity": 1,
+      "blendMode": "PASS_THROUGH",
+      "isMask": false,
+      "maskType": "ALPHA",
+      "rotation": 0,
+      "relativeTransform": [
+        [
+          1,
+          0,
+          156.448974609375
+        ],
+        [
+          0,
+          1,
+          52.42889404296875
+        ]
+      ],
+      "absoluteTransform": [
+        [
+          1,
+          0,
+          -2012.551025390625
+        ],
+        [
+          0,
+          1,
+          -20340.5703125
+        ]
+      ],
+      "absoluteBoundingBox": {
+        "x": -2012.551025390625,
+        "y": -20340.5703125,
+        "width": 16.418914794921875,
+        "height": 11.420924186706543
+      },
+      "absoluteRenderBounds": {
+        "x": -2012.551025390625,
+        "y": -20340.5703125,
+        "width": 16.4189453125,
+        "height": 11.421875
+      },
+      "constraints": {
+        "horizontal": "SCALE",
+        "vertical": "SCALE"
+      },
+      "layoutSizingHorizontal": "FIXED",
+      "layoutSizingVertical": "FIXED",
+      "layoutAlign": "INHERIT",
+      "layoutGrow": 0,
+      "layoutPositioning": "AUTO",
+      "minWidth": null,
+      "maxWidth": null,
+      "minHeight": null,
+      "maxHeight": null,
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0.6784313917160034,
+            "g": 0.8784313797950745,
+            "b": 0.3333333432674408
+          },
+          "boundVariables": {}
+        }
+      ],
+      "fillStyleId": "",
+      "strokes": [],
+      "strokeStyleId": "",
+      "strokeWeight": 1,
+      "strokeAlign": "INSIDE",
+      "strokeCap": "NONE",
+      "strokeJoin": "MITER",
+      "dashPattern": [],
+      "cornerRadius": 0,
+      "cornerSmoothing": 0,
+      "effects": [],
+      "effectStyleId": "",
+      "exportSettings": [],
+      "reactions": [],
+      "boundVariables": {},
+      "explicitVariableModes": {}
+    },
+    {
+      "id": "619:104",
+      "name": "Vector",
+      "type": "VECTOR",
+      "parentId": "619:58",
+      "x": 137.416259765625,
+      "y": 63.84833526611328,
+      "width": 16.4162540435791,
+      "height": 11.420924186706543,
+      "visible": true,
+      "locked": false,
+      "opacity": 1,
+      "blendMode": "PASS_THROUGH",
+      "isMask": false,
+      "maskType": "ALPHA",
+      "rotation": 180,
+      "relativeTransform": [
+        [
+          -1,
+          1.7605728039446402e-16,
+          137.416259765625
+        ],
+        [
+          -8.518591159946287e-17,
+          -1,
+          63.84833526611328
+        ]
+      ],
+      "absoluteTransform": [
+        [
+          -1,
+          1.7605728039446402e-16,
+          -2031.583740234375
+        ],
+        [
+          -8.518591159946287e-17,
+          -1,
+          -20329.15234375
+        ]
+      ],
+      "absoluteBoundingBox": {
+        "x": -2047.999994277954,
+        "y": -20340.573267936707,
+        "width": 16.4162540435791,
+        "height": 11.420924186706543
+      },
+      "absoluteRenderBounds": {
+        "x": -2048,
+        "y": -20340.57421875,
+        "width": 16.416259765625,
+        "height": 11.421875
+      },
+      "constraints": {
+        "horizontal": "SCALE",
+        "vertical": "SCALE"
+      },
+      "layoutSizingHorizontal": "FIXED",
+      "layoutSizingVertical": "FIXED",
+      "layoutAlign": "INHERIT",
+      "layoutGrow": 0,
+      "layoutPositioning": "AUTO",
+      "minWidth": null,
+      "maxWidth": null,
+      "minHeight": null,
+      "maxHeight": null,
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0.9647058844566345,
+            "g": 0.572549045085907,
+            "b": 0.11764705926179886
+          },
+          "boundVariables": {}
+        }
+      ],
+      "fillStyleId": "",
+      "strokes": [],
+      "strokeStyleId": "",
+      "strokeWeight": 1,
+      "strokeAlign": "INSIDE",
+      "strokeCap": "NONE",
+      "strokeJoin": "MITER",
+      "dashPattern": [],
+      "cornerRadius": 0,
+      "cornerSmoothing": 0,
+      "effects": [],
+      "effectStyleId": "",
+      "exportSettings": [],
+      "reactions": [],
+      "boundVariables": {},
+      "explicitVariableModes": {}
+    },
+    {
+      "id": "619:105",
+      "name": "Vector",
+      "type": "VECTOR",
+      "parentId": "619:58",
+      "x": 155.341552734375,
+      "y": 45.32859420776367,
+      "width": 17.521299362182617,
+      "height": 6.20288610458374,
+      "visible": true,
+      "locked": false,
+      "opacity": 1,
+      "blendMode": "PASS_THROUGH",
+      "isMask": false,
+      "maskType": "ALPHA",
+      "rotation": 0,
+      "relativeTransform": [
+        [
+          1,
+          0,
+          155.341552734375
+        ],
+        [
+          0,
+          1,
+          45.32859420776367
+        ]
+      ],
+      "absoluteTransform": [
+        [
+          1,
+          0,
+          -2013.658447265625
+        ],
+        [
+          0,
+          1,
+          -20347.671875
+        ]
+      ],
+      "absoluteBoundingBox": {
+        "x": -2013.658447265625,
+        "y": -20347.671875,
+        "width": 17.521299362182617,
+        "height": 6.20288610458374
+      },
+      "absoluteRenderBounds": {
+        "x": -2013.658447265625,
+        "y": -20347.671875,
+        "width": 17.521240234375,
+        "height": 6.203125
+      },
+      "constraints": {
+        "horizontal": "SCALE",
+        "vertical": "SCALE"
+      },
+      "layoutSizingHorizontal": "FIXED",
+      "layoutSizingVertical": "FIXED",
+      "layoutAlign": "INHERIT",
+      "layoutGrow": 0,
+      "layoutPositioning": "AUTO",
+      "minWidth": null,
+      "maxWidth": null,
+      "minHeight": null,
+      "maxHeight": null,
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0.9378374814987183,
+            "g": 0.8657094240188599,
+            "b": 0.07230053842067719
+          },
+          "boundVariables": {}
+        }
+      ],
+      "fillStyleId": "",
+      "strokes": [],
+      "strokeStyleId": "",
+      "strokeWeight": 1,
+      "strokeAlign": "INSIDE",
+      "strokeCap": "NONE",
+      "strokeJoin": "MITER",
+      "dashPattern": [],
+      "cornerRadius": 0,
+      "cornerSmoothing": 0,
+      "effects": [],
+      "effectStyleId": "",
+      "exportSettings": [],
+      "reactions": [],
+      "boundVariables": {},
+      "explicitVariableModes": {}
+    },
+    {
+      "id": "619:107",
+      "name": "Vector",
+      "type": "VECTOR",
+      "parentId": "619:58",
+      "x": 121.000244140625,
+      "y": 40.11002731323242,
+      "width": 16.4162540435791,
+      "height": 11.420924186706543,
+      "visible": true,
+      "locked": false,
+      "opacity": 1,
+      "blendMode": "PASS_THROUGH",
+      "isMask": false,
+      "maskType": "ALPHA",
+      "rotation": 0,
+      "relativeTransform": [
+        [
+          1,
+          0,
+          121.000244140625
+        ],
+        [
+          0,
+          1,
+          40.11002731323242
+        ]
+      ],
+      "absoluteTransform": [
+        [
+          1,
+          0,
+          -2047.999755859375
+        ],
+        [
+          0,
+          1,
+          -20352.890625
+        ]
+      ],
+      "absoluteBoundingBox": {
+        "x": -2047.999755859375,
+        "y": -20352.890625,
+        "width": 16.4162540435791,
+        "height": 11.420924186706543
+      },
+      "absoluteRenderBounds": {
+        "x": -2047.999755859375,
+        "y": -20352.890625,
+        "width": 16.416259765625,
+        "height": 11.421875
+      },
+      "constraints": {
+        "horizontal": "SCALE",
+        "vertical": "SCALE"
+      },
+      "layoutSizingHorizontal": "FIXED",
+      "layoutSizingVertical": "FIXED",
+      "layoutAlign": "INHERIT",
+      "layoutGrow": 0,
+      "layoutPositioning": "AUTO",
+      "minWidth": null,
+      "maxWidth": null,
+      "minHeight": null,
+      "maxHeight": null,
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0.5647059082984924,
+            "g": 0.7019608020782471,
+            "b": 0.7490196228027344
+          },
+          "boundVariables": {}
+        }
+      ],
+      "fillStyleId": "",
+      "strokes": [],
+      "strokeStyleId": "",
+      "strokeWeight": 1,
+      "strokeAlign": "INSIDE",
+      "strokeCap": "NONE",
+      "strokeJoin": "MITER",
+      "dashPattern": [],
+      "cornerRadius": 0,
+      "cornerSmoothing": 0,
+      "effects": [],
+      "effectStyleId": "",
+      "exportSettings": [],
+      "reactions": [],
+      "boundVariables": {},
+      "explicitVariableModes": {}
+    },
+    {
+      "id": "619:108",
+      "name": "Vector",
+      "type": "VECTOR",
+      "parentId": "619:58",
+      "x": 138.821533203125,
+      "y": 40.11002731323242,
+      "width": 16.418912887573242,
+      "height": 11.420924186706543,
+      "visible": true,
+      "locked": false,
+      "opacity": 1,
+      "blendMode": "PASS_THROUGH",
+      "isMask": false,
+      "maskType": "ALPHA",
+      "rotation": 0,
+      "relativeTransform": [
+        [
+          1,
+          0,
+          138.821533203125
+        ],
+        [
+          0,
+          1,
+          40.11002731323242
+        ]
+      ],
+      "absoluteTransform": [
+        [
+          1,
+          0,
+          -2030.178466796875
+        ],
+        [
+          0,
+          1,
+          -20352.890625
+        ]
+      ],
+      "absoluteBoundingBox": {
+        "x": -2030.178466796875,
+        "y": -20352.890625,
+        "width": 16.418912887573242,
+        "height": 11.420924186706543
+      },
+      "absoluteRenderBounds": {
+        "x": -2030.178466796875,
+        "y": -20352.890625,
+        "width": 16.4189453125,
+        "height": 11.421875
+      },
+      "constraints": {
+        "horizontal": "SCALE",
+        "vertical": "SCALE"
+      },
+      "layoutSizingHorizontal": "FIXED",
+      "layoutSizingVertical": "FIXED",
+      "layoutAlign": "INHERIT",
+      "layoutGrow": 0,
+      "layoutPositioning": "AUTO",
+      "minWidth": null,
+      "maxWidth": null,
+      "minHeight": null,
+      "maxHeight": null,
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0.9254902005195618,
+            "g": 0.16078431904315948,
+            "b": 0.48235294222831726
+          },
+          "boundVariables": {}
+        }
+      ],
+      "fillStyleId": "",
+      "strokes": [],
+      "strokeStyleId": "",
+      "strokeWeight": 1,
+      "strokeAlign": "INSIDE",
+      "strokeCap": "NONE",
+      "strokeJoin": "MITER",
+      "dashPattern": [],
+      "cornerRadius": 0,
+      "cornerSmoothing": 0,
+      "effects": [],
+      "effectStyleId": "",
+      "exportSettings": [],
+      "reactions": [],
+      "boundVariables": {},
+      "explicitVariableModes": {}
+    },
+    {
+      "id": "619:109",
+      "name": "Vector",
+      "type": "VECTOR",
+      "parentId": "619:58",
+      "x": 155.240478515625,
+      "y": 63.84833526611328,
+      "width": 16.418912887573242,
+      "height": 11.420924186706543,
+      "visible": true,
+      "locked": false,
+      "opacity": 1,
+      "blendMode": "PASS_THROUGH",
+      "isMask": false,
+      "maskType": "ALPHA",
+      "rotation": 180,
+      "relativeTransform": [
+        [
+          -1,
+          1.7605728039446402e-16,
+          155.240478515625
+        ],
+        [
+          -8.518591159946287e-17,
+          -1,
+          63.84833526611328
+        ]
+      ],
+      "absoluteTransform": [
+        [
+          -1,
+          1.7605728039446402e-16,
+          -2013.759521484375
+        ],
+        [
+          -8.518591159946287e-17,
+          -1,
+          -20329.15234375
+        ]
+      ],
+      "absoluteBoundingBox": {
+        "x": -2030.1784343719482,
+        "y": -20340.573267936707,
+        "width": 16.418912887573242,
+        "height": 11.420924186706543
+      },
+      "absoluteRenderBounds": {
+        "x": -2030.178466796875,
+        "y": -20340.57421875,
+        "width": 16.4189453125,
+        "height": 11.421875
+      },
+      "constraints": {
+        "horizontal": "SCALE",
+        "vertical": "SCALE"
+      },
+      "layoutSizingHorizontal": "FIXED",
+      "layoutSizingVertical": "FIXED",
+      "layoutAlign": "INHERIT",
+      "layoutGrow": 0,
+      "layoutPositioning": "AUTO",
+      "minWidth": null,
+      "maxWidth": null,
+      "minHeight": null,
+      "maxHeight": null,
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0.572549045085907,
+            "g": 0.8274509906768799,
+            "b": 0.7843137383460999
+          },
+          "boundVariables": {}
+        }
+      ],
+      "fillStyleId": "",
+      "strokes": [],
+      "strokeStyleId": "",
+      "strokeWeight": 1,
+      "strokeAlign": "INSIDE",
+      "strokeCap": "NONE",
+      "strokeJoin": "MITER",
+      "dashPattern": [],
+      "cornerRadius": 0,
+      "cornerSmoothing": 0,
+      "effects": [],
+      "effectStyleId": "",
+      "exportSettings": [],
+      "reactions": [],
+      "boundVariables": {},
+      "explicitVariableModes": {}
+    },
+    {
+      "id": "619:110",
+      "name": "Vector",
+      "type": "VECTOR",
+      "parentId": "619:58",
+      "x": 156.448974609375,
+      "y": 52.42889404296875,
+      "width": 16.418914794921875,
+      "height": 11.420924186706543,
+      "visible": true,
+      "locked": false,
+      "opacity": 1,
+      "blendMode": "PASS_THROUGH",
+      "isMask": false,
+      "maskType": "ALPHA",
+      "rotation": 0,
+      "relativeTransform": [
+        [
+          1,
+          0,
+          156.448974609375
+        ],
+        [
+          0,
+          1,
+          52.42889404296875
+        ]
+      ],
+      "absoluteTransform": [
+        [
+          1,
+          0,
+          -2012.551025390625
+        ],
+        [
+          0,
+          1,
+          -20340.5703125
+        ]
+      ],
+      "absoluteBoundingBox": {
+        "x": -2012.551025390625,
+        "y": -20340.5703125,
+        "width": 16.418914794921875,
+        "height": 11.420924186706543
+      },
+      "absoluteRenderBounds": {
+        "x": -2012.551025390625,
+        "y": -20340.5703125,
+        "width": 16.4189453125,
+        "height": 11.421875
+      },
+      "constraints": {
+        "horizontal": "SCALE",
+        "vertical": "SCALE"
+      },
+      "layoutSizingHorizontal": "FIXED",
+      "layoutSizingVertical": "FIXED",
+      "layoutAlign": "INHERIT",
+      "layoutGrow": 0,
+      "layoutPositioning": "AUTO",
+      "minWidth": null,
+      "maxWidth": null,
+      "minHeight": null,
+      "maxHeight": null,
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0.6784313917160034,
+            "g": 0.8784313797950745,
+            "b": 0.3333333432674408
+          },
+          "boundVariables": {}
+        }
+      ],
+      "fillStyleId": "",
+      "strokes": [],
+      "strokeStyleId": "",
+      "strokeWeight": 1,
+      "strokeAlign": "INSIDE",
+      "strokeCap": "NONE",
+      "strokeJoin": "MITER",
+      "dashPattern": [],
+      "cornerRadius": 0,
+      "cornerSmoothing": 0,
+      "effects": [],
+      "effectStyleId": "",
+      "exportSettings": [],
+      "reactions": [],
+      "boundVariables": {},
+      "explicitVariableModes": {}
+    },
+    {
+      "id": "619:111",
+      "name": "Vector",
+      "type": "VECTOR",
+      "parentId": "619:58",
+      "x": 137.416259765625,
+      "y": 63.84833526611328,
+      "width": 16.4162540435791,
+      "height": 11.420924186706543,
+      "visible": true,
+      "locked": false,
+      "opacity": 1,
+      "blendMode": "PASS_THROUGH",
+      "isMask": false,
+      "maskType": "ALPHA",
+      "rotation": 180,
+      "relativeTransform": [
+        [
+          -1,
+          1.7605728039446402e-16,
+          137.416259765625
+        ],
+        [
+          -8.518591159946287e-17,
+          -1,
+          63.84833526611328
+        ]
+      ],
+      "absoluteTransform": [
+        [
+          -1,
+          1.7605728039446402e-16,
+          -2031.583740234375
+        ],
+        [
+          -8.518591159946287e-17,
+          -1,
+          -20329.15234375
+        ]
+      ],
+      "absoluteBoundingBox": {
+        "x": -2047.999994277954,
+        "y": -20340.573267936707,
+        "width": 16.4162540435791,
+        "height": 11.420924186706543
+      },
+      "absoluteRenderBounds": {
+        "x": -2048,
+        "y": -20340.57421875,
+        "width": 16.416259765625,
+        "height": 11.421875
+      },
+      "constraints": {
+        "horizontal": "SCALE",
+        "vertical": "SCALE"
+      },
+      "layoutSizingHorizontal": "FIXED",
+      "layoutSizingVertical": "FIXED",
+      "layoutAlign": "INHERIT",
+      "layoutGrow": 0,
+      "layoutPositioning": "AUTO",
+      "minWidth": null,
+      "maxWidth": null,
+      "minHeight": null,
+      "maxHeight": null,
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0.9647058844566345,
+            "g": 0.572549045085907,
+            "b": 0.11764705926179886
+          },
+          "boundVariables": {}
+        }
+      ],
+      "fillStyleId": "",
+      "strokes": [],
+      "strokeStyleId": "",
+      "strokeWeight": 1,
+      "strokeAlign": "INSIDE",
+      "strokeCap": "NONE",
+      "strokeJoin": "MITER",
+      "dashPattern": [],
+      "cornerRadius": 0,
+      "cornerSmoothing": 0,
+      "effects": [],
+      "effectStyleId": "",
+      "exportSettings": [],
+      "reactions": [],
+      "boundVariables": {},
+      "explicitVariableModes": {}
+    },
+    {
+      "id": "619:112",
+      "name": "Vector",
+      "type": "VECTOR",
+      "parentId": "619:58",
+      "x": 155.341552734375,
+      "y": 45.32859420776367,
+      "width": 17.521299362182617,
+      "height": 6.20288610458374,
+      "visible": true,
+      "locked": false,
+      "opacity": 1,
+      "blendMode": "PASS_THROUGH",
+      "isMask": false,
+      "maskType": "ALPHA",
+      "rotation": 0,
+      "relativeTransform": [
+        [
+          1,
+          0,
+          155.341552734375
+        ],
+        [
+          0,
+          1,
+          45.32859420776367
+        ]
+      ],
+      "absoluteTransform": [
+        [
+          1,
+          0,
+          -2013.658447265625
+        ],
+        [
+          0,
+          1,
+          -20347.671875
+        ]
+      ],
+      "absoluteBoundingBox": {
+        "x": -2013.658447265625,
+        "y": -20347.671875,
+        "width": 17.521299362182617,
+        "height": 6.20288610458374
+      },
+      "absoluteRenderBounds": {
+        "x": -2013.658447265625,
+        "y": -20347.671875,
+        "width": 17.521240234375,
+        "height": 6.203125
+      },
+      "constraints": {
+        "horizontal": "SCALE",
+        "vertical": "SCALE"
+      },
+      "layoutSizingHorizontal": "FIXED",
+      "layoutSizingVertical": "FIXED",
+      "layoutAlign": "INHERIT",
+      "layoutGrow": 0,
+      "layoutPositioning": "AUTO",
+      "minWidth": null,
+      "maxWidth": null,
+      "minHeight": null,
+      "maxHeight": null,
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0.9378374814987183,
+            "g": 0.8657094240188599,
+            "b": 0.07230053842067719
+          },
+          "boundVariables": {}
+        }
+      ],
+      "fillStyleId": "",
+      "strokes": [],
+      "strokeStyleId": "",
+      "strokeWeight": 1,
+      "strokeAlign": "INSIDE",
+      "strokeCap": "NONE",
+      "strokeJoin": "MITER",
+      "dashPattern": [],
+      "cornerRadius": 0,
+      "cornerSmoothing": 0,
+      "effects": [],
+      "effectStyleId": "",
+      "exportSettings": [],
+      "reactions": [],
+      "boundVariables": {},
+      "explicitVariableModes": {}
+    },
+    {
+      "id": "619:114",
+      "name": "Mask group",
+      "type": "GROUP",
+      "parentId": "619:58",
+      "x": 120,
+      "y": 417,
+      "width": 577,
+      "height": 577,
+      "visible": true,
+      "locked": false,
+      "opacity": 1,
+      "blendMode": "PASS_THROUGH",
+      "isMask": false,
+      "maskType": "ALPHA",
+      "rotation": 0,
+      "relativeTransform": [
+        [
+          1,
+          0,
+          120
+        ],
+        [
+          0,
+          1,
+          417
+        ]
+      ],
+      "absoluteTransform": [
+        [
+          1,
+          0,
+          -2049
+        ],
+        [
+          0,
+          1,
+          -19976
+        ]
+      ],
+      "absoluteBoundingBox": {
+        "x": -2049,
+        "y": -19976,
+        "width": 577,
+        "height": 577
+      },
+      "absoluteRenderBounds": {
+        "x": -2049,
+        "y": -19976,
+        "width": 577,
+        "height": 577
+      },
+      "layoutSizingHorizontal": "FIXED",
+      "layoutSizingVertical": "FIXED",
+      "layoutAlign": "INHERIT",
+      "layoutGrow": 0,
+      "layoutPositioning": "AUTO",
+      "minWidth": null,
+      "maxWidth": null,
+      "minHeight": null,
+      "maxHeight": null,
+      "effects": [],
+      "effectStyleId": "",
+      "exportSettings": [],
+      "reactions": [],
+      "boundVariables": {},
+      "explicitVariableModes": {}
+    },
+    {
+      "id": "619:115",
+      "name": "Rectangle 140",
+      "type": "RECTANGLE",
+      "parentId": "619:114",
+      "x": 120,
+      "y": 417,
+      "width": 577,
+      "height": 577,
+      "visible": true,
+      "locked": false,
+      "opacity": 1,
+      "blendMode": "PASS_THROUGH",
+      "isMask": true,
+      "maskType": "ALPHA",
+      "rotation": 0,
+      "relativeTransform": [
+        [
+          1,
+          0,
+          120
+        ],
+        [
+          0,
+          1,
+          417
+        ]
+      ],
+      "absoluteTransform": [
+        [
+          1,
+          0,
+          -2049
+        ],
+        [
+          0,
+          1,
+          -19976
+        ]
+      ],
+      "absoluteBoundingBox": {
+        "x": -2049,
+        "y": -19976,
+        "width": 577,
+        "height": 577
+      },
+      "absoluteRenderBounds": null,
+      "constraints": {
+        "horizontal": "MIN",
+        "vertical": "MIN"
+      },
+      "layoutSizingHorizontal": "FIXED",
+      "layoutSizingVertical": "FIXED",
+      "layoutAlign": "INHERIT",
+      "layoutGrow": 0,
+      "layoutPositioning": "AUTO",
+      "minWidth": null,
+      "maxWidth": null,
+      "minHeight": null,
+      "maxHeight": null,
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0.8509804010391235,
+            "g": 0.8509804010391235,
+            "b": 0.8509804010391235
+          },
+          "boundVariables": {}
+        }
+      ],
+      "fillStyleId": "",
+      "strokes": [],
+      "strokeStyleId": "",
+      "strokeWeight": 1,
+      "strokeAlign": "INSIDE",
+      "strokeCap": "NONE",
+      "strokeJoin": "MITER",
+      "strokeTopWeight": 1,
+      "strokeRightWeight": 1,
+      "strokeBottomWeight": 1,
+      "strokeLeftWeight": 1,
+      "dashPattern": [],
+      "cornerRadius": 16,
+      "topLeftRadius": 16,
+      "topRightRadius": 16,
+      "bottomLeftRadius": 16,
+      "bottomRightRadius": 16,
+      "cornerSmoothing": 0,
+      "effects": [],
+      "effectStyleId": "",
+      "exportSettings": [],
+      "reactions": [],
+      "boundVariables": {},
+      "explicitVariableModes": {}
+    },
+    {
+      "id": "619:116",
+      "name": "Mask group",
+      "type": "GROUP",
+      "parentId": "619:58",
+      "x": 120,
+      "y": 429,
+      "width": 577,
+      "height": 577,
+      "visible": true,
+      "locked": false,
+      "opacity": 1,
+      "blendMode": "PASS_THROUGH",
+      "isMask": false,
+      "maskType": "ALPHA",
+      "rotation": 0,
+      "relativeTransform": [
+        [
+          1,
+          0,
+          120
+        ],
+        [
+          0,
+          1,
+          429
+        ]
+      ],
+      "absoluteTransform": [
+        [
+          1,
+          0,
+          -2049
+        ],
+        [
+          0,
+          1,
+          -19964
+        ]
+      ],
+      "absoluteBoundingBox": {
+        "x": -2049,
+        "y": -19964,
+        "width": 577,
+        "height": 577
+      },
+      "absoluteRenderBounds": {
+        "x": -2049,
+        "y": -19964,
+        "width": 577,
+        "height": 577
+      },
+      "layoutSizingHorizontal": "FIXED",
+      "layoutSizingVertical": "FIXED",
+      "layoutAlign": "INHERIT",
+      "layoutGrow": 0,
+      "layoutPositioning": "AUTO",
+      "minWidth": null,
+      "maxWidth": null,
+      "minHeight": null,
+      "maxHeight": null,
+      "effects": [],
+      "effectStyleId": "",
+      "exportSettings": [],
+      "reactions": [],
+      "boundVariables": {},
+      "explicitVariableModes": {}
+    },
+    {
+      "id": "619:117",
+      "name": "Rectangle 144",
+      "type": "RECTANGLE",
+      "parentId": "619:116",
+      "x": 120,
+      "y": 429,
+      "width": 577,
+      "height": 577,
+      "visible": true,
+      "locked": false,
+      "opacity": 1,
+      "blendMode": "PASS_THROUGH",
+      "isMask": true,
+      "maskType": "ALPHA",
+      "rotation": 0,
+      "relativeTransform": [
+        [
+          1,
+          0,
+          120
+        ],
+        [
+          0,
+          1,
+          429
+        ]
+      ],
+      "absoluteTransform": [
+        [
+          1,
+          0,
+          -2049
+        ],
+        [
+          0,
+          1,
+          -19964
+        ]
+      ],
+      "absoluteBoundingBox": {
+        "x": -2049,
+        "y": -19964,
+        "width": 577,
+        "height": 577
+      },
+      "absoluteRenderBounds": null,
+      "constraints": {
+        "horizontal": "MIN",
+        "vertical": "MIN"
+      },
+      "layoutSizingHorizontal": "FIXED",
+      "layoutSizingVertical": "FIXED",
+      "layoutAlign": "INHERIT",
+      "layoutGrow": 0,
+      "layoutPositioning": "AUTO",
+      "minWidth": null,
+      "maxWidth": null,
+      "minHeight": null,
+      "maxHeight": null,
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0.8509804010391235,
+            "g": 0.8509804010391235,
+            "b": 0.8509804010391235
+          },
+          "boundVariables": {}
+        }
+      ],
+      "fillStyleId": "",
+      "strokes": [],
+      "strokeStyleId": "",
+      "strokeWeight": 1,
+      "strokeAlign": "INSIDE",
+      "strokeCap": "NONE",
+      "strokeJoin": "MITER",
+      "strokeTopWeight": 1,
+      "strokeRightWeight": 1,
+      "strokeBottomWeight": 1,
+      "strokeLeftWeight": 1,
+      "dashPattern": [],
+      "cornerRadius": 16,
+      "topLeftRadius": 16,
+      "topRightRadius": 16,
+      "bottomLeftRadius": 16,
+      "bottomRightRadius": 16,
+      "cornerSmoothing": 0,
+      "effects": [],
+      "effectStyleId": "",
+      "exportSettings": [],
+      "reactions": [],
+      "boundVariables": {},
+      "explicitVariableModes": {}
+    },
+    {
+      "id": "619:118",
+      "name": "img_slide_6 1",
+      "type": "RECTANGLE",
+      "parentId": "619:116",
+      "x": 1266,
+      "y": 389,
+      "width": 1363,
+      "height": 744,
+      "visible": true,
+      "locked": false,
+      "opacity": 1,
+      "blendMode": "PASS_THROUGH",
+      "isMask": false,
+      "maskType": "ALPHA",
+      "rotation": -180,
+      "relativeTransform": [
+        [
+          -1,
+          0,
+          1266
+        ],
+        [
+          0,
+          1,
+          389
+        ]
+      ],
+      "absoluteTransform": [
+        [
+          -1,
+          0,
+          -903
+        ],
+        [
+          0,
+          1,
+          -20004
+        ]
+      ],
+      "absoluteBoundingBox": {
+        "x": -2266,
+        "y": -20004,
+        "width": 1363,
+        "height": 744
+      },
+      "absoluteRenderBounds": {
+        "x": -2049,
+        "y": -19964,
+        "width": 577,
+        "height": 577
+      },
+      "constraints": {
+        "horizontal": "MIN",
+        "vertical": "MIN"
+      },
+      "layoutSizingHorizontal": "FIXED",
+      "layoutSizingVertical": "FIXED",
+      "layoutAlign": "INHERIT",
+      "layoutGrow": 0,
+      "layoutPositioning": "AUTO",
+      "minWidth": null,
+      "maxWidth": null,
+      "minHeight": null,
+      "maxHeight": null,
+      "fills": [
+        {
+          "type": "IMAGE",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "scaleMode": "CROP",
+          "scalingFactor": 0.5,
+          "filters": {
+            "exposure": 0,
+            "contrast": 0,
+            "saturation": 0,
+            "temperature": 0,
+            "tint": 0,
+            "highlights": 0,
+            "shadows": 0
+          },
+          "imageTransform": [
+            [
+              1,
+              0,
+              0.10867610573768616
+            ],
+            [
+              0,
+              0.9998589158058167,
+              -0.04566068574786186
+            ]
+          ],
+          "imageHash": "4b54b22cd82abb2443c1d81739006f792498edf9"
+        }
+      ],
+      "fillStyleId": "",
+      "strokes": [],
+      "strokeStyleId": "",
+      "strokeWeight": 1,
+      "strokeAlign": "INSIDE",
+      "strokeCap": "NONE",
+      "strokeJoin": "MITER",
+      "strokeTopWeight": 1,
+      "strokeRightWeight": 1,
+      "strokeBottomWeight": 1,
+      "strokeLeftWeight": 1,
+      "dashPattern": [],
+      "cornerRadius": 0,
+      "topLeftRadius": 0,
+      "topRightRadius": 0,
+      "bottomLeftRadius": 0,
+      "bottomRightRadius": 0,
+      "cornerSmoothing": 0,
+      "effects": [],
+      "effectStyleId": "",
+      "exportSettings": [],
+      "reactions": [],
+      "boundVariables": {},
+      "explicitVariableModes": {}
+    },
+    {
+      "id": "619:122",
+      "name": "Rectangle 141",
+      "type": "RECTANGLE",
+      "parentId": "619:58",
+      "x": 743,
+      "y": 429,
+      "width": 577,
+      "height": 577,
+      "visible": true,
+      "locked": false,
+      "opacity": 1,
+      "blendMode": "PASS_THROUGH",
+      "isMask": false,
+      "maskType": "ALPHA",
+      "rotation": 0,
+      "relativeTransform": [
+        [
+          1,
+          0,
+          743
+        ],
+        [
+          0,
+          1,
+          429
+        ]
+      ],
+      "absoluteTransform": [
+        [
+          1,
+          0,
+          -1426
+        ],
+        [
+          0,
+          1,
+          -19964
+        ]
+      ],
+      "absoluteBoundingBox": {
+        "x": -1426,
+        "y": -19964,
+        "width": 577,
+        "height": 577
+      },
+      "absoluteRenderBounds": {
+        "x": -1426,
+        "y": -19964,
+        "width": 577,
+        "height": 577
+      },
+      "constraints": {
+        "horizontal": "MIN",
+        "vertical": "MIN"
+      },
+      "layoutSizingHorizontal": "FIXED",
+      "layoutSizingVertical": "FIXED",
+      "layoutAlign": "INHERIT",
+      "layoutGrow": 0,
+      "layoutPositioning": "AUTO",
+      "minWidth": null,
+      "maxWidth": null,
+      "minHeight": null,
+      "maxHeight": null,
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0.5333333611488342,
+            "g": 0.8117647171020508,
+            "b": 0.9921568632125854
+          },
+          "boundVariables": {}
+        }
+      ],
+      "fillStyleId": "",
+      "strokes": [],
+      "strokeStyleId": "",
+      "strokeWeight": 1,
+      "strokeAlign": "INSIDE",
+      "strokeCap": "NONE",
+      "strokeJoin": "MITER",
+      "strokeTopWeight": 1,
+      "strokeRightWeight": 1,
+      "strokeBottomWeight": 1,
+      "strokeLeftWeight": 1,
+      "dashPattern": [],
+      "cornerRadius": 16,
+      "topLeftRadius": 16,
+      "topRightRadius": 16,
+      "bottomLeftRadius": 16,
+      "bottomRightRadius": 16,
+      "cornerSmoothing": 0,
+      "effects": [],
+      "effectStyleId": "",
+      "exportSettings": [],
+      "reactions": [],
+      "boundVariables": {},
+      "explicitVariableModes": {}
+    },
+    {
+      "id": "619:129",
+      "name": "Mask group",
+      "type": "GROUP",
+      "parentId": "619:58",
+      "x": 919.1895751953125,
+      "y": 589,
+      "width": 400.81048583984375,
+      "height": 376.9918212890625,
+      "visible": true,
+      "locked": false,
+      "opacity": 1,
+      "blendMode": "PASS_THROUGH",
+      "isMask": false,
+      "maskType": "ALPHA",
+      "rotation": 0,
+      "relativeTransform": [
+        [
+          1,
+          0,
+          919.1895751953125
+        ],
+        [
+          0,
+          1,
+          589
+        ]
+      ],
+      "absoluteTransform": [
+        [
+          1,
+          0,
+          -1249.8104248046875
+        ],
+        [
+          0,
+          1,
+          -19804
+        ]
+      ],
+      "absoluteBoundingBox": {
+        "x": -1249.8104248046875,
+        "y": -19804,
+        "width": 400.81048583984375,
+        "height": 376.9918212890625
+      },
+      "absoluteRenderBounds": {
+        "x": -1249.8104248046875,
+        "y": -19804,
+        "width": 400.81048583984375,
+        "height": 376.9918212890625
+      },
+      "layoutSizingHorizontal": "FIXED",
+      "layoutSizingVertical": "FIXED",
+      "layoutAlign": "INHERIT",
+      "layoutGrow": 0,
+      "layoutPositioning": "AUTO",
+      "minWidth": null,
+      "maxWidth": null,
+      "minHeight": null,
+      "maxHeight": null,
+      "effects": [],
+      "effectStyleId": "",
+      "exportSettings": [],
+      "reactions": [],
+      "boundVariables": {},
+      "explicitVariableModes": {}
+    },
+    {
+      "id": "619:130",
+      "name": "Rectangle 146",
+      "type": "RECTANGLE",
+      "parentId": "619:129",
+      "x": 919.1895425766706,
+      "y": 588.9999999999982,
+      "width": 400.81048583984375,
+      "height": 376.9918212890625,
+      "visible": true,
+      "locked": false,
+      "opacity": 1,
+      "blendMode": "PASS_THROUGH",
+      "isMask": true,
+      "maskType": "ALPHA",
+      "rotation": 0,
+      "relativeTransform": [
+        [
+          1,
+          0,
+          919.1895425766706
+        ],
+        [
+          0,
+          1,
+          588.9999999999982
+        ]
+      ],
+      "absoluteTransform": [
+        [
+          1,
+          0,
+          -1249.8104248046875
+        ],
+        [
+          0,
+          1,
+          -19804
+        ]
+      ],
+      "absoluteBoundingBox": {
+        "x": -1249.8104248046875,
+        "y": -19804,
+        "width": 400.81048583984375,
+        "height": 376.9918212890625
+      },
+      "absoluteRenderBounds": null,
+      "constraints": {
+        "horizontal": "MIN",
+        "vertical": "MIN"
+      },
+      "layoutSizingHorizontal": "FIXED",
+      "layoutSizingVertical": "FIXED",
+      "layoutAlign": "INHERIT",
+      "layoutGrow": 0,
+      "layoutPositioning": "AUTO",
+      "minWidth": null,
+      "maxWidth": null,
+      "minHeight": null,
+      "maxHeight": null,
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0.8509804010391235,
+            "g": 0.8509804010391235,
+            "b": 0.8509804010391235
+          },
+          "boundVariables": {}
+        }
+      ],
+      "fillStyleId": "",
+      "strokes": [],
+      "strokeStyleId": "",
+      "strokeWeight": 1,
+      "strokeAlign": "INSIDE",
+      "strokeCap": "NONE",
+      "strokeJoin": "MITER",
+      "strokeTopWeight": 1,
+      "strokeRightWeight": 1,
+      "strokeBottomWeight": 1,
+      "strokeLeftWeight": 1,
+      "dashPattern": [],
+      "cornerRadius": 0,
+      "topLeftRadius": 0,
+      "topRightRadius": 0,
+      "bottomLeftRadius": 0,
+      "bottomRightRadius": 0,
+      "cornerSmoothing": 0,
+      "effects": [],
+      "effectStyleId": "",
+      "exportSettings": [],
+      "reactions": [],
+      "boundVariables": {},
+      "explicitVariableModes": {}
+    },
+    {
+      "id": "619:131",
+      "name": "Group 122",
+      "type": "GROUP",
+      "parentId": "619:129",
+      "x": 963.4906921386719,
+      "y": 640.3705024719238,
+      "width": 506.39459228515625,
+      "height": 308.37469482421875,
+      "visible": true,
+      "locked": false,
+      "opacity": 1,
+      "blendMode": "PASS_THROUGH",
+      "isMask": false,
+      "maskType": "ALPHA",
+      "rotation": 0,
+      "relativeTransform": [
+        [
+          1,
+          0,
+          963.4906921386719
+        ],
+        [
+          0,
+          1,
+          640.3705024719238
+        ]
+      ],
+      "absoluteTransform": [
+        [
+          1,
+          0,
+          -1205.50927734375
+        ],
+        [
+          0,
+          1,
+          -19752.62890625
+        ]
+      ],
+      "absoluteBoundingBox": {
+        "x": -1205.50927734375,
+        "y": -19752.62890625,
+        "width": 506.39459228515625,
+        "height": 308.37469482421875
+      },
+      "absoluteRenderBounds": {
+        "x": -1205.50927734375,
+        "y": -19752.62890625,
+        "width": 356.50933837890625,
+        "height": 308.375
+      },
+      "layoutSizingHorizontal": "FIXED",
+      "layoutSizingVertical": "FIXED",
+      "layoutAlign": "INHERIT",
+      "layoutGrow": 0,
+      "layoutPositioning": "AUTO",
+      "minWidth": null,
+      "maxWidth": null,
+      "minHeight": null,
+      "maxHeight": null,
+      "effects": [],
+      "effectStyleId": "",
+      "exportSettings": [],
+      "reactions": [],
+      "boundVariables": {},
+      "explicitVariableModes": {}
+    },
+    {
+      "id": "619:132",
+      "name": "apple_intelligence__bqi8tl754cfm_large_2x 2",
+      "type": "RECTANGLE",
+      "parentId": "619:131",
+      "x": 963.4906618875266,
+      "y": 640.3708894383162,
+      "width": 506.39459228515625,
+      "height": 308.37469482421875,
+      "visible": true,
+      "locked": false,
+      "opacity": 1,
+      "blendMode": "PASS_THROUGH",
+      "isMask": false,
+      "maskType": "ALPHA",
+      "rotation": 0,
+      "relativeTransform": [
+        [
+          1,
+          0,
+          963.4906618875266
+        ],
+        [
+          0,
+          1,
+          640.3708894383162
+        ]
+      ],
+      "absoluteTransform": [
+        [
+          1,
+          0,
+          -1205.50927734375
+        ],
+        [
+          0,
+          1,
+          -19752.62890625
+        ]
+      ],
+      "absoluteBoundingBox": {
+        "x": -1205.50927734375,
+        "y": -19752.62890625,
+        "width": 506.39459228515625,
+        "height": 308.37469482421875
+      },
+      "absoluteRenderBounds": {
+        "x": -1205.50927734375,
+        "y": -19752.62890625,
+        "width": 356.50933837890625,
+        "height": 308.375
+      },
+      "constraints": {
+        "horizontal": "MIN",
+        "vertical": "MIN"
+      },
+      "layoutSizingHorizontal": "FIXED",
+      "layoutSizingVertical": "FIXED",
+      "layoutAlign": "INHERIT",
+      "layoutGrow": 0,
+      "layoutPositioning": "AUTO",
+      "minWidth": null,
+      "maxWidth": null,
+      "minHeight": null,
+      "maxHeight": null,
+      "fills": [
+        {
+          "type": "IMAGE",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "scaleMode": "FILL",
+          "scalingFactor": 0.5,
+          "rotation": 0,
+          "filters": {
+            "exposure": 0,
+            "contrast": 0,
+            "saturation": 0,
+            "temperature": 0,
+            "tint": 0,
+            "highlights": 0,
+            "shadows": 0
+          },
+          "imageTransform": [
+            [
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0
+            ]
+          ],
+          "imageHash": "f3c1309edb31c700e1760ba1d9273b5fbdf743e6"
+        }
+      ],
+      "fillStyleId": "",
+      "strokes": [],
+      "strokeStyleId": "",
+      "strokeWeight": 1,
+      "strokeAlign": "INSIDE",
+      "strokeCap": "NONE",
+      "strokeJoin": "MITER",
+      "strokeTopWeight": 1,
+      "strokeRightWeight": 1,
+      "strokeBottomWeight": 1,
+      "strokeLeftWeight": 1,
+      "dashPattern": [],
+      "cornerRadius": 0,
+      "topLeftRadius": 0,
+      "topRightRadius": 0,
+      "bottomLeftRadius": 0,
+      "bottomRightRadius": 0,
+      "cornerSmoothing": 0,
+      "effects": [],
+      "effectStyleId": "",
+      "exportSettings": [],
+      "reactions": [],
+      "boundVariables": {},
+      "explicitVariableModes": {}
+    },
+    {
+      "id": "619:133",
+      "name": "Mask group",
+      "type": "GROUP",
+      "parentId": "619:129",
+      "x": 991.7563629150391,
+      "y": 632.6816902160645,
+      "width": 445.399169921875,
+      "height": 286.0832824707031,
+      "visible": true,
+      "locked": false,
+      "opacity": 1,
+      "blendMode": "PASS_THROUGH",
+      "isMask": false,
+      "maskType": "ALPHA",
+      "rotation": 0,
+      "relativeTransform": [
+        [
+          1,
+          0,
+          991.7563629150391
+        ],
+        [
+          0,
+          1,
+          632.6816902160645
+        ]
+      ],
+      "absoluteTransform": [
+        [
+          1,
+          0,
+          -1177.24365234375
+        ],
+        [
+          0,
+          1,
+          -19760.318359375
+        ]
+      ],
+      "absoluteBoundingBox": {
+        "x": -1177.24365234375,
+        "y": -19760.318359375,
+        "width": 445.399169921875,
+        "height": 286.0832824707031
+      },
+      "absoluteRenderBounds": {
+        "x": -1177.24365234375,
+        "y": -19760.318359375,
+        "width": 328.24371337890625,
+        "height": 286.083984375
+      },
+      "layoutSizingHorizontal": "FIXED",
+      "layoutSizingVertical": "FIXED",
+      "layoutAlign": "INHERIT",
+      "layoutGrow": 0,
+      "layoutPositioning": "AUTO",
+      "minWidth": null,
+      "maxWidth": null,
+      "minHeight": null,
+      "maxHeight": null,
+      "effects": [],
+      "effectStyleId": "",
+      "exportSettings": [],
+      "reactions": [],
+      "boundVariables": {},
+      "explicitVariableModes": {}
+    },
+    {
+      "id": "619:134",
+      "name": "Rectangle 145",
+      "type": "RECTANGLE",
+      "parentId": "619:133",
+      "x": 991.7563776145671,
+      "y": 632.6817392723678,
+      "width": 445.399169921875,
+      "height": 286.0832824707031,
+      "visible": true,
+      "locked": false,
+      "opacity": 1,
+      "blendMode": "PASS_THROUGH",
+      "isMask": true,
+      "maskType": "ALPHA",
+      "rotation": 0,
+      "relativeTransform": [
+        [
+          1,
+          0,
+          991.7563776145671
+        ],
+        [
+          0,
+          1,
+          632.6817392723678
+        ]
+      ],
+      "absoluteTransform": [
+        [
+          1,
+          0,
+          -1177.24365234375
+        ],
+        [
+          0,
+          1,
+          -19760.318359375
+        ]
+      ],
+      "absoluteBoundingBox": {
+        "x": -1177.24365234375,
+        "y": -19760.318359375,
+        "width": 445.399169921875,
+        "height": 286.0832824707031
+      },
+      "absoluteRenderBounds": null,
+      "constraints": {
+        "horizontal": "MIN",
+        "vertical": "MIN"
+      },
+      "layoutSizingHorizontal": "FIXED",
+      "layoutSizingVertical": "FIXED",
+      "layoutAlign": "INHERIT",
+      "layoutGrow": 0,
+      "layoutPositioning": "AUTO",
+      "minWidth": null,
+      "maxWidth": null,
+      "minHeight": null,
+      "maxHeight": null,
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0.8509804010391235,
+            "g": 0.8509804010391235,
+            "b": 0.8509804010391235
+          },
+          "boundVariables": {}
+        }
+      ],
+      "fillStyleId": "",
+      "strokes": [],
+      "strokeStyleId": "",
+      "strokeWeight": 1,
+      "strokeAlign": "INSIDE",
+      "strokeCap": "NONE",
+      "strokeJoin": "MITER",
+      "strokeTopWeight": 1,
+      "strokeRightWeight": 1,
+      "strokeBottomWeight": 1,
+      "strokeLeftWeight": 1,
+      "dashPattern": [],
+      "cornerRadius": 0,
+      "topLeftRadius": 0,
+      "topRightRadius": 0,
+      "bottomLeftRadius": 0,
+      "bottomRightRadius": 0,
+      "cornerSmoothing": 0,
+      "effects": [],
+      "effectStyleId": "",
+      "exportSettings": [],
+      "reactions": [],
+      "boundVariables": {},
+      "explicitVariableModes": {}
+    },
+    {
+      "id": "619:135",
+      "name": "Frame 3 (2) 1",
+      "type": "RECTANGLE",
+      "parentId": "619:133",
+      "x": 1010.374454498291,
+      "y": 650.1714668273926,
+      "width": 415.83306884765625,
+      "height": 679.7438354492188,
+      "visible": true,
+      "locked": false,
+      "opacity": 1,
+      "blendMode": "PASS_THROUGH",
+      "isMask": false,
+      "maskType": "ALPHA",
+      "rotation": 0,
+      "relativeTransform": [
+        [
+          1,
+          0,
+          1010.374454498291
+        ],
+        [
+          0,
+          1,
+          650.1714668273926
+        ]
+      ],
+      "absoluteTransform": [
+        [
+          1,
+          0,
+          -1158.6256103515625
+        ],
+        [
+          0,
+          1,
+          -19742.828125
+        ]
+      ],
+      "absoluteBoundingBox": {
+        "x": -1158.6256103515625,
+        "y": -19742.828125,
+        "width": 415.83306884765625,
+        "height": 679.7438354492188
+      },
+      "absoluteRenderBounds": {
+        "x": -1158.6256103515625,
+        "y": -19742.828125,
+        "width": 309.62567138671875,
+        "height": 268.59375
+      },
+      "constraints": {
+        "horizontal": "MIN",
+        "vertical": "MIN"
+      },
+      "layoutSizingHorizontal": "FIXED",
+      "layoutSizingVertical": "FIXED",
+      "layoutAlign": "INHERIT",
+      "layoutGrow": 0,
+      "layoutPositioning": "AUTO",
+      "minWidth": null,
+      "maxWidth": null,
+      "minHeight": null,
+      "maxHeight": null,
+      "fills": [
+        {
+          "type": "IMAGE",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "scaleMode": "FILL",
+          "scalingFactor": 0.5,
+          "rotation": 0,
+          "filters": {
+            "exposure": 0,
+            "contrast": 0,
+            "saturation": 0,
+            "temperature": 0,
+            "tint": 0,
+            "highlights": 0,
+            "shadows": 0
+          },
+          "imageTransform": [
+            [
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0
+            ]
+          ],
+          "imageHash": "3abd11ccbdd626a2438cee9201ab1ec7f13629cb"
+        }
+      ],
+      "fillStyleId": "",
+      "strokes": [],
+      "strokeStyleId": "",
+      "strokeWeight": 1,
+      "strokeAlign": "INSIDE",
+      "strokeCap": "NONE",
+      "strokeJoin": "MITER",
+      "strokeTopWeight": 1,
+      "strokeRightWeight": 1,
+      "strokeBottomWeight": 1,
+      "strokeLeftWeight": 1,
+      "dashPattern": [],
+      "cornerRadius": 0,
+      "topLeftRadius": 0,
+      "topRightRadius": 0,
+      "bottomLeftRadius": 0,
+      "bottomRightRadius": 0,
+      "cornerSmoothing": 0,
+      "effects": [
+        {
+          "type": "DROP_SHADOW",
+          "visible": true,
+          "radius": 4,
+          "boundVariables": {},
+          "color": {
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "a": 0.25
+          },
+          "offset": {
+            "x": 4,
+            "y": 4
+          },
+          "spread": 0,
+          "blendMode": "NORMAL",
+          "showShadowBehindNode": false
+        }
+      ],
+      "effectStyleId": "",
+      "exportSettings": [],
+      "reactions": [],
+      "boundVariables": {},
+      "explicitVariableModes": {}
+    },
+    {
+      "id": "619:138",
+      "name": "Vector 4",
+      "type": "VECTOR",
+      "parentId": "619:58",
+      "x": 170,
+      "y": 687,
+      "width": 44,
+      "height": 0,
+      "visible": true,
+      "locked": false,
+      "opacity": 1,
+      "blendMode": "PASS_THROUGH",
+      "isMask": false,
+      "maskType": "ALPHA",
+      "rotation": 0,
+      "relativeTransform": [
+        [
+          1,
+          0,
+          170
+        ],
+        [
+          0,
+          1,
+          687
+        ]
+      ],
+      "absoluteTransform": [
+        [
+          1,
+          0,
+          -1999
+        ],
+        [
+          0,
+          1,
+          -19706
+        ]
+      ],
+      "absoluteBoundingBox": {
+        "x": -1999,
+        "y": -19706,
+        "width": 44,
+        "height": 0
+      },
+      "absoluteRenderBounds": {
+        "x": -1999,
+        "y": -19706.5,
+        "width": 44,
+        "height": 1
+      },
+      "constraints": {
+        "horizontal": "MIN",
+        "vertical": "MIN"
+      },
+      "layoutSizingHorizontal": "FIXED",
+      "layoutSizingVertical": "FIXED",
+      "layoutAlign": "INHERIT",
+      "layoutGrow": 0,
+      "layoutPositioning": "AUTO",
+      "minWidth": null,
+      "maxWidth": null,
+      "minHeight": null,
+      "maxHeight": null,
+      "fills": [],
+      "fillStyleId": "",
+      "strokes": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1
+          },
+          "boundVariables": {}
+        }
+      ],
+      "strokeStyleId": "",
+      "strokeWeight": 1,
+      "strokeAlign": "CENTER",
+      "strokeCap": "NONE",
+      "strokeJoin": "MITER",
+      "dashPattern": [],
+      "cornerRadius": 0,
+      "cornerSmoothing": 0,
+      "effects": [],
+      "effectStyleId": "",
+      "exportSettings": [],
+      "reactions": [],
+      "boundVariables": {},
+      "explicitVariableModes": {}
+    },
+    {
+      "id": "619:139",
+      "name": "Vector 5",
+      "type": "VECTOR",
+      "parentId": "619:58",
+      "x": 790,
+      "y": 687,
+      "width": 44,
+      "height": 0,
+      "visible": true,
+      "locked": false,
+      "opacity": 1,
+      "blendMode": "PASS_THROUGH",
+      "isMask": false,
+      "maskType": "ALPHA",
+      "rotation": 0,
+      "relativeTransform": [
+        [
+          1,
+          0,
+          790
+        ],
+        [
+          0,
+          1,
+          687
+        ]
+      ],
+      "absoluteTransform": [
+        [
+          1,
+          0,
+          -1379
+        ],
+        [
+          0,
+          1,
+          -19706
+        ]
+      ],
+      "absoluteBoundingBox": {
+        "x": -1379,
+        "y": -19706,
+        "width": 44,
+        "height": 0
+      },
+      "absoluteRenderBounds": {
+        "x": -1379,
+        "y": -19706.5,
+        "width": 44,
+        "height": 1
+      },
+      "constraints": {
+        "horizontal": "MIN",
+        "vertical": "MIN"
+      },
+      "layoutSizingHorizontal": "FIXED",
+      "layoutSizingVertical": "FIXED",
+      "layoutAlign": "INHERIT",
+      "layoutGrow": 0,
+      "layoutPositioning": "AUTO",
+      "minWidth": null,
+      "maxWidth": null,
+      "minHeight": null,
+      "maxHeight": null,
+      "fills": [],
+      "fillStyleId": "",
+      "strokes": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0,
+            "g": 0,
+            "b": 0
+          },
+          "boundVariables": {}
+        }
+      ],
+      "strokeStyleId": "",
+      "strokeWeight": 1,
+      "strokeAlign": "CENTER",
+      "strokeCap": "NONE",
+      "strokeJoin": "MITER",
+      "dashPattern": [],
+      "cornerRadius": 0,
+      "cornerSmoothing": 0,
+      "effects": [],
+      "effectStyleId": "",
+      "exportSettings": [],
+      "reactions": [],
+      "boundVariables": {},
+      "explicitVariableModes": {}
+    }
+  ]
+}

@@ -1,0 +1,1795 @@
+{
+  "frameId": "619:58",
+  "nodes": [
+    {
+      "id": "619:59",
+      "name": "I use research to understand how people think, what they need, and how they interact with technology.  Through interviews, analysis, and design, I turn those insights into clearer, more intuitive digital experiences.",
+      "type": "TEXT",
+      "parentId": "619:58",
+      "x": 123,
+      "y": 312,
+      "width": 994,
+      "height": 52,
+      "characters": "I use research to understand how people think, what they need, and how they interact with technology.  Through interviews, analysis, and design, I turn those insights into clearer, more intuitive digital experiences.",
+      "fontName": {
+        "family": "Inter",
+        "style": "Regular",
+        "variationSettings": {
+          "wght": 400,
+          "slnt": 0
+        }
+      },
+      "fontSize": 16,
+      "lineHeight": {
+        "unit": "PIXELS",
+        "value": 26
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "TOP",
+      "textAutoResize": "HEIGHT",
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0,
+            "g": 0,
+            "b": 0
+          },
+          "boundVariables": {}
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1,
+      "effects": [],
+      "visible": true,
+      "opacity": 1,
+      "absoluteBoundingBox": {
+        "x": -2046,
+        "y": -20081,
+        "width": 994,
+        "height": 52
+      },
+      "constraints": {
+        "horizontal": "MIN",
+        "vertical": "MIN"
+      },
+      "textStyleId": "",
+      "reactions": [],
+      "boundVariables": {},
+      "segments": [
+        {
+          "characters": "I use research to understand how people think, what they need, and how they interact with technology.  Through interviews, analysis, and design, I turn those insights into clearer, more intuitive digital experiences.",
+          "start": 0,
+          "end": 216,
+          "fontSize": 16,
+          "fontName": {
+            "family": "Inter",
+            "style": "Regular",
+            "variationSettings": {
+              "wght": 400,
+              "slnt": 0
+            }
+          },
+          "textDecoration": "NONE",
+          "textCase": "ORIGINAL",
+          "lineHeight": {
+            "unit": "PIXELS",
+            "value": 26
+          },
+          "letterSpacing": {
+            "unit": "PERCENT",
+            "value": 0
+          },
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0,
+                "g": 0,
+                "b": 0
+              },
+              "boundVariables": {}
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "619:60",
+      "name": "Selected Case Studies",
+      "type": "TEXT",
+      "parentId": "619:58",
+      "x": 121,
+      "y": 255,
+      "width": 471,
+      "height": 44,
+      "characters": "Selected Case Studies",
+      "fontName": {
+        "family": "Inter",
+        "style": "Bold",
+        "variationSettings": {
+          "wght": 700,
+          "slnt": 0
+        }
+      },
+      "fontSize": 36,
+      "lineHeight": {
+        "unit": "PIXELS",
+        "value": 44
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "TOP",
+      "textAutoResize": "HEIGHT",
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0,
+            "g": 0,
+            "b": 0
+          },
+          "boundVariables": {}
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1,
+      "effects": [],
+      "visible": true,
+      "opacity": 1,
+      "absoluteBoundingBox": {
+        "x": -2048,
+        "y": -20138,
+        "width": 471,
+        "height": 44
+      },
+      "constraints": {
+        "horizontal": "MIN",
+        "vertical": "MIN"
+      },
+      "textStyleId": "",
+      "reactions": [],
+      "boundVariables": {},
+      "segments": [
+        {
+          "characters": "Selected Case Studies",
+          "start": 0,
+          "end": 21,
+          "fontSize": 36,
+          "fontName": {
+            "family": "Inter",
+            "style": "Bold",
+            "variationSettings": {
+              "wght": 700,
+              "slnt": 0
+            }
+          },
+          "textDecoration": "NONE",
+          "textCase": "ORIGINAL",
+          "lineHeight": {
+            "unit": "PIXELS",
+            "value": 44
+          },
+          "letterSpacing": {
+            "unit": "PERCENT",
+            "value": 0
+          },
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0,
+                "g": 0,
+                "b": 0
+              },
+              "boundVariables": {}
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "619:61",
+      "name": "UX RESEARCH & DESIGN",
+      "type": "TEXT",
+      "parentId": "619:58",
+      "x": 120,
+      "y": 205,
+      "width": 254,
+      "height": 26,
+      "characters": "UX RESEARCH & DESIGN",
+      "fontName": {
+        "family": "Inter",
+        "style": "Regular",
+        "variationSettings": {
+          "wght": 400,
+          "slnt": 0
+        }
+      },
+      "fontSize": 15,
+      "lineHeight": {
+        "unit": "PIXELS",
+        "value": 26
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "TOP",
+      "textAutoResize": "HEIGHT",
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0,
+            "g": 0,
+            "b": 0
+          },
+          "boundVariables": {}
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1,
+      "effects": [],
+      "visible": true,
+      "opacity": 1,
+      "absoluteBoundingBox": {
+        "x": -2049,
+        "y": -20188,
+        "width": 254,
+        "height": 26
+      },
+      "constraints": {
+        "horizontal": "MIN",
+        "vertical": "MIN"
+      },
+      "textStyleId": "",
+      "reactions": [],
+      "boundVariables": {},
+      "segments": [
+        {
+          "characters": "UX RESEARCH & DESIGN",
+          "start": 0,
+          "end": 20,
+          "fontSize": 15,
+          "fontName": {
+            "family": "Inter",
+            "style": "Regular",
+            "variationSettings": {
+              "wght": 400,
+              "slnt": 0
+            }
+          },
+          "textDecoration": "NONE",
+          "textCase": "ORIGINAL",
+          "lineHeight": {
+            "unit": "PIXELS",
+            "value": 26
+          },
+          "letterSpacing": {
+            "unit": "PERCENT",
+            "value": 0
+          },
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0,
+                "g": 0,
+                "b": 0
+              },
+              "boundVariables": {}
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "619:62",
+      "name": "ABOUT+CONTACT",
+      "type": "TEXT",
+      "parentId": "619:58",
+      "x": 1203,
+      "y": 70,
+      "width": 117,
+      "height": 18,
+      "characters": "ABOUT+CONTACT",
+      "fontName": {
+        "family": "Fira Mono",
+        "style": "Regular"
+      },
+      "fontSize": 15,
+      "lineHeight": {
+        "unit": "PERCENT",
+        "value": 120.00000476837158
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "CENTER",
+      "textAutoResize": "WIDTH_AND_HEIGHT",
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0,
+            "g": 0,
+            "b": 0
+          },
+          "boundVariables": {}
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1,
+      "effects": [],
+      "visible": true,
+      "opacity": 1,
+      "absoluteBoundingBox": {
+        "x": -966,
+        "y": -20323,
+        "width": 117,
+        "height": 18
+      },
+      "constraints": {
+        "horizontal": "MIN",
+        "vertical": "MIN"
+      },
+      "textStyleId": "",
+      "reactions": [],
+      "boundVariables": {},
+      "segments": [
+        {
+          "characters": "ABOUT+CONTACT",
+          "start": 0,
+          "end": 13,
+          "fontSize": 15,
+          "fontName": {
+            "family": "Fira Mono",
+            "style": "Regular"
+          },
+          "textDecoration": "NONE",
+          "textCase": "ORIGINAL",
+          "lineHeight": {
+            "unit": "PERCENT",
+            "value": 120.00000476837158
+          },
+          "letterSpacing": {
+            "unit": "PERCENT",
+            "value": 0
+          },
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0,
+                "g": 0,
+                "b": 0
+              },
+              "boundVariables": {}
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "619:63",
+      "name": "JOURNALISM",
+      "type": "TEXT",
+      "parentId": "619:58",
+      "x": 915,
+      "y": 70,
+      "width": 90,
+      "height": 18,
+      "characters": "JOURNALISM",
+      "fontName": {
+        "family": "Fira Mono",
+        "style": "Regular"
+      },
+      "fontSize": 15,
+      "lineHeight": {
+        "unit": "PERCENT",
+        "value": 120.00000476837158
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "CENTER",
+      "textAutoResize": "WIDTH_AND_HEIGHT",
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0,
+            "g": 0,
+            "b": 0
+          },
+          "boundVariables": {}
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1,
+      "effects": [],
+      "visible": true,
+      "opacity": 1,
+      "absoluteBoundingBox": {
+        "x": -1254,
+        "y": -20323,
+        "width": 90,
+        "height": 18
+      },
+      "constraints": {
+        "horizontal": "MIN",
+        "vertical": "MIN"
+      },
+      "textStyleId": "",
+      "reactions": [],
+      "boundVariables": {},
+      "segments": [
+        {
+          "characters": "JOURNALISM",
+          "start": 0,
+          "end": 10,
+          "fontSize": 15,
+          "fontName": {
+            "family": "Fira Mono",
+            "style": "Regular"
+          },
+          "textDecoration": "NONE",
+          "textCase": "ORIGINAL",
+          "lineHeight": {
+            "unit": "PERCENT",
+            "value": 120.00000476837158
+          },
+          "letterSpacing": {
+            "unit": "PERCENT",
+            "value": 0
+          },
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0,
+                "g": 0,
+                "b": 0
+              },
+              "boundVariables": {}
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "619:64",
+      "name": "SOCIAL MEDIA",
+      "type": "TEXT",
+      "parentId": "619:58",
+      "x": 1050,
+      "y": 70,
+      "width": 108,
+      "height": 18,
+      "characters": "SOCIAL MEDIA",
+      "fontName": {
+        "family": "Fira Mono",
+        "style": "Regular"
+      },
+      "fontSize": 15,
+      "lineHeight": {
+        "unit": "PERCENT",
+        "value": 120.00000476837158
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "CENTER",
+      "textAutoResize": "WIDTH_AND_HEIGHT",
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0,
+            "g": 0,
+            "b": 0
+          },
+          "boundVariables": {}
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1,
+      "effects": [],
+      "visible": true,
+      "opacity": 1,
+      "absoluteBoundingBox": {
+        "x": -1119,
+        "y": -20323,
+        "width": 108,
+        "height": 18
+      },
+      "constraints": {
+        "horizontal": "MIN",
+        "vertical": "MIN"
+      },
+      "textStyleId": "",
+      "reactions": [],
+      "boundVariables": {},
+      "segments": [
+        {
+          "characters": "SOCIAL MEDIA",
+          "start": 0,
+          "end": 12,
+          "fontSize": 15,
+          "fontName": {
+            "family": "Fira Mono",
+            "style": "Regular"
+          },
+          "textDecoration": "NONE",
+          "textCase": "ORIGINAL",
+          "lineHeight": {
+            "unit": "PERCENT",
+            "value": 120.00000476837158
+          },
+          "letterSpacing": {
+            "unit": "PERCENT",
+            "value": 0
+          },
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0,
+                "g": 0,
+                "b": 0
+              },
+              "boundVariables": {}
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "619:65",
+      "name": "VIDEO",
+      "type": "TEXT",
+      "parentId": "619:58",
+      "x": 825,
+      "y": 70,
+      "width": 45,
+      "height": 18,
+      "characters": "VIDEO",
+      "fontName": {
+        "family": "Fira Mono",
+        "style": "Regular"
+      },
+      "fontSize": 15,
+      "lineHeight": {
+        "unit": "PERCENT",
+        "value": 120.00000476837158
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "CENTER",
+      "textAutoResize": "WIDTH_AND_HEIGHT",
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0,
+            "g": 0,
+            "b": 0
+          },
+          "boundVariables": {}
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1,
+      "effects": [],
+      "visible": true,
+      "opacity": 1,
+      "absoluteBoundingBox": {
+        "x": -1344,
+        "y": -20323,
+        "width": 45,
+        "height": 18
+      },
+      "constraints": {
+        "horizontal": "MIN",
+        "vertical": "MIN"
+      },
+      "textStyleId": "",
+      "reactions": [],
+      "boundVariables": {},
+      "segments": [
+        {
+          "characters": "VIDEO",
+          "start": 0,
+          "end": 5,
+          "fontSize": 15,
+          "fontName": {
+            "family": "Fira Mono",
+            "style": "Regular"
+          },
+          "textDecoration": "NONE",
+          "textCase": "ORIGINAL",
+          "lineHeight": {
+            "unit": "PERCENT",
+            "value": 120.00000476837158
+          },
+          "letterSpacing": {
+            "unit": "PERCENT",
+            "value": 0
+          },
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0,
+                "g": 0,
+                "b": 0
+              },
+              "boundVariables": {}
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "619:66",
+      "name": "UX",
+      "type": "TEXT",
+      "parentId": "619:58",
+      "x": 762,
+      "y": 70,
+      "width": 18,
+      "height": 18,
+      "characters": "UX",
+      "fontName": {
+        "family": "Fira Mono",
+        "style": "Regular"
+      },
+      "fontSize": 15,
+      "lineHeight": {
+        "unit": "PERCENT",
+        "value": 120.00000476837158
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "CENTER",
+      "textAutoResize": "WIDTH_AND_HEIGHT",
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0,
+            "g": 0,
+            "b": 0
+          },
+          "boundVariables": {}
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1,
+      "effects": [],
+      "visible": true,
+      "opacity": 1,
+      "absoluteBoundingBox": {
+        "x": -1407,
+        "y": -20323,
+        "width": 18,
+        "height": 18
+      },
+      "constraints": {
+        "horizontal": "MIN",
+        "vertical": "MIN"
+      },
+      "textStyleId": "",
+      "reactions": [],
+      "boundVariables": {},
+      "segments": [
+        {
+          "characters": "UX",
+          "start": 0,
+          "end": 2,
+          "fontSize": 15,
+          "fontName": {
+            "family": "Fira Mono",
+            "style": "Regular"
+          },
+          "textDecoration": "NONE",
+          "textCase": "ORIGINAL",
+          "lineHeight": {
+            "unit": "PERCENT",
+            "value": 120.00000476837158
+          },
+          "letterSpacing": {
+            "unit": "PERCENT",
+            "value": 0
+          },
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0,
+                "g": 0,
+                "b": 0
+              },
+              "boundVariables": {}
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "619:106",
+      "name": "KIANA GEORGE",
+      "type": "TEXT",
+      "parentId": "619:58",
+      "x": 197.863037109375,
+      "y": 70,
+      "width": 108,
+      "height": 18,
+      "characters": "KIANA GEORGE  ",
+      "fontName": {
+        "family": "Fira Mono",
+        "style": "Regular"
+      },
+      "fontSize": 15,
+      "lineHeight": {
+        "unit": "PERCENT",
+        "value": 120.00000476837158
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "CENTER",
+      "textAutoResize": "WIDTH_AND_HEIGHT",
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0,
+            "g": 0,
+            "b": 0
+          },
+          "boundVariables": {}
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1,
+      "effects": [],
+      "visible": true,
+      "opacity": 1,
+      "absoluteBoundingBox": {
+        "x": -1971.136962890625,
+        "y": -20323,
+        "width": 108,
+        "height": 18
+      },
+      "constraints": {
+        "horizontal": "MIN",
+        "vertical": "MIN"
+      },
+      "textStyleId": "",
+      "reactions": [],
+      "boundVariables": {},
+      "segments": [
+        {
+          "characters": "KIANA GEORGE  ",
+          "start": 0,
+          "end": 14,
+          "fontSize": 15,
+          "fontName": {
+            "family": "Fira Mono",
+            "style": "Regular"
+          },
+          "textDecoration": "NONE",
+          "textCase": "ORIGINAL",
+          "lineHeight": {
+            "unit": "PERCENT",
+            "value": 120.00000476837158
+          },
+          "letterSpacing": {
+            "unit": "PERCENT",
+            "value": 0
+          },
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0,
+                "g": 0,
+                "b": 0
+              },
+              "boundVariables": {}
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "619:113",
+      "name": "KIANA GEORGE",
+      "type": "TEXT",
+      "parentId": "619:58",
+      "x": 197.863037109375,
+      "y": 70,
+      "width": 108,
+      "height": 18,
+      "characters": "KIANA GEORGE  ",
+      "fontName": {
+        "family": "Fira Mono",
+        "style": "Regular"
+      },
+      "fontSize": 15,
+      "lineHeight": {
+        "unit": "PERCENT",
+        "value": 120.00000476837158
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "CENTER",
+      "textAutoResize": "WIDTH_AND_HEIGHT",
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0,
+            "g": 0,
+            "b": 0
+          },
+          "boundVariables": {}
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1,
+      "effects": [],
+      "visible": true,
+      "opacity": 1,
+      "absoluteBoundingBox": {
+        "x": -1971.136962890625,
+        "y": -20323,
+        "width": 108,
+        "height": 18
+      },
+      "constraints": {
+        "horizontal": "MIN",
+        "vertical": "MIN"
+      },
+      "textStyleId": "",
+      "reactions": [],
+      "boundVariables": {},
+      "segments": [
+        {
+          "characters": "KIANA GEORGE  ",
+          "start": 0,
+          "end": 14,
+          "fontSize": 15,
+          "fontName": {
+            "family": "Fira Mono",
+            "style": "Regular"
+          },
+          "textDecoration": "NONE",
+          "textCase": "ORIGINAL",
+          "lineHeight": {
+            "unit": "PERCENT",
+            "value": 120.00000476837158
+          },
+          "letterSpacing": {
+            "unit": "PERCENT",
+            "value": 0
+          },
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0,
+                "g": 0,
+                "b": 0
+              },
+              "boundVariables": {}
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "619:123",
+      "name": "Point.ly Title",
+      "type": "TEXT",
+      "parentId": "619:58",
+      "x": 164,
+      "y": 513,
+      "width": 472,
+      "height": 76,
+      "characters": "Obayashi",
+      "fontName": {
+        "family": "Inter",
+        "style": "Bold",
+        "variationSettings": {
+          "wght": 700,
+          "slnt": 0
+        }
+      },
+      "fontSize": 50,
+      "lineHeight": {
+        "unit": "PERCENT",
+        "value": 104.99999523162842
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": -2
+      },
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "TOP",
+      "textAutoResize": "NONE",
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1
+          },
+          "boundVariables": {}
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1,
+      "effects": [],
+      "visible": true,
+      "opacity": 1,
+      "absoluteBoundingBox": {
+        "x": -2005,
+        "y": -19880,
+        "width": 472,
+        "height": 76
+      },
+      "constraints": {
+        "horizontal": "MIN",
+        "vertical": "MIN"
+      },
+      "textStyleId": "",
+      "reactions": [],
+      "boundVariables": {},
+      "segments": [
+        {
+          "characters": "Obayashi",
+          "start": 0,
+          "end": 8,
+          "fontSize": 50,
+          "fontName": {
+            "family": "Inter",
+            "style": "Bold",
+            "variationSettings": {
+              "wght": 700,
+              "slnt": 0
+            }
+          },
+          "textDecoration": "NONE",
+          "textCase": "ORIGINAL",
+          "lineHeight": {
+            "unit": "PERCENT",
+            "value": 104.99999523162842
+          },
+          "letterSpacing": {
+            "unit": "PERCENT",
+            "value": -2
+          },
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 1,
+                "g": 1,
+                "b": 1
+              },
+              "boundVariables": {}
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "619:124",
+      "name": "01 /",
+      "type": "TEXT",
+      "parentId": "619:58",
+      "x": 170,
+      "y": 480,
+      "width": 44,
+      "height": 22,
+      "characters": "01 /",
+      "fontName": {
+        "family": "Fira Mono",
+        "style": "Regular"
+      },
+      "fontSize": 18,
+      "lineHeight": {
+        "unit": "PERCENT",
+        "value": 120.00000476837158
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "CENTER",
+      "textAutoResize": "WIDTH_AND_HEIGHT",
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1
+          },
+          "boundVariables": {}
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1,
+      "effects": [],
+      "visible": true,
+      "opacity": 1,
+      "absoluteBoundingBox": {
+        "x": -1999,
+        "y": -19913,
+        "width": 44,
+        "height": 22
+      },
+      "constraints": {
+        "horizontal": "MIN",
+        "vertical": "MIN"
+      },
+      "textStyleId": "",
+      "reactions": [],
+      "boundVariables": {},
+      "segments": [
+        {
+          "characters": "01 /",
+          "start": 0,
+          "end": 4,
+          "fontSize": 18,
+          "fontName": {
+            "family": "Fira Mono",
+            "style": "Regular"
+          },
+          "textDecoration": "NONE",
+          "textCase": "ORIGINAL",
+          "lineHeight": {
+            "unit": "PERCENT",
+            "value": 120.00000476837158
+          },
+          "letterSpacing": {
+            "unit": "PERCENT",
+            "value": 0
+          },
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 1,
+                "g": 1,
+                "b": 1
+              },
+              "boundVariables": {}
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "619:125",
+      "name": "NORTH AMERICAN  WEBSITE",
+      "type": "TEXT",
+      "parentId": "619:58",
+      "x": 170,
+      "y": 597,
+      "width": 162,
+      "height": 50,
+      "characters": "NORTH AMERICAN  WEBSITE ",
+      "fontName": {
+        "family": "Fira Mono",
+        "style": "Regular"
+      },
+      "fontSize": 18,
+      "lineHeight": {
+        "unit": "PIXELS",
+        "value": 25
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "CENTER",
+      "textAutoResize": "WIDTH_AND_HEIGHT",
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1
+          },
+          "boundVariables": {}
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1,
+      "effects": [],
+      "visible": true,
+      "opacity": 1,
+      "absoluteBoundingBox": {
+        "x": -1999,
+        "y": -19796,
+        "width": 162,
+        "height": 50
+      },
+      "constraints": {
+        "horizontal": "MIN",
+        "vertical": "MIN"
+      },
+      "textStyleId": "",
+      "reactions": [],
+      "boundVariables": {},
+      "segments": [
+        {
+          "characters": "NORTH AMERICAN  WEBSITE ",
+          "start": 0,
+          "end": 24,
+          "fontSize": 18,
+          "fontName": {
+            "family": "Fira Mono",
+            "style": "Regular"
+          },
+          "textDecoration": "NONE",
+          "textCase": "ORIGINAL",
+          "lineHeight": {
+            "unit": "PIXELS",
+            "value": 25
+          },
+          "letterSpacing": {
+            "unit": "PERCENT",
+            "value": 0
+          },
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 1,
+                "g": 1,
+                "b": 1
+              },
+              "boundVariables": {}
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "619:126",
+      "name": "Point.ly Title",
+      "type": "TEXT",
+      "parentId": "619:58",
+      "x": 784,
+      "y": 513,
+      "width": 472,
+      "height": 52,
+      "characters": "Point.ly",
+      "fontName": {
+        "family": "Inter",
+        "style": "Bold",
+        "variationSettings": {
+          "wght": 700,
+          "slnt": 0
+        }
+      },
+      "fontSize": 50,
+      "lineHeight": {
+        "unit": "PERCENT",
+        "value": 104.99999523162842
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": -2
+      },
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "TOP",
+      "textAutoResize": "HEIGHT",
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0,
+            "g": 0,
+            "b": 0
+          },
+          "boundVariables": {}
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1,
+      "effects": [],
+      "visible": true,
+      "opacity": 1,
+      "absoluteBoundingBox": {
+        "x": -1385,
+        "y": -19880,
+        "width": 472,
+        "height": 52
+      },
+      "constraints": {
+        "horizontal": "MIN",
+        "vertical": "MIN"
+      },
+      "textStyleId": "",
+      "reactions": [],
+      "boundVariables": {},
+      "segments": [
+        {
+          "characters": "Point.ly",
+          "start": 0,
+          "end": 8,
+          "fontSize": 50,
+          "fontName": {
+            "family": "Inter",
+            "style": "Bold",
+            "variationSettings": {
+              "wght": 700,
+              "slnt": 0
+            }
+          },
+          "textDecoration": "NONE",
+          "textCase": "ORIGINAL",
+          "lineHeight": {
+            "unit": "PERCENT",
+            "value": 104.99999523162842
+          },
+          "letterSpacing": {
+            "unit": "PERCENT",
+            "value": -2
+          },
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0,
+                "g": 0,
+                "b": 0
+              },
+              "boundVariables": {}
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "619:127",
+      "name": "02 /",
+      "type": "TEXT",
+      "parentId": "619:58",
+      "x": 790,
+      "y": 480,
+      "width": 44,
+      "height": 22,
+      "characters": "02 /",
+      "fontName": {
+        "family": "Fira Mono",
+        "style": "Regular"
+      },
+      "fontSize": 18,
+      "lineHeight": {
+        "unit": "PERCENT",
+        "value": 120.00000476837158
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "CENTER",
+      "textAutoResize": "HEIGHT",
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0,
+            "g": 0,
+            "b": 0
+          },
+          "boundVariables": {}
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1,
+      "effects": [],
+      "visible": true,
+      "opacity": 1,
+      "absoluteBoundingBox": {
+        "x": -1379,
+        "y": -19913,
+        "width": 44,
+        "height": 22
+      },
+      "constraints": {
+        "horizontal": "MIN",
+        "vertical": "MIN"
+      },
+      "textStyleId": "",
+      "reactions": [],
+      "boundVariables": {},
+      "segments": [
+        {
+          "characters": "02 /",
+          "start": 0,
+          "end": 4,
+          "fontSize": 18,
+          "fontName": {
+            "family": "Fira Mono",
+            "style": "Regular"
+          },
+          "textDecoration": "NONE",
+          "textCase": "ORIGINAL",
+          "lineHeight": {
+            "unit": "PERCENT",
+            "value": 120.00000476837158
+          },
+          "letterSpacing": {
+            "unit": "PERCENT",
+            "value": 0
+          },
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0,
+                "g": 0,
+                "b": 0
+              },
+              "boundVariables": {}
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "619:128",
+      "name": "HIGH-FIDELITY PROTOTYPE",
+      "type": "TEXT",
+      "parentId": "619:58",
+      "x": 790,
+      "y": 597,
+      "width": 162,
+      "height": 50,
+      "characters": "HIGH-FIDELITY PROTOTYPE",
+      "fontName": {
+        "family": "Fira Mono",
+        "style": "Regular"
+      },
+      "fontSize": 18,
+      "lineHeight": {
+        "unit": "PIXELS",
+        "value": 25
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "CENTER",
+      "textAutoResize": "HEIGHT",
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0,
+            "g": 0,
+            "b": 0
+          },
+          "boundVariables": {}
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1,
+      "effects": [],
+      "visible": true,
+      "opacity": 1,
+      "absoluteBoundingBox": {
+        "x": -1379,
+        "y": -19796,
+        "width": 162,
+        "height": 50
+      },
+      "constraints": {
+        "horizontal": "MIN",
+        "vertical": "MIN"
+      },
+      "textStyleId": "",
+      "reactions": [],
+      "boundVariables": {},
+      "segments": [
+        {
+          "characters": "HIGH-FIDELITY PROTOTYPE",
+          "start": 0,
+          "end": 23,
+          "fontSize": 18,
+          "fontName": {
+            "family": "Fira Mono",
+            "style": "Regular"
+          },
+          "textDecoration": "NONE",
+          "textCase": "ORIGINAL",
+          "lineHeight": {
+            "unit": "PIXELS",
+            "value": 25
+          },
+          "letterSpacing": {
+            "unit": "PERCENT",
+            "value": 0
+          },
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0,
+                "g": 0,
+                "b": 0
+              },
+              "boundVariables": {}
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "619:136",
+      "name": "Project Lead UX research Product Strategy Interface Design Visual Identity   ",
+      "type": "TEXT",
+      "parentId": "619:58",
+      "x": 170,
+      "y": 705,
+      "width": 170,
+      "height": 184,
+      "characters": "Project Lead UX research Product Strategy Interface Design Visual Identity   ",
+      "fontName": {
+        "family": "Inter",
+        "style": "Regular",
+        "variationSettings": {
+          "wght": 400,
+          "slnt": 0
+        }
+      },
+      "fontSize": 15,
+      "lineHeight": {
+        "unit": "PIXELS",
+        "value": 23
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "TOP",
+      "textAutoResize": "HEIGHT",
+      "strokes": [],
+      "strokeWeight": 1,
+      "effects": [],
+      "visible": true,
+      "opacity": 1,
+      "absoluteBoundingBox": {
+        "x": -1999,
+        "y": -19688,
+        "width": 170,
+        "height": 184
+      },
+      "constraints": {
+        "horizontal": "MIN",
+        "vertical": "MIN"
+      },
+      "textStyleId": "",
+      "reactions": [],
+      "boundVariables": {},
+      "segments": [
+        {
+          "characters": "Project Lead UX research Product Strategy Interface Design Visual Identity",
+          "start": 0,
+          "end": 74,
+          "fontSize": 15,
+          "fontName": {
+            "family": "Inter",
+            "style": "Regular",
+            "variationSettings": {
+              "wght": 400,
+              "slnt": 0
+            }
+          },
+          "textDecoration": "NONE",
+          "textCase": "ORIGINAL",
+          "lineHeight": {
+            "unit": "PIXELS",
+            "value": 23
+          },
+          "letterSpacing": {
+            "unit": "PERCENT",
+            "value": 0
+          },
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 1,
+                "g": 1,
+                "b": 1
+              },
+              "boundVariables": {}
+            }
+          ]
+        },
+        {
+          "characters": "   ",
+          "start": 74,
+          "end": 77,
+          "fontSize": 15,
+          "fontName": {
+            "family": "Inter",
+            "style": "Regular",
+            "variationSettings": {
+              "wght": 400,
+              "slnt": 0
+            }
+          },
+          "textDecoration": "NONE",
+          "textCase": "ORIGINAL",
+          "lineHeight": {
+            "unit": "PIXELS",
+            "value": 23
+          },
+          "letterSpacing": {
+            "unit": "PERCENT",
+            "value": 0
+          },
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0,
+                "g": 0,
+                "b": 0
+              },
+              "boundVariables": {}
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "619:137",
+      "name": "UX research Content Strategy Information Architecture Website Design  ",
+      "type": "TEXT",
+      "parentId": "619:58",
+      "x": 790,
+      "y": 705,
+      "width": 184,
+      "height": 138,
+      "characters": "UX research Content Strategy Information Architecture Website Design  ",
+      "fontName": {
+        "family": "Inter",
+        "style": "Regular",
+        "variationSettings": {
+          "wght": 400,
+          "slnt": 0
+        }
+      },
+      "fontSize": 15,
+      "lineHeight": {
+        "unit": "PIXELS",
+        "value": 23
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "TOP",
+      "textAutoResize": "HEIGHT",
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0,
+            "g": 0,
+            "b": 0
+          },
+          "boundVariables": {}
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1,
+      "effects": [],
+      "visible": true,
+      "opacity": 1,
+      "absoluteBoundingBox": {
+        "x": -1379,
+        "y": -19688,
+        "width": 184,
+        "height": 138
+      },
+      "constraints": {
+        "horizontal": "MIN",
+        "vertical": "MIN"
+      },
+      "textStyleId": "",
+      "reactions": [],
+      "boundVariables": {},
+      "segments": [
+        {
+          "characters": "UX research Content Strategy Information Architecture Website Design  ",
+          "start": 0,
+          "end": 70,
+          "fontSize": 15,
+          "fontName": {
+            "family": "Inter",
+            "style": "Regular",
+            "variationSettings": {
+              "wght": 400,
+              "slnt": 0
+            }
+          },
+          "textDecoration": "NONE",
+          "textCase": "ORIGINAL",
+          "lineHeight": {
+            "unit": "PIXELS",
+            "value": 23
+          },
+          "letterSpacing": {
+            "unit": "PERCENT",
+            "value": 0
+          },
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0,
+                "g": 0,
+                "b": 0
+              },
+              "boundVariables": {}
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
