@@ -80,7 +80,7 @@ test('version 2 source assets remain archived unchanged', async ({ request }) =>
 
 test('About+Contact is a full page with the revised Figma biography, contact details and desktop geometry', async ({ page }) => {
   await page.goto('/');
-  await page.getByRole('link', { name: 'About+Contact', exact: true }).click();
+  await page.getByRole('link', { name: 'ABOUT+CONTACT', exact: true }).click();
   await expect(page).toHaveURL(/\/about\/$/);
   await page.reload();
   await expect(page).toHaveTitle('About + Contact / Kiana George');
@@ -143,13 +143,13 @@ test('profile button rollovers use the requested grey and footer rollover uses t
   await expect(connect).toHaveAttribute('href', '/about/');
 });
 
-test('the revised footer and two-link navigation appear on every active page', async ({ page }) => {
+test('the revised footer and four-link navigation appear on every active page', async ({ page }) => {
   const frame = await version2Frame('footer');
   const source = flatten(frame);
-  for (const path of ['/', '/about/', '/projects/obayashi/', '/projects/pointly/', '/projects/template/']) {
+  for (const path of ['/', '/about/', '/journalism/', '/video/', '/projects/obayashi/', '/projects/pointly/', '/projects/template/']) {
     await page.goto(path);
     const nav = page.getByRole('navigation', { name: 'Main navigation' });
-    await expect(nav.getByRole('link')).toHaveText(['Work','About+Contact']);
+    await expect(nav.getByRole('link')).toHaveText(['UX','VIDEO','JOURNALISM','ABOUT+CONTACT']);
     await expect(nav.getByRole('button')).toHaveCount(0);
     await expect(page.locator('.site-footer')).toHaveCSS('background-color', 'rgb(60, 68, 75)');
     if (page.viewportSize().width === 1440) {
@@ -215,7 +215,7 @@ test('About URLs and assets resolve correctly under a deployment subdirectory', 
   await expect(page.getByRole('link', { name: /Resume/ })).toHaveAttribute('href', '/portfolio/assets/kiana-george-resume.pdf');
   await expect(page.locator('.site-footer__connect')).toHaveAttribute('href', '/portfolio/about/');
   await expect(page.locator('.about-page__portrait img').last()).toHaveAttribute('src', '/portfolio/assets/website-v4-figma/about-imgPortrait2.png');
-  await page.getByRole('navigation', { name: 'Main navigation' }).getByRole('link', { name: 'Work', exact: true }).click();
-  await expect(page).toHaveURL(/\/portfolio\/#work$/);
-  await expect(page.getByRole('heading', { name: 'Select Work' })).toBeInViewport();
+  await page.getByRole('navigation', { name: 'Main navigation' }).getByRole('link', { name: 'UX', exact: true }).click();
+  await expect(page).toHaveURL(/\/portfolio\/$/);
+  await expect(page.getByRole('heading', { name: 'Select Work' })).toBeVisible();
 });

@@ -6,7 +6,7 @@ test('Pointly tile opens its project page and shared navigation returns home', a
   await page.getByRole('link', { name: 'View project 02: Point.ly', exact: true }).click();
   await expect(page).toHaveURL(/\/projects\/pointly\/$/);
   await expect(page.getByRole('heading', { level: 1 })).toHaveText('Point.ly');
-  const about = page.getByRole('link', { name: 'About+Contact', exact: true });
+  const about = page.getByRole('link', { name: 'ABOUT+CONTACT', exact: true });
   await about.click();
   await expect(page).toHaveURL(/\/about\/$/);
   await expect(page.getByRole('heading', { level: 1 })).toHaveText('Curious George, Literally');

@@ -26,9 +26,9 @@ test('portfolio renders only the two current projects with working artwork and p
   expect(errors).toEqual([]);
 });
 
-test('shared About+Contact link opens the full page and Work returns home', async ({ page }) => {
+test('shared About+Contact link opens the full page and UX returns home', async ({ page }) => {
   await page.goto('/');
-  const about = page.getByRole('link', { name: 'About+Contact', exact: true });
+  const about = page.getByRole('link', { name: 'ABOUT+CONTACT', exact: true });
   await about.click();
   await expect(page).toHaveURL(/\/about\/$/);
   await expect(page.getByRole('heading', { level: 1 })).toHaveText('Curious George, Literally');
@@ -36,8 +36,8 @@ test('shared About+Contact link opens the full page and Work returns home', asyn
   await expect(page.getByRole('dialog')).toHaveCount(0);
   await expect(page.getByRole('link', { name: 'kikig6204@gmail.com', exact: true })).toHaveAttribute('href', 'mailto:kikig6204@gmail.com');
   await expect(page.getByRole('link', { name: '650-817-5454' })).toHaveAttribute('href', 'tel:+16508175454');
-  await page.getByRole('navigation', { name: 'Main navigation' }).getByRole('link', { name: 'Work', exact: true }).click();
-  await expect(page).toHaveURL(/\/#work$/);
+  await page.getByRole('navigation', { name: 'Main navigation' }).getByRole('link', { name: 'UX', exact: true }).click();
+  await expect(page).toHaveURL(/\/$/);
 });
 
 test('animation loops continuously and respects reduced motion', async ({ page }) => {

@@ -234,9 +234,9 @@ test('shared pages retain navigation and both Figma case studies return to selec
     await page.goto(path);
     await expect(page.getByRole('heading', { level: 1 })).toBeVisible();
     const navigation = page.getByRole('navigation', { name: 'Main navigation' });
-    await expect(navigation.getByRole('link')).toHaveText(['Work', 'About+Contact']);
-    await navigation.getByRole('link', { name: 'Work', exact: true }).click();
-    await expect(page).toHaveURL(/\/#work$/);
-    await expect(page.getByRole('heading', { name: 'Select Work' })).toBeInViewport();
+    await expect(navigation.getByRole('link')).toHaveText(['UX', 'VIDEO', 'JOURNALISM', 'ABOUT+CONTACT']);
+    await navigation.getByRole('link', { name: 'UX', exact: true }).click();
+    await expect(page).toHaveURL(/\/$/);
+    await expect(page.getByRole('heading', { name: 'Select Work' })).toBeVisible();
   }
 });

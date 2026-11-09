@@ -1,0 +1,40 @@
+export const journalism = {
+  label: 'JOURNALISM', title: 'Selected Features',
+  description: 'Writing gives me a way to explore topics, reflect on experiences, and share perspectives. This collection brings together reported features and personal reflections, shaped by curiosity, conversations, and a closer look at the world around me.',
+  features: [
+    {
+      id: 'food-culture', nodeId: '609:65', imageNodeId: '609:16', titleNodeId: '609:25', publicationNodeId: '609:26',
+      title: 'A recipe for controversy: food, culture, and identity', publication: 'The Highlander',
+      href: 'https://2e91434b-a028-4805-a12d-81297a98eea3.filesusr.com/ugd/0deb7c_fe325fd71d274fd2a9251ca97dc8a779.pdf',
+      image: 'food-culture.png', alt: 'A silhouette filled with food and cultural imagery on a turquoise background',
+      mask: 'feature-card-mask.svg', imageHeight: 425, imageSlot: { x: 3, y: 0, width: 495, height: 425 },
+      caption: { height: 156, top: 20, left: 35, titleWidth: 387, titleGap: 11 },
+    },
+    {
+      id: 'sumo', nodeId: '609:64', imageNodeId: '609:15', titleNodeId: '609:19', publicationNodeId: '609:20',
+      title: 'Sumo wrestling in America — Destined to become huge?', publication: 'Scots Scoop',
+      href: 'https://scotscoop.com/sumo-wrestling-in-america-destined-to-become-huge/',
+      image: 'sumo-wrestling.png', alt: 'Two sumo wrestlers competing in front of a seated audience',
+      mask: 'feature-card-mask.svg', imageHeight: 425, imageSlot: { x: 0, y: 0, width: 499, height: 425 },
+      caption: { height: 156, top: 20, left: 41, titleWidth: 387, titleGap: 11 },
+    },
+    {
+      id: 'allergies', nodeId: '609:58', imageNodeId: '609:14', titleNodeId: '609:28', publicationNodeId: '609:29',
+      title: 'Just one bite could kill', publication: 'Scots Scoop',
+      href: 'https://scotscoop.com/just-one-bite-could-kill/',
+      image: 'food-allergies.png', alt: 'Common food allergens including bread, milk, peanuts, fish, and eggs',
+      mask: 'short-card-mask.svg', imageMask: 'food-allergies-image-mask.svg', imageHeight: 407,
+      imageSlot: { x: -1, y: -0.6470588744, width: 503.0126342773, height: 433.2398986816 },
+      caption: { height: 157, top: 20.5390625, left: 32.1434936523, titleWidth: 390.3652038574, titleGap: 10.14453125 },
+    },
+    {
+      id: 'monk', nodeId: '609:62', imageNodeId: '609:11', titleNodeId: '609:32', publicationNodeId: '609:33',
+      title: 'Everything I learned from a monk in Thailand', publication: 'The Stanford Daily',
+      href: 'https://stanforddaily.com/2020/08/25/everything-i-learned-from-a-monk-in-thailand/',
+      image: 'monk-thailand.png', alt: 'Kiana and her family seated with a Buddhist monk in Thailand',
+      mask: 'short-card-mask.svg', imageMask: 'monk-image-mask.svg', imageHeight: 407,
+      imageSlot: { x: 0, y: 1, width: 498, height: 429 },
+      caption: { height: 157, top: 21, left: 46, titleWidth: 341, publicationWidth: 387, titleGap: 11 },
+    },
+  ],
+};

@@ -1,0 +1,31 @@
+{
+  "checkedDate": "2026-11-08",
+  "method": "Independent HTTP GET with redirects; separate from mocked browser popup checks",
+  "userApprovedDestinations": "One PDF and three articles, exactly as supplied in Figma",
+  "links": [
+    {
+      "nodeId": "609:65",
+      "url": "https://2e91434b-a028-4805-a12d-81297a98eea3.filesusr.com/ugd/0deb7c_fe325fd71d274fd2a9251ca97dc8a779.pdf",
+      "status": 200,
+      "contentType": "application/pdf"
+    },
+    {
+      "nodeId": "609:64",
+      "url": "https://scotscoop.com/sumo-wrestling-in-america-destined-to-become-huge/",
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "nodeId": "609:58",
+      "url": "https://scotscoop.com/just-one-bite-could-kill/",
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "nodeId": "609:62",
+      "url": "https://stanforddaily.com/2020/08/25/everything-i-learned-from-a-monk-in-thailand/",
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8"
+    }
+  ]
+}

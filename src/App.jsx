@@ -7,12 +7,14 @@ import Modal from './components/Modal/Modal.jsx';
 import AboutPage from './pages/AboutPage.jsx';
 import { site } from './data/site.js';
 import { projects } from './data/projects.js';
-import { currentProjectSlug, isAboutPage, siteUrl } from './lib/urls.js';
+import { currentProjectSlug, isAboutPage, isJournalismPage, isVideoPage, siteUrl } from './lib/urls.js';
 import { useInitialHashNavigation } from './lib/useInitialHashNavigation.js';
 
 const CaseStudyPage = lazy(() => import('./pages/CaseStudyPage.jsx'));
 const PointlyCaseStudyPage = lazy(() => import('./pages/PointlyCaseStudyPage.jsx'));
 const ObayashiCaseStudyPage = lazy(() => import('./pages/ObayashiCaseStudyPage.jsx'));
+const JournalismPage = lazy(() => import('./pages/JournalismPage.jsx'));
+const VideoPage = lazy(() => import('./pages/VideoPage.jsx'));
 
 export default function App() {
   useInitialHashNavigation();
@@ -20,6 +22,9 @@ export default function App() {
   const closeDialog = useCallback(() => setDialog(null), []);
   const projectSlug = currentProjectSlug();
   const showAbout = isAboutPage();
+  const showJournalism = isJournalismPage();
+  const showVideo = isVideoPage();
+  const isSectionPage = showAbout || showJournalism || showVideo;
   const isPointly = projectSlug === 'pointly';
   const isObayashi = projectSlug === 'obayashi';
   const ProjectPage = isPointly ? PointlyCaseStudyPage : isObayashi ? ObayashiCaseStudyPage : CaseStudyPage;
@@ -30,13 +35,11 @@ export default function App() {
       <SiteHeader
         variant={isPointly ? 'pointly' : isObayashi ? 'obayashi' : 'default'}
         site={site}
-        homeHref={projectSlug || showAbout ? siteUrl() : '#top'}
-        workHref={projectSlug || showAbout ? `${siteUrl()}#work` : '#work'}
-        aboutHref={siteUrl('about/')}
-        aboutActive={showAbout}
+        homeHref={projectSlug || isSectionPage ? siteUrl() : '#top'}
+        activePage={showAbout ? 'about' : showJournalism ? 'journalism' : showVideo ? 'video' : projectSlug ? undefined : 'ux'}
       />
-      <main id="main" className={`page-container${showAbout ? ' page-container--about' : isPointly || isObayashi ? ' page-container--case-study' : ''}`} tabIndex={-1}>
-        {showAbout ? <AboutPage site={site} /> : projectSlug ? (
+      <main id="main" className={`page-container${showAbout ? ' page-container--about' : showJournalism || showVideo ? ' page-container--features' : isPointly || isObayashi ? ' page-container--case-study' : ''}`} tabIndex={-1}>
+        {showAbout ? <AboutPage site={site} /> : showJournalism || showVideo ? <Suspense fallback={<p className="case-loading" role="status">Loading page…</p>}>{showJournalism ? <JournalismPage /> : <VideoPage />}</Suspense> : projectSlug ? (
           <Suspense fallback={<p className="case-loading" role="status">Loading project…</p>}>
             <ProjectPage slug={projectSlug} onOpenImage={(image, returnFocus) => setDialog({ kind: 'image', title: image.alt, image, returnFocus })} />
           </Suspense>

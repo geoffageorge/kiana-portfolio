@@ -3,10 +3,10 @@ import Logo from '../Logo/Logo.jsx';
 import PointlyMark from '../Logo/PointlyMark.jsx';
 import BrandName from '../BrandName/BrandName.jsx';
 import Navigation from '../Navigation/Navigation.jsx';
-import { assetUrl } from '../../lib/urls.js';
+import { assetUrl, siteUrl } from '../../lib/urls.js';
 import './SiteHeader.css';
 
-export default function SiteHeader({ site, aboutHref, aboutActive = false, homeHref = '#top', workHref = '#work', variant = 'default' }) {
+export default function SiteHeader({ site, homeHref = '#top', activePage, variant = 'default' }) {
   const headerRef = useRef(null);
 
   useLayoutEffect(() => {
@@ -27,9 +27,9 @@ export default function SiteHeader({ site, aboutHref, aboutActive = false, homeH
         <div className="site-header__inner page-container">
           <a className="site-header__brand flex items-center" href={homeHref} aria-label={`${site.name} home`}>
             {variant === 'obayashi' ? <img className="obayashi-mark" src={assetUrl('brand/ki-logo-v4.svg')} width="57" height="38" alt="" aria-hidden="true" data-figma-node="479:58" /> : variant === 'pointly' ? <PointlyMark /> : <Logo />}
-            <BrandName name={site.name} descriptor={site.descriptor} />
+            <BrandName name={site.name} />
           </a>
-          <Navigation aboutHref={aboutHref} aboutActive={aboutActive} workHref={workHref} />
+          <Navigation homeHref={siteUrl()} videoHref={siteUrl('video/')} journalismHref={siteUrl('journalism/')} aboutHref={siteUrl('about/')} activePage={activePage} />
         </div>
       </header>
     </>

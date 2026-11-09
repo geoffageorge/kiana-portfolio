@@ -1,5 +1,6 @@
 import { test, expect } from '@playwright/test';
 import settings from '../Assets/heroArtwork-1.json' with { type: 'json' };
+import heroBefore from '../Assets/figma files/journalism-v5-2026-11-08/hero-before.json' with { type: 'json' };
 
 test('saved artwork settings are fixed and old browser overrides are ignored', async ({ page }) => {
   await page.addInitScript(values => localStorage.setItem('kiana-hero-artwork', JSON.stringify({
@@ -26,11 +27,7 @@ test('artwork aligns with the desktop brand and stays clear on responsive layout
     await page.goto('/');
     const bounds = await page.evaluate(() => {
       const rect = selector => document.querySelector(selector).getBoundingClientRect().toJSON();
-      const descriptor = document.querySelector('.site-header .brand-name__descriptor');
-      const text = [...descriptor.childNodes].find(node => node.nodeType === Node.TEXT_NODE);
-      const index = text.textContent.toUpperCase().indexOf('INSIGHTS') + 2;
-      const range = document.createRange(); range.setStart(text, index); range.setEnd(text, index + 1);
-      return { art: rect('.hero-artwork__svg'), title: rect('#hero-title'), paragraph: rect('.hero-section__copy p'), header: rect('.site-header'), work: rect('#work'), s: range.getBoundingClientRect().left, scrollWidth: document.documentElement.scrollWidth };
+      return { art: rect('.hero-artwork__svg'), title: rect('#hero-title'), paragraph: rect('.hero-section__copy p'), header: rect('.site-header'), work: rect('#work'), scrollWidth: document.documentElement.scrollWidth };
     });
     expect(bounds.art.top).toBeGreaterThan(bounds.header.bottom);
     expect(bounds.art.bottom).toBeLessThan(bounds.work.top);
@@ -40,7 +37,8 @@ test('artwork aligns with the desktop brand and stays clear on responsive layout
     if (width < 1024) {
       expect(bounds.art.top).toBeGreaterThan(bounds.paragraph.bottom);
     } else {
-      expect(bounds.art.left).toBeCloseTo(bounds.s + settings.placement.x, 1);
+      // The removed header descriptor no longer controls the artwork position.
+      expect(Math.abs(bounds.art.left - heroBefore.find(row => row.width === width).artLeft)).toBeLessThan(.2);
       expect(bounds.title.top + bounds.title.height / 2).toBeCloseTo(bounds.art.top + bounds.art.height / 2 + settings.copyPlacement.y, 1);
       // The requested viewBox extends into the copy column, but its transparent
       // area contains no artwork there. Check the actual visible shapes.

@@ -1,0 +1,165 @@
+const imgFacePreview2 = "/assets/journalism-figma/food-culture.png";
+const imgAdobeStock1593322321 = "/assets/journalism-figma/sumo-wrestling.png";
+const imgScreenshot20230413At61927Pm3 = "/assets/journalism-figma/food-allergies.png";
+const img0Deb7C0Dccb6C82B5E4543Be35016Aebf74Da5Mv22 = "/assets/journalism-figma/monk-thailand.png";
+const imgFacePreview1 = "/assets/journalism-figma/feature-card-mask.svg";
+const imgScreenshot20230413At61927Pm1 = "/assets/journalism-figma/short-card-mask.svg";
+const imgScreenshot20230413At61927Pm2 = "/assets/journalism-figma/food-allergies-image-mask.svg";
+const img0Deb7C0Dccb6C82B5E4543Be35016Aebf74Da5Mv21 = "/assets/journalism-figma/monk-image-mask.svg";
+const imgVector = "source-assets/brand-vector-1.svg";
+const imgVector1 = "source-assets/brand-vector-2.svg";
+const imgVector2 = "source-assets/brand-vector-3.svg";
+const imgVector3 = "source-assets/brand-vector-4.svg";
+const imgVector4 = "source-assets/brand-vector-5.svg";
+const imgVector5 = "source-assets/brand-vector-6.svg";
+
+export default function Journalism() {
+  return (
+    <div className="bg-white relative size-full" data-node-id="607:7" data-name="Journalism">
+      <p className="[word-break:break-word] absolute font-['Inter:Regular'] font-normal leading-[26px] left-[calc(8.33%+79px)] not-italic text-[16px] text-black top-[312px] w-[994px]" data-node-id="607:14">
+        Writing gives me a way to explore topics, reflect on experiences, and share perspectives. This collection brings together reported features and personal reflections, shaped by curiosity, conversations, and a closer look at the world around me.
+      </p>
+      <p className="[word-break:break-word] absolute font-['Inter:Bold'] font-bold leading-[44px] left-[197px] not-italic text-[36px] text-black top-[255px] w-[471px]" data-node-id="607:16">
+        Selected Features
+      </p>
+      <p className="[word-break:break-word] absolute font-['Inter:Regular'] font-normal leading-[26px] left-[calc(8.33%+79px)] not-italic text-[15px] text-black top-[205px] w-[254px]" data-node-id="607:22">
+        JOURNALISM
+      </p>
+      <div className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Fira_Mono:Regular'] justify-center leading-[0] left-[calc(83.33%+3px)] not-italic text-[15px] text-black top-[79px] whitespace-nowrap" data-node-id="607:30">
+        <p className="leading-[1.2]">ABOUT+CONTACT</p>
+      </div>
+      <div className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Fira_Mono:Regular'] justify-center leading-[0] left-[calc(66.67%-45px)] not-italic text-[15px] text-black top-[79px] whitespace-nowrap" data-node-id="609:7">
+        <p className="leading-[1.2]">JOURNALISM</p>
+      </div>
+      <div className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Fira_Mono:Regular'] justify-center leading-[0] left-[calc(75%-30px)] not-italic text-[15px] text-black top-[79px] whitespace-nowrap" data-node-id="609:10">
+        <p className="leading-[1.2]">SOCIAL MEDIA</p>
+      </div>
+      <div className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Fira_Mono:Regular'] justify-center leading-[0] left-[calc(58.33%-15px)] not-italic text-[15px] text-black top-[79px] whitespace-nowrap" data-node-id="609:8">
+        <p className="leading-[1.2]">VIDEO</p>
+      </div>
+      <div className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Fira_Mono:Regular'] justify-center leading-[0] left-[calc(50%+42px)] not-italic text-[15px] text-black top-[79px] whitespace-nowrap" data-node-id="609:9">
+        <p className="leading-[1.2]">UX</p>
+      </div>
+      <a className="absolute contents cursor-pointer left-[193px] top-[430px]" href="https://2e91434b-a028-4805-a12d-81297a98eea3.filesusr.com/ugd/0deb7c_fe325fd71d274fd2a9251ca97dc8a779.pdf" data-node-id="609:65" target="_blank" data-name="Mask group">
+        <div className="absolute contents left-[196px] top-[430px]" data-node-id="609:45" data-name="Mask group">
+          <div className="absolute contents left-[196px] top-[430px]" data-node-id="609:39">
+            <div className="absolute h-[425px] left-[196px] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-3px_0px] mask-size-[498px_581px] top-[430px] w-[495px]" data-node-id="609:16" style={{ maskImage: `url("${imgFacePreview1}")` }} data-name="FacePreview 1">
+              <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgFacePreview2} />
+            </div>
+            <div className="absolute bg-[#f7f7f7] h-[166px] left-[196px] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-3px_-425px] mask-size-[498px_581px] top-[855px] w-[499px]" data-node-id="609:35" style={{ maskImage: `url("${imgFacePreview1}")` }} />
+            <p className="[word-break:break-word] absolute font-['Inter:Semi_Bold'] font-semibold leading-[28px] left-[calc(8.33%+108px)] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-35px_-484px] mask-size-[498px_581px] not-italic text-[20px] text-black top-[914px] w-[387px]" data-node-id="609:25" style={{ maskImage: `url("${imgFacePreview1}")` }}>
+              A recipe for controversy: food, culture, and identity
+            </p>
+            <p className="[word-break:break-word] absolute font-['Inter:Medium'] font-medium leading-[28px] left-[calc(8.33%+108px)] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-35px_-445px] mask-size-[498px_581px] not-italic text-[#7c8b98] text-[15px] top-[875px] w-[387px]" data-node-id="609:26" style={{ maskImage: `url("${imgFacePreview1}")` }}>
+              The Highlander
+            </p>
+          </div>
+        </div>
+      </a>
+      <a className="absolute contents cursor-pointer left-[calc(50%+28px)] top-[430px]" href="https://scotscoop.com/sumo-wrestling-in-america-destined-to-become-huge/" data-node-id="609:64" target="_blank" data-name="Mask group">
+        <div className="absolute contents left-[calc(50%+28px)] top-[430px]" data-node-id="609:50" data-name="Mask group">
+          <div className="absolute contents left-[calc(50%+28px)] top-[430px]" data-node-id="609:38">
+            <div className="absolute h-[425px] left-[calc(50%+28px)] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-size-[498px_581px] top-[430px] w-[499px]" data-node-id="609:15" style={{ maskImage: `url("${imgFacePreview1}")` }} data-name="AdobeStock_159332232 1">
+              <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgAdobeStock1593322321} />
+            </div>
+            <div className="absolute bg-[#f7f7f7] h-[166px] left-[calc(50%+28px)] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[0px_-425px] mask-size-[498px_581px] top-[855px] w-[499px]" data-node-id="609:18" style={{ maskImage: `url("${imgFacePreview1}")` }} />
+            <p className="[word-break:break-word] absolute font-['Inter:Semi_Bold'] font-semibold leading-[28px] left-[calc(50%+69px)] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-41px_-484px] mask-size-[498px_581px] not-italic text-[20px] text-black top-[914px] w-[387px]" data-node-id="609:19" style={{ maskImage: `url("${imgFacePreview1}")` }}>
+              Sumo wrestling in America — Destined to become huge?
+            </p>
+            <p className="[word-break:break-word] absolute font-['Inter:Medium'] font-medium leading-[28px] left-[calc(50%+69px)] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-41px_-445px] mask-size-[498px_581px] not-italic text-[#7c8b98] text-[15px] top-[875px] w-[387px]" data-node-id="609:20" style={{ maskImage: `url("${imgFacePreview1}")` }}>
+              Scots Scoop
+            </p>
+          </div>
+        </div>
+      </a>
+      <a className="absolute contents cursor-pointer left-[197px] top-[1059px]" href="https://scotscoop.com/just-one-bite-could-kill/" data-node-id="609:58" target="_blank" data-name="Mask group">
+        <div className="absolute contents left-[193.84px] top-[1058.35px]" data-node-id="609:55">
+          <div className="absolute contents left-[196px] top-[1058.35px]" data-node-id="609:54" data-name="Mask group">
+            <div className="absolute h-[433.24px] left-[196px] mask-position-[1px_0.646px,_0px_0px] mask-size-[498px_564px,_499px_410.941px] top-[1058.35px] w-[503.013px]" data-node-id="609:14" style={{ maskImage: `url("${imgScreenshot20230413At61927Pm1}"), url("${imgScreenshot20230413At61927Pm2}")` }} data-name="Screenshot 2023-04-13 at 6_19_27 PM 1">
+              <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgScreenshot20230413At61927Pm3} />
+            </div>
+          </div>
+          <div className="absolute bg-[#f7f7f7] h-[162.361px] left-[193.84px] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[3.161px_-407px] mask-size-[498px_564px] top-[1466px] w-[503.339px]" data-node-id="609:27" style={{ maskImage: `url("${imgScreenshot20230413At61927Pm1}")` }} />
+          <p className="[word-break:break-word] absolute font-['Inter:Semi_Bold'] font-semibold h-[27.386px] leading-[28px] left-[calc(8.33%+109.14px)] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-32.143px_-465.684px] mask-size-[498px_564px] not-italic text-[20px] text-black top-[1524.68px] w-[390.365px]" data-node-id="609:28" style={{ maskImage: `url("${imgScreenshot20230413At61927Pm1}")` }}>
+            Just one bite could kill
+          </p>
+          <p className="[word-break:break-word] absolute font-['Inter:Medium'] font-medium h-[27.386px] leading-[28px] left-[calc(8.33%+109.14px)] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-32.143px_-427.539px] mask-size-[498px_564px] not-italic text-[#7c8b98] text-[15px] top-[1486.54px] w-[390.365px]" data-node-id="609:29" style={{ maskImage: `url("${imgScreenshot20230413At61927Pm1}")` }}>
+            Scots Scoop
+          </p>
+        </div>
+      </a>
+      <a className="absolute contents cursor-pointer left-[calc(50%+28px)] top-[1059px]" href="https://stanforddaily.com/2020/08/25/everything-i-learned-from-a-monk-in-thailand/" data-node-id="609:62" target="_blank" data-name="Mask group">
+        <div className="absolute contents left-[calc(50%+28px)] top-[1060px]" data-node-id="609:52" data-name="Mask group">
+          <div className="absolute h-[429px] left-[calc(50%+28px)] mask-position-[0px_-1px,_0px_0px] mask-size-[498px_564px,_498px_406px] top-[1060px] w-[498px]" data-node-id="609:11" style={{ maskImage: `url("${imgScreenshot20230413At61927Pm1}"), url("${img0Deb7C0Dccb6C82B5E4543Be35016Aebf74Da5Mv21}")` }} data-name="0deb7c_0dccb6c82b5e4543be35016aebf74da5~mv2 1">
+            <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={img0Deb7C0Dccb6C82B5E4543Be35016Aebf74Da5Mv22} />
+          </div>
+        </div>
+        <div className="absolute bg-[#f7f7f7] h-[166px] left-[calc(50%+28px)] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[0px_-407px] mask-size-[498px_564px] top-[1466px] w-[499px]" data-node-id="609:31" style={{ maskImage: `url("${imgScreenshot20230413At61927Pm1}")` }} />
+        <p className="[word-break:break-word] absolute font-['Inter:Semi_Bold'] font-semibold leading-[28px] left-[calc(50%+74px)] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-46px_-467px] mask-size-[498px_564px] not-italic text-[20px] text-black top-[1526px] w-[341px]" data-node-id="609:32" style={{ maskImage: `url("${imgScreenshot20230413At61927Pm1}")` }}>
+          Everything I learned from a monk in Thailand
+        </p>
+        <p className="[word-break:break-word] absolute font-['Inter:Medium'] font-medium leading-[28px] left-[calc(50%+74px)] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-46px_-428px] mask-size-[498px_564px] not-italic text-[#7c8b98] text-[15px] top-[1487px] w-[387px]" data-node-id="609:33" style={{ maskImage: `url("${imgScreenshot20230413At61927Pm1}")` }}>
+          The Stanford Daily
+        </p>
+      </a>
+      <div className="absolute inset-[3.19%_90.46%_95.9%_8.4%]" data-node-id="609:101" data-name="Vector">
+        <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgVector} />
+      </div>
+      <div className="absolute inset-[3.19%_89.22%_95.9%_9.64%]" data-node-id="609:102" data-name="Vector">
+        <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgVector1} />
+      </div>
+      <div className="absolute flex inset-[4.17%_89.22%_94.92%_9.64%] items-center justify-center" data-node-id="609:103" style={{ containerType: "size" }}>
+        <div className="flex-none h-[100cqh] rotate-180 w-[100cqw]">
+          <div className="relative size-full" data-name="Vector">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgVector2} />
+          </div>
+        </div>
+      </div>
+      <div className="absolute inset-[4.17%_88%_94.92%_10.86%]" data-node-id="609:104" data-name="Vector">
+        <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgVector3} />
+      </div>
+      <div className="absolute flex inset-[4.17%_90.46%_94.92%_8.4%] items-center justify-center" data-node-id="609:105" style={{ containerType: "size" }}>
+        <div className="flex-none h-[100cqh] rotate-180 w-[100cqw]">
+          <div className="relative size-full" data-name="Vector">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgVector4} />
+          </div>
+        </div>
+      </div>
+      <div className="absolute inset-[3.61%_88%_95.9%_10.79%]" data-node-id="609:106" data-name="Vector">
+        <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgVector5} />
+      </div>
+      <div className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Fira_Mono:Regular'] justify-center leading-[0] left-[197.86px] not-italic text-[15px] text-black top-[79px] whitespace-nowrap" data-node-id="609:107">
+        <p className="leading-[1.2] whitespace-pre">{`KIANA GEORGE  `}</p>
+      </div>
+      <div className="absolute inset-[3.19%_90.46%_95.9%_8.4%]" data-node-id="609:108" data-name="Vector">
+        <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgVector} />
+      </div>
+      <div className="absolute inset-[3.19%_89.22%_95.9%_9.64%]" data-node-id="609:109" data-name="Vector">
+        <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgVector1} />
+      </div>
+      <div className="absolute flex inset-[4.17%_89.22%_94.92%_9.64%] items-center justify-center" data-node-id="609:110" style={{ containerType: "size" }}>
+        <div className="flex-none h-[100cqh] rotate-180 w-[100cqw]">
+          <div className="relative size-full" data-name="Vector">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgVector2} />
+          </div>
+        </div>
+      </div>
+      <div className="absolute inset-[4.17%_88%_94.92%_10.86%]" data-node-id="609:111" data-name="Vector">
+        <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgVector3} />
+      </div>
+      <div className="absolute flex inset-[4.17%_90.46%_94.92%_8.4%] items-center justify-center" data-node-id="609:112" style={{ containerType: "size" }}>
+        <div className="flex-none h-[100cqh] rotate-180 w-[100cqw]">
+          <div className="relative size-full" data-name="Vector">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgVector4} />
+          </div>
+        </div>
+      </div>
+      <div className="absolute inset-[3.61%_88%_95.9%_10.79%]" data-node-id="609:113" data-name="Vector">
+        <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgVector5} />
+      </div>
+      <div className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Fira_Mono:Regular'] justify-center leading-[0] left-[197.86px] not-italic text-[15px] text-black top-[79px] whitespace-nowrap" data-node-id="609:114">
+        <p className="leading-[1.2] whitespace-pre">{`KIANA GEORGE  `}</p>
+      </div>
+    </div>
+  );
+}

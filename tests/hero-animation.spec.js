@@ -93,13 +93,13 @@ test('page background and sticky header work on home and project pages', async (
     expect(header.y).toBeCloseTo(0);
     await expect(page.getByRole('navigation', { name: 'Main navigation' })).toBeInViewport();
     if (path === '/') {
-      await page.getByRole('navigation', { name: 'Main navigation' }).getByRole('link', { name: 'Work', exact: true }).click();
-      await expect.poll(() => page.locator('#work').evaluate(node => node.getBoundingClientRect().top >= document.querySelector('.site-header').getBoundingClientRect().bottom)).toBe(true);
+      await page.getByRole('navigation', { name: 'Main navigation' }).getByRole('link', { name: 'UX', exact: true }).click();
+      await expect.poll(() => page.evaluate(() => window.scrollY)).toBeLessThan(1);
       await page.getByRole('link', { name: 'Kiana George home', exact: true }).click();
       await expect.poll(() => page.evaluate(() => window.scrollY)).toBeLessThan(1);
     } else if (path === '/about/') {
-      await page.getByRole('navigation', { name: 'Main navigation' }).getByRole('link', { name: 'Work', exact: true }).click();
-      await expect(page).toHaveURL(/\/#work$/);
+      await page.getByRole('navigation', { name: 'Main navigation' }).getByRole('link', { name: 'UX', exact: true }).click();
+      await expect(page).toHaveURL(/\/$/);
     } else {
       const obayashi = path === '/projects/obayashi/';
       await page.getByRole('navigation', { name: 'Project sections' }).getByRole('link', { name: obayashi ? 'Web Audit' : /Research/ }).click();

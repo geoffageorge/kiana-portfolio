@@ -1,10 +1,12 @@
 import './Navigation.css';
 
-export default function Navigation({ aboutHref, workHref = '#work', aboutActive = false }) {
+export default function Navigation({ homeHref, videoHref, journalismHref, aboutHref, activePage }) {
   return (
     <nav className="site-nav" aria-label="Main navigation">
-      <a href={workHref}><span className="site-nav__label">Work</span></a>
-      <a href={aboutHref} aria-current={aboutActive ? 'page' : undefined}><span className="site-nav__label">About+Contact</span></a>
+      {[
+        ['ux', 'UX', homeHref], ['video', 'VIDEO', videoHref],
+        ['journalism', 'JOURNALISM', journalismHref], ['about', 'ABOUT+CONTACT', aboutHref],
+      ].map(([key, label, href]) => <a key={key} href={href} aria-current={activePage === key ? 'page' : undefined}><span className="site-nav__label">{label}</span></a>)}
     </nav>
   );
 }

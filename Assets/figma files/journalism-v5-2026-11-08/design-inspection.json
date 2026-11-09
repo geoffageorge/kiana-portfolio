@@ -1,0 +1,1836 @@
+{
+  "frameId": "607:7",
+  "nodes": [
+    {
+      "id": "607:7",
+      "parentId": "0:1",
+      "name": "Journalism",
+      "type": "FRAME",
+      "x": 399,
+      "y": -20393,
+      "width": 1440,
+      "height": 1807,
+      "rotation": 0,
+      "visible": true,
+      "opacity": 1,
+      "blendMode": "PASS_THROUGH",
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1
+          },
+          "boundVariables": {}
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1,
+      "strokeAlign": "INSIDE",
+      "dashPattern": [],
+      "effects": [],
+      "cornerRadius": 0,
+      "topLeftRadius": 0,
+      "topRightRadius": 0,
+      "bottomLeftRadius": 0,
+      "bottomRightRadius": 0,
+      "clipsContent": true,
+      "isMask": false,
+      "maskType": "ALPHA",
+      "constraints": {
+        "horizontal": "MIN",
+        "vertical": "MIN"
+      },
+      "layoutMode": "NONE",
+      "layoutAlign": "INHERIT",
+      "layoutGrow": 0,
+      "layoutPositioning": "AUTO",
+      "layoutSizingHorizontal": "FIXED",
+      "layoutSizingVertical": "FIXED",
+      "primaryAxisSizingMode": "AUTO",
+      "counterAxisSizingMode": "FIXED",
+      "primaryAxisAlignItems": "MIN",
+      "counterAxisAlignItems": "MIN",
+      "itemSpacing": 0,
+      "paddingLeft": 0,
+      "paddingRight": 0,
+      "paddingTop": 0,
+      "paddingBottom": 0,
+      "layoutGrids": [
+        {
+          "pattern": "COLUMNS",
+          "visible": true,
+          "color": {
+            "r": 0.7490196228027344,
+            "g": 0.7490196228027344,
+            "b": 0.7490196228027344,
+            "a": 0.10000000149011612
+          },
+          "gutterSize": 24,
+          "alignment": "STRETCH",
+          "count": 12,
+          "offset": 120,
+          "boundVariables": {}
+        }
+      ],
+      "exportSettings": [
+        {
+          "format": "PNG",
+          "suffix": "",
+          "contentsOnly": true,
+          "colorProfile": "DOCUMENT",
+          "constraint": {
+            "type": "SCALE",
+            "value": 1
+          }
+        }
+      ],
+      "reactions": [],
+      "overflowDirection": "NONE",
+      "numberOfFixedChildren": 0,
+      "overlayPositionType": "CENTER",
+      "overlayBackground": {
+        "type": "NONE"
+      },
+      "overlayBackgroundInteraction": "NONE"
+    },
+    {
+      "id": "609:65",
+      "parentId": "607:7",
+      "name": "Mask group",
+      "type": "GROUP",
+      "x": 193,
+      "y": 430,
+      "width": 498,
+      "height": 581,
+      "rotation": 0,
+      "visible": true,
+      "opacity": 1,
+      "blendMode": "PASS_THROUGH",
+      "effects": [],
+      "isMask": false,
+      "maskType": "ALPHA",
+      "layoutAlign": "INHERIT",
+      "layoutGrow": 0,
+      "layoutPositioning": "AUTO",
+      "layoutSizingHorizontal": "FIXED",
+      "layoutSizingVertical": "FIXED",
+      "exportSettings": [
+        {
+          "format": "PNG",
+          "suffix": "",
+          "contentsOnly": true,
+          "colorProfile": "DOCUMENT",
+          "constraint": {
+            "type": "SCALE",
+            "value": 1
+          }
+        }
+      ],
+      "reactions": [
+        {
+          "action": {
+            "type": "URL",
+            "url": "https://2e91434b-a028-4805-a12d-81297a98eea3.filesusr.com/ugd/0deb7c_fe325fd71d274fd2a9251ca97dc8a779.pdf",
+            "openInNewTab": true
+          },
+          "actions": [
+            {
+              "type": "URL",
+              "url": "https://2e91434b-a028-4805-a12d-81297a98eea3.filesusr.com/ugd/0deb7c_fe325fd71d274fd2a9251ca97dc8a779.pdf",
+              "openInNewTab": true
+            }
+          ],
+          "trigger": {
+            "type": "ON_CLICK"
+          }
+        }
+      ]
+    },
+    {
+      "id": "609:61",
+      "parentId": "609:65",
+      "name": "Rectangle 161",
+      "type": "RECTANGLE",
+      "x": 193,
+      "y": 430,
+      "width": 498,
+      "height": 581,
+      "rotation": 0,
+      "visible": true,
+      "opacity": 1,
+      "blendMode": "PASS_THROUGH",
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0.8509804010391235,
+            "g": 0.8509804010391235,
+            "b": 0.8509804010391235
+          },
+          "boundVariables": {}
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1,
+      "strokeAlign": "INSIDE",
+      "dashPattern": [],
+      "effects": [],
+      "cornerRadius": 16,
+      "topLeftRadius": 16,
+      "topRightRadius": 16,
+      "bottomLeftRadius": 16,
+      "bottomRightRadius": 16,
+      "isMask": true,
+      "maskType": "ALPHA",
+      "constraints": {
+        "horizontal": "MIN",
+        "vertical": "MIN"
+      },
+      "layoutAlign": "INHERIT",
+      "layoutGrow": 0,
+      "layoutPositioning": "AUTO",
+      "layoutSizingHorizontal": "FIXED",
+      "layoutSizingVertical": "FIXED",
+      "exportSettings": [],
+      "reactions": []
+    },
+    {
+      "id": "609:45",
+      "parentId": "609:65",
+      "name": "Mask group",
+      "type": "GROUP",
+      "x": 196,
+      "y": 430,
+      "width": 499,
+      "height": 591,
+      "rotation": 0,
+      "visible": true,
+      "opacity": 1,
+      "blendMode": "PASS_THROUGH",
+      "effects": [],
+      "isMask": false,
+      "maskType": "ALPHA",
+      "layoutAlign": "INHERIT",
+      "layoutGrow": 0,
+      "layoutPositioning": "AUTO",
+      "layoutSizingHorizontal": "FIXED",
+      "layoutSizingVertical": "FIXED",
+      "exportSettings": [],
+      "reactions": []
+    },
+    {
+      "id": "609:39",
+      "parentId": "609:45",
+      "name": "Group 129",
+      "type": "GROUP",
+      "x": 196,
+      "y": 430,
+      "width": 499,
+      "height": 591,
+      "rotation": 0,
+      "visible": true,
+      "opacity": 1,
+      "blendMode": "PASS_THROUGH",
+      "effects": [],
+      "isMask": false,
+      "maskType": "ALPHA",
+      "layoutAlign": "INHERIT",
+      "layoutGrow": 0,
+      "layoutPositioning": "AUTO",
+      "layoutSizingHorizontal": "FIXED",
+      "layoutSizingVertical": "FIXED",
+      "exportSettings": [],
+      "reactions": []
+    },
+    {
+      "id": "609:16",
+      "parentId": "609:39",
+      "name": "FacePreview 1",
+      "type": "RECTANGLE",
+      "x": 196,
+      "y": 430,
+      "width": 495,
+      "height": 425,
+      "rotation": 0,
+      "visible": true,
+      "opacity": 1,
+      "blendMode": "PASS_THROUGH",
+      "fills": [
+        {
+          "type": "IMAGE",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "scaleMode": "FILL",
+          "scalingFactor": 0.5,
+          "rotation": 0,
+          "filters": {
+            "exposure": 0,
+            "contrast": 0,
+            "saturation": 0,
+            "temperature": 0,
+            "tint": 0,
+            "highlights": 0,
+            "shadows": 0
+          },
+          "imageTransform": [
+            [
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0
+            ]
+          ],
+          "imageHash": "3623f9e064ec5196dfdc060efa0d4addaa31dd4b"
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1,
+      "strokeAlign": "INSIDE",
+      "dashPattern": [],
+      "effects": [],
+      "cornerRadius": 0,
+      "topLeftRadius": 0,
+      "topRightRadius": 0,
+      "bottomLeftRadius": 0,
+      "bottomRightRadius": 0,
+      "isMask": false,
+      "maskType": "ALPHA",
+      "constraints": {
+        "horizontal": "MIN",
+        "vertical": "MIN"
+      },
+      "layoutAlign": "INHERIT",
+      "layoutGrow": 0,
+      "layoutPositioning": "AUTO",
+      "layoutSizingHorizontal": "FIXED",
+      "layoutSizingVertical": "FIXED",
+      "exportSettings": [],
+      "reactions": []
+    },
+    {
+      "id": "609:35",
+      "parentId": "609:39",
+      "name": "Rectangle 152",
+      "type": "RECTANGLE",
+      "x": 196,
+      "y": 855,
+      "width": 499,
+      "height": 166,
+      "rotation": 0,
+      "visible": true,
+      "opacity": 1,
+      "blendMode": "PASS_THROUGH",
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0.9685174822807312,
+            "g": 0.9685174822807312,
+            "b": 0.9685174822807312
+          },
+          "boundVariables": {}
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1,
+      "strokeAlign": "INSIDE",
+      "dashPattern": [],
+      "effects": [],
+      "cornerRadius": 0,
+      "topLeftRadius": 0,
+      "topRightRadius": 0,
+      "bottomLeftRadius": 0,
+      "bottomRightRadius": 0,
+      "isMask": false,
+      "maskType": "ALPHA",
+      "constraints": {
+        "horizontal": "MIN",
+        "vertical": "MIN"
+      },
+      "layoutAlign": "INHERIT",
+      "layoutGrow": 0,
+      "layoutPositioning": "AUTO",
+      "layoutSizingHorizontal": "FIXED",
+      "layoutSizingVertical": "FIXED",
+      "exportSettings": [],
+      "reactions": []
+    },
+    {
+      "id": "609:64",
+      "parentId": "607:7",
+      "name": "Mask group",
+      "type": "GROUP",
+      "x": 748,
+      "y": 430,
+      "width": 498,
+      "height": 581,
+      "rotation": 0,
+      "visible": true,
+      "opacity": 1,
+      "blendMode": "PASS_THROUGH",
+      "effects": [],
+      "isMask": false,
+      "maskType": "ALPHA",
+      "layoutAlign": "INHERIT",
+      "layoutGrow": 0,
+      "layoutPositioning": "AUTO",
+      "layoutSizingHorizontal": "FIXED",
+      "layoutSizingVertical": "FIXED",
+      "exportSettings": [],
+      "reactions": [
+        {
+          "action": {
+            "type": "URL",
+            "url": "https://scotscoop.com/sumo-wrestling-in-america-destined-to-become-huge/",
+            "openInNewTab": true
+          },
+          "actions": [
+            {
+              "type": "URL",
+              "url": "https://scotscoop.com/sumo-wrestling-in-america-destined-to-become-huge/",
+              "openInNewTab": true
+            }
+          ],
+          "trigger": {
+            "type": "ON_CLICK"
+          }
+        }
+      ]
+    },
+    {
+      "id": "609:60",
+      "parentId": "609:64",
+      "name": "Rectangle 160",
+      "type": "RECTANGLE",
+      "x": 748,
+      "y": 430,
+      "width": 498,
+      "height": 581,
+      "rotation": 0,
+      "visible": true,
+      "opacity": 1,
+      "blendMode": "PASS_THROUGH",
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0.8509804010391235,
+            "g": 0.8509804010391235,
+            "b": 0.8509804010391235
+          },
+          "boundVariables": {}
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1,
+      "strokeAlign": "INSIDE",
+      "dashPattern": [],
+      "effects": [],
+      "cornerRadius": 16,
+      "topLeftRadius": 16,
+      "topRightRadius": 16,
+      "bottomLeftRadius": 16,
+      "bottomRightRadius": 16,
+      "isMask": true,
+      "maskType": "ALPHA",
+      "constraints": {
+        "horizontal": "MIN",
+        "vertical": "MIN"
+      },
+      "layoutAlign": "INHERIT",
+      "layoutGrow": 0,
+      "layoutPositioning": "AUTO",
+      "layoutSizingHorizontal": "FIXED",
+      "layoutSizingVertical": "FIXED",
+      "exportSettings": [],
+      "reactions": []
+    },
+    {
+      "id": "609:50",
+      "parentId": "609:64",
+      "name": "Mask group",
+      "type": "GROUP",
+      "x": 748,
+      "y": 430,
+      "width": 499,
+      "height": 591,
+      "rotation": 0,
+      "visible": true,
+      "opacity": 1,
+      "blendMode": "PASS_THROUGH",
+      "effects": [],
+      "isMask": false,
+      "maskType": "ALPHA",
+      "layoutAlign": "INHERIT",
+      "layoutGrow": 0,
+      "layoutPositioning": "AUTO",
+      "layoutSizingHorizontal": "FIXED",
+      "layoutSizingVertical": "FIXED",
+      "exportSettings": [],
+      "reactions": []
+    },
+    {
+      "id": "609:38",
+      "parentId": "609:50",
+      "name": "Group 128",
+      "type": "GROUP",
+      "x": 748,
+      "y": 430,
+      "width": 499,
+      "height": 591,
+      "rotation": 0,
+      "visible": true,
+      "opacity": 1,
+      "blendMode": "PASS_THROUGH",
+      "effects": [],
+      "isMask": false,
+      "maskType": "ALPHA",
+      "layoutAlign": "INHERIT",
+      "layoutGrow": 0,
+      "layoutPositioning": "AUTO",
+      "layoutSizingHorizontal": "FIXED",
+      "layoutSizingVertical": "FIXED",
+      "exportSettings": [],
+      "reactions": []
+    },
+    {
+      "id": "609:15",
+      "parentId": "609:38",
+      "name": "AdobeStock_159332232 1",
+      "type": "RECTANGLE",
+      "x": 748,
+      "y": 430,
+      "width": 499,
+      "height": 425,
+      "rotation": 0,
+      "visible": true,
+      "opacity": 1,
+      "blendMode": "PASS_THROUGH",
+      "fills": [
+        {
+          "type": "IMAGE",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "scaleMode": "FILL",
+          "scalingFactor": 0.5,
+          "rotation": 0,
+          "filters": {
+            "exposure": 0,
+            "contrast": 0,
+            "saturation": 0,
+            "temperature": 0,
+            "tint": 0,
+            "highlights": 0,
+            "shadows": 0
+          },
+          "imageTransform": [
+            [
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0
+            ]
+          ],
+          "imageHash": "f5d29e8973f38b87d44d16610c71516b1846a0f4"
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1,
+      "strokeAlign": "INSIDE",
+      "dashPattern": [],
+      "effects": [],
+      "cornerRadius": 0,
+      "topLeftRadius": 0,
+      "topRightRadius": 0,
+      "bottomLeftRadius": 0,
+      "bottomRightRadius": 0,
+      "isMask": false,
+      "maskType": "ALPHA",
+      "constraints": {
+        "horizontal": "MIN",
+        "vertical": "MIN"
+      },
+      "layoutAlign": "INHERIT",
+      "layoutGrow": 0,
+      "layoutPositioning": "AUTO",
+      "layoutSizingHorizontal": "FIXED",
+      "layoutSizingVertical": "FIXED",
+      "exportSettings": [],
+      "reactions": []
+    },
+    {
+      "id": "609:18",
+      "parentId": "609:38",
+      "name": "Rectangle 149",
+      "type": "RECTANGLE",
+      "x": 748,
+      "y": 855,
+      "width": 499,
+      "height": 166,
+      "rotation": 0,
+      "visible": true,
+      "opacity": 1,
+      "blendMode": "PASS_THROUGH",
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0.9685174822807312,
+            "g": 0.9685174822807312,
+            "b": 0.9685174822807312
+          },
+          "boundVariables": {}
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1,
+      "strokeAlign": "INSIDE",
+      "dashPattern": [],
+      "effects": [],
+      "cornerRadius": 0,
+      "topLeftRadius": 0,
+      "topRightRadius": 0,
+      "bottomLeftRadius": 0,
+      "bottomRightRadius": 0,
+      "isMask": false,
+      "maskType": "ALPHA",
+      "constraints": {
+        "horizontal": "MIN",
+        "vertical": "MIN"
+      },
+      "layoutAlign": "INHERIT",
+      "layoutGrow": 0,
+      "layoutPositioning": "AUTO",
+      "layoutSizingHorizontal": "FIXED",
+      "layoutSizingVertical": "FIXED",
+      "exportSettings": [],
+      "reactions": []
+    },
+    {
+      "id": "609:58",
+      "parentId": "607:7",
+      "name": "Mask group",
+      "type": "FRAME",
+      "x": 197,
+      "y": 1059,
+      "width": 498,
+      "height": 564,
+      "rotation": 0,
+      "visible": true,
+      "opacity": 1,
+      "blendMode": "PASS_THROUGH",
+      "fills": [],
+      "strokes": [],
+      "strokeWeight": 1,
+      "strokeAlign": "INSIDE",
+      "dashPattern": [],
+      "effects": [],
+      "cornerRadius": 0,
+      "topLeftRadius": 0,
+      "topRightRadius": 0,
+      "bottomLeftRadius": 0,
+      "bottomRightRadius": 0,
+      "clipsContent": true,
+      "isMask": false,
+      "maskType": "ALPHA",
+      "constraints": {
+        "horizontal": "MIN",
+        "vertical": "MIN"
+      },
+      "layoutMode": "NONE",
+      "layoutAlign": "INHERIT",
+      "layoutGrow": 0,
+      "layoutPositioning": "AUTO",
+      "layoutSizingHorizontal": "FIXED",
+      "layoutSizingVertical": "FIXED",
+      "primaryAxisSizingMode": "AUTO",
+      "counterAxisSizingMode": "FIXED",
+      "primaryAxisAlignItems": "MIN",
+      "counterAxisAlignItems": "MIN",
+      "itemSpacing": 0,
+      "paddingLeft": 0,
+      "paddingRight": 0,
+      "paddingTop": 0,
+      "paddingBottom": 0,
+      "layoutGrids": [],
+      "exportSettings": [],
+      "reactions": [
+        {
+          "action": {
+            "type": "URL",
+            "url": "https://scotscoop.com/just-one-bite-could-kill/",
+            "openInNewTab": true
+          },
+          "actions": [
+            {
+              "type": "URL",
+              "url": "https://scotscoop.com/just-one-bite-could-kill/",
+              "openInNewTab": true
+            }
+          ],
+          "trigger": {
+            "type": "ON_CLICK"
+          }
+        }
+      ],
+      "overflowDirection": "NONE",
+      "numberOfFixedChildren": 0,
+      "overlayPositionType": "CENTER",
+      "overlayBackground": {
+        "type": "NONE"
+      },
+      "overlayBackgroundInteraction": "NONE"
+    },
+    {
+      "id": "609:56",
+      "parentId": "609:58",
+      "name": "Rectangle 158",
+      "type": "RECTANGLE",
+      "x": 0,
+      "y": 0,
+      "width": 498,
+      "height": 564,
+      "rotation": 0,
+      "visible": true,
+      "opacity": 1,
+      "blendMode": "PASS_THROUGH",
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0.8509804010391235,
+            "g": 0.8509804010391235,
+            "b": 0.8509804010391235
+          },
+          "boundVariables": {}
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1,
+      "strokeAlign": "INSIDE",
+      "dashPattern": [],
+      "effects": [],
+      "cornerRadius": 16,
+      "topLeftRadius": 16,
+      "topRightRadius": 16,
+      "bottomLeftRadius": 16,
+      "bottomRightRadius": 16,
+      "isMask": true,
+      "maskType": "ALPHA",
+      "constraints": {
+        "horizontal": "MIN",
+        "vertical": "MIN"
+      },
+      "layoutAlign": "INHERIT",
+      "layoutGrow": 0,
+      "layoutPositioning": "AUTO",
+      "layoutSizingHorizontal": "FIXED",
+      "layoutSizingVertical": "FIXED",
+      "exportSettings": [],
+      "reactions": []
+    },
+    {
+      "id": "609:55",
+      "parentId": "609:58",
+      "name": "Group 130",
+      "type": "GROUP",
+      "x": -3.160888671875,
+      "y": -0.646484375,
+      "width": 503.3391418457031,
+      "height": 570.00732421875,
+      "rotation": 0,
+      "visible": true,
+      "opacity": 1,
+      "blendMode": "PASS_THROUGH",
+      "effects": [],
+      "isMask": false,
+      "maskType": "ALPHA",
+      "layoutAlign": "INHERIT",
+      "layoutGrow": 0,
+      "layoutPositioning": "AUTO",
+      "layoutSizingHorizontal": "FIXED",
+      "layoutSizingVertical": "FIXED",
+      "exportSettings": [],
+      "reactions": []
+    },
+    {
+      "id": "609:54",
+      "parentId": "609:55",
+      "name": "Mask group",
+      "type": "GROUP",
+      "x": -1,
+      "y": -0.646484375,
+      "width": 499,
+      "height": 410.9411926269531,
+      "rotation": 0,
+      "visible": true,
+      "opacity": 1,
+      "blendMode": "PASS_THROUGH",
+      "effects": [],
+      "isMask": false,
+      "maskType": "ALPHA",
+      "layoutAlign": "INHERIT",
+      "layoutGrow": 0,
+      "layoutPositioning": "AUTO",
+      "layoutSizingHorizontal": "FIXED",
+      "layoutSizingVertical": "FIXED",
+      "exportSettings": [],
+      "reactions": []
+    },
+    {
+      "id": "609:53",
+      "parentId": "609:54",
+      "name": "Rectangle 157",
+      "type": "RECTANGLE",
+      "x": -1,
+      "y": -0.6470588743686676,
+      "width": 499,
+      "height": 410.9411926269531,
+      "rotation": 0,
+      "visible": true,
+      "opacity": 1,
+      "blendMode": "PASS_THROUGH",
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0.8509804010391235,
+            "g": 0.8509804010391235,
+            "b": 0.8509804010391235
+          },
+          "boundVariables": {}
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1,
+      "strokeAlign": "INSIDE",
+      "dashPattern": [],
+      "effects": [],
+      "cornerRadius": 0,
+      "topLeftRadius": 0,
+      "topRightRadius": 0,
+      "bottomLeftRadius": 0,
+      "bottomRightRadius": 0,
+      "isMask": true,
+      "maskType": "ALPHA",
+      "constraints": {
+        "horizontal": "MIN",
+        "vertical": "MIN"
+      },
+      "layoutAlign": "INHERIT",
+      "layoutGrow": 0,
+      "layoutPositioning": "AUTO",
+      "layoutSizingHorizontal": "FIXED",
+      "layoutSizingVertical": "FIXED",
+      "exportSettings": [],
+      "reactions": []
+    },
+    {
+      "id": "609:14",
+      "parentId": "609:54",
+      "name": "Screenshot 2023-04-13 at 6_19_27 PM 1",
+      "type": "RECTANGLE",
+      "x": -1,
+      "y": -0.6470588743686676,
+      "width": 503.01263427734375,
+      "height": 433.2398986816406,
+      "rotation": 0,
+      "visible": true,
+      "opacity": 1,
+      "blendMode": "PASS_THROUGH",
+      "fills": [
+        {
+          "type": "IMAGE",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "scaleMode": "FILL",
+          "scalingFactor": 0.5,
+          "rotation": 0,
+          "filters": {
+            "exposure": 0,
+            "contrast": 0,
+            "saturation": 0,
+            "temperature": 0,
+            "tint": 0,
+            "highlights": 0,
+            "shadows": 0
+          },
+          "imageTransform": [
+            [
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0
+            ]
+          ],
+          "imageHash": "35085d5bbbfb9b3faf0b2849c3dd248686723307"
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1,
+      "strokeAlign": "INSIDE",
+      "dashPattern": [],
+      "effects": [],
+      "cornerRadius": 0,
+      "topLeftRadius": 0,
+      "topRightRadius": 0,
+      "bottomLeftRadius": 0,
+      "bottomRightRadius": 0,
+      "isMask": false,
+      "maskType": "ALPHA",
+      "constraints": {
+        "horizontal": "MIN",
+        "vertical": "MIN"
+      },
+      "layoutAlign": "INHERIT",
+      "layoutGrow": 0,
+      "layoutPositioning": "AUTO",
+      "layoutSizingHorizontal": "FIXED",
+      "layoutSizingVertical": "FIXED",
+      "exportSettings": [],
+      "reactions": []
+    },
+    {
+      "id": "609:27",
+      "parentId": "609:55",
+      "name": "Rectangle 150",
+      "type": "RECTANGLE",
+      "x": -3.160888671875,
+      "y": 407,
+      "width": 503.3391418457031,
+      "height": 162.36087036132812,
+      "rotation": 0,
+      "visible": true,
+      "opacity": 1,
+      "blendMode": "PASS_THROUGH",
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0.9685174822807312,
+            "g": 0.9685174822807312,
+            "b": 0.9685174822807312
+          },
+          "boundVariables": {}
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1,
+      "strokeAlign": "INSIDE",
+      "dashPattern": [],
+      "effects": [],
+      "cornerRadius": 0,
+      "topLeftRadius": 0,
+      "topRightRadius": 0,
+      "bottomLeftRadius": 0,
+      "bottomRightRadius": 0,
+      "isMask": false,
+      "maskType": "ALPHA",
+      "constraints": {
+        "horizontal": "MIN",
+        "vertical": "MIN"
+      },
+      "layoutAlign": "INHERIT",
+      "layoutGrow": 0,
+      "layoutPositioning": "AUTO",
+      "layoutSizingHorizontal": "FIXED",
+      "layoutSizingVertical": "FIXED",
+      "exportSettings": [],
+      "reactions": []
+    },
+    {
+      "id": "609:62",
+      "parentId": "607:7",
+      "name": "Mask group",
+      "type": "GROUP",
+      "x": 748,
+      "y": 1059,
+      "width": 498,
+      "height": 564,
+      "rotation": 0,
+      "visible": true,
+      "opacity": 1,
+      "blendMode": "PASS_THROUGH",
+      "effects": [],
+      "isMask": false,
+      "maskType": "ALPHA",
+      "layoutAlign": "INHERIT",
+      "layoutGrow": 0,
+      "layoutPositioning": "AUTO",
+      "layoutSizingHorizontal": "FIXED",
+      "layoutSizingVertical": "FIXED",
+      "exportSettings": [],
+      "reactions": [
+        {
+          "action": {
+            "type": "URL",
+            "url": "https://stanforddaily.com/2020/08/25/everything-i-learned-from-a-monk-in-thailand/",
+            "openInNewTab": true
+          },
+          "actions": [
+            {
+              "type": "URL",
+              "url": "https://stanforddaily.com/2020/08/25/everything-i-learned-from-a-monk-in-thailand/",
+              "openInNewTab": true
+            }
+          ],
+          "trigger": {
+            "type": "ON_CLICK"
+          }
+        }
+      ]
+    },
+    {
+      "id": "609:57",
+      "parentId": "609:62",
+      "name": "Rectangle 159",
+      "type": "RECTANGLE",
+      "x": 748,
+      "y": 1059,
+      "width": 498,
+      "height": 564,
+      "rotation": 0,
+      "visible": true,
+      "opacity": 1,
+      "blendMode": "PASS_THROUGH",
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0.8509804010391235,
+            "g": 0.8509804010391235,
+            "b": 0.8509804010391235
+          },
+          "boundVariables": {}
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1,
+      "strokeAlign": "INSIDE",
+      "dashPattern": [],
+      "effects": [],
+      "cornerRadius": 16,
+      "topLeftRadius": 16,
+      "topRightRadius": 16,
+      "bottomLeftRadius": 16,
+      "bottomRightRadius": 16,
+      "isMask": true,
+      "maskType": "ALPHA",
+      "constraints": {
+        "horizontal": "MIN",
+        "vertical": "MIN"
+      },
+      "layoutAlign": "INHERIT",
+      "layoutGrow": 0,
+      "layoutPositioning": "AUTO",
+      "layoutSizingHorizontal": "FIXED",
+      "layoutSizingVertical": "FIXED",
+      "exportSettings": [],
+      "reactions": []
+    },
+    {
+      "id": "609:52",
+      "parentId": "609:62",
+      "name": "Mask group",
+      "type": "GROUP",
+      "x": 748,
+      "y": 1060,
+      "width": 498,
+      "height": 406,
+      "rotation": 0,
+      "visible": true,
+      "opacity": 1,
+      "blendMode": "PASS_THROUGH",
+      "effects": [],
+      "isMask": false,
+      "maskType": "ALPHA",
+      "layoutAlign": "INHERIT",
+      "layoutGrow": 0,
+      "layoutPositioning": "AUTO",
+      "layoutSizingHorizontal": "FIXED",
+      "layoutSizingVertical": "FIXED",
+      "exportSettings": [],
+      "reactions": []
+    },
+    {
+      "id": "609:51",
+      "parentId": "609:52",
+      "name": "Rectangle 156",
+      "type": "RECTANGLE",
+      "x": 748,
+      "y": 1060,
+      "width": 498,
+      "height": 406,
+      "rotation": 0,
+      "visible": true,
+      "opacity": 1,
+      "blendMode": "PASS_THROUGH",
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0.8509804010391235,
+            "g": 0.8509804010391235,
+            "b": 0.8509804010391235
+          },
+          "boundVariables": {}
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1,
+      "strokeAlign": "INSIDE",
+      "dashPattern": [],
+      "effects": [],
+      "cornerRadius": 0,
+      "topLeftRadius": 0,
+      "topRightRadius": 0,
+      "bottomLeftRadius": 0,
+      "bottomRightRadius": 0,
+      "isMask": true,
+      "maskType": "ALPHA",
+      "constraints": {
+        "horizontal": "MIN",
+        "vertical": "MIN"
+      },
+      "layoutAlign": "INHERIT",
+      "layoutGrow": 0,
+      "layoutPositioning": "AUTO",
+      "layoutSizingHorizontal": "FIXED",
+      "layoutSizingVertical": "FIXED",
+      "exportSettings": [],
+      "reactions": []
+    },
+    {
+      "id": "609:11",
+      "parentId": "609:52",
+      "name": "0deb7c_0dccb6c82b5e4543be35016aebf74da5~mv2 1",
+      "type": "RECTANGLE",
+      "x": 748,
+      "y": 1060,
+      "width": 498,
+      "height": 429,
+      "rotation": 0,
+      "visible": true,
+      "opacity": 1,
+      "blendMode": "PASS_THROUGH",
+      "fills": [
+        {
+          "type": "IMAGE",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "scaleMode": "FILL",
+          "scalingFactor": 0.5,
+          "rotation": 0,
+          "filters": {
+            "exposure": 0,
+            "contrast": 0,
+            "saturation": 0,
+            "temperature": 0,
+            "tint": 0,
+            "highlights": 0,
+            "shadows": 0
+          },
+          "imageTransform": [
+            [
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0
+            ]
+          ],
+          "imageHash": "67dafac26b1f9a47df81b8ac6b7b825d5fbe52bd"
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1,
+      "strokeAlign": "INSIDE",
+      "dashPattern": [],
+      "effects": [],
+      "cornerRadius": 0,
+      "topLeftRadius": 0,
+      "topRightRadius": 0,
+      "bottomLeftRadius": 0,
+      "bottomRightRadius": 0,
+      "isMask": false,
+      "maskType": "ALPHA",
+      "constraints": {
+        "horizontal": "MIN",
+        "vertical": "MIN"
+      },
+      "layoutAlign": "INHERIT",
+      "layoutGrow": 0,
+      "layoutPositioning": "AUTO",
+      "layoutSizingHorizontal": "FIXED",
+      "layoutSizingVertical": "FIXED",
+      "exportSettings": [],
+      "reactions": []
+    },
+    {
+      "id": "609:31",
+      "parentId": "609:62",
+      "name": "Rectangle 151",
+      "type": "RECTANGLE",
+      "x": 748,
+      "y": 1466,
+      "width": 499,
+      "height": 166,
+      "rotation": 0,
+      "visible": true,
+      "opacity": 1,
+      "blendMode": "PASS_THROUGH",
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0.9685174822807312,
+            "g": 0.9685174822807312,
+            "b": 0.9685174822807312
+          },
+          "boundVariables": {}
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1,
+      "strokeAlign": "INSIDE",
+      "dashPattern": [],
+      "effects": [],
+      "cornerRadius": 0,
+      "topLeftRadius": 0,
+      "topRightRadius": 0,
+      "bottomLeftRadius": 0,
+      "bottomRightRadius": 0,
+      "isMask": false,
+      "maskType": "ALPHA",
+      "constraints": {
+        "horizontal": "MIN",
+        "vertical": "MIN"
+      },
+      "layoutAlign": "INHERIT",
+      "layoutGrow": 0,
+      "layoutPositioning": "AUTO",
+      "layoutSizingHorizontal": "FIXED",
+      "layoutSizingVertical": "FIXED",
+      "exportSettings": [],
+      "reactions": []
+    },
+    {
+      "id": "609:101",
+      "parentId": "607:7",
+      "name": "Vector",
+      "type": "VECTOR",
+      "x": 121.000244140625,
+      "y": 57.66015625,
+      "width": 16.4162540435791,
+      "height": 16.41814613342285,
+      "rotation": 0,
+      "visible": true,
+      "opacity": 1,
+      "blendMode": "PASS_THROUGH",
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0.5647059082984924,
+            "g": 0.7019608020782471,
+            "b": 0.7490196228027344
+          },
+          "boundVariables": {}
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1,
+      "strokeAlign": "INSIDE",
+      "dashPattern": [],
+      "effects": [],
+      "cornerRadius": 0,
+      "isMask": false,
+      "maskType": "ALPHA",
+      "constraints": {
+        "horizontal": "SCALE",
+        "vertical": "SCALE"
+      },
+      "layoutAlign": "INHERIT",
+      "layoutGrow": 0,
+      "layoutPositioning": "AUTO",
+      "layoutSizingHorizontal": "FIXED",
+      "layoutSizingVertical": "FIXED",
+      "exportSettings": [],
+      "reactions": []
+    },
+    {
+      "id": "609:102",
+      "parentId": "607:7",
+      "name": "Vector",
+      "type": "VECTOR",
+      "x": 138.821533203125,
+      "y": 57.66015625,
+      "width": 16.418912887573242,
+      "height": 16.41814613342285,
+      "rotation": 0,
+      "visible": true,
+      "opacity": 1,
+      "blendMode": "PASS_THROUGH",
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0.9254902005195618,
+            "g": 0.16078431904315948,
+            "b": 0.48235294222831726
+          },
+          "boundVariables": {}
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1,
+      "strokeAlign": "INSIDE",
+      "dashPattern": [],
+      "effects": [],
+      "cornerRadius": 0,
+      "isMask": false,
+      "maskType": "ALPHA",
+      "constraints": {
+        "horizontal": "SCALE",
+        "vertical": "SCALE"
+      },
+      "layoutAlign": "INHERIT",
+      "layoutGrow": 0,
+      "layoutPositioning": "AUTO",
+      "layoutSizingHorizontal": "FIXED",
+      "layoutSizingVertical": "FIXED",
+      "exportSettings": [],
+      "reactions": []
+    },
+    {
+      "id": "609:103",
+      "parentId": "607:7",
+      "name": "Vector",
+      "type": "VECTOR",
+      "x": 155.240478515625,
+      "y": 91.78515625,
+      "width": 16.418912887573242,
+      "height": 16.41814613342285,
+      "rotation": 180,
+      "visible": true,
+      "opacity": 1,
+      "blendMode": "PASS_THROUGH",
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0.572549045085907,
+            "g": 0.8274509906768799,
+            "b": 0.7843137383460999
+          },
+          "boundVariables": {}
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1,
+      "strokeAlign": "INSIDE",
+      "dashPattern": [],
+      "effects": [],
+      "cornerRadius": 0,
+      "isMask": false,
+      "maskType": "ALPHA",
+      "constraints": {
+        "horizontal": "SCALE",
+        "vertical": "SCALE"
+      },
+      "layoutAlign": "INHERIT",
+      "layoutGrow": 0,
+      "layoutPositioning": "AUTO",
+      "layoutSizingHorizontal": "FIXED",
+      "layoutSizingVertical": "FIXED",
+      "exportSettings": [],
+      "reactions": []
+    },
+    {
+      "id": "609:104",
+      "parentId": "607:7",
+      "name": "Vector",
+      "type": "VECTOR",
+      "x": 156.448974609375,
+      "y": 75.369140625,
+      "width": 16.418914794921875,
+      "height": 16.41814613342285,
+      "rotation": 0,
+      "visible": true,
+      "opacity": 1,
+      "blendMode": "PASS_THROUGH",
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0.6784313917160034,
+            "g": 0.8784313797950745,
+            "b": 0.3333333432674408
+          },
+          "boundVariables": {}
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1,
+      "strokeAlign": "INSIDE",
+      "dashPattern": [],
+      "effects": [],
+      "cornerRadius": 0,
+      "isMask": false,
+      "maskType": "ALPHA",
+      "constraints": {
+        "horizontal": "SCALE",
+        "vertical": "SCALE"
+      },
+      "layoutAlign": "INHERIT",
+      "layoutGrow": 0,
+      "layoutPositioning": "AUTO",
+      "layoutSizingHorizontal": "FIXED",
+      "layoutSizingVertical": "FIXED",
+      "exportSettings": [],
+      "reactions": []
+    },
+    {
+      "id": "609:105",
+      "parentId": "607:7",
+      "name": "Vector",
+      "type": "VECTOR",
+      "x": 137.416259765625,
+      "y": 91.78515625,
+      "width": 16.4162540435791,
+      "height": 16.41814613342285,
+      "rotation": 180,
+      "visible": true,
+      "opacity": 1,
+      "blendMode": "PASS_THROUGH",
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0.9647058844566345,
+            "g": 0.572549045085907,
+            "b": 0.11764705926179886
+          },
+          "boundVariables": {}
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1,
+      "strokeAlign": "INSIDE",
+      "dashPattern": [],
+      "effects": [],
+      "cornerRadius": 0,
+      "isMask": false,
+      "maskType": "ALPHA",
+      "constraints": {
+        "horizontal": "SCALE",
+        "vertical": "SCALE"
+      },
+      "layoutAlign": "INHERIT",
+      "layoutGrow": 0,
+      "layoutPositioning": "AUTO",
+      "layoutSizingHorizontal": "FIXED",
+      "layoutSizingVertical": "FIXED",
+      "exportSettings": [],
+      "reactions": []
+    },
+    {
+      "id": "609:106",
+      "parentId": "607:7",
+      "name": "Vector",
+      "type": "VECTOR",
+      "x": 155.341552734375,
+      "y": 65.162109375,
+      "width": 17.521299362182617,
+      "height": 8.916956901550293,
+      "rotation": 0,
+      "visible": true,
+      "opacity": 1,
+      "blendMode": "PASS_THROUGH",
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0.9378374814987183,
+            "g": 0.8657094240188599,
+            "b": 0.07230053842067719
+          },
+          "boundVariables": {}
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1,
+      "strokeAlign": "INSIDE",
+      "dashPattern": [],
+      "effects": [],
+      "cornerRadius": 0,
+      "isMask": false,
+      "maskType": "ALPHA",
+      "constraints": {
+        "horizontal": "SCALE",
+        "vertical": "SCALE"
+      },
+      "layoutAlign": "INHERIT",
+      "layoutGrow": 0,
+      "layoutPositioning": "AUTO",
+      "layoutSizingHorizontal": "FIXED",
+      "layoutSizingVertical": "FIXED",
+      "exportSettings": [],
+      "reactions": []
+    },
+    {
+      "id": "609:108",
+      "parentId": "607:7",
+      "name": "Vector",
+      "type": "VECTOR",
+      "x": 121.000244140625,
+      "y": 57.66015625,
+      "width": 16.4162540435791,
+      "height": 16.41814613342285,
+      "rotation": 0,
+      "visible": true,
+      "opacity": 1,
+      "blendMode": "PASS_THROUGH",
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0.5647059082984924,
+            "g": 0.7019608020782471,
+            "b": 0.7490196228027344
+          },
+          "boundVariables": {}
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1,
+      "strokeAlign": "INSIDE",
+      "dashPattern": [],
+      "effects": [],
+      "cornerRadius": 0,
+      "isMask": false,
+      "maskType": "ALPHA",
+      "constraints": {
+        "horizontal": "SCALE",
+        "vertical": "SCALE"
+      },
+      "layoutAlign": "INHERIT",
+      "layoutGrow": 0,
+      "layoutPositioning": "AUTO",
+      "layoutSizingHorizontal": "FIXED",
+      "layoutSizingVertical": "FIXED",
+      "exportSettings": [],
+      "reactions": []
+    },
+    {
+      "id": "609:109",
+      "parentId": "607:7",
+      "name": "Vector",
+      "type": "VECTOR",
+      "x": 138.821533203125,
+      "y": 57.66015625,
+      "width": 16.418912887573242,
+      "height": 16.41814613342285,
+      "rotation": 0,
+      "visible": true,
+      "opacity": 1,
+      "blendMode": "PASS_THROUGH",
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0.9254902005195618,
+            "g": 0.16078431904315948,
+            "b": 0.48235294222831726
+          },
+          "boundVariables": {}
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1,
+      "strokeAlign": "INSIDE",
+      "dashPattern": [],
+      "effects": [],
+      "cornerRadius": 0,
+      "isMask": false,
+      "maskType": "ALPHA",
+      "constraints": {
+        "horizontal": "SCALE",
+        "vertical": "SCALE"
+      },
+      "layoutAlign": "INHERIT",
+      "layoutGrow": 0,
+      "layoutPositioning": "AUTO",
+      "layoutSizingHorizontal": "FIXED",
+      "layoutSizingVertical": "FIXED",
+      "exportSettings": [],
+      "reactions": []
+    },
+    {
+      "id": "609:110",
+      "parentId": "607:7",
+      "name": "Vector",
+      "type": "VECTOR",
+      "x": 155.240478515625,
+      "y": 91.78515625,
+      "width": 16.418912887573242,
+      "height": 16.41814613342285,
+      "rotation": 180,
+      "visible": true,
+      "opacity": 1,
+      "blendMode": "PASS_THROUGH",
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0.572549045085907,
+            "g": 0.8274509906768799,
+            "b": 0.7843137383460999
+          },
+          "boundVariables": {}
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1,
+      "strokeAlign": "INSIDE",
+      "dashPattern": [],
+      "effects": [],
+      "cornerRadius": 0,
+      "isMask": false,
+      "maskType": "ALPHA",
+      "constraints": {
+        "horizontal": "SCALE",
+        "vertical": "SCALE"
+      },
+      "layoutAlign": "INHERIT",
+      "layoutGrow": 0,
+      "layoutPositioning": "AUTO",
+      "layoutSizingHorizontal": "FIXED",
+      "layoutSizingVertical": "FIXED",
+      "exportSettings": [],
+      "reactions": []
+    },
+    {
+      "id": "609:111",
+      "parentId": "607:7",
+      "name": "Vector",
+      "type": "VECTOR",
+      "x": 156.448974609375,
+      "y": 75.369140625,
+      "width": 16.418914794921875,
+      "height": 16.41814613342285,
+      "rotation": 0,
+      "visible": true,
+      "opacity": 1,
+      "blendMode": "PASS_THROUGH",
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0.6784313917160034,
+            "g": 0.8784313797950745,
+            "b": 0.3333333432674408
+          },
+          "boundVariables": {}
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1,
+      "strokeAlign": "INSIDE",
+      "dashPattern": [],
+      "effects": [],
+      "cornerRadius": 0,
+      "isMask": false,
+      "maskType": "ALPHA",
+      "constraints": {
+        "horizontal": "SCALE",
+        "vertical": "SCALE"
+      },
+      "layoutAlign": "INHERIT",
+      "layoutGrow": 0,
+      "layoutPositioning": "AUTO",
+      "layoutSizingHorizontal": "FIXED",
+      "layoutSizingVertical": "FIXED",
+      "exportSettings": [],
+      "reactions": []
+    },
+    {
+      "id": "609:112",
+      "parentId": "607:7",
+      "name": "Vector",
+      "type": "VECTOR",
+      "x": 137.416259765625,
+      "y": 91.78515625,
+      "width": 16.4162540435791,
+      "height": 16.41814613342285,
+      "rotation": 180,
+      "visible": true,
+      "opacity": 1,
+      "blendMode": "PASS_THROUGH",
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0.9647058844566345,
+            "g": 0.572549045085907,
+            "b": 0.11764705926179886
+          },
+          "boundVariables": {}
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1,
+      "strokeAlign": "INSIDE",
+      "dashPattern": [],
+      "effects": [],
+      "cornerRadius": 0,
+      "isMask": false,
+      "maskType": "ALPHA",
+      "constraints": {
+        "horizontal": "SCALE",
+        "vertical": "SCALE"
+      },
+      "layoutAlign": "INHERIT",
+      "layoutGrow": 0,
+      "layoutPositioning": "AUTO",
+      "layoutSizingHorizontal": "FIXED",
+      "layoutSizingVertical": "FIXED",
+      "exportSettings": [],
+      "reactions": []
+    },
+    {
+      "id": "609:113",
+      "parentId": "607:7",
+      "name": "Vector",
+      "type": "VECTOR",
+      "x": 155.341552734375,
+      "y": 65.162109375,
+      "width": 17.521299362182617,
+      "height": 8.916956901550293,
+      "rotation": 0,
+      "visible": true,
+      "opacity": 1,
+      "blendMode": "PASS_THROUGH",
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0.9378374814987183,
+            "g": 0.8657094240188599,
+            "b": 0.07230053842067719
+          },
+          "boundVariables": {}
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1,
+      "strokeAlign": "INSIDE",
+      "dashPattern": [],
+      "effects": [],
+      "cornerRadius": 0,
+      "isMask": false,
+      "maskType": "ALPHA",
+      "constraints": {
+        "horizontal": "SCALE",
+        "vertical": "SCALE"
+      },
+      "layoutAlign": "INHERIT",
+      "layoutGrow": 0,
+      "layoutPositioning": "AUTO",
+      "layoutSizingHorizontal": "FIXED",
+      "layoutSizingVertical": "FIXED",
+      "exportSettings": [],
+      "reactions": []
+    }
+  ]
+}

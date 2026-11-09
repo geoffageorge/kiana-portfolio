@@ -1,0 +1,52 @@
+{
+  "validatedDate": "2026-11-08",
+  "productionBuild": "passed",
+  "stats": {
+    "startTime": "2026-11-09T03:31:58.248Z",
+    "duration": 221565.75699999998,
+    "expected": 233,
+    "skipped": 1,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "projects": {
+    "desktop": {
+      "passed": 53,
+      "skipped": 0,
+      "unexpected": 0
+    },
+    "mobile": {
+      "passed": 52,
+      "skipped": 1,
+      "unexpected": 0
+    },
+    "safari-webkit": {
+      "passed": 32,
+      "skipped": 0,
+      "unexpected": 0
+    },
+    "safari-mobile": {
+      "passed": 32,
+      "skipped": 0,
+      "unexpected": 0
+    },
+    "firefox": {
+      "passed": 32,
+      "skipped": 0,
+      "unexpected": 0
+    },
+    "firefox-mobile": {
+      "passed": 32,
+      "skipped": 0,
+      "unexpected": 0
+    }
+  },
+  "skipped": [
+    {
+      "project": "mobile",
+      "title": "desktop image geometry matches the inspected frame, including every crop and repeated Markets image"
+    }
+  ],
+  "browserScope": "Installed Google Chrome, Playwright WebKit (Safari engine), and Firefox; desktop and emulated or phone-sized mobile viewports. Native Safari and real mobile hardware were not automated.",
+  "externalLinks": "All four exact Figma URLs returned HTTP 200 in separate live HTTP checks; popup routing is checked independently with intercepted responses."
+}

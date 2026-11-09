@@ -1,0 +1,63 @@
+{
+  "fileKey": "wZSRbIZZXfUlrq902OXE2W",
+  "frameId": "607:7",
+  "inspectedDate": "2026-11-08",
+  "assets": [
+    {
+      "file": "food-culture.png",
+      "width": 622,
+      "height": 534,
+      "bytes": 520079,
+      "sha256": "9a774dc4dabeb5fa43ed00b6a083a1334b0e8c34ed1c9bcbfd9fa2b7c9309f4d"
+    },
+    {
+      "file": "sumo-wrestling.png",
+      "width": 624,
+      "height": 532,
+      "bytes": 563821,
+      "sha256": "781a0bff494e1be4ec48aaea6b179a34628e09d69a5ef5d65b3579742c80f31f"
+    },
+    {
+      "file": "food-allergies.png",
+      "width": 620,
+      "height": 534,
+      "bytes": 803684,
+      "sha256": "fe70075e7f3ec8634717fb884307bfaed1d8ad98b2e563bbf3e9ebda6543fd99"
+    },
+    {
+      "file": "monk-thailand.png",
+      "width": 620,
+      "height": 534,
+      "bytes": 629060,
+      "sha256": "bc7254edc4b1b0076209071752a505aea59c4e4307101641a76f4d3b648c5d01"
+    },
+    {
+      "file": "feature-card-mask.svg",
+      "width": 498,
+      "height": 581,
+      "bytes": 252,
+      "sha256": "246036fcb9bf8a38068e4390ceb3eb9a012db27616df8f3f66ed3e1bfed9d6b4"
+    },
+    {
+      "file": "short-card-mask.svg",
+      "width": 498,
+      "height": 564,
+      "bytes": 252,
+      "sha256": "dbab48a448d768fd38d352ce8316a38e8ed5de63a13efa6f81fa2a9a7664be69"
+    },
+    {
+      "file": "food-allergies-image-mask.svg",
+      "width": 499,
+      "height": 410.941,
+      "bytes": 256,
+      "sha256": "d6032b1538fa9a7f9f5c7df97513c7be178510dc5111ea4ee348a4d9a4486d60"
+    },
+    {
+      "file": "monk-image-mask.svg",
+      "width": 498,
+      "height": 406,
+      "bytes": 244,
+      "sha256": "542181bb355b053db7c668063c297697ab4a9230098a8f0c0f759e5de80a9198"
+    }
+  ]
+}

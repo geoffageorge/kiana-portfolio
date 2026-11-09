@@ -2,6 +2,39 @@
 
 A local React + Vite portfolio built from `Design Template/KK design 1.png`, the prototype directions, and the architecture specifications. Tailwind CSS provides the base and utilities; each component owns its custom CSS. The build produces static files with no backend or external media services.
 
+## Add Journalism Page update version 5 — current deployment
+
+Version 5 follows `specs/changes/update 5.md` and the checked plan in `specs/changes/update-5-plan.md`. Figma MCP access and the design-to-code/Plugin API skills were verified with a Pro plan and Full seat. The source [Journalism frame](https://www.figma.com/design/wZSRbIZZXfUlrq902OXE2W/?node-id=607-7) contains Selected Features and four tiles.
+
+The shared header now uses UX, VIDEO, JOURNALISM, and ABOUT+CONTACT, retains the existing logo/name, and removes the header descriptor and Social Media option. UX opens the home page, Journalism opens `/journalism/`, Video opens the `/video/` placeholder, and About+Contact retains `/about/`. The footer is reused unchanged. The hero's previous desktop position is preserved after replacing its dependency on the removed descriptor.
+
+Journalism uses the four original PNGs and four original SVG masks, exact Figma text/styles/crops, a two-column desktop layout, and a single column on phones. The tiles reuse the home cards' 3D hover/focus effect and reduced-motion handling. All four prototype actions open their exact Figma destinations in new tabs without an opener. As explicitly approved, these destinations are one PDF and three articles, rather than four videos; all returned HTTP 200 in independent live checks.
+
+`Assets/figma files/journalism-v5-2026-11-08/` retains complete relevant design/prototype settings, independent geometry and text fixtures, original assets, the source reference with local URLs, hero baseline measurements, and link/test validation. `public/assets/journalism-figma/manifest.json` records the dimensions and SHA-256 hashes of the eight unchanged runtime assets. Regenerate them with `node scripts/import-journalism-figma.mjs`. The two new static entries are generated before dev/build and work on direct loads, reloads, `index.html` URLs, and deployments below a subdirectory.
+
+Validated November 8, 2026: production build passed; the complete six-project browser suite passed **233 checks**, with one existing desktop-only image geometry check skipped on mobile. No failed or flaky results remained. Tests cover source geometry/assets, all four navigation destinations and prototype actions, keyboard focus, 3D/reduced-motion behavior, hero animation/layout, About/resume/LinkedIn, both case studies, dividers, the scrolling Careers laptop, direct routes and subdirectory deployment. Journalism content geometry matches the Figma reference within one pixel. Desktop and phone screenshots were inspected in Google Chrome, Playwright WebKit (Safari's engine), and Firefox. These are browser-engine/emulated or phone-sized checks; native Safari and real mobile hardware were not automated.
+
+To commit and push this version 5 update:
+
+```sh
+cd "/Users/geoffgeorge/Developer/Kiana Portfolio" &&
+npm run build &&
+git add -- \
+  README.md src/ tests/ journalism/ video/ \
+  public/assets/journalism-figma/ \
+  scripts/import-journalism-figma.mjs scripts/scaffold-project-pages.mjs \
+  vite.config.js playwright.config.js \
+  "Assets/figma files/journalism-v5-2026-11-08/" \
+  "specs/changes/update 5.md" specs/changes/update-5-plan.md &&
+git diff --cached --stat &&
+git commit -m "Add Journalism Page update version 5" &&
+git push origin main
+```
+
+These paths exclude unrelated `.node-version` and template-image deletions, placeholder images, and personal RTF files. Keep `dist/`, `node_modules/`, browser binaries, and test output untracked. No commit, push, or production deployment has been performed for version 5.
+
+The existing Cloudflare Workers Builds connection builds `main` using `npm run build` and deploys with `npx wrangler deploy`. After the build succeeds, check `https://www.kianageorge.com/journalism/` and `https://www.kianageorge.com/video/`, the four header links, the four external tile links, and both existing case studies. Cloudflare configuration does not need to change for these static routes.
+
 ## Run locally
 
 Requires Node.js 22.12 or newer.

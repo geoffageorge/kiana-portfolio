@@ -1,0 +1,35 @@
+.page-container--features { width: min(1054px, calc(100% - 80px)); }
+.journalism-page, .video-page { color: #000; font-family: var(--portfolio-body); font-optical-sizing: none; padding-top: 76px; }
+.journalism-page { min-height: 1678px; padding-bottom: 184px; }
+.journalism-intro :is(h1,p) { margin: 0; }
+.journalism-intro .journalism-label { max-width: 254px; margin-left: 6px; font: 400 15px/26px var(--portfolio-body); }
+.journalism-intro h1 { max-width: 471px; margin: 24px 0 0 4px; font: 700 36px/44px var(--portfolio-body); letter-spacing: 0; }
+.journalism-intro .journalism-description { max-width: 994px; margin: 13px 0 0 6px; font: 400 16px/26px var(--portfolio-body); }
+.journalism-grid { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); align-items: start; gap: 48px 57px; width: calc(100% - 1px); margin-top: 66px; }
+.journalism-card { border: 0; border-radius: 16px; }
+.journalism-card--allergies { position: relative; left: 4px; }
+.journalism-card .project-card__link { padding: 0; background: transparent; border-radius: inherit; }
+.journalism-card__surface { mask-size: 100% 100%; mask-repeat: no-repeat; }
+.journalism-card__image { position: relative; overflow: hidden; }
+.journalism-card__image-layer { position: absolute; display: block; mask-repeat: no-repeat; }
+.journalism-card__image-layer img { display: block; width: 100%; height: 100%; max-width: none; object-fit: cover; }
+.journalism-card__caption { min-height: var(--caption-height); padding: var(--caption-top) 30px 30px var(--caption-left); background: #f7f7f7; }
+.journalism-card__caption p { max-width: var(--publication-width); margin: 0; color: #7c8b98; font: 500 15px/28px var(--portfolio-body); }
+.journalism-card__caption h2 { max-width: var(--title-width); margin: var(--title-gap) 0 0; color: #000; font: 600 20px/28px var(--portfolio-body); letter-spacing: 0; }
+.video-page { min-height: calc(100svh - var(--site-header-height) - 234px); padding-bottom: 80px; }
+.video-page h1 { margin: 0 0 0 4px; font: 700 36px/44px var(--portfolio-body); }
+@media (hover: hover) and (pointer: fine) { .journalism-card:hover img { transform: none; } }
+@media (max-width: 1023px) {
+  .journalism-page { min-height: 0; padding-bottom: 100px; }
+  .journalism-grid { column-gap: 32px; }
+  .journalism-card__caption { padding-left: 24px; padding-right: 24px; }
+}
+@media (max-width: 767px) {
+  .page-container--features { width: calc(100% - 40px); }
+  .journalism-page, .video-page { padding-top: 48px; }
+  .journalism-page { padding-bottom: 80px; }
+  .journalism-intro h1, .video-page h1 { font-size: 32px; line-height: 40px; }
+  .journalism-intro .journalism-description { margin-left: 4px; }
+  .journalism-grid { width: 100%; grid-template-columns: minmax(0,1fr); gap: 32px; margin-top: 40px; }
+  .journalism-card--allergies { left: 0; }
+}
