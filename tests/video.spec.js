@@ -41,7 +41,7 @@ test('Video 2 replaces the archived Video page with all three Figma sections and
   await expect(page.locator('.site-header .brand-name__descriptor')).toHaveCount(0);
   await expect(page.locator('.site-footer__connect')).toHaveAttribute('href', '/about/');
   await nav.getByRole('link', { name: 'JOURNALISM', exact: true }).click();
-  await expect(page.getByRole('heading', { level: 1 })).toHaveText('Selected Features');
+  await expect(page.getByRole('heading', { level: 1 })).toHaveText('SELECTED JOURNALISM WORK');
   await nav.getByRole('link', { name: 'UX', exact: true }).click();
   await expect(page.getByRole('heading', { level: 1 })).toHaveText('Selected Case Studies');
 });
@@ -185,5 +185,5 @@ test('the complete Video page supports direct index URLs and subdirectory deploy
   await expect(page.locator('.site-footer__connect')).toHaveAttribute('href', '/portfolio/about/');
   await page.getByRole('navigation', { name: 'Main navigation' }).getByRole('link', { name: 'JOURNALISM', exact: true }).click();
   await expect(page).toHaveURL(/\/portfolio\/journalism\/$/);
-  await expect(page.getByRole('heading', { level: 1 })).toHaveText('Selected Features');
+  await expect(page.getByRole('heading', { level: 1 })).toHaveText('SELECTED JOURNALISM WORK');
 });

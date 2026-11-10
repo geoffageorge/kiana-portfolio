@@ -1,0 +1,196 @@
+{
+  "frameId": "607:7",
+  "inspectedDate": "2026-11-09",
+  "assets": [
+    {
+      "file": "food-culture.png",
+      "path": "assets/journalism-figma/food-culture.png",
+      "sourcePath": "Assets/figma files/journalism-v5-2026-11-08/source-assets/food-culture.png",
+      "bytes": 520079,
+      "sha256": "9a774dc4dabeb5fa43ed00b6a083a1334b0e8c34ed1c9bcbfd9fa2b7c9309f4d",
+      "width": 622,
+      "height": 534,
+      "reused": true
+    },
+    {
+      "file": "sumo-wrestling.png",
+      "path": "assets/journalism-figma/sumo-wrestling.png",
+      "sourcePath": "Assets/figma files/journalism-v5-2026-11-08/source-assets/sumo-wrestling.png",
+      "bytes": 563821,
+      "sha256": "781a0bff494e1be4ec48aaea6b179a34628e09d69a5ef5d65b3579742c80f31f",
+      "width": 624,
+      "height": 532,
+      "reused": true
+    },
+    {
+      "file": "food-allergies.png",
+      "path": "assets/journalism-figma/food-allergies.png",
+      "sourcePath": "Assets/figma files/journalism-v5-2026-11-08/source-assets/food-allergies.png",
+      "bytes": 803684,
+      "sha256": "fe70075e7f3ec8634717fb884307bfaed1d8ad98b2e563bbf3e9ebda6543fd99",
+      "width": 620,
+      "height": 534,
+      "reused": true
+    },
+    {
+      "file": "monk-thailand.png",
+      "path": "assets/journalism-figma/monk-thailand.png",
+      "sourcePath": "Assets/figma files/journalism-v5-2026-11-08/source-assets/monk-thailand.png",
+      "bytes": 629060,
+      "sha256": "bc7254edc4b1b0076209071752a505aea59c4e4307101641a76f4d3b648c5d01",
+      "width": 620,
+      "height": 534,
+      "reused": true
+    },
+    {
+      "file": "cultured-pickle-shop.png",
+      "path": "assets/video-v8-figma/cultured-pickle-shop.png",
+      "sourcePath": "Assets/figma files/video-v8-2026-11-09/source-assets/cultured-pickle-shop.png",
+      "bytes": 2175079,
+      "sha256": "0e665ed3b41daa32ada2e601765e1676f80bd6e0e62d15325aec4c0fc7baa73b",
+      "width": 1654,
+      "height": 1014,
+      "reused": true
+    },
+    {
+      "file": "food-cooperatives.png",
+      "path": "assets/video-v8-figma/food-cooperatives.png",
+      "sourcePath": "Assets/figma files/video-v8-2026-11-09/source-assets/food-cooperatives.png",
+      "bytes": 3721662,
+      "sha256": "119bfa3b30b059038dc7f70eb43ab249a5cbf8dd4c915e3cdaa2bd42edc344f1",
+      "width": 2372,
+      "height": 1475,
+      "reused": true
+    },
+    {
+      "file": "claire-mack.png",
+      "path": "assets/video-v8-figma/claire-mack.png",
+      "sourcePath": "Assets/figma files/video-v8-2026-11-09/source-assets/claire-mack.png",
+      "bytes": 1513558,
+      "sha256": "07f5dfb0fbed31d366f02d892f09257c29bf24b6e4be88eba546609c3e6c8008",
+      "width": 1485,
+      "height": 888,
+      "reused": true
+    },
+    {
+      "file": "wasabi.png",
+      "path": "assets/video-v8-figma/wasabi.png",
+      "sourcePath": "Assets/figma files/video-v8-2026-11-09/source-assets/wasabi.png",
+      "bytes": 3331817,
+      "sha256": "c9c29440e58ed37f72f433df489fa54eac9ce4290f996e4b9a6e1a65964bdd66",
+      "width": 1864,
+      "height": 1098,
+      "reused": true
+    },
+    {
+      "file": "castro-street.png",
+      "path": "assets/video-v8-figma/castro-street.png",
+      "sourcePath": "Assets/figma files/video-v8-2026-11-09/source-assets/castro-street.png",
+      "bytes": 1469684,
+      "sha256": "1ece18d6334d92f81c920e342f5d778f302add0348d0ec9624c2f75776c4dacd",
+      "width": 1477,
+      "height": 849,
+      "reused": true
+    },
+    {
+      "file": "colette-crutcher.png",
+      "path": "assets/video-v8-figma/colette-crutcher.png",
+      "sourcePath": "Assets/figma files/video-v8-2026-11-09/source-assets/colette-crutcher.png",
+      "bytes": 2877514,
+      "sha256": "21fa4488daf863b4f1b2672cc767e79ea1059b15bb24f48a365cc565579af9ee",
+      "width": 1660,
+      "height": 1023,
+      "reused": true
+    },
+    {
+      "file": "aapi-multimedia.png",
+      "path": "assets/video-v8-figma/aapi-multimedia.png",
+      "sourcePath": "Assets/figma files/video-v8-2026-11-09/source-assets/aapi-multimedia.png",
+      "bytes": 3156106,
+      "sha256": "1d28beec6bb1df4d9f765b7ac000c8547165636c9b6f9b2adc56237e98846a1d",
+      "width": 2086,
+      "height": 1185,
+      "reused": true
+    },
+    {
+      "file": "feature-card-mask.svg",
+      "path": "assets/journalism-figma/feature-card-mask.svg",
+      "sourcePath": "Assets/figma files/journalism-v5-2026-11-08/source-assets/feature-card-mask.svg",
+      "bytes": 252,
+      "sha256": "246036fcb9bf8a38068e4390ceb3eb9a012db27616df8f3f66ed3e1bfed9d6b4",
+      "width": 498,
+      "height": 581,
+      "reused": true
+    },
+    {
+      "file": "short-card-mask.svg",
+      "path": "assets/journalism-figma/short-card-mask.svg",
+      "sourcePath": "Assets/figma files/journalism-v5-2026-11-08/source-assets/short-card-mask.svg",
+      "bytes": 252,
+      "sha256": "dbab48a448d768fd38d352ce8316a38e8ed5de63a13efa6f81fa2a9a7664be69",
+      "width": 498,
+      "height": 564,
+      "reused": true
+    },
+    {
+      "file": "food-allergies-image-mask.svg",
+      "path": "assets/journalism-figma/food-allergies-image-mask.svg",
+      "sourcePath": "Assets/figma files/journalism-v5-2026-11-08/source-assets/food-allergies-image-mask.svg",
+      "bytes": 256,
+      "sha256": "d6032b1538fa9a7f9f5c7df97513c7be178510dc5111ea4ee348a4d9a4486d60",
+      "width": 499,
+      "height": 410.941,
+      "reused": true
+    },
+    {
+      "file": "monk-image-mask.svg",
+      "path": "assets/journalism-figma/monk-image-mask.svg",
+      "sourcePath": "Assets/figma files/journalism-v5-2026-11-08/source-assets/monk-image-mask.svg",
+      "bytes": 244,
+      "sha256": "542181bb355b053db7c668063c297697ab4a9230098a8f0c0f759e5de80a9198",
+      "width": 498,
+      "height": 406,
+      "reused": true
+    },
+    {
+      "file": "broadcast-card-mask.svg",
+      "path": "assets/video-v8-figma/broadcast-card-mask.svg",
+      "sourcePath": "Assets/figma files/video-v8-2026-11-09/source-assets/broadcast-card-mask.svg",
+      "bytes": 252,
+      "sha256": "833b48d1246807d6f4d8a53f2660d0a8a993710bf46d52795036019b249967a8",
+      "width": 382,
+      "height": 356,
+      "reused": true
+    },
+    {
+      "file": "colette-card-mask.svg",
+      "path": "assets/video-v8-figma/colette-card-mask.svg",
+      "sourcePath": "Assets/figma files/video-v8-2026-11-09/source-assets/colette-card-mask.svg",
+      "bytes": 252,
+      "sha256": "870318520e606e6561f8a893611a67d05fb83a9b35585b1fa6c820667e4a33c1",
+      "width": 382,
+      "height": 356,
+      "reused": true
+    },
+    {
+      "file": "wasabi-caption.svg",
+      "path": "assets/video-v8-figma/wasabi-caption.svg",
+      "sourcePath": "Assets/figma files/video-v8-2026-11-09/source-assets/wasabi-caption.svg",
+      "bytes": 241,
+      "sha256": "5542e993b0621947423fb24acd39ec21e776bdcbf81d0354c017172c0656cdb1",
+      "width": 388,
+      "height": 151,
+      "reused": true
+    },
+    {
+      "file": "play-button.svg",
+      "path": "assets/video-v8-figma/play-button.svg",
+      "sourcePath": "Assets/figma files/video-v8-2026-11-09/source-assets/play-button.svg",
+      "bytes": 461,
+      "sha256": "8b3ab8b8f1e50582046fb84640b6c5460129c03f5e4c7d8df4e2ba23e922afc8",
+      "width": 28.1841,
+      "height": 28.1841,
+      "reused": true
+    }
+  ]
+}

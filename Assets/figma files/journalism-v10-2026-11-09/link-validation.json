@@ -1,0 +1,147 @@
+{
+  "validatedDate": "2026-11-09",
+  "destinations": [
+    {
+      "url": "https://2e91434b-a028-4805-a12d-81297a98eea3.filesusr.com/ugd/0deb7c_fe325fd71d274fd2a9251ca97dc8a779.pdf",
+      "status": 200,
+      "effectiveUrl": "https://2e91434b-a028-4805-a12d-81297a98eea3.filesusr.com/ugd/0deb7c_fe325fd71d274fd2a9251ca97dc8a779.pdf",
+      "contentType": "application/pdf",
+      "bytes": 255952,
+      "error": null,
+      "pdfSignature": true
+    },
+    {
+      "url": "https://scotscenterchs.wixsite.com/aapi",
+      "status": 200,
+      "effectiveUrl": "https://scotscenterchs.wixsite.com/aapi",
+      "contentType": "text/html; charset=UTF-8",
+      "bytes": 587383,
+      "error": null,
+      "title": "Home | AAPI Hate",
+      "hostedVideoPresent": true
+    },
+    {
+      "url": "https://scotscoop.com/castro-street-a-colorful-safe-haven/",
+      "status": 200,
+      "effectiveUrl": "https://scotscoop.com/castro-street-a-colorful-safe-haven/",
+      "contentType": "text/html; charset=UTF-8",
+      "bytes": 269605,
+      "error": null,
+      "title": "Castro Street: A colorful safe haven &#8211; Scot Scoop News",
+      "embeddedYouTubeIds": [
+        "5fBdTjf4BnA"
+      ]
+    },
+    {
+      "url": "https://scotscoop.com/claire-mack-cranks-out-crunch-cakes-for-the-community/",
+      "status": 200,
+      "effectiveUrl": "https://scotscoop.com/claire-mack-cranks-out-crunch-cakes-for-the-community/",
+      "contentType": "text/html; charset=UTF-8",
+      "bytes": 271170,
+      "error": null,
+      "title": "Claire Mack cranks out crunch cakes for the community &#8211; Scot Scoop News",
+      "embeddedYouTubeIds": [
+        "-0pFGOsso28"
+      ]
+    },
+    {
+      "url": "https://scotscoop.com/colette-crutcher-pieces-together-city-art/",
+      "status": 200,
+      "effectiveUrl": "https://scotscoop.com/colette-crutcher-pieces-together-city-art/",
+      "contentType": "text/html; charset=UTF-8",
+      "bytes": 269596,
+      "error": null,
+      "title": "Colette Crutcher pieces together city art &#8211; Scot Scoop News",
+      "embeddedYouTubeIds": [
+        "8px_OnZf6cc"
+      ]
+    },
+    {
+      "url": "https://scotscoop.com/just-one-bite-could-kill/",
+      "status": 200,
+      "effectiveUrl": "https://scotscoop.com/just-one-bite-could-kill/",
+      "contentType": "text/html; charset=UTF-8",
+      "bytes": 205274,
+      "error": null,
+      "title": "Scot Scoop News | Just one bite could kill",
+      "embeddedYouTubeIds": [
+        "3qnCjKkmaUY"
+      ]
+    },
+    {
+      "url": "https://scotscoop.com/sumo-wrestling-in-america-destined-to-become-huge/",
+      "status": 200,
+      "effectiveUrl": "https://scotscoop.com/sumo-wrestling-in-america-destined-to-become-huge/",
+      "contentType": "text/html; charset=UTF-8",
+      "bytes": 254319,
+      "error": null,
+      "title": "Sumo wrestling in America \u2014 Destined to become huge? &#8211; Scot Scoop News",
+      "embeddedYouTubeIds": []
+    },
+    {
+      "url": "https://stanforddaily.com/2020/08/25/everything-i-learned-from-a-monk-in-thailand/",
+      "status": 200,
+      "effectiveUrl": "https://stanforddaily.com/2020/08/25/everything-i-learned-from-a-monk-in-thailand/",
+      "contentType": "text/html; charset=UTF-8",
+      "bytes": 357800,
+      "error": null,
+      "title": "Everything I learned from a monk in Thailand"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=-xH8wz2k_So",
+      "status": 200,
+      "effectiveUrl": "https://www.youtube.com/watch?v=-xH8wz2k_So",
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 1333157,
+      "error": null,
+      "title": "Food Co-Operatives in Berkeley: Breaking Norms and Innovating - YouTube",
+      "oembedStatus": 200,
+      "publicVideoTitle": "Food Co-Operatives in Berkeley: Breaking Norms and Innovating"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=AL2rxCkH-JQ",
+      "status": 200,
+      "effectiveUrl": "https://www.youtube.com/watch?v=AL2rxCkH-JQ",
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 1324145,
+      "error": null,
+      "title": "The Cultured Pickle Shop: The Art of Fermentation - YouTube",
+      "oembedStatus": 200,
+      "publicVideoTitle": "The Cultured Pickle Shop: The Art of Fermentation"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=bVRONBlSAOo",
+      "status": 200,
+      "effectiveUrl": "https://www.youtube.com/watch?v=bVRONBlSAOo",
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 1276852,
+      "error": null,
+      "title": "Half Moon Bay Wasabi spices up the sushi scene - YouTube",
+      "oembedStatus": 200,
+      "publicVideoTitle": "Half Moon Bay Wasabi spices up the sushi scene"
+    }
+  ],
+  "embeddedVideos": [
+    {
+      "videoId": "-0pFGOsso28",
+      "verified": true,
+      "title": "Claire Mack cranks out crunch cakes for the community"
+    },
+    {
+      "videoId": "3qnCjKkmaUY",
+      "verified": true,
+      "title": "Feature Video: The Sean N. Parker Center"
+    },
+    {
+      "videoId": "5fBdTjf4BnA",
+      "verified": true,
+      "title": "Castro Street: A colorful safe haven"
+    },
+    {
+      "videoId": "8px_OnZf6cc",
+      "verified": true,
+      "title": "Colette Crutcher pieces together city art"
+    }
+  ],
+  "limits": "HTTP/PDF/media metadata and embedded video availability checks; deterministic browser tests separately verify click/keyboard/new-tab destinations. Full external videos were not watched end-to-end."
+}

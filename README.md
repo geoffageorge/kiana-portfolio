@@ -2,7 +2,43 @@
 
 A local React + Vite portfolio built from `Design Template/KK design 1.png`, the prototype directions, and the architecture specifications. Tailwind CSS provides the base and utilities; each component owns its custom CSS. The build produces static files with no backend or external media services.
 
-## Home Page text update 9.1 — current deployment
+## JOURNALISM section changes update version 10 — current deployment
+
+Version 10 implements `specs/changes/update 10.md` using the checked plan in `specs/changes/update-10-plan.md`. Official Figma MCP access is confirmed with a Pro plan and Full seat, using the design-to-code and Plugin API skills. The source is [JOURNALISM 2, frame 607:7](https://www.figma.com/design/wZSRbIZZXfUlrq902OXE2W/?node-id=607-7). The isolated Video 2 reference in the specification is treated as a copied label; Video 2 supplies the shared media assets.
+
+The updated `/journalism/` page has SELECTED JOURNALISM WORK, **Written Articles** with the original four linked stories, **Multimedia Journalism** with the AAPI package, preview and CTA, and **Broadcast Journalism** with six stories. It matches the inspected copy, fonts, masks, crops, caption positions, section spacing and two native dividers. The existing four-option navigation and global footer are retained. The desktop layout reflows to two/one columns and stacks the multimedia copy/preview on smaller screens.
+
+All **19 runtime assets** are exact matches for existing Journalism/Video images, masks, caption artwork and play icons. They reuse their existing source archives and runtime URLs; no duplicate image files are added to the build or new source archive. `Assets/figma files/journalism-v10-2026-11-09/` records all 147 nodes' design/prototype settings, independent text/geometry, high-fidelity reference, asset hashes/reuse mapping and external link validation. Only the new divider reference export is retained as an additional source SVG; the website uses native borders for Safari compatibility. Regenerate the content and reuse manifest with `node scripts/import-journalism-v10-figma.mjs`.
+
+`src/components/VideoMedia/` now provides the preview and broadcast-card rendering shared by Journalism and Video. Existing subtle hover/focus/press feedback and reduced-motion behavior remain in use. As previously approved for Video, each play icon opens its matching preview destination. The multimedia preview/title opens the same package as its CTA. As explicitly confirmed, five overlapping screenshot filename labels are omitted as editor artifacts; the original layers remain fully documented. Duplicated Figma navigation/logo layers and the entirely occluded larger play symbol are represented by the existing shared branding and visible preview layers.
+
+All **11 distinct external destinations** returned HTTP 200. The written PDF has a valid PDF signature, the three directly linked YouTube videos expose public metadata, and the four detected article embeds expose public video metadata. The AAPI page exposes its hosted video. These availability checks are recorded separately from deterministic keyboard/click/play-icon new-tab tests in `link-validation.json`; external videos were not watched end-to-end. No dependencies or hosting configuration changes are required.
+
+Validated November 9, 2026: production build passed; the complete six-project regression suite passed **403 checks**, with one existing desktop-only Obayashi geometry check skipped on mobile. No failed or flaky results remain. Checks cover the new source layout/typography/assets and all links, responsive/reduced-motion behavior, shared Video rendering, direct/subdirectory routes and the existing website. Final Journalism desktop/phone screenshots were reviewed in Chrome, WebKit (Safari's engine) and Firefox against Figma. Native Safari and real mobile hardware were not automated. Detailed results, asset hashes, geometry and verification limits are in `validation.json`.
+
+To commit and push version 10:
+
+```sh
+cd "/Users/geoffgeorge/Developer/Kiana Portfolio" &&
+npm run build &&
+git add -- \
+  README.md \
+  src/pages/JournalismPage.jsx src/pages/PortfolioSectionPages.css \
+  src/pages/VideoPage.jsx src/pages/VideoPage.css \
+  src/components/VideoMedia/ \
+  scripts/import-journalism-v10-figma.mjs \
+  public/assets/journalism-v10-figma/ \
+  tests/journalism.spec.js tests/video.spec.js tests/update8.spec.js \
+  "Assets/figma files/journalism-v10-2026-11-09/" \
+  "specs/changes/update 10.md" specs/changes/update-10-plan.md &&
+git diff --cached --stat &&
+git commit -m "JOURNALISM section changes update version 10" &&
+git push origin main
+```
+
+These scoped paths exclude unrelated `.node-version` and template-image deletions, placeholder images and personal RTF files. No version 10 commit, push or production deployment has been performed. After Cloudflare finishes deploying the new commit, refresh `https://www.kianageorge.com/journalism/`, verify all three sections and both dividers, open all written/media destinations and play icons, and check phone layout. Check `/video/`, the home hero and Featured links, both case studies and About+Contact. Wait for Cloudflare to finish before checking the live site.
+
+## Home Page text update 9.1 — reference
 
 Inspected [Selected Works Tiles, frame 28:2](https://www.figma.com/design/wZSRbIZZXfUlrq902OXE2W/?node-id=28-2) through the official Figma MCP connection using the design-to-code and Plugin API skills. The current design labels node 28:4 **Featured**; that wording is retained to match Figma. Its typography is Helvetica Neue Bold, 28px with 105% line height. CASE STUDIES (28:15) uses the existing local Fira Mono Regular at 14px with 120% line height. Both are black, left-aligned, with zero added letter spacing.
 
@@ -12,7 +48,7 @@ The text shares a left edge 2px inside the first tile, aligned with the divider,
 
 Validated November 9, 2026: production build passes; **90 home-page regression checks** are validated across Chrome, WebKit (Safari's engine) and Firefox at desktop and phone sizes. The initial run passed 89 checks and exposed one immediate resize measurement taken before layout settled. That assertion now waits for settling; all 48 affected checks passed after the final spacing update. No unresolved failures, skipped or flaky checks remain. Final screenshots were reviewed in all three engines at 1440px and 390px. Chrome reports the actual fonts as HelveticaNeue-Bold and FiraMono-Regular. Typography and relative placement match the source measurements within subpixel rounding. Native Safari and real mobile hardware were not automated. `validation.json` records the detailed results and verification limits.
 
-To commit and push update 9.1:
+Historical commit/push commands for update 9.1 (already on GitHub as `a1b0060`; use the version 10 commands above for this change):
 
 ```sh
 cd "/Users/geoffgeorge/Developer/Kiana Portfolio" &&
@@ -94,7 +130,7 @@ git commit -m "Update Video page and subtle tile motion version 8" &&
 git push origin main
 ```
 
-The removed old asset/importer paths are included intentionally so Git records their move into the archive. These historical version 8 paths exclude unrelated `.node-version` and template-image deletions, placeholder images and personal RTF files. Keep `dist/`, `node_modules/`, browser binaries and test output untracked. Use the update 9.1 commands above for the current update.
+The removed old asset/importer paths are included intentionally so Git records their move into the archive. These historical version 8 paths exclude unrelated `.node-version` and template-image deletions, placeholder images and personal RTF files. Keep `dist/`, `node_modules/`, browser binaries and test output untracked. Use the version 10 commands above for the current update.
 
 After the existing Cloudflare Workers Builds deployment succeeds, check `https://www.kianageorge.com/video/`, all eight video destinations and their play icons, the 32px headings on `/journalism/` and `/ux/`, subtle hover/keyboard feedback on all linked cards, and the top two previews' stationary titles. Also check the home hero, both case studies, About+Contact, phone layouts and reduced motion. The existing `main` build (`npm run build`, then `npx wrangler deploy`) does not need configuration changes.
 
@@ -126,7 +162,7 @@ git commit -m "Change Hero section update version 7" &&
 git push origin main
 ```
 
-These historical version 7 paths exclude unrelated `.node-version` and template-image deletions, placeholder images and personal RTF files. Keep `dist/`, `node_modules/`, browser binaries and test output untracked. Use the update 9.1 commands above for the current update.
+These historical version 7 paths exclude unrelated `.node-version` and template-image deletions, placeholder images and personal RTF files. Keep `dist/`, `node_modules/`, browser binaries and test output untracked. Use the version 10 commands above for the current update.
 
 The existing Cloudflare Workers Builds connection builds `main` with `npm run build` and deploys with `npx wrangler deploy`. After it succeeds, check `https://www.kianageorge.com/` for automatic hero playback, Replay and Featured; check `https://www.kianageorge.com/ux/` directly and through the UX menu; open both project tiles and verify the logo returns home. Also check Video, Journalism and About+Contact. Test a phone layout and a reduced-motion preference. Cloudflare configuration does not need to change.
 
@@ -158,7 +194,7 @@ git commit -m "Add Video Page update version 6" &&
 git push origin main
 ```
 
-These historical version 6 paths exclude unrelated `.node-version` and template-image deletions, placeholder images, and personal RTF files. Keep `dist/`, `node_modules/`, browser binaries and test output untracked. Use the update 9.1 commands above for the current update.
+These historical version 6 paths exclude unrelated `.node-version` and template-image deletions, placeholder images, and personal RTF files. Keep `dist/`, `node_modules/`, browser binaries and test output untracked. Use the version 10 commands above for the current update.
 
 The existing Cloudflare Workers Builds connection builds `main` using `npm run build` and deploys with `npx wrangler deploy`. After it succeeds, check `https://www.kianageorge.com/video/`, all eight preview destinations, the four navigation options, and the existing case studies. No hosting configuration changes are needed.
 
@@ -191,7 +227,7 @@ git commit -m "Add Journalism Page update version 5" &&
 git push origin main
 ```
 
-These historical version 5 paths exclude unrelated `.node-version` and template-image deletions, placeholder images, and personal RTF files. Keep `dist/`, `node_modules/`, browser binaries, and test output untracked. Use the update 9.1 commands above for the current update.
+These historical version 5 paths exclude unrelated `.node-version` and template-image deletions, placeholder images, and personal RTF files. Keep `dist/`, `node_modules/`, browser binaries, and test output untracked. Use the version 10 commands above for the current update.
 
 The existing Cloudflare Workers Builds connection builds `main` using `npm run build` and deploys with `npx wrangler deploy`. After the build succeeds, check `https://www.kianageorge.com/journalism/` and `https://www.kianageorge.com/video/`, the four header links, the four external tile links, and both existing case studies. Cloudflare configuration does not need to change for these static routes.
 

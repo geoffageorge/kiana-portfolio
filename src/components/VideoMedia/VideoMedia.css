@@ -1,0 +1,18 @@
+.video-feature__preview { min-width: 0; border: 0; background: transparent; }
+.video-feature__preview .project-card__link { padding: 0; background: transparent; border-radius: 16px; }
+.video-feature__poster { position: relative; overflow: hidden; border-radius: 16px; }
+.video-feature__thumbnail { display: block; width: 100%; height: 100%; object-fit: cover; }
+.video-feature__play { position: absolute; display: block; height: auto; }
+.video-feature__preview .video-feature__title { color: #000; font: 600 20px/28px var(--portfolio-body); letter-spacing: 0; }
+.video-card { position: relative; left: var(--card-shift); min-width: 0; border: 0; border-radius: 16px; }
+.video-card .project-card__link { padding: 0; border-radius: inherit; background: transparent; }
+.video-card__surface { mask-size: 100% 100%; mask-repeat: no-repeat; }
+.video-card__image { position: relative; overflow: hidden; }
+.video-card__image-layer { position: absolute; display: block; }
+.video-card__image-layer img { display: block; width: 100%; height: 100%; max-width: none; object-fit: cover; }
+.video-card__play { position: absolute; display: block; height: auto; }
+.video-card__caption { position: relative; padding-right: 20px; padding-bottom: 20px; }
+.video-card__background { position: absolute; top: 0; height: 100%; max-width: none; background: #f7f7f7; }
+.video-card__caption p { position: relative; color: #7c8b98; font: 500 15px/28px var(--portfolio-body); }
+.video-card .video-card__caption h3 { position: relative; color: #000; font: 600 20px/28px var(--portfolio-body); letter-spacing: 0; white-space: pre-line; }
+@media (max-width: 1023px) { .video-card { left: 0; } }

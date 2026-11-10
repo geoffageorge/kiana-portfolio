@@ -26,7 +26,7 @@ test('the previous Video page is archived intact and excluded from the productio
 test('Journalism, UX and all Video 2 section headings use 32px on desktop and phones',async({page})=>{
   for(const width of [390,1440]){
     await page.setViewportSize({width,height:1000});
-    for(const [path,selector]of[['/journalism/','#journalism-title'],['/ux/','#ux-title'],['/video/','.video-page h2']]){
+    for(const [path,selector]of[['/journalism/','.journalism-page h2'],['/ux/','#ux-title'],['/video/','.video-page h2']]){
       await page.goto(path);
       await expect(page.locator(selector).first()).toBeVisible();
       for(const heading of await page.locator(selector).all())await expect(heading).toHaveCSS('font-size','32px');

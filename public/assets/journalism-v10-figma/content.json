@@ -1,0 +1,384 @@
+{
+  "frameId": "607:7",
+  "frameHeight": 3689,
+  "label": {
+    "id": "689:117",
+    "text": "SELECTED JOURNALISM WORK"
+  },
+  "written": {
+    "heading": {
+      "id": "607:16",
+      "text": "Written Articles"
+    },
+    "description": {
+      "id": "607:14",
+      "text": "Writing gives me a way to explore topics, reflect on experiences, and share perspectives. This collection brings together reported features and personal reflections, shaped by curiosity, conversations, and a closer look at the world around me."
+    }
+  },
+  "multimedia": {
+    "key": "journalism-multimedia",
+    "heading": {
+      "id": "689:8",
+      "text": "Multimedia Journalism"
+    },
+    "body": {
+      "id": "689:7",
+      "text": "As anti-Asian hate incidents escalated across the U.S., I led a team of student journalists to create a multimedia news package documenting their impact and the community’s response.\n\nI built the website and assembled the full package, coordinated articles and podcasts, produced the video, contributed photography, and created an incident timeline, personal accounts section, and donation and involvement resources.\n\nThe project won the National Scholastic Press Association’s Multimedia News Story of the Year award.",
+      "width": 490
+    },
+    "href": "https://scotscenterchs.wixsite.com/aapi",
+    "prototypeId": "689:9",
+    "button": {
+      "id": "689:9",
+      "label": {
+        "id": "689:11",
+        "text": "SEE MULTIMEDIA PACKAGE ↗"
+      },
+      "width": 239,
+      "height": 31,
+      "labelWidth": 223,
+      "gap": 51
+    },
+    "image": {
+      "id": "689:68",
+      "file": "aapi-multimedia.png",
+      "width": 508,
+      "height": 289
+    },
+    "title": {
+      "id": "689:90",
+      "text": "The Surge of Asian Hate",
+      "width": 328,
+      "minHeight": 65.7529296875,
+      "left": 0,
+      "gap": 27
+    },
+    "play": {
+      "id": "689:87",
+      "x": 20,
+      "y": 226,
+      "width": 28.18408203125,
+      "height": 28.18408203125
+    }
+  },
+  "broadcast": {
+    "heading": {
+      "id": "689:13",
+      "text": "Broadcast Journalism"
+    },
+    "description": {
+      "id": "689:12",
+      "text": "I use video to explore the people, places, and ideas that make a community. I take each story from concept to final edit, handling research, interviews, on-location filming, photography, and video editing."
+    },
+    "stories": [
+      {
+        "key": "pickle",
+        "id": "689:14",
+        "href": "https://www.youtube.com/watch?v=AL2rxCkH-JQ",
+        "mask": "broadcast-card-mask.svg",
+        "shift": 2,
+        "image": {
+          "id": "689:18",
+          "file": "cultured-pickle-shop.png",
+          "x": 0.24468994140625,
+          "y": -1.51171875,
+          "width": 381.3741455078125,
+          "height": 205.01100158691406,
+          "visibleHeight": 204,
+          "background": "transparent"
+        },
+        "title": {
+          "id": "689:20",
+          "text": "The Cultured Pickle Shop: \nThe Art of Fermentation",
+          "width": 325
+        },
+        "publication": {
+          "id": "689:21",
+          "text": "CalTV",
+          "width": 292.2610168457031,
+          "height": 21.145498275756836
+        },
+        "play": {
+          "id": "689:84",
+          "x": 18,
+          "y": 164,
+          "width": 28.18408203125,
+          "height": 28.18408203125
+        },
+        "background": {
+          "id": "689:19",
+          "file": null,
+          "x": 1,
+          "width": 381,
+          "height": 152
+        },
+        "caption": {
+          "minHeight": 152,
+          "left": 32,
+          "top": 20,
+          "publicationShift": -0.037109375,
+          "titleGap": 10.854501724243164
+        }
+      },
+      {
+        "key": "cooperatives",
+        "id": "689:22",
+        "href": "https://www.youtube.com/watch?v=-xH8wz2k_So",
+        "mask": "broadcast-card-mask.svg",
+        "shift": 3,
+        "image": {
+          "id": "689:27",
+          "file": "food-cooperatives.png",
+          "x": 0.755859375,
+          "y": 0,
+          "width": 381,
+          "height": 204.8773651123047,
+          "visibleHeight": 205,
+          "background": "transparent"
+        },
+        "title": {
+          "id": "689:29",
+          "text": "Food Co-Operatives in Berkeley: \nBreaking Norms and Innovating",
+          "width": 328
+        },
+        "publication": {
+          "id": "689:30",
+          "text": "CalTV",
+          "width": 292.5535888671875,
+          "height": 22.091594696044922
+        },
+        "play": {
+          "id": "689:81",
+          "x": 13,
+          "y": 164,
+          "width": 28.18408203125,
+          "height": 28.18408203125
+        },
+        "background": {
+          "id": "689:28",
+          "file": null,
+          "x": 1,
+          "width": 381,
+          "height": 151
+        },
+        "caption": {
+          "minHeight": 151,
+          "left": 32,
+          "top": 19,
+          "publicationShift": -0.25,
+          "titleGap": 9.908405303955078
+        }
+      },
+      {
+        "key": "claire",
+        "id": "689:31",
+        "href": "https://scotscoop.com/claire-mack-cranks-out-crunch-cakes-for-the-community/",
+        "mask": "broadcast-card-mask.svg",
+        "shift": 1,
+        "image": {
+          "id": "689:35",
+          "file": "claire-mack.png",
+          "x": -3,
+          "y": -3,
+          "width": 383,
+          "height": 215,
+          "visibleHeight": 205,
+          "background": "transparent"
+        },
+        "title": {
+          "id": "689:38",
+          "text": "Claire Mack cranks out crunch\ncakes for the community",
+          "width": 328
+        },
+        "publication": {
+          "id": "689:39",
+          "text": "Scot Scoop",
+          "width": 292.5535888671875,
+          "height": 22.091594696044922
+        },
+        "play": {
+          "id": "689:78",
+          "x": 15,
+          "y": 164,
+          "width": 28.18408203125,
+          "height": 28.18408203125
+        },
+        "background": {
+          "id": "689:37",
+          "file": null,
+          "x": 0,
+          "width": 381,
+          "height": 151
+        },
+        "caption": {
+          "minHeight": 151,
+          "left": 31,
+          "top": 19,
+          "publicationShift": -0.25,
+          "titleGap": 9.908405303955078
+        }
+      },
+      {
+        "key": "colette",
+        "id": "689:56",
+        "href": "https://scotscoop.com/colette-crutcher-pieces-together-city-art/",
+        "mask": "colette-card-mask.svg",
+        "shift": 2,
+        "image": {
+          "id": "689:60",
+          "file": "colette-crutcher.png",
+          "x": -1,
+          "y": 0,
+          "width": 385,
+          "height": 215,
+          "visibleHeight": 214,
+          "background": "transparent"
+        },
+        "title": {
+          "id": "689:63",
+          "text": "Colette Crutcher pieces together city art",
+          "width": 329.7217712402344
+        },
+        "publication": {
+          "id": "689:64",
+          "text": "Scot Scoop",
+          "width": 294.08929443359375,
+          "height": 22.091594696044922
+        },
+        "play": {
+          "id": "689:72",
+          "x": 18,
+          "y": 175,
+          "width": 28.18408203125,
+          "height": 28.18408203125
+        },
+        "background": {
+          "id": "689:62",
+          "file": null,
+          "x": -1,
+          "width": 383,
+          "height": 151
+        },
+        "caption": {
+          "minHeight": 142,
+          "left": 30.1627197265625,
+          "top": 19,
+          "publicationShift": -0.25128173828125,
+          "titleGap": 9.908405303955078
+        }
+      },
+      {
+        "key": "castro",
+        "id": "689:47",
+        "href": "https://scotscoop.com/castro-street-a-colorful-safe-haven/",
+        "mask": "broadcast-card-mask.svg",
+        "shift": 2,
+        "image": {
+          "id": "689:51",
+          "file": "castro-street.png",
+          "x": -1,
+          "y": 0,
+          "width": 383,
+          "height": 215,
+          "visibleHeight": 214,
+          "background": "transparent"
+        },
+        "title": {
+          "id": "689:54",
+          "text": "Castro Street: A colorful\nsafe haven",
+          "width": 327.13909912109375
+        },
+        "publication": {
+          "id": "689:55",
+          "text": "Scot Scoop",
+          "width": 291.7857360839844,
+          "height": 22.091594696044922
+        },
+        "play": {
+          "id": "689:69",
+          "x": 14,
+          "y": 175,
+          "width": 28.18408203125,
+          "height": 28.18408203125
+        },
+        "background": {
+          "id": "689:53",
+          "file": null,
+          "x": 2,
+          "width": 380,
+          "height": 151
+        },
+        "caption": {
+          "minHeight": 142,
+          "left": 32.91864013671875,
+          "top": 19,
+          "publicationShift": -0.24932861328125,
+          "titleGap": 9.908405303955078
+        }
+      },
+      {
+        "key": "wasabi",
+        "id": "689:40",
+        "href": "https://www.youtube.com/watch?v=bVRONBlSAOo",
+        "mask": "broadcast-card-mask.svg",
+        "shift": -2,
+        "image": {
+          "id": "689:43",
+          "file": "wasabi.png",
+          "x": 0,
+          "y": 0,
+          "width": 384,
+          "height": 214,
+          "visibleHeight": 214,
+          "background": "transparent"
+        },
+        "title": {
+          "id": "689:45",
+          "text": "Half Moon Bay Wasabi spices up the sushi scene",
+          "width": 328
+        },
+        "publication": {
+          "id": "689:46",
+          "text": "Scot Scoop",
+          "width": 292.5535888671875,
+          "height": 22.091594696044922
+        },
+        "play": {
+          "id": "689:75",
+          "x": 18,
+          "y": 175,
+          "width": 28.18408203125,
+          "height": 28.18408203125
+        },
+        "background": {
+          "id": "689:44",
+          "file": "wasabi-caption.svg",
+          "x": -4,
+          "width": 388,
+          "height": 151
+        },
+        "caption": {
+          "minHeight": 142,
+          "left": 34,
+          "top": 19,
+          "publicationShift": -0.25,
+          "titleGap": 9.908405303955078
+        }
+      }
+    ]
+  },
+  "rules": [
+    {
+      "id": "689:97",
+      "offset": 9,
+      "width": 1193,
+      "strokeWeight": 0.5
+    },
+    {
+      "id": "689:91",
+      "offset": 9,
+      "width": 1193,
+      "strokeWeight": 0.5
+    }
+  ]
+}

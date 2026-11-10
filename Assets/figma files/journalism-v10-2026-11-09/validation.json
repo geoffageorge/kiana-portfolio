@@ -1,0 +1,3161 @@
+{
+  "update": "JOURNALISM section changes update version 10",
+  "validatedDate": "2026-11-09",
+  "baseCommit": "a1b0060",
+  "figma": {
+    "fileKey": "wZSRbIZZXfUlrq902OXE2W",
+    "frameId": "607:7",
+    "frameName": "JOURNALISM 2",
+    "size": [
+      1440,
+      3689
+    ],
+    "inspectedNodes": 147,
+    "textNodes": 41,
+    "sessionId": "6a92f5ed-dc58-4142-a8e1-0e657b44d2a7",
+    "connection": "Pro plan / Full seat",
+    "skills": [
+      "resource:figma-design-to-code",
+      "resource:figma-use"
+    ],
+    "mutations": "None; read-only inspection",
+    "records": [
+      "design-inspection.json",
+      "text-inspection.json",
+      "geometry.json",
+      "design-reference.jsx",
+      "asset-requests.json",
+      "asset-reuse.json"
+    ]
+  },
+  "implementation": {
+    "sections": [
+      "Written Articles",
+      "Multimedia Journalism",
+      "Broadcast Journalism"
+    ],
+    "writtenArticles": 4,
+    "multimediaFeatures": 1,
+    "broadcastStories": 6,
+    "nativeDividers": 2,
+    "sharedComponents": "VideoPreview and BroadcastVideo in src/components/VideoMedia/; Video retains its prior layout and behavior",
+    "copyAndPrototypeDecisions": [
+      "Existing global four-option navigation/footer retained as explicitly requested, overriding duplicated Figma header and SOCIAL MEDIA option.",
+      "Play icons use their matching preview destinations, following the user-approved update 8 correction.",
+      "Multimedia image and title link to the same package as the CTA.",
+      "User explicitly confirmed omission of the five overlapping screenshot filename labels.",
+      "One larger play symbol is fully occluded by the multimedia image and is not rendered separately."
+    ],
+    "assetReuse": {
+      "runtimeAssets": 19,
+      "exactMatches": 19,
+      "newRuntimeImageFiles": 0,
+      "newSourceImageCopies": 0,
+      "referenceOnly": "source-assets/divider.svg; native CSS border is used in the page",
+      "provenance": "Fresh Figma exports were hashed against both existing original archives and public files. Existing paths are recorded in asset-reuse.json."
+    }
+  },
+  "productionBuild": "passed",
+  "gitDiffCheck": "passed",
+  "sourceHashes": {
+    "src/pages/JournalismPage.jsx": "fd4d03b44a933b7f755876486490d63bf2c6e9e416ae90321d342ce9baab9765",
+    "src/pages/PortfolioSectionPages.css": "465c210e89615831addcd52164a71db13f0d0d1b2b10bdeb0d66509c0b1004a2",
+    "src/pages/VideoPage.jsx": "c7fbab44ce387420c58de2777bf232464a947475e9bf1f163b585497171e93eb",
+    "src/pages/VideoPage.css": "a6ae0f3fe7e41bfd6883db121b7fecfc5c0ef3fa72af2b8a6b8883c475bf7e2a",
+    "src/components/VideoMedia/VideoMedia.jsx": "ba753ec008705e655c3ff66d661d45bb48a96e5dd28416ac7b4ab9432e280a30",
+    "src/components/VideoMedia/VideoMedia.css": "8f6177f754e4026b1aa9750b6ee1223a6a3123ac96ad8d04a36d1596243517e2",
+    "scripts/import-journalism-v10-figma.mjs": "9b17b32c7dc081a77d3eab57dd909416c176f51996211ac263c87a4673f3c0f4",
+    "public/assets/journalism-v10-figma/content.json": "904c05817e47ab825f88cf0fbc14641bf50fdc8084a13d61bca7c96e9854f2a7",
+    "public/assets/journalism-v10-figma/manifest.json": "331153747673ba703f1753273b89c251676611fb2af39e1e874ae97da1c73faa",
+    "tests/journalism.spec.js": "2c35de9fb5c2c472082955233d9d650afdf1e0daf633f5c4b4e19299c101b4d9",
+    "tests/video.spec.js": "56e0d672eab3b361f6fcbdf0786af1ea2303ae37bc6d272e4626d280d1606870",
+    "tests/update8.spec.js": "165ad492f0d994f34784d37bd66574cb1ea5c4cb258a0f7be628cf84c06dd87c"
+  },
+  "validation": {
+    "fullSuite": {
+      "startTime": "2026-11-10T06:19:40.609Z",
+      "duration": 411501.701,
+      "expected": 403,
+      "skipped": 1,
+      "unexpected": 0,
+      "flaky": 0
+    },
+    "projects": {
+      "desktop": {
+        "expected": 76
+      },
+      "mobile": {
+        "expected": 75,
+        "skipped": 1
+      },
+      "safari-webkit": {
+        "expected": 63
+      },
+      "safari-mobile": {
+        "expected": 63
+      },
+      "firefox": {
+        "expected": 63
+      },
+      "firefox-mobile": {
+        "expected": 63
+      }
+    },
+    "existingSkip": [
+      {
+        "project": "mobile",
+        "file": "obayashi-design.spec.js",
+        "title": "desktop image geometry matches the inspected frame, including every crop and repeated Markets image"
+      }
+    ],
+    "focusedChecks": {
+      "startTime": "2026-11-10T06:17:42.248Z",
+      "duration": 34171.886,
+      "expected": 20,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0
+    },
+    "resolvedBeforeFullRun": "The initial shared CSS extraction moved a contextual selector prefix and changed Video heading/divider styling. Extraction was corrected to move complete, explicitly matched declarations only; all 20 focused checks and the complete final suite then passed.",
+    "coverage": [
+      "Exact original/reused asset hashes, source copy/typography and independent desktop positions/crops/masks",
+      "All three Journalism sections and native Safari-compatible dividers",
+      "All written, CTA, preview and play-icon destinations, keyboard/new-tab behavior and noopener",
+      "Shared Video geometry/behavior after component extraction; hover/focus/press and reduced motion",
+      "Direct/index/reload/subdirectory routes; responsive 320\u20131920px layouts and no broken media/runtime errors",
+      "Existing home hero/Featured tiles, navigation/footer, About/resume/LinkedIn, Pointly/Obayashi dividers and scrolling Careers laptop"
+    ],
+    "limits": "Chrome, Playwright WebKit (Safari engine) and Firefox at desktop and emulated/phone-sized viewports. Native Safari and real mobile hardware were not automated.",
+    "localReports": {
+      "full": "/private/tmp/kiana-v10-qa/regression.json",
+      "focused": "/private/tmp/kiana-v10-qa/focused-final.json"
+    }
+  },
+  "liveLinks": {
+    "distinctDestinations": 11,
+    "allHttp200": true,
+    "pdfSignatureVerified": true,
+    "directYouTubePublicMetadata": 3,
+    "embeddedPublicVideos": 4,
+    "wixHostedVideoPresent": true,
+    "record": "link-validation.json",
+    "limits": "HTTP/PDF/media metadata and embedded video availability checks; deterministic browser tests separately verify click/keyboard/new-tab destinations. Full external videos were not watched end-to-end."
+  },
+  "visualReview": {
+    "journalismEngines": [
+      "Chrome",
+      "WebKit",
+      "Firefox"
+    ],
+    "widths": [
+      1440,
+      390
+    ],
+    "videoReview": "Chrome desktop/phone visual review plus full six-project Video regression; screenshots captured in all three engines",
+    "result": "Final Journalism screenshots reviewed against the high-fidelity Figma reference; desktop content positions and crops match within subpixel rounding, phone layouts contain all visible media/copy. Empty Figma text-box height is not forced onto normal-flow text. Global header/footer remain the existing website design.",
+    "artifacts": "/private/tmp/kiana-v10-qa",
+    "metrics": [
+      {
+        "engine": "chrome",
+        "width": 1440,
+        "errors": [],
+        "overflow": false,
+        "footer": {
+          "x": 0,
+          "y": 3689,
+          "width": 1440,
+          "height": 234
+        },
+        "sections": [
+          {
+            "className": "journalism-written",
+            "x": 183,
+            "y": 257,
+            "width": 1054,
+            "height": 1361
+          },
+          {
+            "className": "journalism-multimedia",
+            "x": 191,
+            "y": 1836,
+            "width": 1055,
+            "height": 552
+          },
+          {
+            "className": "journalism-broadcast",
+            "x": 120,
+            "y": 2491,
+            "width": 1200,
+            "height": 911
+          }
+        ],
+        "nodes": [
+          {
+            "id": "689:117",
+            "x": 191,
+            "y": 181,
+            "width": 254,
+            "height": 26
+          },
+          {
+            "id": "607:16",
+            "x": 191,
+            "y": 257,
+            "width": 471,
+            "height": 44
+          },
+          {
+            "id": "607:14",
+            "x": 191,
+            "y": 314,
+            "width": 994,
+            "height": 52
+          },
+          {
+            "id": "609:65",
+            "x": 183,
+            "y": 425,
+            "width": 498,
+            "height": 581
+          },
+          {
+            "id": "609:16",
+            "x": 185.984375,
+            "y": 425,
+            "width": 495,
+            "height": 425
+          },
+          {
+            "id": "609:26",
+            "x": 218,
+            "y": 870,
+            "width": 387,
+            "height": 28
+          },
+          {
+            "id": "609:25",
+            "x": 218,
+            "y": 909,
+            "width": 387,
+            "height": 56
+          },
+          {
+            "id": "609:64",
+            "x": 738,
+            "y": 425,
+            "width": 498,
+            "height": 581
+          },
+          {
+            "id": "609:15",
+            "x": 738,
+            "y": 425,
+            "width": 499,
+            "height": 425
+          },
+          {
+            "id": "609:20",
+            "x": 779,
+            "y": 870,
+            "width": 387,
+            "height": 28
+          },
+          {
+            "id": "609:19",
+            "x": 779,
+            "y": 909,
+            "width": 387,
+            "height": 56
+          },
+          {
+            "id": "609:58",
+            "x": 187,
+            "y": 1054,
+            "width": 498,
+            "height": 564
+          },
+          {
+            "id": "609:14",
+            "x": 186,
+            "y": 1053.359375,
+            "width": 503,
+            "height": 433.234375
+          },
+          {
+            "id": "609:29",
+            "x": 219.140625,
+            "y": 1481.53125,
+            "width": 390.359375,
+            "height": 28
+          },
+          {
+            "id": "609:28",
+            "x": 219.140625,
+            "y": 1519.671875,
+            "width": 390.359375,
+            "height": 28
+          },
+          {
+            "id": "609:62",
+            "x": 738,
+            "y": 1054,
+            "width": 498,
+            "height": 564
+          },
+          {
+            "id": "609:11",
+            "x": 738,
+            "y": 1054.984375,
+            "width": 498,
+            "height": 429
+          },
+          {
+            "id": "609:33",
+            "x": 784,
+            "y": 1482,
+            "width": 387,
+            "height": 28
+          },
+          {
+            "id": "609:32",
+            "x": 784,
+            "y": 1521,
+            "width": 341,
+            "height": 56
+          },
+          {
+            "id": "689:97",
+            "x": 129,
+            "y": 1738,
+            "width": 1193,
+            "height": 1
+          },
+          {
+            "id": "689:8",
+            "x": 191,
+            "y": 1836,
+            "width": 589,
+            "height": 44
+          },
+          {
+            "id": "689:7",
+            "x": 191,
+            "y": 1900,
+            "width": 490,
+            "height": 286
+          },
+          {
+            "id": "689:9",
+            "x": 191,
+            "y": 2237,
+            "width": 239,
+            "height": 31
+          },
+          {
+            "id": "689:11",
+            "x": 207,
+            "y": 2241.5,
+            "width": 223,
+            "height": 22
+          },
+          {
+            "id": "689:68",
+            "x": 738,
+            "y": 1892,
+            "width": 508,
+            "height": 289
+          },
+          {
+            "id": "689:87",
+            "x": 758,
+            "y": 2118,
+            "width": 28.171875,
+            "height": 28.171875
+          },
+          {
+            "id": "689:90",
+            "x": 738,
+            "y": 2208,
+            "width": 328,
+            "height": 65.75
+          },
+          {
+            "id": "689:91",
+            "x": 129,
+            "y": 2388,
+            "width": 1193,
+            "height": 1
+          },
+          {
+            "id": "689:13",
+            "x": 121,
+            "y": 2491,
+            "width": 961,
+            "height": 44
+          },
+          {
+            "id": "689:12",
+            "x": 123,
+            "y": 2548,
+            "width": 950,
+            "height": 52
+          },
+          {
+            "id": "689:14",
+            "x": 122,
+            "y": 2658,
+            "width": 382,
+            "height": 356
+          },
+          {
+            "id": "689:18",
+            "x": 122.234375,
+            "y": 2656.5,
+            "width": 381.359375,
+            "height": 205
+          },
+          {
+            "id": "689:84",
+            "x": 140,
+            "y": 2822,
+            "width": 28.171875,
+            "height": 28.171875
+          },
+          {
+            "id": "689:19",
+            "x": 123,
+            "y": 2862,
+            "width": 381,
+            "height": 152
+          },
+          {
+            "id": "689:21",
+            "x": 153.96875,
+            "y": 2882,
+            "width": 292.25,
+            "height": 21.140625
+          },
+          {
+            "id": "689:20",
+            "x": 154,
+            "y": 2913.984375,
+            "width": 325,
+            "height": 56
+          },
+          {
+            "id": "689:22",
+            "x": 533,
+            "y": 2658,
+            "width": 382,
+            "height": 356
+          },
+          {
+            "id": "689:27",
+            "x": 533.75,
+            "y": 2658,
+            "width": 381,
+            "height": 204.875
+          },
+          {
+            "id": "689:81",
+            "x": 546,
+            "y": 2822,
+            "width": 28.171875,
+            "height": 28.171875
+          },
+          {
+            "id": "689:28",
+            "x": 534,
+            "y": 2863,
+            "width": 381,
+            "height": 151
+          },
+          {
+            "id": "689:30",
+            "x": 564.75,
+            "y": 2882,
+            "width": 292.546875,
+            "height": 22.078125
+          },
+          {
+            "id": "689:29",
+            "x": 565,
+            "y": 2913.984375,
+            "width": 328,
+            "height": 56
+          },
+          {
+            "id": "689:31",
+            "x": 941,
+            "y": 2658,
+            "width": 382,
+            "height": 356
+          },
+          {
+            "id": "689:35",
+            "x": 938,
+            "y": 2655.015625,
+            "width": 383,
+            "height": 215
+          },
+          {
+            "id": "689:78",
+            "x": 956,
+            "y": 2822,
+            "width": 28.171875,
+            "height": 28.171875
+          },
+          {
+            "id": "689:37",
+            "x": 941,
+            "y": 2863,
+            "width": 381,
+            "height": 151
+          },
+          {
+            "id": "689:39",
+            "x": 971.75,
+            "y": 2882,
+            "width": 292.546875,
+            "height": 22.078125
+          },
+          {
+            "id": "689:38",
+            "x": 972,
+            "y": 2913.984375,
+            "width": 328,
+            "height": 56
+          },
+          {
+            "id": "689:56",
+            "x": 122,
+            "y": 3046,
+            "width": 382,
+            "height": 356
+          },
+          {
+            "id": "689:60",
+            "x": 121,
+            "y": 3046,
+            "width": 385,
+            "height": 215
+          },
+          {
+            "id": "689:72",
+            "x": 140,
+            "y": 3221,
+            "width": 28.171875,
+            "height": 28.171875
+          },
+          {
+            "id": "689:62",
+            "x": 121,
+            "y": 3260,
+            "width": 383,
+            "height": 151
+          },
+          {
+            "id": "689:64",
+            "x": 151.90625,
+            "y": 3279,
+            "width": 294.078125,
+            "height": 22.078125
+          },
+          {
+            "id": "689:63",
+            "x": 152.15625,
+            "y": 3310.984375,
+            "width": 329.71875,
+            "height": 56
+          },
+          {
+            "id": "689:47",
+            "x": 532,
+            "y": 3046,
+            "width": 382,
+            "height": 356
+          },
+          {
+            "id": "689:51",
+            "x": 531,
+            "y": 3046,
+            "width": 383,
+            "height": 215
+          },
+          {
+            "id": "689:69",
+            "x": 545.984375,
+            "y": 3221,
+            "width": 28.171875,
+            "height": 28.171875
+          },
+          {
+            "id": "689:53",
+            "x": 534,
+            "y": 3260,
+            "width": 380,
+            "height": 151
+          },
+          {
+            "id": "689:55",
+            "x": 564.671875,
+            "y": 3279,
+            "width": 291.78125,
+            "height": 22.078125
+          },
+          {
+            "id": "689:54",
+            "x": 564.90625,
+            "y": 3310.984375,
+            "width": 327.125,
+            "height": 56
+          },
+          {
+            "id": "689:40",
+            "x": 938,
+            "y": 3046,
+            "width": 382,
+            "height": 356
+          },
+          {
+            "id": "689:43",
+            "x": 938,
+            "y": 3046,
+            "width": 384,
+            "height": 214
+          },
+          {
+            "id": "689:75",
+            "x": 956,
+            "y": 3221,
+            "width": 28.171875,
+            "height": 28.171875
+          },
+          {
+            "id": "689:44",
+            "x": 934,
+            "y": 3260,
+            "width": 388,
+            "height": 151
+          },
+          {
+            "id": "689:46",
+            "x": 971.75,
+            "y": 3279,
+            "width": 292.546875,
+            "height": 22.078125
+          },
+          {
+            "id": "689:45",
+            "x": 972,
+            "y": 3310.984375,
+            "width": 328,
+            "height": 56
+          }
+        ]
+      },
+      {
+        "engine": "chrome",
+        "width": 390,
+        "errors": [],
+        "overflow": false,
+        "footer": {
+          "x": 0,
+          "y": 5933,
+          "width": 390,
+          "height": 250
+        },
+        "sections": [
+          {
+            "className": "journalism-written",
+            "x": 20,
+            "y": 242,
+            "width": 350,
+            "height": 2140.4375
+          },
+          {
+            "className": "journalism-multimedia",
+            "x": 20,
+            "y": 2503.4375,
+            "width": 350,
+            "height": 858.859375
+          },
+          {
+            "className": "journalism-broadcast",
+            "x": 20,
+            "y": 3475.296875,
+            "width": 350,
+            "height": 2377.703125
+          }
+        ],
+        "nodes": [
+          {
+            "id": "689:117",
+            "x": 20,
+            "y": 176,
+            "width": 254,
+            "height": 26
+          },
+          {
+            "id": "607:16",
+            "x": 20,
+            "y": 242,
+            "width": 350,
+            "height": 40
+          },
+          {
+            "id": "607:14",
+            "x": 20,
+            "y": 295,
+            "width": 350,
+            "height": 156
+          },
+          {
+            "id": "609:65",
+            "x": 20,
+            "y": 491,
+            "width": 350,
+            "height": 454.6875
+          },
+          {
+            "id": "609:16",
+            "x": 22.09375,
+            "y": 491,
+            "width": 347.890625,
+            "height": 298.6875
+          },
+          {
+            "id": "609:26",
+            "x": 44,
+            "y": 809.6875,
+            "width": 302,
+            "height": 28
+          },
+          {
+            "id": "609:25",
+            "x": 44,
+            "y": 848.6875,
+            "width": 302,
+            "height": 56
+          },
+          {
+            "id": "609:64",
+            "x": 20,
+            "y": 977.6875,
+            "width": 350,
+            "height": 454.6875
+          },
+          {
+            "id": "609:15",
+            "x": 20,
+            "y": 977.6875,
+            "width": 350.6875,
+            "height": 298.6875
+          },
+          {
+            "id": "609:20",
+            "x": 44,
+            "y": 1296.375,
+            "width": 302,
+            "height": 28
+          },
+          {
+            "id": "609:19",
+            "x": 44,
+            "y": 1335.375,
+            "width": 302,
+            "height": 56
+          },
+          {
+            "id": "609:58",
+            "x": 20,
+            "y": 1464.375,
+            "width": 350,
+            "height": 443.03125
+          },
+          {
+            "id": "609:14",
+            "x": 19.3125,
+            "y": 1463.921875,
+            "width": 353.515625,
+            "height": 304.46875
+          },
+          {
+            "id": "609:29",
+            "x": 44,
+            "y": 1770.9375,
+            "width": 302,
+            "height": 28
+          },
+          {
+            "id": "609:28",
+            "x": 44,
+            "y": 1809.078125,
+            "width": 302,
+            "height": 28
+          },
+          {
+            "id": "609:62",
+            "x": 20,
+            "y": 1939.40625,
+            "width": 350,
+            "height": 443.03125
+          },
+          {
+            "id": "609:11",
+            "x": 20,
+            "y": 1940.09375,
+            "width": 350,
+            "height": 301.484375
+          },
+          {
+            "id": "609:33",
+            "x": 44,
+            "y": 2246.4375,
+            "width": 302,
+            "height": 28
+          },
+          {
+            "id": "609:32",
+            "x": 44,
+            "y": 2285.4375,
+            "width": 302,
+            "height": 56
+          },
+          {
+            "id": "689:97",
+            "x": 20,
+            "y": 2446.4375,
+            "width": 350,
+            "height": 1
+          },
+          {
+            "id": "689:8",
+            "x": 20,
+            "y": 2503.4375,
+            "width": 350,
+            "height": 40
+          },
+          {
+            "id": "689:7",
+            "x": 20,
+            "y": 2563.4375,
+            "width": 350,
+            "height": 416
+          },
+          {
+            "id": "689:9",
+            "x": 20,
+            "y": 3007.4375,
+            "width": 239,
+            "height": 31
+          },
+          {
+            "id": "689:11",
+            "x": 36,
+            "y": 3011.9375,
+            "width": 223,
+            "height": 22
+          },
+          {
+            "id": "689:68",
+            "x": 20,
+            "y": 3070.4375,
+            "width": 350,
+            "height": 199.109375
+          },
+          {
+            "id": "689:87",
+            "x": 33.765625,
+            "y": 3226.140625,
+            "width": 19.40625,
+            "height": 19.40625
+          },
+          {
+            "id": "689:90",
+            "x": 20,
+            "y": 3296.546875,
+            "width": 328,
+            "height": 65.75
+          },
+          {
+            "id": "689:91",
+            "x": 20,
+            "y": 3418.296875,
+            "width": 350,
+            "height": 1
+          },
+          {
+            "id": "689:13",
+            "x": 21,
+            "y": 3475.296875,
+            "width": 349,
+            "height": 40
+          },
+          {
+            "id": "689:12",
+            "x": 23,
+            "y": 3528.296875,
+            "width": 347,
+            "height": 130
+          },
+          {
+            "id": "689:14",
+            "x": 20,
+            "y": 3698.296875,
+            "width": 350,
+            "height": 338.90625
+          },
+          {
+            "id": "689:18",
+            "x": 20.21875,
+            "y": 3696.921875,
+            "width": 349.421875,
+            "height": 187.828125
+          },
+          {
+            "id": "689:84",
+            "x": 36.484375,
+            "y": 3848.546875,
+            "width": 25.8125,
+            "height": 25.8125
+          },
+          {
+            "id": "689:19",
+            "x": 20.90625,
+            "y": 3885.203125,
+            "width": 349.078125,
+            "height": 152
+          },
+          {
+            "id": "689:21",
+            "x": 51.96875,
+            "y": 3905.203125,
+            "width": 292.25,
+            "height": 21.140625
+          },
+          {
+            "id": "689:20",
+            "x": 52,
+            "y": 3937.1875,
+            "width": 298,
+            "height": 56
+          },
+          {
+            "id": "689:22",
+            "x": 20,
+            "y": 4061.203125,
+            "width": 350,
+            "height": 342.796875
+          },
+          {
+            "id": "689:27",
+            "x": 20.6875,
+            "y": 4061.203125,
+            "width": 349.078125,
+            "height": 187.6875
+          },
+          {
+            "id": "689:81",
+            "x": 31.90625,
+            "y": 4211.453125,
+            "width": 25.8125,
+            "height": 25.8125
+          },
+          {
+            "id": "689:28",
+            "x": 20.90625,
+            "y": 4249.015625,
+            "width": 349.078125,
+            "height": 154.984375
+          },
+          {
+            "id": "689:30",
+            "x": 51.75,
+            "y": 4268.015625,
+            "width": 292.546875,
+            "height": 22.078125
+          },
+          {
+            "id": "689:29",
+            "x": 52,
+            "y": 4300,
+            "width": 298,
+            "height": 84
+          },
+          {
+            "id": "689:31",
+            "x": 20,
+            "y": 4428,
+            "width": 350,
+            "height": 338.8125
+          },
+          {
+            "id": "689:35",
+            "x": 17.265625,
+            "y": 4425.265625,
+            "width": 350.90625,
+            "height": 196.96875
+          },
+          {
+            "id": "689:78",
+            "x": 33.734375,
+            "y": 4578.25,
+            "width": 25.8125,
+            "height": 25.8125
+          },
+          {
+            "id": "689:37",
+            "x": 20,
+            "y": 4615.8125,
+            "width": 349.078125,
+            "height": 151
+          },
+          {
+            "id": "689:39",
+            "x": 50.75,
+            "y": 4634.8125,
+            "width": 292.546875,
+            "height": 22.078125
+          },
+          {
+            "id": "689:38",
+            "x": 51,
+            "y": 4666.796875,
+            "width": 299,
+            "height": 56
+          },
+          {
+            "id": "689:56",
+            "x": 20,
+            "y": 4790.8125,
+            "width": 350,
+            "height": 338.0625
+          },
+          {
+            "id": "689:60",
+            "x": 19.09375,
+            "y": 4790.8125,
+            "width": 352.734375,
+            "height": 196.96875
+          },
+          {
+            "id": "689:72",
+            "x": 36.484375,
+            "y": 4951.140625,
+            "width": 25.8125,
+            "height": 25.8125
+          },
+          {
+            "id": "689:62",
+            "x": 19.09375,
+            "y": 4986.875,
+            "width": 350.90625,
+            "height": 151
+          },
+          {
+            "id": "689:64",
+            "x": 49.90625,
+            "y": 5005.875,
+            "width": 294.078125,
+            "height": 22.078125
+          },
+          {
+            "id": "689:63",
+            "x": 50.15625,
+            "y": 5037.859375,
+            "width": 299.84375,
+            "height": 56
+          },
+          {
+            "id": "689:47",
+            "x": 20,
+            "y": 5152.875,
+            "width": 350,
+            "height": 338.0625
+          },
+          {
+            "id": "689:51",
+            "x": 19.09375,
+            "y": 5152.875,
+            "width": 350.90625,
+            "height": 196.96875
+          },
+          {
+            "id": "689:69",
+            "x": 32.8125,
+            "y": 5313.203125,
+            "width": 25.8125,
+            "height": 25.8125
+          },
+          {
+            "id": "689:53",
+            "x": 21.828125,
+            "y": 5348.9375,
+            "width": 348.15625,
+            "height": 151
+          },
+          {
+            "id": "689:55",
+            "x": 52.671875,
+            "y": 5367.9375,
+            "width": 291.78125,
+            "height": 22.078125
+          },
+          {
+            "id": "689:54",
+            "x": 52.90625,
+            "y": 5399.921875,
+            "width": 297.09375,
+            "height": 56
+          },
+          {
+            "id": "689:40",
+            "x": 20,
+            "y": 5514.9375,
+            "width": 350,
+            "height": 338.0625
+          },
+          {
+            "id": "689:43",
+            "x": 20,
+            "y": 5514.9375,
+            "width": 351.828125,
+            "height": 196.0625
+          },
+          {
+            "id": "689:75",
+            "x": 36.484375,
+            "y": 5675.265625,
+            "width": 25.8125,
+            "height": 25.8125
+          },
+          {
+            "id": "689:44",
+            "x": 16.34375,
+            "y": 5711,
+            "width": 355.484375,
+            "height": 151
+          },
+          {
+            "id": "689:46",
+            "x": 53.75,
+            "y": 5730,
+            "width": 292.546875,
+            "height": 22.078125
+          },
+          {
+            "id": "689:45",
+            "x": 54,
+            "y": 5761.984375,
+            "width": 296,
+            "height": 56
+          }
+        ]
+      },
+      {
+        "engine": "webkit",
+        "width": 1440,
+        "errors": [],
+        "overflow": false,
+        "footer": {
+          "x": 0,
+          "y": 3689,
+          "width": 1440,
+          "height": 234
+        },
+        "sections": [
+          {
+            "className": "journalism-written",
+            "x": 183,
+            "y": 257,
+            "width": 1054,
+            "height": 1360.984375
+          },
+          {
+            "className": "journalism-multimedia",
+            "x": 191,
+            "y": 1835.984375,
+            "width": 1055,
+            "height": 552
+          },
+          {
+            "className": "journalism-broadcast",
+            "x": 120,
+            "y": 2490.984375,
+            "width": 1200,
+            "height": 911
+          }
+        ],
+        "nodes": [
+          {
+            "id": "689:117",
+            "x": 191,
+            "y": 181,
+            "width": 254,
+            "height": 26
+          },
+          {
+            "id": "607:16",
+            "x": 191,
+            "y": 257,
+            "width": 471,
+            "height": 44
+          },
+          {
+            "id": "607:14",
+            "x": 191,
+            "y": 314,
+            "width": 994,
+            "height": 52
+          },
+          {
+            "id": "609:65",
+            "x": 183,
+            "y": 425,
+            "width": 498,
+            "height": 580.984375
+          },
+          {
+            "id": "609:16",
+            "x": 186,
+            "y": 425,
+            "width": 495,
+            "height": 424.984375
+          },
+          {
+            "id": "609:26",
+            "x": 218,
+            "y": 869.984375,
+            "width": 387,
+            "height": 28
+          },
+          {
+            "id": "609:25",
+            "x": 218,
+            "y": 908.984375,
+            "width": 387,
+            "height": 56
+          },
+          {
+            "id": "609:64",
+            "x": 738,
+            "y": 425,
+            "width": 498,
+            "height": 580.984375
+          },
+          {
+            "id": "609:15",
+            "x": 738,
+            "y": 425,
+            "width": 499,
+            "height": 424.984375
+          },
+          {
+            "id": "609:20",
+            "x": 779,
+            "y": 869.984375,
+            "width": 387,
+            "height": 28
+          },
+          {
+            "id": "609:19",
+            "x": 779,
+            "y": 908.984375,
+            "width": 387,
+            "height": 56
+          },
+          {
+            "id": "609:58",
+            "x": 187,
+            "y": 1053.984375,
+            "width": 498,
+            "height": 564
+          },
+          {
+            "id": "609:14",
+            "x": 186,
+            "y": 1053.34375,
+            "width": 503,
+            "height": 433.234375
+          },
+          {
+            "id": "609:29",
+            "x": 219.140625,
+            "y": 1481.515625,
+            "width": 390.359375,
+            "height": 28
+          },
+          {
+            "id": "609:28",
+            "x": 219.140625,
+            "y": 1519.65625,
+            "width": 390.359375,
+            "height": 28
+          },
+          {
+            "id": "609:62",
+            "x": 738,
+            "y": 1053.984375,
+            "width": 498,
+            "height": 564
+          },
+          {
+            "id": "609:11",
+            "x": 738,
+            "y": 1054.984375,
+            "width": 498,
+            "height": 429
+          },
+          {
+            "id": "609:33",
+            "x": 784,
+            "y": 1481.984375,
+            "width": 387,
+            "height": 28
+          },
+          {
+            "id": "609:32",
+            "x": 784,
+            "y": 1520.984375,
+            "width": 341,
+            "height": 56
+          },
+          {
+            "id": "689:97",
+            "x": 129,
+            "y": 1737.984375,
+            "width": 1193,
+            "height": 1
+          },
+          {
+            "id": "689:8",
+            "x": 191,
+            "y": 1835.984375,
+            "width": 589,
+            "height": 44
+          },
+          {
+            "id": "689:7",
+            "x": 191,
+            "y": 1899.984375,
+            "width": 490,
+            "height": 286
+          },
+          {
+            "id": "689:9",
+            "x": 191,
+            "y": 2236.984375,
+            "width": 239,
+            "height": 31
+          },
+          {
+            "id": "689:11",
+            "x": 207,
+            "y": 2241.484375,
+            "width": 223,
+            "height": 22
+          },
+          {
+            "id": "689:68",
+            "x": 738,
+            "y": 1891.984375,
+            "width": 508,
+            "height": 289
+          },
+          {
+            "id": "689:87",
+            "x": 758,
+            "y": 2117.984375,
+            "width": 28.171875,
+            "height": 28.171875
+          },
+          {
+            "id": "689:90",
+            "x": 738,
+            "y": 2207.984375,
+            "width": 328,
+            "height": 65.75
+          },
+          {
+            "id": "689:91",
+            "x": 129,
+            "y": 2387.984375,
+            "width": 1193,
+            "height": 1
+          },
+          {
+            "id": "689:13",
+            "x": 121,
+            "y": 2490.984375,
+            "width": 961,
+            "height": 44
+          },
+          {
+            "id": "689:12",
+            "x": 123,
+            "y": 2547.984375,
+            "width": 950,
+            "height": 52
+          },
+          {
+            "id": "689:14",
+            "x": 122,
+            "y": 2657.984375,
+            "width": 382,
+            "height": 356
+          },
+          {
+            "id": "689:18",
+            "x": 122.234375,
+            "y": 2656.484375,
+            "width": 381.359375,
+            "height": 205
+          },
+          {
+            "id": "689:84",
+            "x": 140,
+            "y": 2821.984375,
+            "width": 28.171875,
+            "height": 28.171875
+          },
+          {
+            "id": "689:19",
+            "x": 123,
+            "y": 2861.984375,
+            "width": 381,
+            "height": 152
+          },
+          {
+            "id": "689:21",
+            "x": 153.96875,
+            "y": 2881.984375,
+            "width": 292.25,
+            "height": 21.140625
+          },
+          {
+            "id": "689:20",
+            "x": 154,
+            "y": 2913.96875,
+            "width": 325,
+            "height": 56
+          },
+          {
+            "id": "689:22",
+            "x": 533,
+            "y": 2657.984375,
+            "width": 382,
+            "height": 356
+          },
+          {
+            "id": "689:27",
+            "x": 533.75,
+            "y": 2657.984375,
+            "width": 381,
+            "height": 204.875
+          },
+          {
+            "id": "689:81",
+            "x": 546,
+            "y": 2821.984375,
+            "width": 28.171875,
+            "height": 28.171875
+          },
+          {
+            "id": "689:28",
+            "x": 534,
+            "y": 2862.984375,
+            "width": 381,
+            "height": 151
+          },
+          {
+            "id": "689:30",
+            "x": 564.75,
+            "y": 2881.984375,
+            "width": 292.546875,
+            "height": 22.078125
+          },
+          {
+            "id": "689:29",
+            "x": 565,
+            "y": 2913.96875,
+            "width": 328,
+            "height": 56
+          },
+          {
+            "id": "689:31",
+            "x": 941,
+            "y": 2657.984375,
+            "width": 382,
+            "height": 356
+          },
+          {
+            "id": "689:35",
+            "x": 938,
+            "y": 2654.984375,
+            "width": 382.984375,
+            "height": 215
+          },
+          {
+            "id": "689:78",
+            "x": 956,
+            "y": 2821.984375,
+            "width": 28.171875,
+            "height": 28.171875
+          },
+          {
+            "id": "689:37",
+            "x": 941,
+            "y": 2862.984375,
+            "width": 381,
+            "height": 151
+          },
+          {
+            "id": "689:39",
+            "x": 971.75,
+            "y": 2881.984375,
+            "width": 292.546875,
+            "height": 22.078125
+          },
+          {
+            "id": "689:38",
+            "x": 972,
+            "y": 2913.96875,
+            "width": 328,
+            "height": 56
+          },
+          {
+            "id": "689:56",
+            "x": 122,
+            "y": 3045.984375,
+            "width": 382,
+            "height": 356
+          },
+          {
+            "id": "689:60",
+            "x": 121,
+            "y": 3045.984375,
+            "width": 384.984375,
+            "height": 215
+          },
+          {
+            "id": "689:72",
+            "x": 140,
+            "y": 3220.984375,
+            "width": 28.171875,
+            "height": 28.171875
+          },
+          {
+            "id": "689:62",
+            "x": 121,
+            "y": 3259.984375,
+            "width": 382.984375,
+            "height": 151
+          },
+          {
+            "id": "689:64",
+            "x": 151.90625,
+            "y": 3278.984375,
+            "width": 294.078125,
+            "height": 22.078125
+          },
+          {
+            "id": "689:63",
+            "x": 152.15625,
+            "y": 3310.96875,
+            "width": 329.71875,
+            "height": 56
+          },
+          {
+            "id": "689:47",
+            "x": 532,
+            "y": 3045.984375,
+            "width": 382,
+            "height": 356
+          },
+          {
+            "id": "689:51",
+            "x": 531,
+            "y": 3045.984375,
+            "width": 382.984375,
+            "height": 215
+          },
+          {
+            "id": "689:69",
+            "x": 546,
+            "y": 3220.984375,
+            "width": 28.171875,
+            "height": 28.171875
+          },
+          {
+            "id": "689:53",
+            "x": 534,
+            "y": 3259.984375,
+            "width": 380,
+            "height": 151
+          },
+          {
+            "id": "689:55",
+            "x": 564.671875,
+            "y": 3278.984375,
+            "width": 291.78125,
+            "height": 22.078125
+          },
+          {
+            "id": "689:54",
+            "x": 564.90625,
+            "y": 3310.96875,
+            "width": 327.125,
+            "height": 56
+          },
+          {
+            "id": "689:40",
+            "x": 938,
+            "y": 3045.984375,
+            "width": 382,
+            "height": 356
+          },
+          {
+            "id": "689:43",
+            "x": 938,
+            "y": 3045.984375,
+            "width": 383.984375,
+            "height": 214
+          },
+          {
+            "id": "689:75",
+            "x": 956,
+            "y": 3220.984375,
+            "width": 28.171875,
+            "height": 28.171875
+          },
+          {
+            "id": "689:44",
+            "x": 934,
+            "y": 3259.984375,
+            "width": 387.984375,
+            "height": 151
+          },
+          {
+            "id": "689:46",
+            "x": 971.75,
+            "y": 3278.984375,
+            "width": 292.546875,
+            "height": 22.078125
+          },
+          {
+            "id": "689:45",
+            "x": 972,
+            "y": 3310.96875,
+            "width": 328,
+            "height": 56
+          }
+        ]
+      },
+      {
+        "engine": "webkit",
+        "width": 390,
+        "errors": [],
+        "overflow": false,
+        "footer": {
+          "x": 0,
+          "y": 5933,
+          "width": 390,
+          "height": 250
+        },
+        "sections": [
+          {
+            "className": "journalism-written",
+            "x": 20,
+            "y": 242,
+            "width": 350,
+            "height": 2140.4375
+          },
+          {
+            "className": "journalism-multimedia",
+            "x": 20,
+            "y": 2503.4375,
+            "width": 350,
+            "height": 858.859375
+          },
+          {
+            "className": "journalism-broadcast",
+            "x": 20,
+            "y": 3475.296875,
+            "width": 350,
+            "height": 2377.703125
+          }
+        ],
+        "nodes": [
+          {
+            "id": "689:117",
+            "x": 20,
+            "y": 176,
+            "width": 254,
+            "height": 26
+          },
+          {
+            "id": "607:16",
+            "x": 20,
+            "y": 242,
+            "width": 350,
+            "height": 40
+          },
+          {
+            "id": "607:14",
+            "x": 20,
+            "y": 295,
+            "width": 350,
+            "height": 156
+          },
+          {
+            "id": "609:65",
+            "x": 20,
+            "y": 491,
+            "width": 350,
+            "height": 454.6875
+          },
+          {
+            "id": "609:16",
+            "x": 22.09375,
+            "y": 491,
+            "width": 347.890625,
+            "height": 298.6875
+          },
+          {
+            "id": "609:26",
+            "x": 44,
+            "y": 809.6875,
+            "width": 302,
+            "height": 28
+          },
+          {
+            "id": "609:25",
+            "x": 44,
+            "y": 848.6875,
+            "width": 302,
+            "height": 56
+          },
+          {
+            "id": "609:64",
+            "x": 20,
+            "y": 977.6875,
+            "width": 350,
+            "height": 454.6875
+          },
+          {
+            "id": "609:15",
+            "x": 20,
+            "y": 977.6875,
+            "width": 350.6875,
+            "height": 298.6875
+          },
+          {
+            "id": "609:20",
+            "x": 44,
+            "y": 1296.375,
+            "width": 302,
+            "height": 28
+          },
+          {
+            "id": "609:19",
+            "x": 44,
+            "y": 1335.375,
+            "width": 302,
+            "height": 56
+          },
+          {
+            "id": "609:58",
+            "x": 20,
+            "y": 1464.375,
+            "width": 350,
+            "height": 443.03125
+          },
+          {
+            "id": "609:14",
+            "x": 19.3125,
+            "y": 1463.921875,
+            "width": 353.515625,
+            "height": 304.46875
+          },
+          {
+            "id": "609:29",
+            "x": 44,
+            "y": 1770.9375,
+            "width": 302,
+            "height": 28
+          },
+          {
+            "id": "609:28",
+            "x": 44,
+            "y": 1809.078125,
+            "width": 302,
+            "height": 28
+          },
+          {
+            "id": "609:62",
+            "x": 20,
+            "y": 1939.40625,
+            "width": 350,
+            "height": 443.03125
+          },
+          {
+            "id": "609:11",
+            "x": 20,
+            "y": 1940.09375,
+            "width": 350,
+            "height": 301.484375
+          },
+          {
+            "id": "609:33",
+            "x": 44,
+            "y": 2246.4375,
+            "width": 302,
+            "height": 28
+          },
+          {
+            "id": "609:32",
+            "x": 44,
+            "y": 2285.4375,
+            "width": 302,
+            "height": 56
+          },
+          {
+            "id": "689:97",
+            "x": 20,
+            "y": 2446.4375,
+            "width": 350,
+            "height": 1
+          },
+          {
+            "id": "689:8",
+            "x": 20,
+            "y": 2503.4375,
+            "width": 350,
+            "height": 40
+          },
+          {
+            "id": "689:7",
+            "x": 20,
+            "y": 2563.4375,
+            "width": 350,
+            "height": 416
+          },
+          {
+            "id": "689:9",
+            "x": 20,
+            "y": 3007.4375,
+            "width": 239,
+            "height": 31
+          },
+          {
+            "id": "689:11",
+            "x": 36,
+            "y": 3011.9375,
+            "width": 223,
+            "height": 22
+          },
+          {
+            "id": "689:68",
+            "x": 20,
+            "y": 3070.4375,
+            "width": 350,
+            "height": 199.109375
+          },
+          {
+            "id": "689:87",
+            "x": 33.765625,
+            "y": 3226.140625,
+            "width": 19.40625,
+            "height": 19.40625
+          },
+          {
+            "id": "689:90",
+            "x": 20,
+            "y": 3296.546875,
+            "width": 328,
+            "height": 65.75
+          },
+          {
+            "id": "689:91",
+            "x": 20,
+            "y": 3418.296875,
+            "width": 350,
+            "height": 1
+          },
+          {
+            "id": "689:13",
+            "x": 21,
+            "y": 3475.296875,
+            "width": 349,
+            "height": 40
+          },
+          {
+            "id": "689:12",
+            "x": 23,
+            "y": 3528.296875,
+            "width": 347,
+            "height": 130
+          },
+          {
+            "id": "689:14",
+            "x": 20,
+            "y": 3698.296875,
+            "width": 350,
+            "height": 338.90625
+          },
+          {
+            "id": "689:18",
+            "x": 20.21875,
+            "y": 3696.921875,
+            "width": 349.421875,
+            "height": 187.828125
+          },
+          {
+            "id": "689:84",
+            "x": 36.484375,
+            "y": 3848.546875,
+            "width": 25.8125,
+            "height": 25.8125
+          },
+          {
+            "id": "689:19",
+            "x": 20.90625,
+            "y": 3885.203125,
+            "width": 349.078125,
+            "height": 152
+          },
+          {
+            "id": "689:21",
+            "x": 51.96875,
+            "y": 3905.203125,
+            "width": 292.25,
+            "height": 21.140625
+          },
+          {
+            "id": "689:20",
+            "x": 52,
+            "y": 3937.1875,
+            "width": 298,
+            "height": 56
+          },
+          {
+            "id": "689:22",
+            "x": 20,
+            "y": 4061.203125,
+            "width": 350,
+            "height": 342.796875
+          },
+          {
+            "id": "689:27",
+            "x": 20.6875,
+            "y": 4061.203125,
+            "width": 349.078125,
+            "height": 187.6875
+          },
+          {
+            "id": "689:81",
+            "x": 31.90625,
+            "y": 4211.453125,
+            "width": 25.8125,
+            "height": 25.8125
+          },
+          {
+            "id": "689:28",
+            "x": 20.90625,
+            "y": 4249.015625,
+            "width": 349.078125,
+            "height": 154.984375
+          },
+          {
+            "id": "689:30",
+            "x": 51.75,
+            "y": 4268.015625,
+            "width": 292.546875,
+            "height": 22.078125
+          },
+          {
+            "id": "689:29",
+            "x": 52,
+            "y": 4300,
+            "width": 298,
+            "height": 84
+          },
+          {
+            "id": "689:31",
+            "x": 20,
+            "y": 4428,
+            "width": 350,
+            "height": 338.8125
+          },
+          {
+            "id": "689:35",
+            "x": 17.265625,
+            "y": 4425.265625,
+            "width": 350.90625,
+            "height": 196.96875
+          },
+          {
+            "id": "689:78",
+            "x": 33.734375,
+            "y": 4578.25,
+            "width": 25.8125,
+            "height": 25.8125
+          },
+          {
+            "id": "689:37",
+            "x": 20,
+            "y": 4615.8125,
+            "width": 349.078125,
+            "height": 151
+          },
+          {
+            "id": "689:39",
+            "x": 50.75,
+            "y": 4634.8125,
+            "width": 292.546875,
+            "height": 22.078125
+          },
+          {
+            "id": "689:38",
+            "x": 51,
+            "y": 4666.796875,
+            "width": 299,
+            "height": 56
+          },
+          {
+            "id": "689:56",
+            "x": 20,
+            "y": 4790.8125,
+            "width": 350,
+            "height": 338.0625
+          },
+          {
+            "id": "689:60",
+            "x": 19.09375,
+            "y": 4790.8125,
+            "width": 352.734375,
+            "height": 196.96875
+          },
+          {
+            "id": "689:72",
+            "x": 36.484375,
+            "y": 4951.140625,
+            "width": 25.8125,
+            "height": 25.8125
+          },
+          {
+            "id": "689:62",
+            "x": 19.09375,
+            "y": 4986.875,
+            "width": 350.90625,
+            "height": 151
+          },
+          {
+            "id": "689:64",
+            "x": 49.90625,
+            "y": 5005.875,
+            "width": 294.078125,
+            "height": 22.078125
+          },
+          {
+            "id": "689:63",
+            "x": 50.15625,
+            "y": 5037.859375,
+            "width": 299.84375,
+            "height": 56
+          },
+          {
+            "id": "689:47",
+            "x": 20,
+            "y": 5152.875,
+            "width": 350,
+            "height": 338.0625
+          },
+          {
+            "id": "689:51",
+            "x": 19.09375,
+            "y": 5152.875,
+            "width": 350.90625,
+            "height": 196.96875
+          },
+          {
+            "id": "689:69",
+            "x": 32.8125,
+            "y": 5313.203125,
+            "width": 25.8125,
+            "height": 25.8125
+          },
+          {
+            "id": "689:53",
+            "x": 21.828125,
+            "y": 5348.9375,
+            "width": 348.15625,
+            "height": 151
+          },
+          {
+            "id": "689:55",
+            "x": 52.671875,
+            "y": 5367.9375,
+            "width": 291.78125,
+            "height": 22.078125
+          },
+          {
+            "id": "689:54",
+            "x": 52.90625,
+            "y": 5399.921875,
+            "width": 297.09375,
+            "height": 56
+          },
+          {
+            "id": "689:40",
+            "x": 20,
+            "y": 5514.9375,
+            "width": 350,
+            "height": 338.0625
+          },
+          {
+            "id": "689:43",
+            "x": 20,
+            "y": 5514.9375,
+            "width": 351.828125,
+            "height": 196.0625
+          },
+          {
+            "id": "689:75",
+            "x": 36.484375,
+            "y": 5675.265625,
+            "width": 25.8125,
+            "height": 25.8125
+          },
+          {
+            "id": "689:44",
+            "x": 16.34375,
+            "y": 5711,
+            "width": 355.484375,
+            "height": 151
+          },
+          {
+            "id": "689:46",
+            "x": 53.75,
+            "y": 5730,
+            "width": 292.546875,
+            "height": 22.078125
+          },
+          {
+            "id": "689:45",
+            "x": 54,
+            "y": 5761.984375,
+            "width": 296,
+            "height": 56
+          }
+        ]
+      },
+      {
+        "engine": "firefox",
+        "width": 1440,
+        "errors": [],
+        "overflow": false,
+        "footer": {
+          "x": 0,
+          "y": 3689,
+          "width": 1440,
+          "height": 234
+        },
+        "sections": [
+          {
+            "className": "journalism-written",
+            "x": 183,
+            "y": 257,
+            "width": 1054,
+            "height": 1361
+          },
+          {
+            "className": "journalism-multimedia",
+            "x": 191,
+            "y": 1836,
+            "width": 1055,
+            "height": 552
+          },
+          {
+            "className": "journalism-broadcast",
+            "x": 120,
+            "y": 2491,
+            "width": 1200,
+            "height": 911
+          }
+        ],
+        "nodes": [
+          {
+            "id": "689:117",
+            "x": 191,
+            "y": 181,
+            "width": 254,
+            "height": 26
+          },
+          {
+            "id": "607:16",
+            "x": 191,
+            "y": 257,
+            "width": 471,
+            "height": 44
+          },
+          {
+            "id": "607:14",
+            "x": 191,
+            "y": 314,
+            "width": 994,
+            "height": 52
+          },
+          {
+            "id": "609:65",
+            "x": 183,
+            "y": 425,
+            "width": 498,
+            "height": 581
+          },
+          {
+            "id": "609:16",
+            "x": 186,
+            "y": 425,
+            "width": 495,
+            "height": 425
+          },
+          {
+            "id": "609:26",
+            "x": 218,
+            "y": 870,
+            "width": 387,
+            "height": 28
+          },
+          {
+            "id": "609:25",
+            "x": 218,
+            "y": 909,
+            "width": 387,
+            "height": 56
+          },
+          {
+            "id": "609:64",
+            "x": 738,
+            "y": 425,
+            "width": 498,
+            "height": 581
+          },
+          {
+            "id": "609:15",
+            "x": 738,
+            "y": 425,
+            "width": 499,
+            "height": 425
+          },
+          {
+            "id": "609:20",
+            "x": 779,
+            "y": 870,
+            "width": 387,
+            "height": 28
+          },
+          {
+            "id": "609:19",
+            "x": 779,
+            "y": 909,
+            "width": 387,
+            "height": 56
+          },
+          {
+            "id": "609:58",
+            "x": 187,
+            "y": 1054,
+            "width": 498,
+            "height": 564
+          },
+          {
+            "id": "609:14",
+            "x": 186.01666259765625,
+            "y": 1053.36669921875,
+            "width": 503,
+            "height": 433.23333740234375
+          },
+          {
+            "id": "609:29",
+            "x": 219.14999389648438,
+            "y": 1481.5333251953125,
+            "width": 390.3666687011719,
+            "height": 28
+          },
+          {
+            "id": "609:28",
+            "x": 219.14999389648438,
+            "y": 1519.683349609375,
+            "width": 390.3666687011719,
+            "height": 28
+          },
+          {
+            "id": "609:62",
+            "x": 738,
+            "y": 1054,
+            "width": 498,
+            "height": 564
+          },
+          {
+            "id": "609:11",
+            "x": 738,
+            "y": 1055,
+            "width": 498,
+            "height": 429
+          },
+          {
+            "id": "609:33",
+            "x": 784,
+            "y": 1482,
+            "width": 387,
+            "height": 28
+          },
+          {
+            "id": "609:32",
+            "x": 784,
+            "y": 1521,
+            "width": 341,
+            "height": 56
+          },
+          {
+            "id": "689:97",
+            "x": 129,
+            "y": 1738,
+            "width": 1193,
+            "height": 1
+          },
+          {
+            "id": "689:8",
+            "x": 191,
+            "y": 1836,
+            "width": 589,
+            "height": 44
+          },
+          {
+            "id": "689:7",
+            "x": 191,
+            "y": 1900,
+            "width": 490,
+            "height": 286
+          },
+          {
+            "id": "689:9",
+            "x": 191,
+            "y": 2237,
+            "width": 239,
+            "height": 31
+          },
+          {
+            "id": "689:11",
+            "x": 207,
+            "y": 2241.5,
+            "width": 223,
+            "height": 22
+          },
+          {
+            "id": "689:68",
+            "x": 738,
+            "y": 1892,
+            "width": 508,
+            "height": 289
+          },
+          {
+            "id": "689:87",
+            "x": 758,
+            "y": 2118,
+            "width": 28.183334350585938,
+            "height": 28.183334350585938
+          },
+          {
+            "id": "689:90",
+            "x": 738,
+            "y": 2208,
+            "width": 328,
+            "height": 65.75
+          },
+          {
+            "id": "689:91",
+            "x": 129,
+            "y": 2388,
+            "width": 1193,
+            "height": 1
+          },
+          {
+            "id": "689:13",
+            "x": 121,
+            "y": 2491,
+            "width": 961,
+            "height": 44
+          },
+          {
+            "id": "689:12",
+            "x": 123,
+            "y": 2548,
+            "width": 950,
+            "height": 52
+          },
+          {
+            "id": "689:14",
+            "x": 122,
+            "y": 2658,
+            "width": 382,
+            "height": 356
+          },
+          {
+            "id": "689:18",
+            "x": 122.23333740234375,
+            "y": 2656.5,
+            "width": 381.3666687011719,
+            "height": 205
+          },
+          {
+            "id": "689:84",
+            "x": 140,
+            "y": 2822,
+            "width": 28.183334350585938,
+            "height": 28.183334350585938
+          },
+          {
+            "id": "689:19",
+            "x": 123,
+            "y": 2862,
+            "width": 381,
+            "height": 152
+          },
+          {
+            "id": "689:21",
+            "x": 153.96665954589844,
+            "y": 2882,
+            "width": 292.26666259765625,
+            "height": 21.149993896484375
+          },
+          {
+            "id": "689:20",
+            "x": 154,
+            "y": 2914,
+            "width": 325,
+            "height": 56
+          },
+          {
+            "id": "689:22",
+            "x": 533,
+            "y": 2658,
+            "width": 382,
+            "height": 356
+          },
+          {
+            "id": "689:27",
+            "x": 533.75,
+            "y": 2658,
+            "width": 381,
+            "height": 204.86666870117188
+          },
+          {
+            "id": "689:81",
+            "x": 546,
+            "y": 2822,
+            "width": 28.183334350585938,
+            "height": 28.183334350585938
+          },
+          {
+            "id": "689:28",
+            "x": 534,
+            "y": 2863,
+            "width": 381,
+            "height": 151
+          },
+          {
+            "id": "689:30",
+            "x": 564.75,
+            "y": 2882,
+            "width": 292.54998779296875,
+            "height": 22.083328247070312
+          },
+          {
+            "id": "689:29",
+            "x": 565,
+            "y": 2914,
+            "width": 328,
+            "height": 56
+          },
+          {
+            "id": "689:31",
+            "x": 941,
+            "y": 2658,
+            "width": 382,
+            "height": 356
+          },
+          {
+            "id": "689:35",
+            "x": 938.0166625976562,
+            "y": 2655,
+            "width": 383,
+            "height": 214.98333740234375
+          },
+          {
+            "id": "689:78",
+            "x": 956,
+            "y": 2822,
+            "width": 28.183334350585938,
+            "height": 28.183334350585938
+          },
+          {
+            "id": "689:37",
+            "x": 941,
+            "y": 2863,
+            "width": 381,
+            "height": 151
+          },
+          {
+            "id": "689:39",
+            "x": 971.75,
+            "y": 2882,
+            "width": 292.54998779296875,
+            "height": 22.083328247070312
+          },
+          {
+            "id": "689:38",
+            "x": 972,
+            "y": 2914,
+            "width": 328,
+            "height": 56
+          },
+          {
+            "id": "689:56",
+            "x": 122,
+            "y": 3046,
+            "width": 382,
+            "height": 356
+          },
+          {
+            "id": "689:60",
+            "x": 121,
+            "y": 3046,
+            "width": 385,
+            "height": 215
+          },
+          {
+            "id": "689:72",
+            "x": 140,
+            "y": 3221,
+            "width": 28.183334350585938,
+            "height": 28.183334350585938
+          },
+          {
+            "id": "689:62",
+            "x": 121,
+            "y": 3260,
+            "width": 383,
+            "height": 151
+          },
+          {
+            "id": "689:64",
+            "x": 151.9166717529297,
+            "y": 3279,
+            "width": 294.08331298828125,
+            "height": 22.083328247070312
+          },
+          {
+            "id": "689:63",
+            "x": 152.1666717529297,
+            "y": 3311,
+            "width": 329.7166748046875,
+            "height": 56
+          },
+          {
+            "id": "689:47",
+            "x": 532,
+            "y": 3046,
+            "width": 382,
+            "height": 356
+          },
+          {
+            "id": "689:51",
+            "x": 531,
+            "y": 3046,
+            "width": 383,
+            "height": 215
+          },
+          {
+            "id": "689:69",
+            "x": 546,
+            "y": 3221,
+            "width": 28.183334350585938,
+            "height": 28.183334350585938
+          },
+          {
+            "id": "689:53",
+            "x": 534,
+            "y": 3260,
+            "width": 380,
+            "height": 151
+          },
+          {
+            "id": "689:55",
+            "x": 564.6666870117188,
+            "y": 3279,
+            "width": 291.7833251953125,
+            "height": 22.083328247070312
+          },
+          {
+            "id": "689:54",
+            "x": 564.9166870117188,
+            "y": 3311,
+            "width": 327.1333312988281,
+            "height": 56
+          },
+          {
+            "id": "689:40",
+            "x": 938,
+            "y": 3046,
+            "width": 382,
+            "height": 356
+          },
+          {
+            "id": "689:43",
+            "x": 938,
+            "y": 3046,
+            "width": 383.98333740234375,
+            "height": 214
+          },
+          {
+            "id": "689:75",
+            "x": 956,
+            "y": 3221,
+            "width": 28.183334350585938,
+            "height": 28.183334350585938
+          },
+          {
+            "id": "689:44",
+            "x": 934,
+            "y": 3260,
+            "width": 388,
+            "height": 151
+          },
+          {
+            "id": "689:46",
+            "x": 971.75,
+            "y": 3279,
+            "width": 292.54998779296875,
+            "height": 22.083328247070312
+          },
+          {
+            "id": "689:45",
+            "x": 972,
+            "y": 3311,
+            "width": 328,
+            "height": 56
+          }
+        ]
+      },
+      {
+        "engine": "firefox",
+        "width": 390,
+        "errors": [],
+        "overflow": false,
+        "footer": {
+          "x": 0,
+          "y": 5933.14990234375,
+          "width": 390,
+          "height": 250
+        },
+        "sections": [
+          {
+            "className": "journalism-written",
+            "x": 20,
+            "y": 242,
+            "width": 350,
+            "height": 2140.5
+          },
+          {
+            "className": "journalism-multimedia",
+            "x": 20,
+            "y": 2503.5,
+            "width": 350,
+            "height": 858.86669921875
+          },
+          {
+            "className": "journalism-broadcast",
+            "x": 20,
+            "y": 3475.36669921875,
+            "width": 350,
+            "height": 2377.783203125
+          }
+        ],
+        "nodes": [
+          {
+            "id": "689:117",
+            "x": 20,
+            "y": 176,
+            "width": 254,
+            "height": 26
+          },
+          {
+            "id": "607:16",
+            "x": 20,
+            "y": 242,
+            "width": 350,
+            "height": 40
+          },
+          {
+            "id": "607:14",
+            "x": 20,
+            "y": 295,
+            "width": 350,
+            "height": 156
+          },
+          {
+            "id": "609:65",
+            "x": 20,
+            "y": 491,
+            "width": 350,
+            "height": 454.70001220703125
+          },
+          {
+            "id": "609:16",
+            "x": 22.100006103515625,
+            "y": 491,
+            "width": 347.8833312988281,
+            "height": 298.70001220703125
+          },
+          {
+            "id": "609:26",
+            "x": 44,
+            "y": 809.7000122070312,
+            "width": 302,
+            "height": 28
+          },
+          {
+            "id": "609:25",
+            "x": 44,
+            "y": 848.7000122070312,
+            "width": 302,
+            "height": 56
+          },
+          {
+            "id": "609:64",
+            "x": 20,
+            "y": 977.7000122070312,
+            "width": 350,
+            "height": 454.70001220703125
+          },
+          {
+            "id": "609:15",
+            "x": 20,
+            "y": 977.7000122070312,
+            "width": 350.70001220703125,
+            "height": 298.70001220703125
+          },
+          {
+            "id": "609:20",
+            "x": 44,
+            "y": 1296.4000244140625,
+            "width": 302,
+            "height": 28
+          },
+          {
+            "id": "609:19",
+            "x": 44,
+            "y": 1335.4000244140625,
+            "width": 302,
+            "height": 56
+          },
+          {
+            "id": "609:58",
+            "x": 20,
+            "y": 1464.4000244140625,
+            "width": 350,
+            "height": 443.04998779296875
+          },
+          {
+            "id": "609:14",
+            "x": 19.300003051757812,
+            "y": 1463.949951171875,
+            "width": 353.51666259765625,
+            "height": 304.48333740234375
+          },
+          {
+            "id": "609:29",
+            "x": 44,
+            "y": 1770.9833984375,
+            "width": 302,
+            "height": 28
+          },
+          {
+            "id": "609:28",
+            "x": 44,
+            "y": 1809.13330078125,
+            "width": 302,
+            "height": 28
+          },
+          {
+            "id": "609:62",
+            "x": 20,
+            "y": 1939.449951171875,
+            "width": 350,
+            "height": 443.04998779296875
+          },
+          {
+            "id": "609:11",
+            "x": 20,
+            "y": 1940.1500244140625,
+            "width": 350,
+            "height": 301.5
+          },
+          {
+            "id": "609:33",
+            "x": 44,
+            "y": 2246.5,
+            "width": 302,
+            "height": 28
+          },
+          {
+            "id": "609:32",
+            "x": 44,
+            "y": 2285.5,
+            "width": 302,
+            "height": 56
+          },
+          {
+            "id": "689:97",
+            "x": 20,
+            "y": 2446.5,
+            "width": 350,
+            "height": 1
+          },
+          {
+            "id": "689:8",
+            "x": 20,
+            "y": 2503.5,
+            "width": 350,
+            "height": 40
+          },
+          {
+            "id": "689:7",
+            "x": 20,
+            "y": 2563.5,
+            "width": 350,
+            "height": 416
+          },
+          {
+            "id": "689:9",
+            "x": 20,
+            "y": 3007.5,
+            "width": 239,
+            "height": 31
+          },
+          {
+            "id": "689:11",
+            "x": 36,
+            "y": 3012,
+            "width": 223,
+            "height": 22
+          },
+          {
+            "id": "689:68",
+            "x": 20,
+            "y": 3070.5,
+            "width": 350,
+            "height": 199.11666870117188
+          },
+          {
+            "id": "689:87",
+            "x": 33.76666259765625,
+            "y": 3226.199951171875,
+            "width": 19.416671752929688,
+            "height": 19.416671752929688
+          },
+          {
+            "id": "689:90",
+            "x": 20,
+            "y": 3296.61669921875,
+            "width": 328,
+            "height": 65.75
+          },
+          {
+            "id": "689:91",
+            "x": 20,
+            "y": 3418.36669921875,
+            "width": 350,
+            "height": 1
+          },
+          {
+            "id": "689:13",
+            "x": 21,
+            "y": 3475.36669921875,
+            "width": 349,
+            "height": 40
+          },
+          {
+            "id": "689:12",
+            "x": 23,
+            "y": 3528.36669921875,
+            "width": 347,
+            "height": 130
+          },
+          {
+            "id": "689:14",
+            "x": 20,
+            "y": 3698.36669921875,
+            "width": 350,
+            "height": 338.91668701171875
+          },
+          {
+            "id": "689:18",
+            "x": 20.216659545898438,
+            "y": 3696.9833984375,
+            "width": 349.41668701171875,
+            "height": 187.8333282470703
+          },
+          {
+            "id": "689:84",
+            "x": 36.48333740234375,
+            "y": 3848.61669921875,
+            "width": 25.816665649414062,
+            "height": 25.816665649414062
+          },
+          {
+            "id": "689:19",
+            "x": 20.899993896484375,
+            "y": 3885.283447265625,
+            "width": 349.0833435058594,
+            "height": 152
+          },
+          {
+            "id": "689:21",
+            "x": 51.96665954589844,
+            "y": 3905.283447265625,
+            "width": 292.26666259765625,
+            "height": 21.149993896484375
+          },
+          {
+            "id": "689:20",
+            "x": 52,
+            "y": 3937.283447265625,
+            "width": 298,
+            "height": 56
+          },
+          {
+            "id": "689:22",
+            "x": 20,
+            "y": 4061.283447265625,
+            "width": 350,
+            "height": 342.83331298828125
+          },
+          {
+            "id": "689:27",
+            "x": 20.683334350585938,
+            "y": 4061.283447265625,
+            "width": 349.08331298828125,
+            "height": 187.71665954589844
+          },
+          {
+            "id": "689:81",
+            "x": 31.899993896484375,
+            "y": 4211.5498046875,
+            "width": 25.816665649414062,
+            "height": 25.816665649414062
+          },
+          {
+            "id": "689:28",
+            "x": 20.899993896484375,
+            "y": 4249.11669921875,
+            "width": 349.0833435058594,
+            "height": 155
+          },
+          {
+            "id": "689:30",
+            "x": 51.75,
+            "y": 4268.11669921875,
+            "width": 292.54998779296875,
+            "height": 22.083328247070312
+          },
+          {
+            "id": "689:29",
+            "x": 52,
+            "y": 4300.11669921875,
+            "width": 298,
+            "height": 84
+          },
+          {
+            "id": "689:31",
+            "x": 20,
+            "y": 4428.11669921875,
+            "width": 350,
+            "height": 338.83331298828125
+          },
+          {
+            "id": "689:35",
+            "x": 17.26666259765625,
+            "y": 4425.38330078125,
+            "width": 350.9000244140625,
+            "height": 196.98333740234375
+          },
+          {
+            "id": "689:78",
+            "x": 33.73333740234375,
+            "y": 4578.38330078125,
+            "width": 25.816665649414062,
+            "height": 25.816665649414062
+          },
+          {
+            "id": "689:37",
+            "x": 20,
+            "y": 4615.9501953125,
+            "width": 349.08331298828125,
+            "height": 151
+          },
+          {
+            "id": "689:39",
+            "x": 50.75,
+            "y": 4634.9501953125,
+            "width": 292.54998779296875,
+            "height": 22.083343505859375
+          },
+          {
+            "id": "689:38",
+            "x": 51,
+            "y": 4666.9501953125,
+            "width": 299,
+            "height": 56
+          },
+          {
+            "id": "689:56",
+            "x": 20,
+            "y": 4790.9501953125,
+            "width": 350,
+            "height": 338.066650390625
+          },
+          {
+            "id": "689:60",
+            "x": 19.100006103515625,
+            "y": 4790.9501953125,
+            "width": 352.73333740234375,
+            "height": 196.9666748046875
+          },
+          {
+            "id": "689:72",
+            "x": 36.48333740234375,
+            "y": 4951.283203125,
+            "width": 25.816665649414062,
+            "height": 25.816665649414062
+          },
+          {
+            "id": "689:62",
+            "x": 19.100006103515625,
+            "y": 4987.0166015625,
+            "width": 350.8999938964844,
+            "height": 151
+          },
+          {
+            "id": "689:64",
+            "x": 49.91667175292969,
+            "y": 5006.0166015625,
+            "width": 294.08331298828125,
+            "height": 22.083343505859375
+          },
+          {
+            "id": "689:63",
+            "x": 50.16667175292969,
+            "y": 5038.0166015625,
+            "width": 299.83331298828125,
+            "height": 56
+          },
+          {
+            "id": "689:47",
+            "x": 20,
+            "y": 5153.0166015625,
+            "width": 350,
+            "height": 338.066650390625
+          },
+          {
+            "id": "689:51",
+            "x": 19.100006103515625,
+            "y": 5153.0166015625,
+            "width": 350.8999938964844,
+            "height": 196.9666748046875
+          },
+          {
+            "id": "689:69",
+            "x": 32.81666564941406,
+            "y": 5313.35009765625,
+            "width": 25.816665649414062,
+            "height": 25.816665649414062
+          },
+          {
+            "id": "689:53",
+            "x": 21.816665649414062,
+            "y": 5349.08349609375,
+            "width": 348.16668701171875,
+            "height": 151
+          },
+          {
+            "id": "689:55",
+            "x": 52.66667175292969,
+            "y": 5368.08349609375,
+            "width": 291.7833251953125,
+            "height": 22.083343505859375
+          },
+          {
+            "id": "689:54",
+            "x": 52.91667175292969,
+            "y": 5400.08349609375,
+            "width": 297.08331298828125,
+            "height": 56
+          },
+          {
+            "id": "689:40",
+            "x": 20,
+            "y": 5515.08349609375,
+            "width": 350,
+            "height": 338.066650390625
+          },
+          {
+            "id": "689:43",
+            "x": 20,
+            "y": 5515.08349609375,
+            "width": 351.816650390625,
+            "height": 196.06666564941406
+          },
+          {
+            "id": "689:75",
+            "x": 36.48333740234375,
+            "y": 5675.41650390625,
+            "width": 25.816665649414062,
+            "height": 25.816665649414062
+          },
+          {
+            "id": "689:44",
+            "x": 16.350006103515625,
+            "y": 5711.14990234375,
+            "width": 355.48333740234375,
+            "height": 151
+          },
+          {
+            "id": "689:46",
+            "x": 53.75,
+            "y": 5730.14990234375,
+            "width": 292.54998779296875,
+            "height": 22.083343505859375
+          },
+          {
+            "id": "689:45",
+            "x": 54,
+            "y": 5762.14990234375,
+            "width": 296,
+            "height": 56
+          }
+        ]
+      }
+    ]
+  },
+  "deployment": {
+    "committed": false,
+    "pushed": false,
+    "deployed": false,
+    "instructions": "README.md current version 10 section",
+    "postDeployment": "Wait for Cloudflare to deploy the new commit; check /journalism/ sections, both dividers, written/media links, CTA/play icons and phone layout. Also check Video, home hero/Featured links, both case studies and About+Contact."
+  }
+}

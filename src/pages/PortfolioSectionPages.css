@@ -1,11 +1,12 @@
-.page-container--features { width: min(1054px, calc(100% - 80px)); }
-.journalism-page { color: #000; font-family: var(--portfolio-body); font-optical-sizing: none; padding-top: 76px; }
-.journalism-page { min-height: 1678px; padding-bottom: 184px; }
-.journalism-intro :is(h1,p) { margin: 0; }
-.journalism-intro .journalism-label { max-width: 254px; margin-left: 6px; font: 400 15px/26px var(--portfolio-body); }
-.journalism-intro h1 { max-width: 471px; margin: 24px 0 0 4px; font: 700 32px/44px var(--portfolio-body); letter-spacing: 0; }
-.journalism-intro .journalism-description { max-width: 994px; margin: 13px 0 0 6px; font: 400 16px/26px var(--portfolio-body); }
-.journalism-grid { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); align-items: start; gap: 48px 57px; width: calc(100% - 1px); margin-top: 66px; }
+.page-container--features { width: min(1200px, calc(100% - 80px)); }
+.journalism-page { color: #000; font-family: var(--portfolio-body); font-optical-sizing: none; letter-spacing: 0; padding-top: 52px; padding-bottom: 287px; min-height: 3560px; }
+.journalism-page :is(h1,h2,h3,p) { margin: 0; }
+.journalism-page .journalism-label { max-width: 254px; margin-left: 71px; font: 400 15px/26px var(--portfolio-body); }
+.journalism-page h2 { font: 700 32px/44px var(--portfolio-body); letter-spacing: 0; }
+.journalism-written { width: min(1054px, calc(100% - 63px)); margin: 50px 0 0 63px; }
+.journalism-intro h2 { max-width: 471px; margin-left: 8px; }
+.journalism-intro .journalism-description { max-width: 994px; margin: 13px 0 0 8px; font: 400 16px/26px var(--portfolio-body); }
+.journalism-grid { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); align-items: start; gap: 48px 57px; width: calc(100% - 1px); margin-top: 59px; }
 .journalism-card { border: 0; border-radius: 16px; }
 .journalism-card--allergies { position: relative; left: 4px; }
 .journalism-card .project-card__link { padding: 0; background: transparent; border-radius: inherit; }
@@ -15,19 +16,44 @@
 .journalism-card__image-layer img { display: block; width: 100%; height: 100%; max-width: none; object-fit: cover; }
 .journalism-card__caption { min-height: var(--caption-height); padding: var(--caption-top) 30px 30px var(--caption-left); background: #f7f7f7; }
 .journalism-card__caption p { max-width: var(--publication-width); margin: 0; color: #7c8b98; font: 500 15px/28px var(--portfolio-body); }
-.journalism-card__caption h2 { max-width: var(--title-width); margin: var(--title-gap) 0 0; color: #000; font: 600 20px/28px var(--portfolio-body); letter-spacing: 0; }
-@media (hover: hover) and (pointer: fine) { .journalism-card:hover img { transform: none; } }
+.journalism-card__caption h3 { max-width: var(--title-width); margin: var(--title-gap) 0 0; color: #000; font: 600 20px/28px var(--portfolio-body); letter-spacing: 0; }
+/* Keep Figma's half-pixel separators visible in Safari using native borders. */
+.journalism-rule { height: 1px; width: calc(100% - var(--rule-offset) + 2px); margin-left: var(--rule-offset); border-top: var(--rule-weight) solid #000; }
+.journalism-written + .journalism-rule { margin-top: 120px; }
+.journalism-multimedia { display: grid; grid-template-columns: minmax(0,490fr) minmax(0,508fr); column-gap: 57px; width: min(1055px, calc(100% - 71px)); min-height: 552px; margin: 97px 0 0 71px; align-items: start; }
+.journalism-multimedia h2 { width: calc(100% + 99px); }
+.journalism-multimedia__description { max-width: 490px; margin-top: 20px; font: 400 16px/26px var(--portfolio-body); white-space: pre-line; }
+.journalism-multimedia__button { display: flex; align-items: center; width: 239px; max-width: 100%; height: 31px; margin-top: 51px; padding-left: 16px; background: #25261e; border-radius: 4px; color: #fff; font: 400 14px/16.8px var(--portfolio-mono); }
+.journalism-multimedia__button span { display: flex; align-items: center; width: 223px; height: 22px; }
+.journalism-multimedia__button:hover { background: #3c444b; }
+.journalism-multimedia .video-feature__preview { margin-top: 56px; }
+.journalism-broadcast { margin-top: 102px; }
+.journalism-broadcast > h2 { max-width: 961px; margin-left: 1px; }
+.journalism-broadcast__description { max-width: 950px; margin: 13px 0 0 3px !important; font: 400 16px/26px var(--portfolio-body); }
+.journalism-broadcast__grid { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); align-items: start; gap: 32px 28px; width: calc(100% + 2px); margin-top: 58px; }
+@media (hover: hover) and (pointer: fine) { .journalism-page .project-card:hover img { transform: none; } }
 @media (max-width: 1023px) {
-  .journalism-page { min-height: 0; padding-bottom: 100px; }
+  .journalism-page { min-height: 0; padding-top: 48px; padding-bottom: 100px; }
+  .journalism-page .journalism-label { margin-left: 0; }
+  .journalism-written { width: 100%; margin: 40px 0 0; }
+  .journalism-intro h2, .journalism-intro .journalism-description { margin-left: 0; }
   .journalism-grid { column-gap: 32px; }
   .journalism-card__caption { padding-left: 24px; padding-right: 24px; }
+  .journalism-written + .journalism-rule { margin-top: 64px; }
+  .journalism-rule { width: 100%; margin-left: 0; }
+  .journalism-multimedia { grid-template-columns: minmax(0,1fr); gap: 32px; width: 100%; min-height: 0; margin: 56px 0; }
+  .journalism-multimedia h2 { width: auto; }
+  .journalism-multimedia__description { max-width: none; }
+  .journalism-multimedia__button { margin-top: 28px; }
+  .journalism-multimedia .video-feature__preview { width: min(100%,508px); margin-top: 0; }
+  .journalism-broadcast { margin-top: 56px; }
+  .journalism-broadcast__grid { grid-template-columns: repeat(2,minmax(0,1fr)); width: 100%; margin-top: 40px; }
 }
 @media (max-width: 767px) {
   .page-container--features { width: calc(100% - 40px); }
-  .journalism-page { padding-top: 48px; }
   .journalism-page { padding-bottom: 80px; }
-  .journalism-intro h1 { font-size: 32px; line-height: 40px; }
-  .journalism-intro .journalism-description { margin-left: 4px; }
+  .journalism-page h2 { line-height: 40px; }
   .journalism-grid { width: 100%; grid-template-columns: minmax(0,1fr); gap: 32px; margin-top: 40px; }
   .journalism-card--allergies { left: 0; }
+  .journalism-broadcast__grid { grid-template-columns: minmax(0,1fr); gap: 24px; }
 }

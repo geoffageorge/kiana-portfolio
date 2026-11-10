@@ -1,0 +1,149 @@
+{
+  "frameId": "607:7",
+  "assets": [
+    {
+      "variable": "imgFacePreview2",
+      "file": "food-culture.png",
+      "nodeId": "609:16",
+      "url": "https://www.figma.com/api/mcp/asset/584c3566-150d-4e20-ab05-a17a4a56983c.png",
+      "candidatePath": "assets/journalism-figma/food-culture.png"
+    },
+    {
+      "variable": "imgAdobeStock1593322321",
+      "file": "sumo-wrestling.png",
+      "nodeId": "609:15",
+      "url": "https://www.figma.com/api/mcp/asset/2398a5cc-6c20-4678-bba7-bb992097322c.png",
+      "candidatePath": "assets/journalism-figma/sumo-wrestling.png"
+    },
+    {
+      "variable": "imgScreenshot20230413At61927Pm3",
+      "file": "food-allergies.png",
+      "nodeId": "609:14",
+      "url": "https://www.figma.com/api/mcp/asset/b5099dfc-5737-4e60-aa0d-95d32ecba3e4.png",
+      "candidatePath": "assets/journalism-figma/food-allergies.png"
+    },
+    {
+      "variable": "img0Deb7C0Dccb6C82B5E4543Be35016Aebf74Da5Mv22",
+      "file": "monk-thailand.png",
+      "nodeId": "609:11",
+      "url": "https://www.figma.com/api/mcp/asset/059c8963-bb7b-4268-b235-b89430a47ff0.png",
+      "candidatePath": "assets/journalism-figma/monk-thailand.png"
+    },
+    {
+      "variable": "imgScreenshot20261108At90323Am2",
+      "file": "cultured-pickle-shop.png",
+      "nodeId": "689:18",
+      "url": "https://www.figma.com/api/mcp/asset/2f2e6ba4-e375-4f98-9f75-761483f7288b.png",
+      "candidatePath": "assets/video-v8-figma/cultured-pickle-shop.png"
+    },
+    {
+      "variable": "imgScreenshot20261108At90211Am1",
+      "file": "food-cooperatives.png",
+      "nodeId": "689:27",
+      "url": "https://www.figma.com/api/mcp/asset/1bc4688a-129b-4ae8-bb27-ab63cf7268a4.png",
+      "candidatePath": "assets/video-v8-figma/food-cooperatives.png"
+    },
+    {
+      "variable": "imgScreenshot20261108At95210Am1",
+      "file": "claire-mack.png",
+      "nodeId": "689:35",
+      "url": "https://www.figma.com/api/mcp/asset/aa354f7e-7ab6-43e9-9399-415fa24f08ee.png",
+      "candidatePath": "assets/video-v8-figma/claire-mack.png"
+    },
+    {
+      "variable": "imgScreenshot20261108At95823Am1",
+      "file": "wasabi.png",
+      "nodeId": "689:43",
+      "url": "https://www.figma.com/api/mcp/asset/a5449966-0822-4179-b12d-fde11b48ad4f.png",
+      "candidatePath": "assets/video-v8-figma/wasabi.png"
+    },
+    {
+      "variable": "imgScreenshot20261108At94108Am1",
+      "file": "castro-street.png",
+      "nodeId": "689:51",
+      "url": "https://www.figma.com/api/mcp/asset/28065982-d1b0-4b14-b166-e56aba813d03.png",
+      "candidatePath": "assets/video-v8-figma/castro-street.png"
+    },
+    {
+      "variable": "imgScreenshot20261108At95734Am2",
+      "file": "colette-crutcher.png",
+      "nodeId": "689:60",
+      "url": "https://www.figma.com/api/mcp/asset/7a988378-6298-4db5-901a-47192c0ff823.png",
+      "candidatePath": "assets/video-v8-figma/colette-crutcher.png"
+    },
+    {
+      "variable": "imgScreenshot20261108At63419Pm1",
+      "file": "aapi-multimedia.png",
+      "nodeId": "689:68",
+      "url": "https://www.figma.com/api/mcp/asset/0d88973d-4ec8-4098-bcfc-0e141dfb7f9d.png",
+      "candidatePath": "assets/video-v8-figma/aapi-multimedia.png"
+    },
+    {
+      "variable": "imgFacePreview1",
+      "file": "feature-card-mask.svg",
+      "nodeId": "609:61",
+      "url": "https://www.figma.com/api/mcp/asset/7a300162-afb1-47fb-8ca2-8ead7bc7d1a6.svg",
+      "candidatePath": "assets/journalism-figma/feature-card-mask.svg"
+    },
+    {
+      "variable": "imgScreenshot20230413At61927Pm1",
+      "file": "short-card-mask.svg",
+      "nodeId": "609:56",
+      "url": "https://www.figma.com/api/mcp/asset/faf7a968-baa2-4ad5-9507-266dd6934f71.svg",
+      "candidatePath": "assets/journalism-figma/short-card-mask.svg"
+    },
+    {
+      "variable": "imgScreenshot20230413At61927Pm2",
+      "file": "food-allergies-image-mask.svg",
+      "nodeId": "609:53",
+      "url": "https://www.figma.com/api/mcp/asset/df597db8-ca8f-49aa-8c78-ebef8089b69b.svg",
+      "candidatePath": "assets/journalism-figma/food-allergies-image-mask.svg"
+    },
+    {
+      "variable": "img0Deb7C0Dccb6C82B5E4543Be35016Aebf74Da5Mv21",
+      "file": "monk-image-mask.svg",
+      "nodeId": "609:51",
+      "url": "https://www.figma.com/api/mcp/asset/490a6bc0-5a4f-495c-a086-1fe72ae0f511.svg",
+      "candidatePath": "assets/journalism-figma/monk-image-mask.svg"
+    },
+    {
+      "variable": "imgScreenshot20261108At90323Am1",
+      "file": "broadcast-card-mask.svg",
+      "nodeId": "689:15",
+      "url": "https://www.figma.com/api/mcp/asset/01a57c08-60fd-4c98-9fce-6a9a01957902.svg",
+      "candidatePath": "assets/video-v8-figma/broadcast-card-mask.svg"
+    },
+    {
+      "variable": "imgScreenshot20261108At95734Am1",
+      "file": "colette-card-mask.svg",
+      "nodeId": "689:57",
+      "url": "https://www.figma.com/api/mcp/asset/efec1b83-8abc-4d84-9a4d-7d53bc62a90d.svg",
+      "candidatePath": "assets/video-v8-figma/colette-card-mask.svg"
+    },
+    {
+      "variable": "imgRectangle150",
+      "file": "wasabi-caption.svg",
+      "nodeId": "689:44",
+      "url": "https://www.figma.com/api/mcp/asset/61ddff69-9eac-482c-bfd2-076ca81ca167.svg",
+      "candidatePath": "assets/video-v8-figma/wasabi-caption.svg"
+    },
+    {
+      "variable": "imgGroup154",
+      "file": "play-button.svg",
+      "nodeId": "689:69",
+      "url": "https://www.figma.com/api/mcp/asset/0ca32561-0e5e-4c83-8503-17d6080dcb83.svg",
+      "candidatePath": "assets/video-v8-figma/play-button.svg"
+    },
+    {
+      "variable": "imgLine70",
+      "file": "divider.svg",
+      "nodeId": "689:91",
+      "url": "https://www.figma.com/api/mcp/asset/6327939a-3fa0-47fe-8d75-6aa9a3fc7653.svg",
+      "candidatePath": null
+    }
+  ],
+  "excluded": [
+    "Group 152 is fully occluded by the multimedia image.",
+    "Duplicated Figma header/logo elements are replaced by the explicitly required existing global navigation/branding."
+  ]
+}

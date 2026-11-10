@@ -1,0 +1,4196 @@
+{
+  "frameId": "607:7",
+  "nodes": [
+    {
+      "id": "607:14",
+      "name": "Writing gives me a way to explore topics, reflect on experiences, and share perspectives. This collection brings together reported features and personal reflections, shaped by curiosity, conversations, and a closer look at the world around me.",
+      "type": "TEXT",
+      "x": 191,
+      "y": 314,
+      "width": 994,
+      "height": 52,
+      "characters": "Writing gives me a way to explore topics, reflect on experiences, and share perspectives. This collection brings together reported features and personal reflections, shaped by curiosity, conversations, and a closer look at the world around me.",
+      "fontName": {
+        "family": "Inter",
+        "style": "Regular",
+        "variationSettings": {
+          "wght": 400,
+          "slnt": 0
+        }
+      },
+      "fontSize": 16,
+      "fontWeight": 400,
+      "lineHeight": {
+        "unit": "PIXELS",
+        "value": 26
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "TOP",
+      "textAutoResize": "HEIGHT",
+      "paragraphSpacing": 0,
+      "paragraphIndent": 0,
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE",
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0,
+            "g": 0,
+            "b": 0
+          },
+          "boundVariables": {}
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1,
+      "effects": [],
+      "visible": true,
+      "opacity": 1,
+      "constraints": {
+        "horizontal": "MIN",
+        "vertical": "MIN"
+      },
+      "reactions": [],
+      "hyperlink": null,
+      "boundVariables": {},
+      "hasMissingFont": false,
+      "segments": [
+        {
+          "characters": "Writing gives me a way to explore topics, reflect on experiences, and share perspectives. This collection brings together reported features and personal reflections, shaped by curiosity, conversations, and a closer look at the world around me.",
+          "start": 0,
+          "end": 243,
+          "fontSize": 16,
+          "fontName": {
+            "family": "Inter",
+            "style": "Regular",
+            "variationSettings": {
+              "wght": 400,
+              "slnt": 0
+            }
+          },
+          "fontWeight": 400,
+          "textDecoration": "NONE",
+          "textCase": "ORIGINAL",
+          "lineHeight": {
+            "unit": "PIXELS",
+            "value": 26
+          },
+          "letterSpacing": {
+            "unit": "PERCENT",
+            "value": 0
+          },
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0,
+                "g": 0,
+                "b": 0
+              },
+              "boundVariables": {}
+            }
+          ],
+          "hyperlink": null
+        }
+      ]
+    },
+    {
+      "id": "607:16",
+      "name": "Written Articles",
+      "type": "TEXT",
+      "x": 191,
+      "y": 257,
+      "width": 471,
+      "height": 44,
+      "characters": "Written Articles",
+      "fontName": {
+        "family": "Inter",
+        "style": "Bold",
+        "variationSettings": {
+          "wght": 700,
+          "slnt": 0
+        }
+      },
+      "fontSize": 32,
+      "fontWeight": 700,
+      "lineHeight": {
+        "unit": "PIXELS",
+        "value": 44
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "TOP",
+      "textAutoResize": "HEIGHT",
+      "paragraphSpacing": 0,
+      "paragraphIndent": 0,
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE",
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0,
+            "g": 0,
+            "b": 0
+          },
+          "boundVariables": {}
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1,
+      "effects": [],
+      "visible": true,
+      "opacity": 1,
+      "constraints": {
+        "horizontal": "MIN",
+        "vertical": "MIN"
+      },
+      "reactions": [],
+      "hyperlink": null,
+      "boundVariables": {},
+      "hasMissingFont": false,
+      "segments": [
+        {
+          "characters": "Written Articles",
+          "start": 0,
+          "end": 16,
+          "fontSize": 32,
+          "fontName": {
+            "family": "Inter",
+            "style": "Bold",
+            "variationSettings": {
+              "wght": 700,
+              "slnt": 0
+            }
+          },
+          "fontWeight": 700,
+          "textDecoration": "NONE",
+          "textCase": "ORIGINAL",
+          "lineHeight": {
+            "unit": "PIXELS",
+            "value": 44
+          },
+          "letterSpacing": {
+            "unit": "PERCENT",
+            "value": 0
+          },
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0,
+                "g": 0,
+                "b": 0
+              },
+              "boundVariables": {}
+            }
+          ],
+          "hyperlink": null
+        }
+      ]
+    },
+    {
+      "id": "609:25",
+      "name": "A recipe for controversy: food, culture, and identity",
+      "type": "TEXT",
+      "x": 35,
+      "y": 484,
+      "width": 387,
+      "height": 56,
+      "characters": "A recipe for controversy: food, culture, and identity",
+      "fontName": {
+        "family": "Inter",
+        "style": "Semi Bold",
+        "variationSettings": {
+          "wght": 600,
+          "slnt": 0
+        }
+      },
+      "fontSize": 20,
+      "fontWeight": 600,
+      "lineHeight": {
+        "unit": "PIXELS",
+        "value": 28
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "TOP",
+      "textAutoResize": "HEIGHT",
+      "paragraphSpacing": 0,
+      "paragraphIndent": 0,
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE",
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0,
+            "g": 0,
+            "b": 0
+          },
+          "boundVariables": {}
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1,
+      "effects": [],
+      "visible": true,
+      "opacity": 1,
+      "constraints": {
+        "horizontal": "MIN",
+        "vertical": "MIN"
+      },
+      "reactions": [],
+      "hyperlink": null,
+      "boundVariables": {},
+      "hasMissingFont": false,
+      "segments": [
+        {
+          "characters": "A recipe for controversy: food, culture, and identity",
+          "start": 0,
+          "end": 53,
+          "fontSize": 20,
+          "fontName": {
+            "family": "Inter",
+            "style": "Semi Bold",
+            "variationSettings": {
+              "wght": 600,
+              "slnt": 0
+            }
+          },
+          "fontWeight": 600,
+          "textDecoration": "NONE",
+          "textCase": "ORIGINAL",
+          "lineHeight": {
+            "unit": "PIXELS",
+            "value": 28
+          },
+          "letterSpacing": {
+            "unit": "PERCENT",
+            "value": 0
+          },
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0,
+                "g": 0,
+                "b": 0
+              },
+              "boundVariables": {}
+            }
+          ],
+          "hyperlink": null
+        }
+      ]
+    },
+    {
+      "id": "609:26",
+      "name": "The Highlander",
+      "type": "TEXT",
+      "x": 35,
+      "y": 445,
+      "width": 387,
+      "height": 28,
+      "characters": "The Highlander",
+      "fontName": {
+        "family": "Inter",
+        "style": "Medium",
+        "variationSettings": {
+          "wght": 500,
+          "slnt": 0
+        }
+      },
+      "fontSize": 15,
+      "fontWeight": 500,
+      "lineHeight": {
+        "unit": "PIXELS",
+        "value": 28
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "TOP",
+      "textAutoResize": "HEIGHT",
+      "paragraphSpacing": 0,
+      "paragraphIndent": 0,
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE",
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0.48627451062202454,
+            "g": 0.545098066329956,
+            "b": 0.5960784554481506
+          },
+          "boundVariables": {}
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1,
+      "effects": [],
+      "visible": true,
+      "opacity": 1,
+      "constraints": {
+        "horizontal": "MIN",
+        "vertical": "MIN"
+      },
+      "reactions": [],
+      "hyperlink": null,
+      "boundVariables": {},
+      "hasMissingFont": false,
+      "segments": [
+        {
+          "characters": "The Highlander",
+          "start": 0,
+          "end": 14,
+          "fontSize": 15,
+          "fontName": {
+            "family": "Inter",
+            "style": "Medium",
+            "variationSettings": {
+              "wght": 500,
+              "slnt": 0
+            }
+          },
+          "fontWeight": 500,
+          "textDecoration": "NONE",
+          "textCase": "ORIGINAL",
+          "lineHeight": {
+            "unit": "PIXELS",
+            "value": 28
+          },
+          "letterSpacing": {
+            "unit": "PERCENT",
+            "value": 0
+          },
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0.48627451062202454,
+                "g": 0.545098066329956,
+                "b": 0.5960784554481506
+              },
+              "boundVariables": {}
+            }
+          ],
+          "hyperlink": null
+        }
+      ]
+    },
+    {
+      "id": "609:19",
+      "name": "Sumo wrestling in America — Destined to become huge?",
+      "type": "TEXT",
+      "x": 779,
+      "y": 909,
+      "width": 387,
+      "height": 56,
+      "characters": "Sumo wrestling in America — Destined to become huge?",
+      "fontName": {
+        "family": "Inter",
+        "style": "Semi Bold",
+        "variationSettings": {
+          "wght": 600,
+          "slnt": 0
+        }
+      },
+      "fontSize": 20,
+      "fontWeight": 600,
+      "lineHeight": {
+        "unit": "PIXELS",
+        "value": 28
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "TOP",
+      "textAutoResize": "HEIGHT",
+      "paragraphSpacing": 0,
+      "paragraphIndent": 0,
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE",
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0,
+            "g": 0,
+            "b": 0
+          },
+          "boundVariables": {}
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1,
+      "effects": [],
+      "visible": true,
+      "opacity": 1,
+      "constraints": {
+        "horizontal": "MIN",
+        "vertical": "MIN"
+      },
+      "reactions": [],
+      "hyperlink": null,
+      "boundVariables": {},
+      "hasMissingFont": false,
+      "segments": [
+        {
+          "characters": "Sumo wrestling in America — Destined to become huge?",
+          "start": 0,
+          "end": 52,
+          "fontSize": 20,
+          "fontName": {
+            "family": "Inter",
+            "style": "Semi Bold",
+            "variationSettings": {
+              "wght": 600,
+              "slnt": 0
+            }
+          },
+          "fontWeight": 600,
+          "textDecoration": "NONE",
+          "textCase": "ORIGINAL",
+          "lineHeight": {
+            "unit": "PIXELS",
+            "value": 28
+          },
+          "letterSpacing": {
+            "unit": "PERCENT",
+            "value": 0
+          },
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0,
+                "g": 0,
+                "b": 0
+              },
+              "boundVariables": {}
+            }
+          ],
+          "hyperlink": null
+        }
+      ]
+    },
+    {
+      "id": "609:20",
+      "name": "Scots Scoop",
+      "type": "TEXT",
+      "x": 779,
+      "y": 870,
+      "width": 387,
+      "height": 28,
+      "characters": "Scots Scoop",
+      "fontName": {
+        "family": "Inter",
+        "style": "Medium",
+        "variationSettings": {
+          "wght": 500,
+          "slnt": 0
+        }
+      },
+      "fontSize": 15,
+      "fontWeight": 500,
+      "lineHeight": {
+        "unit": "PIXELS",
+        "value": 28
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "TOP",
+      "textAutoResize": "HEIGHT",
+      "paragraphSpacing": 0,
+      "paragraphIndent": 0,
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE",
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0.48627451062202454,
+            "g": 0.545098066329956,
+            "b": 0.5960784554481506
+          },
+          "boundVariables": {}
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1,
+      "effects": [],
+      "visible": true,
+      "opacity": 1,
+      "constraints": {
+        "horizontal": "MIN",
+        "vertical": "MIN"
+      },
+      "reactions": [],
+      "hyperlink": null,
+      "boundVariables": {},
+      "hasMissingFont": false,
+      "segments": [
+        {
+          "characters": "Scots Scoop",
+          "start": 0,
+          "end": 11,
+          "fontSize": 15,
+          "fontName": {
+            "family": "Inter",
+            "style": "Medium",
+            "variationSettings": {
+              "wght": 500,
+              "slnt": 0
+            }
+          },
+          "fontWeight": 500,
+          "textDecoration": "NONE",
+          "textCase": "ORIGINAL",
+          "lineHeight": {
+            "unit": "PIXELS",
+            "value": 28
+          },
+          "letterSpacing": {
+            "unit": "PERCENT",
+            "value": 0
+          },
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0.48627451062202454,
+                "g": 0.545098066329956,
+                "b": 0.5960784554481506
+              },
+              "boundVariables": {}
+            }
+          ],
+          "hyperlink": null
+        }
+      ]
+    },
+    {
+      "id": "609:28",
+      "name": "Just one bite could kill",
+      "type": "TEXT",
+      "x": 32.14349365234375,
+      "y": 465.68359375,
+      "width": 390.3652038574219,
+      "height": 27.386171340942383,
+      "characters": "Just one bite could kill",
+      "fontName": {
+        "family": "Inter",
+        "style": "Semi Bold",
+        "variationSettings": {
+          "wght": 600,
+          "slnt": 0
+        }
+      },
+      "fontSize": 20,
+      "fontWeight": 600,
+      "lineHeight": {
+        "unit": "PIXELS",
+        "value": 28
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "TOP",
+      "textAutoResize": "NONE",
+      "paragraphSpacing": 0,
+      "paragraphIndent": 0,
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE",
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0,
+            "g": 0,
+            "b": 0
+          },
+          "boundVariables": {}
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1,
+      "effects": [],
+      "visible": true,
+      "opacity": 1,
+      "constraints": {
+        "horizontal": "MIN",
+        "vertical": "MIN"
+      },
+      "reactions": [],
+      "hyperlink": null,
+      "boundVariables": {},
+      "hasMissingFont": false,
+      "segments": [
+        {
+          "characters": "Just one bite could kill",
+          "start": 0,
+          "end": 24,
+          "fontSize": 20,
+          "fontName": {
+            "family": "Inter",
+            "style": "Semi Bold",
+            "variationSettings": {
+              "wght": 600,
+              "slnt": 0
+            }
+          },
+          "fontWeight": 600,
+          "textDecoration": "NONE",
+          "textCase": "ORIGINAL",
+          "lineHeight": {
+            "unit": "PIXELS",
+            "value": 28
+          },
+          "letterSpacing": {
+            "unit": "PERCENT",
+            "value": 0
+          },
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0,
+                "g": 0,
+                "b": 0
+              },
+              "boundVariables": {}
+            }
+          ],
+          "hyperlink": null
+        }
+      ]
+    },
+    {
+      "id": "609:29",
+      "name": "Scots Scoop",
+      "type": "TEXT",
+      "x": 32.14349365234375,
+      "y": 427.5390625,
+      "width": 390.3652038574219,
+      "height": 27.386171340942383,
+      "characters": "Scots Scoop",
+      "fontName": {
+        "family": "Inter",
+        "style": "Medium",
+        "variationSettings": {
+          "wght": 500,
+          "slnt": 0
+        }
+      },
+      "fontSize": 15,
+      "fontWeight": 500,
+      "lineHeight": {
+        "unit": "PIXELS",
+        "value": 28
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "TOP",
+      "textAutoResize": "NONE",
+      "paragraphSpacing": 0,
+      "paragraphIndent": 0,
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE",
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0.48627451062202454,
+            "g": 0.545098066329956,
+            "b": 0.5960784554481506
+          },
+          "boundVariables": {}
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1,
+      "effects": [],
+      "visible": true,
+      "opacity": 1,
+      "constraints": {
+        "horizontal": "MIN",
+        "vertical": "MIN"
+      },
+      "reactions": [],
+      "hyperlink": null,
+      "boundVariables": {},
+      "hasMissingFont": false,
+      "segments": [
+        {
+          "characters": "Scots Scoop",
+          "start": 0,
+          "end": 11,
+          "fontSize": 15,
+          "fontName": {
+            "family": "Inter",
+            "style": "Medium",
+            "variationSettings": {
+              "wght": 500,
+              "slnt": 0
+            }
+          },
+          "fontWeight": 500,
+          "textDecoration": "NONE",
+          "textCase": "ORIGINAL",
+          "lineHeight": {
+            "unit": "PIXELS",
+            "value": 28
+          },
+          "letterSpacing": {
+            "unit": "PERCENT",
+            "value": 0
+          },
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0.48627451062202454,
+                "g": 0.545098066329956,
+                "b": 0.5960784554481506
+              },
+              "boundVariables": {}
+            }
+          ],
+          "hyperlink": null
+        }
+      ]
+    },
+    {
+      "id": "609:32",
+      "name": "Everything I learned from a monk in Thailand",
+      "type": "TEXT",
+      "x": 784,
+      "y": 1521,
+      "width": 341,
+      "height": 56,
+      "characters": "Everything I learned from a monk in Thailand",
+      "fontName": {
+        "family": "Inter",
+        "style": "Semi Bold",
+        "variationSettings": {
+          "wght": 600,
+          "slnt": 0
+        }
+      },
+      "fontSize": 20,
+      "fontWeight": 600,
+      "lineHeight": {
+        "unit": "PIXELS",
+        "value": 28
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "TOP",
+      "textAutoResize": "HEIGHT",
+      "paragraphSpacing": 0,
+      "paragraphIndent": 0,
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE",
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0,
+            "g": 0,
+            "b": 0
+          },
+          "boundVariables": {}
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1,
+      "effects": [],
+      "visible": true,
+      "opacity": 1,
+      "constraints": {
+        "horizontal": "MIN",
+        "vertical": "MIN"
+      },
+      "reactions": [],
+      "hyperlink": null,
+      "boundVariables": {},
+      "hasMissingFont": false,
+      "segments": [
+        {
+          "characters": "Everything I learned from a monk in Thailand",
+          "start": 0,
+          "end": 44,
+          "fontSize": 20,
+          "fontName": {
+            "family": "Inter",
+            "style": "Semi Bold",
+            "variationSettings": {
+              "wght": 600,
+              "slnt": 0
+            }
+          },
+          "fontWeight": 600,
+          "textDecoration": "NONE",
+          "textCase": "ORIGINAL",
+          "lineHeight": {
+            "unit": "PIXELS",
+            "value": 28
+          },
+          "letterSpacing": {
+            "unit": "PERCENT",
+            "value": 0
+          },
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0,
+                "g": 0,
+                "b": 0
+              },
+              "boundVariables": {}
+            }
+          ],
+          "hyperlink": null
+        }
+      ]
+    },
+    {
+      "id": "609:33",
+      "name": "The Stanford Daily",
+      "type": "TEXT",
+      "x": 784,
+      "y": 1482,
+      "width": 387,
+      "height": 28,
+      "characters": "The Stanford Daily",
+      "fontName": {
+        "family": "Inter",
+        "style": "Medium",
+        "variationSettings": {
+          "wght": 500,
+          "slnt": 0
+        }
+      },
+      "fontSize": 15,
+      "fontWeight": 500,
+      "lineHeight": {
+        "unit": "PIXELS",
+        "value": 28
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "TOP",
+      "textAutoResize": "HEIGHT",
+      "paragraphSpacing": 0,
+      "paragraphIndent": 0,
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE",
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0.48627451062202454,
+            "g": 0.545098066329956,
+            "b": 0.5960784554481506
+          },
+          "boundVariables": {}
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1,
+      "effects": [],
+      "visible": true,
+      "opacity": 1,
+      "constraints": {
+        "horizontal": "MIN",
+        "vertical": "MIN"
+      },
+      "reactions": [],
+      "hyperlink": null,
+      "boundVariables": {},
+      "hasMissingFont": false,
+      "segments": [
+        {
+          "characters": "The Stanford Daily",
+          "start": 0,
+          "end": 18,
+          "fontSize": 15,
+          "fontName": {
+            "family": "Inter",
+            "style": "Medium",
+            "variationSettings": {
+              "wght": 500,
+              "slnt": 0
+            }
+          },
+          "fontWeight": 500,
+          "textDecoration": "NONE",
+          "textCase": "ORIGINAL",
+          "lineHeight": {
+            "unit": "PIXELS",
+            "value": 28
+          },
+          "letterSpacing": {
+            "unit": "PERCENT",
+            "value": 0
+          },
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0.48627451062202454,
+                "g": 0.545098066329956,
+                "b": 0.5960784554481506
+              },
+              "boundVariables": {}
+            }
+          ],
+          "hyperlink": null
+        }
+      ]
+    },
+    {
+      "id": "689:7",
+      "name": "As anti-Asian hate incidents escalated across the U.S., I led a team of student journalists to create a multimedia news package documenting their impact and the community’s response.  I built the website and assembled the full package, coordinated articles and podcasts, produced the video, contributed photography, and created an incident timeline, personal accounts section, and donation and involvement resources.  The project won the National Scholastic Press Association’s Multimedia News Story of the Year award.",
+      "type": "TEXT",
+      "x": 191,
+      "y": 1900,
+      "width": 490,
+      "height": 286,
+      "characters": "As anti-Asian hate incidents escalated across the U.S., I led a team of student journalists to create a multimedia news package documenting their impact and the community’s response. \nI built the website and assembled the full package, coordinated articles and podcasts, produced the video, contributed photography, and created an incident timeline, personal accounts section, and donation and involvement resources. \nThe project won the National Scholastic Press Association’s Multimedia News Story of the Year award.",
+      "fontName": {
+        "family": "Inter",
+        "style": "Regular",
+        "variationSettings": {
+          "wght": 400,
+          "slnt": 0
+        }
+      },
+      "fontSize": 16,
+      "fontWeight": 400,
+      "lineHeight": {
+        "unit": "PIXELS",
+        "value": 26
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "TOP",
+      "textAutoResize": "HEIGHT",
+      "paragraphSpacing": 0,
+      "paragraphIndent": 0,
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE",
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0,
+            "g": 0,
+            "b": 0
+          },
+          "boundVariables": {}
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1,
+      "effects": [],
+      "visible": true,
+      "opacity": 1,
+      "constraints": {
+        "horizontal": "MIN",
+        "vertical": "MIN"
+      },
+      "reactions": [],
+      "hyperlink": null,
+      "boundVariables": {},
+      "hasMissingFont": false,
+      "segments": [
+        {
+          "characters": "As anti-Asian hate incidents escalated across the U.S., I led a team of student journalists to create a multimedia news package documenting their impact and the community’s response. \nI built the website and assembled the full package, coordinated articles and podcasts, produced the video, contributed photography, and created an incident timeline, personal accounts section, and donation and involvement resources. \nThe project won the National Scholastic Press Association’s Multimedia News Story of the Year award.",
+          "start": 0,
+          "end": 518,
+          "fontSize": 16,
+          "fontName": {
+            "family": "Inter",
+            "style": "Regular",
+            "variationSettings": {
+              "wght": 400,
+              "slnt": 0
+            }
+          },
+          "fontWeight": 400,
+          "textDecoration": "NONE",
+          "textCase": "ORIGINAL",
+          "lineHeight": {
+            "unit": "PIXELS",
+            "value": 26
+          },
+          "letterSpacing": {
+            "unit": "PERCENT",
+            "value": 0
+          },
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0,
+                "g": 0,
+                "b": 0
+              },
+              "boundVariables": {}
+            }
+          ],
+          "hyperlink": null
+        }
+      ]
+    },
+    {
+      "id": "689:8",
+      "name": "Multimedia Journalism",
+      "type": "TEXT",
+      "x": 191,
+      "y": 1836,
+      "width": 589,
+      "height": 44,
+      "characters": "Multimedia Journalism",
+      "fontName": {
+        "family": "Inter",
+        "style": "Bold",
+        "variationSettings": {
+          "wght": 700,
+          "slnt": 0
+        }
+      },
+      "fontSize": 32,
+      "fontWeight": 700,
+      "lineHeight": {
+        "unit": "PIXELS",
+        "value": 44
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "TOP",
+      "textAutoResize": "HEIGHT",
+      "paragraphSpacing": 0,
+      "paragraphIndent": 0,
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE",
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0,
+            "g": 0,
+            "b": 0
+          },
+          "boundVariables": {}
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1,
+      "effects": [],
+      "visible": true,
+      "opacity": 1,
+      "constraints": {
+        "horizontal": "MIN",
+        "vertical": "MIN"
+      },
+      "reactions": [],
+      "hyperlink": null,
+      "boundVariables": {},
+      "hasMissingFont": false,
+      "segments": [
+        {
+          "characters": "Multimedia Journalism",
+          "start": 0,
+          "end": 21,
+          "fontSize": 32,
+          "fontName": {
+            "family": "Inter",
+            "style": "Bold",
+            "variationSettings": {
+              "wght": 700,
+              "slnt": 0
+            }
+          },
+          "fontWeight": 700,
+          "textDecoration": "NONE",
+          "textCase": "ORIGINAL",
+          "lineHeight": {
+            "unit": "PIXELS",
+            "value": 44
+          },
+          "letterSpacing": {
+            "unit": "PERCENT",
+            "value": 0
+          },
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0,
+                "g": 0,
+                "b": 0
+              },
+              "boundVariables": {}
+            }
+          ],
+          "hyperlink": null
+        }
+      ]
+    },
+    {
+      "id": "689:11",
+      "name": "SEE MULTIMEDIA PACKAGE ↗",
+      "type": "TEXT",
+      "x": 207,
+      "y": 2241,
+      "width": 223,
+      "height": 22,
+      "characters": "SEE MULTIMEDIA PACKAGE ↗",
+      "fontName": {
+        "family": "Fira Mono",
+        "style": "Regular"
+      },
+      "fontSize": 14,
+      "fontWeight": 400,
+      "lineHeight": {
+        "unit": "PERCENT",
+        "value": 120.00000476837158
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "CENTER",
+      "textAutoResize": "NONE",
+      "paragraphSpacing": 0,
+      "paragraphIndent": 0,
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE",
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1
+          },
+          "boundVariables": {}
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1,
+      "effects": [],
+      "visible": true,
+      "opacity": 1,
+      "constraints": {
+        "horizontal": "MIN",
+        "vertical": "MIN"
+      },
+      "reactions": [],
+      "hyperlink": null,
+      "boundVariables": {},
+      "hasMissingFont": false,
+      "segments": [
+        {
+          "characters": "SEE MULTIMEDIA PACKAGE ↗",
+          "start": 0,
+          "end": 24,
+          "fontSize": 14,
+          "fontName": {
+            "family": "Fira Mono",
+            "style": "Regular"
+          },
+          "fontWeight": 400,
+          "textDecoration": "NONE",
+          "textCase": "ORIGINAL",
+          "lineHeight": {
+            "unit": "PERCENT",
+            "value": 120.00000476837158
+          },
+          "letterSpacing": {
+            "unit": "PERCENT",
+            "value": 0
+          },
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 1,
+                "g": 1,
+                "b": 1
+              },
+              "boundVariables": {}
+            }
+          ],
+          "hyperlink": null
+        }
+      ]
+    },
+    {
+      "id": "689:12",
+      "name": "I use video to explore the people, places, and ideas that make a community. I take each story from concept to final edit, handling research, interviews, on-location filming, photography, and video editing.",
+      "type": "TEXT",
+      "x": 123,
+      "y": 2548,
+      "width": 950,
+      "height": 52,
+      "characters": "I use video to explore the people, places, and ideas that make a community. I take each story from concept to final edit, handling research, interviews, on-location filming, photography, and video editing.",
+      "fontName": {
+        "family": "Inter",
+        "style": "Regular",
+        "variationSettings": {
+          "wght": 400,
+          "slnt": 0
+        }
+      },
+      "fontSize": 16,
+      "fontWeight": 400,
+      "lineHeight": {
+        "unit": "PIXELS",
+        "value": 26
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "TOP",
+      "textAutoResize": "HEIGHT",
+      "paragraphSpacing": 0,
+      "paragraphIndent": 0,
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE",
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0,
+            "g": 0,
+            "b": 0
+          },
+          "boundVariables": {}
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1,
+      "effects": [],
+      "visible": true,
+      "opacity": 1,
+      "constraints": {
+        "horizontal": "MIN",
+        "vertical": "MIN"
+      },
+      "reactions": [],
+      "hyperlink": null,
+      "boundVariables": {},
+      "hasMissingFont": false,
+      "segments": [
+        {
+          "characters": "I use video to explore the people, places, and ideas that make a community. I take each story from concept to final edit, handling research, interviews, on-location filming, photography, and video editing.",
+          "start": 0,
+          "end": 205,
+          "fontSize": 16,
+          "fontName": {
+            "family": "Inter",
+            "style": "Regular",
+            "variationSettings": {
+              "wght": 400,
+              "slnt": 0
+            }
+          },
+          "fontWeight": 400,
+          "textDecoration": "NONE",
+          "textCase": "ORIGINAL",
+          "lineHeight": {
+            "unit": "PIXELS",
+            "value": 26
+          },
+          "letterSpacing": {
+            "unit": "PERCENT",
+            "value": 0
+          },
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0,
+                "g": 0,
+                "b": 0
+              },
+              "boundVariables": {}
+            }
+          ],
+          "hyperlink": null
+        }
+      ]
+    },
+    {
+      "id": "689:13",
+      "name": "Broadcast Journalism",
+      "type": "TEXT",
+      "x": 121,
+      "y": 2491,
+      "width": 961,
+      "height": 44,
+      "characters": "Broadcast Journalism",
+      "fontName": {
+        "family": "Inter",
+        "style": "Bold",
+        "variationSettings": {
+          "wght": 700,
+          "slnt": 0
+        }
+      },
+      "fontSize": 32,
+      "fontWeight": 700,
+      "lineHeight": {
+        "unit": "PIXELS",
+        "value": 44
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "TOP",
+      "textAutoResize": "HEIGHT",
+      "paragraphSpacing": 0,
+      "paragraphIndent": 0,
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE",
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0,
+            "g": 0,
+            "b": 0
+          },
+          "boundVariables": {}
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1,
+      "effects": [],
+      "visible": true,
+      "opacity": 1,
+      "constraints": {
+        "horizontal": "MIN",
+        "vertical": "MIN"
+      },
+      "reactions": [],
+      "hyperlink": null,
+      "boundVariables": {},
+      "hasMissingFont": false,
+      "segments": [
+        {
+          "characters": "Broadcast Journalism",
+          "start": 0,
+          "end": 20,
+          "fontSize": 32,
+          "fontName": {
+            "family": "Inter",
+            "style": "Bold",
+            "variationSettings": {
+              "wght": 700,
+              "slnt": 0
+            }
+          },
+          "fontWeight": 700,
+          "textDecoration": "NONE",
+          "textCase": "ORIGINAL",
+          "lineHeight": {
+            "unit": "PIXELS",
+            "value": 44
+          },
+          "letterSpacing": {
+            "unit": "PERCENT",
+            "value": 0
+          },
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0,
+                "g": 0,
+                "b": 0
+              },
+              "boundVariables": {}
+            }
+          ],
+          "hyperlink": null
+        }
+      ]
+    },
+    {
+      "id": "689:20",
+      "name": "The Cultured Pickle Shop:  The Art of Fermentation",
+      "type": "TEXT",
+      "x": 154,
+      "y": 2914,
+      "width": 325,
+      "height": 109,
+      "characters": "The Cultured Pickle Shop:  The Art of Fermentation",
+      "fontName": {
+        "family": "Inter",
+        "style": "Semi Bold",
+        "variationSettings": {
+          "wght": 600,
+          "slnt": 0
+        }
+      },
+      "fontSize": 20,
+      "fontWeight": 600,
+      "lineHeight": {
+        "unit": "PIXELS",
+        "value": 28
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "TOP",
+      "textAutoResize": "NONE",
+      "paragraphSpacing": 0,
+      "paragraphIndent": 0,
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE",
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0,
+            "g": 0,
+            "b": 0
+          },
+          "boundVariables": {}
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1,
+      "effects": [],
+      "visible": true,
+      "opacity": 1,
+      "constraints": {
+        "horizontal": "MIN",
+        "vertical": "MIN"
+      },
+      "reactions": [],
+      "hyperlink": null,
+      "boundVariables": {},
+      "hasMissingFont": false,
+      "segments": [
+        {
+          "characters": "The Cultured Pickle Shop:  The Art of Fermentation",
+          "start": 0,
+          "end": 50,
+          "fontSize": 20,
+          "fontName": {
+            "family": "Inter",
+            "style": "Semi Bold",
+            "variationSettings": {
+              "wght": 600,
+              "slnt": 0
+            }
+          },
+          "fontWeight": 600,
+          "textDecoration": "NONE",
+          "textCase": "ORIGINAL",
+          "lineHeight": {
+            "unit": "PIXELS",
+            "value": 28
+          },
+          "letterSpacing": {
+            "unit": "PERCENT",
+            "value": 0
+          },
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0,
+                "g": 0,
+                "b": 0
+              },
+              "boundVariables": {}
+            }
+          ],
+          "hyperlink": null
+        }
+      ]
+    },
+    {
+      "id": "689:21",
+      "name": "CalTV",
+      "type": "TEXT",
+      "x": 153.962890625,
+      "y": 2882,
+      "width": 292.2610168457031,
+      "height": 21.145498275756836,
+      "characters": "CalTV",
+      "fontName": {
+        "family": "Inter",
+        "style": "Medium",
+        "variationSettings": {
+          "wght": 500,
+          "slnt": 0
+        }
+      },
+      "fontSize": 15,
+      "fontWeight": 500,
+      "lineHeight": {
+        "unit": "PIXELS",
+        "value": 28
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "TOP",
+      "textAutoResize": "NONE",
+      "paragraphSpacing": 0,
+      "paragraphIndent": 0,
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE",
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0.48627451062202454,
+            "g": 0.545098066329956,
+            "b": 0.5960784554481506
+          },
+          "boundVariables": {}
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1,
+      "effects": [],
+      "visible": true,
+      "opacity": 1,
+      "constraints": {
+        "horizontal": "MIN",
+        "vertical": "MIN"
+      },
+      "reactions": [],
+      "hyperlink": null,
+      "boundVariables": {},
+      "hasMissingFont": false,
+      "segments": [
+        {
+          "characters": "CalTV",
+          "start": 0,
+          "end": 5,
+          "fontSize": 15,
+          "fontName": {
+            "family": "Inter",
+            "style": "Medium",
+            "variationSettings": {
+              "wght": 500,
+              "slnt": 0
+            }
+          },
+          "fontWeight": 500,
+          "textDecoration": "NONE",
+          "textCase": "ORIGINAL",
+          "lineHeight": {
+            "unit": "PIXELS",
+            "value": 28
+          },
+          "letterSpacing": {
+            "unit": "PERCENT",
+            "value": 0
+          },
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0.48627451062202454,
+                "g": 0.545098066329956,
+                "b": 0.5960784554481506
+              },
+              "boundVariables": {}
+            }
+          ],
+          "hyperlink": null
+        }
+      ]
+    },
+    {
+      "id": "689:29",
+      "name": "Food Co-Operatives in Berkeley:  Breaking Norms and Innovating ",
+      "type": "TEXT",
+      "x": 565,
+      "y": 2913.999786376953,
+      "width": 328,
+      "height": 65.7529296875,
+      "characters": "Food Co-Operatives in Berkeley:  Breaking Norms and Innovating ",
+      "fontName": {
+        "family": "Inter",
+        "style": "Semi Bold",
+        "variationSettings": {
+          "wght": 600,
+          "slnt": 0
+        }
+      },
+      "fontSize": 20,
+      "fontWeight": 600,
+      "lineHeight": {
+        "unit": "PIXELS",
+        "value": 28
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "TOP",
+      "textAutoResize": "NONE",
+      "paragraphSpacing": 0,
+      "paragraphIndent": 0,
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE",
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0,
+            "g": 0,
+            "b": 0
+          },
+          "boundVariables": {}
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1,
+      "effects": [],
+      "visible": true,
+      "opacity": 1,
+      "constraints": {
+        "horizontal": "MIN",
+        "vertical": "MIN"
+      },
+      "reactions": [],
+      "hyperlink": null,
+      "boundVariables": {},
+      "hasMissingFont": false,
+      "segments": [
+        {
+          "characters": "Food Co-Operatives in Berkeley:  Breaking Norms and Innovating ",
+          "start": 0,
+          "end": 63,
+          "fontSize": 20,
+          "fontName": {
+            "family": "Inter",
+            "style": "Semi Bold",
+            "variationSettings": {
+              "wght": 600,
+              "slnt": 0
+            }
+          },
+          "fontWeight": 600,
+          "textDecoration": "NONE",
+          "textCase": "ORIGINAL",
+          "lineHeight": {
+            "unit": "PIXELS",
+            "value": 28
+          },
+          "letterSpacing": {
+            "unit": "PERCENT",
+            "value": 0
+          },
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0,
+                "g": 0,
+                "b": 0
+              },
+              "boundVariables": {}
+            }
+          ],
+          "hyperlink": null
+        }
+      ]
+    },
+    {
+      "id": "689:30",
+      "name": "CalTV",
+      "type": "TEXT",
+      "x": 564.75,
+      "y": 2881.9994506835938,
+      "width": 292.5535888671875,
+      "height": 22.091594696044922,
+      "characters": "CalTV",
+      "fontName": {
+        "family": "Inter",
+        "style": "Medium",
+        "variationSettings": {
+          "wght": 500,
+          "slnt": 0
+        }
+      },
+      "fontSize": 15,
+      "fontWeight": 500,
+      "lineHeight": {
+        "unit": "PIXELS",
+        "value": 28
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "TOP",
+      "textAutoResize": "NONE",
+      "paragraphSpacing": 0,
+      "paragraphIndent": 0,
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE",
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0.48627451062202454,
+            "g": 0.545098066329956,
+            "b": 0.5960784554481506
+          },
+          "boundVariables": {}
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1,
+      "effects": [],
+      "visible": true,
+      "opacity": 1,
+      "constraints": {
+        "horizontal": "MIN",
+        "vertical": "MIN"
+      },
+      "reactions": [],
+      "hyperlink": null,
+      "boundVariables": {},
+      "hasMissingFont": false,
+      "segments": [
+        {
+          "characters": "CalTV",
+          "start": 0,
+          "end": 5,
+          "fontSize": 15,
+          "fontName": {
+            "family": "Inter",
+            "style": "Medium",
+            "variationSettings": {
+              "wght": 500,
+              "slnt": 0
+            }
+          },
+          "fontWeight": 500,
+          "textDecoration": "NONE",
+          "textCase": "ORIGINAL",
+          "lineHeight": {
+            "unit": "PIXELS",
+            "value": 28
+          },
+          "letterSpacing": {
+            "unit": "PERCENT",
+            "value": 0
+          },
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0.48627451062202454,
+                "g": 0.545098066329956,
+                "b": 0.5960784554481506
+              },
+              "boundVariables": {}
+            }
+          ],
+          "hyperlink": null
+        }
+      ]
+    },
+    {
+      "id": "689:38",
+      "name": "Claire Mack cranks out crunch cakes for the community",
+      "type": "TEXT",
+      "x": 972,
+      "y": 2913.999786376953,
+      "width": 328,
+      "height": 65.7529296875,
+      "characters": "Claire Mack cranks out crunch cakes for the community",
+      "fontName": {
+        "family": "Inter",
+        "style": "Semi Bold",
+        "variationSettings": {
+          "wght": 600,
+          "slnt": 0
+        }
+      },
+      "fontSize": 20,
+      "fontWeight": 600,
+      "lineHeight": {
+        "unit": "PIXELS",
+        "value": 28
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "TOP",
+      "textAutoResize": "NONE",
+      "paragraphSpacing": 0,
+      "paragraphIndent": 0,
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE",
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0,
+            "g": 0,
+            "b": 0
+          },
+          "boundVariables": {}
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1,
+      "effects": [],
+      "visible": true,
+      "opacity": 1,
+      "constraints": {
+        "horizontal": "MIN",
+        "vertical": "MIN"
+      },
+      "reactions": [],
+      "hyperlink": null,
+      "boundVariables": {},
+      "hasMissingFont": false,
+      "segments": [
+        {
+          "characters": "Claire Mack cranks out crunch cakes for the community",
+          "start": 0,
+          "end": 53,
+          "fontSize": 20,
+          "fontName": {
+            "family": "Inter",
+            "style": "Semi Bold",
+            "variationSettings": {
+              "wght": 600,
+              "slnt": 0
+            }
+          },
+          "fontWeight": 600,
+          "textDecoration": "NONE",
+          "textCase": "ORIGINAL",
+          "lineHeight": {
+            "unit": "PIXELS",
+            "value": 28
+          },
+          "letterSpacing": {
+            "unit": "PERCENT",
+            "value": 0
+          },
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0,
+                "g": 0,
+                "b": 0
+              },
+              "boundVariables": {}
+            }
+          ],
+          "hyperlink": null
+        }
+      ]
+    },
+    {
+      "id": "689:39",
+      "name": "Scot Scoop",
+      "type": "TEXT",
+      "x": 971.75,
+      "y": 2881.9994506835938,
+      "width": 292.5535888671875,
+      "height": 22.091594696044922,
+      "characters": "Scot Scoop",
+      "fontName": {
+        "family": "Inter",
+        "style": "Medium",
+        "variationSettings": {
+          "wght": 500,
+          "slnt": 0
+        }
+      },
+      "fontSize": 15,
+      "fontWeight": 500,
+      "lineHeight": {
+        "unit": "PIXELS",
+        "value": 28
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "TOP",
+      "textAutoResize": "NONE",
+      "paragraphSpacing": 0,
+      "paragraphIndent": 0,
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE",
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0.486625999212265,
+            "g": 0.543258547782898,
+            "b": 0.5978684425354004
+          },
+          "boundVariables": {}
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1,
+      "effects": [],
+      "visible": true,
+      "opacity": 1,
+      "constraints": {
+        "horizontal": "MIN",
+        "vertical": "MIN"
+      },
+      "reactions": [],
+      "hyperlink": null,
+      "boundVariables": {},
+      "hasMissingFont": false,
+      "segments": [
+        {
+          "characters": "Scot Scoop",
+          "start": 0,
+          "end": 10,
+          "fontSize": 15,
+          "fontName": {
+            "family": "Inter",
+            "style": "Medium",
+            "variationSettings": {
+              "wght": 500,
+              "slnt": 0
+            }
+          },
+          "fontWeight": 500,
+          "textDecoration": "NONE",
+          "textCase": "ORIGINAL",
+          "lineHeight": {
+            "unit": "PIXELS",
+            "value": 28
+          },
+          "letterSpacing": {
+            "unit": "PERCENT",
+            "value": 0
+          },
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0.486625999212265,
+                "g": 0.543258547782898,
+                "b": 0.5978684425354004
+              },
+              "boundVariables": {}
+            }
+          ],
+          "hyperlink": null
+        }
+      ]
+    },
+    {
+      "id": "689:45",
+      "name": "Half Moon Bay Wasabi spices up the sushi scene",
+      "type": "TEXT",
+      "x": 972,
+      "y": 3310.999786376953,
+      "width": 328,
+      "height": 65.7529296875,
+      "characters": "Half Moon Bay Wasabi spices up the sushi scene",
+      "fontName": {
+        "family": "Inter",
+        "style": "Semi Bold",
+        "variationSettings": {
+          "wght": 600,
+          "slnt": 0
+        }
+      },
+      "fontSize": 20,
+      "fontWeight": 600,
+      "lineHeight": {
+        "unit": "PIXELS",
+        "value": 28
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "TOP",
+      "textAutoResize": "NONE",
+      "paragraphSpacing": 0,
+      "paragraphIndent": 0,
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE",
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0,
+            "g": 0,
+            "b": 0
+          },
+          "boundVariables": {}
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1,
+      "effects": [],
+      "visible": true,
+      "opacity": 1,
+      "constraints": {
+        "horizontal": "MIN",
+        "vertical": "MIN"
+      },
+      "reactions": [],
+      "hyperlink": null,
+      "boundVariables": {},
+      "hasMissingFont": false,
+      "segments": [
+        {
+          "characters": "Half Moon Bay Wasabi spices up the sushi scene",
+          "start": 0,
+          "end": 46,
+          "fontSize": 20,
+          "fontName": {
+            "family": "Inter",
+            "style": "Semi Bold",
+            "variationSettings": {
+              "wght": 600,
+              "slnt": 0
+            }
+          },
+          "fontWeight": 600,
+          "textDecoration": "NONE",
+          "textCase": "ORIGINAL",
+          "lineHeight": {
+            "unit": "PIXELS",
+            "value": 28
+          },
+          "letterSpacing": {
+            "unit": "PERCENT",
+            "value": 0
+          },
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0,
+                "g": 0,
+                "b": 0
+              },
+              "boundVariables": {}
+            }
+          ],
+          "hyperlink": null
+        }
+      ]
+    },
+    {
+      "id": "689:46",
+      "name": "Scot Scoop",
+      "type": "TEXT",
+      "x": 971.75,
+      "y": 3278.9994506835938,
+      "width": 292.5535888671875,
+      "height": 22.091594696044922,
+      "characters": "Scot Scoop",
+      "fontName": {
+        "family": "Inter",
+        "style": "Medium",
+        "variationSettings": {
+          "wght": 500,
+          "slnt": 0
+        }
+      },
+      "fontSize": 15,
+      "fontWeight": 500,
+      "lineHeight": {
+        "unit": "PIXELS",
+        "value": 28
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "TOP",
+      "textAutoResize": "NONE",
+      "paragraphSpacing": 0,
+      "paragraphIndent": 0,
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE",
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0.486625999212265,
+            "g": 0.543258547782898,
+            "b": 0.5978684425354004
+          },
+          "boundVariables": {}
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1,
+      "effects": [],
+      "visible": true,
+      "opacity": 1,
+      "constraints": {
+        "horizontal": "MIN",
+        "vertical": "MIN"
+      },
+      "reactions": [],
+      "hyperlink": null,
+      "boundVariables": {},
+      "hasMissingFont": false,
+      "segments": [
+        {
+          "characters": "Scot Scoop",
+          "start": 0,
+          "end": 10,
+          "fontSize": 15,
+          "fontName": {
+            "family": "Inter",
+            "style": "Medium",
+            "variationSettings": {
+              "wght": 500,
+              "slnt": 0
+            }
+          },
+          "fontWeight": 500,
+          "textDecoration": "NONE",
+          "textCase": "ORIGINAL",
+          "lineHeight": {
+            "unit": "PIXELS",
+            "value": 28
+          },
+          "letterSpacing": {
+            "unit": "PERCENT",
+            "value": 0
+          },
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0.486625999212265,
+                "g": 0.543258547782898,
+                "b": 0.5978684425354004
+              },
+              "boundVariables": {}
+            }
+          ],
+          "hyperlink": null
+        }
+      ]
+    },
+    {
+      "id": "689:54",
+      "name": "Castro Street: A colorful safe haven",
+      "type": "TEXT",
+      "x": 564.9186344146729,
+      "y": 3311,
+      "width": 327.13909912109375,
+      "height": 65.7529296875,
+      "characters": "Castro Street: A colorful safe haven",
+      "fontName": {
+        "family": "Inter",
+        "style": "Semi Bold",
+        "variationSettings": {
+          "wght": 600,
+          "slnt": 0
+        }
+      },
+      "fontSize": 20,
+      "fontWeight": 600,
+      "lineHeight": {
+        "unit": "PIXELS",
+        "value": 28
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "TOP",
+      "textAutoResize": "NONE",
+      "paragraphSpacing": 0,
+      "paragraphIndent": 0,
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE",
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0,
+            "g": 0,
+            "b": 0
+          },
+          "boundVariables": {}
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1,
+      "effects": [],
+      "visible": true,
+      "opacity": 1,
+      "constraints": {
+        "horizontal": "MIN",
+        "vertical": "MIN"
+      },
+      "reactions": [],
+      "hyperlink": null,
+      "boundVariables": {},
+      "hasMissingFont": false,
+      "segments": [
+        {
+          "characters": "Castro Street: A colorful safe haven",
+          "start": 0,
+          "end": 36,
+          "fontSize": 20,
+          "fontName": {
+            "family": "Inter",
+            "style": "Semi Bold",
+            "variationSettings": {
+              "wght": 600,
+              "slnt": 0
+            }
+          },
+          "fontWeight": 600,
+          "textDecoration": "NONE",
+          "textCase": "ORIGINAL",
+          "lineHeight": {
+            "unit": "PIXELS",
+            "value": 28
+          },
+          "letterSpacing": {
+            "unit": "PERCENT",
+            "value": 0
+          },
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0,
+                "g": 0,
+                "b": 0
+              },
+              "boundVariables": {}
+            }
+          ],
+          "hyperlink": null
+        }
+      ]
+    },
+    {
+      "id": "689:55",
+      "name": "Scot Scoop",
+      "type": "TEXT",
+      "x": 564.6692905426025,
+      "y": 3279,
+      "width": 291.7857360839844,
+      "height": 22.091594696044922,
+      "characters": "Scot Scoop",
+      "fontName": {
+        "family": "Inter",
+        "style": "Medium",
+        "variationSettings": {
+          "wght": 500,
+          "slnt": 0
+        }
+      },
+      "fontSize": 15,
+      "fontWeight": 500,
+      "lineHeight": {
+        "unit": "PIXELS",
+        "value": 28
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "TOP",
+      "textAutoResize": "NONE",
+      "paragraphSpacing": 0,
+      "paragraphIndent": 0,
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE",
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0.486625999212265,
+            "g": 0.543258547782898,
+            "b": 0.5978684425354004
+          },
+          "boundVariables": {}
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1,
+      "effects": [],
+      "visible": true,
+      "opacity": 1,
+      "constraints": {
+        "horizontal": "MIN",
+        "vertical": "MIN"
+      },
+      "reactions": [],
+      "hyperlink": null,
+      "boundVariables": {},
+      "hasMissingFont": false,
+      "segments": [
+        {
+          "characters": "Scot Scoop",
+          "start": 0,
+          "end": 10,
+          "fontSize": 15,
+          "fontName": {
+            "family": "Inter",
+            "style": "Medium",
+            "variationSettings": {
+              "wght": 500,
+              "slnt": 0
+            }
+          },
+          "fontWeight": 500,
+          "textDecoration": "NONE",
+          "textCase": "ORIGINAL",
+          "lineHeight": {
+            "unit": "PIXELS",
+            "value": 28
+          },
+          "letterSpacing": {
+            "unit": "PERCENT",
+            "value": 0
+          },
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0.486625999212265,
+                "g": 0.543258547782898,
+                "b": 0.5978684425354004
+              },
+              "boundVariables": {}
+            }
+          ],
+          "hyperlink": null
+        }
+      ]
+    },
+    {
+      "id": "689:63",
+      "name": "Colette Crutcher pieces together city art",
+      "type": "TEXT",
+      "x": 152.16272926330566,
+      "y": 3311,
+      "width": 329.7217712402344,
+      "height": 65.7529296875,
+      "characters": "Colette Crutcher pieces together city art\n\n",
+      "fontName": {
+        "family": "Inter",
+        "style": "Semi Bold",
+        "variationSettings": {
+          "wght": 600,
+          "slnt": 0
+        }
+      },
+      "fontSize": 20,
+      "fontWeight": 600,
+      "lineHeight": {
+        "unit": "PIXELS",
+        "value": 28
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "TOP",
+      "textAutoResize": "NONE",
+      "paragraphSpacing": 0,
+      "paragraphIndent": 0,
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE",
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0,
+            "g": 0,
+            "b": 0
+          },
+          "boundVariables": {}
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1,
+      "effects": [],
+      "visible": true,
+      "opacity": 1,
+      "constraints": {
+        "horizontal": "MIN",
+        "vertical": "MIN"
+      },
+      "reactions": [],
+      "hyperlink": null,
+      "boundVariables": {},
+      "hasMissingFont": false,
+      "segments": [
+        {
+          "characters": "Colette Crutcher pieces together city art\n\n",
+          "start": 0,
+          "end": 43,
+          "fontSize": 20,
+          "fontName": {
+            "family": "Inter",
+            "style": "Semi Bold",
+            "variationSettings": {
+              "wght": 600,
+              "slnt": 0
+            }
+          },
+          "fontWeight": 600,
+          "textDecoration": "NONE",
+          "textCase": "ORIGINAL",
+          "lineHeight": {
+            "unit": "PIXELS",
+            "value": 28
+          },
+          "letterSpacing": {
+            "unit": "PERCENT",
+            "value": 0
+          },
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0,
+                "g": 0,
+                "b": 0
+              },
+              "boundVariables": {}
+            }
+          ],
+          "hyperlink": null
+        }
+      ]
+    },
+    {
+      "id": "689:64",
+      "name": "Scot Scoop",
+      "type": "TEXT",
+      "x": 151.9114170074463,
+      "y": 3279,
+      "width": 294.08929443359375,
+      "height": 22.091594696044922,
+      "characters": "Scot Scoop",
+      "fontName": {
+        "family": "Inter",
+        "style": "Medium",
+        "variationSettings": {
+          "wght": 500,
+          "slnt": 0
+        }
+      },
+      "fontSize": 15,
+      "fontWeight": 500,
+      "lineHeight": {
+        "unit": "PIXELS",
+        "value": 28
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "TOP",
+      "textAutoResize": "NONE",
+      "paragraphSpacing": 0,
+      "paragraphIndent": 0,
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE",
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0.486625999212265,
+            "g": 0.543258547782898,
+            "b": 0.5978684425354004
+          },
+          "boundVariables": {}
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1,
+      "effects": [],
+      "visible": true,
+      "opacity": 1,
+      "constraints": {
+        "horizontal": "MIN",
+        "vertical": "MIN"
+      },
+      "reactions": [],
+      "hyperlink": null,
+      "boundVariables": {},
+      "hasMissingFont": false,
+      "segments": [
+        {
+          "characters": "Scot Scoop",
+          "start": 0,
+          "end": 10,
+          "fontSize": 15,
+          "fontName": {
+            "family": "Inter",
+            "style": "Medium",
+            "variationSettings": {
+              "wght": 500,
+              "slnt": 0
+            }
+          },
+          "fontWeight": 500,
+          "textDecoration": "NONE",
+          "textCase": "ORIGINAL",
+          "lineHeight": {
+            "unit": "PIXELS",
+            "value": 28
+          },
+          "letterSpacing": {
+            "unit": "PERCENT",
+            "value": 0
+          },
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0.486625999212265,
+                "g": 0.543258547782898,
+                "b": 0.5978684425354004
+              },
+              "boundVariables": {}
+            }
+          ],
+          "hyperlink": null
+        }
+      ]
+    },
+    {
+      "id": "689:90",
+      "name": "The Surge of Asian Hate",
+      "type": "TEXT",
+      "x": 738,
+      "y": 2208,
+      "width": 328,
+      "height": 65.7529296875,
+      "characters": "The Surge of Asian Hate",
+      "fontName": {
+        "family": "Inter",
+        "style": "Semi Bold",
+        "variationSettings": {
+          "wght": 600,
+          "slnt": 0
+        }
+      },
+      "fontSize": 20,
+      "fontWeight": 600,
+      "lineHeight": {
+        "unit": "PIXELS",
+        "value": 28
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "TOP",
+      "textAutoResize": "NONE",
+      "paragraphSpacing": 0,
+      "paragraphIndent": 0,
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE",
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0,
+            "g": 0,
+            "b": 0
+          },
+          "boundVariables": {}
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1,
+      "effects": [],
+      "visible": true,
+      "opacity": 1,
+      "constraints": {
+        "horizontal": "MIN",
+        "vertical": "MIN"
+      },
+      "reactions": [],
+      "hyperlink": null,
+      "boundVariables": {},
+      "hasMissingFont": false,
+      "segments": [
+        {
+          "characters": "The Surge of Asian Hate",
+          "start": 0,
+          "end": 23,
+          "fontSize": 20,
+          "fontName": {
+            "family": "Inter",
+            "style": "Semi Bold",
+            "variationSettings": {
+              "wght": 600,
+              "slnt": 0
+            }
+          },
+          "fontWeight": 600,
+          "textDecoration": "NONE",
+          "textCase": "ORIGINAL",
+          "lineHeight": {
+            "unit": "PIXELS",
+            "value": 28
+          },
+          "letterSpacing": {
+            "unit": "PERCENT",
+            "value": 0
+          },
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0,
+                "g": 0,
+                "b": 0
+              },
+              "boundVariables": {}
+            }
+          ],
+          "hyperlink": null
+        }
+      ]
+    },
+    {
+      "id": "689:92",
+      "name": "Screenshot 2026-11-09 at 8.31.39 AM",
+      "type": "TEXT",
+      "x": 646.5458984375,
+      "y": 3093.775390625,
+      "width": 215,
+      "height": 15,
+      "characters": "Screenshot 2026-11-09 at 8.31.39 AM",
+      "fontName": {
+        "family": "Inter",
+        "style": "Regular",
+        "variationSettings": {
+          "wght": 400,
+          "slnt": 0
+        }
+      },
+      "fontSize": 12,
+      "fontWeight": 400,
+      "lineHeight": {
+        "unit": "AUTO"
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "TOP",
+      "textAutoResize": "WIDTH_AND_HEIGHT",
+      "paragraphSpacing": 0,
+      "paragraphIndent": 0,
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE",
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0,
+            "g": 0,
+            "b": 0
+          },
+          "boundVariables": {}
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1,
+      "effects": [],
+      "visible": true,
+      "opacity": 1,
+      "constraints": {
+        "horizontal": "MIN",
+        "vertical": "MIN"
+      },
+      "reactions": [],
+      "hyperlink": null,
+      "boundVariables": {},
+      "hasMissingFont": false,
+      "segments": [
+        {
+          "characters": "Screenshot 2026-11-09 at 8.31.39 AM",
+          "start": 0,
+          "end": 35,
+          "fontSize": 12,
+          "fontName": {
+            "family": "Inter",
+            "style": "Regular",
+            "variationSettings": {
+              "wght": 400,
+              "slnt": 0
+            }
+          },
+          "fontWeight": 400,
+          "textDecoration": "NONE",
+          "textCase": "ORIGINAL",
+          "lineHeight": {
+            "unit": "AUTO"
+          },
+          "letterSpacing": {
+            "unit": "PERCENT",
+            "value": 0
+          },
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0,
+                "g": 0,
+                "b": 0
+              },
+              "boundVariables": {}
+            }
+          ],
+          "hyperlink": null
+        }
+      ]
+    },
+    {
+      "id": "689:93",
+      "name": "Screenshot 2026-11-09 at 8.31.39 AM",
+      "type": "TEXT",
+      "x": 646.5458984375,
+      "y": 3093.775390625,
+      "width": 215,
+      "height": 15,
+      "characters": "Screenshot 2026-11-09 at 8.31.39 AM",
+      "fontName": {
+        "family": "Inter",
+        "style": "Regular",
+        "variationSettings": {
+          "wght": 400,
+          "slnt": 0
+        }
+      },
+      "fontSize": 12,
+      "fontWeight": 400,
+      "lineHeight": {
+        "unit": "AUTO"
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "TOP",
+      "textAutoResize": "WIDTH_AND_HEIGHT",
+      "paragraphSpacing": 0,
+      "paragraphIndent": 0,
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE",
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0,
+            "g": 0,
+            "b": 0
+          },
+          "boundVariables": {}
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1,
+      "effects": [],
+      "visible": true,
+      "opacity": 1,
+      "constraints": {
+        "horizontal": "MIN",
+        "vertical": "MIN"
+      },
+      "reactions": [],
+      "hyperlink": null,
+      "boundVariables": {},
+      "hasMissingFont": false,
+      "segments": [
+        {
+          "characters": "Screenshot 2026-11-09 at 8.31.39 AM",
+          "start": 0,
+          "end": 35,
+          "fontSize": 12,
+          "fontName": {
+            "family": "Inter",
+            "style": "Regular",
+            "variationSettings": {
+              "wght": 400,
+              "slnt": 0
+            }
+          },
+          "fontWeight": 400,
+          "textDecoration": "NONE",
+          "textCase": "ORIGINAL",
+          "lineHeight": {
+            "unit": "AUTO"
+          },
+          "letterSpacing": {
+            "unit": "PERCENT",
+            "value": 0
+          },
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0,
+                "g": 0,
+                "b": 0
+              },
+              "boundVariables": {}
+            }
+          ],
+          "hyperlink": null
+        }
+      ]
+    },
+    {
+      "id": "689:94",
+      "name": "Screenshot 2026-11-09 at 8.31.39 AM",
+      "type": "TEXT",
+      "x": 646.5458984375,
+      "y": 3093.775390625,
+      "width": 215,
+      "height": 15,
+      "characters": "Screenshot 2026-11-09 at 8.31.39 AM",
+      "fontName": {
+        "family": "Inter",
+        "style": "Regular",
+        "variationSettings": {
+          "wght": 400,
+          "slnt": 0
+        }
+      },
+      "fontSize": 12,
+      "fontWeight": 400,
+      "lineHeight": {
+        "unit": "AUTO"
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "TOP",
+      "textAutoResize": "WIDTH_AND_HEIGHT",
+      "paragraphSpacing": 0,
+      "paragraphIndent": 0,
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE",
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0,
+            "g": 0,
+            "b": 0
+          },
+          "boundVariables": {}
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1,
+      "effects": [],
+      "visible": true,
+      "opacity": 1,
+      "constraints": {
+        "horizontal": "MIN",
+        "vertical": "MIN"
+      },
+      "reactions": [],
+      "hyperlink": null,
+      "boundVariables": {},
+      "hasMissingFont": false,
+      "segments": [
+        {
+          "characters": "Screenshot 2026-11-09 at 8.31.39 AM",
+          "start": 0,
+          "end": 35,
+          "fontSize": 12,
+          "fontName": {
+            "family": "Inter",
+            "style": "Regular",
+            "variationSettings": {
+              "wght": 400,
+              "slnt": 0
+            }
+          },
+          "fontWeight": 400,
+          "textDecoration": "NONE",
+          "textCase": "ORIGINAL",
+          "lineHeight": {
+            "unit": "AUTO"
+          },
+          "letterSpacing": {
+            "unit": "PERCENT",
+            "value": 0
+          },
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0,
+                "g": 0,
+                "b": 0
+              },
+              "boundVariables": {}
+            }
+          ],
+          "hyperlink": null
+        }
+      ]
+    },
+    {
+      "id": "689:95",
+      "name": "Screenshot 2026-11-09 at 8.31.39 AM",
+      "type": "TEXT",
+      "x": 646.5458984375,
+      "y": 3093.775390625,
+      "width": 215,
+      "height": 15,
+      "characters": "Screenshot 2026-11-09 at 8.31.39 AM",
+      "fontName": {
+        "family": "Inter",
+        "style": "Regular",
+        "variationSettings": {
+          "wght": 400,
+          "slnt": 0
+        }
+      },
+      "fontSize": 12,
+      "fontWeight": 400,
+      "lineHeight": {
+        "unit": "AUTO"
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "TOP",
+      "textAutoResize": "WIDTH_AND_HEIGHT",
+      "paragraphSpacing": 0,
+      "paragraphIndent": 0,
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE",
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0,
+            "g": 0,
+            "b": 0
+          },
+          "boundVariables": {}
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1,
+      "effects": [],
+      "visible": true,
+      "opacity": 1,
+      "constraints": {
+        "horizontal": "MIN",
+        "vertical": "MIN"
+      },
+      "reactions": [],
+      "hyperlink": null,
+      "boundVariables": {},
+      "hasMissingFont": false,
+      "segments": [
+        {
+          "characters": "Screenshot 2026-11-09 at 8.31.39 AM",
+          "start": 0,
+          "end": 35,
+          "fontSize": 12,
+          "fontName": {
+            "family": "Inter",
+            "style": "Regular",
+            "variationSettings": {
+              "wght": 400,
+              "slnt": 0
+            }
+          },
+          "fontWeight": 400,
+          "textDecoration": "NONE",
+          "textCase": "ORIGINAL",
+          "lineHeight": {
+            "unit": "AUTO"
+          },
+          "letterSpacing": {
+            "unit": "PERCENT",
+            "value": 0
+          },
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0,
+                "g": 0,
+                "b": 0
+              },
+              "boundVariables": {}
+            }
+          ],
+          "hyperlink": null
+        }
+      ]
+    },
+    {
+      "id": "689:96",
+      "name": "Screenshot 2026-11-09 at 8.31.39 AM",
+      "type": "TEXT",
+      "x": 646.5458984375,
+      "y": 3093.775390625,
+      "width": 215,
+      "height": 15,
+      "characters": "Screenshot 2026-11-09 at 8.31.39 AM",
+      "fontName": {
+        "family": "Inter",
+        "style": "Regular",
+        "variationSettings": {
+          "wght": 400,
+          "slnt": 0
+        }
+      },
+      "fontSize": 12,
+      "fontWeight": 400,
+      "lineHeight": {
+        "unit": "AUTO"
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "TOP",
+      "textAutoResize": "WIDTH_AND_HEIGHT",
+      "paragraphSpacing": 0,
+      "paragraphIndent": 0,
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE",
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0,
+            "g": 0,
+            "b": 0
+          },
+          "boundVariables": {}
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1,
+      "effects": [],
+      "visible": true,
+      "opacity": 1,
+      "constraints": {
+        "horizontal": "MIN",
+        "vertical": "MIN"
+      },
+      "reactions": [],
+      "hyperlink": null,
+      "boundVariables": {},
+      "hasMissingFont": false,
+      "segments": [
+        {
+          "characters": "Screenshot 2026-11-09 at 8.31.39 AM",
+          "start": 0,
+          "end": 35,
+          "fontSize": 12,
+          "fontName": {
+            "family": "Inter",
+            "style": "Regular",
+            "variationSettings": {
+              "wght": 400,
+              "slnt": 0
+            }
+          },
+          "fontWeight": 400,
+          "textDecoration": "NONE",
+          "textCase": "ORIGINAL",
+          "lineHeight": {
+            "unit": "AUTO"
+          },
+          "letterSpacing": {
+            "unit": "PERCENT",
+            "value": 0
+          },
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0,
+                "g": 0,
+                "b": 0
+              },
+              "boundVariables": {}
+            }
+          ],
+          "hyperlink": null
+        }
+      ]
+    },
+    {
+      "id": "689:117",
+      "name": "SELECTED JOURNALISM WORK",
+      "type": "TEXT",
+      "x": 191,
+      "y": 181,
+      "width": 254,
+      "height": 26,
+      "characters": "SELECTED JOURNALISM WORK",
+      "fontName": {
+        "family": "Inter",
+        "style": "Regular",
+        "variationSettings": {
+          "wght": 400,
+          "slnt": 0
+        }
+      },
+      "fontSize": 15,
+      "fontWeight": 400,
+      "lineHeight": {
+        "unit": "PIXELS",
+        "value": 26
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "TOP",
+      "textAutoResize": "HEIGHT",
+      "paragraphSpacing": 0,
+      "paragraphIndent": 0,
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE",
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0,
+            "g": 0,
+            "b": 0
+          },
+          "boundVariables": {}
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1,
+      "effects": [],
+      "visible": true,
+      "opacity": 1,
+      "constraints": {
+        "horizontal": "MIN",
+        "vertical": "MIN"
+      },
+      "reactions": [],
+      "hyperlink": null,
+      "boundVariables": {},
+      "hasMissingFont": false,
+      "segments": [
+        {
+          "characters": "SELECTED JOURNALISM WORK",
+          "start": 0,
+          "end": 24,
+          "fontSize": 15,
+          "fontName": {
+            "family": "Inter",
+            "style": "Regular",
+            "variationSettings": {
+              "wght": 400,
+              "slnt": 0
+            }
+          },
+          "fontWeight": 400,
+          "textDecoration": "NONE",
+          "textCase": "ORIGINAL",
+          "lineHeight": {
+            "unit": "PIXELS",
+            "value": 26
+          },
+          "letterSpacing": {
+            "unit": "PERCENT",
+            "value": 0
+          },
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0,
+                "g": 0,
+                "b": 0
+              },
+              "boundVariables": {}
+            }
+          ],
+          "hyperlink": null
+        }
+      ]
+    },
+    {
+      "id": "689:118",
+      "name": "ABOUT+CONTACT",
+      "type": "TEXT",
+      "x": 1204,
+      "y": 70,
+      "width": 117,
+      "height": 18,
+      "characters": "ABOUT+CONTACT",
+      "fontName": {
+        "family": "Fira Mono",
+        "style": "Regular"
+      },
+      "fontSize": 15,
+      "fontWeight": 400,
+      "lineHeight": {
+        "unit": "PERCENT",
+        "value": 120.00000476837158
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "CENTER",
+      "textAutoResize": "WIDTH_AND_HEIGHT",
+      "paragraphSpacing": 0,
+      "paragraphIndent": 0,
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE",
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0,
+            "g": 0,
+            "b": 0
+          },
+          "boundVariables": {}
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1,
+      "effects": [],
+      "visible": true,
+      "opacity": 1,
+      "constraints": {
+        "horizontal": "MIN",
+        "vertical": "MIN"
+      },
+      "reactions": [],
+      "hyperlink": null,
+      "boundVariables": {},
+      "hasMissingFont": false,
+      "segments": [
+        {
+          "characters": "ABOUT+CONTACT",
+          "start": 0,
+          "end": 13,
+          "fontSize": 15,
+          "fontName": {
+            "family": "Fira Mono",
+            "style": "Regular"
+          },
+          "fontWeight": 400,
+          "textDecoration": "NONE",
+          "textCase": "ORIGINAL",
+          "lineHeight": {
+            "unit": "PERCENT",
+            "value": 120.00000476837158
+          },
+          "letterSpacing": {
+            "unit": "PERCENT",
+            "value": 0
+          },
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0,
+                "g": 0,
+                "b": 0
+              },
+              "boundVariables": {}
+            }
+          ],
+          "hyperlink": null
+        }
+      ]
+    },
+    {
+      "id": "689:119",
+      "name": "JOURNALISM",
+      "type": "TEXT",
+      "x": 916,
+      "y": 70,
+      "width": 90,
+      "height": 18,
+      "characters": "JOURNALISM",
+      "fontName": {
+        "family": "Fira Mono",
+        "style": "Regular"
+      },
+      "fontSize": 15,
+      "fontWeight": 400,
+      "lineHeight": {
+        "unit": "PERCENT",
+        "value": 120.00000476837158
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "CENTER",
+      "textAutoResize": "WIDTH_AND_HEIGHT",
+      "paragraphSpacing": 0,
+      "paragraphIndent": 0,
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE",
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0,
+            "g": 0,
+            "b": 0
+          },
+          "boundVariables": {}
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1,
+      "effects": [],
+      "visible": true,
+      "opacity": 1,
+      "constraints": {
+        "horizontal": "MIN",
+        "vertical": "MIN"
+      },
+      "reactions": [],
+      "hyperlink": null,
+      "boundVariables": {},
+      "hasMissingFont": false,
+      "segments": [
+        {
+          "characters": "JOURNALISM",
+          "start": 0,
+          "end": 10,
+          "fontSize": 15,
+          "fontName": {
+            "family": "Fira Mono",
+            "style": "Regular"
+          },
+          "fontWeight": 400,
+          "textDecoration": "NONE",
+          "textCase": "ORIGINAL",
+          "lineHeight": {
+            "unit": "PERCENT",
+            "value": 120.00000476837158
+          },
+          "letterSpacing": {
+            "unit": "PERCENT",
+            "value": 0
+          },
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0,
+                "g": 0,
+                "b": 0
+              },
+              "boundVariables": {}
+            }
+          ],
+          "hyperlink": null
+        }
+      ]
+    },
+    {
+      "id": "689:120",
+      "name": "SOCIAL MEDIA",
+      "type": "TEXT",
+      "x": 1051,
+      "y": 70,
+      "width": 108,
+      "height": 18,
+      "characters": "SOCIAL MEDIA",
+      "fontName": {
+        "family": "Fira Mono",
+        "style": "Regular"
+      },
+      "fontSize": 15,
+      "fontWeight": 400,
+      "lineHeight": {
+        "unit": "PERCENT",
+        "value": 120.00000476837158
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "CENTER",
+      "textAutoResize": "WIDTH_AND_HEIGHT",
+      "paragraphSpacing": 0,
+      "paragraphIndent": 0,
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE",
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0,
+            "g": 0,
+            "b": 0
+          },
+          "boundVariables": {}
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1,
+      "effects": [],
+      "visible": true,
+      "opacity": 1,
+      "constraints": {
+        "horizontal": "MIN",
+        "vertical": "MIN"
+      },
+      "reactions": [],
+      "hyperlink": null,
+      "boundVariables": {},
+      "hasMissingFont": false,
+      "segments": [
+        {
+          "characters": "SOCIAL MEDIA",
+          "start": 0,
+          "end": 12,
+          "fontSize": 15,
+          "fontName": {
+            "family": "Fira Mono",
+            "style": "Regular"
+          },
+          "fontWeight": 400,
+          "textDecoration": "NONE",
+          "textCase": "ORIGINAL",
+          "lineHeight": {
+            "unit": "PERCENT",
+            "value": 120.00000476837158
+          },
+          "letterSpacing": {
+            "unit": "PERCENT",
+            "value": 0
+          },
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0,
+                "g": 0,
+                "b": 0
+              },
+              "boundVariables": {}
+            }
+          ],
+          "hyperlink": null
+        }
+      ]
+    },
+    {
+      "id": "689:121",
+      "name": "VIDEO",
+      "type": "TEXT",
+      "x": 826,
+      "y": 70,
+      "width": 45,
+      "height": 18,
+      "characters": "VIDEO",
+      "fontName": {
+        "family": "Fira Mono",
+        "style": "Regular"
+      },
+      "fontSize": 15,
+      "fontWeight": 400,
+      "lineHeight": {
+        "unit": "PERCENT",
+        "value": 120.00000476837158
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "CENTER",
+      "textAutoResize": "WIDTH_AND_HEIGHT",
+      "paragraphSpacing": 0,
+      "paragraphIndent": 0,
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE",
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0,
+            "g": 0,
+            "b": 0
+          },
+          "boundVariables": {}
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1,
+      "effects": [],
+      "visible": true,
+      "opacity": 1,
+      "constraints": {
+        "horizontal": "MIN",
+        "vertical": "MIN"
+      },
+      "reactions": [],
+      "hyperlink": null,
+      "boundVariables": {},
+      "hasMissingFont": false,
+      "segments": [
+        {
+          "characters": "VIDEO",
+          "start": 0,
+          "end": 5,
+          "fontSize": 15,
+          "fontName": {
+            "family": "Fira Mono",
+            "style": "Regular"
+          },
+          "fontWeight": 400,
+          "textDecoration": "NONE",
+          "textCase": "ORIGINAL",
+          "lineHeight": {
+            "unit": "PERCENT",
+            "value": 120.00000476837158
+          },
+          "letterSpacing": {
+            "unit": "PERCENT",
+            "value": 0
+          },
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0,
+                "g": 0,
+                "b": 0
+              },
+              "boundVariables": {}
+            }
+          ],
+          "hyperlink": null
+        }
+      ]
+    },
+    {
+      "id": "689:122",
+      "name": "UX",
+      "type": "TEXT",
+      "x": 763,
+      "y": 70,
+      "width": 18,
+      "height": 18,
+      "characters": "UX",
+      "fontName": {
+        "family": "Fira Mono",
+        "style": "Regular"
+      },
+      "fontSize": 15,
+      "fontWeight": 400,
+      "lineHeight": {
+        "unit": "PERCENT",
+        "value": 120.00000476837158
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "CENTER",
+      "textAutoResize": "WIDTH_AND_HEIGHT",
+      "paragraphSpacing": 0,
+      "paragraphIndent": 0,
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE",
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0,
+            "g": 0,
+            "b": 0
+          },
+          "boundVariables": {}
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1,
+      "effects": [],
+      "visible": true,
+      "opacity": 1,
+      "constraints": {
+        "horizontal": "MIN",
+        "vertical": "MIN"
+      },
+      "reactions": [],
+      "hyperlink": null,
+      "boundVariables": {},
+      "hasMissingFont": false,
+      "segments": [
+        {
+          "characters": "UX",
+          "start": 0,
+          "end": 2,
+          "fontSize": 15,
+          "fontName": {
+            "family": "Fira Mono",
+            "style": "Regular"
+          },
+          "fontWeight": 400,
+          "textDecoration": "NONE",
+          "textCase": "ORIGINAL",
+          "lineHeight": {
+            "unit": "PERCENT",
+            "value": 120.00000476837158
+          },
+          "letterSpacing": {
+            "unit": "PERCENT",
+            "value": 0
+          },
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0,
+                "g": 0,
+                "b": 0
+              },
+              "boundVariables": {}
+            }
+          ],
+          "hyperlink": null
+        }
+      ]
+    },
+    {
+      "id": "689:129",
+      "name": "KIANA GEORGE",
+      "type": "TEXT",
+      "x": 198.863037109375,
+      "y": 70,
+      "width": 108,
+      "height": 18,
+      "characters": "KIANA GEORGE  ",
+      "fontName": {
+        "family": "Fira Mono",
+        "style": "Regular"
+      },
+      "fontSize": 15,
+      "fontWeight": 400,
+      "lineHeight": {
+        "unit": "PERCENT",
+        "value": 120.00000476837158
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "CENTER",
+      "textAutoResize": "WIDTH_AND_HEIGHT",
+      "paragraphSpacing": 0,
+      "paragraphIndent": 0,
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE",
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0,
+            "g": 0,
+            "b": 0
+          },
+          "boundVariables": {}
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1,
+      "effects": [],
+      "visible": true,
+      "opacity": 1,
+      "constraints": {
+        "horizontal": "MIN",
+        "vertical": "MIN"
+      },
+      "reactions": [],
+      "hyperlink": null,
+      "boundVariables": {},
+      "hasMissingFont": false,
+      "segments": [
+        {
+          "characters": "KIANA GEORGE  ",
+          "start": 0,
+          "end": 14,
+          "fontSize": 15,
+          "fontName": {
+            "family": "Fira Mono",
+            "style": "Regular"
+          },
+          "fontWeight": 400,
+          "textDecoration": "NONE",
+          "textCase": "ORIGINAL",
+          "lineHeight": {
+            "unit": "PERCENT",
+            "value": 120.00000476837158
+          },
+          "letterSpacing": {
+            "unit": "PERCENT",
+            "value": 0
+          },
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0,
+                "g": 0,
+                "b": 0
+              },
+              "boundVariables": {}
+            }
+          ],
+          "hyperlink": null
+        }
+      ]
+    },
+    {
+      "id": "689:136",
+      "name": "KIANA GEORGE",
+      "type": "TEXT",
+      "x": 198.863037109375,
+      "y": 70,
+      "width": 108,
+      "height": 18,
+      "characters": "KIANA GEORGE  ",
+      "fontName": {
+        "family": "Fira Mono",
+        "style": "Regular"
+      },
+      "fontSize": 15,
+      "fontWeight": 400,
+      "lineHeight": {
+        "unit": "PERCENT",
+        "value": 120.00000476837158
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "CENTER",
+      "textAutoResize": "WIDTH_AND_HEIGHT",
+      "paragraphSpacing": 0,
+      "paragraphIndent": 0,
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE",
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0,
+            "g": 0,
+            "b": 0
+          },
+          "boundVariables": {}
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1,
+      "effects": [],
+      "visible": true,
+      "opacity": 1,
+      "constraints": {
+        "horizontal": "MIN",
+        "vertical": "MIN"
+      },
+      "reactions": [],
+      "hyperlink": null,
+      "boundVariables": {},
+      "hasMissingFont": false,
+      "segments": [
+        {
+          "characters": "KIANA GEORGE  ",
+          "start": 0,
+          "end": 14,
+          "fontSize": 15,
+          "fontName": {
+            "family": "Fira Mono",
+            "style": "Regular"
+          },
+          "fontWeight": 400,
+          "textDecoration": "NONE",
+          "textCase": "ORIGINAL",
+          "lineHeight": {
+            "unit": "PERCENT",
+            "value": 120.00000476837158
+          },
+          "letterSpacing": {
+            "unit": "PERCENT",
+            "value": 0
+          },
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0,
+                "g": 0,
+                "b": 0
+              },
+              "boundVariables": {}
+            }
+          ],
+          "hyperlink": null
+        }
+      ]
+    }
+  ]
+}
+
