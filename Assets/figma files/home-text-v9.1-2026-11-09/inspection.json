@@ -1,0 +1,271 @@
+{
+  "update": "Home Page text update 9.1",
+  "inspectedDate": "2026-11-09",
+  "fileKey": "wZSRbIZZXfUlrq902OXE2W",
+  "pageId": "0:1",
+  "frameId": "28:2",
+  "frameName": "Selected Works Tiles",
+  "sessionId": "c6f7fe3c-d58a-4836-8684-456ad86a0722",
+  "skills": [
+    "resource:figma-design-to-code",
+    "resource:figma-use"
+  ],
+  "nodes": [
+    {
+      "id": "28:2",
+      "name": "Selected Works Tiles",
+      "type": "FRAME",
+      "x": 415,
+      "y": -12201,
+      "width": 1440,
+      "height": 1826,
+      "visible": true,
+      "opacity": 1,
+      "absoluteBoundingBox": {
+        "x": 415,
+        "y": -12201,
+        "width": 1440,
+        "height": 1826
+      }
+    },
+    {
+      "id": "28:4",
+      "name": "Featured",
+      "type": "TEXT",
+      "x": 131,
+      "y": 789,
+      "width": 472,
+      "height": 29,
+      "visible": true,
+      "opacity": 1,
+      "absoluteBoundingBox": {
+        "x": 546,
+        "y": -11412,
+        "width": 472,
+        "height": 29
+      },
+      "characters": "Featured ",
+      "fontName": {
+        "family": "Helvetica Neue",
+        "style": "Bold"
+      },
+      "fontSize": 28,
+      "fontWeight": 700,
+      "lineHeight": {
+        "unit": "PERCENT",
+        "value": 104.99999523162842
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "CENTER",
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE",
+      "textAutoResize": "HEIGHT",
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0,
+            "g": 0,
+            "b": 0
+          },
+          "boundVariables": {}
+        }
+      ],
+      "effects": [],
+      "hasMissingFont": true,
+      "segments": [
+        {
+          "characters": "Featured ",
+          "start": 0,
+          "end": 9,
+          "fontSize": 28,
+          "fontName": {
+            "family": "Helvetica Neue",
+            "style": "Bold"
+          },
+          "fontWeight": 700,
+          "textCase": "ORIGINAL",
+          "lineHeight": {
+            "unit": "PERCENT",
+            "value": 104.99999523162842
+          },
+          "letterSpacing": {
+            "unit": "PERCENT",
+            "value": 0
+          },
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0,
+                "g": 0,
+                "b": 0
+              },
+              "boundVariables": {}
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "28:15",
+      "name": "CASE STUDIES",
+      "type": "TEXT",
+      "x": 131,
+      "y": 825,
+      "width": 101,
+      "height": 17,
+      "visible": true,
+      "opacity": 1,
+      "absoluteBoundingBox": {
+        "x": 546,
+        "y": -11376,
+        "width": 101,
+        "height": 17
+      },
+      "characters": "CASE STUDIES",
+      "fontName": {
+        "family": "Fira Mono",
+        "style": "Regular"
+      },
+      "fontSize": 14,
+      "fontWeight": 400,
+      "lineHeight": {
+        "unit": "PERCENT",
+        "value": 120.00000476837158
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "CENTER",
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE",
+      "textAutoResize": "WIDTH_AND_HEIGHT",
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0,
+            "g": 0,
+            "b": 0
+          },
+          "boundVariables": {}
+        }
+      ],
+      "effects": [],
+      "hasMissingFont": false,
+      "segments": [
+        {
+          "characters": "CASE STUDIES",
+          "start": 0,
+          "end": 12,
+          "fontSize": 14,
+          "fontName": {
+            "family": "Fira Mono",
+            "style": "Regular"
+          },
+          "fontWeight": 400,
+          "textCase": "ORIGINAL",
+          "lineHeight": {
+            "unit": "PERCENT",
+            "value": 120.00000476837158
+          },
+          "letterSpacing": {
+            "unit": "PERCENT",
+            "value": 0
+          },
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0,
+                "g": 0,
+                "b": 0
+              },
+              "boundVariables": {}
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "499:21",
+      "name": "Line 69",
+      "type": "LINE",
+      "x": 131,
+      "y": 855,
+      "width": 1177,
+      "height": 0,
+      "visible": true,
+      "opacity": 1,
+      "absoluteBoundingBox": {
+        "x": 546,
+        "y": -11346,
+        "width": 1177,
+        "height": 0.00010289661622664426
+      }
+    },
+    {
+      "id": "499:24",
+      "name": "Rectangle 141",
+      "type": "RECTANGLE",
+      "x": 733,
+      "y": 898,
+      "width": 577,
+      "height": 577,
+      "visible": true,
+      "opacity": 1,
+      "absoluteBoundingBox": {
+        "x": 1148,
+        "y": -11303,
+        "width": 577,
+        "height": 577
+      }
+    },
+    {
+      "id": "499:35",
+      "name": "Mask group",
+      "type": "GROUP",
+      "x": 129,
+      "y": 898,
+      "width": 577,
+      "height": 577,
+      "visible": true,
+      "opacity": 1,
+      "absoluteBoundingBox": {
+        "x": 544,
+        "y": -11303,
+        "width": 577,
+        "height": 577
+      }
+    }
+  ],
+  "scope": "Heading nodes 28:4 and 28:15, aligned to the existing native divider and measured against the tile anchors. Existing project artwork, tile sizes and columns, header and approved version 9 hero are retained.",
+  "relativePlacement": {
+    "textLeftFromTile": 2,
+    "captionTopFromHeading": 36,
+    "dividerTopFromHeading": 66,
+    "dividerToTile": 43,
+    "headingToTile": 109
+  },
+  "fontNote": "Figma reports a missing Helvetica Neue Bold font on 28:4; the web uses the existing Helvetica Neue system stack, with Fira Mono served locally.",
+  "copyDecision": "The user confirmed Featured to match the current Figma heading, rather than Selected."
+}

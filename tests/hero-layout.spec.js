@@ -84,7 +84,7 @@ test('the final hero remains contained when the browser resizes after the animat
   for(const width of [390,320,768,1920]){
     await page.setViewportSize({width,height:1000});
     await expect.poll(()=>frame.locator('.headline-row').evaluateAll(nodes=>nodes.every(n=>n.scrollWidth<=n.clientWidth+1))).toBe(true);
-    expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
+    await expect.poll(()=>page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
     await expect(frame.getByRole('button')).toHaveCount(0);
   }
 });

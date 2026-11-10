@@ -63,7 +63,43 @@ test('Featured retains the Figma tile text, artwork geometry and Safari-compatib
     }
   }
   await expect(page.locator('.project-artwork--pointly')).toHaveCSS('background-color', 'rgb(136, 207, 253)');
-  await expect(page.locator('.selected-work .section-heading p')).toHaveCSS('font-size', '18px');
+  // Independent live Figma measurements for Home Page text update 9.1.
+  const headingSource = JSON.parse(await file('Assets/figma files/home-text-v9.1-2026-11-09/inspection.json'));
+  const titleSource = headingSource.nodes.find(n => n.id === '28:4');
+  const captionSource = headingSource.nodes.find(n => n.id === '28:15');
+  await page.evaluate(() => document.fonts.ready);
+  const title = page.locator('#work-title');
+  const caption = page.locator('.selected-work .eyebrow');
+  for (const [locator, source] of [[title, titleSource], [caption, captionSource]]) {
+    await expect(locator).toHaveCSS('font-size', `${source.fontSize}px`);
+    await expect(locator).toHaveCSS('font-weight', `${source.fontWeight}`);
+    await expect(locator).toHaveCSS('color', 'rgb(0, 0, 0)');
+    const style = await locator.evaluate(n => {
+      const s = getComputedStyle(n);
+      return { family: s.fontFamily, lineHeight: parseFloat(s.lineHeight), align: s.textAlign, spacing: s.letterSpacing === 'normal' ? 0 : parseFloat(s.letterSpacing) };
+    });
+    expect(style.family).toContain(source.fontName.family);
+    expect(style.lineHeight).toBeCloseTo(source.fontSize * source.lineHeight.value / 100, 1);
+    expect(style.align).toBe('left');
+    expect(style.spacing).toBe(source.letterSpacing.value);
+  }
+  const titleBox = await title.boundingBox();
+  const captionBox = await caption.boundingBox();
+  const tileBox = await cards.first().boundingBox();
+  const gridBox = await page.locator('.selected-work__grid').boundingBox();
+  expect(titleBox.x - tileBox.x).toBeCloseTo(headingSource.relativePlacement.textLeftFromTile, 1);
+  expect(captionBox.x).toBeCloseTo(titleBox.x, 1);
+  expect(captionBox.y - titleBox.y).toBeCloseTo(headingSource.relativePlacement.captionTopFromHeading, 1);
+  expect(gridBox.y - titleBox.y).toBeCloseTo(headingSource.relativePlacement.dividerTopFromHeading, 1);
+  const lineSource = headingSource.nodes.find(n => n.id === '499:21');
+  const tileSource = headingSource.nodes.find(n => n.id === '499:35');
+  expect(tileBox.y - gridBox.y).toBeCloseTo(tileSource.y - lineSource.y, 1);
+  expect(tileBox.y - titleBox.y).toBeCloseTo(tileSource.y - titleSource.y, 1);
+  const dividerLeft = await page.locator('.selected-work__grid').evaluate(n => parseFloat(getComputedStyle(n, '::before').left));
+  expect(gridBox.x + dividerLeft).toBeCloseTo(titleBox.x, 1);
+  expect(Math.abs(titleBox.height - titleSource.height)).toBeLessThan(.6);
+  expect(Math.abs(captionBox.height - captionSource.height)).toBeLessThan(.6);
+  expect(Math.abs(captionBox.width - captionSource.width)).toBeLessThan(.6);
 });
 
 const version2Frame = async name => JSON.parse(await file(`Assets/figma files/overall-website-v2-2026-10-21/${name}-inspection.json`));

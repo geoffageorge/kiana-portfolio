@@ -2,7 +2,34 @@
 
 A local React + Vite portfolio built from `Design Template/KK design 1.png`, the prototype directions, and the architecture specifications. Tailwind CSS provides the base and utilities; each component owns its custom CSS. The build produces static files with no backend or external media services.
 
-## New Hero animation section update version 9 — current deployment
+## Home Page text update 9.1 — current deployment
+
+Inspected [Selected Works Tiles, frame 28:2](https://www.figma.com/design/wZSRbIZZXfUlrq902OXE2W/?node-id=28-2) through the official Figma MCP connection using the design-to-code and Plugin API skills. The current design labels node 28:4 **Featured**; that wording is retained to match Figma. Its typography is Helvetica Neue Bold, 28px with 105% line height. CASE STUDIES (28:15) uses the existing local Fira Mono Regular at 14px with 120% line height. Both are black, left-aligned, with zero added letter spacing.
+
+The text shares a left edge 2px inside the first tile, aligned with the divider, with caption top 36px below the heading and the divider 66px below it. The divider-to-tile gap is 43px, placing the heading 109px above the first tile as in Figma. The title uses the source's 472px text box where space permits and fits narrower screens. These specifications apply on desktop and phones. The approved hero dimensions/gap, project artwork, tile sizes and columns, native divider rendering and other pages are retained. The source frame's blank hero area is not used to override the approved version 9 hero.
+
+`Assets/figma files/home-text-v9.1-2026-11-09/inspection.json` records live node typography and geometry. Figma reports a missing Helvetica Neue Bold font on the title; the website uses its existing system-font stack and locally served Fira Mono. No new assets or dependencies are required.
+
+Validated November 9, 2026: production build passes; **90 home-page regression checks** are validated across Chrome, WebKit (Safari's engine) and Firefox at desktop and phone sizes. The initial run passed 89 checks and exposed one immediate resize measurement taken before layout settled. That assertion now waits for settling; all 48 affected checks passed after the final spacing update. No unresolved failures, skipped or flaky checks remain. Final screenshots were reviewed in all three engines at 1440px and 390px. Chrome reports the actual fonts as HelveticaNeue-Bold and FiraMono-Regular. Typography and relative placement match the source measurements within subpixel rounding. Native Safari and real mobile hardware were not automated. `validation.json` records the detailed results and verification limits.
+
+To commit and push update 9.1:
+
+```sh
+cd "/Users/geoffgeorge/Developer/Kiana Portfolio" &&
+npm run build &&
+git add -- \
+  README.md \
+  src/components/SelectedWork/SelectedWork.css \
+  tests/home-about-design.spec.js tests/hero-layout.spec.js \
+  "Assets/figma files/home-text-v9.1-2026-11-09/" &&
+git diff --cached --stat &&
+git commit -m "Home Page text update 9.1" &&
+git push origin main
+```
+
+These scoped paths exclude the unrelated `.node-version` and template-image deletions, placeholder images and personal RTF files. No commit, push or deployment is performed by this local update. After Cloudflare finishes deploying the new commit, refresh `https://www.kianageorge.com/`, verify both labels on desktop and phone, open each project tile and check the header links. Allow the Cloudflare deployment to finish before checking the live site.
+
+## New Hero animation section update version 9 — reference
 
 Version 9 implements `specs/changes/update 9.md` using the checked plan in `specs/changes/update-9-plan.md`. All six original files in `Assets/new hero 2/` were reviewed. The home hero now uses their four labelled close-ups, faster four-circle convergence, merged ring and gradient-line/headline reveal, with no spirograph. It starts automatically on page load, plays once and rests on its final message.
 
@@ -14,7 +41,7 @@ The previous runtime, HeroSection JSX/CSS and hero test snapshots are archived o
 
 Validated November 9, 2026: the production build passes and final regression coverage validates **385 checks**, with one existing desktop-only Obayashi geometry check skipped on mobile. The full run passed 383 checks and exposed two Firefox source-comparison failures caused by the test's synthetic clock being lost during iframe navigation. The clock was corrected; all 12 affected checks then passed across six browser configurations. No failed or flaky checks remain unresolved. Coverage includes fourteen source animation states, real-clock autoplay/reload, no controls, reduced motion, no-JavaScript fallback, responsive resizing, direct/subdirectory routes, archive integrity and existing website functionality. Desktop/phone screenshots were reviewed in Chrome, WebKit (Safari's engine) and Firefox. Native Safari and real mobile hardware were not automated. Detailed results and hashes are recorded in `Assets/new hero 2/validation.json`.
 
-To commit and push version 9:
+Historical commit/push commands for version 9 (already on GitHub; use the update 9.1 commands above for this change):
 
 ```sh
 cd "/Users/geoffgeorge/Developer/Kiana Portfolio" &&
@@ -32,7 +59,7 @@ git commit -m "Replace home hero animation version 9" &&
 git push origin main
 ```
 
-The removed source/runtime paths intentionally record the archive and source-folder rename. These scoped paths exclude unrelated `.node-version` and template-image deletions, placeholder images and personal RTF files. Keep `dist/`, `node_modules/`, browser binaries and test output untracked. No version 9 commit, push or production deployment has been performed.
+The removed source/runtime paths intentionally record the archive and source-folder rename. These historical paths exclude unrelated `.node-version` and template-image deletions, placeholder images and personal RTF files. Keep `dist/`, `node_modules/`, browser binaries and test output untracked. Version 9 is on GitHub as `4f0572a`; the user confirmed its Cloudflare deployment completed successfully.
 
 After the existing Cloudflare Workers Builds deployment succeeds, open `https://www.kianageorge.com/` in a fresh or refreshed tab. Confirm the sequence starts without interaction, shows the four close-ups and convergence, ends on the headline, and displays no controls. Reload to verify autoplay restarts; check phone layout, desktop-to-phone resizing and reduced motion, then verify the Featured links and four navigation destinations. The current `main` build (`npm run build`, then `npx wrangler deploy`) needs no configuration changes. The integrated production build is tested locally; live-site playback is checked after the user deploys it.
 
@@ -67,7 +94,7 @@ git commit -m "Update Video page and subtle tile motion version 8" &&
 git push origin main
 ```
 
-The removed old asset/importer paths are included intentionally so Git records their move into the archive. These historical version 8 paths exclude unrelated `.node-version` and template-image deletions, placeholder images and personal RTF files. Keep `dist/`, `node_modules/`, browser binaries and test output untracked. Use the version 9 commands above for the current update.
+The removed old asset/importer paths are included intentionally so Git records their move into the archive. These historical version 8 paths exclude unrelated `.node-version` and template-image deletions, placeholder images and personal RTF files. Keep `dist/`, `node_modules/`, browser binaries and test output untracked. Use the update 9.1 commands above for the current update.
 
 After the existing Cloudflare Workers Builds deployment succeeds, check `https://www.kianageorge.com/video/`, all eight video destinations and their play icons, the 32px headings on `/journalism/` and `/ux/`, subtle hover/keyboard feedback on all linked cards, and the top two previews' stationary titles. Also check the home hero, both case studies, About+Contact, phone layouts and reduced motion. The existing `main` build (`npm run build`, then `npx wrangler deploy`) does not need configuration changes.
 
@@ -99,7 +126,7 @@ git commit -m "Change Hero section update version 7" &&
 git push origin main
 ```
 
-These historical version 7 paths exclude unrelated `.node-version` and template-image deletions, placeholder images and personal RTF files. Keep `dist/`, `node_modules/`, browser binaries and test output untracked. Use the version 9 commands above for the current update.
+These historical version 7 paths exclude unrelated `.node-version` and template-image deletions, placeholder images and personal RTF files. Keep `dist/`, `node_modules/`, browser binaries and test output untracked. Use the update 9.1 commands above for the current update.
 
 The existing Cloudflare Workers Builds connection builds `main` with `npm run build` and deploys with `npx wrangler deploy`. After it succeeds, check `https://www.kianageorge.com/` for automatic hero playback, Replay and Featured; check `https://www.kianageorge.com/ux/` directly and through the UX menu; open both project tiles and verify the logo returns home. Also check Video, Journalism and About+Contact. Test a phone layout and a reduced-motion preference. Cloudflare configuration does not need to change.
 
@@ -131,7 +158,7 @@ git commit -m "Add Video Page update version 6" &&
 git push origin main
 ```
 
-These historical version 6 paths exclude unrelated `.node-version` and template-image deletions, placeholder images, and personal RTF files. Keep `dist/`, `node_modules/`, browser binaries and test output untracked. Use the version 7 commands above for the current update.
+These historical version 6 paths exclude unrelated `.node-version` and template-image deletions, placeholder images, and personal RTF files. Keep `dist/`, `node_modules/`, browser binaries and test output untracked. Use the update 9.1 commands above for the current update.
 
 The existing Cloudflare Workers Builds connection builds `main` using `npm run build` and deploys with `npx wrangler deploy`. After it succeeds, check `https://www.kianageorge.com/video/`, all eight preview destinations, the four navigation options, and the existing case studies. No hosting configuration changes are needed.
 
@@ -164,7 +191,7 @@ git commit -m "Add Journalism Page update version 5" &&
 git push origin main
 ```
 
-These historical version 5 paths exclude unrelated `.node-version` and template-image deletions, placeholder images, and personal RTF files. Keep `dist/`, `node_modules/`, browser binaries, and test output untracked. Use the version 6 commands above for the current update.
+These historical version 5 paths exclude unrelated `.node-version` and template-image deletions, placeholder images, and personal RTF files. Keep `dist/`, `node_modules/`, browser binaries, and test output untracked. Use the update 9.1 commands above for the current update.
 
 The existing Cloudflare Workers Builds connection builds `main` using `npm run build` and deploys with `npx wrangler deploy`. After the build succeeds, check `https://www.kianageorge.com/journalism/` and `https://www.kianageorge.com/video/`, the four header links, the four external tile links, and both existing case studies. Cloudflare configuration does not need to change for these static routes.
 

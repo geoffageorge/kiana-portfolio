@@ -1,0 +1,595 @@
+{
+  "update": "Home Page text update 9.1",
+  "validatedDate": "2026-11-09",
+  "baseCommit": "4f0572a",
+  "figma": {
+    "fileKey": "wZSRbIZZXfUlrq902OXE2W",
+    "frameId": "28:2",
+    "nodes": [
+      "28:4",
+      "28:15"
+    ],
+    "source": "inspection.json",
+    "copyDecision": "User confirmed Featured to match Figma. CASE STUDIES retains its visible uppercase wording.",
+    "connection": "Pro plan / Full seat",
+    "skills": [
+      "resource:figma-design-to-code",
+      "resource:figma-use"
+    ],
+    "mutations": "None; read-only inspection"
+  },
+  "implementation": {
+    "title": "28px Helvetica Neue Bold, 105% line height, black, left aligned, zero added tracking",
+    "caption": "14px locally served Fira Mono Regular, 120% line height, black, left aligned, zero added tracking",
+    "placement": "2px inset from first tile; caption top 36px from title; divider top 66px from title; first tile top 109px from title; divider-to-tile gap 43px",
+    "responsive": "472px title box where space permits; clamped on narrower viewports, same font sizes desktop/phone",
+    "retained": "Approved hero height and 32px hero-to-section gap, project artwork, tile dimensions and columns, native WebKit-compatible border, shared components and routes",
+    "absoluteFramePosition": "Figma frame has a blank hero area. Heading remains in normal page flow beneath the approved version 9 hero; its relative title/caption/divider/tile placement follows the inspected Figma nodes."
+  },
+  "productionBuild": "passed",
+  "gitDiffCheck": "passed",
+  "sourceHashes": {
+    "src/components/SelectedWork/SelectedWork.css": "220b87529ef1d07cfce7d3995f98d47805c4aaf62a4d93e0ad9c46725f8f2be7",
+    "tests/home-about-design.spec.js": "4d3890a10a6a5e16f21c9df419a48d69debaeac309cf2e271a43a573ece81716",
+    "tests/hero-layout.spec.js": "efcdb27132fc9a0473c33dfed16c41cf0b2409f0c31b13b33c0b81d2b21dd41a",
+    "Assets/figma files/home-text-v9.1-2026-11-09/inspection.json": "fc078e97ca6e32b48e5760c443dba33f9361cf0ed844512f8b1276737384ef7b"
+  },
+  "validation": {
+    "initialHomeRegression": {
+      "startTime": "2026-11-10T00:34:21.589Z",
+      "duration": 138385.252,
+      "expected": 89,
+      "skipped": 0,
+      "unexpected": 1,
+      "flaky": 0
+    },
+    "finalAffectedChecks": {
+      "startTime": "2026-11-10T00:38:56.719Z",
+      "duration": 65377.44300000001,
+      "expected": 48,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0
+    },
+    "finalUniqueCoverage": {
+      "passed": 90,
+      "failed": 0,
+      "skipped": 0,
+      "flaky": 0,
+      "projects": {
+        "desktop": 15,
+        "firefox": 15,
+        "firefox-mobile": 15,
+        "mobile": 15,
+        "safari-mobile": 15,
+        "safari-webkit": 15
+      }
+    },
+    "resolvedTestIssues": [
+      "The browsers serialize zero letter spacing as normal; the Figma assertion now compares numeric zero rather than a CSS string spelling. The corrected six-project geometry run passed.",
+      "The initial regression measured document overflow immediately after a desktop-to-phone resize. The assertion now polls for layout settling, matching the adjacent iframe assertion, while still failing persistent overflow. Final affected checks passed."
+    ],
+    "scope": [
+      "Independent Figma font/size/weight/color/tracking/line-height and relative bounds comparisons",
+      "Native divider visibility and placement; original tile assets and geometry",
+      "Home hero autoplay, no controls, resize containment and responsive 320\u20131920px layouts",
+      "Both project links, shared menus, footer, About/UX navigation and direct/subdirectory return-home paths",
+      "Hover, focus, press, keyboard and reduced-motion tile behavior; no page/resource errors"
+    ],
+    "limits": "Chrome, Playwright WebKit (Safari engine) and Firefox on desktop and emulated/phone-sized viewports. Native Safari and real mobile hardware were not automated. Final unique coverage combines the initial home regression and final affected rechecks.",
+    "localReports": {
+      "initial": "/private/tmp/kiana-v91-qa/home-regression.json",
+      "final": "/private/tmp/kiana-v91-qa/final-home-checks.json"
+    }
+  },
+  "visualReview": {
+    "reviewedWidths": [
+      1440,
+      390
+    ],
+    "engines": [
+      "Chrome",
+      "WebKit",
+      "Firefox"
+    ],
+    "artifacts": "/private/tmp/kiana-v91-qa",
+    "metrics": [
+      {
+        "engine": "chrome",
+        "width": 1440,
+        "section": {
+          "x": 130,
+          "y": 721,
+          "width": 1180,
+          "height": 819.46875
+        },
+        "heading": {
+          "x": 132,
+          "y": 721,
+          "width": 472,
+          "height": 29.390625
+        },
+        "caption": {
+          "x": 132,
+          "y": 756.984375,
+          "width": 100.8125,
+          "height": 16.796875
+        },
+        "headingStyle": {
+          "font": "\"Helvetica Neue\", Helvetica, Arial, sans-serif",
+          "size": "28px",
+          "weight": "700",
+          "lineHeight": "29.4px",
+          "letterSpacing": "normal",
+          "color": "rgb(0, 0, 0)",
+          "align": "left"
+        },
+        "captionStyle": {
+          "font": "\"Portfolio Fira Mono\", monospace",
+          "size": "14px",
+          "weight": "400",
+          "lineHeight": "16.8px",
+          "letterSpacing": "normal",
+          "color": "rgb(0, 0, 0)",
+          "align": "left"
+        },
+        "grid": {
+          "x": 130,
+          "y": 786.96875,
+          "width": 1180,
+          "height": 619.5
+        },
+        "tiles": [
+          {
+            "x": 130,
+            "y": 829.96875,
+            "width": 576.5,
+            "height": 576.5
+          },
+          {
+            "x": 733.5,
+            "y": 829.96875,
+            "width": 576.5,
+            "height": 576.5
+          }
+        ],
+        "hero": {
+          "x": 130,
+          "y": 129,
+          "width": 1180,
+          "height": 560
+        },
+        "overflow": false,
+        "fonts": {
+          "#work-title": [
+            {
+              "familyName": "Helvetica Neue",
+              "postScriptName": "HelveticaNeue-Bold",
+              "isCustomFont": false,
+              "glyphCount": 8
+            }
+          ],
+          ".selected-work .eyebrow": [
+            {
+              "familyName": "Fira Mono",
+              "postScriptName": "FiraMono-Regular",
+              "isCustomFont": true,
+              "glyphCount": 12
+            }
+          ]
+        }
+      },
+      {
+        "engine": "chrome",
+        "width": 390,
+        "section": {
+          "x": 20,
+          "y": 620,
+          "width": 350,
+          "height": 902.96875
+        },
+        "heading": {
+          "x": 22,
+          "y": 620,
+          "width": 348,
+          "height": 29.390625
+        },
+        "caption": {
+          "x": 22,
+          "y": 655.984375,
+          "width": 100.8125,
+          "height": 16.796875
+        },
+        "headingStyle": {
+          "font": "\"Helvetica Neue\", Helvetica, Arial, sans-serif",
+          "size": "28px",
+          "weight": "700",
+          "lineHeight": "29.4px",
+          "letterSpacing": "normal",
+          "color": "rgb(0, 0, 0)",
+          "align": "left"
+        },
+        "captionStyle": {
+          "font": "\"Portfolio Fira Mono\", monospace",
+          "size": "14px",
+          "weight": "400",
+          "lineHeight": "16.8px",
+          "letterSpacing": "normal",
+          "color": "rgb(0, 0, 0)",
+          "align": "left"
+        },
+        "grid": {
+          "x": 20,
+          "y": 685.96875,
+          "width": 350,
+          "height": 767
+        },
+        "tiles": [
+          {
+            "x": 20,
+            "y": 728.96875,
+            "width": 350,
+            "height": 350
+          },
+          {
+            "x": 20,
+            "y": 1102.96875,
+            "width": 350,
+            "height": 350
+          }
+        ],
+        "hero": {
+          "x": 20,
+          "y": 128,
+          "width": 350,
+          "height": 460
+        },
+        "overflow": false,
+        "fonts": {
+          "#work-title": [
+            {
+              "familyName": "Helvetica Neue",
+              "postScriptName": "HelveticaNeue-Bold",
+              "isCustomFont": false,
+              "glyphCount": 8
+            }
+          ],
+          ".selected-work .eyebrow": [
+            {
+              "familyName": "Fira Mono",
+              "postScriptName": "FiraMono-Regular",
+              "isCustomFont": true,
+              "glyphCount": 12
+            }
+          ]
+        }
+      },
+      {
+        "engine": "webkit",
+        "width": 1440,
+        "section": {
+          "x": 130,
+          "y": 721,
+          "width": 1180,
+          "height": 819.46875
+        },
+        "heading": {
+          "x": 132,
+          "y": 721,
+          "width": 472,
+          "height": 29.390625
+        },
+        "caption": {
+          "x": 132,
+          "y": 756.984375,
+          "width": 100.8125,
+          "height": 16.796875
+        },
+        "headingStyle": {
+          "font": "Helvetica Neue, Helvetica, Arial, sans-serif",
+          "size": "28px",
+          "weight": "700",
+          "lineHeight": "29.4px",
+          "letterSpacing": "normal",
+          "color": "rgb(0, 0, 0)",
+          "align": "left"
+        },
+        "captionStyle": {
+          "font": "Portfolio Fira Mono, monospace",
+          "size": "14px",
+          "weight": "400",
+          "lineHeight": "16.799999px",
+          "letterSpacing": "normal",
+          "color": "rgb(0, 0, 0)",
+          "align": "left"
+        },
+        "grid": {
+          "x": 130,
+          "y": 786.96875,
+          "width": 1180,
+          "height": 619.5
+        },
+        "tiles": [
+          {
+            "x": 130,
+            "y": 829.96875,
+            "width": 576.5,
+            "height": 576.5
+          },
+          {
+            "x": 733.5,
+            "y": 829.96875,
+            "width": 576.5,
+            "height": 576.5
+          }
+        ],
+        "hero": {
+          "x": 130,
+          "y": 129,
+          "width": 1180,
+          "height": 560
+        },
+        "overflow": false
+      },
+      {
+        "engine": "webkit",
+        "width": 390,
+        "section": {
+          "x": 20,
+          "y": 620,
+          "width": 350,
+          "height": 902.96875
+        },
+        "heading": {
+          "x": 22,
+          "y": 620,
+          "width": 348,
+          "height": 29.390625
+        },
+        "caption": {
+          "x": 22,
+          "y": 655.984375,
+          "width": 100.8125,
+          "height": 16.796875
+        },
+        "headingStyle": {
+          "font": "Helvetica Neue, Helvetica, Arial, sans-serif",
+          "size": "28px",
+          "weight": "700",
+          "lineHeight": "29.4px",
+          "letterSpacing": "normal",
+          "color": "rgb(0, 0, 0)",
+          "align": "left"
+        },
+        "captionStyle": {
+          "font": "Portfolio Fira Mono, monospace",
+          "size": "14px",
+          "weight": "400",
+          "lineHeight": "16.799999px",
+          "letterSpacing": "normal",
+          "color": "rgb(0, 0, 0)",
+          "align": "left"
+        },
+        "grid": {
+          "x": 20,
+          "y": 685.96875,
+          "width": 350,
+          "height": 767
+        },
+        "tiles": [
+          {
+            "x": 20,
+            "y": 728.96875,
+            "width": 350,
+            "height": 350
+          },
+          {
+            "x": 20,
+            "y": 1102.96875,
+            "width": 350,
+            "height": 350
+          }
+        ],
+        "hero": {
+          "x": 20,
+          "y": 128,
+          "width": 350,
+          "height": 460
+        },
+        "overflow": false
+      },
+      {
+        "engine": "firefox",
+        "width": 1440,
+        "section": {
+          "x": 130,
+          "y": 721,
+          "width": 1180,
+          "height": 819.5
+        },
+        "heading": {
+          "x": 132,
+          "y": 721,
+          "width": 472,
+          "height": 29.399993896484375
+        },
+        "caption": {
+          "x": 132,
+          "y": 757,
+          "width": 100.80000305175781,
+          "height": 16.800003051757812
+        },
+        "headingStyle": {
+          "font": "Helvetica Neue, Helvetica, Arial, sans-serif",
+          "size": "28px",
+          "weight": "700",
+          "lineHeight": "29.4px",
+          "letterSpacing": "normal",
+          "color": "rgb(0, 0, 0)",
+          "align": "left"
+        },
+        "captionStyle": {
+          "font": "\"Portfolio Fira Mono\", monospace",
+          "size": "14px",
+          "weight": "400",
+          "lineHeight": "16.8px",
+          "letterSpacing": "normal",
+          "color": "rgb(0, 0, 0)",
+          "align": "left"
+        },
+        "grid": {
+          "x": 130,
+          "y": 787,
+          "width": 1180,
+          "height": 619.5
+        },
+        "tiles": [
+          {
+            "x": 130,
+            "y": 830,
+            "width": 576.5,
+            "height": 576.5
+          },
+          {
+            "x": 733.5,
+            "y": 830,
+            "width": 576.5,
+            "height": 576.5
+          }
+        ],
+        "hero": {
+          "x": 130,
+          "y": 129,
+          "width": 1180,
+          "height": 560
+        },
+        "overflow": false
+      },
+      {
+        "engine": "firefox",
+        "width": 390,
+        "section": {
+          "x": 20,
+          "y": 620,
+          "width": 350,
+          "height": 903
+        },
+        "heading": {
+          "x": 22,
+          "y": 620,
+          "width": 348,
+          "height": 29.399993896484375
+        },
+        "caption": {
+          "x": 22,
+          "y": 656,
+          "width": 100.80000305175781,
+          "height": 16.800003051757812
+        },
+        "headingStyle": {
+          "font": "Helvetica Neue, Helvetica, Arial, sans-serif",
+          "size": "28px",
+          "weight": "700",
+          "lineHeight": "29.4px",
+          "letterSpacing": "normal",
+          "color": "rgb(0, 0, 0)",
+          "align": "left"
+        },
+        "captionStyle": {
+          "font": "\"Portfolio Fira Mono\", monospace",
+          "size": "14px",
+          "weight": "400",
+          "lineHeight": "16.8px",
+          "letterSpacing": "normal",
+          "color": "rgb(0, 0, 0)",
+          "align": "left"
+        },
+        "grid": {
+          "x": 20,
+          "y": 686,
+          "width": 350,
+          "height": 767
+        },
+        "tiles": [
+          {
+            "x": 20,
+            "y": 729,
+            "width": 350,
+            "height": 350
+          },
+          {
+            "x": 20,
+            "y": 1103,
+            "width": 350,
+            "height": 350
+          }
+        ],
+        "hero": {
+          "x": 20,
+          "y": 128,
+          "width": 350,
+          "height": 460
+        },
+        "overflow": false
+      }
+    ],
+    "actualFontsVerifiedInChrome": [
+      "HelveticaNeue-Bold",
+      "FiraMono-Regular"
+    ],
+    "result": "Final full-home screenshots reviewed in each engine at both sizes. Text matches the Figma typography and relative geometry; no clipping or overflow."
+  },
+  "baselineGeometry": {
+    "section": {
+      "x": 130,
+      "y": 721,
+      "width": 1180,
+      "height": 839.390625
+    },
+    "heading": {
+      "x": 130,
+      "y": 721,
+      "width": 1180,
+      "height": 39.890625
+    },
+    "caption": {
+      "x": 130,
+      "y": 768.890625,
+      "width": 1180,
+      "height": 22
+    },
+    "grid": {
+      "x": 130,
+      "y": 822.890625,
+      "width": 1180,
+      "height": 603.5
+    },
+    "tiles": [
+      {
+        "x": 130,
+        "y": 849.890625,
+        "width": 576.5,
+        "height": 576.5
+      },
+      {
+        "x": 733.5,
+        "y": 849.890625,
+        "width": 576.5,
+        "height": 576.5
+      }
+    ],
+    "hero": {
+      "x": 130,
+      "y": 129,
+      "width": 1180,
+      "height": 560
+    }
+  },
+  "deployment": {
+    "committed": false,
+    "pushed": false,
+    "deployed": false,
+    "instructions": "README.md current update 9.1 section",
+    "postDeployment": "Wait for Cloudflare to deploy the new commit; refresh the home page, check Featured / CASE STUDIES at desktop and phone sizes, both project tiles, header links and autoplay with no controls."
+  }
+}
