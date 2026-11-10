@@ -175,7 +175,7 @@ test('UX supports direct loads, reloads, index URLs and deployments below a subd
   await expect(page.locator('.site-nav').getByRole('link',{name:'UX',exact:true})).toHaveAttribute('href','/portfolio/ux/');
   await page.getByRole('link',{name:'Kiana George home',exact:true}).click();
   await expect(page).toHaveURL(/\/portfolio\/$/);
-  await expect(page.locator('.hero-section__animation')).toHaveAttribute('src','/portfolio/assets/hero-v9/animation.html');
+  await expect(page.locator('.hero-section__animation')).toHaveAttribute('src','/portfolio/assets/hero-v11/animation.html');
   await expect(page.frameLocator('.hero-section__animation').locator('.orbit-donut')).toHaveCount(4);
   await expect(page.frameLocator('.hero-section__animation').getByRole('button')).toHaveCount(0);
   await expect(page.getByRole('heading',{name:'Featured',exact:true})).toBeVisible();

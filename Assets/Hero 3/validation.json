@@ -1,0 +1,433 @@
+{
+  "change": "Change Hero section update version 11",
+  "validatedDate": "2026-11-10",
+  "source": {
+    "importedDate": "2026-11-10",
+    "sourceFolder": "Assets/Hero 3",
+    "componentId": "kg-expanding-circles",
+    "sourceFiles": [
+      {
+        "file": "README.txt",
+        "bytes": 3068,
+        "sha256": "645e7e52cfc3a9801f61326d1050dec590637bbf802925ae1ae218549dcb0c05"
+      },
+      {
+        "file": "animation.html",
+        "bytes": 9537,
+        "sha256": "219f34da921383efc8594a79a32fcc27af7139032c01a1f8605fd541070e3587"
+      },
+      {
+        "file": "embed.html",
+        "bytes": 9251,
+        "sha256": "1ae2b222ebe49e7ff5d2992164e6cdd4800fa1ec6f2fd24e35238ed55a887160"
+      },
+      {
+        "file": "component.html",
+        "bytes": 1183,
+        "sha256": "124b1b95f6115007ab72ad58c70fb206d3b0a0b46101951fef733846719cf450"
+      },
+      {
+        "file": "animation.css",
+        "bytes": 4016,
+        "sha256": "0c654420fdc895b1a3370c4434bc054ce4da4c96d126f742695d34b158d64a8a"
+      },
+      {
+        "file": "animation.js",
+        "bytes": 4016,
+        "sha256": "d0f79379e0fcfb1c968e3634184ec94f77071b36a4c857faad5fafd57502033a"
+      }
+    ],
+    "runtime": {
+      "file": "animation.html",
+      "bytes": 9614,
+      "sha256": "1bca066fadf3b0fb6c8d7fc1785b0a91742de9ed31a9e3039d14bd50e3fbd6cd"
+    },
+    "adaptations": [
+      "Remove the Replay button and its event binding to meet the no-controls requirement.",
+      "Use the source draw() font-sizing formula for the no-JavaScript fallback.",
+      "Redraw the current state on resize without restarting the sequence or duplicating animation frames."
+    ],
+    "sceneHeight": {
+      "desktop": 560,
+      "phone": 460,
+      "phoneMaxWidth": 480
+    }
+  },
+  "archive": {
+    "folder": "Assets/archived pages/Hero section version 2 old",
+    "snapshots": 9,
+    "hashesVerified": true,
+    "excludedFromProductionBuild": true
+  },
+  "checks": {
+    "productionBuild": "passed",
+    "javascriptSyntax": "passed",
+    "gitDiffCheck": "passed",
+    "importerReproducible": true,
+    "builtRuntimeMatchesGeneratedRuntime": true
+  },
+  "browserValidation": {
+    "fullRun": {
+      "startTime": "2026-11-10T19:37:12.811Z",
+      "duration": 447702.52,
+      "expected": 401,
+      "skipped": 1,
+      "unexpected": 2,
+      "flaky": 0
+    },
+    "archiveRecheck": {
+      "startTime": "2026-11-10T19:39:15.219Z",
+      "duration": 931.5130000000001,
+      "expected": 6,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0
+    },
+    "finalUniqueResults": {
+      "expected": 403,
+      "skipped": 1
+    },
+    "projects": {
+      "desktop": {
+        "expected": 76
+      },
+      "firefox": {
+        "expected": 63
+      },
+      "firefox-mobile": {
+        "expected": 63
+      },
+      "mobile": {
+        "expected": 75,
+        "skipped": 1
+      },
+      "safari-mobile": {
+        "expected": 63
+      },
+      "safari-webkit": {
+        "expected": 63
+      }
+    },
+    "resolvedInitialFailures": [
+      {
+        "file": "hero-animation.spec.js",
+        "title": "Hero section version 2 old and the earlier archive retain their original bytes outside the build",
+        "project": "desktop",
+        "status": "unexpected"
+      },
+      {
+        "file": "hero-animation.spec.js",
+        "title": "Hero section version 2 old and the earlier archive retain their original bytes outside the build",
+        "project": "mobile",
+        "status": "unexpected"
+      }
+    ],
+    "correction": "On case-insensitive macOS, dist/Assets aliases the legitimate dist/assets output folder. The archive test now checks specific archive/source subfolders. All six affected project checks pass after correction; the runtime was unchanged.",
+    "skipped": [
+      {
+        "file": "obayashi-design.spec.js",
+        "title": "desktop image geometry matches the inspected frame, including every crop and repeated Markets image",
+        "project": "mobile",
+        "annotations": [
+          {
+            "type": "skip",
+            "description": "The Figma reference is a desktop frame.",
+            "location": {
+              "file": "/Users/geoffgeorge/Developer/Kiana Portfolio/tests/obayashi-design.spec.js",
+              "line": 113,
+              "column": 8
+            }
+          }
+        ]
+      }
+    ],
+    "unresolvedFailures": 0,
+    "flaky": 0
+  },
+  "coverage": [
+    "24 animation-state comparisons to the unmodified supplied source",
+    "Complete centered opening-ring geometry",
+    "Real-clock autoplay through completion on initial load and reload",
+    "Final resting message and no playback controls",
+    "Initial reduced-motion preference and standalone no-JavaScript fallback",
+    "320\u20131920px responsive layout and resizing after animation completion",
+    "All six original source hashes, nine archive snapshots and build exclusion",
+    "Direct and subdirectory routes, shared navigation, Featured links, UX, Video, Journalism, About and case studies"
+  ],
+  "visualReview": {
+    "reviewed": true,
+    "states": [
+      "opening at 0s",
+      "assembly at 4.85s",
+      "final at 9.1s"
+    ],
+    "browserVersions": {
+      "chrome": "157.0.8103.39",
+      "webkit": "26.5",
+      "firefox": "153.0"
+    },
+    "sourceRuntimePairs": 18,
+    "pixelIdenticalPairs": 16,
+    "findings": "Integrated opening, assembly and final screenshots reviewed at desktop and phone sizes in all three engines. Sixteen source/runtime crops are pixel-identical; two Chrome crops differ in at most 0.163% of pixels while computed state/geometry matches. No layout clipping or visible integration mismatch observed.",
+    "details": [
+      {
+        "browser": "chrome",
+        "version": "157.0.8103.39",
+        "size": "desktop",
+        "state": "opening",
+        "seconds": 0,
+        "source": "/private/tmp/kiana-v11-qa/chrome-desktop-opening-source.png",
+        "runtime": "/private/tmp/kiana-v11-qa/chrome-desktop-opening-runtime.png",
+        "page": "/private/tmp/kiana-v11-qa/chrome-desktop-opening.png",
+        "sameDimensions": true,
+        "pixelIdentical": true
+      },
+      {
+        "browser": "chrome",
+        "version": "157.0.8103.39",
+        "size": "desktop",
+        "state": "assembly",
+        "seconds": 4.85,
+        "source": "/private/tmp/kiana-v11-qa/chrome-desktop-assembly-source.png",
+        "runtime": "/private/tmp/kiana-v11-qa/chrome-desktop-assembly-runtime.png",
+        "page": "/private/tmp/kiana-v11-qa/chrome-desktop-assembly.png",
+        "sameDimensions": true,
+        "pixelIdentical": false,
+        "differentPixels": 1076,
+        "differentFraction": 0.0016283292978208233,
+        "differenceBounds": [
+          510,
+          55,
+          670,
+          215
+        ],
+        "meanAbsoluteChannelDifference": [
+          0.02232445520581114,
+          0.01727905569007264,
+          0.016849273607748183
+        ]
+      },
+      {
+        "browser": "chrome",
+        "version": "157.0.8103.39",
+        "size": "desktop",
+        "state": "final",
+        "seconds": 9.1,
+        "source": "/private/tmp/kiana-v11-qa/chrome-desktop-final-source.png",
+        "runtime": "/private/tmp/kiana-v11-qa/chrome-desktop-final-runtime.png",
+        "page": "/private/tmp/kiana-v11-qa/chrome-desktop-final.png",
+        "sameDimensions": true,
+        "pixelIdentical": true
+      },
+      {
+        "browser": "chrome",
+        "version": "157.0.8103.39",
+        "size": "phone",
+        "state": "opening",
+        "seconds": 0,
+        "source": "/private/tmp/kiana-v11-qa/chrome-phone-opening-source.png",
+        "runtime": "/private/tmp/kiana-v11-qa/chrome-phone-opening-runtime.png",
+        "page": "/private/tmp/kiana-v11-qa/chrome-phone-opening.png",
+        "sameDimensions": true,
+        "pixelIdentical": false,
+        "differentPixels": 129,
+        "differentFraction": 8.902691511387164e-05,
+        "differenceBounds": [
+          81,
+          296,
+          966,
+          1134
+        ],
+        "meanAbsoluteChannelDifference": [
+          4.347826086956522e-05,
+          4.830917874396135e-05,
+          4.209799861973775e-05
+        ]
+      },
+      {
+        "browser": "chrome",
+        "version": "157.0.8103.39",
+        "size": "phone",
+        "state": "assembly",
+        "seconds": 4.85,
+        "source": "/private/tmp/kiana-v11-qa/chrome-phone-assembly-source.png",
+        "runtime": "/private/tmp/kiana-v11-qa/chrome-phone-assembly-runtime.png",
+        "page": "/private/tmp/kiana-v11-qa/chrome-phone-assembly.png",
+        "sameDimensions": true,
+        "pixelIdentical": true
+      },
+      {
+        "browser": "chrome",
+        "version": "157.0.8103.39",
+        "size": "phone",
+        "state": "final",
+        "seconds": 9.1,
+        "source": "/private/tmp/kiana-v11-qa/chrome-phone-final-source.png",
+        "runtime": "/private/tmp/kiana-v11-qa/chrome-phone-final-runtime.png",
+        "page": "/private/tmp/kiana-v11-qa/chrome-phone-final.png",
+        "sameDimensions": true,
+        "pixelIdentical": true
+      },
+      {
+        "browser": "webkit",
+        "version": "26.5",
+        "size": "desktop",
+        "state": "opening",
+        "seconds": 0,
+        "source": "/private/tmp/kiana-v11-qa/webkit-desktop-opening-source.png",
+        "runtime": "/private/tmp/kiana-v11-qa/webkit-desktop-opening-runtime.png",
+        "page": "/private/tmp/kiana-v11-qa/webkit-desktop-opening.png",
+        "sameDimensions": true,
+        "pixelIdentical": true
+      },
+      {
+        "browser": "webkit",
+        "version": "26.5",
+        "size": "desktop",
+        "state": "assembly",
+        "seconds": 4.85,
+        "source": "/private/tmp/kiana-v11-qa/webkit-desktop-assembly-source.png",
+        "runtime": "/private/tmp/kiana-v11-qa/webkit-desktop-assembly-runtime.png",
+        "page": "/private/tmp/kiana-v11-qa/webkit-desktop-assembly.png",
+        "sameDimensions": true,
+        "pixelIdentical": true
+      },
+      {
+        "browser": "webkit",
+        "version": "26.5",
+        "size": "desktop",
+        "state": "final",
+        "seconds": 9.1,
+        "source": "/private/tmp/kiana-v11-qa/webkit-desktop-final-source.png",
+        "runtime": "/private/tmp/kiana-v11-qa/webkit-desktop-final-runtime.png",
+        "page": "/private/tmp/kiana-v11-qa/webkit-desktop-final.png",
+        "sameDimensions": true,
+        "pixelIdentical": true
+      },
+      {
+        "browser": "webkit",
+        "version": "26.5",
+        "size": "phone",
+        "state": "opening",
+        "seconds": 0,
+        "source": "/private/tmp/kiana-v11-qa/webkit-phone-opening-source.png",
+        "runtime": "/private/tmp/kiana-v11-qa/webkit-phone-opening-runtime.png",
+        "page": "/private/tmp/kiana-v11-qa/webkit-phone-opening.png",
+        "sameDimensions": true,
+        "pixelIdentical": true
+      },
+      {
+        "browser": "webkit",
+        "version": "26.5",
+        "size": "phone",
+        "state": "assembly",
+        "seconds": 4.85,
+        "source": "/private/tmp/kiana-v11-qa/webkit-phone-assembly-source.png",
+        "runtime": "/private/tmp/kiana-v11-qa/webkit-phone-assembly-runtime.png",
+        "page": "/private/tmp/kiana-v11-qa/webkit-phone-assembly.png",
+        "sameDimensions": true,
+        "pixelIdentical": true
+      },
+      {
+        "browser": "webkit",
+        "version": "26.5",
+        "size": "phone",
+        "state": "final",
+        "seconds": 9.1,
+        "source": "/private/tmp/kiana-v11-qa/webkit-phone-final-source.png",
+        "runtime": "/private/tmp/kiana-v11-qa/webkit-phone-final-runtime.png",
+        "page": "/private/tmp/kiana-v11-qa/webkit-phone-final.png",
+        "sameDimensions": true,
+        "pixelIdentical": true
+      },
+      {
+        "browser": "firefox",
+        "version": "153.0",
+        "size": "desktop",
+        "state": "opening",
+        "seconds": 0,
+        "source": "/private/tmp/kiana-v11-qa/firefox-desktop-opening-source.png",
+        "runtime": "/private/tmp/kiana-v11-qa/firefox-desktop-opening-runtime.png",
+        "page": "/private/tmp/kiana-v11-qa/firefox-desktop-opening.png",
+        "sameDimensions": true,
+        "pixelIdentical": true
+      },
+      {
+        "browser": "firefox",
+        "version": "153.0",
+        "size": "desktop",
+        "state": "assembly",
+        "seconds": 4.85,
+        "source": "/private/tmp/kiana-v11-qa/firefox-desktop-assembly-source.png",
+        "runtime": "/private/tmp/kiana-v11-qa/firefox-desktop-assembly-runtime.png",
+        "page": "/private/tmp/kiana-v11-qa/firefox-desktop-assembly.png",
+        "sameDimensions": true,
+        "pixelIdentical": true
+      },
+      {
+        "browser": "firefox",
+        "version": "153.0",
+        "size": "desktop",
+        "state": "final",
+        "seconds": 9.1,
+        "source": "/private/tmp/kiana-v11-qa/firefox-desktop-final-source.png",
+        "runtime": "/private/tmp/kiana-v11-qa/firefox-desktop-final-runtime.png",
+        "page": "/private/tmp/kiana-v11-qa/firefox-desktop-final.png",
+        "sameDimensions": true,
+        "pixelIdentical": true
+      },
+      {
+        "browser": "firefox",
+        "version": "153.0",
+        "size": "phone",
+        "state": "opening",
+        "seconds": 0,
+        "source": "/private/tmp/kiana-v11-qa/firefox-phone-opening-source.png",
+        "runtime": "/private/tmp/kiana-v11-qa/firefox-phone-opening-runtime.png",
+        "page": "/private/tmp/kiana-v11-qa/firefox-phone-opening.png",
+        "sameDimensions": true,
+        "pixelIdentical": true
+      },
+      {
+        "browser": "firefox",
+        "version": "153.0",
+        "size": "phone",
+        "state": "assembly",
+        "seconds": 4.85,
+        "source": "/private/tmp/kiana-v11-qa/firefox-phone-assembly-source.png",
+        "runtime": "/private/tmp/kiana-v11-qa/firefox-phone-assembly-runtime.png",
+        "page": "/private/tmp/kiana-v11-qa/firefox-phone-assembly.png",
+        "sameDimensions": true,
+        "pixelIdentical": true
+      },
+      {
+        "browser": "firefox",
+        "version": "153.0",
+        "size": "phone",
+        "state": "final",
+        "seconds": 9.1,
+        "source": "/private/tmp/kiana-v11-qa/firefox-phone-final-source.png",
+        "runtime": "/private/tmp/kiana-v11-qa/firefox-phone-final-runtime.png",
+        "page": "/private/tmp/kiana-v11-qa/firefox-phone-final.png",
+        "sameDimensions": true,
+        "pixelIdentical": true
+      }
+    ]
+  },
+  "figma": {
+    "evidence": "Assets/Hero 3/figma-review.json",
+    "finding": "No matching Hero 3 frame found on the inspected existing page; supplied local Hero 3 package is authoritative. Existing Figma-based layouts remain covered by regression tests."
+  },
+  "limits": [
+    "WebKit tests Safari engine behavior, not native Safari.",
+    "Phone coverage uses Chrome/WebKit device emulation and a Firefox phone viewport, not physical hardware.",
+    "No new Hero 3 Figma node was specified or found on the inspected page.",
+    "The production build was verified locally; GitHub push and live Cloudflare deployment remain for the user.",
+    "The in-app preview browser host was unavailable; local Playwright browser checks and screenshots completed."
+  ],
+  "localArtifacts": {
+    "fullRun": "/private/tmp/kiana-v11-qa/regression.json",
+    "recheck": "/private/tmp/kiana-v11-qa/archive-recheck.json",
+    "screenshots": "/private/tmp/kiana-v11-qa/screenshot-comparison.json"
+  }
+}

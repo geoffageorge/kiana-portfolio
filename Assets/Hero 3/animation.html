@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Kiana George | Understanding people</title><style>html,body{margin:0;background:#fff}body{max-width:1440px;margin:auto}</style>
+<style>
+#kg-expanding-circles{--paper:#fff;--ink:#111;position:relative;background:var(--paper);color:var(--ink);font-family:Arial,Helvetica,sans-serif;color-scheme:light;overflow:hidden}#kg-expanding-circles .scene{height:560px;position:relative;overflow:hidden}#kg-expanding-circles .orbit-donut{position:absolute;left:50%;top:50%;width:180px;height:180px;border-radius:50%;background:var(--color);will-change:transform;display:flex;align-items:center;justify-content:center}#kg-expanding-circles .hole{position:absolute;inset:13%;border-radius:50%;background:var(--paper)}#kg-expanding-circles .label{position:relative;font:11px monospace;letter-spacing:.3px;color:#35484a;z-index:1}#kg-expanding-circles .merged{position:absolute;left:50%;top:50%;width:180px;height:180px;background:#5fcbd0;border-radius:50%;opacity:0;will-change:transform}#kg-expanding-circles .headline-mask{position:absolute;left:4%;right:4%;bottom:50%;overflow:hidden;text-align:center;padding-top:10px;padding-bottom:0}#kg-expanding-circles h1{font-size:clamp(28px,5.5vw,66px);line-height:.84;letter-spacing:-.045em;font-weight:750;margin:0;transform:translateY(0);will-change:transform}#kg-expanding-circles .subhead{position:absolute;top:55%;left:12%;right:12%;margin:0;text-align:center;font-size:16px;line-height:1.5;color:#536063;opacity:0;transform:translateY(16px)}#kg-expanding-circles .replay{display:block;margin:0 auto 22px;border:0;background:transparent;color:#536063;font:11px monospace;padding:10px;letter-spacing:1px;cursor:pointer}@media(max-width:480px){#kg-expanding-circles .scene{height:460px}#kg-expanding-circles h1{font-size:34px}#kg-expanding-circles .subhead{font-size:14px;left:8%;right:8%}}
+#kg-expanding-circles .merged{background:linear-gradient(90deg,#9dbdc0 0%,#e2ee0b 33%,#acdaad 66%,#5fcbd0 100%)}#kg-expanding-circles .headline-mask{bottom:calc(50% - .08em);padding-bottom:0}#kg-expanding-circles .subhead{top:54%}
+#kg-expanding-circles .headline-mask{top:50%;bottom:auto;left:3%;right:3%;padding:8px 0 12px;transform:translateY(-50%);overflow:visible;clip-path:inset(50% 0 50% 0);will-change:clip-path}#kg-expanding-circles h1{line-height:1.08;letter-spacing:-.045em;font-weight:750}#kg-expanding-circles .headline-row{display:block;white-space:nowrap;will-change:transform}#kg-expanding-circles .subhead{top:66%;font:16px Arial,Helvetica,sans-serif;letter-spacing:0}#kg-expanding-circles .merged{will-change:width,height,transform;transform:translate(-50%,-50%)}@media(max-width:480px){#kg-expanding-circles .subhead{top:63%;font-size:13px;left:3%;right:3%}}
+#kg-expanding-circles .orbit-donut{border:0!important;outline:0!important;box-shadow:none!important;background:var(--color);isolation:isolate}#kg-expanding-circles .hole{border:0!important;outline:0!important;box-shadow:none!important}#kg-expanding-circles .orbit-donut::before,#kg-expanding-circles .orbit-donut::after{content:none!important}
+#kg-expanding-circles .orbit-donut{width:160px;height:160px}#kg-expanding-circles .hole{inset:14%;background:#fff}#kg-expanding-circles .label{font:12px monospace;letter-spacing:0}#kg-expanding-circles .merged{width:160px;height:160px;background:conic-gradient(#9dbdc0,#e2ee0b,#acdaad,#5fcbd0,#9dbdc0);border-radius:50%;overflow:hidden}#kg-expanding-circles .merge-hole{position:absolute;inset:14%;border-radius:50%;background:#fff;will-change:transform}#kg-expanding-circles .replay{min-height:44px}
+#kg-expanding-circles .orbit-donut{opacity:0;transform:translate(-50%,-50%)}#kg-expanding-circles .merged,#kg-expanding-circles .headline-mask,#kg-expanding-circles .subhead{z-index:6}
+
+#kg-expanding-circles *,#kg-expanding-circles *::before,#kg-expanding-circles *::after{box-sizing:border-box}
+#kg-expanding-circles .headline-mask{clip-path:none}
+#kg-expanding-circles .subhead{opacity:1;transform:none}
+#kg-expanding-circles .orbit-donut,#kg-expanding-circles .merged{visibility:hidden}
+#kg-expanding-circles[data-animated] .orbit-donut,#kg-expanding-circles[data-animated] .merged{visibility:visible}
+</style></head><body><div id="kg-expanding-circles">
+
+<div class="scene" role="img" aria-label="A complete centered circle introduces Gather, Connect, Synthesize, and Shape in turn. Each expands and fades into the next, before the four rings converge into one circle. That circle compresses into a gradient line and reveals Understanding people. Shaping digital experiences.">
+
+<div class="orbit-donut" style="--color:#9dbdc0"><div class="hole"></div><span class="label">GATHER</span></div>
+<div class="orbit-donut" style="--color:#e2ee0b"><div class="hole"></div><span class="label">CONNECT</span></div>
+<div class="orbit-donut" style="--color:#acdaad"><div class="hole"></div><span class="label">SYNTHESIZE</span></div>
+<div class="orbit-donut" style="--color:#5fcbd0"><div class="hole"></div><span class="label">SHAPE</span></div>
+
+<div class="merged"><div class="merge-hole"></div></div>
+<div class="headline-mask"><h1><span class="headline-row">Understanding people.</span><span class="headline-row">Shaping digital experiences.</span></h1></div>
+<p class="subhead">A journalist’s curiosity. A strategist’s perspective.</p>
+</div><button type="button" class="replay">REPLAY ↗</button>
+
+</div>
+<script>(()=>{function initialize(){
+
+(()=>{const root=document.getElementById('kg-expanding-circles'),scene=root.querySelector('.scene'),rings=[...root.querySelectorAll('.orbit-donut')],merged=root.querySelector('.merged'),headline=root.querySelector('h1'),sub=root.querySelector('.subhead');if(root.dataset.initialized)return;root.dataset.initialized='true';let raf,start;const clamp=t=>Math.max(0,Math.min(1,t));const smooth=t=>{t=clamp(t);return t*t*(3-2*t)};const quint=t=>{t=clamp(t);return t<.5?16*t**5:1-(-2*t+2)**5/2};const lerp=(a,b,t)=>a+(b-a)*t;
+const mask=root.querySelector('.headline-mask'),rows=[...root.querySelectorAll('.headline-row')],mergeHole=root.querySelector('.merge-hole');const out=t=>1-Math.pow(1-clamp(t),4);
+function draw(now){const elapsed=(now-start)/1000,t=elapsed<4.5?.9:elapsed<5.4?.9+(elapsed-4.5)*(2.95/.9):elapsed-1.55,w=scene.clientWidth,f=Math.min(1,w/650);headline.style.fontSize=Math.min(62,w/14.3)+'px';const fan=quint((t-1.12)/.65),join=quint((t-3.05)/.75),squish=quint((t-4.42)/.5),stretch=quint((t-5.06)/.52),reveal=out((t-5.58)/.7);const grid=[[-128,-100],[128,-100],[-128,100],[128,100]],diamond=[[0,-145],[-155,0],[155,0],[0,145]];
+const baseScale=Math.max(.6,f),closeScale=Math.min(2.65,(Math.min(w,scene.clientHeight)-48)/160),assembly=quint((elapsed-3.8)/.7);
+rings.forEach((el,i)=>{let scale,x=0,y=0,opacity=0,labelOpacity=1;
+if(elapsed<3.8){const local=elapsed-i*.95;const enter=i===0?1:out(local/.16),exit=quint((local-.7)/.25);scale=closeScale*lerp(.96,1,enter)*(1+exit*2.4);opacity=local>=0&&local<.95?1-smooth((local-.76)/.19):0;labelOpacity=1-smooth((local-.69)/.12);el.style.zIndex=String(i+1)}else{const enter=out((t-i*.095)/.65);x=lerp((i%2?1:-1)*w*.72,grid[i][0]*f,enter);y=grid[i][1]*f;x=lerp(x,diamond[i][0]*f,fan);y=lerp(y,diamond[i][1]*f,fan);x*=assembly*(1-join);y*=assembly*(1-join);scale=lerp(closeScale,baseScale,assembly);opacity=smooth((elapsed-3.8)/.2)*(1-smooth((t-3.68)/.18));labelOpacity=smooth((elapsed-4.02)/.25)*(1-smooth((t-3.12)/.3));el.style.zIndex='1'}
+el.style.transform=`translate(calc(-50% + ${x}px),calc(-50% + ${y}px)) scale(${scale})`;el.style.opacity=opacity;el.querySelector('.label').style.fontSize=Math.max(12,11/baseScale)+'px';el.querySelector('.label').style.opacity=labelOpacity});
+const ringIn=smooth((t-3.6)/.2),fill=smooth((t-4.02)/.32);let bw=lerp(160*Math.max(.6,f),5,squish),bh=lerp(160*Math.max(.6,f),240*f,squish);bw=lerp(bw,w*.88,stretch);bh=lerp(bh,5,stretch);merged.style.width=bw+'px';merged.style.height=bh+'px';merged.style.borderRadius=lerp(50,0,squish)+'%';mergeHole.style.transform=`scale(${1-fill})`;merged.style.background=squish<.01?'conic-gradient(#9dbdc0,#e2ee0b,#acdaad,#5fcbd0,#9dbdc0)':stretch<.05?'linear-gradient(180deg,#9dbdc0,#e2ee0b 33%,#acdaad 66%,#5fcbd0)':'linear-gradient(90deg,#9dbdc0,#e2ee0b 33%,#acdaad 66%,#5fcbd0)';merged.style.transform='translate(-50%,-50%)';merged.style.opacity=ringIn*(1-smooth((t-5.68)/.4));mask.style.clipPath=`inset(${(1-reveal)*50}% 0 ${(1-reveal)*50}% 0)`;rows.forEach((el,i)=>el.style.transform=`translateX(${(i?1:-1)*(1-reveal)*28}px) scaleX(${.88+.12*reveal})`);const subIn=out((t-6.3)/.4);sub.style.opacity=subIn;sub.style.transform=`translateY(${(1-subIn)*8}px)`;if(elapsed<9)raf=requestAnimationFrame(draw)}
+function play(){root.setAttribute('data-animated','');cancelAnimationFrame(raf);start=performance.now();raf=requestAnimationFrame(draw)}root.querySelector('button').addEventListener('click',play);function finish(){root.setAttribute('data-animated','');start=performance.now()-15000;draw(performance.now())}
+if(matchMedia('(prefers-reduced-motion: reduce)').matches){finish()}else if('IntersectionObserver' in window){
+  finish();
+  const observer=new IntersectionObserver(entries=>{if(entries.some(entry=>entry.isIntersecting)){observer.disconnect();play()}},{threshold:.15});observer.observe(root)
+}else{play()}})();
+
+}if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',initialize,{once:true});else initialize()})();
+</script></body></html>

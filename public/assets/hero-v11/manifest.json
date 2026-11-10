@@ -1,0 +1,52 @@
+{
+  "importedDate": "2026-11-10",
+  "sourceFolder": "Assets/Hero 3",
+  "componentId": "kg-expanding-circles",
+  "sourceFiles": [
+    {
+      "file": "README.txt",
+      "bytes": 3068,
+      "sha256": "645e7e52cfc3a9801f61326d1050dec590637bbf802925ae1ae218549dcb0c05"
+    },
+    {
+      "file": "animation.html",
+      "bytes": 9537,
+      "sha256": "219f34da921383efc8594a79a32fcc27af7139032c01a1f8605fd541070e3587"
+    },
+    {
+      "file": "embed.html",
+      "bytes": 9251,
+      "sha256": "1ae2b222ebe49e7ff5d2992164e6cdd4800fa1ec6f2fd24e35238ed55a887160"
+    },
+    {
+      "file": "component.html",
+      "bytes": 1183,
+      "sha256": "124b1b95f6115007ab72ad58c70fb206d3b0a0b46101951fef733846719cf450"
+    },
+    {
+      "file": "animation.css",
+      "bytes": 4016,
+      "sha256": "0c654420fdc895b1a3370c4434bc054ce4da4c96d126f742695d34b158d64a8a"
+    },
+    {
+      "file": "animation.js",
+      "bytes": 4016,
+      "sha256": "d0f79379e0fcfb1c968e3634184ec94f77071b36a4c857faad5fafd57502033a"
+    }
+  ],
+  "runtime": {
+    "file": "animation.html",
+    "bytes": 9614,
+    "sha256": "1bca066fadf3b0fb6c8d7fc1785b0a91742de9ed31a9e3039d14bd50e3fbd6cd"
+  },
+  "adaptations": [
+    "Remove the Replay button and its event binding to meet the no-controls requirement.",
+    "Use the source draw() font-sizing formula for the no-JavaScript fallback.",
+    "Redraw the current state on resize without restarting the sequence or duplicating animation frames."
+  ],
+  "sceneHeight": {
+    "desktop": 560,
+    "phone": 460,
+    "phoneMaxWidth": 480
+  }
+}

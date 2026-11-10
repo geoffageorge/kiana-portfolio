@@ -2,7 +2,53 @@
 
 A local React + Vite portfolio built from `Design Template/KK design 1.png`, the prototype directions, and the architecture specifications. Tailwind CSS provides the base and utilities; each component owns its custom CSS. The build produces static files with no backend or external media services.
 
-## JOURNALISM section changes update version 10 — current deployment
+## Change Hero section update version 11 — local update
+
+Version 11 implements `specs/changes/update 11.md`; the reviewed implementation plan is `specs/changes/update-11-plan.md`. The home hero now uses the six original files in `Assets/Hero 3/`: a complete centered opening ring, four expanding/fading labeled circles, their convergence and the gradient/headline reveal. It starts automatically when visible on page load, plays once and rests on its message. Reloading starts it again. The website contains no play, pause or replay controls.
+
+The outgoing hero is archived under the requested name, `Assets/archived pages/Hero section version 2 old/`, with nine exact file snapshots and SHA-256 hashes. Its public runtime and active importer have been removed. The new runtime lives in `public/assets/hero-v11/`; regenerate it with `node scripts/import-hero-v11.mjs`. The importer verifies the six supplied variants, removes Replay and its event handler, and preserves the earlier responsive fallback and resize fixes. No dependencies or hosting configuration changes are required.
+
+The eager iframe retains its accessible title/headline, direct placement below navigation, 560px desktop/460px phone scene and 32px gap before Featured. Reduced-motion visitors immediately see the final message. The original source files remain unchanged. `Assets/Hero 3/implementation-notes.md` documents the integration, and `figma-review.json` records the live design review: no matching Hero 3 exists on the inspected Figma page, so the supplied local package is the hero reference. Existing Figma-based navigation, Featured cards, page layouts and footer remain covered by regression checks.
+
+Validated November 10, 2026: production build, JavaScript syntax and `git diff --check` pass. Final regression coverage validates **403 checks**, with one existing desktop-only Obayashi geometry check skipped on mobile. The full run passed 401 checks and found two archive-test failures caused by macOS treating `dist/Assets` as `dist/assets`; the corrected assertion passed all six project rechecks. No unresolved failures or flaky tests remain. Tests cover 24 source animation states, complete centered opening geometry, real-clock autoplay through completion on load/reload, no controls, reduced motion, standalone no-JavaScript fallback, responsive widths/resizing, archive integrity/build exclusion and existing website functionality. Opening/assembly/final screenshots were reviewed in Chrome, WebKit and Firefox on desktop and phone layouts. Results are recorded in `Assets/Hero 3/validation.json` and the version 11 plan. Automated Safari coverage uses WebKit; native Safari and physical mobile devices require a manual check.
+
+To validate locally (install optional browsers once if needed):
+
+```sh
+npx playwright install webkit firefox
+npm run build
+PORTFOLIO_TEST_TARGET=production PORTFOLIO_TEST_CROSS_BROWSER=1 npx playwright test --workers=2
+```
+
+To commit and push version 11 after successful validation:
+
+```sh
+cd "/Users/geoffgeorge/Developer/Kiana Portfolio" &&
+git add -- \
+  README.md \
+  src/components/HeroSection/HeroSection.jsx \
+  scripts/import-hero-v9.mjs scripts/import-hero-v11.mjs \
+  public/assets/hero-v9/ public/assets/hero-v11/ \
+  tests/hero-animation.spec.js tests/hero-canvas.spec.js \
+  tests/hero-layout.spec.js tests/ux.spec.js \
+  "Assets/Hero 3/" "Assets/archived pages/Hero section version 2 old/" \
+  "specs/changes/update 11.md" specs/changes/update-11-plan.md &&
+git diff --cached --check &&
+git diff --cached --stat
+```
+
+Review the staged files, then run:
+
+```sh
+git commit -m "Change Hero section update version 11" &&
+git push origin main
+```
+
+The old runtime/importer paths intentionally stage their removal; their contents are preserved in the archive. These scoped commands exclude pre-existing `.node-version` and template-image deletions, placeholder images and personal RTF files. Keep `dist/`, `node_modules/`, downloaded browser binaries and test output untracked. No commit, GitHub push or production deployment has been performed by this update.
+
+After Cloudflare finishes deploying the commit, open `https://www.kianageorge.com/` and check initial playback, reload, the final message, absence of controls, and desktop/phone layout in Chrome, Safari and Firefox. Check Featured links, UX, Video, Journalism and About+Contact. With reduced motion enabled, confirm the final message appears immediately. Wait for deployment to finish before checking the live site.
+
+## JOURNALISM section changes update version 10 — reference
 
 Version 10 implements `specs/changes/update 10.md` using the checked plan in `specs/changes/update-10-plan.md`. Official Figma MCP access is confirmed with a Pro plan and Full seat, using the design-to-code and Plugin API skills. The source is [JOURNALISM 2, frame 607:7](https://www.figma.com/design/wZSRbIZZXfUlrq902OXE2W/?node-id=607-7). The isolated Video 2 reference in the specification is treated as a copied label; Video 2 supplies the shared media assets.
 
@@ -16,7 +62,7 @@ All **11 distinct external destinations** returned HTTP 200. The written PDF has
 
 Validated November 9, 2026: production build passed; the complete six-project regression suite passed **403 checks**, with one existing desktop-only Obayashi geometry check skipped on mobile. No failed or flaky results remain. Checks cover the new source layout/typography/assets and all links, responsive/reduced-motion behavior, shared Video rendering, direct/subdirectory routes and the existing website. Final Journalism desktop/phone screenshots were reviewed in Chrome, WebKit (Safari's engine) and Firefox against Figma. Native Safari and real mobile hardware were not automated. Detailed results, asset hashes, geometry and verification limits are in `validation.json`.
 
-To commit and push version 10:
+Historical version 10 commit/push commands (use version 11 above for the current update):
 
 ```sh
 cd "/Users/geoffgeorge/Developer/Kiana Portfolio" &&
@@ -48,7 +94,7 @@ The text shares a left edge 2px inside the first tile, aligned with the divider,
 
 Validated November 9, 2026: production build passes; **90 home-page regression checks** are validated across Chrome, WebKit (Safari's engine) and Firefox at desktop and phone sizes. The initial run passed 89 checks and exposed one immediate resize measurement taken before layout settled. That assertion now waits for settling; all 48 affected checks passed after the final spacing update. No unresolved failures, skipped or flaky checks remain. Final screenshots were reviewed in all three engines at 1440px and 390px. Chrome reports the actual fonts as HelveticaNeue-Bold and FiraMono-Regular. Typography and relative placement match the source measurements within subpixel rounding. Native Safari and real mobile hardware were not automated. `validation.json` records the detailed results and verification limits.
 
-Historical commit/push commands for update 9.1 (already on GitHub as `a1b0060`; use the version 10 commands above for this change):
+Historical commit/push commands for update 9.1 (already on GitHub as `a1b0060`; use the version 11 commands above for the current update):
 
 ```sh
 cd "/Users/geoffgeorge/Developer/Kiana Portfolio" &&
@@ -130,7 +176,7 @@ git commit -m "Update Video page and subtle tile motion version 8" &&
 git push origin main
 ```
 
-The removed old asset/importer paths are included intentionally so Git records their move into the archive. These historical version 8 paths exclude unrelated `.node-version` and template-image deletions, placeholder images and personal RTF files. Keep `dist/`, `node_modules/`, browser binaries and test output untracked. Use the version 10 commands above for the current update.
+The removed old asset/importer paths are included intentionally so Git records their move into the archive. These historical version 8 paths exclude unrelated `.node-version` and template-image deletions, placeholder images and personal RTF files. Keep `dist/`, `node_modules/`, browser binaries and test output untracked. Use the version 11 commands above for the current update.
 
 After the existing Cloudflare Workers Builds deployment succeeds, check `https://www.kianageorge.com/video/`, all eight video destinations and their play icons, the 32px headings on `/journalism/` and `/ux/`, subtle hover/keyboard feedback on all linked cards, and the top two previews' stationary titles. Also check the home hero, both case studies, About+Contact, phone layouts and reduced motion. The existing `main` build (`npm run build`, then `npx wrangler deploy`) does not need configuration changes.
 
@@ -162,7 +208,7 @@ git commit -m "Change Hero section update version 7" &&
 git push origin main
 ```
 
-These historical version 7 paths exclude unrelated `.node-version` and template-image deletions, placeholder images and personal RTF files. Keep `dist/`, `node_modules/`, browser binaries and test output untracked. Use the version 10 commands above for the current update.
+These historical version 7 paths exclude unrelated `.node-version` and template-image deletions, placeholder images and personal RTF files. Keep `dist/`, `node_modules/`, browser binaries and test output untracked. Use the version 11 commands above for the current update.
 
 The existing Cloudflare Workers Builds connection builds `main` with `npm run build` and deploys with `npx wrangler deploy`. After it succeeds, check `https://www.kianageorge.com/` for automatic hero playback, Replay and Featured; check `https://www.kianageorge.com/ux/` directly and through the UX menu; open both project tiles and verify the logo returns home. Also check Video, Journalism and About+Contact. Test a phone layout and a reduced-motion preference. Cloudflare configuration does not need to change.
 
@@ -194,7 +240,7 @@ git commit -m "Add Video Page update version 6" &&
 git push origin main
 ```
 
-These historical version 6 paths exclude unrelated `.node-version` and template-image deletions, placeholder images, and personal RTF files. Keep `dist/`, `node_modules/`, browser binaries and test output untracked. Use the version 10 commands above for the current update.
+These historical version 6 paths exclude unrelated `.node-version` and template-image deletions, placeholder images, and personal RTF files. Keep `dist/`, `node_modules/`, browser binaries and test output untracked. Use the version 11 commands above for the current update.
 
 The existing Cloudflare Workers Builds connection builds `main` using `npm run build` and deploys with `npx wrangler deploy`. After it succeeds, check `https://www.kianageorge.com/video/`, all eight preview destinations, the four navigation options, and the existing case studies. No hosting configuration changes are needed.
 
@@ -227,7 +273,7 @@ git commit -m "Add Journalism Page update version 5" &&
 git push origin main
 ```
 
-These historical version 5 paths exclude unrelated `.node-version` and template-image deletions, placeholder images, and personal RTF files. Keep `dist/`, `node_modules/`, browser binaries, and test output untracked. Use the version 10 commands above for the current update.
+These historical version 5 paths exclude unrelated `.node-version` and template-image deletions, placeholder images, and personal RTF files. Keep `dist/`, `node_modules/`, browser binaries, and test output untracked. Use the version 11 commands above for the current update.
 
 The existing Cloudflare Workers Builds connection builds `main` using `npm run build` and deploys with `npx wrangler deploy`. After the build succeeds, check `https://www.kianageorge.com/journalism/` and `https://www.kianageorge.com/video/`, the four header links, the four external tile links, and both existing case studies. Cloudflare configuration does not need to change for these static routes.
 

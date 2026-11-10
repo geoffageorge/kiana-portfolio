@@ -3,14 +3,14 @@ import { test, expect } from '@playwright/test';
 test('the new supplied hero replaces the old artwork and ignores saved legacy overrides', async ({ page }) => {
   await page.addInitScript(() => localStorage.setItem('kiana-hero-artwork', JSON.stringify({ settings: { viewBox: { x: -600, y: -450, width: 600, height: 1800 } } })));
   await page.goto('/');
-  await expect(page.locator('.hero-section__animation')).toHaveAttribute('src', '/assets/hero-v9/animation.html');
+  await expect(page.locator('.hero-section__animation')).toHaveAttribute('src', '/assets/hero-v11/animation.html');
   await expect(page.locator('.hero-artwork,.hero-section__copy')).toHaveCount(0);
   await expect(page.getByText('Clarifying Chaos', { exact: true })).toHaveCount(0);
   await expect(page.getByRole('heading', { name: 'Featured', exact: true })).toBeVisible();
   await expect(page.locator('.selected-work .eyebrow')).toHaveText('Case studies');
   await expect(page.locator('.selected-work .eyebrow')).toHaveCSS('text-transform', 'uppercase');
   await page.reload();
-  await expect(page.locator('.hero-section__animation')).toHaveAttribute('src', '/assets/hero-v9/animation.html');
+  await expect(page.locator('.hero-section__animation')).toHaveAttribute('src', '/assets/hero-v11/animation.html');
 });
 
 test('the supplied hero sits directly below the header and fits phone, tablet and desktop containers', async ({ page }) => {

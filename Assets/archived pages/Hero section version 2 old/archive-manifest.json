@@ -1,0 +1,62 @@
+{
+  "name": "Hero section version 2 old",
+  "archivedDate": "2026-11-10",
+  "replacedBy": "Change Hero section update version 11",
+  "sourceFolder": "Assets/new hero 2",
+  "files": [
+    {
+      "file": "public/assets/hero-v9/animation.html",
+      "originalPath": "public/assets/hero-v9/animation.html",
+      "bytes": 9307,
+      "sha256": "fbd423bbef11a9d278b6b0e390d07561a446f3431ba7ab7537971c0616c20f03"
+    },
+    {
+      "file": "public/assets/hero-v9/manifest.json",
+      "originalPath": "public/assets/hero-v9/manifest.json",
+      "bytes": 1560,
+      "sha256": "0e11399ca8ea241fecf88d37813ed46cd051c3a9f3bdb3b8605bcab210cc6367"
+    },
+    {
+      "file": "scripts/import-hero-v9.mjs",
+      "originalPath": "scripts/import-hero-v9.mjs",
+      "bytes": 3144,
+      "sha256": "dde9af196e7faa6aa69ea9ae3845b8f9d625ecb06647e6cb88083aa3b43bb612"
+    },
+    {
+      "file": "src/components/HeroSection/HeroSection.jsx",
+      "originalPath": "src/components/HeroSection/HeroSection.jsx",
+      "bytes": 501,
+      "sha256": "14e735c0659d56a24880549d1ea8b9d5707f4ba8cebcf76d570fdc61ed70b7bf"
+    },
+    {
+      "file": "src/components/HeroSection/HeroSection.css",
+      "originalPath": "src/components/HeroSection/HeroSection.css",
+      "bytes": 280,
+      "sha256": "7ef46f5f250e2d297e30fd1f55a86864d52383af4c5ccc936286669da1124a3d"
+    },
+    {
+      "file": "tests/hero-animation.spec.js",
+      "originalPath": "tests/hero-animation.spec.js",
+      "bytes": 7421,
+      "sha256": "e14d9fbf23b0d15420a58718c91210a71bde42fcd459e20c4e4dd915bb63969b"
+    },
+    {
+      "file": "tests/hero-canvas.spec.js",
+      "originalPath": "tests/hero-canvas.spec.js",
+      "bytes": 2480,
+      "sha256": "002b5c4d314aef93c019a22290ae099c9a8e91a7743be059c19066de00ce7007"
+    },
+    {
+      "file": "tests/hero-layout.spec.js",
+      "originalPath": "tests/hero-layout.spec.js",
+      "bytes": 5805,
+      "sha256": "efcdb27132fc9a0473c33dfed16c41cf0b2409f0c31b13b33c0b81d2b21dd41a"
+    },
+    {
+      "file": "tests/hero-source-clock.js",
+      "originalPath": "tests/hero-source-clock.js",
+      "bytes": 1362,
+      "sha256": "3b27d0a8cc116f75de0e5ff8c2cdec1fcb5811579571a956008458d28142ec43"
+    }
+  ]
+}

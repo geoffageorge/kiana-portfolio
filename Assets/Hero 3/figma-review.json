@@ -1,0 +1,43 @@
+{
+  "reviewedDate": "2026-11-10",
+  "fileKey": "wZSRbIZZXfUlrq902OXE2W",
+  "pageId": "0:1",
+  "heroInventory": [
+    "  <frame id=\"354:108\" name=\"Hero 1\" x=\"22578\" y=\"-22725\" width=\"2002\" height=\"7095\" />",
+    "  <frame id=\"354:129\" name=\"Hero 1\" x=\"15901\" y=\"-16045\" width=\"1689\" height=\"768\">",
+    "    <frame id=\"498:20\" name=\"Hero Image\" x=\"120\" y=\"557\" width=\"1200\" height=\"779\">"
+  ],
+  "references": [
+    {
+      "nodeId": "28:2",
+      "data": {
+        "content": [
+          {
+            "type": "text",
+            "text": "<frame id=\"28:2\" name=\"Selected Works Tiles\" x=\"415\" y=\"-12201\" width=\"1440\" height=\"1826\">\n  <text id=\"28:4\" name=\"Featured\" x=\"131\" y=\"789\" width=\"472\" height=\"29\" />\n  <text id=\"28:17\" name=\"Select Work\" x=\"129\" y=\"1643\" width=\"472\" height=\"73\" />\n  <text id=\"28:26\" name=\"CASE STUDIES\" x=\"130\" y=\"1703\" width=\"101\" height=\"17\" />\n  <rounded-rectangle id=\"28:28\" name=\"Rectangle 1\" x=\"0\" y=\"1592\" width=\"1440\" height=\"234\" />\n  <text id=\"28:29\" name=\"LINKEDIN ↗\" x=\"1199\" y=\"1669\" width=\"84\" height=\"17\" />\n  <text id=\"28:30\" name=\"EMAIL ↗\" x=\"1220\" y=\"1697\" width=\"63\" height=\"18\" />\n  <frame id=\"28:31\" name=\"Logo 2\" x=\"130\" y=\"1653\" width=\"57\" height=\"38\" />\n  <text id=\"28:38\" name=\"KIANA GEORGE / UX DESIGN + INSIGHTS\" x=\"210\" y=\"1667\" width=\"324\" height=\"18\" />\n  <text id=\"523:9\" name=\"Select Work\" x=\"129\" y=\"1643\" width=\"472\" height=\"73\" />\n  <text id=\"523:10\" name=\"CASE STUDIES\" x=\"130\" y=\"1703\" width=\"101\" height=\"17\" />\n  <rounded-rectangle id=\"523:11\" name=\"Rectangle 142\" x=\"0\" y=\"1592\" width=\"1440\" height=\"234\" />\n  <text id=\"523:12\" name=\"LINKEDIN ↗\" x=\"1199\" y=\"1669\" width=\"84\" height=\"17\" />\n  <text id=\"523:13\" name=\"EMAIL ↗\" x=\"1220\" y=\"1697\" width=\"63\" height=\"18\" />\n  <frame id=\"523:14\" name=\"Logo 3\" x=\"130\" y=\"1653\" width=\"57\" height=\"38\" />\n  <text id=\"523:21\" name=\"KIANA GEORGE / UX DESIGN + INSIGHTS\" x=\"210\" y=\"1667\" width=\"324\" height=\"18\" />\n  <line id=\"499:21\" name=\"Line 69\" x=\"131\" y=\"855\" width=\"1177\" height=\"0.00010289661622664426\" />\n  <frame id=\"499:26\" name=\"Mask group\" x=\"129\" y=\"886\" width=\"577\" height=\"577\">\n    <rounded-rectangle id=\"499:23\" name=\"Rectangle 140\" x=\"129\" y=\"886\" width=\"577\" height=\"577\" />\n  </frame>\n  <frame id=\"499:35\" name=\"Mask group\" x=\"129\" y=\"898\" width=\"577\" height=\"577\">\n    <rounded-rectangle id=\"499:33\" name=\"Rectangle 144\" x=\"129\" y=\"898\" width=\"577\" height=\"577\" />\n    <rounded-rectangle id=\"499:22\" name=\"img_slide_6 1\" x=\"1275\" y=\"858\" width=\"1363\" height=\"744\" />\n  </frame>\n  <rounded-rectangle id=\"499:24\" name=\"Rectangle 141\" x=\"733\" y=\"898\" width=\"577\" height=\"577\" />\n  <text id=\"123:3\" name=\"Point.ly Title\" x=\"173\" y=\"982\" width=\"472\" height=\"76\" />\n  <text id=\"123:6\" name=\"01 /\" x=\"179\" y=\"949\" width=\"44\" height=\"22\" />\n  <text id=\"499:37\" name=\"NORTH AMERICAN  WEBSITE\" x=\"179\" y=\"1066\" width=\"162\" height=\"50\" />\n  <text id=\"499:51\" name=\"Point.ly Title\" x=\"774\" y=\"982\" width=\"472\" height=\"52\" />\n  <text id=\"499:52\" name=\"02 /\" x=\"780\" y=\"949\" width=\"44\" height=\"22\" />\n  <text id=\"499:53\" name=\"HIGH-FIDELITY PROTOTYPE\" x=\"780\" y=\"1066\" width=\"162\" height=\"50\" />\n  <frame id=\"499:47\" name=\"Mask group\" x=\"909.1895751953125\" y=\"1058\" width=\"400.81048583984375\" height=\"376.9918212890625\">\n    <rounded-rectangle id=\"499:46\" name=\"Rectangle 146\" x=\"909.1895425766706\" y=\"1057.9999999999982\" width=\"400.81048583984375\" height=\"376.9918212890625\" />\n    <frame id=\"499:50\" name=\"Group 122\" x=\"953.4906921386719\" y=\"1109.3705024719238\" width=\"506.39459228515625\" height=\"308.37469482421875\">\n      <rounded-rectangle id=\"499:43\" name=\"apple_intelligence__bqi8tl754cfm_large_2x 2\" x=\"953.4906618875266\" y=\"1109.3708894383162\" width=\"506.39459228515625\" height=\"308.37469482421875\" />\n    </frame>\n    <frame id=\"499:45\" name=\"Mask group\" x=\"981.7563629150391\" y=\"1101.6816902160645\" width=\"445.399169921875\" height=\"286.0832824707031\">\n      <rounded-rectangle id=\"499:44\" name=\"Rectangle 145\" x=\"981.7563776145671\" y=\"1101.6817392723678\" width=\"445.399169921875\" height=\"286.0832824707031\" />\n      <rounded-rectangle id=\"499:42\" name=\"Frame 3 (2) 1\" x=\"1000.374454498291\" y=\"1119.1714668273926\" width=\"415.83306884765625\" height=\"679.7438354492188\" />\n    </frame>\n  </frame>\n  <text id=\"557:53\" name=\"Project Lead UX research Product Strategy Interface Design Visual Identity   \" x=\"179\" y=\"1174\" width=\"170\" height=\"184\" />\n  <text id=\"557:54\" name=\"UX research Content Strategy Information Architecture Website Design  \" x=\"780\" y=\"1174\" width=\"184\" height=\"138\" />\n  <vector id=\"557:55\" name=\"Vector 4\" x=\"179\" y=\"1156\" width=\"44\" height=\"0\" />\n  <vector id=\"559:9\" name=\"Vector 5\" x=\"780\" y=\"1156\" width=\"44\" height=\"0\" />\n  <text id=\"28:15\" name=\"CASE STUDIES\" x=\"131\" y=\"825\" width=\"101\" height=\"17\" />\n</frame>"
+          },
+          {
+            "type": "text",
+            "text": "IMPORTANT: After you call this tool, you MUST call get_design_context if trying to implement the design, since this tool only returns metadata. If you do not call get_design_context, the agent will not be able to implement the design."
+          }
+        ]
+      }
+    },
+    {
+      "nodeId": "354:129",
+      "data": {
+        "content": [
+          {
+            "type": "text",
+            "text": "<frame id=\"354:129\" name=\"Hero 1\" x=\"15901\" y=\"-16045\" width=\"1689\" height=\"768\">\n  <frame id=\"354:130\" name=\"Content\" x=\"0\" y=\"0\" width=\"1689\" height=\"768\">\n    <text id=\"354:132\" name=\"A bold headline that grabs attention.\" x=\"64\" y=\"120\" width=\"1561\" height=\"124\" />\n    <rounded-rectangle id=\"354:134\" name=\"Image\" x=\"64\" y=\"276\" width=\"298\" height=\"372\" />\n  </frame>\n</frame>"
+          },
+          {
+            "type": "text",
+            "text": "IMPORTANT: After you call this tool, you MUST call get_design_context if trying to implement the design, since this tool only returns metadata. If you do not call get_design_context, the agent will not be able to implement the design."
+          }
+        ]
+      }
+    }
+  ],
+  "finding": "No matching Hero 3 found on the inspected page; Assets/Hero 3 is the explicit version 11 source. Existing Featured/card layout is preserved and regression-tested."
+}

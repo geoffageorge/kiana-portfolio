@@ -4,17 +4,17 @@ import { createHash } from 'node:crypto';
 
 const file=path=>readFile(new URL(`../${path}`,import.meta.url));
 const hash=data=>createHash('sha256').update(data).digest('hex');
-const manifest=JSON.parse(await file('public/assets/hero-v9/manifest.json'));
+const manifest=JSON.parse(await file('public/assets/hero-v11/manifest.json'));
 
-test('the reviewed Hero 2 files produce an eager accessible runtime with no playback controls',async({page,request})=>{
+test('the reviewed Hero 3 files produce an eager accessible runtime with no playback controls',async({page,request})=>{
   expect(manifest.sourceFiles).toHaveLength(6);
   for(const asset of manifest.sourceFiles){
     const source=await file(`${manifest.sourceFolder}/${asset.file}`);
     expect(source.length).toBe(asset.bytes);expect(hash(source)).toBe(asset.sha256);
   }
-  const runtime=await file('public/assets/hero-v9/animation.html');
+  const runtime=await file('public/assets/hero-v11/animation.html');
   expect(hash(runtime)).toBe(manifest.runtime.sha256);
-  const response=await request.get('/assets/hero-v9/animation.html');
+  const response=await request.get('/assets/hero-v11/animation.html');
   expect(response.ok()).toBe(true);expect(response.headers()['content-type']).toContain('text/html');
   expect(hash(await response.body())).toBe(manifest.runtime.sha256);
   await page.goto('/');
@@ -22,7 +22,7 @@ test('the reviewed Hero 2 files produce an eager accessible runtime with no play
   await expect(page.locator('.hero-section__animation')).toHaveAttribute('title','Kiana George: Understanding people. Shaping digital experiences.');
   await expect(page.locator('#hero-title')).toHaveText('Understanding people. Shaping digital experiences.');
   const frame=page.frameLocator('.hero-section__animation');
-  await expect(frame.locator('#kg-quick-convergence')).toHaveCount(1);
+  await expect(frame.locator('#kg-expanding-circles')).toHaveCount(1);
   await expect(frame.locator('.spiro,svg,.focus-word,.supporting-word')).toHaveCount(0);
   await expect(frame.getByRole('button')).toHaveCount(0);
   await expect(frame.locator('.replay,video,audio,input')).toHaveCount(0);
@@ -30,7 +30,9 @@ test('the reviewed Hero 2 files produce an eager accessible runtime with no play
 });
 
 test('the hero autoplays on initial load, finishes without controls, rests on the message and restarts on reload',async({page})=>{
-  test.setTimeout(30000);
+  test.setTimeout(40000);
+  const errors=[];
+  page.on('pageerror',error=>errors.push(error.message));
   await page.emulateMedia({reducedMotion:'no-preference'});
   await page.goto('/');
   const frame=page.frameLocator('.hero-section__animation');
@@ -51,6 +53,10 @@ test('the hero autoplays on initial load, finishes without controls, rests on th
   await expect(ring).toHaveCSS('opacity','1');
   const before=await ring.evaluate(n=>n.style.transform);
   await expect.poll(()=>ring.evaluate(n=>n.style.transform)).not.toBe(before);
+  await expect(frame.locator('.subhead')).toHaveCSS('opacity','1',{timeout:12000});
+  await expect(ring).toHaveCSS('opacity','0');
+  await expect(frame.getByRole('button')).toHaveCount(0);
+  expect(errors).toEqual([]);
 });
 
 test('reduced motion shows the final message immediately without movement or controls',async({page})=>{
@@ -71,7 +77,7 @@ test('the standalone no-JavaScript fallback keeps both headline lines and the su
   try{
     for(const width of [280,350,1180]){
       await page.setViewportSize({width,height:width<=480?460:560});
-      await page.goto(`${baseURL}/assets/hero-v9/animation.html`);
+      await page.goto(`${baseURL}/assets/hero-v11/animation.html`);
       await expect(page.locator('h1')).toBeVisible();
       await expect(page.locator('.subhead')).toHaveCSS('opacity','1');
       expect(await page.locator('.headline-row').evaluateAll(nodes=>nodes.every(n=>n.scrollWidth<=n.clientWidth+1))).toBe(true);
@@ -80,7 +86,20 @@ test('the standalone no-JavaScript fallback keeps both headline lines and the su
   }finally{await context.close();}
 });
 
-test('the old hero and renamed original source remain archived with their original bytes and outside the build',async()=>{
+test('Hero section version 2 old and the earlier archive retain their original bytes outside the build',async()=>{
+  const outgoing='Assets/archived pages/Hero section version 2 old/';
+  const archive=JSON.parse(await file(outgoing+'archive-manifest.json'));
+  expect(archive.name).toBe('Hero section version 2 old');
+  expect(archive.files).toHaveLength(9);
+  for(const item of archive.files){
+    const bytes=await file(outgoing+item.file);
+    expect(bytes.length).toBe(item.bytes);
+    expect(hash(bytes)).toBe(item.sha256);
+  }
+  // On case-insensitive macOS, dist/Assets aliases the real dist/assets folder.
+  for(const path of ['dist/assets/hero-v9/','public/assets/hero-v9/','dist/Assets/archived pages/','dist/Assets/Hero 3/']){
+    expect(await stat(new URL(`../${path}`,import.meta.url)).catch(()=>null)).toBeNull();
+  }
   const prefix='Assets/archived pages/hero-v7-before-v9-2026-11-09/';
   const record=JSON.parse(await file(prefix+'archive-manifest.json'));
   expect(record.files).toHaveLength(6);expect(record.renamedSourceFiles).toHaveLength(3);

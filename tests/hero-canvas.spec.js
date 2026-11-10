@@ -11,7 +11,7 @@ test('old preview query strings do not bring back the old hero or inspector cont
   }
 });
 
-test('the new close-ups, four-circle convergence and final reveal match the unmodified supplied animation', async ({ page }) => {
+test('the complete centered circles, four-circle convergence and final reveal match the unmodified supplied animation', async ({ page }) => {
   await page.emulateMedia({reducedMotion:'no-preference'});
   await page.addInitScript(`if (window !== window.top) (${installSourceClock.toString()})();`);
   await page.goto('/');
@@ -23,16 +23,33 @@ test('the new close-ups, four-circle convergence and final reveal match the unmo
     await reference.setViewportSize({width,height:width<=480?460:560});
     await reference.emulateMedia({reducedMotion:'no-preference'});
     await reference.addInitScript(installSourceClock);
-    const source=await readFile(new URL('../Assets/new hero 2/animation.html',import.meta.url),'utf8');
+    const source=await readFile(new URL('../Assets/Hero 3/animation.html',import.meta.url),'utf8');
     await reference.goto(`data:text/html;charset=utf-8,${encodeURIComponent(source)}`);
     await expect.poll(()=>reference.evaluate(()=>typeof window.__heroDraw)).toBe('function');
     expect(await reference.evaluate(()=>performance.now())).toBe(0);
     expect(await frame.locator('.scene').evaluate(()=>performance.now())).toBe(0);
-    for(const seconds of [0,.6,1.6,2.6,3.6,4.5,4.85,5.4,6.1,6.8,7.3,7.9,8.3,9.1]) {
+    for(const seconds of [0,.3,.7,.84,.95,1.25,1.65,1.9,2.2,2.6,2.85,3.15,3.6,3.8,4.15,4.5,4.85,5.4,6.1,6.8,7.3,7.9,8.3,9.1]) {
       const expected=await reference.locator('.scene').evaluate(sampleSourceState,seconds);
       const actual=await frame.locator('.scene').evaluate(sampleSourceState,seconds);
       expect(actual,`source animation state at ${seconds}s`).toEqual(expected);
     }
+    // Version 11 must start with a whole centered ring, not a cropped close-up.
+    await frame.locator('.scene').evaluate(sampleSourceState,0);
+    const opening=await frame.locator('.scene').evaluate(scene=>{
+      const bounds=scene.getBoundingClientRect();
+      const rings=[...scene.querySelectorAll('.orbit-donut')];
+      const ring=rings[0].getBoundingClientRect();
+      return {
+        contained:ring.left>=bounds.left&&ring.right<=bounds.right&&ring.top>=bounds.top&&ring.bottom<=bounds.bottom,
+        centerX:ring.x+ring.width/2-(bounds.x+bounds.width/2),
+        centerY:ring.y+ring.height/2-(bounds.y+bounds.height/2),
+        opacity:rings.map(n=>getComputedStyle(n).opacity),
+      };
+    });
+    expect(opening.contained).toBe(true);
+    expect(opening.centerX).toBeCloseTo(0,1);
+    expect(opening.centerY).toBeCloseTo(0,1);
+    expect(opening.opacity).toEqual(['1','0','0','0']);
     await expect(frame.locator('.scene')).toHaveCSS('overflow','hidden');
     await expect(frame.locator('.orbit-donut').first()).toHaveCSS('box-shadow','none');
     await expect(frame.getByRole('button')).toHaveCount(0);
